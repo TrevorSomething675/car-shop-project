@@ -1,0 +1,22 @@
+﻿@using MainTz.RestApi.Data.Models.DtoModels
+@model IEnumerable<CarDto>
+
+@if(Model != null)
+{
+    foreach (var car in Model)
+    {
+        <div class="row">
+            <div class="col">
+                @car.Brand
+            </div>
+
+            <div class="col">
+                @car.Model
+            </div>
+
+            <div class="col">
+                @car.Color
+            </div>
+        </div>
+    }
+}

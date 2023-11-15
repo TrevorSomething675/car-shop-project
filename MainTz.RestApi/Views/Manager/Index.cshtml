@@ -1,0 +1,31 @@
+﻿<div class="row">
+    <div class="col">
+		<form method="post" asp-area="" asp-controller="Manager" asp-action="CreateCar">
+			<div>
+				<label>Бренд:</label> <input type="text" name="Brand" /><br />
+			</div>
+			<div>
+				<label>Модель: </label> <input type="text" name="Model" /><br />
+			</div>
+			<div>
+				<label>Цвет: </label> <input type="text" name="Color" /><br />
+			</div>
+
+			<input class="btn btn-primary" type="submit" value="Добавить" />
+		</form>
+
+		<form method="post" asp-area="" asp-controller="Manager" asp-action="DeleteCar">
+			<div>
+				<label>Бренд:</label> <input type="text" name="Brand" /><br />
+			</div>
+			<div>
+				<label>Модель: </label> <input type="text" name="Model" /><br />
+			</div>
+			<div>
+				<label>Цвет: </label> <input type="text" name="Color" /><br />
+			</div>
+
+			<input class="btn btn-danger" type="submit" value="Удалить" />
+		</form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+2023-11-15 21:16:59.4590 Info Registered target NLog.Targets.FileTarget(Name=LogFile)
+2023-11-15 21:16:59.4847 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-15 21:16:59.5045 Info Validating config: TargetNames=LogFile, ConfigItems=14, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-11-15 21:16:59.5158 Info Configuration initialized.
+2023-11-15 21:17:00.0321 Info Shutdown() called. Logger closing...
+2023-11-15 21:17:00.0321 Info Closing old configuration.
+2023-11-15 21:17:00.0838 Info Logger has been closed down.
+2023-11-15 21:17:46.6509 Info Registered target NLog.Targets.FileTarget(Name=LogFile)
+2023-11-15 21:17:46.6778 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-15 21:17:46.7016 Info Validating config: TargetNames=LogFile, ConfigItems=14, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-11-15 21:17:46.7127 Info Configuration initialized.
+2023-11-15 21:17:47.1934 Info Shutdown() called. Logger closing...
+2023-11-15 21:17:47.1934 Info Closing old configuration.
+2023-11-15 21:17:47.2114 Info Logger has been closed down.
+2023-11-15 21:19:02.7989 Info Registered target NLog.Targets.FileTarget(Name=LogFile)
+2023-11-15 21:19:02.8332 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-15 21:19:02.8602 Info Validating config: TargetNames=LogFile, ConfigItems=14, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-11-15 21:19:02.8762 Info Configuration initialized.
+2023-11-15 21:19:03.2992 Info Shutdown() called. Logger closing...
+2023-11-15 21:19:03.2992 Info Closing old configuration.
+2023-11-15 21:19:03.3155 Info Logger has been closed down.
+2023-11-15 21:21:05.2508 Info Registered target NLog.Targets.FileTarget(Name=LogFile)
+2023-11-15 21:21:05.2788 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-11-15 21:21:05.3027 Info Validating config: TargetNames=LogFile, ConfigItems=14, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-11-15 21:21:05.3148 Info Configuration initialized.
