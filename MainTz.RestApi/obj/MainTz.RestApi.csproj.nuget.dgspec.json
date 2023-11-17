@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\MainTz.RestApi\\MainTz.RestApi.csproj": {}
+    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\Extensions\\Extensions.csproj": {
+    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\Extensions\\Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\Extensions\\Extensions.csproj",
+        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\Extensions\\Extensions.csproj",
         "projectName": "Extensions",
-        "projectPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\Extensions\\Extensions.csproj",
-        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\Extensions\\obj\\",
+        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\Extensions\\Extensions.csproj",
+        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,17 +89,17 @@
         }
       }
     },
-    "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\MainTz.RestApi\\MainTz.RestApi.csproj": {
+    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\MainTz.RestApi\\MainTz.RestApi.csproj",
+        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj",
         "projectName": "MainTz.RestApi",
-        "projectPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\MainTz.RestApi\\MainTz.RestApi.csproj",
-        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\MainTz.RestApi\\obj\\",
+        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj",
+        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,8 +113,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\Extensions\\Extensions.csproj": {
-                "projectPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\Extensions\\Extensions.csproj"
+              "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\Extensions\\Extensions.csproj": {
+                "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\Extensions\\Extensions.csproj"
               }
             }
           }
@@ -136,6 +136,14 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

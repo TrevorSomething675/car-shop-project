@@ -2,6 +2,9 @@
     <div class="col">
 		<form method="post" asp-area="" asp-controller="Manager" asp-action="CreateCar">
 			<div>
+				<label>Id:</label> <input type="text" name="Id" /><br />
+			</div>
+			<div>
 				<label>Бренд:</label> <input type="text" name="Brand" /><br />
 			</div>
 			<div>
@@ -15,6 +18,9 @@
 		</form>
 
 		<form method="post" asp-area="" asp-controller="Manager" asp-action="DeleteCar">
+			<div>
+				<label>Id:</label> <input type="text" name="Id" /><br />
+			</div>
 			<div>
 				<label>Бренд:</label> <input type="text" name="Brand" /><br />
 			</div>

@@ -1,5 +1,5 @@
-﻿using MainTz.RestApi.Data.Models.DtoModels;
-using MainTz.RestApi.Data.Models.Entities;
+﻿using MainTz.RestApi.dal.Data.Models.DtoModels;
+using MainTz.RestApi.dal.Data.Models.Entities;
 using AutoMapper;
 
 namespace MainTz.RestApi.Configurations.AutoMapperConfiguration.Mappings
@@ -8,9 +8,7 @@ namespace MainTz.RestApi.Configurations.AutoMapperConfiguration.Mappings
     {
         public CarMap() 
         {
-            CreateMap<Car, CarDto>();
-
-            CreateMap<CarDto, Car>().ForMember(car => car.Id, opt => opt.Ignore());
+            CreateMap<Car, CarDto>().ReverseMap();
         }
     }
 }

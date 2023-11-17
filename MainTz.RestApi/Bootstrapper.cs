@@ -1,7 +1,7 @@
-﻿using MainTz.RestApi.Repositories.Abstractions;
-using MainTz.RestApi.Services.Abstractions;
-using MainTz.RestApi.Repositories;
-using MainTz.RestApi.Services;
+﻿using MainTz.RestApi.DAL.Repositories.Abstractions;
+using MainTz.RestApi.BLL.Services.Abstractions;
+using MainTz.RestApi.DAL.Repositories;
+using MainTz.RestApi.BLL.Services;
 
 namespace MainTz.RestApi
 {
@@ -10,6 +10,7 @@ namespace MainTz.RestApi
         public static IServiceCollection AddAppRepositories(this IServiceCollection services)
         {
             services.AddScoped<ICarRepository, CarRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }
@@ -18,6 +19,7 @@ namespace MainTz.RestApi
         {
             services.AddControllersWithViews();
             services.AddScoped<ICarService, CarService>();
+            services.AddScoped<IClientService, ClientService>();
 
             return services;
         }

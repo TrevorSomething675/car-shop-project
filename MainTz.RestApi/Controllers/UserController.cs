@@ -1,4 +1,5 @@
-﻿using MainTz.RestApi.Services.Abstractions;
+﻿using MainTz.RestApi.BLL.Services.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MainTz.RestApi.Controllers
@@ -17,10 +18,13 @@ namespace MainTz.RestApi.Controllers
         public async Task<IActionResult> Index()
         {
             var model = await _carService.GetCars();
-            _logger.LogInformation("Test");
-            _logger.LogDebug("jija");
-
 			return View(model);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> GetInfo()
+        {
+            return Ok("Jija");
         }
     }
 }

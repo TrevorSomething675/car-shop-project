@@ -1,15 +1,13 @@
 using MainTz.RestApi.Configurations.AutoMapperConfiguration;
 using MainTz.RestApi.Configurations.NLogConfiguration;
-using MainTz.RestApi.Data.Models.Entities;
+using MainTz.RestApi.dal.Data.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
 using MainTz.RestApi;
 using Extensions;
-using NLog.Web;
-using NLog;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
 var builder = WebApplication.CreateBuilder(args);
 
 var dbSettings = Settings.Load<DataBaseSettings>("DataBaseSettings");
@@ -23,6 +21,10 @@ services.AddAppSwagger();
 
 services.AddAppRepositories();
 services.AddAppServices();
+
+services.AddHttpContextAccessor();
+services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -49,6 +51,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllerRoute(
     name: "default",
@@ -57,5 +60,3 @@ app.MapControllerRoute(
 app.UseAppSwagger();
 
 app.Run();
-
-NLog.LogManager.Shutdown();

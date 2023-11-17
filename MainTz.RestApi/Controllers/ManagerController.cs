@@ -1,10 +1,11 @@
-﻿using MainTz.RestApi.Data.Models.DtoModels;
-using MainTz.RestApi.Services.Abstractions;
+﻿using MainTz.RestApi.BLL.Services.Abstractions;
+using MainTz.RestApi.dal.Data.Models.DtoModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MainTz.RestApi.Controllers
 {
-	public class ManagerController : Controller
+    public class ManagerController : Controller
 	{
 		private readonly ICarService _carService;
 
@@ -42,6 +43,11 @@ namespace MainTz.RestApi.Controllers
 			{
 				return BadRequest(ex.Message);
 			}
+		}
+		[Authorize]
+		public async Task<IActionResult> GetInfo()
+		{
+			return Ok("Info data");
 		}
 	}
 }
