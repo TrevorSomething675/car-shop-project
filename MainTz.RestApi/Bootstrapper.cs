@@ -2,6 +2,10 @@
 using MainTz.RestApi.BLL.Services.Abstractions;
 using MainTz.RestApi.DAL.Repositories;
 using MainTz.RestApi.BLL.Services;
+using Extensions.SettingsModels;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace MainTz.RestApi
 {
@@ -18,10 +22,13 @@ namespace MainTz.RestApi
         public static IServiceCollection AddAppServices(this IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<ICarService, CarService>();
+			services.AddHttpContextAccessor();
+			services.AddScoped<ICarService, CarService>();
             services.AddScoped<IClientService, ClientService>();
 
             return services;
         }
+
+
     }
 }

@@ -4,14 +4,18 @@ namespace MainTz.RestApi.BLL.Services
 {
 	public class ClientService : IClientService
 	{
-		public async Task<string> SendRequest(string url)
+		public async Task<string> SendRequest(string url, string message)
 		{
 			string result;
 			try
 			{
 				using (var client = new HttpClient())
 				{
-					HttpResponseMessage response = await client.GetAsync(url);
+					StringContent requestMessage = new StringContent(message);
+					using var request = new HttpRequestMessage(HttpMethod.Post, url);
+					request.Content = requestMessage;
+					using var response = await client.SendAsync(request);
+
 					result = await response.Content.ReadAsStringAsync();
 				}
 			}

@@ -2,6 +2,6 @@
 {
 	public interface IClientService
 	{
-		public Task<string> SendRequest(string url);
+		public Task<string> SendRequest(string url, string message);
 	}
 }

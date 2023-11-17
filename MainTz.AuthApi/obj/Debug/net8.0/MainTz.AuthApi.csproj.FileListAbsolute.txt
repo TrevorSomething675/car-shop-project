@@ -96,3 +96,4 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll

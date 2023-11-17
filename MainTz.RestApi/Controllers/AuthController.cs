@@ -1,7 +1,6 @@
 ﻿using MainTz.RestApi.BLL.Services.Abstractions;
 using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 using Extensions;
 
 namespace MainTz.RestApi.Controllers
@@ -16,15 +15,13 @@ namespace MainTz.RestApi.Controllers
 			_clientService = clientService;
 		}
 
-		public async Task<IActionResult> GetToken()
+		public async Task<IActionResult> GetToken() // получение токена из AuthApi
 		{
 			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenUrl}";
-			var token = await _clientService.SendRequest(tokenUrl);
+			var token = await _clientService.SendRequest(tokenUrl, "User");
 
 			if (token == null)
 				return BadRequest("Не удалось получить токен");
-
-			HttpContext.Response.Cookies.Append("token", token);
 
 			return Ok(token);
 		}

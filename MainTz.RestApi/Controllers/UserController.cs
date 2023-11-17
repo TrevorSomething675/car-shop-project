@@ -21,6 +21,7 @@ namespace MainTz.RestApi.Controllers
 			return View(model);
         }
 
+        [HttpGet("GetJija")]
         [Authorize]
         public async Task<IActionResult> GetInfo()
         {

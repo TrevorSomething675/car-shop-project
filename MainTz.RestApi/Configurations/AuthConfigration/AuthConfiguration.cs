@@ -1,43 +1,28 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.Identity;
 using Extensions.SettingsModels;
 using System.Text;
-using MainTz.RestApi.dal.Data.Models.Entities;
 
 namespace MainTz.RestApi.Configurations.AuthConfigration
 {
     public static class AuthConfiguration
 	{
-		public static IServiceCollection AddAppAuth(this IServiceCollection services, AuthSettings identitySettings)
+		public static IServiceCollection AddAppAuth(this IServiceCollection services, AuthSettings authSettings)
 		{
 			services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-				.AddJwtBearer(jwt =>
+				.AddJwtBearer(options =>
 				{
-					jwt.TokenValidationParameters = new TokenValidationParameters
+					options.TokenValidationParameters = new TokenValidationParameters
 					{
-						ValidateIssuer = false,
-						ValidateAudience = false,
+						ValidateIssuer = true,
+						ValidIssuer = authSettings.Issuer,
+						ValidateAudience = true,
+						ValidAudience = authSettings.Audience,
 						ValidateLifetime = true,
+						IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authSettings.Key)),
 						ValidateIssuerSigningKey = true,
-						ValidIssuer = identitySettings.Issuer,
-						ValidAudience = identitySettings.Audience,
-						IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(identitySettings.SecretKey))
 					};
 				});
-
-			services.AddAuthorization(options =>
-			{
-				options.DefaultPolicy = new AuthorizationPolicyBuilder(JwtBearerDefaults.AuthenticationScheme)
-					.RequireAuthenticatedUser().Build();
-			});
-
-			services.AddIdentity<User, IdentityRole<int>>()
-				.AddEntityFrameworkStores<MainContext>()
-				.AddUserManager<UserManager<User>>()
-				.AddSignInManager<SignInManager<User>>();
-
 			return services;
 		}
 

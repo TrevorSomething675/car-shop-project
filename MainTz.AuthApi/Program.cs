@@ -1,10 +1,9 @@
 using MainTz.AuthApi.Services.Abstractions;
 using MainTz.AuthApi.Services;
+using Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddRazorPages();
-builder.Services.AddControllers();
 builder.Services.AddTransient<ITokenService, TokenService>();
 
 var app = builder.Build();
@@ -13,8 +12,14 @@ app.Run(async (context) =>
 {
 	if(context.Request.Path == "/GetAccessToken")
 	{
+		using StreamReader reader = new StreamReader(context.Request.Body);
+		string role = await reader.ReadToEndAsync();
 		var tokenService = app.Services.GetRequiredService<ITokenService>();
-		var token = tokenService.CreateAccessToken(Extensions.Roles.User);
+
+		Roles resultEnum;
+		Enum.TryParse(role, out resultEnum);
+
+		var token = tokenService.CreateAccessToken(resultEnum);
 		await context.Response.WriteAsync(token);
 	}
 });
