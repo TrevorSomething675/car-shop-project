@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MainTz.RestApi.Controllers
 {
-    public class UserController : Controller
+	public class UserController : Controller
     {
         private readonly ICarService _carService;
         private readonly ILogger<UserController> _logger;

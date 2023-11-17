@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MainTz.RestApi.Controllers
 {
+	[Authorize(Roles = "Manager")]
     public class ManagerController : Controller
 	{
 		private readonly ICarService _carService;

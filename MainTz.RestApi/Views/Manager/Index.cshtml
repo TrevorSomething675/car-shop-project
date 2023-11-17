@@ -1,4 +1,6 @@
 ﻿<div class="row">
+	<h2>Manager</h2>
+
     <div class="col">
 		<form method="post" asp-area="" asp-controller="Manager" asp-action="CreateCar">
 			<div>
@@ -14,7 +16,7 @@
 				<label>Цвет: </label> <input type="text" name="Color" /><br />
 			</div>
 
-			<input class="btn btn-primary" type="submit" value="Добавить" />
+			<input class="btn btn-primary" type="submit" value="Добавить машину" />
 		</form>
 
 		<form method="post" asp-area="" asp-controller="Manager" asp-action="DeleteCar">
@@ -31,7 +33,7 @@
 				<label>Цвет: </label> <input type="text" name="Color" /><br />
 			</div>
 
-			<input class="btn btn-danger" type="submit" value="Удалить" />
+			<input class="btn btn-danger" type="submit" value="Удалить машину" />
 		</form>
     </div>
 </div>

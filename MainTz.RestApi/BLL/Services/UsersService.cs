@@ -6,13 +6,13 @@ using AutoMapper;
 
 namespace MainTz.RestApi.BLL.Services
 {
-	public class UserService : IUsersService
+	public class UsersService : IUsersService
 	{
 		private readonly IUserRepository _userRepository;
 		private readonly IMapper _mapper;
-		private readonly ILogger _logger;
+		private readonly ILogger<UsersService> _logger;
 
-		public UserService(IUserRepository userRepository, ILogger logger, IMapper mapper) 
+		public UsersService(IUserRepository userRepository, ILogger<UsersService> logger, IMapper mapper) 
 		{
 			_logger = logger;
 			_mapper = mapper;

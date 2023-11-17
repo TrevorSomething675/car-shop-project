@@ -1,4 +1,5 @@
 ﻿using MainTz.RestApi.BLL.Services.Abstractions;
+using System.Net.Http.Headers;
 
 namespace MainTz.RestApi.BLL.Services
 {
@@ -9,19 +10,19 @@ namespace MainTz.RestApi.BLL.Services
 			string result;
 			try
 			{
-				using (var client = new HttpClient())
-				{
-					StringContent requestMessage = new StringContent(message);
-					using var request = new HttpRequestMessage(HttpMethod.Post, url);
-					request.Content = requestMessage;
-					using var response = await client.SendAsync(request);
+				var client = new HttpClient();
+				StringContent requestMessage = new StringContent(message);
+				using var request = new HttpRequestMessage(HttpMethod.Post, url);
+				request.Content = requestMessage;
+				using var response = await client.SendAsync(request);
+				result = await response.Content.ReadAsStringAsync();
 
-					result = await response.Content.ReadAsStringAsync();
-				}
+				client.DefaultRequestHeaders.Authorization = 
+					new AuthenticationHeaderValue("Bearer", result);
 			}
 			catch (Exception ex)
 			{
-				result = ex.Message;
+				result = null; // Уточнить
 			}
 
 			return result;

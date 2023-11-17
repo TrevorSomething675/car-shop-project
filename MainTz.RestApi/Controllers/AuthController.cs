@@ -15,15 +15,16 @@ namespace MainTz.RestApi.Controllers
 			_clientService = clientService;
 		}
 
-		public async Task<IActionResult> GetToken() // получение токена из AuthApi
+		[HttpPost]
+		public async Task<IActionResult> GetToken(string role) // отправка сообщения и получение токена из AuthApi
 		{
 			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenUrl}";
-			var token = await _clientService.SendRequest(tokenUrl, "User");
+			var token = await _clientService.SendRequest(tokenUrl, role);
 
 			if (token == null)
 				return BadRequest("Не удалось получить токен");
 
-			return Ok(token);
+			return RedirectToAction("Index", "Manager");
 		}
 	}
 }
