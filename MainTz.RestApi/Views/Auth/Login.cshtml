@@ -1,0 +1,25 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div>
+				<form method="post" asp-controller="Auth" asp-action="Login">
+					<div>
+						<label>Id: </label> <input type="text" name="UserDto.Id" /><br />
+					</div>
+					<div>
+						<label>Имя: </label> <input type="text" name="UserDto.Name" /><br />
+					</div>
+					<div>
+						<label>Роль: </label> <input type="text" name="UserDto.Role" /><br />
+					</div>
+					<div>
+						<input type="submit" value="Войти" />
+					</div>
+				</form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>

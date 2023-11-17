@@ -2,6 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using Extensions.SettingsModels;
 using System.Text;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace MainTz.RestApi.Configurations.AuthConfigration
 {

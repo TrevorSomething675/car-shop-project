@@ -26,8 +26,7 @@ namespace MainTz.AuthApi.Services
 					claims: claims,
 					expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
 					signingCredentials: new SigningCredentials(
-						new SymmetricSecurityKey(
-							Encoding.UTF8.GetBytes(_authSettings.Key)), 
+						new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authSettings.Key)), 
 						SecurityAlgorithms.HmacSha256)
 					);
 

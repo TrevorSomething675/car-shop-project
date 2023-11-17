@@ -16,9 +16,6 @@ namespace MainTz.RestApi.BLL.Services
 				request.Content = requestMessage;
 				using var response = await client.SendAsync(request);
 				result = await response.Content.ReadAsStringAsync();
-
-				client.DefaultRequestHeaders.Authorization = 
-					new AuthenticationHeaderValue("Bearer", result);
 			}
 			catch (Exception ex)
 			{

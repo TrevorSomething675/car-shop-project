@@ -1,7 +1,7 @@
 ﻿using MainTz.RestApi.DAL.Repositories.Abstractions;
+using MainTz.RestApi.DAL.Data.Models.DtoModels;
 using MainTz.RestApi.BLL.Services.Abstractions;
 using MainTz.RestApi.dal.Data.Models.Entities;
-using MainTz.RestApi.DAL.Data.Models.DtoModels;
 using AutoMapper;
 
 namespace MainTz.RestApi.BLL.Services
