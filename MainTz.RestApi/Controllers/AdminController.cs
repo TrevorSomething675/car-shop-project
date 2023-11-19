@@ -5,15 +5,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MainTz.RestApi.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly IUsersService _usersService;
-        public AdminController(IUsersService usersService) 
+        public AdminController(IUsersService usersService)
         {
-			_usersService = usersService;
+            _usersService = usersService;
         }
 
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var model = await _usersService.GetUsers();

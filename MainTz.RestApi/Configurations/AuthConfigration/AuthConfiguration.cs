@@ -2,7 +2,6 @@
 using Microsoft.IdentityModel.Tokens;
 using Extensions.SettingsModels;
 using System.Text;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace MainTz.RestApi.Configurations.AuthConfigration
 {
@@ -10,9 +9,14 @@ namespace MainTz.RestApi.Configurations.AuthConfigration
 	{
 		public static IServiceCollection AddAppAuth(this IServiceCollection services, AuthSettings authSettings)
 		{
-			services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-				.AddJwtBearer(options =>
+			services.AddAuthentication(options =>
+			{
+				options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+				options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+			}).AddJwtBearer(options =>
 				{
+					options.RequireHttpsMetadata = false;
+					options.SaveToken = true;
 					options.TokenValidationParameters = new TokenValidationParameters
 					{
 						ValidateIssuer = true,

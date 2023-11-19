@@ -3,6 +3,7 @@ using MainTz.RestApi.BLL.Services.Abstractions;
 using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
 using Extensions;
+using Microsoft.AspNetCore.Authentication;
 
 namespace MainTz.RestApi.Controllers
 {
@@ -17,8 +18,6 @@ namespace MainTz.RestApi.Controllers
             _clientService = clientService;
 			_usersService = usersService;
 		}
-
-		
 
 		[HttpPost]
 		public async Task<string> GetToken(string role) // отправка сообщения и получение токена из AuthApi
