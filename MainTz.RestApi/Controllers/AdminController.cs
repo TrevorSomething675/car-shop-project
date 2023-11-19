@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MainTz.RestApi.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly IUsersService _usersService;
