@@ -4,19 +4,27 @@ using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
 using Extensions;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
+using MainTz.RestApi.dal.Data.Models.Entities;
+using System.Runtime.CompilerServices;
 
 namespace MainTz.RestApi.Controllers
 {
     public class AuthController : Controller
 	{
+		private readonly IHttpContextAccessor _contextAccessor;
 		private readonly AuthApiSettings _authApiSettings;
+		private readonly SignInManager<User> _signInManager;
+		private readonly UserManager<User> _userManager;
 		private readonly IClientService _clientService;
-		private readonly IUsersService _usersService;
-		public AuthController(IClientService clientService, IUsersService usersService)
+		public AuthController(IClientService clientService, UserManager<User> userManager,
+            IHttpContextAccessor contextAccessor, SignInManager<User> signInManager)
 		{
 			_authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
+			_contextAccessor = contextAccessor;
             _clientService = clientService;
-			_usersService = usersService;
+			_signInManager = signInManager;
+			_userManager = userManager;
 		}
 
 		[HttpPost]
@@ -38,17 +46,26 @@ namespace MainTz.RestApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IResult> Login(UserDto userDto)
+        public async Task<IActionResult> Login(UserDto userDto)
 		{
 			try
 			{
-				await _usersService.CreateUser(userDto);
+				//var user = await _userManager.GetUserAsync(_contextAccessor.HttpContext.User);
+
+				//if (user == null)
+				//	return BadRequest("Пользователь не зарегистрирован");
+
 				var token = await GetToken(userDto.Role.ToString());
-				return Results.Json(token);
+				//user.AccessToken = token;
+				
+				//await _userManager.UpdateAsync(user);
+				//_signInManager.SignInAsync(user);
+
+				return Ok(token);
             }
 			catch(Exception ex)
 			{
-				return Results.Json($"{ex.Message}");
+				return BadRequest($"{ex.Message}");
             }
 
         }

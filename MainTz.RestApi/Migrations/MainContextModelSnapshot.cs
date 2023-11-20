@@ -259,6 +259,10 @@ namespace MainTz.RestApi.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser<int>");
 
+                    b.Property<string>("AccessToken")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
