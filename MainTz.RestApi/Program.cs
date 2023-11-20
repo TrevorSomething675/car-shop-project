@@ -25,7 +25,7 @@ services.AddAppSwagger();
 services.AddAppRepositories(); //Регистрация репозиториев
 services.AddAppServices(); //Регистрация сервисов
 services.AddAppAuth(jwtAuthSettings); // Аутентификация
-services.AddAppIdentity(); //Настройка Identity
+//services.AddAppIdentity(); //Настройка Identity
 
 services.AddAuthorization();
 

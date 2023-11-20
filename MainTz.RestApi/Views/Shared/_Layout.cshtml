@@ -21,16 +21,18 @@
                     <ul class="navbar-nav flex-grow-1">
 
                         <li class="nav-item">
-                            <button onclick="SendGetRequest('Manager/Index')" class="nav-link text-dark" id="UserPage">User</button>
+                            <button onclick="SendGetRequest('User/Index')" class="nav-link text-dark" id="UserPage">User</button>
                             @* <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">User</a> *@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Manager" asp-action="Index">Manager</a>
+                            <button onclick="SendGetRequest('Manager/Index')">Manager</button>
+                            @* <a class="nav-link text-dark" asp-area="" asp-controller="Manager" asp-action="Index">Manager</a> *@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                            <button onclick="SendGetRequest('Admin/Index')">Admin</button>
+                            @* <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a> *@
                         </li>
 
                     </ul>

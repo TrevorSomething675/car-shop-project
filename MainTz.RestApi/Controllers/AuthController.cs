@@ -14,17 +14,17 @@ namespace MainTz.RestApi.Controllers
 	{
 		private readonly IHttpContextAccessor _contextAccessor;
 		private readonly AuthApiSettings _authApiSettings;
-		private readonly SignInManager<User> _signInManager;
-		private readonly UserManager<User> _userManager;
+		//private readonly SignInManager<User> _signInManager;
+		//private readonly UserManager<User> _userManager;
 		private readonly IClientService _clientService;
-		public AuthController(IClientService clientService, UserManager<User> userManager,
-            IHttpContextAccessor contextAccessor, SignInManager<User> signInManager)
+		public AuthController(IClientService clientService/*, UserManager<User> userManager*/,
+            IHttpContextAccessor contextAccessor/*, SignInManager<User> signInManager*/)
 		{
 			_authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
 			_contextAccessor = contextAccessor;
             _clientService = clientService;
-			_signInManager = signInManager;
-			_userManager = userManager;
+			//_signInManager = signInManager;
+			//_userManager = userManager;
 		}
 
 		[HttpPost]
@@ -50,7 +50,7 @@ namespace MainTz.RestApi.Controllers
 		{
 			try
 			{
-				var user = await _userManager.GetUserAsync(_contextAccessor.HttpContext.User);
+				//var user = await _userManager.GetUserAsync(_contextAccessor.HttpContext.User);
 
 				//if (user == null)
 				//	return BadRequest("Пользователь не зарегистрирован");
