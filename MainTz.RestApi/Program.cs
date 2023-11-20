@@ -8,6 +8,7 @@ using Extensions.SettingsModels;
 using MainTz.RestApi;
 using Extensions;
 using MainTz.RestApi.MiddleWares;
+using MainTz.RestApi.Configurations.IdentityConfiguration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,7 @@ services.AddAppSwagger();
 services.AddAppRepositories(); //Регистрация репозиториев
 services.AddAppServices(); //Регистрация сервисов
 services.AddAppAuth(jwtAuthSettings); // Аутентификация
+services.AddAppIdentity(); //Настройка Identity
 
 services.AddAuthorization();
 
@@ -49,11 +51,10 @@ using (var scope = app.Services.CreateScope())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseDefaultFiles();
-
 app.UseRouting();
 
 app.UseAppAuth();
-app.UseMiddleware<JwtMiddleware>();
+//app.UseMiddleware<JwtMiddleware>();
 
 app.MapControllerRoute(
     name: "default",

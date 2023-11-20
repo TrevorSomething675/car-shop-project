@@ -7,7 +7,7 @@ namespace MainTz.RestApi.Configurations.IdentityConfiguration
     {
         public static IServiceCollection AddAppIdentity(this IServiceCollection services)
         {
-            services.AddIdentity<User, IdentityRole>().
+            services.AddIdentity<User, IdentityRole<int>>().
                 AddEntityFrameworkStores<MainContext>().
                 AddUserManager<UserManager<User>>().
                 AddSignInManager<SignInManager<User>>();

@@ -1,12 +1,12 @@
 ﻿using MainTz.RestApi.DAL.Data.Models.DtoModels;
 using MainTz.RestApi.BLL.Services.Abstractions;
+using MainTz.RestApi.dal.Data.Models.Entities;
+using Microsoft.AspNetCore.Authentication;
+using System.Runtime.CompilerServices;
+using Microsoft.AspNetCore.Identity;
 using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
 using Extensions;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Identity;
-using MainTz.RestApi.dal.Data.Models.Entities;
-using System.Runtime.CompilerServices;
 
 namespace MainTz.RestApi.Controllers
 {
@@ -46,11 +46,11 @@ namespace MainTz.RestApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(UserDto userDto)
+        public async Task<IResult> Login(UserDto userDto)
 		{
 			try
 			{
-				//var user = await _userManager.GetUserAsync(_contextAccessor.HttpContext.User);
+				var user = await _userManager.GetUserAsync(_contextAccessor.HttpContext.User);
 
 				//if (user == null)
 				//	return BadRequest("Пользователь не зарегистрирован");
@@ -61,11 +61,11 @@ namespace MainTz.RestApi.Controllers
 				//await _userManager.UpdateAsync(user);
 				//_signInManager.SignInAsync(user);
 
-				return Ok(token);
+				return Results.Json(token);
             }
 			catch(Exception ex)
 			{
-				return BadRequest($"{ex.Message}");
+				return Results.Json($"{ex.Message}");
             }
 
         }

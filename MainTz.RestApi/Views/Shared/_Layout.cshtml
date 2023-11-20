@@ -21,7 +21,8 @@
                     <ul class="navbar-nav flex-grow-1">
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">User</a>
+                            <button onclick="SendGetRequest('Manager/Index')" class="nav-link text-dark" id="UserPage">User</button>
+                            @* <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">User</a> *@
                         </li>
 
                         <li class="nav-item">
