@@ -11,25 +11,21 @@ namespace MainTz.RestApi.Configurations.AuthConfigration
 		public static IServiceCollection AddAppAuth(this IServiceCollection services, AuthSettings authSettings)
 		{
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddJwtBearer(options =>
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
                     {
-                        options.TokenValidationParameters = new TokenValidationParameters
-                        {
-                            ValidateIssuer = true,
-                            ValidIssuer = authSettings.Issuer,
-                            ValidateAudience = true,
-                            ValidAudience = authSettings.Audience,
-                            ValidateLifetime = true,
-                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authSettings.Key)),
-                            ValidateIssuerSigningKey = true
-                        };
-                    });
+                        ValidateIssuer = true,
+                        ValidIssuer = authSettings.Issuer,
+                        ValidateAudience = true,
+                        ValidAudience = authSettings.Audience,
+                        ValidateLifetime = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authSettings.Key)),
+                        ValidateIssuerSigningKey = true,
+                    };
+                });
 
-            services.AddAuthorization(options =>
-            {
-                options.DefaultPolicy = new AuthorizationPolicyBuilder(JwtBearerDefaults.AuthenticationScheme)
-                    .RequireAuthenticatedUser().Build();
-            });
+            services.AddAuthorization();
 
             return services;
 		}

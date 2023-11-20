@@ -7,11 +7,6 @@ using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
 using MainTz.RestApi;
 using Extensions;
-using MainTz.RestApi.MiddleWares;
-using MainTz.RestApi.Configurations.IdentityConfiguration;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -55,16 +50,10 @@ app.UseDefaultFiles();
 app.UseRouting();
 
 app.UseAppAuth();
-//app.UseMiddleware<JwtMiddleware>();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.UseCors(x => x
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader());
 
 app.UseAppSwagger();
 

@@ -165,10 +165,6 @@
               "target": "Package",
               "version": "[7.0.14, )"
             },
-            "Microsoft.IdentityModel.Tokens": {
-              "target": "Package",
-              "version": "[7.0.3, )"
-            },
             "NLog": {
               "target": "Package",
               "version": "[5.2.5, )"
