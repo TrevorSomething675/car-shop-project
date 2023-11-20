@@ -9,6 +9,9 @@ using MainTz.RestApi;
 using Extensions;
 using MainTz.RestApi.MiddleWares;
 using MainTz.RestApi.Configurations.IdentityConfiguration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,8 +29,6 @@ services.AddAppRepositories(); //Регистрация репозиториев
 services.AddAppServices(); //Регистрация сервисов
 services.AddAppAuth(jwtAuthSettings); // Аутентификация
 //services.AddAppIdentity(); //Настройка Identity
-
-services.AddAuthorization();
 
 var app = builder.Build();
 

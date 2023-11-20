@@ -2,6 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using Extensions.SettingsModels;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MainTz.RestApi.Configurations.AuthConfigration
 {
@@ -15,14 +16,21 @@ namespace MainTz.RestApi.Configurations.AuthConfigration
                         options.TokenValidationParameters = new TokenValidationParameters
                         {
                             ValidateIssuer = true,
-                            ValidateAudience = true,
-                            ValidateLifetime = true,
-                            ValidateIssuerSigningKey = true,
                             ValidIssuer = authSettings.Issuer,
+                            ValidateAudience = true,
                             ValidAudience = authSettings.Audience,
-                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authSettings.Key))
+                            ValidateLifetime = true,
+                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authSettings.Key)),
+                            ValidateIssuerSigningKey = true
                         };
                     });
+
+            services.AddAuthorization(options =>
+            {
+                options.DefaultPolicy = new AuthorizationPolicyBuilder(JwtBearerDefaults.AuthenticationScheme)
+                    .RequireAuthenticatedUser().Build();
+            });
+
             return services;
 		}
 

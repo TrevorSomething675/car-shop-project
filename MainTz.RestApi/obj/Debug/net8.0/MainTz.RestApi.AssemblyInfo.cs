@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MainTz.RestApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ae97b796778b460647a0ef7a9c967345f01f181")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd6071133f305b8655c488f73e532316eaf64404")]
 [assembly: System.Reflection.AssemblyProductAttribute("MainTz.RestApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MainTz.RestApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

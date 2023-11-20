@@ -14,10 +14,11 @@ app.Run(async (context) =>
 	{
 		using StreamReader reader = new StreamReader(context.Request.Body);
 		string role = await reader.ReadToEndAsync();
+		var resultrole = role.Replace("=", ""); 
 		var tokenService = app.Services.GetRequiredService<ITokenService>();
 
 		Roles resultEnum;
-		Enum.TryParse(role, out resultEnum);
+		Enum.TryParse(resultrole, out resultEnum);
 
 		var token = tokenService.CreateAccessToken(resultEnum);
 		await context.Response.WriteAsync(token);
