@@ -45,29 +45,29 @@ namespace MainTz.RestApi.Controllers
 			return View();
         }
 
-  //      [HttpPost]
-  //      public async Task<IResult> Login(UserDto userDto)
-		//{
-		//	try
-		//	{
-		//		//var user = await _userManager.GetUserAsync(_contextAccessor.HttpContext.User);
+		[HttpPost]
+		public async Task<IResult> Login(UserDto userDto)
+		{
+			try
+			{
+				//var user = await _userManager.GetUserAsync(_contextAccessor.HttpContext.User);
 
-		//		//if (user == null)
-		//		//	return BadRequest("Пользователь не зарегистрирован");
+				//if (user == null)
+				//	return BadRequest("Пользователь не зарегистрирован");
 
-		//		//var token = await GetToken(userDto.Role.ToString());
-		//		//user.AccessToken = token;
-				
-		//		//await _userManager.UpdateAsync(user);
-		//		//_signInManager.SignInAsync(user);
+				var token = await GetToken(userDto.Role.ToString());
+				//user.AccessToken = token;
 
-		//		//return Results.Json(token);
-  //          }
-		//	catch(Exception ex)
-		//	{
-		//		return Results.Json($"{ex.Message}");
-  //          }
+				//await _userManager.UpdateAsync(user);
+				//_signInManager.SignInAsync(user);
 
-  //      }
+				return Results.Json(token);
+			}
+			catch (Exception ex)
+			{
+				return Results.Json($"{ex.Message}");
+			}
+
+		}
 	}
 }

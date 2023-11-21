@@ -8,7 +8,9 @@ namespace MainTz.RestApi.Configurations.AutoMapperConfiguration.Mappings
 	{
 		public UserMap() 
 		{
-			CreateMap<User, UserDto>().ReverseMap();
+			CreateMap<User, UserDto>().
+				ForMember(user => user.Id, opt => opt.Ignore()).
+				ForMember(user => user.Role, opt => opt.Ignore()).ReverseMap();
 		}
 	}
 }

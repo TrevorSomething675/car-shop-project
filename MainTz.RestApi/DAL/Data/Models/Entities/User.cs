@@ -2,7 +2,7 @@
 
 namespace MainTz.RestApi.dal.Data.Models.Entities
 {
-    public class User : IdentityUser<int>
+    public class User : BaseEntity
     {
         public string Name { get; set; }
         public string AccessToken { get; set; }

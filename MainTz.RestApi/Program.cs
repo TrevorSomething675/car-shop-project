@@ -7,6 +7,7 @@ using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
 using MainTz.RestApi;
 using Extensions;
+using MainTz.RestApi.Configurations.IdentityConfiguration;
 
 var builder = WebApplication.CreateBuilder(args);
 

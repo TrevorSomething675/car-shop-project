@@ -12,6 +12,7 @@ namespace MainTz.RestApi.Configurations.AutoMapperConfiguration
             services.AddAutoMapper(config =>
             {
                 config.AddProfile<CarMap>();
+                config.AddProfile<UserMap>();
             });
 
             return services;

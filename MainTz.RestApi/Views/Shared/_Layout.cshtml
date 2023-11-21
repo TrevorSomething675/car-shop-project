@@ -31,8 +31,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <button onclick="SendGetRequest('Admin/Index')">Admin</button>
-                            @* <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a> *@
+                            @* <button onclick="SendGetRequest('Admin/Index')">Admin</button>  *@
+                            <a class="nav-link text-dark adminbtn" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
                         </li>
 
                     </ul>
@@ -58,8 +58,9 @@
             @RenderBody()
         </main>
     </div>
+    <script>
 
-
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
