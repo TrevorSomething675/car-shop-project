@@ -1,9 +1,6 @@
 ﻿using MainTz.RestApi.DAL.Data.Models.DtoModels;
 using MainTz.RestApi.BLL.Services.Abstractions;
 using MainTz.RestApi.dal.Data.Models.Entities;
-using Microsoft.AspNetCore.Authentication;
-using System.Runtime.CompilerServices;
-using Microsoft.AspNetCore.Identity;
 using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
 using Extensions;
@@ -14,17 +11,16 @@ namespace MainTz.RestApi.Controllers
 	{
 		private readonly IHttpContextAccessor _contextAccessor;
 		private readonly AuthApiSettings _authApiSettings;
-		//private readonly SignInManager<User> _signInManager;
-		//private readonly UserManager<User> _userManager;
 		private readonly IClientService _clientService;
-		public AuthController(IClientService clientService/*, UserManager<User> userManager*/,
-            IHttpContextAccessor contextAccessor/*, SignInManager<User> signInManager*/)
+		private readonly IUsersService _usersService;
+
+		public AuthController(IClientService clientService,
+            IHttpContextAccessor contextAccessor, IUsersService usersService)
 		{
 			_authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
 			_contextAccessor = contextAccessor;
             _clientService = clientService;
-			//_signInManager = signInManager;
-			//_userManager = userManager;
+			_usersService = usersService;
 		}
 
 		[HttpPost]
@@ -50,24 +46,21 @@ namespace MainTz.RestApi.Controllers
 		{
 			try
 			{
-				//var user = await _userManager.GetUserAsync(_contextAccessor.HttpContext.User);
+				var user = await _usersService.GetUserByName(userDto.Name);
 
-				//if (user == null)
-				//	return BadRequest("Пользователь не зарегистрирован");
+				if (user == null)
+					return Results.BadRequest("Пользователя не существует");
+				if (userDto.Password != user.Password)
+					return Results.BadRequest("Неверный пароль");
 
-				var token = await GetToken(userDto.Role.ToString());
-				//user.AccessToken = token;
-
-				//await _userManager.UpdateAsync(user);
-				//_signInManager.SignInAsync(user);
+                var token = GetToken(user.Role.ToString());
 
 				return Results.Json(token);
 			}
 			catch (Exception ex)
 			{
-				return Results.Json($"{ex.Message}");
+				return Results.BadRequest($"{ex.Message}");
 			}
-
 		}
 	}
 }

@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Extensions;
 
 namespace MainTz.RestApi.dal.Data.Models.Entities
 {
     public class User : BaseEntity
     {
         public string Name { get; set; }
-        public string AccessToken { get; set; }
-    }
+        public string Password { get; set; }
+		public Roles Role { get; set; }
+	}
 }

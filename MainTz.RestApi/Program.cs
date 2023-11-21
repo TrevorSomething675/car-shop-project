@@ -24,7 +24,6 @@ services.AddAppSwagger();
 services.AddAppRepositories(); //Регистрация репозиториев
 services.AddAppServices(); //Регистрация сервисов
 services.AddAppAuth(jwtAuthSettings); // Аутентификация
-//services.AddAppIdentity(); //Настройка Identity
 
 var app = builder.Build();
 
@@ -35,6 +34,25 @@ using (var scope = app.Services.CreateScope())
     {
         try
         {
+            //context.Users.AddRange(new User
+            //{
+            //    Name = "User",
+            //    Password = "123",
+            //    Role = Roles.User
+            //},
+            //new User
+            //{
+            //    Name = "Manager",
+            //    Password = "123",
+            //    Role = Roles.Manager
+            //},
+            //new User
+            //{
+            //    Name = "Admin",
+            //    Password = "123",
+            //    Role = Roles.Admin
+            //});
+            //context.SaveChanges();
             context.Database.Migrate();
         }
         catch
@@ -54,7 +72,7 @@ app.UseAppAuth();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Auth}/{action=Login}/{id?}");
 
 app.UseAppSwagger();
 

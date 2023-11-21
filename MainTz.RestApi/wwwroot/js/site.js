@@ -1,20 +1,20 @@
-﻿var token = localStorage.getItem('token');
+﻿//var token = localStorage.getItem('token');
 
-const button = document.querySelector('.adminbtn');
-button.addEventListener('click', (event) => {
-    event.preventDefault();
-    const url = button.getAttribute('href');
-    const requestToken = token;
-    const xhr = new XMLHttpRequest();
+//const button = document.querySelector('.adminbtn');
+//button.addEventListener('click', (event) => {
+//    event.preventDefault();
+//    const url = button.getAttribute('href');
+//    const requestToken = token;
+//    const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', url);
-    xhr.setRequestHeader('Authorization', 'Bearer ' + token);
+//    xhr.open('GET', url);
+//    xhr.setRequestHeader('Authorization', 'Bearer ' + token);
 
-    xhr.send();
-    xhr.onload = function (event) {
-        document.body.innerHTML = xhr.responseText;
-    }
-})
+//    xhr.send();
+//    xhr.onload = function (event) {
+//        document.body.innerHTML = xhr.responseText;
+//    }
+//})
 
 //function SendGetRequest(url){
 //    fetch(url, {

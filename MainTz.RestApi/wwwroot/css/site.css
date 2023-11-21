@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.rest-api-form{
+    border-radius: 5px;
+    background-color:lightblue;
+}

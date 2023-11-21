@@ -18,6 +18,13 @@ namespace MainTz.RestApi.BLL.Services
 			_mapper = mapper;
 			_userRepository = userRepository;
 		}
+		public async Task<UserDto> GetUserByName(string name)
+		{
+			var user = await _userRepository.GetUserByName(name);
+			var userDto = _mapper.Map<UserDto>(user);
+
+			return userDto;
+		}
 
 		public async Task<List<UserDto>> GetUsers()
 		{

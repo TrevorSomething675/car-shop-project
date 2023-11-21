@@ -1,57 +1,22 @@
 ﻿<div class="container">
     <div class="row">
-        <div class="col-12">
-            <div>
-				<form method="post" asp-controller="Auth" asp-action="Login" id="AuthForm">
-					<div>
-						<label>Id: </label> <input type="text" name="UserDto.Id" /><br />
-					</div>
-					<div>
-						<label>Имя: </label> <input type="text" name="UserDto.Name" /><br />
-					</div>
-					<div>
-						<label>Роль: </label> <input type="text" name="UserDto.Role" /><br />
-					</div>
-					<div>
-						<input type="submit" value="Войти" />
-					</div>
-				</form>
-            </div>
+        <div class="d-flex align-content-center justify-content-center">
+            <form method="post" asp-controller="Auth" asp-action="Login" id="AuthForm">
+                <div class="rest-api-form px-2 py-1">
+                    <h2>Аутентификация</h2>
+		    	    <div class="py-2">
+                        <label class="px-1">Имя: </label> <input type="text" name="UserDto.Name" class="w-100"/><br />
+		    	    </div>
+                    <div class="py-2">
+                        <lable class="px-1">Пароль: </lable> <input type="password" name="userDto.Password" class="w-100"/><br />
+                    </div>
+                    <div class="py-2 d-flex justify-content-center">
+		    	    	<input class="w-50 h-100 text-center" type="submit" value="Войти" />
+		    	    </div>
+                 </div>
+		    </form> 
         </div>
     </div>
 </div>
 
-<script>
-    /*Получение токена после отправки формы*/
-    document.addEventListener('DOMContentLoaded', function () {
-        const form = document.querySelector('#AuthForm');
-
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            fetch(form.action, {
-                method: form.method,
-                body: new FormData(form)
-            })
-                .then(response => {
-                    if (response.ok) {
-                        return response.json();
-                    } else {
-                        throw new Error('Ошибка при отправке формы');
-                    }
-                })
-                .then(data => {
-                    const token = data;
-                    if (token) {
-                        localStorage.setItem('token', token);
-                        console.log('Токен успешно сохранен в LocalStorage:', token);
-                    } else {
-                        throw new Error('Токен не найден в ответе сервера');
-                    }
-                })
-                .catch(error => {
-                    console.error('Произошла ошибка:', error);
-                });
-        });
-    });
-</script>
+<script src="js/FormScripts.js"></script>

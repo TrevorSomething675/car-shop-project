@@ -14,10 +14,10 @@ namespace MainTz.RestApi.DAL.Repositories
             _mainContext = mainContext;
         }
 
-        public async Task<User> GetUserById(int id)
-        {
+        public async Task<User> GetUserByName(string name)
+		{
             var user = await _mainContext.Users
-                .FirstOrDefaultAsync(user=>user.Id == id);
+                .FirstOrDefaultAsync(user=>user.Name == name);
             return user;
 
         }
