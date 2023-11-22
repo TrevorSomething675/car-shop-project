@@ -11,7 +11,7 @@
 
         public async Task Invoke(HttpContext context)
         {
-            string token = context.Request.Cookies["token"];
+            string token = context.Request.Cookies["accessToken"];
 
             if (!string.IsNullOrEmpty(token))
             {

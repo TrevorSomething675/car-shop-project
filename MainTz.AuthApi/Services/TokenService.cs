@@ -23,7 +23,24 @@ namespace MainTz.AuthApi.Services
                     issuer: _authSettings.Issuer,
                     audience: _authSettings.Audience,
                     claims: claims,
-                    expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(30)),
+                    expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(_authSettings.AccessTokenExp)),
+                    signingCredentials: new SigningCredentials(
+                        new SymmetricSecurityKey(
+                            Encoding.UTF8.GetBytes(_authSettings.Key)),
+                        SecurityAlgorithms.HmacSha256)
+                    );
+
+            return new JwtSecurityTokenHandler().WriteToken(jwt);
+        }
+
+        public string CreateRefreshToken(Roles roles)
+        {
+            var claims = new List<Claim> { new Claim(ClaimTypes.Role, roles.ToString()) };
+            var jwt = new JwtSecurityToken(
+                    issuer: _authSettings.Issuer,
+                    audience: _authSettings.Audience,
+                    claims: claims,
+                    expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(_authSettings.RefreshTokenExp)),
                     signingCredentials: new SigningCredentials(
                         new SymmetricSecurityKey(
                             Encoding.UTF8.GetBytes(_authSettings.Key)),

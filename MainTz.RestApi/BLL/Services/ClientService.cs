@@ -1,28 +1,28 @@
 ﻿using MainTz.RestApi.BLL.Services.Abstractions;
-using System.Net.Http.Headers;
+using MainTz.RestApi.DAL.Data.Models.Models;
 
 namespace MainTz.RestApi.BLL.Services
 {
 	public class ClientService : IClientService
 	{
-		public async Task<string> SendRequest(string url, string message)
+		public async Task<TokensModel> SendRequest(string url, string message)
 		{
-			string result;
-			try
+			TokensModel tokens;
+            try
 			{
 				var client = new HttpClient();
 				StringContent requestMessage = new StringContent(message);
 				using var request = new HttpRequestMessage(HttpMethod.Post, url);
 				request.Content = requestMessage;
 				using var response = await client.SendAsync(request);
-				result = await response.Content.ReadAsStringAsync();
+                tokens = await response.Content.ReadFromJsonAsync<TokensModel>();
 			}
 			catch (Exception ex)
 			{
-				result = null; // Уточнить
+				return null; // Уточнить
 			}
 
-			return result;
+			return tokens;
 		}
 	}
 }

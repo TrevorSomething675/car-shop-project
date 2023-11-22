@@ -4,6 +4,7 @@ using MainTz.RestApi.dal.Data.Models.Entities;
 using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
 using Extensions;
+using MainTz.RestApi.DAL.Data.Models.Models;
 
 namespace MainTz.RestApi.Controllers
 {
@@ -24,15 +25,15 @@ namespace MainTz.RestApi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<string> GetToken(string role) // отправка сообщения и получение токена из AuthApi
+		public async Task<TokensModel> GetToken(string role) // отправка сообщения и получение токена из AuthApi
 		{
 			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenUrl}";
-			var token = await _clientService.SendRequest(tokenUrl, role);
+            TokensModel tokens = await _clientService.SendRequest(tokenUrl, role);
 
-			if (token == null)
-				return "Пустой токен";
+			//if (token == null)
+			//	return "Пустой токен";
 
-			return token;
+			return tokens;
 		}
 
 		[HttpGet]
@@ -53,9 +54,11 @@ namespace MainTz.RestApi.Controllers
 				if (userDto.Password != user.Password)
 					return Results.BadRequest("Неверный пароль");
 
-                var token = await GetToken(user.Role.ToString());
+                var tokens = await GetToken(user.Role.ToString());
 				var response = new {
-					Token = token, Role = user.Role.ToString() 
+					AccessToken = tokens.AccessToken, 
+					RefreshToken = tokens.RefreshToken, 
+					Role = user.Role.ToString()
 				};
 
 				return Results.Json(response);

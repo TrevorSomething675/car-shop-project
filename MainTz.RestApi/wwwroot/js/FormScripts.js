@@ -16,10 +16,13 @@
                 }
             })
             .then(data => {
-                const token = data.token;
-                if (token) {
-                    document.cookie = `token=${token}`;
-                    console.log('Токен успешно сохранен в Cookie:', token);
+                if (data != '') {
+                    document.cookie = `accessToken=${data.accessToken}`;
+                    document.cookie = `refreshToken=${data.refreshToken}`;
+                    console.log(`Access token: ${data.accesstoken} Refresh token: ${data.refreshtoken}`);
+                    if (data.role != '') {
+                        window.location.href = window.location.href + `${data.role}/Index`;
+                    }
                 } else {
                     throw new Error('Токен не найден в ответе сервера');
                 }

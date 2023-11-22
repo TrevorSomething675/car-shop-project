@@ -1,2 +1,2 @@
-﻿var token = document.cookie.getItem('token');
-var tokenhj = localStorage.getItem('token');
+﻿var accessToken = document.cookie.getItem('accessToken');
+var resreshToken = document.cookie.getItem('refreshToken');

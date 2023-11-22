@@ -10,7 +10,7 @@ var app = builder.Build();
 
 app.Run(async (context) =>
 {
-	if(context.Request.Path == "/GetAccessToken")
+	if(context.Request.Path == "/GetTokens")
 	{
 		using StreamReader reader = new StreamReader(context.Request.Body);
 		string role = await reader.ReadToEndAsync();
@@ -20,8 +20,10 @@ app.Run(async (context) =>
 		Roles resultEnum;
 		Enum.TryParse(resultrole, out resultEnum);
 
-		var token = tokenService.CreateAccessToken(resultEnum);
-		await context.Response.WriteAsync(token);
+		var accessToken = tokenService.CreateAccessToken(resultEnum);
+        var refreshToken = tokenService.CreateRefreshToken(resultEnum);
+
+		await context.Response.WriteAsJsonAsync(new { accessToken, refreshToken });
 	}
 });
 
