@@ -16,10 +16,10 @@
                 }
             })
             .then(data => {
-                const token = data;
+                const token = data.token;
                 if (token) {
-                    localStorage.setItem('token', token);
-                    console.log('Токен успешно сохранен в LocalStorage:', token);
+                    document.cookie = `token=${token}`;
+                    console.log('Токен успешно сохранен в Cookie:', token);
                 } else {
                     throw new Error('Токен не найден в ответе сервера');
                 }

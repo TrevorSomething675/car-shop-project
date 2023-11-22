@@ -17,15 +17,13 @@ namespace MainTz.RestApi
 
         public static IServiceCollection AddAppServices(this IServiceCollection services)
         {
+            services.AddHttpContextAccessor();
             services.AddControllersWithViews();
-			services.AddHttpContextAccessor();
 			services.AddScoped<ICarService, CarService>();
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<IClientService, ClientService>();
 
             return services;
         }
-
-
     }
 }

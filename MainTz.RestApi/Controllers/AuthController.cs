@@ -53,9 +53,12 @@ namespace MainTz.RestApi.Controllers
 				if (userDto.Password != user.Password)
 					return Results.BadRequest("Неверный пароль");
 
-                var token = GetToken(user.Role.ToString());
+                var token = await GetToken(user.Role.ToString());
+				var response = new {
+					Token = token, Role = user.Role.ToString() 
+				};
 
-				return Results.Json(token);
+				return Results.Json(response);
 			}
 			catch (Exception ex)
 			{

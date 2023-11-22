@@ -2,12 +2,12 @@ using MainTz.RestApi.Configurations.AutoMapperConfiguration;
 using MainTz.RestApi.Configurations.NLogConfiguration;
 using MainTz.RestApi.Configurations.AuthConfigration;
 using MainTz.RestApi.dal.Data.Models.Entities;
+using MainTz.RestApi.BLL.Middlewares;
 using Microsoft.EntityFrameworkCore;
 using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
 using MainTz.RestApi;
 using Extensions;
-using MainTz.RestApi.Configurations.IdentityConfiguration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,8 +21,8 @@ services.AddAppAutoMapperConfiguration(); // конфигурация автомаппера
 services.AddAppDbContext(dbSettings);
 services.AddAppSwagger();
 
-services.AddAppRepositories(); //Регистрация репозиториев
 services.AddAppServices(); //Регистрация сервисов
+services.AddAppRepositories(); //Регистрация репозиториев
 services.AddAppAuth(jwtAuthSettings); // Аутентификация
 
 var app = builder.Build();
@@ -68,6 +68,7 @@ app.UseStaticFiles();
 app.UseDefaultFiles();
 app.UseRouting();
 
+app.UseMiddleware<JwtHeaderMiddleware>();
 app.UseAppAuth();
 
 app.MapControllerRoute(
