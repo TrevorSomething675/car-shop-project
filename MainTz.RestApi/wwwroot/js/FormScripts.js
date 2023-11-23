@@ -1,9 +1,7 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('#AuthForm');
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
+    form.addEventListener('submit', function() {
         fetch(form.action, {
             method: form.method,
             body: new FormData(form)
@@ -20,9 +18,7 @@
                     document.cookie = `accessToken=${data.accessToken}`;
                     document.cookie = `refreshToken=${data.refreshToken}`;
                     console.log(`Access token: ${data.accesstoken} Refresh token: ${data.refreshtoken}`);
-                    if (data.role != '') {
-                        window.location.href = window.location.href + `${data.role}/Index`;
-                    }
+                    window.location.href = window.location.href + `${data.role}/Index`; //Перенаправление на страницу, в зависимости от роли
                 } else {
                     throw new Error('Токен не найден в ответе сервера');
                 }

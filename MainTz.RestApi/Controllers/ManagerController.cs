@@ -32,6 +32,7 @@ namespace MainTz.RestApi.Controllers
 				return BadRequest(ex.Message);
 			}
 		}
+
 		[HttpPost]
 		public async Task<IActionResult> DeleteCar(CarDto carDto)
 		{
@@ -45,6 +46,7 @@ namespace MainTz.RestApi.Controllers
 				return BadRequest(ex.Message);
 			}
 		}
+
 		[Authorize]
 		public async Task<IActionResult> GetInfo()
 		{
