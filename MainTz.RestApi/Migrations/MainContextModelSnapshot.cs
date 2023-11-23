@@ -64,8 +64,9 @@ namespace MainTz.RestApi.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<byte>("Role")
-                        .HasColumnType("smallint");
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

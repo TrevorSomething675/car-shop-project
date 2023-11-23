@@ -6,6 +6,6 @@ namespace MainTz.RestApi.DAL.Data.Models.DtoModels
 	{
 		public string Name { get; set; }
 		public string Password { get; set; }
-		public Roles Role { get; set; }
+		public string Role { get; set; }
 	}
 }

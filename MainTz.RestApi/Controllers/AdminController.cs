@@ -1,8 +1,6 @@
 ﻿using MainTz.RestApi.BLL.Services.Abstractions;
-using MainTz.RestApi.dal.Data.Models.Entities;
 using MainTz.RestApi.DAL.Data.Models.DtoModels;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MainTz.RestApi.Controllers

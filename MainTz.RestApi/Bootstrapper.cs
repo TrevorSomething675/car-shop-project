@@ -2,6 +2,7 @@
 using MainTz.RestApi.BLL.Services.Abstractions;
 using MainTz.RestApi.DAL.Repositories;
 using MainTz.RestApi.BLL.Services;
+using System.Text.Json.Serialization;
 
 namespace MainTz.RestApi
 {

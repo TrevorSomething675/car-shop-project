@@ -16,9 +16,9 @@ namespace MainTz.AuthApi.Services
             _authSettings = Settings.Load<AuthSettings>("AuthSettings");
 		}
 
-        public string CreateAccessToken(Roles roles)
+        public string CreateAccessToken(string role)
         {
-            var claims = new List<Claim> { new Claim(ClaimTypes.Role, roles.ToString()) };
+            var claims = new List<Claim> { new Claim(ClaimTypes.Role, role) };
             var jwt = new JwtSecurityToken(
                     issuer: _authSettings.Issuer,
                     audience: _authSettings.Audience,
@@ -33,9 +33,9 @@ namespace MainTz.AuthApi.Services
             return new JwtSecurityTokenHandler().WriteToken(jwt);
         }
 
-        public string CreateRefreshToken(Roles roles)
+        public string CreateRefreshToken(string role)
         {
-            var claims = new List<Claim> { new Claim(ClaimTypes.Role, roles.ToString()) };
+            var claims = new List<Claim> { new Claim(ClaimTypes.Role, role) };
             var jwt = new JwtSecurityToken(
                     issuer: _authSettings.Issuer,
                     audience: _authSettings.Audience,

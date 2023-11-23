@@ -38,19 +38,19 @@ using (var scope = app.Services.CreateScope())
             //{
             //    Name = "User",
             //    Password = "123",
-            //    Role = Roles.User
+            //    Role = "User"
             //},
             //new User
             //{
             //    Name = "Manager",
             //    Password = "123",
-            //    Role = Roles.Manager
+            //    Role = "Manager"
             //},
             //new User
             //{
             //    Name = "Admin",
             //    Password = "123",
-            //    Role = Roles.Admin
+            //    Role = "Admin"
             //});
             //context.SaveChanges();
             context.Database.Migrate();

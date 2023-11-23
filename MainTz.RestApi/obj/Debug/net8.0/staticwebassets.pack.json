@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\js\\FormScripts.js"
     },
     {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\JwtRefreshDemon.js",
+      "PackagePath": "staticwebassets\\js\\JwtRefreshDemon.js"
+    },
+    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

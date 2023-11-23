@@ -1,7 +1,9 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('#AuthForm');
 
-    form.addEventListener('submit', function() {
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
         fetch(form.action, {
             method: form.method,
             body: new FormData(form)
@@ -10,17 +12,18 @@
                 if (response.ok) {
                     return response.json();
                 } else {
-                    throw new Error('Ошибка при отправке формы');
+                    console.log('Ошибка при получении запроса');
                 }
             })
             .then(data => {
                 if (data != '') {
-                    document.cookie = `accessToken=${data.accessToken}`;
-                    document.cookie = `refreshToken=${data.refreshToken}`;
-                    console.log(`Access token: ${data.accesstoken} Refresh token: ${data.refreshtoken}`);
-                    window.location.href = window.location.href + `${data.role}/Index`; //Перенаправление на страницу, в зависимости от роли
+                    document.cookie = `accessToken=${data.value.accessToken}`;
+                    document.cookie = `refreshToken=${data.value.refreshToken}`;
+                    localStorage.setItem('role', data.value.role);
+                    console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
+                    window.location.href = window.location.href + `${data.value.role}/Index`; //Перенаправление на страницу, в зависимости от роли
                 } else {
-                    throw new Error('Токен не найден в ответе сервера');
+                    console.log('Данные не найдены в ответе сервера')
                 }
             })
             .catch(error => {
