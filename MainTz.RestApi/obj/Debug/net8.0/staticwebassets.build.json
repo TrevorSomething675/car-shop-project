@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cTvNsNp9bhM4GwdENjnixK8VNdF0xcpyusrdhQeDMf4=",
+  "Hash": "aXuVxT5WyBQWYobxDMb1yPtAY6KlUjW567Yc6HrvZLM=",
   "Source": "MainTz.RestApi",
   "BasePath": "_content/MainTz.RestApi",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\JwtRefreshDemon.js"
+    },
+    {
+      "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\RegisterFormScript.js",
+      "SourceId": "MainTz.RestApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\",
+      "BasePath": "_content/MainTz.RestApi",
+      "RelativePath": "js/RegisterFormScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\RegisterFormScript.js"
     },
     {
       "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\site.js",

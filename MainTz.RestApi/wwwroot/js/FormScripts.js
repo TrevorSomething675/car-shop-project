@@ -1,33 +1,31 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('#AuthForm');
+﻿const loginForm = document.querySelector('#LoginForm');
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
+loginForm.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-        fetch(form.action, {
-            method: form.method,
-            body: new FormData(form)
+    fetch(loginForm.action, {
+        method: loginForm.method,
+        body: new FormData(loginForm)
+    })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                console.log('Ошибка при получении запроса');
+            }
         })
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    console.log('Ошибка при получении запроса');
-                }
-            })
-            .then(data => {
-                if (data != '') {
-                    document.cookie = `accessToken=${data.value.accessToken}`;
-                    document.cookie = `refreshToken=${data.value.refreshToken}`;
-                    localStorage.setItem('role', data.value.role);
-                    console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
-                    window.location.href = window.location.href + `${data.value.role}/Index`; //Перенаправление на страницу, в зависимости от роли
-                } else {
-                    console.log('Данные не найдены в ответе сервера')
-                }
-            })
-            .catch(error => {
-                console.error('Произошла ошибка:', error);
-            });
-    });
+        .then(data => {
+            if (data != '') {
+                document.cookie = `accessToken=${data.value.accessToken}`;
+                document.cookie = `refreshToken=${data.value.refreshToken}`;
+                localStorage.setItem('role', data.value.role);
+                console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
+                document.location.pathname = `${data.value.role}/Index`;
+            } else {
+                console.log('Данные не найдены в ответе сервера')
+            }
+        })
+        .catch(error => {
+            console.error('Произошла ошибка:', error);
+        });
 });

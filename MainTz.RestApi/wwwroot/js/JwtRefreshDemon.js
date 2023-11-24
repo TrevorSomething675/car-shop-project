@@ -3,34 +3,33 @@
     var accessToken = GetCookie('accessToken');
     var refreshToken = GetCookie('refreshToken');
 
-
-
     fetch('../Auth/GetToken', {
         method: "POST",
         headers: {
-            "Accept": "application/json", "Content-Type": "application/json"
+            "Content-Type": "application/json"
         },
-        body: JSON.stringify({role: role})            
-        })
-        .then(response => {
-            if (response.ok) {
-                response.json();
-            } else {
-                console.log('Ошибка при получении ответа');
-            }
-        })
-        .then(data => {
-            if (data) {
-                document.cookie = `accessToken=${data.accessToken}`;
-                document.cookie = `refreshToken=${data.refreshToken}`;
-                localStorage.setItem('role', data.role);
-            } else {
-                console.log('Данные не найдены в ответе сервера');
-            }
-        })
-        .catch(error => {
-            console.log('Произошла ошибка:', error);
-        });
+        body: JSON.stringify(role)
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            console.log('Ошибка при получении запроса');
+        }
+    })
+    .then(data => {
+        if (data) {
+            document.cookie = "";
+            document.cookie = `accessToken=${data.accessToken}`;
+            document.cookie = `refreshToken=${data.refreshToken}`;
+            localStorage.setItem('role', data.role);
+        } else {
+            console.log('Данные не найдены в ответе сервера');
+        }
+    })
+    .catch(error => {
+        console.log('Произошла ошибка:', error);
+    });
 }
 
 function GetCookie(key) {
@@ -42,3 +41,4 @@ function GetCookie(key) {
         }
     }
 }
+

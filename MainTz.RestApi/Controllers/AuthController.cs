@@ -13,8 +13,7 @@ namespace MainTz.RestApi.Controllers
 		private readonly AuthApiSettings _authApiSettings;
 		private readonly IClientService _clientService;
 		private readonly IUsersService _usersService;
-
-		public AuthController(IClientService clientService,
+		public AuthController(IClientService clientService, 
             IHttpContextAccessor contextAccessor, IUsersService usersService)
 		{
 			_authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
@@ -23,8 +22,8 @@ namespace MainTz.RestApi.Controllers
 			_usersService = usersService;
 		}
 
-		[HttpPost]
-		public async Task<IResult> GetToken(string role) // отправка сообщения и получение токена из AuthApi
+        [HttpPost]
+		public async Task<IResult> GetToken([FromBody]string role) // отправка сообщения и получение токена из AuthApi
 		{
 			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenUrl}";
             TokensModel tokens = await _clientService.SendRequest(tokenUrl, role);
@@ -59,5 +58,27 @@ namespace MainTz.RestApi.Controllers
 				return Results.BadRequest($"{ex.Message}");
 			}
 		}
-	}
+
+        [HttpGet]
+        public async Task<IActionResult> Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IResult> Register(UserDto userDto)
+        {
+            var user = await _usersService.GetUserByName(userDto.Name);
+
+            if (user != null)
+                return Results.BadRequest("Пользователь уже существует");
+
+			userDto.Role = "User";
+            await _usersService.CreateUser(userDto);
+
+			var result =  await Login(userDto);
+
+			return result;
+        }
+    }
 }

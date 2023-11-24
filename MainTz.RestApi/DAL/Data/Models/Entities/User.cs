@@ -6,6 +6,6 @@ namespace MainTz.RestApi.dal.Data.Models.Entities
     {
         public string Name { get; set; }
         public string Password { get; set; }
-		public string Role { get; set; }
+        public string Role { get; set; }
 	}
 }

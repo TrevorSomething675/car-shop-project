@@ -1,6 +1,7 @@
 ﻿using MainTz.RestApi.DAL.Data.Models.DtoModels;
 using MainTz.RestApi.dal.Data.Models.Entities;
 using AutoMapper;
+using MainTz.RestApi.DAL.Repositories;
 
 namespace MainTz.RestApi.Configurations.AutoMapperConfiguration.Mappings
 {
