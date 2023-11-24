@@ -3,13 +3,15 @@
     var accessToken = GetCookie('accessToken');
     var refreshToken = GetCookie('refreshToken');
 
+
+
     fetch('../Auth/GetToken', {
         method: "POST",
         headers: {
-            'Content-Type': 'application/json'
+            "Accept": "application/json", "Content-Type": "application/json"
         },
-        body: JSON.stringify({ role: role }) 
-    })
+        body: JSON.stringify({role: role})            
+        })
         .then(response => {
             if (response.ok) {
                 response.json();
