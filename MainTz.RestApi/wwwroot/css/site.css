@@ -25,3 +25,10 @@ body {
     border-radius: 5px;
     background-color:lightblue;
 }
+
+.admin-page{
+    font-size:22px;
+}
+
+.user-commands-form {
+}
