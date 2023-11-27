@@ -5,6 +5,12 @@ namespace MainTz.RestApi.BLL.Services
 {
 	public class ClientService : IClientService
 	{
+		/// <summary>
+		/// Отправка запроса с получением данных в модель TokensModel
+		/// </summary>
+		/// <param name="url"></param>
+		/// <param name="message"></param>
+		/// <returns></returns>
 		public async Task<TokensModel> SendRequest(string url, string message)
 		{
 			TokensModel tokens;
@@ -19,7 +25,7 @@ namespace MainTz.RestApi.BLL.Services
 			}
 			catch (Exception ex)
 			{
-				return null; // Уточнить
+				return null; 
 			}
 
 			return tokens;

@@ -10,7 +10,6 @@ using MainTz.RestApi;
 using Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-
 var dbSettings = Settings.Load<DataBaseSettings>("DataBaseSettings");
 var jwtAuthSettings = Settings.Load<AuthSettings>("JwtAuthSettings");
 

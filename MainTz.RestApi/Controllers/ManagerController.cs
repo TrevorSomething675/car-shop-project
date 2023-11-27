@@ -14,43 +14,31 @@ namespace MainTz.RestApi.Controllers
 		{
 			_carService = carService;
 		}
-		public IActionResult Index()
+		public async Task<IActionResult> Index()
 		{
-			return View();
+			var model = await _carService.GetCars();
+			return View(model);
 		}
 
 		[HttpPost]
 		public async Task<IActionResult> CreateCar(CarDto carDto)
 		{
-			try
-			{
-				await _carService.CreateCar(carDto);
-				return Ok("Успешно добавлено");
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
+			var result = await _carService.CreateCar(carDto);
+			return RedirectToAction("Index");
 		}
 
 		[HttpPost]
 		public async Task<IActionResult> DeleteCar(CarDto carDto)
 		{
-			try
-			{
-				await _carService.DeleteCar(carDto);
-				return Ok("Успешно удалено");
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
+			var result = await _carService.DeleteCar(carDto);
+			return RedirectToAction("Index");
 		}
 
-		[Authorize]
-		public async Task<IActionResult> GetInfo()
+		[HttpPost]
+		public async Task<IActionResult> UpdateCar(CarDto carDto)
 		{
-			return Ok("Info data");
+			var result = await _carService.UpdateCar(carDto);
+			return RedirectToAction("Index");
 		}
 	}
 }

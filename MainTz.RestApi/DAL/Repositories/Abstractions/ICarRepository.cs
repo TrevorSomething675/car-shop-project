@@ -8,5 +8,6 @@ namespace MainTz.RestApi.DAL.Repositories.Abstractions
         public Task<List<Car>> GetCars();
         public Task Create(Car car);
         public Task Delete(Car car);
+        public Task Update(Car car);
     }
 }

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  maintz.restapi:
+    image: ${DOCKER_REGISTRY-}maintzrestapi
+    build:
+      context: .
+      dockerfile: MainTz.RestApi\Dockerfile

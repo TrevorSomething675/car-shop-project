@@ -16,7 +16,7 @@
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.14",
           "Microsoft.EntityFrameworkCore.Design": "7.0.14",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.14",
-          "NLog": "5.2.5",
+          "NLog": "5.2.6",
           "NLog.Extensions.Logging": "5.3.5",
           "NLog.Web.AspNetCore": "5.3.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
@@ -302,11 +302,11 @@
           }
         }
       },
-      "NLog/5.2.5": {
+      "NLog/5.2.6": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.2.5.2160"
+            "fileVersion": "5.2.6.2256"
           }
         }
       },
@@ -314,7 +314,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
-          "NLog": "5.2.5"
+          "NLog": "5.2.6"
         },
         "runtime": {
           "lib/net6.0/NLog.Extensions.Logging.dll": {
@@ -690,12 +690,12 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
-    "NLog/5.2.5": {
+    "NLog/5.2.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mMXtbAxfNzqkXcBjhJ3wN3rH7kwUZ0JL0GrUBI/lso7+tQ/HC4e5SnlmR3R5qQ9zWbqMbjxeH37rIf0yQGWTiA==",
-      "path": "nlog/5.2.5",
-      "hashPath": "nlog.5.2.5.nupkg.sha512"
+      "sha512": "sha512-7/RQ4VBu6HT6kieczhwfI52ugcxrsrMNWIGy43Q36SdfN5dApZW7otsgXuIXx2rKspIGkPhD99JVWIs6FtIilA==",
+      "path": "nlog/5.2.6",
+      "hashPath": "nlog.5.2.6.nupkg.sha512"
     },
     "NLog.Extensions.Logging/5.3.5": {
       "type": "package",

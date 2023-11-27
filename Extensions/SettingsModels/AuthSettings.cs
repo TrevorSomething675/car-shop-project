@@ -1,7 +1,9 @@
-﻿using System.Text;
-
-namespace Extensions.SettingsModels
+﻿namespace Extensions.SettingsModels
 {
+
+	/// <summary>
+	/// Настройка jwt токена, его ключ, издатель, получатель, время жизни Access токена и Refresh токена.
+	/// </summary>
 	public class AuthSettings
 	{
 		public string? Key { get; private set; }

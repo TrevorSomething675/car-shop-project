@@ -23,3 +23,11 @@
 2023-11-15 21:21:05.2788 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
 2023-11-15 21:21:05.3027 Info Validating config: TargetNames=LogFile, ConfigItems=14, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\MainTz.RestApi\bin\Debug\net8.0\nlog.config
 2023-11-15 21:21:05.3148 Info Configuration initialized.
+2023-11-27 15:12:54.5884 Info Registered target NLog.Targets.FileTarget(Name=LogFile)
+2023-11-27 15:12:54.6189 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.6.2256. Product version: 5.2.6+1d441552d39bd7e2bd31062e2e96de6828a83003. GlobalAssemblyCache: False
+2023-11-27 15:12:54.6189 Info Validating config: TargetNames=LogFile, ConfigItems=14, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-11-27 15:12:54.6352 Info Configuration initialized.
+2023-11-27 15:13:23.5730 Info Registered target NLog.Targets.FileTarget(Name=LogFile)
+2023-11-27 15:13:23.7137 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.6.2256. Product version: 5.2.6+1d441552d39bd7e2bd31062e2e96de6828a83003. GlobalAssemblyCache: False
+2023-11-27 15:13:23.7137 Info Validating config: TargetNames=LogFile, ConfigItems=14, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-11-27 15:13:23.7372 Info Configuration initialized.

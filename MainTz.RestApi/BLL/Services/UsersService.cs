@@ -9,14 +9,14 @@ namespace MainTz.RestApi.BLL.Services
 	public class UsersService : IUsersService
 	{
 		private readonly IUserRepository _userRepository;
-		private readonly IMapper _mapper;
 		private readonly ILogger<UsersService> _logger;
+		private readonly IMapper _mapper;
 
 		public UsersService(IUserRepository userRepository, ILogger<UsersService> logger, IMapper mapper) 
 		{
+			_userRepository = userRepository;
 			_logger = logger;
 			_mapper = mapper;
-			_userRepository = userRepository;
 		}
 		public async Task<UserDto> GetUserByName(string name)
 		{
@@ -34,42 +34,48 @@ namespace MainTz.RestApi.BLL.Services
 			return usersDto;
 		}
 
-		public async Task Update(UserDto userDto)
+		public async Task<bool> Update(UserDto userDto)
 		{
 			try
 			{
 				var user = _mapper.Map<User>(userDto);
 				await _userRepository.Update(user);
+				return true;
 			}
 			catch (Exception ex)
 			{
 				_logger.LogInformation($"{ex.Message}");
+				return false;
 			}
 		}
 
-		public async Task CreateUser(UserDto userDto)
+		public async Task<bool> Create(UserDto userDto)
 		{
 			try
 			{
 				var user = _mapper.Map<User>(userDto);
 				await _userRepository.Create(user);
+				return true;
 			}
 			catch(Exception ex)
 			{
 				_logger.LogInformation($"{ex.Message}");
+				return false;
 			}
 		}
 
-		public async Task Delete(UserDto userDto)
+		public async Task<bool> Delete(UserDto userDto)
 		{
 			try
 			{
 				var user = _mapper.Map<User>(userDto);
 				await _userRepository.Delete(user);
+				return true;
 			}
 			catch (Exception ex)
 			{
 				_logger.LogInformation($"{ex.Message}");
+				return false;
 			}
 		}
 	}

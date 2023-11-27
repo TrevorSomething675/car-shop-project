@@ -2,6 +2,9 @@
 
 namespace Extensions
 {
+    /// <summary>
+    /// Объект, с помощью которого мы достаём конфигурацию из appsettings и заносим её в дженерик T.
+    /// </summary>
 	public abstract class Settings
     {
         public static T Load<T>(string key, IConfiguration configuration = null)

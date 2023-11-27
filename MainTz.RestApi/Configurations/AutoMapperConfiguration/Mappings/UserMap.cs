@@ -13,8 +13,7 @@ namespace MainTz.RestApi.Configurations.AutoMapperConfiguration.Mappings
 		{
 			CreateMap<User, UserDto>();
 
-			CreateMap<UserDto, User>().
-				ForMember(user => user.Id, opt => opt.Ignore());
+			CreateMap<UserDto, User>();
 		}
 	}
 }

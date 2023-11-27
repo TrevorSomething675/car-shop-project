@@ -161,9 +161,13 @@
               "target": "Package",
               "version": "[7.0.14, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            },
             "NLog": {
               "target": "Package",
-              "version": "[5.2.5, )"
+              "version": "[5.2.6, )"
             },
             "NLog.Extensions.Logging": {
               "target": "Package",

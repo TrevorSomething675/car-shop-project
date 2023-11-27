@@ -9,15 +9,12 @@ namespace MainTz.RestApi.Controllers
 {
     public class AuthController : Controller
 	{
-		private readonly IHttpContextAccessor _contextAccessor;
 		private readonly AuthApiSettings _authApiSettings;
 		private readonly IClientService _clientService;
 		private readonly IUsersService _usersService;
-		public AuthController(IClientService clientService, 
-            IHttpContextAccessor contextAccessor, IUsersService usersService)
+		public AuthController(IClientService clientService, IUsersService usersService)
 		{
 			_authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
-			_contextAccessor = contextAccessor;
             _clientService = clientService;
 			_usersService = usersService;
 		}
@@ -96,7 +93,7 @@ namespace MainTz.RestApi.Controllers
                 return Results.BadRequest("Пользователь уже существует");
 
 			userDto.Role = "User";
-            await _usersService.CreateUser(userDto);
+            await _usersService.Create(userDto);
 
 			var result = await Login(userDto);
 

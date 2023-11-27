@@ -9,10 +9,9 @@ namespace MainTz.RestApi.Controllers
     public class AdminController : Controller
     {
         private readonly IUsersService _usersService;
-        //private readonly UserManager<User> _userManager;
-        public AdminController(IUsersService usersService/*, UserManager<User> userManager*/)
+
+        public AdminController(IUsersService usersService)
         {
-            //_userManager = userManager;
             _usersService = usersService;
         }
 
@@ -22,20 +21,25 @@ namespace MainTz.RestApi.Controllers
             var model = await _usersService.GetUsers();
 
             return View(model);
-            //return View(model);
         }
 
-		public async Task<IActionResult> Create(UserDto userDto)
+        public async Task<IActionResult> CreateUser(UserDto userDto)
         {
-            try
-            {
-                await _usersService.CreateUser(userDto);
-                return Ok("Успешно");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            var result = await _usersService.Create(userDto);
+            return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(UserDto userDto)
+        {
+            var result = await _usersService.Delete(userDto);
+            return RedirectToAction("Index");
+		}
+
+        public async Task<IActionResult> UpdateUser(UserDto userDto)
+        {
+            var result = await _usersService.Update(userDto);
+			return RedirectToAction("Index");
+		}
     }
 }

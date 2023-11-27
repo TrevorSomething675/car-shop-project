@@ -31,28 +31,20 @@ namespace MainTz.RestApi.DAL.Repositories
 
         public async Task Create(Car car)
         {
-            try
-            {
-                _context.Cars.Add(car);
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation($"{ex.Message}");
-            }
+            _context.Cars.Add(car);
+            await _context.SaveChangesAsync();
         }
 
         public async Task Delete(Car car)
         {
-            try
-            {
-                _context.Cars.Remove(car);
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation($"{ex.Message}");
-            }
+            _context.Cars.Remove(car);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task Update(Car car)
+        {
+            _context.Cars.Update(car);
+            await _context.SaveChangesAsync();
         }
     }
 }

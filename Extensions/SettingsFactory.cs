@@ -2,6 +2,9 @@
 
 namespace Extensions
 {
+    /// <summary>
+    /// Факта для создания объекта получения конфигурации
+    /// </summary>
     public static class SettingsFactory
     {
         public static IConfiguration Create(IConfiguration? configuration = null)

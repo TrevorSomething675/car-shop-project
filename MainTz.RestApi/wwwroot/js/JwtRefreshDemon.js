@@ -1,4 +1,4 @@
-﻿const refreshTimerForJwtToken = setTimeout(RefreshTokens, 50000);
+﻿const refreshTimerForJwtToken = setTimeout(RefreshTokens, 5000);
 
 function RefreshTokens() {
     var role = localStorage.getItem('role');

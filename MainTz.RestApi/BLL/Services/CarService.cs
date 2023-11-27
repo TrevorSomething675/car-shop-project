@@ -11,7 +11,8 @@ namespace MainTz.RestApi.BLL.Services
         private readonly ICarRepository _carRepository;
         private readonly ILogger<CarService> _logger;
         private readonly IMapper _mapper;
-        public CarService(ICarRepository carRepository, IMapper mapper, ILogger<CarService> logger)
+        public CarService(ICarRepository carRepository, IMapper mapper,
+			ILogger<CarService> logger)
         {
             _logger = logger;
             _mapper = mapper;
@@ -26,29 +27,48 @@ namespace MainTz.RestApi.BLL.Services
             return carsDto;
         }
 
-        public async Task CreateCar(CarDto carDto)
+        public async Task<bool> CreateCar(CarDto carDto)
         {
             try
             {
                 var car = _mapper.Map<Car>(carDto);
                 await _carRepository.Create(car);
+                return true;
             }
             catch (Exception ex)
             {
-                _logger.LogInformation($"{ex.Message}");
+				_logger.LogInformation($"{ex.Message}");
+                return false;
             }
         }
 
-        public async Task DeleteCar(CarDto carDto)
+        public async Task<bool> DeleteCar(CarDto carDto)
         {
             try
             {
                 var car = _mapper.Map<Car>(carDto);
                 await _carRepository.Delete(car);
+                return true;
             }
             catch (Exception ex)
             {
-                _logger.LogInformation($"{ex.Message}");
+				_logger.LogInformation($"{ex.Message}");
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdateCar(CarDto carDto)
+        {
+            try
+            {
+                var car = _mapper.Map<Car>(carDto);
+                await _carRepository.Update(car);
+                return true;
+            }
+            catch (Exception ex)
+            {
+				_logger.LogInformation($"{ex.Message}");
+                return false;
             }
         }
     }

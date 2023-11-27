@@ -26,9 +26,13 @@ body {
     background-color:lightblue;
 }
 
-.admin-page{
-    font-size:22px;
+.fn-view-size{
+    font-size:28px;
 }
 
 .user-commands-form {
+}
+
+.user-cars{
+    font-size:22px;
 }
