@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\AuthRequestHandler.js",
-      "PackagePath": "staticwebassets\\js\\AuthRequestHandler.js"
-    },
-    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\FormScripts.js",
       "PackagePath": "staticwebassets\\js\\FormScripts.js"
     },
@@ -27,10 +23,6 @@
     {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\RegisterFormScript.js",
       "PackagePath": "staticwebassets\\js\\RegisterFormScript.js"
-    },
-    {
-      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\lib\\bootstrap\\LICENSE",

@@ -16,14 +16,14 @@ var jwtAuthSettings = Settings.Load<AuthSettings>("JwtAuthSettings");
 
 var services = builder.Services;
 
-services.AddAppLogger(); // добавление логгера
-services.AddAppAutoMapperConfiguration(); // конфигурация автомаппера
-services.AddAppDbContext(dbSettings);
-services.AddAppSwagger();
+services.AddAppLogger(); 
+services.AddAppAutoMapperConfiguration(); 
+services.AddAppDbContext(dbSettings); 
+services.AddAppSwagger(); 
 
-services.AddAppServices(); //Регистрация сервисов
-services.AddAppRepositories(); //Регистрация репозиториев
-services.AddAppAuth(jwtAuthSettings); // Аутентификация
+services.AddAppServices(); 
+services.AddAppRepositories();
+services.AddAppAuth(jwtAuthSettings); 
 
 var app = builder.Build();
 
@@ -61,7 +61,7 @@ using (var scope = app.Services.CreateScope())
         }
     }
 }
-#endregion
+#endregion 
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

@@ -2,11 +2,14 @@
 using Microsoft.IdentityModel.Tokens;
 using Extensions.SettingsModels;
 using System.Text;
-using Microsoft.AspNetCore.Authorization;
 
 namespace MainTz.RestApi.Configurations.AuthConfigration
 {
-    public static class AuthConfiguration
+	/// <summary>
+	/// Это класс, который отвечает за конфигурацию аутентификации, AddAppAuth метод расширения для IServiceCollection
+	/// UseAppAuth метод расширения для WebApplication
+	/// </summary>
+	public static class AuthConfiguration
 	{
 		public static IServiceCollection AddAppAuth(this IServiceCollection services, AuthSettings authSettings)
 		{

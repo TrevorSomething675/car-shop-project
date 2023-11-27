@@ -4,7 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MainTz.RestApi.DAL.Repositories
 {
-    public class UserRepository : IUserRepository
+	/// <summary>
+	/// Репозиторий UserRepository это обёртка на MainContext для таблицы User
+	/// </summary>
+	public class UserRepository : IUserRepository
     {
         private readonly MainContext _mainContext;
         private readonly ILogger<UserRepository> _logger;

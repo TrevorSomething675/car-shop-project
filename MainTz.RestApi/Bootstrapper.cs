@@ -2,10 +2,12 @@
 using MainTz.RestApi.BLL.Services.Abstractions;
 using MainTz.RestApi.DAL.Repositories;
 using MainTz.RestApi.BLL.Services;
-using System.Text.Json.Serialization;
 
 namespace MainTz.RestApi
 {
+    /// <summary>
+    /// Конфигурация сервисов и репозиториев
+    /// </summary>
     public static class bootstrapper
     {
         public static IServiceCollection AddAppRepositories(this IServiceCollection services)

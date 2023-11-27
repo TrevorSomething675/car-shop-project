@@ -4,7 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MainTz.RestApi.DAL.Repositories
 {
-    public class CarRepository : ICarRepository
+	/// <summary>
+	/// Репозиторий CarRepository это обёртка на MainContext для таблицы Car
+	/// </summary>
+	public class CarRepository : ICarRepository
     {
         private readonly MainContext _context;
         private readonly ILogger<CarRepository> _logger;

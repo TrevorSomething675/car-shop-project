@@ -4,6 +4,9 @@ using MainTz.RestApi.dal.Data.Models.Entities;
 
 namespace MainTz.RestApi.Configurations
 {
+    /// <summary>
+    /// Конфигурация db котекста
+    /// </summary>
     public static class DataBaseConfiguration
     {
         public static IServiceCollection AddAppDbContext(this IServiceCollection services,

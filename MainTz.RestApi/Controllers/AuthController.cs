@@ -22,6 +22,11 @@ namespace MainTz.RestApi.Controllers
 			_usersService = usersService;
 		}
 
+		/// <summary>
+		/// Получение токена из сервиса, путём отправки запроса с ролью
+		/// </summary>
+		/// <param name="role"></param>
+		/// <returns></returns>
         [HttpPost]
 		public async Task<IResult> GetToken([FromBody]string role) // отправка сообщения и получение токена из AuthApi
 		{
@@ -30,13 +35,21 @@ namespace MainTz.RestApi.Controllers
 
 			return Results.Json(tokens);
 		}
-
+		/// <summary>
+		/// Получение разметки с формой логина
+		/// </summary>
+		/// <returns></returns>
 		[HttpGet]
         public async Task<IActionResult> Login()
         {
 			return View();
         }
-
+		/// <summary>
+		/// Отправка формы логина, она возрвращает json, js код в FormScripts.js 
+		/// получает её и в зависимости от роли перенаправляет пользователя на страницу роли.
+		/// </summary>
+		/// <param name="userDto">Модель, которая приходит с фронта</param>
+		/// <returns></returns>
 		[HttpPost]
 		public async Task<IResult> Login(UserDto userDto)
 		{
@@ -58,14 +71,23 @@ namespace MainTz.RestApi.Controllers
 				return Results.BadRequest($"{ex.Message}");
 			}
 		}
-
+		/// <summary>
+		/// Получение разметки с формой регистрации
+		/// </summary>
+		/// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> Register()
         {
             return View();
         }
-
-        [HttpPost]
+		/// <summary>
+		/// Регистрация пользователя, по умолчанию роль всегда 'User', 
+		/// мы регистрируем пользователя, а после вызываем метод Login, результат обрабатывает RegisterFormScript.js
+		/// и перенаправляет пользователя на нужную страницу после регистрации.
+		/// </summary>
+		/// <param name="userDto"></param>
+		/// <returns></returns>
+		[HttpPost]
         public async Task<IResult> Register(UserDto userDto)
         {
             var user = await _usersService.GetUserByName(userDto.Name);
@@ -76,7 +98,7 @@ namespace MainTz.RestApi.Controllers
 			userDto.Role = "User";
             await _usersService.CreateUser(userDto);
 
-			var result =  await Login(userDto);
+			var result = await Login(userDto);
 
 			return result;
         }

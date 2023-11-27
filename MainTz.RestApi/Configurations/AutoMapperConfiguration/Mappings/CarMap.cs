@@ -4,6 +4,9 @@ using AutoMapper;
 
 namespace MainTz.RestApi.Configurations.AutoMapperConfiguration.Mappings
 {
+    /// <summary>
+    /// Конфигурация маппинга для Car и CarDto
+    /// </summary>
     public class CarMap : Profile
     {
         public CarMap() 

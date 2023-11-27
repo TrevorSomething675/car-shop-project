@@ -1,5 +1,8 @@
 ﻿namespace MainTz.RestApi.Configurations
 {
+    /// <summary>
+    /// Конфигурация сваггера
+    /// </summary>
     public static class SwaggerConfiguration
     {
         public static IServiceCollection AddAppSwagger(this IServiceCollection services)

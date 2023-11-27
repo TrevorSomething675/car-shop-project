@@ -1,8 +1,8 @@
-﻿using Extensions;
-
-namespace MainTz.RestApi.DAL.Data.Models.Models
+﻿namespace MainTz.RestApi.DAL.Data.Models.Models
 {
-    /*Модель для получения роли, accessToken и refreshToken*/
+    /// <summary>
+    /// Модель для получения access токена, refresh токена и роли
+    /// </summary>
     public class TokensModel
     {
         public string AccessToken { get; set; }

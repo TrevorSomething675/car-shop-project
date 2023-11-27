@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aXuVxT5WyBQWYobxDMb1yPtAY6KlUjW567Yc6HrvZLM=",
+  "Hash": "OVdFFBwWj+5DItqOKjhVNbALaARUZWbSVgF1a5/Ymic=",
   "Source": "MainTz.RestApi",
   "BasePath": "_content/MainTz.RestApi",
   "Mode": "Default",
@@ -93,25 +93,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\AuthRequestHandler.js",
-      "SourceId": "MainTz.RestApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\",
-      "BasePath": "_content/MainTz.RestApi",
-      "RelativePath": "js/AuthRequestHandler.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\AuthRequestHandler.js"
-    },
-    {
       "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\FormScripts.js",
       "SourceId": "MainTz.RestApi",
       "SourceType": "Discovered",
@@ -167,25 +148,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\RegisterFormScript.js"
-    },
-    {
-      "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\site.js",
-      "SourceId": "MainTz.RestApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\",
-      "BasePath": "_content/MainTz.RestApi",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

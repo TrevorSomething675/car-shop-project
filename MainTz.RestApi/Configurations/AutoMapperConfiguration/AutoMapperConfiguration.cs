@@ -3,6 +3,9 @@ using MainTz.RestApi.Configurations.AutoMapperConfiguration.Mappings;
 
 namespace MainTz.RestApi.Configurations.AutoMapperConfiguration
 {
+    /// <summary>
+    /// Включение маппингов в работу
+    /// </summary>
     public static class AutoMapperConfiguration
     {
         public static IMapper Mapper { get; set; } = null!;
