@@ -13,12 +13,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\FormScripts.js",
-      "PackagePath": "staticwebassets\\js\\FormScripts.js"
-    },
-    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\JwtRefreshDemon.js",
       "PackagePath": "staticwebassets\\js\\JwtRefreshDemon.js"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\LoginFormScript.js",
+      "PackagePath": "staticwebassets\\js\\LoginFormScript.js"
     },
     {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\RegisterFormScript.js",

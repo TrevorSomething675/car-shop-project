@@ -1,4 +1,6 @@
-﻿function RefreshTokens() {
+﻿const refreshTimerForJwtToken = setTimeout(RefreshTokens, 50000);
+
+function RefreshTokens() {
     var role = localStorage.getItem('role');
     var accessToken = GetCookie('accessToken');
     var refreshToken = GetCookie('refreshToken');
