@@ -33,26 +33,29 @@ using (var scope = app.Services.CreateScope())
     {
         try
         {
-            context.Users.AddRange(new User
+            if(context.Users.FirstOrDefault(user => user.Name == "User") == null)
             {
-                Name = "User",
-                Password = "123",
-                Role = "User"
-            },
-            new User
-            {
-                Name = "Manager",
-                Password = "123",
-                Role = "Manager"
-            },
-            new User
-            {
-                Name = "Admin",
-                Password = "123",
-                Role = "Admin"
-            });
-            context.SaveChanges();
-            context.Database.Migrate();
+                context.Users.AddRange(new User
+                {
+                    Name = "User",
+                    Password = "123",
+                    Role = "User"
+                },
+                new User
+                {
+                    Name = "Manager",
+                    Password = "123",
+                    Role = "Manager"
+                },
+                new User
+                {
+                    Name = "Admin",
+                    Password = "123",
+                    Role = "Admin"
+                });
+                context.SaveChanges();
+			}
+			context.Database.Migrate();
         }
         catch
         {

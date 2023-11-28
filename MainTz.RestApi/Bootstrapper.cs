@@ -24,7 +24,7 @@ namespace MainTz.RestApi
             services.AddControllersWithViews();
 			services.AddScoped<ICarService, CarService>();
             services.AddScoped<IUsersService, UsersService>();
-            services.AddScoped<IClientService, ClientService>();
+            services.AddTransient<IClientService, ClientService>();
 
             return services;
         }

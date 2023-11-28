@@ -23,7 +23,7 @@ namespace MainTz.AuthApi.Services
                     issuer: _authSettings.Issuer,
                     audience: _authSettings.Audience,
                     claims: claims,
-                    expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(_authSettings.AccessTokenExp)),
+                    expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(1)),
                     signingCredentials: new SigningCredentials(
                         new SymmetricSecurityKey(
                             Encoding.UTF8.GetBytes(_authSettings.Key)),
@@ -35,7 +35,7 @@ namespace MainTz.AuthApi.Services
 
         public string CreateRefreshToken(string role)
         {
-            var claims = new List<Claim> { new Claim(ClaimTypes.Role, role) };
+			var claims = new List<Claim> { new Claim(ClaimTypes.Role, role) };
             var jwt = new JwtSecurityToken(
                     issuer: _authSettings.Issuer,
                     audience: _authSettings.Audience,

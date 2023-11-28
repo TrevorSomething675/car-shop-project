@@ -3,8 +3,7 @@
     public class JwtHeaderMiddleware
     {
         private readonly RequestDelegate _next;
-
-        public JwtHeaderMiddleware(RequestDelegate next)
+		public JwtHeaderMiddleware(RequestDelegate next)
         {
             _next = next;
         }
@@ -17,7 +16,6 @@
             {
                 context.Request.Headers.Add("Authorization", "Bearer " + token);
             }
-
             await _next(context);
         }
     }

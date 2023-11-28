@@ -1,6 +1,4 @@
-﻿using Extensions;
-
-namespace MainTz.AuthApi.Services.Abstractions
+﻿namespace MainTz.AuthApi.Services.Abstractions
 {
     public interface ITokenService
 	{

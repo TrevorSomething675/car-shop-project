@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ewNl4sS/ev41VQ8kagVrWjRVAoIWGoPYYLTwxnDCSEI=",
+  "Hash": "3megB1KrSWe51EGbvdaE/UpXNYcjJHNkT9YjIksmPJw=",
   "Source": "MainTz.RestApi",
   "BasePath": "_content/MainTz.RestApi",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\RegisterFormScript.js"
+    },
+    {
+      "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\site.js",
+      "SourceId": "MainTz.RestApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\",
+      "BasePath": "_content/MainTz.RestApi",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
