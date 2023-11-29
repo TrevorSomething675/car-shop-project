@@ -20,9 +20,9 @@ services.AddAppAutoMapperConfiguration();
 services.AddAppDbContext(dbSettings); 
 services.AddAppSwagger(); 
 
-services.AddAppServices(); 
+services.AddAppServices();
 services.AddAppRepositories();
-services.AddAppAuth(jwtAuthSettings); 
+services.AddAppAuth(jwtAuthSettings);
 
 var app = builder.Build();
 
@@ -64,6 +64,8 @@ using (var scope = app.Services.CreateScope())
     }
 }
 #endregion 
+
+app.UseMiddleware<JwtHeaderMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
