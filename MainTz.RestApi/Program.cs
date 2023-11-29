@@ -71,6 +71,7 @@ app.UseDefaultFiles();
 app.UseRouting();
 
 app.UseMiddleware<JwtHeaderMiddleware>();
+
 app.UseAppAuth();
 
 app.MapControllerRoute(

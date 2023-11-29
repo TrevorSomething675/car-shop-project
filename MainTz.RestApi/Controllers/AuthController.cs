@@ -32,6 +32,20 @@ namespace MainTz.RestApi.Controllers
 
 			return Results.Json(tokens);
 		}
+
+
+		/// <summary>
+		/// Получение токена по refresh токену
+		/// </summary>
+		/// <returns></returns>
+		public async Task<IActionResult> GetTokenOnRefresh()
+		{
+			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenOnRefreshUrl}";
+			TokensModel tokens = await _clientService.SendRequest(tokenUrl, "Admin");
+
+			return Ok(tokens);
+		}
+
 		/// <summary>
 		/// Получение разметки с формой логина
 		/// </summary>

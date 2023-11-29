@@ -5,13 +5,13 @@ namespace MainTz.RestApi.BLL.Services
 {
 	public class ClientService : IClientService
 	{
-		/// <summary>
-		/// Отправка запроса с получением данных в модель TokensModel
-		/// </summary>
-		/// <param name="url"></param>
-		/// <param name="message"></param>
-		/// <returns></returns>
-		public async Task<TokensModel> SendRequest(string url, string message)
+        /// <summary>
+        /// Отправка запроса с получением данных в модель TokensModel
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="message"></param>
+        /// <returns></returns>
+        public async Task<TokensModel> SendRequest(string url, string message)
 		{
 			TokensModel tokens;
             try
@@ -30,5 +30,5 @@ namespace MainTz.RestApi.BLL.Services
 
 			return tokens;
 		}
-	}
+    }
 }

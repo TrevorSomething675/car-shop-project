@@ -20,6 +20,7 @@ namespace MainTz.RestApi
 
         public static IServiceCollection AddAppServices(this IServiceCollection services)
         {
+            services.AddHttpClient();
             services.AddHttpContextAccessor();
             services.AddControllersWithViews();
 			services.AddScoped<ICarService, CarService>();

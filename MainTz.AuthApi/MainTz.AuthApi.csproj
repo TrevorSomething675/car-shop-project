@@ -10,6 +10,7 @@
 
   <ItemGroup>
       <ProjectReference Include="..\Extensions\Extensions.csproj" />
+      <ProjectReference Include="..\MainTz.RestApi\MainTz.RestApi.csproj" />
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.14" />
 	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
 	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />

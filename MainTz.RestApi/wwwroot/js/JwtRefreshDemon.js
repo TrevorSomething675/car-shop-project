@@ -1,7 +1,7 @@
 ﻿//const refreshTimerForJwtToken = setInterval(RefreshTokens, 50000);
 
 function RefreshTokens() {
-    var role = localStorage.getItem('role');
+    var role = GetCookie('role');
     var accessToken = GetCookie('accessToken');
     var refreshToken = GetCookie('refreshToken');
     if (role !== null) {
@@ -25,7 +25,7 @@ function RefreshTokens() {
                 document.cookie = "";
                 document.cookie = `accessToken=${data.accessToken}`;
                 document.cookie = `refreshToken=${data.refreshToken}`;
-                localStorage.setItem('role', data.role);
+                document.cookie = `role=${data.value.role}`;
             } else {
                 console.log('Данные не найдены в ответе сервера');
             }

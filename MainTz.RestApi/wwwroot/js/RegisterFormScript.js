@@ -18,7 +18,8 @@ registerForm.addEventListener('submit', function (event) {
         if (data != '') {
             document.cookie = `accessToken=${data.value.accessToken}`;
             document.cookie = `refreshToken=${data.value.refreshToken}`;
-            localStorage.setItem('role', data.value.role);
+            document.cookie = `role=${data.value.role}`;
+
             console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
             window.location.pathname = `${data.value.role}/index`;
         } else {

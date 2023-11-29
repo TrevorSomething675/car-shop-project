@@ -8,5 +8,6 @@
 	{
 		public string Url { get; set; }
 		public string GetTokenUrl { get; set; }
+		public string GetTokenOnRefreshUrl { get; set; }
 	}
 }
