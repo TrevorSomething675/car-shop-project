@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UH9Zh6m2bpucvIpV1w3PiUAdVhAdI6AkM1c02oYo6aQ=",
+  "Hash": "9+Heyw+g624IK5hG3hjAcOI8Ba2kSZ+cP+a91gaA+XE=",
   "Source": "MainTz.AuthApi",
   "BasePath": "_content/MainTz.AuthApi",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\JavaScript.js",
+      "SourceId": "MainTz.RestApi",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\",
+      "BasePath": "_content/MainTz.RestApi",
+      "RelativePath": "js/JavaScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JavaScript.js"
     },
     {
       "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\wwwroot\\js\\JwtRefreshDemon.js",
