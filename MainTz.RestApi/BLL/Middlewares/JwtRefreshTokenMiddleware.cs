@@ -26,7 +26,7 @@ namespace MainTz.RestApi.BLL.Middlewares
                 context.Response.StatusCode == 403 && 
                 !string.IsNullOrEmpty(token))
             {
-                context.Response.Redirect("");
+                context.Response.Redirect("/GetTokenByRefreshToken");
             }
         }
     }

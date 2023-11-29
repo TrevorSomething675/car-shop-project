@@ -1,7 +1,7 @@
 ﻿const registerForm = document.querySelector('#RegisterForm');
 
-registerForm.addEventListener('submit', function (event) {
-    event.preventDefault();
+registerForm.addEventListener('fetch', function (event) {
+    //event.preventDefault();
 
     fetch(registerForm.action, {
         method: registerForm.method,
