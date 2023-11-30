@@ -41,10 +41,5 @@ namespace MainTz.RestApi.Controllers
             var result = await _usersService.Update(userDto);
 			return RedirectToAction("Index");
         }
-
-        public async Task<IActionResult> GetTokenByRefreshToken()
-        {
-            return RedirectToAction("GetTokenOnRefresh", "Auth");
-        }
     }
 }
