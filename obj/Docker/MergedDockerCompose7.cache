@@ -2,27 +2,22 @@ name: dockercompose3432824561139095138
 services:
   db:
     environment:
-      POSTGRES_DB: CarsDataBase
-      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: CarCompanyDb
+      POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
-    image: postgres:latest
+    image: postgres
     networks:
-      CarCompany_Network: null
+      CarCompany: null
     ports:
       - mode: ingress
         target: 5432
-        published: "5432"
+        published: "5437"
         protocol: tcp
     restart: always
-    volumes:
-      - type: volume
-        source: pgdata
-        target: /var/lib/postgresql/data
-        volume: {}
   maintz.restapi:
     build:
       context: C:\Users\Иван\Documents\GitHub\MainTzProject
-      dockerfile: MainTz.RestApi\Dockerfile
+      dockerfile: MainTz.RestApi/Dockerfile
     depends_on:
       db:
         condition: service_started
@@ -31,10 +26,9 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
-      DATABASE_URL: postgresql://postgres:admin@db:5432/CarsDataBase
     image: maintzrestapi
     networks:
-      CarCompany_Network: null
+      default: null
     ports:
       - mode: ingress
         target: 8080
@@ -56,8 +50,7 @@ services:
         bind:
           create_host_path: true
 networks:
-  CarCompany_Network:
-    name: dockercompose3432824561139095138_CarCompany_Network
-volumes:
-  pgdata:
-    name: dockercompose3432824561139095138_pgdata
+  CarCompany:
+    name: dockercompose3432824561139095138_CarCompany
+  default:
+    name: dockercompose3432824561139095138_default

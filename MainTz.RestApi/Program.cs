@@ -7,7 +7,6 @@ using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
 using MainTz.RestApi;
 using Extensions;
-using MainTz.RestApi.BLL.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 var dbSettings = Settings.Load<DataBaseSettings>("DataBaseSettings");
@@ -33,7 +32,7 @@ using (var scope = app.Services.CreateScope())
     {
         try
         {
-            if(context.Users.FirstOrDefault(user => user.Name == "User") == null)
+            if (context.Users.FirstOrDefault(user => user.Name == "User") == null)
             {
                 context.Users.AddRange(new User
                 {
@@ -54,8 +53,8 @@ using (var scope = app.Services.CreateScope())
                     Role = "Admin"
                 });
                 context.SaveChanges();
-			}
-			context.Database.Migrate();
+            }
+            context.Database.Migrate();
         }
         catch
         {

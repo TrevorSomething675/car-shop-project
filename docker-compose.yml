@@ -5,29 +5,30 @@ services:
     image: ${DOCKER_REGISTRY-}maintzrestapi
     build:
       context: .
-      dockerfile: MainTz.RestApi\Dockerfile
+      dockerfile: MainTz.RestApi/Dockerfile
     depends_on:
       - db
     environment:
-      - DATABASE_URL=postgresql://postgres:admin@db:5432/CarsDataBase
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/CarCompanyDb
     networks:
-      - CarCompany_Network
+      - CarCompany
+
   db:
-    image: postgres:latest
+    image: postgres
     restart: always
     environment:
-      - POSTGRES_DB=CarsDataBase
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=CarCompanyDb
+      - POSTGRES_PASSWORD=postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
-    ports:
+    ports: 
       - "5432:5432"
     networks:
-      - CarCompany_Network
+      - CarCompany
 
 volumes:
   pgdata: {}
 
-networks: 
-    CarCompany_Network: {}
+networks:
+  CarCompany: {}

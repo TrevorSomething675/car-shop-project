@@ -1,12 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using MainTz.AuthApi.Services.Abstractions;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.Tokens;
 using Extensions.SettingsModels;
 using MainTz.AuthApi.Services;
-using Extensions;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using MainTz.RestApi.BLL.Middlewares;
+using Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,8 +27,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 		};
 	});
 var app = builder.Build();
-
-app.UseMiddleware<JwtHeaderMiddleware>();
 
 app.Map("/GetTokens", async (context) =>
 {
