@@ -7,6 +7,7 @@ using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
 using MainTz.RestApi;
 using Extensions;
+using MainTz.RestApi.BLL.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 var dbSettings = Settings.Load<DataBaseSettings>("DataBaseSettings");

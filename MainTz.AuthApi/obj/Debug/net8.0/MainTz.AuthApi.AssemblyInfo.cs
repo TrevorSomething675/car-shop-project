@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MainTz.AuthApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1a41d2bdf7ab75566ab5a957632a1d9131b8d09")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+043b2150811de33927b55c80327413c39e1710c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("MainTz.AuthApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MainTz.AuthApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

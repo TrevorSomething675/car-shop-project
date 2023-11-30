@@ -57,9 +57,7 @@
             @RenderBody()
         </main>
     </div>
-    <script>
 
-    </script>
     @await RenderSectionAsync("Scripts", required: false)
 
     <a class="btn btn-primary" asp-controller="Auth" asp-action="GetTokenOnRefresh">
