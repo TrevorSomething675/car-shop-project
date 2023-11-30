@@ -2,6 +2,7 @@ using MainTz.RestApi.Configurations.AutoMapperConfiguration;
 using MainTz.RestApi.Configurations.NLogConfiguration;
 using MainTz.RestApi.Configurations.AuthConfigration;
 using MainTz.RestApi.dal.Data.Models.Entities;
+using MainTz.RestApi.BLL.Middlewares;
 using Microsoft.EntityFrameworkCore;
 using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
@@ -76,5 +77,7 @@ app.MapControllerRoute(
     pattern: "{controller=Auth}/{action=Login}/{id?}");
 
 app.UseAppSwagger();
+
+app.UseMiddleware<JwtHeaderMiddleware>();
 
 app.Run();

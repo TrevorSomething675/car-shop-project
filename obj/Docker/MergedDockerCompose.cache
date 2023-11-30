@@ -11,9 +11,14 @@ services:
     ports:
       - mode: ingress
         target: 5432
-        published: "5437"
+        published: "5432"
         protocol: tcp
     restart: always
+    volumes:
+      - type: volume
+        source: pgdata
+        target: /var/lib/postgresql/data
+        volume: {}
   maintz.restapi:
     build:
       context: C:\Users\Иван\Documents\GitHub\MainTzProject
@@ -26,10 +31,10 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
-      DATABASE_URL: localhost://postgres:postgres@db:5432/CarCompanyDb
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/CarCompanyDb
     image: maintzrestapi
     networks:
-      default: null
+      CarCompany: null
     ports:
       - mode: ingress
         target: 8080
@@ -53,5 +58,6 @@ services:
 networks:
   CarCompany:
     name: dockercompose3432824561139095138_CarCompany
-  default:
-    name: dockercompose3432824561139095138_default
+volumes:
+  pgdata:
+    name: dockercompose3432824561139095138_pgdata
