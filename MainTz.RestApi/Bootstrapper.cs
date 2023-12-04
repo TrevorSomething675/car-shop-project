@@ -2,6 +2,7 @@
 using MainTz.RestApi.BLL.Services.Abstractions;
 using MainTz.RestApi.DAL.Repositories;
 using MainTz.RestApi.BLL.Services;
+using System.Runtime.CompilerServices;
 
 namespace MainTz.RestApi
 {
@@ -20,6 +21,7 @@ namespace MainTz.RestApi
 
         public static IServiceCollection AddAppServices(this IServiceCollection services)
         {
+            //services.AddCors();
             services.AddHttpClient();
             services.AddHttpContextAccessor();
             services.AddControllersWithViews();
@@ -28,6 +30,16 @@ namespace MainTz.RestApi
             services.AddTransient<IClientService, ClientService>();
 
             return services;
+        }
+
+
+        public static void UseAppServices(this WebApplication app)
+        {
+            //app.UseCors();
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseDefaultFiles();
+            app.UseRouting();
         }
     }
 }

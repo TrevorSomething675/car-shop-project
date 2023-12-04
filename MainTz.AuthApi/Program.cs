@@ -6,6 +6,7 @@ using Extensions.SettingsModels;
 using MainTz.AuthApi.Services;
 using System.Text;
 using Extensions;
+using MainTz.AuthApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,14 +31,18 @@ var app = builder.Build();
 
 app.Map("/GetTokens", async (context) =>
 {
-    using StreamReader reader = new StreamReader(context.Request.Body);
-    string role = await reader.ReadToEndAsync();
-    var tokenService = app.Services.GetRequiredService<ITokenService>();
+	using StreamReader reader = new StreamReader(context.Request.Body);
+	string role = await reader.ReadToEndAsync();
+	var tokenService = app.Services.GetRequiredService<ITokenService>();
+	var userAuthModel = new UserAuthModel
+	{
+		Role = role,
+		AccessToken = tokenService.CreateAccessToken(role),
+		RefreshToken = tokenService.CreateRefreshToken(role),
+		AccessTokenExpTime = DateTime.UtcNow.Add(TimeSpan.FromMinutes(jwtAuthSettings.AccessTokenExp))
+	};
 
-    var accessToken = tokenService.CreateAccessToken(role);
-    var refreshToken = tokenService.CreateRefreshToken(role);
-
-    await context.Response.WriteAsJsonAsync(new { accessToken, refreshToken, role });
+    await context.Response.WriteAsJsonAsync(userAuthModel);
 });
 
 app.Map("/GetTokensOnRefresh", [Authorize] async (context) =>

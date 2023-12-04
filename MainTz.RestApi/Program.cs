@@ -39,19 +39,25 @@ using (var scope = app.Services.CreateScope())
                 {
                     Name = "User",
                     Password = "123",
-                    Role = "User"
+                    Role = "User",
+                    ExpTime = DateTime.UtcNow.AddMinutes(5),
+                    RefreshToken = "refreshToken1"
                 },
                 new User
                 {
                     Name = "Manager",
                     Password = "123",
-                    Role = "Manager"
+                    Role = "Manager",
+                    ExpTime = DateTime.UtcNow.AddMinutes(5),
+                    RefreshToken = "refreshToken2"
                 },
                 new User
                 {
                     Name = "Admin",
                     Password = "123",
-                    Role = "Admin"
+                    Role = "Admin",
+                    ExpTime = DateTime.UtcNow.AddMinutes(5).ToUniversalTime(),
+                    RefreshToken = "refreshToken3"
                 });
                 context.SaveChanges();
             }
@@ -65,11 +71,7 @@ using (var scope = app.Services.CreateScope())
 }
 #endregion 
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseDefaultFiles();
-app.UseRouting();
-
+app.UseAppServices();
 app.UseAppAuth();
 
 app.MapControllerRoute(

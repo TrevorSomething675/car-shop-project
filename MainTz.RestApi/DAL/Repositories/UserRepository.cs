@@ -18,7 +18,7 @@ namespace MainTz.RestApi.DAL.Repositories
         public async Task<User> GetUserByName(string name)
 		{
             var user = await _mainContext.Users
-                .FirstOrDefaultAsync(user=>user.Name == name);
+                .FirstOrDefaultAsync(user => user.Name == name);
             return user;
         }
 
