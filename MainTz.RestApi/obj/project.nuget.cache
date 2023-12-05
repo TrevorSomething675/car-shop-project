@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yVGzeHGQcrx0Z4MNS0gQSTdp5YjnocZXVkrUvABV2jWZ7fZzsvheggbPcim1hHNuO2weQ5L0CFaiN8DNVLZYgA==",
+  "dgSpecHash": "Kb0/BIi+goa2k/KGGI1a7ws1vM8dEIQqy2XZZSHObtzB8pzsUkQyYfAR/44K/vWGRUbNkcVxDQVZQxaxu+Laew==",
   "success": true,
   "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj",
   "expectedPackageFiles": [
@@ -41,7 +41,7 @@
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\nlog\\5.2.6\\nlog.5.2.6.nupkg.sha512",
+    "C:\\Users\\Иван\\.nuget\\packages\\nlog\\5.2.5\\nlog.5.2.5.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\nlog.extensions.logging\\5.3.5\\nlog.extensions.logging.5.3.5.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.5\\nlog.web.aspnetcore.5.3.5.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",

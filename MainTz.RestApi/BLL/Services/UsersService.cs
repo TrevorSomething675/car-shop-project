@@ -18,7 +18,7 @@ namespace MainTz.RestApi.BLL.Services
 			_logger = logger;
 			_mapper = mapper;
 		}
-		public async Task<UserDto> GetUserByName(string name)
+		public async Task<UserDto> GetUserByNameAsync(string name)
 		{
 			var user = await _userRepository.GetUserByName(name);
 			var userDto = _mapper.Map<UserDto>(user);
@@ -26,7 +26,7 @@ namespace MainTz.RestApi.BLL.Services
 			return userDto;
 		}
 
-		public async Task<List<UserDto>> GetUsers()
+		public async Task<List<UserDto>> GetUsersAsync()
 		{
 			var users = await _userRepository.GetUsers();
 			var usersDto = _mapper.Map<List<UserDto>>(users);
@@ -34,7 +34,7 @@ namespace MainTz.RestApi.BLL.Services
 			return usersDto;
 		}
 
-		public async Task<bool> Update(UserDto userDto)
+		public async Task<bool> UpdateAsync(UserDto userDto)
 		{
 			try
 			{
@@ -49,7 +49,7 @@ namespace MainTz.RestApi.BLL.Services
 			}
 		}
 
-		public async Task<bool> Create(UserDto userDto)
+		public async Task<bool> CreateAsync(UserDto userDto)
 		{
 			try
 			{
@@ -64,7 +64,7 @@ namespace MainTz.RestApi.BLL.Services
 			}
 		}
 
-		public async Task<bool> Delete(UserDto userDto)
+		public async Task<bool> DeleteAsync(UserDto userDto)
 		{
 			try
 			{

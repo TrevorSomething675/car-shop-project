@@ -1,5 +1,4 @@
 using MainTz.RestApi.Configurations.AutoMapperConfiguration;
-using MainTz.RestApi.Configurations.NLogConfiguration;
 using MainTz.RestApi.Configurations.AuthConfigration;
 using MainTz.RestApi.dal.Data.Models.Entities;
 using MainTz.RestApi.BLL.Middlewares;
@@ -8,21 +7,24 @@ using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
 using MainTz.RestApi;
 using Extensions;
+using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 var dbSettings = Settings.Load<DataBaseSettings>("DataBaseSettings");
 var jwtAuthSettings = Settings.Load<AuthSettings>("JwtAuthSettings");
+var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
 
 var services = builder.Services;
+builder.Host.UseNLog();
 
-services.AddAppLogger(); 
 services.AddAppAutoMapperConfiguration(); 
 services.AddAppDbContext(dbSettings); 
 services.AddAppSwagger(); 
 
 services.AddAppServices(); 
 services.AddAppRepositories();
-services.AddAppAuth(jwtAuthSettings); 
+services.AddAppAuth(jwtAuthSettings);
+
 
 var app = builder.Build();
 
@@ -70,6 +72,8 @@ using (var scope = app.Services.CreateScope())
     }
 }
 #endregion 
+app.UseMiddleware<JwtHeaderMiddleware>();
+app.UseMiddleware<LoggingMiddleware>();
 
 app.UseAppServices();
 app.UseAppAuth();
@@ -79,7 +83,5 @@ app.MapControllerRoute(
     pattern: "{controller=Auth}/{action=Login}/{id?}");
 
 app.UseAppSwagger();
-
-app.UseMiddleware<JwtHeaderMiddleware>();
 
 app.Run();

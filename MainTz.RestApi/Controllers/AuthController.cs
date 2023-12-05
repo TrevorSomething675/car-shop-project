@@ -4,6 +4,7 @@ using MainTz.RestApi.DAL.Data.Models.Models;
 using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
 using Extensions;
+using System.Text.Json;
 
 namespace MainTz.RestApi.Controllers
 {
@@ -12,11 +13,14 @@ namespace MainTz.RestApi.Controllers
 		private readonly AuthApiSettings _authApiSettings;
 		private readonly IClientService _clientService;
 		private readonly IUsersService _usersService;
-		public AuthController(IClientService clientService, IUsersService usersService)
+		private readonly ILogger<AuthController> _logger;
+		public AuthController(IClientService clientService, IUsersService usersService,
+            ILogger<AuthController> logger)
 		{
 			_authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
             _clientService = clientService;
 			_usersService = usersService;
+			_logger = logger;
 		}
 
 		/// <summary>
@@ -53,6 +57,8 @@ namespace MainTz.RestApi.Controllers
 		[HttpGet]
         public async Task<IActionResult> Login()
         {
+			_logger.LogDebug("Login debug");
+			_logger.LogTrace("Login trace");
 			return View();
         }
 		/// <summary>
@@ -62,11 +68,11 @@ namespace MainTz.RestApi.Controllers
 		/// <param name="userDto">Модель, которая приходит с фронта</param>
 		/// <returns></returns>
 		[HttpPost]
-		public async Task<IResult> Login(UserDto userDto)
+		public async Task<IResult> Login([FromBody]UserDto userDto)
 		{
-			try
+            try
 			{
-				var user = await _usersService.GetUserByName(userDto.Name);
+				var user = await _usersService.GetUserByNameAsync(userDto.Name);
 
 				if (user == null)
 					return Results.BadRequest("Пользователя не существует");
@@ -101,13 +107,13 @@ namespace MainTz.RestApi.Controllers
 		[HttpPost]
         public async Task<IResult> Register(UserDto userDto)
         {
-            var user = await _usersService.GetUserByName(userDto.Name);
+            var user = await _usersService.GetUserByNameAsync(userDto.Name);
 
             if (user != null)
                 return Results.BadRequest("Пользователь уже существует");
 
 			userDto.Role = "User";
-            await _usersService.Create(userDto);
+            await _usersService.CreateAsync(userDto);
 
 			var result = await Login(userDto);
 

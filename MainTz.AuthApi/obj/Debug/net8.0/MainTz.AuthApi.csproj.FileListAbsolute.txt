@@ -99,13 +99,13 @@ C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.AuthApi\obj\D
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\ref\MainTz.AuthApi.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.RestApi.deps.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.RestApi.runtimeconfig.json
+C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\nlog.config
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.RestApi.staticwebassets.runtime.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.RestApi.exe
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\appsettings.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.AuthApi.staticwebassets.runtime.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.AuthApi.exe
-C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\nlog.config
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.AuthApi.deps.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.AuthApi.runtimeconfig.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.AuthApi.dll

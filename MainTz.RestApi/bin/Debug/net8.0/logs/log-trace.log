@@ -1,0 +1,233 @@
+2023-12-05 16:29:07.9305 DEBUG [/] [GET] []
+2023-12-05 16:29:13.8185 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 16:29:13.9707 DEBUG Login debug
+2023-12-05 16:29:13.9707 TRACE Login trace
+2023-12-05 16:29:14.1792 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:29:17.1694 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 16:29:26.3657 DEBUG [/] [POST] []
+2023-12-05 16:29:32.6656 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundaryXIPBdmNB8ugCclXA
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryXIPBdmNB8ugCclXA
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryXIPBdmNB8ugCclXA
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsd9858Z3ip8M2Y5BSMIRYWB4D0bL1FiuqBXeLo_KtjMUCMVnKt8QLT8yxq_LuUDsqJ96BwpR_bA5uKRJ600vtya_vigdf4ThQWSDMHVMG2U3ZjqPT7B2i0LFhBXntzST1s
+------WebKitFormBoundaryXIPBdmNB8ugCclXA--
+]
+2023-12-05 16:29:49.6343 DEBUG [/] [POST] []
+2023-12-05 16:29:55.2693 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundaryjW6nkNKlAld2PzwB
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryjW6nkNKlAld2PzwB
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryjW6nkNKlAld2PzwB
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsd9858Z3ip8M2Y5BSMIRYWB4D0bL1FiuqBXeLo_KtjMUCMVnKt8QLT8yxq_LuUDsqJ96BwpR_bA5uKRJ600vtya_vigdf4ThQWSDMHVMG2U3ZjqPT7B2i0LFhBXntzST1s
+------WebKitFormBoundaryjW6nkNKlAld2PzwB--
+]
+2023-12-05 16:33:34.9630 DEBUG [/] [GET] []
+2023-12-05 16:41:00.1028 DEBUG [/] [GET] []
+2023-12-05 16:41:00.1195 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 16:41:00.2744 DEBUG Login debug
+2023-12-05 16:41:00.2744 TRACE Login trace
+2023-12-05 16:41:00.3933 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-05 16:41:00.3933 TRACE [/MainTz.RestApi.styles.css] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 16:41:01.4824 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:41:01.4824 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 16:41:12.0819 DEBUG [/] [POST] []
+2023-12-05 16:41:12.0819 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundary9B7ABAsaaHPepj4l
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary9B7ABAsaaHPepj4l
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary9B7ABAsaaHPepj4l
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsdw3FSS8RX7AJ6HP621IWg1j7r5DiR7mXSqrAF7oPr51aCGxQo2_9cS8cEsb0X7PC5Q1W1DpUlUdWGun9zobFnEnIXI5GywIYBQgLHcj0YDrd8msvlksMo4yVytynXV2XA
+------WebKitFormBoundary9B7ABAsaaHPepj4l--
+]
+2023-12-05 16:43:07.4856 DEBUG [/] [GET] []
+2023-12-05 16:43:07.5070 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 16:43:07.6510 DEBUG Login debug
+2023-12-05 16:43:07.6515 TRACE Login trace
+2023-12-05 16:43:07.8663 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:43:07.8663 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 16:43:12.7602 DEBUG [/] [POST] []
+2023-12-05 16:43:12.7621 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundaryxE4KemnBnJqG97mN
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryxE4KemnBnJqG97mN
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryxE4KemnBnJqG97mN
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsfJfvQ-OQm4cPj3YwYmWcWaZN5dcW2oDhVVdgo7WLIgPXM8vMNlc2t7BtdaaGayclBmkKaQLNl6GR1VboYGzM7jYiGuRPF5qCbG4erK0g0eIZ7CR3kgcqt2GPwxoNwgld8
+------WebKitFormBoundaryxE4KemnBnJqG97mN--
+]
+2023-12-05 16:49:11.2007 DEBUG [/] [GET] []
+2023-12-05 16:49:11.2155 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:49:11.3689 DEBUG Login debug
+2023-12-05 16:49:11.3689 TRACE Login trace
+2023-12-05 16:49:11.5846 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:49:11.5846 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:49:33.7154 DEBUG [/] [GET] []
+2023-12-05 16:49:33.7302 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:49:33.8811 DEBUG Login debug
+2023-12-05 16:49:33.8811 TRACE Login trace
+2023-12-05 16:49:34.1211 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:49:34.1211 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:49:38.7256 DEBUG [/] [POST] []
+2023-12-05 16:49:44.3800 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:49:51.5872 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTc4NDI0OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.wWoGumvcQdykdsxaFmwOFjkhhAGctSd9Aij2spISbcU]
+2023-12-05 16:49:51.5884 TRACE [/Admin/Index] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:49:53.4223 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:49:53.4223 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:54:58.1103 DEBUG [/] [GET] []
+2023-12-05 16:55:15.0835 DEBUG [/] [GET] []
+2023-12-05 16:57:07.8986 DEBUG [/] [GET] []
+2023-12-05 16:57:56.0101 DEBUG [/] [GET] []
+2023-12-05 16:58:57.4542 DEBUG [/] [GET] []
+2023-12-05 16:58:57.4681 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:58:57.6145 DEBUG Login debug
+2023-12-05 16:58:57.6145 TRACE Login trace
+2023-12-05 16:58:57.7224 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-05 16:58:57.7224 TRACE [/MainTz.RestApi.styles.css] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:58:57.8305 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:58:57.8305 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:59:01.3550 DEBUG [/] [POST] []
+2023-12-05 16:59:01.3550 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:59:49.5059 DEBUG [/] [GET] []
+2023-12-05 16:59:49.5251 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:59:49.6714 DEBUG Login debug
+2023-12-05 16:59:49.6714 TRACE Login trace
+2023-12-05 16:59:49.8892 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:59:49.8892 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 16:59:53.3895 DEBUG [/] [POST] []
+2023-12-05 16:59:53.3895 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 17:00:22.4806 DEBUG [/] [GET] []
+2023-12-05 17:01:15.5272 DEBUG [/] [GET] []
+2023-12-05 17:01:44.8988 DEBUG [/] [GET] []
+2023-12-05 17:01:44.9124 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 17:01:45.0589 DEBUG Login debug
+2023-12-05 17:01:45.0589 TRACE Login trace
+2023-12-05 17:01:47.0628 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 17:01:47.0628 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 17:01:52.3995 DEBUG [/] [POST] []
+2023-12-05 17:02:08.1003 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 17:02:13.5223 DEBUG [/] [POST] []
+2023-12-05 17:02:48.6444 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader]
+2023-12-05 17:06:45.9839 DEBUG [/] [GET] []
+2023-12-05 17:06:45.9978 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 17:06:46.1435 DEBUG Login debug
+2023-12-05 17:06:46.1435 TRACE Login trace
+2023-12-05 17:07:03.8078 DEBUG [/] [GET] []
+2023-12-05 17:07:03.8230 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 17:07:03.9723 DEBUG Login debug
+2023-12-05 17:07:03.9723 TRACE Login trace
+2023-12-05 17:07:04.1925 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 17:07:04.1925 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 17:07:07.0502 DEBUG [/] [POST] []
+2023-12-05 17:07:07.0502 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundaryBcNdU429Oe5UmKe6
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryBcNdU429Oe5UmKe6
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryBcNdU429Oe5UmKe6
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTscAnt4TNZ54RZ2_ea3ih7zwqRy2O1WJpGWcAnGrIRM6lyMJor0BT-seyJt1kI6GDqdRpBUbFB7d3vwiBvgzrbABCGFis63AAy9fUhxBFKFLO0CpMZwLp2SatQmFLm6zryE
+------WebKitFormBoundaryBcNdU429Oe5UmKe6--
+]
+2023-12-05 17:07:13.7883 DEBUG [/] [POST] []
+2023-12-05 17:07:13.8036 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundary7t1FR32LvgerXeiA
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary7t1FR32LvgerXeiA
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary7t1FR32LvgerXeiA
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTscAnt4TNZ54RZ2_ea3ih7zwqRy2O1WJpGWcAnGrIRM6lyMJor0BT-seyJt1kI6GDqdRpBUbFB7d3vwiBvgzrbABCGFis63AAy9fUhxBFKFLO0CpMZwLp2SatQmFLm6zryE
+------WebKitFormBoundary7t1FR32LvgerXeiA--
+]
+2023-12-05 17:07:21.8432 DEBUG [/] [POST] []
+2023-12-05 17:07:21.8432 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundary1KVEj8Kl4is8wB89
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary1KVEj8Kl4is8wB89
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary1KVEj8Kl4is8wB89
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTscAnt4TNZ54RZ2_ea3ih7zwqRy2O1WJpGWcAnGrIRM6lyMJor0BT-seyJt1kI6GDqdRpBUbFB7d3vwiBvgzrbABCGFis63AAy9fUhxBFKFLO0CpMZwLp2SatQmFLm6zryE
+------WebKitFormBoundary1KVEj8Kl4is8wB89--
+]
+2023-12-05 17:07:45.1140 DEBUG [/] [GET] []
+2023-12-05 17:07:45.1277 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 17:07:45.2739 DEBUG Login debug
+2023-12-05 17:07:45.2739 TRACE Login trace
+2023-12-05 17:07:45.5311 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 17:07:45.5311 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 17:07:49.8241 DEBUG [/] [POST] []
+2023-12-05 17:07:49.8241 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundaryhTAJTusWQF2H1SWH
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryhTAJTusWQF2H1SWH
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryhTAJTusWQF2H1SWH
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsfdU-3-05qU1z7yDsIaX4XI6kcn4XdkTDOMY_wNlHs2wMCp3MYmKnbxkKJ7snfTKF9YWFxJvykw4EvKnuDS4Ldc8aN4AvyhUyjIlH0nuWbsU7slfFm-C6Dt3c-WHKCnJJM
+------WebKitFormBoundaryhTAJTusWQF2H1SWH--
+]
+2023-12-05 17:07:59.2701 DEBUG [/] [POST] []
+2023-12-05 17:11:02.5995 DEBUG [/] [GET] []
+2023-12-05 17:11:04.6115 TRACE [/] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 17:11:05.3789 DEBUG Login debug
+2023-12-05 17:11:05.3789 TRACE Login trace
+2023-12-05 17:11:07.8913 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-05 17:11:07.8913 TRACE [/js/LoginFormScript.js] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 17:11:09.9859 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 17:11:09.9859 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] []
+2023-12-05 17:11:14.7070 DEBUG [/] [POST] []
+2023-12-05 17:11:15.7752 TRACE [/] [POST] [Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestPipeReader] [------WebKitFormBoundaryGgarpefsMgChMoFD
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryGgarpefsMgChMoFD
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryGgarpefsMgChMoFD
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsf6N-guVJFlUYVkoUKUf2w4YafmrXWJqgBFzCHWvAmQbb8whNMdf_og68TK1kMpByss_7I_yUDYPtnY1baOIdkDDGDyxT_GtskEzJmeAHkzvXaQTK2twkMVL-rHsuiCYEw
+------WebKitFormBoundaryGgarpefsMgChMoFD--
+]

@@ -567,7 +567,7 @@
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets": {}
         }
       },
-      "NLog/5.2.6": {
+      "NLog/5.2.5": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/NLog.dll": {
@@ -791,8 +791,6 @@
           "Microsoft.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.14",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.5",
-          "NLog": "5.2.6",
-          "NLog.Extensions.Logging": "5.3.5",
           "NLog.Web.AspNetCore": "5.3.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Swashbuckle.AspNetCore.Swagger": "6.5.0",
@@ -1722,10 +1720,10 @@
         "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
       ]
     },
-    "NLog/5.2.6": {
-      "sha512": "7/RQ4VBu6HT6kieczhwfI52ugcxrsrMNWIGy43Q36SdfN5dApZW7otsgXuIXx2rKspIGkPhD99JVWIs6FtIilA==",
+    "NLog/5.2.5": {
+      "sha512": "mMXtbAxfNzqkXcBjhJ3wN3rH7kwUZ0JL0GrUBI/lso7+tQ/HC4e5SnlmR3R5qQ9zWbqMbjxeH37rIf0yQGWTiA==",
       "type": "package",
-      "path": "nlog/5.2.6",
+      "path": "nlog/5.2.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1742,7 +1740,7 @@
         "lib/netstandard1.5/NLog.xml",
         "lib/netstandard2.0/NLog.dll",
         "lib/netstandard2.0/NLog.xml",
-        "nlog.5.2.6.nupkg.sha512",
+        "nlog.5.2.5.nupkg.sha512",
         "nlog.nuspec"
       ]
     },

@@ -1,0 +1,62 @@
+2023-12-05 16:29:07.9305 DEBUG [/] [GET] []
+2023-12-05 16:29:13.9707 DEBUG Login debug
+2023-12-05 16:29:14.1792 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:29:26.3657 DEBUG [/] [POST] []
+2023-12-05 16:29:49.6343 DEBUG [/] [POST] []
+2023-12-05 16:33:34.9630 DEBUG [/] [GET] []
+2023-12-05 16:41:00.1028 DEBUG [/] [GET] []
+2023-12-05 16:41:00.2744 DEBUG Login debug
+2023-12-05 16:41:00.3933 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-05 16:41:01.4824 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:41:12.0819 DEBUG [/] [POST] []
+2023-12-05 16:43:07.4856 DEBUG [/] [GET] []
+2023-12-05 16:43:07.6510 DEBUG Login debug
+2023-12-05 16:43:07.8663 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:43:12.7602 DEBUG [/] [POST] []
+2023-12-05 16:49:11.2007 DEBUG [/] [GET] []
+2023-12-05 16:49:11.3689 DEBUG Login debug
+2023-12-05 16:49:11.5846 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:49:33.7154 DEBUG [/] [GET] []
+2023-12-05 16:49:33.8811 DEBUG Login debug
+2023-12-05 16:49:34.1211 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:49:38.7256 DEBUG [/] [POST] []
+2023-12-05 16:49:51.5872 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTc4NDI0OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.wWoGumvcQdykdsxaFmwOFjkhhAGctSd9Aij2spISbcU]
+2023-12-05 16:49:53.4223 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:54:58.1103 DEBUG [/] [GET] []
+2023-12-05 16:55:15.0835 DEBUG [/] [GET] []
+2023-12-05 16:57:07.8986 DEBUG [/] [GET] []
+2023-12-05 16:57:56.0101 DEBUG [/] [GET] []
+2023-12-05 16:58:57.4542 DEBUG [/] [GET] []
+2023-12-05 16:58:57.6145 DEBUG Login debug
+2023-12-05 16:58:57.7224 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-05 16:58:57.8305 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:59:01.3550 DEBUG [/] [POST] []
+2023-12-05 16:59:49.5059 DEBUG [/] [GET] []
+2023-12-05 16:59:49.6714 DEBUG Login debug
+2023-12-05 16:59:49.8892 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 16:59:53.3895 DEBUG [/] [POST] []
+2023-12-05 17:00:22.4806 DEBUG [/] [GET] []
+2023-12-05 17:01:15.5272 DEBUG [/] [GET] []
+2023-12-05 17:01:44.8988 DEBUG [/] [GET] []
+2023-12-05 17:01:45.0589 DEBUG Login debug
+2023-12-05 17:01:47.0628 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 17:01:52.3995 DEBUG [/] [POST] []
+2023-12-05 17:02:13.5223 DEBUG [/] [POST] []
+2023-12-05 17:06:45.9839 DEBUG [/] [GET] []
+2023-12-05 17:06:46.1435 DEBUG Login debug
+2023-12-05 17:07:03.8078 DEBUG [/] [GET] []
+2023-12-05 17:07:03.9723 DEBUG Login debug
+2023-12-05 17:07:04.1925 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 17:07:07.0502 DEBUG [/] [POST] []
+2023-12-05 17:07:13.7883 DEBUG [/] [POST] []
+2023-12-05 17:07:21.8432 DEBUG [/] [POST] []
+2023-12-05 17:07:45.1140 DEBUG [/] [GET] []
+2023-12-05 17:07:45.2739 DEBUG Login debug
+2023-12-05 17:07:45.5311 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 17:07:49.8241 DEBUG [/] [POST] []
+2023-12-05 17:07:59.2701 DEBUG [/] [POST] []
+2023-12-05 17:11:02.5995 DEBUG [/] [GET] []
+2023-12-05 17:11:05.3789 DEBUG Login debug
+2023-12-05 17:11:07.8913 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-05 17:11:09.9859 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-05 17:11:14.7070 DEBUG [/] [POST] []
