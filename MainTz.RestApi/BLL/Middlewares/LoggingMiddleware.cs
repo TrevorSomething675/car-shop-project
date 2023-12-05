@@ -1,5 +1,4 @@
-﻿using MainTz.RestApi.DAL.Data.Models.DtoModels;
-using System.Text.Json;
+﻿using System.Text;
 
 namespace MainTz.RestApi.BLL.Middlewares
 {
@@ -15,14 +14,18 @@ namespace MainTz.RestApi.BLL.Middlewares
 
         public async Task Invoke(HttpContext context)
         {
-            _logger.LogDebug($"[{context.Request.Path}]" +
-            $" [{context.Request.Method}]" +
-            $" [{context.Request.Headers["Authorization"]}]");
             string bodyContent = "";
-            using (var reader = new StreamReader(context.Request.Body))
+
+            using(var reader = new StreamReader(context.Request.Body))
             {
                 bodyContent = await reader.ReadToEndAsync();
+                context.Request.Body = new MemoryStream(Encoding.UTF8.GetBytes(bodyContent));
             }
+
+            _logger.LogDebug($"[{context.Request.Path}]" +
+                $" [{context.Request.Method}]" +
+                $" [{context.Request.Headers["Authorization"]}]" +
+                $" [{bodyContent}]");
 
             _logger.LogTrace($"[{context.Request.Path}]" +
                 $" [{context.Request.Method}]" +

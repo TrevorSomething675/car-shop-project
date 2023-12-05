@@ -4,7 +4,6 @@ using MainTz.RestApi.DAL.Data.Models.Models;
 using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
 using Extensions;
-using System.Text.Json;
 
 namespace MainTz.RestApi.Controllers
 {
@@ -68,7 +67,7 @@ namespace MainTz.RestApi.Controllers
 		/// <param name="userDto">Модель, которая приходит с фронта</param>
 		/// <returns></returns>
 		[HttpPost]
-		public async Task<IResult> Login([FromBody]UserDto userDto)
+		public async Task<IResult> Login(UserDto userDto)
 		{
             try
 			{
