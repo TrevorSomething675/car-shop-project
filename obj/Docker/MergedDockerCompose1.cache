@@ -1,0 +1,75 @@
+name: dockercompose16382280488134300929
+services:
+  db:
+    environment:
+      POSTGRES_DB: CarCompanyDb
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    image: postgres
+    networks:
+      CarCompany: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: pgdata
+      target: /var/lib/postgresql/data
+      volume: {}
+  maintz.authservice:
+    build:
+      context: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
+      dockerfile: MainTz.AuthApi/Dockerfile
+    image: authservice
+    networks:
+      CarCompany: null
+    ports:
+    - mode: ingress
+      target: 8040
+      published: "8040"
+      protocol: tcp
+  maintz.restapi:
+    build:
+      context: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
+      dockerfile: MainTz.RestApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: maintzrestapi
+    networks:
+      CarCompany: null
+    ports:
+    - mode: ingress
+      target: 8080
+      protocol: tcp
+    - mode: ingress
+      target: 8081
+      protocol: tcp
+    - mode: ingress
+      target: 8081
+      published: "8080"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /home/app/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /home/app/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  CarCompany:
+    name: dockercompose16382280488134300929_CarCompany
+volumes:
+  pgdata:
+    name: dockercompose16382280488134300929_pgdata

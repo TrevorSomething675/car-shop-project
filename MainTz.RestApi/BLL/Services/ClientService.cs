@@ -1,5 +1,7 @@
 ﻿using MainTz.RestApi.BLL.Services.Abstractions;
 using MainTz.RestApi.DAL.Data.Models.Models;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace MainTz.RestApi.BLL.Services
 {
@@ -11,24 +13,46 @@ namespace MainTz.RestApi.BLL.Services
         /// <param name="url"></param>
         /// <param name="message"></param>
         /// <returns></returns>
-        public async Task<TokensModel> SendRequest(string url, string message)
+        public async Task<TokensModel> SendRequestAsync(string url, string role)
 		{
 			TokensModel tokens;
             try
-			{
-				var client = new HttpClient();
-				StringContent requestMessage = new StringContent(message);
-				using var request = new HttpRequestMessage(HttpMethod.Post, url);
-				request.Content = requestMessage;
+            {
+                var client = new HttpClient();
+                var content = new { role };
+
+				var requestContent = new StringContent(JsonConvert.SerializeObject(content), Encoding.UTF8, "application/json");
+				using var request = new HttpRequestMessage(HttpMethod.Get, url);
+				request.Content = requestContent;
+
 				using var response = await client.SendAsync(request);
-                tokens = await response.Content.ReadFromJsonAsync<TokensModel>();
+                return await response.Content.ReadFromJsonAsync<TokensModel>();
 			}
 			catch (Exception ex)
 			{
-				return null; 
+				return null;
 			}
-
-			return tokens;
 		}
+
+        public async Task<TokensModel> SendRequestWithTokenAsync(string url, string role, string refreshToken)
+        {
+            TokensModel tokens;
+            try
+            {
+                var client = new HttpClient();
+                var content = new {role, refreshToken};
+
+                var requestContent = new StringContent(JsonConvert.SerializeObject(content), Encoding.UTF8, "application/json");
+                using HttpRequestMessage request = new (HttpMethod.Get, url);
+                request.Content = requestContent;
+
+                using HttpResponseMessage response = await client.SendAsync(request);
+                return await response.Content.ReadFromJsonAsync<TokensModel>();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

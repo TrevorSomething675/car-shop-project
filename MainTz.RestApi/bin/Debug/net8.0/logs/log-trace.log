@@ -366,3 +366,1494 @@ CfDJ8MpQ9zsweldCrCH3ji0GTsdqrl63aMq9wunHuXzOMezLrJZ2sM9eIscjFIwmOUvs_uINuazqdlTB
 2023-12-05 17:32:56.8444 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
 2023-12-05 17:32:57.0978 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
 2023-12-05 17:32:57.0978 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.2912 DEBUG [/] [GET] [] []
+2023-12-06 11:04:48.3085 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.5431 DEBUG Login debug
+2023-12-06 11:04:48.5431 TRACE Login trace
+2023-12-06 11:04:48.7217 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [] []
+2023-12-06 11:04:48.7217 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 11:04:48.7217 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.7217 DEBUG [/css/site.css] [GET] [] []
+2023-12-06 11:04:48.7217 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.7217 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 11:04:48.7217 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.7217 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.7217 DEBUG [/MainTz.RestApi.styles.css] [GET] [] []
+2023-12-06 11:04:48.7217 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.7217 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 11:04:48.7217 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.7356 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] [] []
+2023-12-06 11:04:48.7356 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.7356 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [] []
+2023-12-06 11:04:48.7356 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:48.9083 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:04:48.9083 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:04:49.0917 DEBUG [/favicon.ico] [GET] [] []
+2023-12-06 11:04:49.0917 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:15:15.5908 DEBUG [/] [GET] [] []
+2023-12-06 11:15:15.6135 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:15:15.7873 DEBUG Login debug
+2023-12-06 11:15:15.7873 TRACE Login trace
+2023-12-06 11:15:15.8990 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 11:15:15.8990 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 11:15:15.8990 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:15:15.8990 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 11:15:15.8990 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:15:15.8990 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:15:16.0419 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:15:16.0419 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:15:26.7749 DEBUG [/] [POST] [] [------WebKitFormBoundaryO45Jne7a9u5vWumc
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryO45Jne7a9u5vWumc
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryO45Jne7a9u5vWumc
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXMAPPuWlApompiQbeyIrxQcGZfa9fNWohlrg7gwJfONM8y4f1lSq6ClwoN-w1HOttTxwi4muL-r27Ex7woqWYujwxpPRhtYhHyeE2jKW9JLVlkWNrsjN9d33_QX4j185k
+------WebKitFormBoundaryO45Jne7a9u5vWumc--
+]
+2023-12-06 11:15:26.7749 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryO45Jne7a9u5vWumc
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryO45Jne7a9u5vWumc
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryO45Jne7a9u5vWumc
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXMAPPuWlApompiQbeyIrxQcGZfa9fNWohlrg7gwJfONM8y4f1lSq6ClwoN-w1HOttTxwi4muL-r27Ex7woqWYujwxpPRhtYhHyeE2jKW9JLVlkWNrsjN9d33_QX4j185k
+------WebKitFormBoundaryO45Jne7a9u5vWumc--
+]
+2023-12-06 11:15:30.5174 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:15:30.5174 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:15:30.5174 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css.map] [GET] [] []
+2023-12-06 11:15:30.5174 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:15:33.6081 DEBUG [/] [POST] [] [------WebKitFormBoundaryI3LMNyxqK5SHmBCE
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryI3LMNyxqK5SHmBCE
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryI3LMNyxqK5SHmBCE
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXMAPPuWlApompiQbeyIrxQcGZfa9fNWohlrg7gwJfONM8y4f1lSq6ClwoN-w1HOttTxwi4muL-r27Ex7woqWYujwxpPRhtYhHyeE2jKW9JLVlkWNrsjN9d33_QX4j185k
+------WebKitFormBoundaryI3LMNyxqK5SHmBCE--
+]
+2023-12-06 11:15:33.6105 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryI3LMNyxqK5SHmBCE
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryI3LMNyxqK5SHmBCE
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryI3LMNyxqK5SHmBCE
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXMAPPuWlApompiQbeyIrxQcGZfa9fNWohlrg7gwJfONM8y4f1lSq6ClwoN-w1HOttTxwi4muL-r27Ex7woqWYujwxpPRhtYhHyeE2jKW9JLVlkWNrsjN9d33_QX4j185k
+------WebKitFormBoundaryI3LMNyxqK5SHmBCE--
+]
+2023-12-06 11:15:34.2551 DEBUG [/] [POST] [] [------WebKitFormBoundaryBkHRDHkJXovEqkWH
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryBkHRDHkJXovEqkWH
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryBkHRDHkJXovEqkWH
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXMAPPuWlApompiQbeyIrxQcGZfa9fNWohlrg7gwJfONM8y4f1lSq6ClwoN-w1HOttTxwi4muL-r27Ex7woqWYujwxpPRhtYhHyeE2jKW9JLVlkWNrsjN9d33_QX4j185k
+------WebKitFormBoundaryBkHRDHkJXovEqkWH--
+]
+2023-12-06 11:15:34.2551 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryBkHRDHkJXovEqkWH
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryBkHRDHkJXovEqkWH
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryBkHRDHkJXovEqkWH
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXMAPPuWlApompiQbeyIrxQcGZfa9fNWohlrg7gwJfONM8y4f1lSq6ClwoN-w1HOttTxwi4muL-r27Ex7woqWYujwxpPRhtYhHyeE2jKW9JLVlkWNrsjN9d33_QX4j185k
+------WebKitFormBoundaryBkHRDHkJXovEqkWH--
+]
+2023-12-06 11:15:34.4049 DEBUG [/] [POST] [] [------WebKitFormBoundarywg4pIVjNPBxBc61q
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarywg4pIVjNPBxBc61q
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarywg4pIVjNPBxBc61q
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXMAPPuWlApompiQbeyIrxQcGZfa9fNWohlrg7gwJfONM8y4f1lSq6ClwoN-w1HOttTxwi4muL-r27Ex7woqWYujwxpPRhtYhHyeE2jKW9JLVlkWNrsjN9d33_QX4j185k
+------WebKitFormBoundarywg4pIVjNPBxBc61q--
+]
+2023-12-06 11:15:34.4049 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarywg4pIVjNPBxBc61q
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarywg4pIVjNPBxBc61q
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarywg4pIVjNPBxBc61q
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXMAPPuWlApompiQbeyIrxQcGZfa9fNWohlrg7gwJfONM8y4f1lSq6ClwoN-w1HOttTxwi4muL-r27Ex7woqWYujwxpPRhtYhHyeE2jKW9JLVlkWNrsjN9d33_QX4j185k
+------WebKitFormBoundarywg4pIVjNPBxBc61q--
+]
+2023-12-06 11:16:01.8294 DEBUG [/] [GET] [] []
+2023-12-06 11:16:01.8464 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:16:02.0488 DEBUG Login debug
+2023-12-06 11:16:02.0488 TRACE Login trace
+2023-12-06 11:16:02.3155 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:16:02.3155 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:16:17.7848 DEBUG [/] [POST] [] [------WebKitFormBoundary22ZIAciroUqQEABg
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary22ZIAciroUqQEABg
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary22ZIAciroUqQEABg
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUUTFW41DRo3QFpbDIdV-7D8WmZ3wLBNJKG-RKLzs4nHjFIexba9_-aso28lMz65haIVT8VfKzvUFJkbbnJlGNYsBrMITAa-YqnQP4P1_ziTNGsYO7E_nSHm1QpRDZl7Xw
+------WebKitFormBoundary22ZIAciroUqQEABg--
+]
+2023-12-06 11:16:17.7848 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary22ZIAciroUqQEABg
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary22ZIAciroUqQEABg
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary22ZIAciroUqQEABg
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUUTFW41DRo3QFpbDIdV-7D8WmZ3wLBNJKG-RKLzs4nHjFIexba9_-aso28lMz65haIVT8VfKzvUFJkbbnJlGNYsBrMITAa-YqnQP4P1_ziTNGsYO7E_nSHm1QpRDZl7Xw
+------WebKitFormBoundary22ZIAciroUqQEABg--
+]
+2023-12-06 11:16:22.4062 DEBUG [/] [POST] [] [------WebKitFormBoundaryGnTdjnwl6SAWghm5
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryGnTdjnwl6SAWghm5
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryGnTdjnwl6SAWghm5
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUUTFW41DRo3QFpbDIdV-7D8WmZ3wLBNJKG-RKLzs4nHjFIexba9_-aso28lMz65haIVT8VfKzvUFJkbbnJlGNYsBrMITAa-YqnQP4P1_ziTNGsYO7E_nSHm1QpRDZl7Xw
+------WebKitFormBoundaryGnTdjnwl6SAWghm5--
+]
+2023-12-06 11:16:22.4079 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryGnTdjnwl6SAWghm5
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryGnTdjnwl6SAWghm5
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryGnTdjnwl6SAWghm5
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUUTFW41DRo3QFpbDIdV-7D8WmZ3wLBNJKG-RKLzs4nHjFIexba9_-aso28lMz65haIVT8VfKzvUFJkbbnJlGNYsBrMITAa-YqnQP4P1_ziTNGsYO7E_nSHm1QpRDZl7Xw
+------WebKitFormBoundaryGnTdjnwl6SAWghm5--
+]
+2023-12-06 11:26:26.0359 DEBUG [/] [GET] [] []
+2023-12-06 11:26:26.0544 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:26:26.2300 DEBUG Login debug
+2023-12-06 11:26:26.2300 TRACE Login trace
+2023-12-06 11:26:26.3455 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 11:26:26.3455 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:26:26.3455 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 11:26:26.3455 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:26:26.3455 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 11:26:26.3455 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:26:26.4954 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:26:26.4954 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:26:29.4533 DEBUG [/] [POST] [] [------WebKitFormBoundaryJyJ0Ru5yYricu6Z6
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryJyJ0Ru5yYricu6Z6
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryJyJ0Ru5yYricu6Z6
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVAkrRuFzGzrmrpnMemBhlFzyCRE7FbdG5OnnbqvHZFKJgWt0BP1whi5dle3eP-ikm_yVWZ5wEC0LJm4PI2kbsjh_WYlRjPDQ-zAKafRZ_zg2qabmVzAYbmUKxY163fr2g
+------WebKitFormBoundaryJyJ0Ru5yYricu6Z6--
+]
+2023-12-06 11:26:29.4533 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryJyJ0Ru5yYricu6Z6
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryJyJ0Ru5yYricu6Z6
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryJyJ0Ru5yYricu6Z6
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVAkrRuFzGzrmrpnMemBhlFzyCRE7FbdG5OnnbqvHZFKJgWt0BP1whi5dle3eP-ikm_yVWZ5wEC0LJm4PI2kbsjh_WYlRjPDQ-zAKafRZ_zg2qabmVzAYbmUKxY163fr2g
+------WebKitFormBoundaryJyJ0Ru5yYricu6Z6--
+]
+2023-12-06 11:26:39.9090 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MTI1OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.Tue8cx1aP9vL2VCHooB7kwD4FcS59LaRbWXGsK6NaKU] []
+2023-12-06 11:26:39.9090 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:26:40.2346 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:26:40.2346 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:50:34.0358 DEBUG [/] [GET] [] []
+2023-12-06 11:50:34.0503 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:50:34.1824 DEBUG Login debug
+2023-12-06 11:50:34.1824 TRACE Login trace
+2023-12-06 11:50:37.1401 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 11:50:37.1419 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:50:37.1401 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 11:50:37.1419 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:50:37.1401 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 11:50:37.1419 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:50:37.8344 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:50:37.8344 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:50:49.3753 DEBUG [/] [POST] [] [------WebKitFormBoundarybaYA9aa4XYD2jh34
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarybaYA9aa4XYD2jh34
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarybaYA9aa4XYD2jh34
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXlinCMcZR5amJCUJQHhGfJTbS-mdz0IaRQMdRFgaatSy4Z4ERKyD5-HCepiJsBc-J6RpigxcHiaoLbFB4BHAqq7j4lsXrQJSKD2xgydWAvc_AVRXFazWzybop4T-fY85s
+------WebKitFormBoundarybaYA9aa4XYD2jh34--
+]
+2023-12-06 11:50:49.3753 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarybaYA9aa4XYD2jh34
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarybaYA9aa4XYD2jh34
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarybaYA9aa4XYD2jh34
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXlinCMcZR5amJCUJQHhGfJTbS-mdz0IaRQMdRFgaatSy4Z4ERKyD5-HCepiJsBc-J6RpigxcHiaoLbFB4BHAqq7j4lsXrQJSKD2xgydWAvc_AVRXFazWzybop4T-fY85s
+------WebKitFormBoundarybaYA9aa4XYD2jh34--
+]
+2023-12-06 11:50:54.3420 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MjcwOSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.Yp88TEjw1n2NiGqYlI-IUNPg947DTeFLnd7JYnEOiGk] []
+2023-12-06 11:50:54.3450 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:51:30.5608 DEBUG [/] [GET] [] []
+2023-12-06 11:51:30.5772 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:51:30.7086 DEBUG Login debug
+2023-12-06 11:51:30.7086 TRACE Login trace
+2023-12-06 11:51:32.1179 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:51:32.1179 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:51:39.6583 DEBUG [/] [POST] [] [------WebKitFormBoundaryiEAENhhmC6yiyb1t
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryiEAENhhmC6yiyb1t
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryiEAENhhmC6yiyb1t
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPX9ph4Bcb4vhRHv5oTGV3Acn-309z_hMG0niiWpZIQC7okiConZNseo1X7raCPweUR1vur1p9v1EDHuRFIxCfyaZfPpXopWcVPr-_yQBBNZGU-zh8AB-_C4eCZ-aYc3u6Q
+------WebKitFormBoundaryiEAENhhmC6yiyb1t--
+]
+2023-12-06 11:51:39.6583 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryiEAENhhmC6yiyb1t
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryiEAENhhmC6yiyb1t
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryiEAENhhmC6yiyb1t
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPX9ph4Bcb4vhRHv5oTGV3Acn-309z_hMG0niiWpZIQC7okiConZNseo1X7raCPweUR1vur1p9v1EDHuRFIxCfyaZfPpXopWcVPr-_yQBBNZGU-zh8AB-_C4eCZ-aYc3u6Q
+------WebKitFormBoundaryiEAENhhmC6yiyb1t--
+]
+2023-12-06 11:51:40.4558 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1Mjc1OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.3na30VqDVE32A-2JSGTf2OnLqb1iHhqfvGPxVZFi-Mg] []
+2023-12-06 11:51:40.4558 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:52:05.8181 DEBUG [/] [GET] [] []
+2023-12-06 11:52:05.8341 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:52:05.9802 DEBUG Login debug
+2023-12-06 11:52:05.9802 TRACE Login trace
+2023-12-06 11:52:07.5379 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:52:07.5379 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:52:12.6898 DEBUG [/] [POST] [] [------WebKitFormBoundaryoKHYsCPKzMHQgAox
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryoKHYsCPKzMHQgAox
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryoKHYsCPKzMHQgAox
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUtsmBH0S8GohzMH_ewqkfC5slRAVAjXv3uo7iyPyxAKya-fpZmGVO7mivNQG1nnNnTPBKu_Zupvsglg2CvW_Da-20v-CBDuGODrbMUymTWJNXe4d0OZ2A25u_U95Y1CIY
+------WebKitFormBoundaryoKHYsCPKzMHQgAox--
+]
+2023-12-06 11:52:12.6898 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryoKHYsCPKzMHQgAox
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryoKHYsCPKzMHQgAox
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryoKHYsCPKzMHQgAox
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUtsmBH0S8GohzMH_ewqkfC5slRAVAjXv3uo7iyPyxAKya-fpZmGVO7mivNQG1nnNnTPBKu_Zupvsglg2CvW_Da-20v-CBDuGODrbMUymTWJNXe4d0OZ2A25u_U95Y1CIY
+------WebKitFormBoundaryoKHYsCPKzMHQgAox--
+]
+2023-12-06 11:52:13.5689 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1Mjc5MiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ._JUGP4Ga1y2-5tTWtA7qYogaZt2ZGjP16yd1ADA6h6I] []
+2023-12-06 11:52:13.5689 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:52:14.9429 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:52:14.9429 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:52:37.0791 DEBUG [/] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1Mjc5MiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ._JUGP4Ga1y2-5tTWtA7qYogaZt2ZGjP16yd1ADA6h6I] []
+2023-12-06 11:52:37.0791 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:52:37.0791 DEBUG Login debug
+2023-12-06 11:52:37.0791 TRACE Login trace
+2023-12-06 11:52:39.6422 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:52:39.6422 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:52:46.2934 DEBUG [/] [POST] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1Mjc5MiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ._JUGP4Ga1y2-5tTWtA7qYogaZt2ZGjP16yd1ADA6h6I] [------WebKitFormBoundaryJXK9FmXulqN0SxfR
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryJXK9FmXulqN0SxfR
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryJXK9FmXulqN0SxfR
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWNqsRvHcGptj09LOQsntzAayyES_-I-cO0QmYQwbkQupYeSSlit1qd4TzkNXlmuQsvXlTq3eyQX9Kx3aF0C2nqVFEg8lP75rLPwAjLwbPoK7IjZntuL3GdsVAGDBKHCTiGTpvE2gFlsHzqF90gLqezmqBrO1pRjFP8SwrgEvIklw
+------WebKitFormBoundaryJXK9FmXulqN0SxfR--
+]
+2023-12-06 11:52:46.2934 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryJXK9FmXulqN0SxfR
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryJXK9FmXulqN0SxfR
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryJXK9FmXulqN0SxfR
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWNqsRvHcGptj09LOQsntzAayyES_-I-cO0QmYQwbkQupYeSSlit1qd4TzkNXlmuQsvXlTq3eyQX9Kx3aF0C2nqVFEg8lP75rLPwAjLwbPoK7IjZntuL3GdsVAGDBKHCTiGTpvE2gFlsHzqF90gLqezmqBrO1pRjFP8SwrgEvIklw
+------WebKitFormBoundaryJXK9FmXulqN0SxfR--
+]
+2023-12-06 11:52:47.9282 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MjgyNiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.15hGc6GlJWn1LsVCPUoH2Qtw4oE-33xXVza35jI4ANs] []
+2023-12-06 11:52:47.9282 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:55:14.6945 DEBUG [/] [GET] [] []
+2023-12-06 11:55:14.7109 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:55:14.8522 DEBUG Login debug
+2023-12-06 11:55:14.8522 TRACE Login trace
+2023-12-06 11:55:16.3376 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:55:16.3376 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:55:19.8527 DEBUG [/] [POST] [] [------WebKitFormBoundaryqvmWoa1ikIMsZILu
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryqvmWoa1ikIMsZILu
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryqvmWoa1ikIMsZILu
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWk_vRIPJSSGxpvPlaVImDw8KE78RVqanIS6rK8tq5XpOWLilQmG5uuA0NJh5SBHvQ6m8dYIzIk6eqdwKAqO_SW5tQUcZ0u3KhUiL4H_QqlMV4nqOM85zoymiwDF24G3FI
+------WebKitFormBoundaryqvmWoa1ikIMsZILu--
+]
+2023-12-06 11:55:19.8527 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryqvmWoa1ikIMsZILu
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryqvmWoa1ikIMsZILu
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryqvmWoa1ikIMsZILu
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWk_vRIPJSSGxpvPlaVImDw8KE78RVqanIS6rK8tq5XpOWLilQmG5uuA0NJh5SBHvQ6m8dYIzIk6eqdwKAqO_SW5tQUcZ0u3KhUiL4H_QqlMV4nqOM85zoymiwDF24G3FI
+------WebKitFormBoundaryqvmWoa1ikIMsZILu--
+]
+2023-12-06 11:55:20.2304 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1Mjk3OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.YDbt-UnP3zkmSOf9pL_6e4743fHAVw_A1SbMJKzgObg] []
+2023-12-06 11:55:20.2304 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:55:20.3870 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:55:20.3870 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:55:48.1811 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1Mjk3OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.YDbt-UnP3zkmSOf9pL_6e4743fHAVw_A1SbMJKzgObg] []
+2023-12-06 11:55:48.1811 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:55:48.2073 DEBUG [/js/CookieManagerScript.js] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1Mjk3OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.YDbt-UnP3zkmSOf9pL_6e4743fHAVw_A1SbMJKzgObg] []
+2023-12-06 11:55:48.2073 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:55:48.2073 DEBUG [/js/JwtHeaderScript.js] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1Mjk3OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.YDbt-UnP3zkmSOf9pL_6e4743fHAVw_A1SbMJKzgObg] []
+2023-12-06 11:55:48.2073 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:55:48.2522 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:55:48.2522 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.0352 DEBUG [/] [GET] [] []
+2023-12-06 11:56:07.0497 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.1817 DEBUG Login debug
+2023-12-06 11:56:07.1817 TRACE Login trace
+2023-12-06 11:56:07.3258 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [] []
+2023-12-06 11:56:07.3258 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.3258 DEBUG [/css/site.css] [GET] [] []
+2023-12-06 11:56:07.3258 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.3258 DEBUG [/MainTz.RestApi.styles.css] [GET] [] []
+2023-12-06 11:56:07.3258 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.3258 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 11:56:07.3258 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.3258 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [] []
+2023-12-06 11:56:07.3258 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 11:56:07.3288 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.3288 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.3258 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] [] []
+2023-12-06 11:56:07.3288 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.3288 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 11:56:07.3288 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.5430 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:56:07.5430 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:07.6566 DEBUG [/favicon.ico] [GET] [] []
+2023-12-06 11:56:07.6566 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:13.9012 DEBUG [/] [POST] [] [------WebKitFormBoundaryqsC8T2UwhGk509UE
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryqsC8T2UwhGk509UE
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryqsC8T2UwhGk509UE
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUt03gccexZoV0SEuDbPuQsQ3VOEey_c0cA2gY2QHIM9fYJmzuAjafPA6uB9KLyGD0Taks2MCOlXXFOPQFj1Tv-VFavx49G52dsi1mxb_iDSPYxHOYTLaQvaGKJW9Zky3w
+------WebKitFormBoundaryqsC8T2UwhGk509UE--
+]
+2023-12-06 11:56:13.9012 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryqsC8T2UwhGk509UE
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryqsC8T2UwhGk509UE
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryqsC8T2UwhGk509UE
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUt03gccexZoV0SEuDbPuQsQ3VOEey_c0cA2gY2QHIM9fYJmzuAjafPA6uB9KLyGD0Taks2MCOlXXFOPQFj1Tv-VFavx49G52dsi1mxb_iDSPYxHOYTLaQvaGKJW9Zky3w
+------WebKitFormBoundaryqsC8T2UwhGk509UE--
+]
+2023-12-06 11:56:14.2418 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzAzNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.liB_BH8dhKw9Yu84tgBFNyFPePwGQeCpB6FKVWw_ofE] []
+2023-12-06 11:56:14.2418 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:14.3921 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 11:56:14.3921 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:16.1628 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzAzNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.liB_BH8dhKw9Yu84tgBFNyFPePwGQeCpB6FKVWw_ofE] []
+2023-12-06 11:56:16.1628 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 11:56:16.1628 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css.map] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzAzNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.liB_BH8dhKw9Yu84tgBFNyFPePwGQeCpB6FKVWw_ofE] []
+2023-12-06 11:56:16.1799 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:01:20.8869 DEBUG [/User/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzAzNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.liB_BH8dhKw9Yu84tgBFNyFPePwGQeCpB6FKVWw_ofE] []
+2023-12-06 12:01:20.8869 TRACE [/User/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:01:21.0023 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:01:21.0023 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:01:21.7788 DEBUG [/] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzAzNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.liB_BH8dhKw9Yu84tgBFNyFPePwGQeCpB6FKVWw_ofE] []
+2023-12-06 12:01:21.7788 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:01:21.7820 DEBUG Login debug
+2023-12-06 12:01:21.7820 TRACE Login trace
+2023-12-06 12:01:21.8202 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:01:21.8202 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:01:24.4029 DEBUG [/] [POST] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzAzNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.liB_BH8dhKw9Yu84tgBFNyFPePwGQeCpB6FKVWw_ofE] [------WebKitFormBoundaryeLwdyNZslS0YlAWK
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryeLwdyNZslS0YlAWK
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryeLwdyNZslS0YlAWK
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWbIunjw-LyuO-fpoDF52SIYOwHZeVfge6j-eVnSNK0NGHF2gWYSzVHgTdnLAffo6XdULgwMWyYh_6hWb_pvpMsF1P_IpBUua0vwpLHBSxFF050B7_TNykk1U-zC5ATOlB09LAl3CzwKhtuJeeAtfrzMgDh82f_WFBay11Jktlr9Q
+------WebKitFormBoundaryeLwdyNZslS0YlAWK--
+]
+2023-12-06 12:01:24.4029 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryeLwdyNZslS0YlAWK
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryeLwdyNZslS0YlAWK
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryeLwdyNZslS0YlAWK
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWbIunjw-LyuO-fpoDF52SIYOwHZeVfge6j-eVnSNK0NGHF2gWYSzVHgTdnLAffo6XdULgwMWyYh_6hWb_pvpMsF1P_IpBUua0vwpLHBSxFF050B7_TNykk1U-zC5ATOlB09LAl3CzwKhtuJeeAtfrzMgDh82f_WFBay11Jktlr9Q
+------WebKitFormBoundaryeLwdyNZslS0YlAWK--
+]
+2023-12-06 12:02:31.9146 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzM1MiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.6giN3DZGgC5DMuAMlj-TmJ7zblg1Syq3KsrjXMhuMmE] []
+2023-12-06 12:02:31.9146 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:02:31.9420 DEBUG [/js/CookieManagerScript.js] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzM1MiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.6giN3DZGgC5DMuAMlj-TmJ7zblg1Syq3KsrjXMhuMmE] []
+2023-12-06 12:02:31.9420 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:02:31.9420 DEBUG [/js/JwtHeaderScript.js] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzM1MiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.6giN3DZGgC5DMuAMlj-TmJ7zblg1Syq3KsrjXMhuMmE] []
+2023-12-06 12:02:31.9420 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:02:31.9887 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:02:31.9887 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:04:36.8642 DEBUG [/] [GET] [] []
+2023-12-06 12:04:36.8798 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:04:37.0157 DEBUG Login debug
+2023-12-06 12:04:37.0159 TRACE Login trace
+2023-12-06 12:04:37.1292 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 12:04:37.1292 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:04:37.2832 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:04:37.2832 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:05:00.7134 DEBUG [/] [POST] [] [------WebKitFormBoundarydtBNCiseHj3LXeyN
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarydtBNCiseHj3LXeyN
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarydtBNCiseHj3LXeyN
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVzhCZ6_rygFJepmwq4Qs16rHlEWfccAWfutUtHMnicdjM0hCSEDDJv8hAGp45fQ8WGC7PSXszNZKO2feslvn9l9-6Bev7RmK_j8GKWYSjTLll1V9iEqWuVC-l-wzUadys
+------WebKitFormBoundarydtBNCiseHj3LXeyN--
+]
+2023-12-06 12:05:01.3745 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarydtBNCiseHj3LXeyN
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarydtBNCiseHj3LXeyN
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarydtBNCiseHj3LXeyN
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVzhCZ6_rygFJepmwq4Qs16rHlEWfccAWfutUtHMnicdjM0hCSEDDJv8hAGp45fQ8WGC7PSXszNZKO2feslvn9l9-6Bev7RmK_j8GKWYSjTLll1V9iEqWuVC-l-wzUadys
+------WebKitFormBoundarydtBNCiseHj3LXeyN--
+]
+2023-12-06 12:05:12.3379 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzU2OCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.8Y1R3mqCD-Tq_fe7IdAAi-DinG8srl7o2YdwiVCoqxQ] []
+2023-12-06 12:05:12.3379 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:05:12.4888 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:05:12.4888 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:05:18.4659 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzU2OCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.8Y1R3mqCD-Tq_fe7IdAAi-DinG8srl7o2YdwiVCoqxQ] []
+2023-12-06 12:05:18.4659 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:05:18.5216 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:05:18.5216 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:05:19.2864 DEBUG [/] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzU2OCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.8Y1R3mqCD-Tq_fe7IdAAi-DinG8srl7o2YdwiVCoqxQ] []
+2023-12-06 12:05:19.2864 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:05:19.2864 DEBUG Login debug
+2023-12-06 12:05:19.2864 TRACE Login trace
+2023-12-06 12:05:19.3270 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:05:19.3270 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:05:24.9234 DEBUG [/] [POST] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzU2OCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.8Y1R3mqCD-Tq_fe7IdAAi-DinG8srl7o2YdwiVCoqxQ] [------WebKitFormBoundaryKhnmC5tjCBOAOahc
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryKhnmC5tjCBOAOahc
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryKhnmC5tjCBOAOahc
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWZZrzIv16rrZx97TQl89w-JjwTD4qqpM3P_lhDl1sQAHtRmJK2BTisch8QP54HxwFjPImoPlNQRkLjIg--k49N9d5BL9rlzgbw9eLXk12FUdWKmxE-aUrcS4ligkbGw0PfaoFXYViakEbm2KOqzcVYqkpCjn72a6bA-P-8GOMUHw
+------WebKitFormBoundaryKhnmC5tjCBOAOahc--
+]
+2023-12-06 12:05:24.9234 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryKhnmC5tjCBOAOahc
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryKhnmC5tjCBOAOahc
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryKhnmC5tjCBOAOahc
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWZZrzIv16rrZx97TQl89w-JjwTD4qqpM3P_lhDl1sQAHtRmJK2BTisch8QP54HxwFjPImoPlNQRkLjIg--k49N9d5BL9rlzgbw9eLXk12FUdWKmxE-aUrcS4ligkbGw0PfaoFXYViakEbm2KOqzcVYqkpCjn72a6bA-P-8GOMUHw
+------WebKitFormBoundaryKhnmC5tjCBOAOahc--
+]
+2023-12-06 12:05:50.5995 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzU4NCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.OS_e4xx54A718bEdvwKElG0ldft5cHb_CyEseOaeeuc] []
+2023-12-06 12:05:50.5995 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:05:50.6523 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:05:50.6523 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:07:30.1982 DEBUG [/] [GET] [] []
+2023-12-06 12:07:30.2145 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:07:30.3950 DEBUG Login debug
+2023-12-06 12:07:30.3950 TRACE Login trace
+2023-12-06 12:07:32.0296 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:07:32.0296 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:07:43.7820 DEBUG [/] [POST] [] [------WebKitFormBoundaryBszQphacYuonXYtQ
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryBszQphacYuonXYtQ
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryBszQphacYuonXYtQ
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWbuOT2AkXFkEOpYoqtxk86RQjx_vDimERTQsoGL1gWuasaCB4lnlBBGu7DC-5oqzn1D7uY8g9SVr4tDiWcqYRI38dDrun8HtPAgJhEo6SOiN_iEDbK63syWnsyealexQw
+------WebKitFormBoundaryBszQphacYuonXYtQ--
+]
+2023-12-06 12:07:43.7820 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryBszQphacYuonXYtQ
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryBszQphacYuonXYtQ
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryBszQphacYuonXYtQ
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWbuOT2AkXFkEOpYoqtxk86RQjx_vDimERTQsoGL1gWuasaCB4lnlBBGu7DC-5oqzn1D7uY8g9SVr4tDiWcqYRI38dDrun8HtPAgJhEo6SOiN_iEDbK63syWnsyealexQw
+------WebKitFormBoundaryBszQphacYuonXYtQ--
+]
+2023-12-06 12:07:59.6108 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzcyMywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.CH77SvdMqZoLDJsOzvJ996zUHl7rl73UEUf-gsBBaR0] []
+2023-12-06 12:07:59.6108 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:08:02.0696 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:08:02.0696 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:08:18.5898 DEBUG [/Admin/CreateUser] [POST] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzcyMywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.CH77SvdMqZoLDJsOzvJ996zUHl7rl73UEUf-gsBBaR0] [userDto.Name=&userDto.Password=&userDto.Role=&__RequestVerificationToken=CfDJ8GarNPFzmKtCp26Sz9ckMPVgRiGhFYwwu1JPsSqlUT21CDCuXag2fDhJylX-JXuOVBY2jmSUeTTI_o0_kOirfdZdjBPcGbCW9efzlp7VzpNaxB4RDhw_HpDnEcPKskJlwROhbFETmWYEkeeqNoG3X8D6qUrJ71YRd2xUpvryz9heQ2qFCDKzv9lqePMVBT8Sjg]
+2023-12-06 12:08:18.5898 TRACE [/Admin/CreateUser] [POST] [System.IO.Pipelines.StreamPipeReader] [userDto.Name=&userDto.Password=&userDto.Role=&__RequestVerificationToken=CfDJ8GarNPFzmKtCp26Sz9ckMPVgRiGhFYwwu1JPsSqlUT21CDCuXag2fDhJylX-JXuOVBY2jmSUeTTI_o0_kOirfdZdjBPcGbCW9efzlp7VzpNaxB4RDhw_HpDnEcPKskJlwROhbFETmWYEkeeqNoG3X8D6qUrJ71YRd2xUpvryz9heQ2qFCDKzv9lqePMVBT8Sjg]
+2023-12-06 12:08:18.9676 INFO An error occurred while saving the entity changes. See the inner exception for details.
+2023-12-06 12:08:19.0944 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1MzcyMywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.CH77SvdMqZoLDJsOzvJ996zUHl7rl73UEUf-gsBBaR0] []
+2023-12-06 12:08:19.0944 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:08:19.2858 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:08:19.2858 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:14:32.0723 DEBUG [/] [GET] [] []
+2023-12-06 12:14:32.0916 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:14:32.2691 DEBUG Login debug
+2023-12-06 12:14:32.2691 TRACE Login trace
+2023-12-06 12:14:34.8543 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 12:14:34.8543 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 12:14:34.8543 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:14:34.8543 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:14:34.8543 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 12:14:34.8543 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:14:35.7610 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:14:35.7610 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:14:42.1295 DEBUG [/] [POST] [] [------WebKitFormBoundary46SXu25V5vXsYTNM
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary46SXu25V5vXsYTNM
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary46SXu25V5vXsYTNM
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPU6SRbL8r5aOGvwND1yhw27dAzAOgLQWKFRtIonDVP9yFxPntB_HuZhNNSqXNnpGNr_WCtkm9Y8j7T2J_issWzo_D1OxtiUphhNB5GrYJxDRl7I0AU_Nx4PYg7yf16Cpek
+------WebKitFormBoundary46SXu25V5vXsYTNM--
+]
+2023-12-06 12:14:42.1295 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary46SXu25V5vXsYTNM
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary46SXu25V5vXsYTNM
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary46SXu25V5vXsYTNM
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPU6SRbL8r5aOGvwND1yhw27dAzAOgLQWKFRtIonDVP9yFxPntB_HuZhNNSqXNnpGNr_WCtkm9Y8j7T2J_issWzo_D1OxtiUphhNB5GrYJxDRl7I0AU_Nx4PYg7yf16Cpek
+------WebKitFormBoundary46SXu25V5vXsYTNM--
+]
+2023-12-06 12:14:44.8551 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NDE0MiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.wrRA1fbm6-lfQ6Z2QeRlpcDfbKRpd3c6Pq2Z3CAyzmE] []
+2023-12-06 12:14:44.8551 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:14:46.0342 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:14:46.0342 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:27:41.9906 DEBUG [/] [GET] [] []
+2023-12-06 12:27:42.0064 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:27:42.1790 DEBUG Login debug
+2023-12-06 12:27:42.1790 TRACE Login trace
+2023-12-06 12:27:42.2932 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 12:27:42.2932 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 12:27:42.2932 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 12:27:42.2932 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:27:42.2932 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:27:42.2986 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:27:42.4378 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:27:42.4378 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:27:46.2345 DEBUG [/] [POST] [] [------WebKitFormBoundaryxHUIHLyUvQjxSqn7
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryxHUIHLyUvQjxSqn7
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryxHUIHLyUvQjxSqn7
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUciFONpHm0URwxFgdH6toVrNybdf-TH4gG5ABYYsFphQ8kefXSGgDaERcrhULbKobufY5ry6ZAPtGbyF-1zcLPtGFs_QxCL9AUxmgVT7G9jaAV5V5pfydJ0NgOGuY8RIM
+------WebKitFormBoundaryxHUIHLyUvQjxSqn7--
+]
+2023-12-06 12:27:46.2345 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryxHUIHLyUvQjxSqn7
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryxHUIHLyUvQjxSqn7
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryxHUIHLyUvQjxSqn7
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUciFONpHm0URwxFgdH6toVrNybdf-TH4gG5ABYYsFphQ8kefXSGgDaERcrhULbKobufY5ry6ZAPtGbyF-1zcLPtGFs_QxCL9AUxmgVT7G9jaAV5V5pfydJ0NgOGuY8RIM
+------WebKitFormBoundaryxHUIHLyUvQjxSqn7--
+]
+2023-12-06 12:28:43.7023 DEBUG [/] [GET] [] []
+2023-12-06 12:28:43.7185 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:28:43.9048 DEBUG Login debug
+2023-12-06 12:28:43.9048 TRACE Login trace
+2023-12-06 12:28:44.1731 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:28:44.1731 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:28:47.3141 DEBUG [/] [POST] [] [------WebKitFormBoundaryznJo1qIHKRVHgc2z
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryznJo1qIHKRVHgc2z
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryznJo1qIHKRVHgc2z
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPV-NlFqNVbavSCaCJyXw4dcFqM3G4XKOyp7jzJMrSzT2_l5nbkyqCFbAJsknCx4rbQxsKWviZpdzjgpEj3f0BnE-vWzJwzla7HVadlqm2tvjTkVJJr211t_B-iq4KQSWuU
+------WebKitFormBoundaryznJo1qIHKRVHgc2z--
+]
+2023-12-06 12:28:47.3141 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryznJo1qIHKRVHgc2z
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryznJo1qIHKRVHgc2z
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryznJo1qIHKRVHgc2z
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPV-NlFqNVbavSCaCJyXw4dcFqM3G4XKOyp7jzJMrSzT2_l5nbkyqCFbAJsknCx4rbQxsKWviZpdzjgpEj3f0BnE-vWzJwzla7HVadlqm2tvjTkVJJr211t_B-iq4KQSWuU
+------WebKitFormBoundaryznJo1qIHKRVHgc2z--
+]
+2023-12-06 12:29:03.5406 DEBUG [/] [GET] [] []
+2023-12-06 12:29:03.5565 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:29:03.7225 DEBUG Login debug
+2023-12-06 12:29:03.7225 TRACE Login trace
+2023-12-06 12:29:03.9839 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:29:03.9839 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:29:06.5507 DEBUG [/] [POST] [] [------WebKitFormBoundaryukb33aTUaKZBthlL
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryukb33aTUaKZBthlL
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryukb33aTUaKZBthlL
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUhqVqzImjLW3PVJTF8dADGYvZOUNOqYyfaFDKZsHu_v92nAszdLq0n4EBP7SC1Aohn_RfRUwqBP_uAYaaBRuGYlDeuvcF7-VECRrMu-_s_7jTpLfj7-uL6jyVowwc9WrU
+------WebKitFormBoundaryukb33aTUaKZBthlL--
+]
+2023-12-06 12:29:06.5507 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryukb33aTUaKZBthlL
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryukb33aTUaKZBthlL
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryukb33aTUaKZBthlL
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUhqVqzImjLW3PVJTF8dADGYvZOUNOqYyfaFDKZsHu_v92nAszdLq0n4EBP7SC1Aohn_RfRUwqBP_uAYaaBRuGYlDeuvcF7-VECRrMu-_s_7jTpLfj7-uL6jyVowwc9WrU
+------WebKitFormBoundaryukb33aTUaKZBthlL--
+]
+2023-12-06 12:29:59.9347 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NTAwNiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.hjaiWleQ4-oABTbfhjiPai6R0C1tvt3wP0C4gVPqxUI] []
+2023-12-06 12:29:59.9347 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:30:00.1182 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:30:00.1182 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:30:03.0458 DEBUG [/] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NTAwNiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.hjaiWleQ4-oABTbfhjiPai6R0C1tvt3wP0C4gVPqxUI] []
+2023-12-06 12:30:03.0482 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:30:03.0482 DEBUG Login debug
+2023-12-06 12:30:03.0482 TRACE Login trace
+2023-12-06 12:30:03.0842 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:30:03.0842 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:31:49.8217 DEBUG [/] [GET] [] []
+2023-12-06 12:31:49.8390 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:31:50.0163 DEBUG Login debug
+2023-12-06 12:31:50.0163 TRACE Login trace
+2023-12-06 12:31:50.8057 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:31:50.8057 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:31:53.1079 DEBUG [/] [POST] [] [------WebKitFormBoundaryzqaPMP6XlAZHNtnh
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryzqaPMP6XlAZHNtnh
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryzqaPMP6XlAZHNtnh
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVyhas2UK99PyRs9o7yjJArXX-G7PsFCbcDR_nnDGSUoJ2Rv1ZsuQsX7HdfLquaE1YB18aQ70GEDlpsZSrThjz8zfZlYZtWnvrAB7RxhotRCoZ5Ipgw_mClhOHyk2Z1CM8
+------WebKitFormBoundaryzqaPMP6XlAZHNtnh--
+]
+2023-12-06 12:31:53.1107 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryzqaPMP6XlAZHNtnh
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryzqaPMP6XlAZHNtnh
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryzqaPMP6XlAZHNtnh
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVyhas2UK99PyRs9o7yjJArXX-G7PsFCbcDR_nnDGSUoJ2Rv1ZsuQsX7HdfLquaE1YB18aQ70GEDlpsZSrThjz8zfZlYZtWnvrAB7RxhotRCoZ5Ipgw_mClhOHyk2Z1CM8
+------WebKitFormBoundaryzqaPMP6XlAZHNtnh--
+]
+2023-12-06 12:32:00.3438 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NTE3MywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.ZHJl9rJnxGKyVWKCN8M1f5vFHYfWYKli9cSL25DaUy0] []
+2023-12-06 12:32:00.3438 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:32:00.5228 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:32:00.5228 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:32:26.7199 DEBUG [/User/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NTE3MywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.ZHJl9rJnxGKyVWKCN8M1f5vFHYfWYKli9cSL25DaUy0] []
+2023-12-06 12:32:26.7199 TRACE [/User/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:32:26.7781 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 12:32:26.7781 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.2554 DEBUG [/] [GET] [] []
+2023-12-06 12:33:40.2677 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.3900 DEBUG Login debug
+2023-12-06 12:33:40.3900 TRACE Login trace
+2023-12-06 12:33:40.4683 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] [] []
+2023-12-06 12:33:40.4686 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.4683 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [] []
+2023-12-06 12:33:40.4686 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.4683 DEBUG [/MainTz.RestApi.styles.css] [GET] [] []
+2023-12-06 12:33:40.4686 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.4683 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 12:33:40.4686 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.4683 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 12:33:40.4686 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.4683 DEBUG [/css/site.css] [GET] [] []
+2023-12-06 12:33:40.4686 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.4683 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [] []
+2023-12-06 12:33:40.4686 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.4686 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 12:33:40.4686 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:33:40.5528 DEBUG [/favicon.ico] [GET] [] []
+2023-12-06 12:33:40.5528 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:34:08.6617 DEBUG [/] [GET] [] []
+2023-12-06 12:34:08.6754 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:34:08.8069 DEBUG Login debug
+2023-12-06 12:34:08.8069 TRACE Login trace
+2023-12-06 12:34:14.0121 DEBUG [/] [POST] [] [------WebKitFormBoundarypA6As7lkT63eSnZ3
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarypA6As7lkT63eSnZ3
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarypA6As7lkT63eSnZ3
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUxAC_i4dY80YdahPkvgWDM0pGrz4AeTpZMy2yVOKHk_fX0JHjsYtwbXrXIC6kF1GgEW250knzkJvXhLZ-0OLd-7E2_HsuAeDTwFlRO86MwShp3nl4L9BbrN2-_YrTn39Y
+------WebKitFormBoundarypA6As7lkT63eSnZ3--
+]
+2023-12-06 12:34:14.0121 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarypA6As7lkT63eSnZ3
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarypA6As7lkT63eSnZ3
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarypA6As7lkT63eSnZ3
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUxAC_i4dY80YdahPkvgWDM0pGrz4AeTpZMy2yVOKHk_fX0JHjsYtwbXrXIC6kF1GgEW250knzkJvXhLZ-0OLd-7E2_HsuAeDTwFlRO86MwShp3nl4L9BbrN2-_YrTn39Y
+------WebKitFormBoundarypA6As7lkT63eSnZ3--
+]
+2023-12-06 12:34:19.4527 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NTMxNywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.Ri6_uSH1Q3VPUHXcr8mqh4b-1kJU1DE1qOSfJAlUgk8] []
+2023-12-06 12:34:19.4535 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:41:04.7610 DEBUG [/] [GET] [] []
+2023-12-06 12:41:04.7756 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:41:04.9071 DEBUG Login debug
+2023-12-06 12:41:04.9071 TRACE Login trace
+2023-12-06 12:41:07.5047 DEBUG [/] [POST] [] [------WebKitFormBoundary6VkTJmnRV7WAsRrI
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary6VkTJmnRV7WAsRrI
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary6VkTJmnRV7WAsRrI
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUqGRQ7L43rsJSi5tfRwvEltPMozpXvhvjAym4CzhOAIZewQhYlCuD1AZY-XthsOi3Mtacgx2MtguTiDzOY-mhtsvhLLxiHYe-9_BP7fnKpUhO1LXyZwVP_ayzPOrpEqMY
+------WebKitFormBoundary6VkTJmnRV7WAsRrI--
+]
+2023-12-06 12:41:07.5047 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary6VkTJmnRV7WAsRrI
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary6VkTJmnRV7WAsRrI
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary6VkTJmnRV7WAsRrI
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUqGRQ7L43rsJSi5tfRwvEltPMozpXvhvjAym4CzhOAIZewQhYlCuD1AZY-XthsOi3Mtacgx2MtguTiDzOY-mhtsvhLLxiHYe-9_BP7fnKpUhO1LXyZwVP_ayzPOrpEqMY
+------WebKitFormBoundary6VkTJmnRV7WAsRrI--
+]
+2023-12-06 12:41:31.0357 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NTcyOSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.51_4POYvGFvoiaS-SqMPHtOwGjhwUwR_tP0YwZxneMY] []
+2023-12-06 12:41:31.0357 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:55:27.3060 DEBUG [/] [GET] [] []
+2023-12-06 12:55:27.3197 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:55:27.4474 DEBUG Login debug
+2023-12-06 12:55:27.4474 TRACE Login trace
+2023-12-06 12:55:27.5269 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 12:55:27.5269 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:55:27.5269 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 12:55:27.5269 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:55:27.5330 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 12:55:27.5330 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:55:37.9987 DEBUG [/] [POST] [] [------WebKitFormBoundaryM3tHyH2lxeTgBQdY
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryM3tHyH2lxeTgBQdY
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryM3tHyH2lxeTgBQdY
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVOErQJzx05duykHSsG3yf9SFXFOKh7UFa4h8FueO2W4ftxejGPXMR9JF0apR8kX60XYAHKu35348C1Bnl-6x-vvad_40h8IrNuIt1t-efCmFEmPAeGD-9rBlSvB94Bd3g
+------WebKitFormBoundaryM3tHyH2lxeTgBQdY--
+]
+2023-12-06 12:55:38.0018 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryM3tHyH2lxeTgBQdY
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryM3tHyH2lxeTgBQdY
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryM3tHyH2lxeTgBQdY
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVOErQJzx05duykHSsG3yf9SFXFOKh7UFa4h8FueO2W4ftxejGPXMR9JF0apR8kX60XYAHKu35348C1Bnl-6x-vvad_40h8IrNuIt1t-efCmFEmPAeGD-9rBlSvB94Bd3g
+------WebKitFormBoundaryM3tHyH2lxeTgBQdY--
+]
+2023-12-06 12:56:23.6568 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NjYwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.fkoUKrRX4CBVZ7zZd_bnBcadNYJszL4m9pXKJbv-iNQ] []
+2023-12-06 12:56:23.6568 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:56:27.1753 DEBUG [/User/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NjYwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.fkoUKrRX4CBVZ7zZd_bnBcadNYJszL4m9pXKJbv-iNQ] []
+2023-12-06 12:56:27.1753 TRACE [/User/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:56:35.3512 DEBUG [/User/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1NjYwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.fkoUKrRX4CBVZ7zZd_bnBcadNYJszL4m9pXKJbv-iNQ] []
+2023-12-06 12:56:35.3512 TRACE [/User/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:57:38.9394 DEBUG [/] [GET] [] []
+2023-12-06 12:57:38.9578 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 12:57:39.0883 DEBUG Login debug
+2023-12-06 12:57:39.0883 TRACE Login trace
+2023-12-06 12:57:43.8959 DEBUG [/] [POST] [] [------WebKitFormBoundary1DhmMYI5G8AQWKoD
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary1DhmMYI5G8AQWKoD
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary1DhmMYI5G8AQWKoD
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVxKyblvaEgkLzwabTV57kMAedeuSL9F0UGnSbbxjJUO8mnqeKLAmbfENjKeLt3pMaV1ZdeWFZ6eKqC5dISNd7_Vv_Gen-zifDv-o63iUEuIdOSDleppHCoolvp_MxEbck
+------WebKitFormBoundary1DhmMYI5G8AQWKoD--
+]
+2023-12-06 12:57:43.8959 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary1DhmMYI5G8AQWKoD
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary1DhmMYI5G8AQWKoD
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary1DhmMYI5G8AQWKoD
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVxKyblvaEgkLzwabTV57kMAedeuSL9F0UGnSbbxjJUO8mnqeKLAmbfENjKeLt3pMaV1ZdeWFZ6eKqC5dISNd7_Vv_Gen-zifDv-o63iUEuIdOSDleppHCoolvp_MxEbck
+------WebKitFormBoundary1DhmMYI5G8AQWKoD--
+]
+2023-12-06 13:10:43.1060 DEBUG [/] [GET] [] []
+2023-12-06 13:10:43.1212 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:10:43.2969 DEBUG Login debug
+2023-12-06 13:10:43.2973 TRACE Login trace
+2023-12-06 13:10:43.4154 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 13:10:43.4154 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:10:43.4154 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 13:10:43.4154 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:10:43.4154 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 13:10:43.4154 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:10:43.5715 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 13:10:43.5715 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:10:46.6086 DEBUG [/] [POST] [] [------WebKitFormBoundary54u3P2gbFqu6Wa3h
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary54u3P2gbFqu6Wa3h
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary54u3P2gbFqu6Wa3h
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVv3GVc_TEs5V4e_he-rHLlENlkiXrAkN4c3BwlV9yRV-6n-RKuZtRMObhreXCtvptkK6h3Ai6RrDHaiPynTSv6PWH-1jHsBOJLJ6W-T_GcbyzdU8Y7TghQD-3m35bfsRw
+------WebKitFormBoundary54u3P2gbFqu6Wa3h--
+]
+2023-12-06 13:10:46.6106 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary54u3P2gbFqu6Wa3h
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary54u3P2gbFqu6Wa3h
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary54u3P2gbFqu6Wa3h
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVv3GVc_TEs5V4e_he-rHLlENlkiXrAkN4c3BwlV9yRV-6n-RKuZtRMObhreXCtvptkK6h3Ai6RrDHaiPynTSv6PWH-1jHsBOJLJ6W-T_GcbyzdU8Y7TghQD-3m35bfsRw
+------WebKitFormBoundary54u3P2gbFqu6Wa3h--
+]
+2023-12-06 13:21:59.9868 DEBUG [/] [GET] [] []
+2023-12-06 13:22:00.0041 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:22:00.1691 DEBUG Login debug
+2023-12-06 13:22:00.1691 TRACE Login trace
+2023-12-06 13:22:00.4291 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 13:22:00.4291 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:22:04.1408 DEBUG [/] [POST] [] [------WebKitFormBoundaryEGAI9sk7TTa84AMb
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryEGAI9sk7TTa84AMb
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryEGAI9sk7TTa84AMb
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPV6FFnWTwHpuHjRpqprf5ie0u3qb5lllKRg1YcTaeXmAYV4Q3vUZWsdGan1XVHNSRD4p7_yO4ZBS4LhTxL-YmN70QiONCjvYwWWdjXU1PfbV-TAGu4SzFQRxAscRubqeoQ
+------WebKitFormBoundaryEGAI9sk7TTa84AMb--
+]
+2023-12-06 13:22:04.1408 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryEGAI9sk7TTa84AMb
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryEGAI9sk7TTa84AMb
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryEGAI9sk7TTa84AMb
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPV6FFnWTwHpuHjRpqprf5ie0u3qb5lllKRg1YcTaeXmAYV4Q3vUZWsdGan1XVHNSRD4p7_yO4ZBS4LhTxL-YmN70QiONCjvYwWWdjXU1PfbV-TAGu4SzFQRxAscRubqeoQ
+------WebKitFormBoundaryEGAI9sk7TTa84AMb--
+]
+2023-12-06 13:23:37.8227 DEBUG [/] [GET] [] []
+2023-12-06 13:23:37.8377 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:23:38.0013 DEBUG Login debug
+2023-12-06 13:23:38.0013 TRACE Login trace
+2023-12-06 13:23:38.4403 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 13:23:38.4403 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:23:41.2541 DEBUG [/] [POST] [] [------WebKitFormBoundaryExAbDm1Td6bJsJBG
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryExAbDm1Td6bJsJBG
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryExAbDm1Td6bJsJBG
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPV3aNeQbQBk_EhZzGXOnQZ84LhCXrTsN3wkX3fzE1Y3TqC-aMN0uNEmC7PagpZ3oyQnywht-CQLUBuItXqywmo9WIohFCevjYU4CLfrQZyNhMtX7Nnl9P4uudBVxHzBXQI
+------WebKitFormBoundaryExAbDm1Td6bJsJBG--
+]
+2023-12-06 13:23:41.2541 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryExAbDm1Td6bJsJBG
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryExAbDm1Td6bJsJBG
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryExAbDm1Td6bJsJBG
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPV3aNeQbQBk_EhZzGXOnQZ84LhCXrTsN3wkX3fzE1Y3TqC-aMN0uNEmC7PagpZ3oyQnywht-CQLUBuItXqywmo9WIohFCevjYU4CLfrQZyNhMtX7Nnl9P4uudBVxHzBXQI
+------WebKitFormBoundaryExAbDm1Td6bJsJBG--
+]
+2023-12-06 13:24:34.6124 DEBUG [/] [GET] [] []
+2023-12-06 13:24:34.6260 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:24:34.7674 DEBUG Login debug
+2023-12-06 13:24:34.7674 TRACE Login trace
+2023-12-06 13:24:34.8437 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 13:24:34.8440 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:24:34.8437 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 13:24:34.8440 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:24:34.8437 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 13:24:34.8440 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:25:37.1880 DEBUG [/] [GET] [] []
+2023-12-06 13:25:37.1880 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:25:37.3258 DEBUG Login debug
+2023-12-06 13:25:37.3258 TRACE Login trace
+2023-12-06 13:27:38.5842 DEBUG [/] [GET] [] []
+2023-12-06 13:27:38.5996 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:27:38.7308 DEBUG Login debug
+2023-12-06 13:27:38.7308 TRACE Login trace
+2023-12-06 13:27:42.4581 DEBUG [/] [POST] [] [------WebKitFormBoundary3uDSEA2a6dwcMaET
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary3uDSEA2a6dwcMaET
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary3uDSEA2a6dwcMaET
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPX-AU_7ybOJD4xFtMXgBmhEQ_ldApAroBP_hCsJqNVI0DclHmCHGkYmTnnra21iQTZjDAwS6KlTC_4wULEoaYUVvUQSdtY1Wtbct0LACKqQYhYLfGyU28l8GsliR8Op6ao
+------WebKitFormBoundary3uDSEA2a6dwcMaET--
+]
+2023-12-06 13:27:42.4581 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary3uDSEA2a6dwcMaET
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary3uDSEA2a6dwcMaET
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary3uDSEA2a6dwcMaET
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPX-AU_7ybOJD4xFtMXgBmhEQ_ldApAroBP_hCsJqNVI0DclHmCHGkYmTnnra21iQTZjDAwS6KlTC_4wULEoaYUVvUQSdtY1Wtbct0LACKqQYhYLfGyU28l8GsliR8Op6ao
+------WebKitFormBoundary3uDSEA2a6dwcMaET--
+]
+2023-12-06 13:28:08.5071 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1ODUyNSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.QGAfJhSRxSc4AeqlZfsCBqTBhRLj_HjSdW3CX26NuDc] []
+2023-12-06 13:28:08.5071 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:28:57.4289 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1ODUyNSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.QGAfJhSRxSc4AeqlZfsCBqTBhRLj_HjSdW3CX26NuDc] []
+2023-12-06 13:28:57.4289 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:30:04.7082 DEBUG [/] [GET] [] []
+2023-12-06 13:30:04.7254 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:30:04.8547 DEBUG Login debug
+2023-12-06 13:30:04.8547 TRACE Login trace
+2023-12-06 13:30:08.2758 DEBUG [/] [POST] [] [------WebKitFormBoundaryjjI2fdm00ybBPbOY
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryjjI2fdm00ybBPbOY
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryjjI2fdm00ybBPbOY
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVa42v_x8woxmMAk8LhCrTIjWt4_FZjiOYERqljbETJHog-y9QeDlgVLwSWtBNFlCoKCFyvbxDPTjm-Y_vLlS8qncPzoqyjRJn23ul1IXX0rojOt9ysF0Re3GOYXyhLRdw
+------WebKitFormBoundaryjjI2fdm00ybBPbOY--
+]
+2023-12-06 13:30:08.2758 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryjjI2fdm00ybBPbOY
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryjjI2fdm00ybBPbOY
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryjjI2fdm00ybBPbOY
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPVa42v_x8woxmMAk8LhCrTIjWt4_FZjiOYERqljbETJHog-y9QeDlgVLwSWtBNFlCoKCFyvbxDPTjm-Y_vLlS8qncPzoqyjRJn23ul1IXX0rojOt9ysF0Re3GOYXyhLRdw
+------WebKitFormBoundaryjjI2fdm00ybBPbOY--
+]
+2023-12-06 13:31:19.9612 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1ODY3MCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.bjSlT-wgLoWSBJQOFjQzNhZZShjRN1TJ0n9YivaYzUo] []
+2023-12-06 13:31:19.9612 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:38:03.8653 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1ODY3MCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.bjSlT-wgLoWSBJQOFjQzNhZZShjRN1TJ0n9YivaYzUo] []
+2023-12-06 13:38:03.8828 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:40:14.3101 DEBUG [/] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1ODY3MCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.bjSlT-wgLoWSBJQOFjQzNhZZShjRN1TJ0n9YivaYzUo] []
+2023-12-06 13:40:14.3253 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:40:14.4656 DEBUG Login debug
+2023-12-06 13:40:14.4656 TRACE Login trace
+2023-12-06 13:42:16.7851 DEBUG [/] [GET] [] []
+2023-12-06 13:42:16.8022 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:42:16.9593 DEBUG Login debug
+2023-12-06 13:42:16.9593 TRACE Login trace
+2023-12-06 13:42:17.0503 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 13:42:17.0503 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:42:17.0503 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 13:42:17.0503 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:42:17.0503 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 13:42:17.0503 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:42:19.8999 DEBUG [/] [POST] [] [------WebKitFormBoundaryfuEPAcuUpePEF90c
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryfuEPAcuUpePEF90c
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryfuEPAcuUpePEF90c
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPV1dDCjcseHNVfzGXooZPRvPjAoda1wjISs3kY2j667JTAdUfb9_FFa08v1-Dmmdi1fF2KRgh_OQI5WvYRTCmCIOcWR67iD2aZbQ120J5-QwaOI97DWPdCVHbKrCYREly8
+------WebKitFormBoundaryfuEPAcuUpePEF90c--
+]
+2023-12-06 13:42:19.8999 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryfuEPAcuUpePEF90c
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryfuEPAcuUpePEF90c
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryfuEPAcuUpePEF90c
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPV1dDCjcseHNVfzGXooZPRvPjAoda1wjISs3kY2j667JTAdUfb9_FFa08v1-Dmmdi1fF2KRgh_OQI5WvYRTCmCIOcWR67iD2aZbQ120J5-QwaOI97DWPdCVHbKrCYREly8
+------WebKitFormBoundaryfuEPAcuUpePEF90c--
+]
+2023-12-06 13:43:44.6251 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 13:43:44.6251 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:46:21.2761 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 13:46:21.2912 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:47:47.0472 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 13:47:47.0697 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 13:49:34.2981 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 13:49:34.3152 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:33:24.3833 DEBUG [/] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 14:33:24.4005 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:33:24.5586 DEBUG Login debug
+2023-12-06 14:33:24.5586 TRACE Login trace
+2023-12-06 14:33:28.6978 DEBUG [/js/JwtHeaderScript.js] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 14:33:28.6978 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:33:28.6978 DEBUG [/js/CookieManagerScript.js] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 14:33:28.6978 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:33:28.7281 DEBUG [/js/LoginFormScript.js] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 14:33:28.7281 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:34:45.3526 DEBUG [/] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] []
+2023-12-06 14:34:45.3656 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:34:45.5061 DEBUG Login debug
+2023-12-06 14:34:45.5061 TRACE Login trace
+2023-12-06 14:34:58.1078 DEBUG [/] [POST] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg1OTQwNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.SshzIK_0m07XR9QwgovXFPNnga4Uo6W1srTEPmJ8M_I] [------WebKitFormBoundaryZnoJnoOTSsckUwGH
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryZnoJnoOTSsckUwGH
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryZnoJnoOTSsckUwGH
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXRqrw6g4de1WcdMbWtxKqp9Ffu5EGehfNSlmq-9TKAsGs2y5YVCmR8k1vgaEB5r14ute3SXAX2HkVklJuGqpBAZmdEJ4fYGpCrUBo3nx3i244B_jHMIjfvdYA-X1nzKHA
+------WebKitFormBoundaryZnoJnoOTSsckUwGH--
+]
+2023-12-06 14:34:58.1103 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryZnoJnoOTSsckUwGH
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryZnoJnoOTSsckUwGH
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryZnoJnoOTSsckUwGH
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXRqrw6g4de1WcdMbWtxKqp9Ffu5EGehfNSlmq-9TKAsGs2y5YVCmR8k1vgaEB5r14ute3SXAX2HkVklJuGqpBAZmdEJ4fYGpCrUBo3nx3i244B_jHMIjfvdYA-X1nzKHA
+------WebKitFormBoundaryZnoJnoOTSsckUwGH--
+]
+2023-12-06 14:37:31.0466 DEBUG [/] [GET] [] []
+2023-12-06 14:37:31.0835 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:37:31.2734 DEBUG Login debug
+2023-12-06 14:37:31.2734 TRACE Login trace
+2023-12-06 14:37:37.8973 DEBUG [/] [POST] [] [------WebKitFormBoundaryZU3ohPthSlSbLQke
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryZU3ohPthSlSbLQke
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryZU3ohPthSlSbLQke
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPX1K9UPi_52vCbyBQS47Pi3Ql1yxXef4qwWsENalE6UiiIvThdlMM_9x1hkMyFFmeUwm2v7QViS1NZQL7Rm2Jv-9qoOv7RbQ-8Lvj38yitMA8NDeJLz6POOkw7VqNpcBSg
+------WebKitFormBoundaryZU3ohPthSlSbLQke--
+]
+2023-12-06 14:37:37.8973 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryZU3ohPthSlSbLQke
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryZU3ohPthSlSbLQke
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryZU3ohPthSlSbLQke
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPX1K9UPi_52vCbyBQS47Pi3Ql1yxXef4qwWsENalE6UiiIvThdlMM_9x1hkMyFFmeUwm2v7QViS1NZQL7Rm2Jv-9qoOv7RbQ-8Lvj38yitMA8NDeJLz6POOkw7VqNpcBSg
+------WebKitFormBoundaryZU3ohPthSlSbLQke--
+]
+2023-12-06 14:38:39.6896 DEBUG [/] [GET] [] []
+2023-12-06 14:38:39.6896 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:38:39.8227 DEBUG Login debug
+2023-12-06 14:38:39.8227 TRACE Login trace
+2023-12-06 14:38:43.7315 DEBUG [/] [POST] [] [------WebKitFormBoundaryTmY9g11CqvzXaxA3
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryTmY9g11CqvzXaxA3
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryTmY9g11CqvzXaxA3
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXEKDxtvePAe15LMVcog9H7nYYai8cZ_GMg_RF8N39spWgpW09RRh_8LGq3pHMMCQE2tjF0e6uFgLFRp59NRF55EraOhvUd7S1Zj-g0RILVzXIXAS6DGDleH-M7Uf2-p0Q
+------WebKitFormBoundaryTmY9g11CqvzXaxA3--
+]
+2023-12-06 14:38:43.7315 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryTmY9g11CqvzXaxA3
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryTmY9g11CqvzXaxA3
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryTmY9g11CqvzXaxA3
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPXEKDxtvePAe15LMVcog9H7nYYai8cZ_GMg_RF8N39spWgpW09RRh_8LGq3pHMMCQE2tjF0e6uFgLFRp59NRF55EraOhvUd7S1Zj-g0RILVzXIXAS6DGDleH-M7Uf2-p0Q
+------WebKitFormBoundaryTmY9g11CqvzXaxA3--
+]
+2023-12-06 14:39:06.0148 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg2Mjc5MSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.7axPZIzsSmx7ky28jc6LwPlzc_4cZk6VqJh-WJByOZk] []
+2023-12-06 14:39:06.0161 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:40:39.2916 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg2Mjc5MSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.7axPZIzsSmx7ky28jc6LwPlzc_4cZk6VqJh-WJByOZk] []
+2023-12-06 14:40:39.3063 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:42:23.7838 DEBUG [/] [GET] [] []
+2023-12-06 14:42:23.8024 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:42:24.0297 DEBUG Login debug
+2023-12-06 14:42:24.0297 TRACE Login trace
+2023-12-06 14:42:24.1766 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-06 14:42:24.1766 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:42:24.1766 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-06 14:42:24.1766 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:42:24.1766 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-06 14:42:24.1766 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:42:24.3544 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 14:42:24.3544 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:42:27.6943 DEBUG [/] [POST] [] [------WebKitFormBoundarygI4MZhnQP94WJeyI
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarygI4MZhnQP94WJeyI
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarygI4MZhnQP94WJeyI
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUqxFhsu6A4r7flygOTDF1qI0TJV4AVdIB6OsqiZ6wimZoeqg6_8Scy6xDDqqAacCSImBSZHeBlRtB1sKanLU1nCokkWCsazOO_tmHaeMoOvRWm4BEmpQ33nhmUU6nrPqY
+------WebKitFormBoundarygI4MZhnQP94WJeyI--
+]
+2023-12-06 14:42:27.6943 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarygI4MZhnQP94WJeyI
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarygI4MZhnQP94WJeyI
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarygI4MZhnQP94WJeyI
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPUqxFhsu6A4r7flygOTDF1qI0TJV4AVdIB6OsqiZ6wimZoeqg6_8Scy6xDDqqAacCSImBSZHeBlRtB1sKanLU1nCokkWCsazOO_tmHaeMoOvRWm4BEmpQ33nhmUU6nrPqY
+------WebKitFormBoundarygI4MZhnQP94WJeyI--
+]
+2023-12-06 14:42:39.4839 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTg2MzAxNiwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.b-89DICEJY8JpRKJC-h7omRxSAiRSwWl7pye7ikgeiQ] []
+2023-12-06 14:42:39.4851 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:42:39.6627 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 14:42:39.6627 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:43:06.9029 DEBUG [/] [GET] [] []
+2023-12-06 14:43:06.9197 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:43:07.1004 DEBUG Login debug
+2023-12-06 14:43:07.1004 TRACE Login trace
+2023-12-06 14:43:07.3574 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-06 14:43:07.3574 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-06 14:43:09.6889 DEBUG [/] [POST] [] [------WebKitFormBoundaryphqUS1YJ4waxRM2w
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryphqUS1YJ4waxRM2w
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryphqUS1YJ4waxRM2w
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWTSguZJyrHPw9ZkvFKI3QS1FMj95nuKL84GyihA42EVRUlMdhBadANkbOlHk-VpiMEObPOdWtEOTiXjICcItyz488kyHHGb8GBD2XPjCLwAHuDyVsdm1GWhknxXMwHvcA
+------WebKitFormBoundaryphqUS1YJ4waxRM2w--
+]
+2023-12-06 14:43:09.6889 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryphqUS1YJ4waxRM2w
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryphqUS1YJ4waxRM2w
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryphqUS1YJ4waxRM2w
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GarNPFzmKtCp26Sz9ckMPWTSguZJyrHPw9ZkvFKI3QS1FMj95nuKL84GyihA42EVRUlMdhBadANkbOlHk-VpiMEObPOdWtEOTiXjICcItyz488kyHHGb8GBD2XPjCLwAHuDyVsdm1GWhknxXMwHvcA
+------WebKitFormBoundaryphqUS1YJ4waxRM2w--
+]

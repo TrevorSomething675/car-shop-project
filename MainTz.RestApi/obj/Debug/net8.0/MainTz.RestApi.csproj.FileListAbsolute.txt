@@ -120,7 +120,6 @@ C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\D
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Humanizer.dll
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
@@ -234,3 +233,4 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\obj\Debug\net8.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\MainTz.RestApi.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\MainTz.RestApi.genruntimeconfig.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\ref\MainTz.RestApi.dll
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Newtonsoft.Json.dll

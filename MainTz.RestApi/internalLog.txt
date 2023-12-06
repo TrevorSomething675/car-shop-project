@@ -10999,3 +10999,339 @@
 2023-12-05 17:32:48.7937 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
 2023-12-05 17:32:48.7937 Info Configuration initialized.
 2023-12-05 17:32:49.3146 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:03:41.8501 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:03:41.9112 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:03:41.9112 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:03:41.9574 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:03:41.9574 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:03:41.9816 Info Configuration initialized.
+2023-12-06 11:03:43.8543 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:04:41.5066 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:04:41.5241 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:04:41.5241 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:04:41.5426 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:04:41.5520 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:04:41.5675 Info Configuration initialized.
+2023-12-06 11:04:42.0188 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:15:11.0234 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:15:11.0448 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:15:11.0448 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:15:11.0650 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:15:11.0816 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:15:11.0986 Info Configuration initialized.
+2023-12-06 11:15:11.4256 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:15:54.9907 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:15:55.0125 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:15:55.0125 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:15:55.0283 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:15:55.0388 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:15:55.0522 Info Configuration initialized.
+2023-12-06 11:15:55.3986 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:25:48.2565 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:25:48.2684 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:25:48.2684 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:25:48.2684 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:25:48.2830 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:25:48.2830 Info Configuration initialized.
+2023-12-06 11:25:48.3632 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:26:20.7985 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:26:20.8216 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:26:20.8216 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:26:20.8436 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:26:20.8574 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:26:20.8754 Info Configuration initialized.
+2023-12-06 11:26:21.2523 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:50:20.5689 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:50:20.6130 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:50:20.6130 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:50:20.6495 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:50:20.6580 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:50:20.6580 Info Configuration initialized.
+2023-12-06 11:50:22.1074 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:51:21.8501 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:51:21.8725 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:51:21.8725 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:51:21.8876 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:51:21.8962 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:51:21.9095 Info Configuration initialized.
+2023-12-06 11:51:22.3450 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:51:58.9598 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:51:58.9819 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:51:58.9819 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:51:58.9992 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:51:59.0088 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:51:59.0231 Info Configuration initialized.
+2023-12-06 11:51:59.4746 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:55:06.7249 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:55:06.7487 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:55:06.7487 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:55:06.7646 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:55:06.7759 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:55:06.7922 Info Configuration initialized.
+2023-12-06 11:55:07.2279 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:56:02.2585 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 11:56:02.2808 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 11:56:02.2819 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 11:56:02.2986 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 11:56:02.2986 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 11:56:02.3228 Info Configuration initialized.
+2023-12-06 11:56:02.7423 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:04:31.9717 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:04:31.9864 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:04:31.9864 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:04:32.0030 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:04:32.0030 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:04:32.0267 Info Configuration initialized.
+2023-12-06 12:04:32.5476 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:07:19.6102 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:07:19.6259 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:07:19.6259 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:07:19.6259 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:07:19.6508 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:07:19.6649 Info Configuration initialized.
+2023-12-06 12:07:20.1114 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:13:19.2871 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:13:19.3127 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:13:19.3127 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:13:19.3309 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:13:19.3309 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:13:19.3563 Info Configuration initialized.
+2023-12-06 12:13:19.7309 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:14:24.3787 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:14:24.4063 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:14:24.4063 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:14:24.4292 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:14:24.4416 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:14:24.4588 Info Configuration initialized.
+2023-12-06 12:14:24.9531 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:27:37.2662 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:27:37.2847 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:27:37.2847 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:27:37.3048 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:27:37.3189 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:27:37.3352 Info Configuration initialized.
+2023-12-06 12:27:37.7411 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:28:38.8980 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:28:38.9135 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:28:38.9135 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:28:38.9305 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:28:38.9406 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:28:38.9551 Info Configuration initialized.
+2023-12-06 12:28:39.3459 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:28:58.4607 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:28:58.4798 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:28:58.4798 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:28:58.4952 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:28:58.5040 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:28:58.5165 Info Configuration initialized.
+2023-12-06 12:28:58.9268 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:31:44.6785 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:31:44.7015 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:31:44.7015 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:31:44.7190 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:31:44.7190 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:31:44.7459 Info Configuration initialized.
+2023-12-06 12:31:45.1968 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:33:38.5194 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:33:38.5194 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:33:38.5194 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:33:38.5349 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:33:38.5349 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:33:38.5522 Info Configuration initialized.
+2023-12-06 12:33:38.6319 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:34:06.6901 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:34:06.6901 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:34:06.6901 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:34:06.7056 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:34:06.7056 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:34:06.7237 Info Configuration initialized.
+2023-12-06 12:34:06.8020 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:41:02.9572 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:41:02.9572 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:41:02.9572 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:41:02.9737 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:41:02.9737 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:41:02.9924 Info Configuration initialized.
+2023-12-06 12:41:03.0711 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:55:25.5020 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:55:25.5153 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:55:25.5153 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:55:25.5153 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:55:25.5351 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:55:25.5351 Info Configuration initialized.
+2023-12-06 12:55:25.6305 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:57:36.7136 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 12:57:36.7264 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 12:57:36.7264 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 12:57:36.7385 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 12:57:36.7385 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 12:57:36.7570 Info Configuration initialized.
+2023-12-06 12:57:36.8365 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:10:38.1258 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:10:38.1553 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:10:38.1564 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:10:38.1763 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:10:38.1763 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:10:38.2017 Info Configuration initialized.
+2023-12-06 13:10:38.6974 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:21:05.4401 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:21:05.4647 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:21:05.4647 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:21:05.4861 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:21:05.4861 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:21:05.5135 Info Configuration initialized.
+2023-12-06 13:21:05.9069 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:21:44.9141 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:21:44.9378 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:21:44.9378 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:21:44.9581 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:21:44.9710 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:21:44.9878 Info Configuration initialized.
+2023-12-06 13:21:45.4957 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:23:24.8313 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:23:24.8599 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:23:24.8599 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:23:24.8821 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:23:24.8922 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:23:24.8922 Info Configuration initialized.
+2023-12-06 13:23:25.2939 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:24:33.1166 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:24:33.1295 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:24:33.1295 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:24:33.1295 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:24:33.1479 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:24:33.1596 Info Configuration initialized.
+2023-12-06 13:24:33.2414 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:25:35.2275 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:25:35.2393 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:25:35.2393 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:25:35.2393 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:25:35.2540 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:25:35.2540 Info Configuration initialized.
+2023-12-06 13:25:35.3409 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:26:44.6308 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:26:44.6432 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:26:44.6432 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:26:44.6432 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:26:44.6603 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:26:44.6603 Info Configuration initialized.
+2023-12-06 13:26:44.7506 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:27:36.8626 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:27:36.8626 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:27:36.8756 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:27:36.8756 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:27:36.8910 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:27:36.8910 Info Configuration initialized.
+2023-12-06 13:27:36.9826 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:29:39.0358 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:29:39.0483 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:29:39.0483 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:29:39.0483 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:29:39.0640 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:29:39.0640 Info Configuration initialized.
+2023-12-06 13:29:39.1510 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:37:44.7867 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:37:44.7991 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:37:44.7991 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:37:44.7991 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:37:44.8152 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:37:44.8152 Info Configuration initialized.
+2023-12-06 13:37:44.9082 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:38:32.4103 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:38:32.4227 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:38:32.4227 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:38:32.4227 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:38:32.4384 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:38:32.4384 Info Configuration initialized.
+2023-12-06 13:38:32.5289 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:42:13.3305 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:42:13.3305 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:42:13.3440 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:42:13.3440 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:42:13.3440 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:42:13.3689 Info Configuration initialized.
+2023-12-06 13:42:13.4429 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:46:03.4885 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:46:03.4885 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:46:03.4885 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:46:03.5054 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:46:03.5054 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:46:03.5238 Info Configuration initialized.
+2023-12-06 13:46:03.6059 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:47:26.6745 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:47:26.6745 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:47:26.6745 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:47:26.6950 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:47:26.7029 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:47:26.7029 Info Configuration initialized.
+2023-12-06 13:47:26.7938 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:49:16.4562 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 13:49:16.4562 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 13:49:16.4562 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 13:49:16.4718 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 13:49:16.4718 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 13:49:16.4909 Info Configuration initialized.
+2023-12-06 13:49:16.5694 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:32:42.2224 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:32:42.2368 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:32:42.2368 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:32:42.2368 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:32:42.2529 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:32:42.2529 Info Configuration initialized.
+2023-12-06 14:32:42.3450 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:34:34.4615 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:34:34.4746 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:34:34.4746 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:34:34.4746 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:34:34.4908 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:34:34.5014 Info Configuration initialized.
+2023-12-06 14:34:34.5850 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:36:44.9287 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:36:44.9407 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:36:44.9407 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:36:44.9407 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:36:44.9559 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:36:44.9559 Info Configuration initialized.
+2023-12-06 14:36:45.0388 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:37:19.8825 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:37:19.8953 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:37:19.8953 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:37:19.8953 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:37:19.9112 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:37:19.9112 Info Configuration initialized.
+2023-12-06 14:37:19.9969 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:38:37.5164 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:38:37.5164 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:38:37.5164 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:38:37.5340 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:38:37.5340 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:38:37.5522 Info Configuration initialized.
+2023-12-06 14:38:37.6282 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:40:33.1771 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:40:33.1892 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:40:33.1892 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:40:33.1892 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:40:33.2054 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:40:33.2054 Info Configuration initialized.
+2023-12-06 14:40:33.2922 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:41:50.1113 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:41:50.1368 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:41:50.1368 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:41:50.1538 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:41:50.1663 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:41:50.1810 Info Configuration initialized.
+2023-12-06 14:41:50.5773 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:42:12.3018 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:42:12.3216 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:42:12.3216 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:42:12.3368 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:42:12.3455 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:42:12.3455 Info Configuration initialized.
+2023-12-06 14:42:12.6629 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:42:54.9693 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-06 14:42:55.0010 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-06 14:42:55.0010 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-06 14:42:55.0203 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-06 14:42:55.0203 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-06 14:42:55.0491 Info Configuration initialized.
+2023-12-06 14:42:55.4205 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config

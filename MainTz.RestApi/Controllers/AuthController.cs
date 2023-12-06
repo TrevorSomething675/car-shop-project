@@ -9,19 +9,17 @@ namespace MainTz.RestApi.Controllers
 {
     public class AuthController : Controller
 	{
-		private readonly AuthApiSettings _authApiSettings;
+		private readonly AuthApiSettings _authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
 		private readonly IClientService _clientService;
 		private readonly IUsersService _usersService;
 		private readonly ILogger<AuthController> _logger;
 		public AuthController(IClientService clientService, IUsersService usersService,
             ILogger<AuthController> logger)
 		{
-			_authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
             _clientService = clientService;
 			_usersService = usersService;
 			_logger = logger;
 		}
-
 		/// <summary>
 		/// Получение токена из сервиса, путём отправки запроса с ролью
 		/// </summary>
@@ -31,12 +29,10 @@ namespace MainTz.RestApi.Controllers
 		public async Task<IResult> GetToken([FromBody]string role) // отправка сообщения и получение токена из AuthApi
 		{
 			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenUrl}";
-            TokensModel tokens = await _clientService.SendRequest(tokenUrl, role);
+            TokensModel tokens = await _clientService.SendRequestAsync(tokenUrl, role);
 
 			return Results.Json(tokens);
 		}
-
-		
 		/// <summary>
 		/// Получение токена по refresh токену
 		/// </summary>
@@ -44,11 +40,10 @@ namespace MainTz.RestApi.Controllers
 		public async Task<IActionResult> GetTokenOnRefresh()
 		{
 			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenOnRefreshUrl}";
-			TokensModel tokens = await _clientService.SendRequest(tokenUrl, "Admin");
+			TokensModel tokens = await _clientService.SendRequestAsync(tokenUrl, "Admin");
 
 			return Ok(tokens);
 		}
-
 		/// <summary>
 		/// Получение разметки с формой логина
 		/// </summary>

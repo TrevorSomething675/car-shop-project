@@ -17,14 +17,13 @@ var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
 var services = builder.Services;
 builder.Host.UseNLog();
 
-services.AddAppAutoMapperConfiguration(); 
-services.AddAppDbContext(dbSettings); 
-services.AddAppSwagger(); 
+services.AddAppAutoMapperConfiguration();
+services.AddAppDbContext(dbSettings);
+services.AddAppSwagger();
 
-services.AddAppServices(); 
+services.AddAppServices();
 services.AddAppRepositories();
 services.AddAppAuth(jwtAuthSettings);
-
 
 var app = builder.Build();
 
@@ -73,6 +72,7 @@ using (var scope = app.Services.CreateScope())
 }
 #endregion 
 app.UseMiddleware<JwtHeaderMiddleware>();
+app.UseMiddleware<JwtRefreshMiddleware>();
 app.UseMiddleware<LoggingMiddleware>();
 
 app.UseAppServices();
