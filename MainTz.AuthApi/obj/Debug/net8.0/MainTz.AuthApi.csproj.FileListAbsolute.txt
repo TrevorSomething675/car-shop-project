@@ -146,7 +146,6 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\NLog.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
@@ -165,7 +164,6 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\MainTz.AuthApi.AssemblyInfoInputs.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\MainTz.AuthApi.AssemblyInfo.cs
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\MainTz.AuthApi.csproj.CoreCompileInputs.cache
-C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\MainTz.AuthApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\MainTz.AuthApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\MainTz.AuthApi.sourcelink.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\staticwebassets.build.json

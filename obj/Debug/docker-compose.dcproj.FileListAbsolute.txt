@@ -57,7 +57,6 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\bin\Debug\Extensions.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\bin\Debug\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\bin\Debug\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Иван\Documents\GitHub\MainTzProject\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\bin\Debug\NLog.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\bin\Debug\Microsoft.EntityFrameworkCore.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll

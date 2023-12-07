@@ -1,6 +1,8 @@
-﻿using MainTz.RestApi.DAL.Data.Models.DtoModels;
+﻿using MainTz.RestApi.DAL.Data.Models.AuthModels;
+using MainTz.RestApi.DAL.Data.Models.DtoModels;
 using MainTz.RestApi.BLL.Services.Abstractions;
-using MainTz.RestApi.DAL.Data.Models.Models;
+using Extensions.Models.AuthModels;
+using MainTz.RestApi.BLL.Services;
 using Extensions.SettingsModels;
 using Microsoft.AspNetCore.Mvc;
 using Extensions;
@@ -10,13 +12,10 @@ namespace MainTz.RestApi.Controllers
     public class AuthController : Controller
 	{
 		private readonly AuthApiSettings _authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
-		private readonly IClientService _clientService;
 		private readonly IUsersService _usersService;
 		private readonly ILogger<AuthController> _logger;
-		public AuthController(IClientService clientService, IUsersService usersService,
-            ILogger<AuthController> logger)
+		public AuthController( IUsersService usersService, ILogger<AuthController> logger)
 		{
-            _clientService = clientService;
 			_usersService = usersService;
 			_logger = logger;
 		}
@@ -29,20 +28,12 @@ namespace MainTz.RestApi.Controllers
 		public async Task<IResult> GetToken([FromBody]string role) // отправка сообщения и получение токена из AuthApi
 		{
 			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenUrl}";
-            TokensModel tokens = await _clientService.SendRequestAsync(tokenUrl, role);
+			var refreshTokenModel = new RefreshTokenModel { Role = role};
+
+			using var client = new RestClient<RefreshTokenModel, TokensModel>(tokenUrl);
+			var tokens = await client.GetAsync(refreshTokenModel);
 
 			return Results.Json(tokens);
-		}
-		/// <summary>
-		/// Получение токена по refresh токену
-		/// </summary>
-		/// <returns></returns>
-		public async Task<IActionResult> GetTokenOnRefresh()
-		{
-			string tokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenOnRefreshUrl}";
-			TokensModel tokens = await _clientService.SendRequestAsync(tokenUrl, "Admin");
-
-			return Ok(tokens);
 		}
 		/// <summary>
 		/// Получение разметки с формой логина

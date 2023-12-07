@@ -22,14 +22,15 @@ namespace MainTz.RestApi.BLL.Middlewares
                 context.Request.Body = new MemoryStream(Encoding.UTF8.GetBytes(bodyContent));
             }
 
-            _logger.LogDebug($"[{context.Request.Path}]" +
-                $" [{context.Request.Method}]" +
-                $" [{context.Request.Headers["Authorization"]}]");
+            var requestUrl = context.Request.Path;
+            var requestMethod = context.Request.Method;
+            var requestHeaderAuth = context.Request.Headers["Authorization"];
 
-            _logger.LogTrace($"[{context.Request.Path}]" +
-                $" [{context.Request.Method}]" +
-                $" [{context.Request.BodyReader}]" +
-                $" [{bodyContent}]");
+            _logger.LogDebug("[{Url}] [{Method}] Authorization: [{Authorization}]", 
+                requestUrl, requestMethod, requestHeaderAuth);
+
+            _logger.LogTrace("[{Url}] [{Method}] Authorization: [{Authorization}] Body: [Body]",
+                requestUrl, requestMethod, requestHeaderAuth, bodyContent);
 
             await _next.Invoke(context);
         }

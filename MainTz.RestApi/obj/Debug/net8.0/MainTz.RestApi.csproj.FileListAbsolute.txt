@@ -196,7 +196,6 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Mono.TextTemplating.dll
-C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\NLog.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\NLog.Web.AspNetCore.dll

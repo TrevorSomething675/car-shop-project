@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RlY6CtumnsH76OWSgrKwoli5CG75suaZBdd88uvbgrFUKWdYV9Dl3T2dIqCp+h152ZHPG9SyLaivzWoFMuqBDw==",
+  "dgSpecHash": "FNCDTYgbHv4wxLWFmLB6GUqSF1npOz/LTdzP40JTpeiWDFw1+8I097DflLjyVKpHavRsu1CiGBUZUlICDEwYiA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.AuthApi\\MainTz.AuthApi.csproj",
   "expectedPackageFiles": [
@@ -37,7 +37,6 @@
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.3\\microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\nlog\\5.2.5\\nlog.5.2.5.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\nlog.extensions.logging\\5.3.5\\nlog.extensions.logging.5.3.5.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.5\\nlog.web.aspnetcore.5.3.5.nupkg.sha512",

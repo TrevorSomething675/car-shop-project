@@ -8,11 +8,6 @@ services:
     image: postgres
     networks:
       CarCompany: null
-    ports:
-      - mode: ingress
-        target: 5432
-        published: "5432"
-        protocol: tcp
     restart: always
     volumes:
       - type: volume
@@ -44,14 +39,6 @@ services:
         protocol: tcp
       - mode: ingress
         target: 8081
-        protocol: tcp
-      - mode: ingress
-        target: 55832
-        published: "55832"
-        protocol: tcp
-      - mode: ingress
-        target: 55833
-        published: "55833"
         protocol: tcp
     restart: always
     volumes:

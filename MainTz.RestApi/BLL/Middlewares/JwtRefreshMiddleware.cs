@@ -1,5 +1,7 @@
-﻿using MainTz.RestApi.BLL.Services.Abstractions;
+﻿using MainTz.RestApi.DAL.Data.Models.AuthModels;
 using System.IdentityModel.Tokens.Jwt;
+using Extensions.Models.AuthModels;
+using MainTz.RestApi.BLL.Services;
 using Extensions.SettingsModels;
 using Extensions;
 
@@ -8,12 +10,10 @@ namespace MainTz.RestApi.BLL.Middlewares
     public class JwtRefreshMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly IClientService _clientService;
         private readonly AuthApiSettings _authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
-        public JwtRefreshMiddleware(RequestDelegate next, IClientService clientService)
+        public JwtRefreshMiddleware(RequestDelegate next)
         {
             _next = next;
-            _clientService = clientService;
         }
 
         public async Task Invoke(HttpContext context)
@@ -25,7 +25,7 @@ namespace MainTz.RestApi.BLL.Middlewares
                 var jwtTokenAccessToken = handler.ReadJwtToken(accessToken);
                 var accessTokenValidTo = jwtTokenAccessToken.ValidTo;
 
-                if(accessTokenValidTo < DateTime.Now)
+                if(accessTokenValidTo > DateTime.Now)
                 {
                     var refreshToken = context.Request.Cookies["refreshToken"];
                     var role = context.Request.Cookies["role"];
@@ -33,10 +33,13 @@ namespace MainTz.RestApi.BLL.Middlewares
 
                     if (!string.IsNullOrEmpty(refreshToken))
                     {
-                        var tokens = await _clientService.SendRequestWithTokenAsync(refreshTokenUrl, role, refreshToken);
-                        context.Response.Cookies.Append("accessToken", tokens.AccessToken);
-                        context.Response.Cookies.Append("refreshToken", tokens.RefreshToken);
-                        context.Response.Cookies.Append("role", tokens.Role);
+                        var refreshTokenModel = new RefreshTokenModel { RefreshToken = refreshToken, Role = role };
+                        using var client = new RestClient<RefreshTokenModel, TokensModel>(refreshTokenUrl);
+                        var response = await client.GetAsync(refreshTokenModel);
+
+                        context.Response.Cookies.Append("accessToken", response.AccessToken);
+                        context.Response.Cookies.Append("refreshToken", response.RefreshToken);
+                        context.Response.Cookies.Append("role", response.Role);
                     }
                 }
             }
