@@ -170,6 +170,7 @@ C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\obj\D
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\MainTz.RestApi.pdb
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\MainTz.RestApi.genruntimeconfig.cache
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\ref\MainTz.RestApi.dll
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\appsettings.json
@@ -195,6 +196,7 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\NLog.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
@@ -233,5 +235,3 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\obj\Debug\net8.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\MainTz.RestApi.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\MainTz.RestApi.genruntimeconfig.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\obj\Debug\net8.0\ref\MainTz.RestApi.dll
-C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Newtonsoft.Json.dll
-C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\Newtonsoft.Json.dll

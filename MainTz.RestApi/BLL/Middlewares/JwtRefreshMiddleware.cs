@@ -25,7 +25,7 @@ namespace MainTz.RestApi.BLL.Middlewares
                 var jwtTokenAccessToken = handler.ReadJwtToken(accessToken);
                 var accessTokenValidTo = jwtTokenAccessToken.ValidTo;
 
-                if(accessTokenValidTo > DateTime.Now)
+                if(accessTokenValidTo < DateTime.Now)
                 {
                     var refreshToken = context.Request.Cookies["refreshToken"];
                     var role = context.Request.Cookies["role"];

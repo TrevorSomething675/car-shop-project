@@ -24,8 +24,7 @@ namespace MainTz.RestApi.BLL.Middlewares
 
             _logger.LogDebug($"[{context.Request.Path}]" +
                 $" [{context.Request.Method}]" +
-                $" [{context.Request.Headers["Authorization"]}]" +
-                $" [{bodyContent}]");
+                $" [{context.Request.Headers["Authorization"]}]");
 
             _logger.LogTrace($"[{context.Request.Path}]" +
                 $" [{context.Request.Method}]" +

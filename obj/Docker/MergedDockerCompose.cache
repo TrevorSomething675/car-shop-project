@@ -26,11 +26,7 @@ services:
     image: authservice
     networks:
       CarCompany: null
-    ports:
-      - mode: ingress
-        target: 8040
-        published: "8040"
-        protocol: tcp
+    restart: always
   maintz.restapi:
     build:
       context: C:\Users\Иван\Documents\GitHub\MainTzProject
@@ -50,8 +46,12 @@ services:
         target: 8081
         protocol: tcp
       - mode: ingress
-        target: 8081
-        published: "8080"
+        target: 55832
+        published: "55832"
+        protocol: tcp
+      - mode: ingress
+        target: 55833
+        published: "55833"
         protocol: tcp
     restart: always
     volumes:

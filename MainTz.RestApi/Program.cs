@@ -57,7 +57,7 @@ using (var scope = app.Services.CreateScope())
                     Name = "Admin",
                     Password = "123",
                     Role = "Admin",
-                    ExpTime = DateTime.UtcNow.AddMinutes(5).ToUniversalTime(),
+                    ExpTime = DateTime.UtcNow.AddMinutes(5),
                     RefreshToken = "refreshToken3"
                 });
                 context.SaveChanges();

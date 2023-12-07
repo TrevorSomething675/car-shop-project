@@ -1971,3 +1971,1707 @@ CfDJ8MpQ9zsweldCrCH3ji0GTsf7FHbwlbrjuvwZXlKnteEseI5Ygn8BNRgzERhcuApfhqAZVSMzfe6p
 2023-12-07 09:33:12.8271 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
 2023-12-07 09:33:12.8868 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
 2023-12-07 09:33:12.8868 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:55.6019 DEBUG [/] [GET] []
+2023-12-07 06:59:55.6420 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:55.8594 DEBUG Login debug
+2023-12-07 06:59:55.8594 TRACE Login trace
+2023-12-07 06:59:56.0219 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 06:59:56.0219 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.0219 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 06:59:56.0219 DEBUG [/css/site.css] [GET] []
+2023-12-07 06:59:56.0219 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 06:59:56.0260 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.0219 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 06:59:56.0260 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.0219 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 06:59:56.0260 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.0260 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.0260 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.1359 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 06:59:56.1359 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.1359 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 06:59:56.1359 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.3739 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 06:59:56.3739 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 06:59:56.4769 DEBUG [/favicon.ico] [GET] []
+2023-12-07 06:59:56.4864 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:00:01.2431 DEBUG [/] [POST] []
+2023-12-07 07:00:01.2431 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryb7vdGs598xN9mHM2
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryb7vdGs598xN9mHM2
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryb7vdGs598xN9mHM2
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GtR0hl4JmVPulW8M1wFYK7XmybMEk64VSYgpf8eIFaGc2R-tZi-sZpE1juRdAXLj8aSCfVzczdyiV7xcYG3EoG16z1voOzdVRO0I7jp9YFIDS1uPPaJn_EzfsaJpJRl7-8oQvlKnJHM578F9l7ielU
+------WebKitFormBoundaryb7vdGs598xN9mHM2--
+]
+2023-12-07 07:00:06.4450 DEBUG [/] [POST] []
+2023-12-07 07:00:06.4450 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarywLR9Zh5cgmDZPeAo
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarywLR9Zh5cgmDZPeAo
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarywLR9Zh5cgmDZPeAo
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8GtR0hl4JmVPulW8M1wFYK7XmybMEk64VSYgpf8eIFaGc2R-tZi-sZpE1juRdAXLj8aSCfVzczdyiV7xcYG3EoG16z1voOzdVRO0I7jp9YFIDS1uPPaJn_EzfsaJpJRl7-8oQvlKnJHM578F9l7ielU
+------WebKitFormBoundarywLR9Zh5cgmDZPeAo--
+]
+2023-12-07 07:04:00.1609 DEBUG [/] [GET] []
+2023-12-07 07:04:00.1964 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:00.4292 DEBUG Login debug
+2023-12-07 07:04:00.4292 TRACE Login trace
+2023-12-07 07:04:00.6848 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:04:00.6848 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:06.1914 DEBUG [/] [POST] []
+2023-12-07 07:04:06.1914 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryuY0IvNxxdAbFdPJr
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryuY0IvNxxdAbFdPJr
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryuY0IvNxxdAbFdPJr
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8G-N0tNTz9lCvB8wJbnqZrL6iPWVS5h95xxkBstp8Yl9rfsyCe0RZraTefs2-9X7p2tnVwC0uw2iEt9scgC7zme7M3jSraO_mzXBYFI_rMHFW4QtzLWaLtvhMivag4Z9QvS7dFJuEhMGiD9DPtNUFT0
+------WebKitFormBoundaryuY0IvNxxdAbFdPJr--
+]
+2023-12-07 07:04:09.4998 DEBUG [/] [POST] []
+2023-12-07 07:04:09.4998 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryn3Dhtk5NInIeBuAq
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryn3Dhtk5NInIeBuAq
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryn3Dhtk5NInIeBuAq
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8G-N0tNTz9lCvB8wJbnqZrL6iPWVS5h95xxkBstp8Yl9rfsyCe0RZraTefs2-9X7p2tnVwC0uw2iEt9scgC7zme7M3jSraO_mzXBYFI_rMHFW4QtzLWaLtvhMivag4Z9QvS7dFJuEhMGiD9DPtNUFT0
+------WebKitFormBoundaryn3Dhtk5NInIeBuAq--
+]
+2023-12-07 07:04:52.1178 DEBUG [/] [GET] []
+2023-12-07 07:04:52.1653 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.3796 DEBUG Login debug
+2023-12-07 07:04:52.3796 TRACE Login trace
+2023-12-07 07:04:52.5482 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:04:52.5482 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.6445 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:04:52.6904 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.6445 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:04:52.6652 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:04:52.7125 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.7125 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.7125 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:04:52.7156 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.7156 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:04:52.7156 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.7156 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:04:52.7156 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.7575 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:04:52.7575 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:52.9870 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:04:52.9870 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:53.1110 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:04:53.1202 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:04:56.3013 DEBUG [/] [POST] []
+2023-12-07 07:04:56.3013 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryqIqrgJBb2AtDDcKl
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryqIqrgJBb2AtDDcKl
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryqIqrgJBb2AtDDcKl
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8HgkgrBHQWlFkvOEwz0m4T8NA5R3u-NIaBReYSARvWx-pg6OW7XAkb1Au-JMx9DCuVAVLd-JMl2yx35IfB3IaqMjn6Sk5rHfmho6eEwzknrLd2gl9PbJj1Nm0Vsf33SJB-YVWsD_UwO9L4tXbe_cByQ
+------WebKitFormBoundaryqIqrgJBb2AtDDcKl--
+]
+2023-12-07 07:06:24.5195 DEBUG [/] [GET] []
+2023-12-07 07:06:24.5549 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:06:24.7676 DEBUG Login debug
+2023-12-07 07:06:24.7676 TRACE Login trace
+2023-12-07 07:06:25.0372 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:06:25.0372 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:06:27.4865 DEBUG [/] [POST] []
+2023-12-07 07:06:27.4865 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryjMX4PG7LWmpH56TI
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryjMX4PG7LWmpH56TI
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryjMX4PG7LWmpH56TI
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8HduvTjyJI1Pl6zALC5ebA_HsuV99aUDENc9d8PWMzW9FDAWYHhsCdrD7eE_v6mLwsD51nm2SH451hjM4zYVZKii-H_71t5DQzFxAlY5xunS3jV91CwJcCpf0QL-6HvnJ4656VX07XOu5o_3Nfrt3Cc
+------WebKitFormBoundaryjMX4PG7LWmpH56TI--
+]
+2023-12-07 07:07:28.9641 DEBUG [/] [GET] []
+2023-12-07 07:07:28.9997 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:07:29.2023 DEBUG Login debug
+2023-12-07 07:07:29.2023 TRACE Login trace
+2023-12-07 07:07:29.4575 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:07:29.4575 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:07:32.0143 DEBUG [/] [POST] []
+2023-12-07 07:07:32.0143 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryxEesqVB96Tg6qZKj
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryxEesqVB96Tg6qZKj
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryxEesqVB96Tg6qZKj
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8NgrxrfTg8lPkiDl-I2a0CUZeV0FKobokkr8X-yxDPYLJHCdBWb9KwVNF6qUxOLji_G42crzXNbr7-_A8pyQhcVzWtLBuFDAmz35GebMp5opiX1k5bi4NnvOaYzMmDHHjR25uP_rMeUG33tzgCdlVvQ
+------WebKitFormBoundaryxEesqVB96Tg6qZKj--
+]
+2023-12-07 07:07:33.8314 DEBUG [/] [POST] []
+2023-12-07 07:07:33.8334 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary24aFVXvt8ZMb1GFz
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary24aFVXvt8ZMb1GFz
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary24aFVXvt8ZMb1GFz
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8NgrxrfTg8lPkiDl-I2a0CUZeV0FKobokkr8X-yxDPYLJHCdBWb9KwVNF6qUxOLji_G42crzXNbr7-_A8pyQhcVzWtLBuFDAmz35GebMp5opiX1k5bi4NnvOaYzMmDHHjR25uP_rMeUG33tzgCdlVvQ
+------WebKitFormBoundary24aFVXvt8ZMb1GFz--
+]
+2023-12-07 07:07:34.0016 DEBUG [/] [POST] []
+2023-12-07 07:07:34.0238 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryhCwXUCLl6F1vHybu
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryhCwXUCLl6F1vHybu
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryhCwXUCLl6F1vHybu
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8NgrxrfTg8lPkiDl-I2a0CUZeV0FKobokkr8X-yxDPYLJHCdBWb9KwVNF6qUxOLji_G42crzXNbr7-_A8pyQhcVzWtLBuFDAmz35GebMp5opiX1k5bi4NnvOaYzMmDHHjR25uP_rMeUG33tzgCdlVvQ
+------WebKitFormBoundaryhCwXUCLl6F1vHybu--
+]
+2023-12-07 07:07:50.1612 DEBUG [/] [POST] []
+2023-12-07 07:07:50.1612 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarycTxdBVg5YDO9VEb1
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarycTxdBVg5YDO9VEb1
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarycTxdBVg5YDO9VEb1
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8NgrxrfTg8lPkiDl-I2a0CUZeV0FKobokkr8X-yxDPYLJHCdBWb9KwVNF6qUxOLji_G42crzXNbr7-_A8pyQhcVzWtLBuFDAmz35GebMp5opiX1k5bi4NnvOaYzMmDHHjR25uP_rMeUG33tzgCdlVvQ
+------WebKitFormBoundarycTxdBVg5YDO9VEb1--
+]
+2023-12-07 07:08:03.6117 DEBUG [/] [POST] []
+2023-12-07 07:08:03.6117 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryYZdRJYj3tnpFkpDF
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryYZdRJYj3tnpFkpDF
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryYZdRJYj3tnpFkpDF
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8NgrxrfTg8lPkiDl-I2a0CUZeV0FKobokkr8X-yxDPYLJHCdBWb9KwVNF6qUxOLji_G42crzXNbr7-_A8pyQhcVzWtLBuFDAmz35GebMp5opiX1k5bi4NnvOaYzMmDHHjR25uP_rMeUG33tzgCdlVvQ
+------WebKitFormBoundaryYZdRJYj3tnpFkpDF--
+]
+2023-12-07 07:08:29.9073 DEBUG [/] [GET] []
+2023-12-07 07:08:29.9478 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:08:30.1560 DEBUG Login debug
+2023-12-07 07:08:30.1560 TRACE Login trace
+2023-12-07 07:08:30.4050 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:08:30.4050 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:08:32.7639 DEBUG [/] [POST] []
+2023-12-07 07:08:32.7639 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarydGHzslAVSCdEFOYv
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarydGHzslAVSCdEFOYv
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarydGHzslAVSCdEFOYv
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8AcWqYOicKdFuXQbnz82OlEWHsUXLvQrrsFSoVtgmyrT1OIPJ795oiUZXu8huFJhHwe5zJZPetvQo6I4B1ivanY8FMP35_I_TH_HLlXemPZf2GHQt8oRfZNi02_PTUEHNLpQSdwp-YqnKbp4blpZO-Y
+------WebKitFormBoundarydGHzslAVSCdEFOYv--
+]
+2023-12-07 07:21:50.0092 DEBUG [/] [GET] []
+2023-12-07 07:21:50.0403 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:21:50.2414 DEBUG Login debug
+2023-12-07 07:21:50.2414 TRACE Login trace
+2023-12-07 07:21:50.4828 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:21:50.4835 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:21:52.7753 DEBUG [/] [POST] []
+2023-12-07 07:21:52.7870 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryFG5JML0fNluBp4yY
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryFG5JML0fNluBp4yY
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryFG5JML0fNluBp4yY
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8Elg3TaMj4BKuQY4j6uDzDfoxgMg6hsAmuxk4dh3-uute0oPgGMMf5bQXPuCdgLZ0IefmxskFnIJ7IDUbcJyqHgzOxhRFQzca9l8unrQNcL_l0vBqjTdlztgisSB4reG537tGgbSvkhEuZeTWZjGxX4
+------WebKitFormBoundaryFG5JML0fNluBp4yY--
+]
+2023-12-07 07:26:10.8282 DEBUG [/] [GET] []
+2023-12-07 07:26:10.8754 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:11.0931 DEBUG Login debug
+2023-12-07 07:26:11.0931 TRACE Login trace
+2023-12-07 07:26:11.3515 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:26:11.3515 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.0911 DEBUG [/] [GET] []
+2023-12-07 07:26:54.0911 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.1257 DEBUG Login debug
+2023-12-07 07:26:54.1257 TRACE Login trace
+2023-12-07 07:26:54.1852 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:26:54.1854 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:26:54.2121 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:26:54.2121 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.1852 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:26:54.2185 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.2121 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:26:54.2185 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.2121 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:26:54.2185 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.2185 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.2185 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.2906 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:26:54.3142 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.3390 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:26:54.3390 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.5359 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:26:54.5359 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:26:54.6214 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:26:54.6214 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:19.1572 DEBUG [/] [GET] []
+2023-12-07 07:28:19.1822 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:19.5126 DEBUG Login debug
+2023-12-07 07:28:19.5126 TRACE Login trace
+2023-12-07 07:28:19.7637 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:28:19.7701 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:19.8202 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:28:19.8202 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:19.8202 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:28:19.8313 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:19.8313 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:28:19.8572 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:19.8800 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:28:19.8800 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:28:19.8913 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:19.8913 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:20.0418 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:28:20.0418 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:20.0418 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:28:20.0418 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:20.3575 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:28:20.3609 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:20.5120 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:28:20.5120 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:28:31.6836 DEBUG [/] [POST] []
+2023-12-07 07:28:31.6836 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryyFCmJ9ZWriJQgcgc
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryyFCmJ9ZWriJQgcgc
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryyFCmJ9ZWriJQgcgc
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8P5aLt7PxLpGqTvEsmYfolU6qr-UaJFz5-d3zwD8MqxXNes_VynqwXXv8R6DA5iD3iK28wq72kxRsVqYqxVXZNSSSHlSUumaDkWd77XqZKY2_cMFusVOzzwxCP_8L_mMKNN2R3PTK6Kmjc0tbge48-Y
+------WebKitFormBoundaryyFCmJ9ZWriJQgcgc--
+]
+2023-12-07 07:29:15.9264 DEBUG [/] [GET] []
+2023-12-07 07:29:15.9579 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:16.1910 DEBUG Login debug
+2023-12-07 07:29:16.1910 TRACE Login trace
+2023-12-07 07:29:16.3285 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:29:16.3285 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:16.3758 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:29:16.4252 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:16.4043 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:29:16.4273 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:16.4252 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:29:16.4252 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:29:16.4273 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:16.4252 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:29:16.4273 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:29:16.4273 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:16.4273 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:16.4273 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:16.5026 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:29:16.5260 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:17.5891 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:29:17.5891 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:29:17.6955 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:29:17.7075 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:30:33.6176 DEBUG [/] [GET] []
+2023-12-07 07:30:33.6797 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:30:33.9310 DEBUG Login debug
+2023-12-07 07:30:33.9310 TRACE Login trace
+2023-12-07 07:30:34.2190 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:30:34.2190 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:30:37.3424 DEBUG [/User/Index] [GET] []
+2023-12-07 07:30:37.3445 TRACE [/User/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:30:37.5402 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:30:37.5402 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:31:44.7287 DEBUG [/] [GET] []
+2023-12-07 07:31:44.7673 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:31:44.9592 DEBUG Login debug
+2023-12-07 07:31:44.9592 TRACE Login trace
+2023-12-07 07:31:45.5181 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:31:45.5181 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:31:53.4453 DEBUG [/Manager/Index] [GET] []
+2023-12-07 07:31:53.4453 TRACE [/Manager/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.1789 DEBUG [/] [GET] []
+2023-12-07 07:33:12.2275 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.5184 DEBUG Login debug
+2023-12-07 07:33:12.5184 TRACE Login trace
+2023-12-07 07:33:12.6718 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:33:12.6718 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.7169 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:33:12.7169 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:33:12.7382 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.7169 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:33:12.7382 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.7169 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:33:12.7382 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:33:12.7382 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.7415 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.7415 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.8005 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:33:12.8228 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:12.8477 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:33:12.8477 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:13.1046 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:33:13.1046 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:13.2018 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:33:13.2018 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:18.6309 DEBUG [/User/Index] [GET] []
+2023-12-07 07:33:18.6332 TRACE [/User/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:33:18.8562 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:33:18.8562 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:19.7103 DEBUG [/] [GET] []
+2023-12-07 07:35:19.7913 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.0495 DEBUG Login debug
+2023-12-07 07:35:20.0495 TRACE Login trace
+2023-12-07 07:35:20.1803 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:35:20.1803 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.2460 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:35:20.2460 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:35:20.2460 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.2481 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.2460 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:35:20.2481 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.2481 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:35:20.2481 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:35:20.2481 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.2481 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:35:20.2481 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.2481 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.3116 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:35:20.3116 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.5450 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:35:20.5450 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:35:20.6444 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:35:20.6444 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:42.8620 DEBUG [/] [GET] []
+2023-12-07 07:37:42.9012 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.1739 DEBUG Login debug
+2023-12-07 07:37:43.1739 TRACE Login trace
+2023-12-07 07:37:43.3124 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:37:43.3124 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.3582 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:37:43.3582 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:37:43.3788 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.3788 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.3788 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:37:43.3788 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:37:43.4038 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.4038 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.4254 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:37:43.3788 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:37:43.4254 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.4254 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.5139 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:37:43.5358 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.7915 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:37:43.7915 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:43.9482 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:37:43.9482 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:59.7730 DEBUG [/] [GET] []
+2023-12-07 07:37:59.7730 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:59.8100 DEBUG Login debug
+2023-12-07 07:37:59.8100 TRACE Login trace
+2023-12-07 07:37:59.8506 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:37:59.8506 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:37:59.8964 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:37:59.8964 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:38:00.4530 DEBUG [/] [GET] []
+2023-12-07 07:38:00.4530 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:38:00.4867 DEBUG Login debug
+2023-12-07 07:38:00.4867 TRACE Login trace
+2023-12-07 07:38:00.5431 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:38:00.5431 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:38:00.6402 DEBUG [/] [GET] []
+2023-12-07 07:38:00.6402 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:38:00.6666 DEBUG Login debug
+2023-12-07 07:38:00.6666 TRACE Login trace
+2023-12-07 07:38:00.7381 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:38:00.7381 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:38:00.8367 DEBUG [/] [GET] []
+2023-12-07 07:38:00.8367 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:38:00.8628 DEBUG Login debug
+2023-12-07 07:38:00.8628 TRACE Login trace
+2023-12-07 07:38:00.9140 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:38:00.9140 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:38:00.9833 DEBUG [/] [GET] []
+2023-12-07 07:38:00.9833 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:38:01.0189 DEBUG Login debug
+2023-12-07 07:38:01.0189 TRACE Login trace
+2023-12-07 07:38:01.0930 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:38:01.0930 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:39:07.7296 DEBUG [/] [GET] []
+2023-12-07 07:39:07.7528 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:39:07.9622 DEBUG Login debug
+2023-12-07 07:39:07.9622 TRACE Login trace
+2023-12-07 07:39:08.1311 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:39:08.1311 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:39:08.2460 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:39:08.2460 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:58.6531 DEBUG [/] [GET] []
+2023-12-07 07:40:58.6817 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:58.9151 DEBUG Login debug
+2023-12-07 07:40:58.9151 TRACE Login trace
+2023-12-07 07:40:59.1055 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:40:59.1055 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.1463 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:40:59.1463 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.1463 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:40:59.1463 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:40:59.1463 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.1463 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.1463 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:40:59.1576 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.1848 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:40:59.1848 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.2424 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:40:59.2636 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.2929 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:40:59.3139 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.5291 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:40:59.5291 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:40:59.6530 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:40:59.6530 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:41:16.0599 DEBUG [/User/Index] [GET] []
+2023-12-07 07:41:16.0643 TRACE [/User/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:41:16.1948 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:41:16.1948 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:41:16.2452 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:41:16.2452 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:42:43.2228 DEBUG [/] [GET] []
+2023-12-07 07:42:43.2532 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:42:43.4713 DEBUG Login debug
+2023-12-07 07:42:43.4713 TRACE Login trace
+2023-12-07 07:42:43.6353 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:42:43.6353 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:42:43.7611 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:42:43.7611 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:42:54.1003 DEBUG [/Manager/Index] [GET] []
+2023-12-07 07:42:54.1003 TRACE [/Manager/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:44:24.5210 DEBUG [/] [GET] []
+2023-12-07 07:44:24.5714 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:44:24.7968 DEBUG Login debug
+2023-12-07 07:44:24.7968 TRACE Login trace
+2023-12-07 07:44:24.9414 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:44:24.9414 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:44:25.0472 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:44:25.0472 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:44:28.9813 DEBUG [/] [POST] []
+2023-12-07 07:44:28.9832 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary5YgSyQoj8ZzbLXcV
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary5YgSyQoj8ZzbLXcV
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary5YgSyQoj8ZzbLXcV
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8Mnlp0_w9ddAnPAC4mehWFpwQz8l0IQESz5Bxj6nV0VYbd02SVGSD3feToY2k-u6ySmm0Z0euKYr3IsufAKhPmMQI6Dcos939ltw_1-7oT62o9Tef_BP_wwQT6dM91WRLS_sIGxE1Y4-USLh5VpUTP8
+------WebKitFormBoundary5YgSyQoj8ZzbLXcV--
+]
+2023-12-07 07:45:41.9760 DEBUG [/] [GET] []
+2023-12-07 07:45:42.0057 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:42.2361 DEBUG Login debug
+2023-12-07 07:45:42.2361 TRACE Login trace
+2023-12-07 07:45:42.4019 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:45:42.4019 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:42.4928 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:45:42.4928 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.3130 DEBUG [/] [GET] []
+2023-12-07 07:45:43.3130 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.3663 DEBUG [/] [GET] []
+2023-12-07 07:45:43.3663 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.3976 DEBUG Login debug
+2023-12-07 07:45:43.3976 TRACE Login trace
+2023-12-07 07:45:43.4285 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:45:43.4326 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.4707 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:45:43.4707 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:45:43.4720 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.4707 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:45:43.4720 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.4720 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:45:43.4720 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.4720 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:45:43.4720 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.4720 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:45:43.4720 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:45:43.4827 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.4827 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.4827 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:45:43.6242 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:45:43.6242 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:47:51.1717 DEBUG [/] [GET] []
+2023-12-07 07:47:51.2209 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:47:51.4630 DEBUG Login debug
+2023-12-07 07:47:51.4630 TRACE Login trace
+2023-12-07 07:47:51.6132 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:47:51.6132 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:47:51.7346 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:47:51.7346 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:48:33.5153 DEBUG [/] [GET] []
+2023-12-07 07:48:33.5461 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:48:33.7634 DEBUG Login debug
+2023-12-07 07:48:33.7634 TRACE Login trace
+2023-12-07 07:48:33.9406 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:48:33.9413 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:48:34.0576 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:48:34.0576 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:51:34.1391 DEBUG [/] [GET] []
+2023-12-07 07:51:34.1900 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:51:34.4019 DEBUG Login debug
+2023-12-07 07:51:34.4019 TRACE Login trace
+2023-12-07 07:51:34.5436 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:51:34.5436 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:51:34.6474 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:51:34.6474 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:27.4752 DEBUG [/] [GET] []
+2023-12-07 07:53:27.5136 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:27.7611 DEBUG Login debug
+2023-12-07 07:53:27.7611 TRACE Login trace
+2023-12-07 07:53:27.9576 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:53:27.9576 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:53:27.9576 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:53:27.9576 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:27.9576 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:53:27.9599 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:27.9599 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:27.9576 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:53:27.9576 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:53:27.9599 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:27.9599 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:27.9599 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:28.0270 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:53:28.0270 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:28.0270 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:53:28.0270 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:28.2647 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:53:28.2647 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:28.3662 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:53:28.3790 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:53:32.8537 DEBUG [/] [POST] []
+2023-12-07 07:53:32.8537 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryqYIOGZa0ucJDKKac
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryqYIOGZa0ucJDKKac
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryqYIOGZa0ucJDKKac
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8Kkj-9pTxrJNtkJtquz9Kkllyk_A6DzYyfOlGuvFLwg3owjaZbe9d73vIU3WIJTcbkXxo6nkQxqmmrQwmS_EIgHCfSNym45Bzf50WB1tr3yORR3xO5z_6V6BsRb4ee789hCvW5B9zCqqNXBHda09BCA
+------WebKitFormBoundaryqYIOGZa0ucJDKKac--
+]
+2023-12-07 07:59:50.7826 DEBUG [/] [GET] []
+2023-12-07 07:59:50.8361 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.0797 DEBUG Login debug
+2023-12-07 07:59:51.0797 TRACE Login trace
+2023-12-07 07:59:51.2605 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 07:59:51.2605 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.3076 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 07:59:51.3076 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.3076 DEBUG [/css/site.css] [GET] []
+2023-12-07 07:59:51.3076 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.3076 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 07:59:51.3076 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 07:59:51.3076 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 07:59:51.3076 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.3076 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 07:59:51.3076 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.3076 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.3076 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.3622 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 07:59:51.3843 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.6334 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 07:59:51.6334 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 07:59:51.7537 DEBUG [/favicon.ico] [GET] []
+2023-12-07 07:59:51.7537 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.3614 DEBUG [/] [GET] []
+2023-12-07 08:00:27.4033 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.6306 DEBUG Login debug
+2023-12-07 08:00:27.6306 TRACE Login trace
+2023-12-07 08:00:27.7990 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:00:27.7990 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:00:27.7990 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:00:27.7990 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.7990 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.7990 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:00:27.8083 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.8083 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.7990 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:00:27.8083 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.7990 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:00:27.8216 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.8883 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:00:27.8883 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:27.8883 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:00:27.8883 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:28.1249 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:00:28.1249 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:00:28.2497 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:00:28.2497 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:01:59.8580 DEBUG [/] [GET] []
+2023-12-07 08:01:59.9017 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:00.1449 DEBUG Login debug
+2023-12-07 08:02:00.1449 TRACE Login trace
+2023-12-07 08:02:00.3298 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:02:00.3298 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:00.4289 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:02:00.4289 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.2643 DEBUG [/] [GET] []
+2023-12-07 08:02:35.2953 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.5161 DEBUG Login debug
+2023-12-07 08:02:35.5171 TRACE Login trace
+2023-12-07 08:02:35.6632 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:02:35.6632 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.6964 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:02:35.7507 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.7178 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:02:35.7630 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.7507 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:02:35.7507 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:02:35.7781 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:02:35.7781 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.7781 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.7709 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:02:35.7781 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.7781 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:35.8098 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:02:35.8098 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:36.0675 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:02:36.0675 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:02:36.1879 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:02:36.1879 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:03:27.7460 DEBUG [/] [GET] []
+2023-12-07 08:03:27.7940 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:03:28.0536 DEBUG Login debug
+2023-12-07 08:03:28.0536 TRACE Login trace
+2023-12-07 08:03:28.3080 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:03:28.3080 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:04:05.9428 DEBUG [/] [GET] []
+2023-12-07 08:04:05.9428 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:04:05.9780 DEBUG Login debug
+2023-12-07 08:04:05.9780 TRACE Login trace
+2023-12-07 08:04:06.0934 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:04:06.0934 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:04:14.8296 DEBUG [/] [GET] []
+2023-12-07 08:04:14.8296 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:04:14.8622 DEBUG Login debug
+2023-12-07 08:04:14.8622 TRACE Login trace
+2023-12-07 08:04:14.9280 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:04:14.9280 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:04:14.9573 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:04:14.9573 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.1040 DEBUG [/] [GET] []
+2023-12-07 08:06:09.1040 DEBUG [/] [GET] []
+2023-12-07 08:06:09.1620 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.1620 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.2628 DEBUG [/] [GET] []
+2023-12-07 08:06:09.2628 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.5261 DEBUG Login debug
+2023-12-07 08:06:09.5261 TRACE Login trace
+2023-12-07 08:06:09.5261 DEBUG Login debug
+2023-12-07 08:06:09.5261 TRACE Login trace
+2023-12-07 08:06:09.7172 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:06:09.7623 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.7172 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:06:09.7623 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:06:09.7172 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:06:09.7623 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.7396 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:06:09.7623 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.7172 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:06:09.7654 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.7623 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:06:09.7654 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.7654 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.7654 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.8444 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:06:09.8458 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.8458 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:06:09.8458 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.8458 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:06:09.8564 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.8458 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:06:09.8564 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.8458 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:06:09.8458 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:06:09.8564 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.8564 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.8564 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:06:09.8665 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:09.9285 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:06:09.9509 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:10.0325 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:06:10.0511 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:10.2864 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:06:10.2864 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:10.3123 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:06:10.3123 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:06:10.4488 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:06:10.4709 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:35.5959 DEBUG [/] [GET] []
+2023-12-07 08:07:35.6207 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:35.8275 DEBUG Login debug
+2023-12-07 08:07:35.8275 TRACE Login trace
+2023-12-07 08:07:35.9997 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:07:35.9997 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:07:35.9997 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:35.9997 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:07:35.9997 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:07:35.9997 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:35.9997 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:07:35.9997 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:35.9997 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:35.9997 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:07:36.0053 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:36.0053 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:36.0512 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:07:36.0512 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:36.0512 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:07:36.0512 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:36.2978 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:07:36.2978 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:07:36.4148 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:07:36.4148 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.4981 DEBUG [/] [GET] []
+2023-12-07 08:08:43.4981 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.5701 DEBUG [/] [GET] []
+2023-12-07 08:08:43.5701 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.5997 DEBUG Login debug
+2023-12-07 08:08:43.5997 TRACE Login trace
+2023-12-07 08:08:43.6475 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:08:43.6475 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:08:43.6475 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:08:43.6541 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:08:43.6475 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:08:43.6853 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.6769 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.6769 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.6853 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.6769 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:08:43.6769 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.6769 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:08:43.6853 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.6853 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.6853 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:08:43.6981 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:43.9978 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:08:44.0041 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:44.5748 DEBUG [/] [GET] []
+2023-12-07 08:08:44.5748 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:44.5973 DEBUG [/] [GET] []
+2023-12-07 08:08:44.5973 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:08:44.6302 DEBUG Login debug
+2023-12-07 08:08:44.6302 TRACE Login trace
+2023-12-07 08:09:48.7772 DEBUG [/] [GET] []
+2023-12-07 08:09:48.8103 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.0189 DEBUG Login debug
+2023-12-07 08:09:49.0189 TRACE Login trace
+2023-12-07 08:09:49.2085 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:09:49.2085 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:09:49.2085 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:09:49.2085 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.2085 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:09:49.2085 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.2085 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:09:49.2085 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:09:49.2136 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.2136 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.2136 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.2136 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.2634 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:09:49.2634 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.2634 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:09:49.2634 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.4456 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:09:49.4456 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:09:49.5667 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:09:49.5667 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:13.9999 DEBUG [/] [GET] []
+2023-12-07 08:11:14.0216 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:14.2239 DEBUG Login debug
+2023-12-07 08:11:14.2239 TRACE Login trace
+2023-12-07 08:11:14.3631 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:11:14.3631 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:14.4122 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:11:14.4133 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:14.4122 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:11:14.4122 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:11:14.4133 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:14.4133 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:14.4133 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:11:14.4133 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:11:14.4133 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:14.4133 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:11:14.4133 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:14.4133 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:14.4947 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:11:14.4947 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:17.6529 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:11:17.6529 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:11:17.8161 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:11:17.8161 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:12:09.5192 DEBUG [/] [GET] []
+2023-12-07 08:12:09.5454 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:12:09.7498 DEBUG Login debug
+2023-12-07 08:12:09.7498 TRACE Login trace
+2023-12-07 08:12:34.6347 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:12:34.6347 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:26.4696 DEBUG [/] [GET] []
+2023-12-07 08:13:26.5102 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:26.7567 DEBUG Login debug
+2023-12-07 08:13:26.7567 TRACE Login trace
+2023-12-07 08:13:26.9227 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:13:26.9227 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:26.9653 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:13:27.0064 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:27.0064 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:13:27.0064 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:27.0064 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:13:27.0110 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:27.0064 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:13:27.0110 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:27.0064 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:13:27.0110 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:27.0419 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:13:27.0419 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:27.1902 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:13:27.2266 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:27.4267 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:13:27.4267 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:13:27.5285 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:13:27.5359 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:45.9916 DEBUG [/] [GET] []
+2023-12-07 08:15:46.0215 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.2154 DEBUG Login debug
+2023-12-07 08:15:46.2154 TRACE Login trace
+2023-12-07 08:15:46.3719 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:15:46.3719 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.3719 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:15:46.3719 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:15:46.3719 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.3719 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:15:46.3719 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.3719 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:15:46.3719 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.3719 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:15:46.3719 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:15:46.3817 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.3817 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.3817 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.4682 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:15:46.4930 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.6721 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:15:46.6721 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:15:46.7914 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:15:46.7914 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:39.9811 DEBUG [/] [GET] []
+2023-12-07 08:18:40.0422 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.3032 DEBUG Login debug
+2023-12-07 08:18:40.3032 TRACE Login trace
+2023-12-07 08:18:40.4570 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:18:40.4570 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.4880 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:18:40.4896 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.4896 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:18:40.5153 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.4896 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:18:40.5153 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:18:40.5605 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.5383 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:18:40.5811 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.5383 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:18:40.5811 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:18:40.6264 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.6041 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.6264 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.8808 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:18:40.8808 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:40.9991 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:18:40.9991 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:18:45.2755 DEBUG [/] [POST] []
+2023-12-07 08:18:45.2755 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryZAcAM7UWoR06nCVr
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryZAcAM7UWoR06nCVr
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryZAcAM7UWoR06nCVr
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8Erx60Y9ZvFBkJKFnibXDPHObeB9pUkSuezXqwP1JSEo0y5LCxtFSlfgYVL008pyqS9_A654p6NGWMf2k1gvyLzsyGDTBN4hYqXoomp_1WT4JQg6UruTvv2I8Gg_zPGlOvUXHPx2UdFLg1k4Nxx_sd8
+------WebKitFormBoundaryZAcAM7UWoR06nCVr--
+]
+2023-12-07 08:21:03.3556 DEBUG [/] [GET] []
+2023-12-07 08:21:03.4159 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:03.6527 DEBUG Login debug
+2023-12-07 08:21:03.6527 TRACE Login trace
+2023-12-07 08:21:03.8041 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:21:03.8041 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:21:03.8078 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:03.8041 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:21:03.8078 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:03.8041 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:21:03.8078 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:03.8041 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:21:03.8078 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:03.8041 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:21:03.8171 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:03.8171 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:03.8078 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:21:03.8171 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:03.8763 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:21:03.8861 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:04.1143 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:21:04.1143 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:21:04.2372 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:21:04.2372 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:22.3630 DEBUG [/] [GET] []
+2023-12-07 08:23:22.4177 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:22.7032 DEBUG Login debug
+2023-12-07 08:23:22.7032 TRACE Login trace
+2023-12-07 08:23:22.9339 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:23:22.9353 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:22.9339 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:23:22.9339 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:23:22.9353 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:22.9339 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:23:22.9353 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:22.9339 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:23:22.9339 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:23:22.9353 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:22.9353 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:22.9353 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:23.0397 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:23:23.0397 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:23.0397 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:23:23.0397 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:23.3646 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:23:23.3654 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:23.5056 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:23:23.5056 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:39.1027 DEBUG [/] [GET] []
+2023-12-07 08:23:39.1063 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:39.1534 DEBUG [/] [GET] []
+2023-12-07 08:23:39.1555 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:39.1870 DEBUG Login debug
+2023-12-07 08:23:39.1870 TRACE Login trace
+2023-12-07 08:23:39.2182 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:23:39.2182 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:23:39.2644 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:23:39.2660 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:24:43.6477 DEBUG [/] [GET] []
+2023-12-07 08:24:43.6941 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:24:43.9901 DEBUG Login debug
+2023-12-07 08:24:43.9901 TRACE Login trace
+2023-12-07 08:24:44.1878 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:24:44.1878 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.2560 DEBUG [/] [GET] []
+2023-12-07 08:25:08.2851 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.5376 DEBUG Login debug
+2023-12-07 08:25:08.5376 TRACE Login trace
+2023-12-07 08:25:08.7746 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 08:25:08.7746 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 08:25:08.7746 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 08:25:08.7746 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.7746 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:25:08.7746 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 08:25:08.7746 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.7746 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.7746 DEBUG [/css/site.css] [GET] []
+2023-12-07 08:25:08.7746 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.7746 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.7746 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.8499 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 08:25:08.8499 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 08:25:08.8499 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:08.8499 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:09.1829 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:25:09.1838 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:25:09.2892 DEBUG [/favicon.ico] [GET] []
+2023-12-07 08:25:09.3091 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:27:57.8016 DEBUG [/] [GET] []
+2023-12-07 08:27:57.8781 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:27:58.1109 DEBUG Login debug
+2023-12-07 08:27:58.1109 TRACE Login trace
+2023-12-07 08:27:58.3259 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:27:58.3259 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:27:58.4366 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:27:58.4366 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:29:34.1917 DEBUG [/] [GET] []
+2023-12-07 08:29:34.2336 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:29:34.4466 DEBUG Login debug
+2023-12-07 08:29:34.4466 TRACE Login trace
+2023-12-07 08:29:34.6618 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:29:34.6752 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:29:34.7709 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:29:34.7720 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:31:40.2623 DEBUG [/] [GET] []
+2023-12-07 08:31:40.3518 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:31:40.6276 DEBUG Login debug
+2023-12-07 08:31:40.6276 TRACE Login trace
+2023-12-07 08:31:40.7635 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:31:40.7635 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:31:40.8795 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:31:40.8801 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:33:30.1960 DEBUG [/] [GET] []
+2023-12-07 08:33:30.2335 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:33:30.5029 DEBUG Login debug
+2023-12-07 08:33:30.5029 TRACE Login trace
+2023-12-07 08:33:30.7041 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:33:30.7041 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:33:30.8180 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:33:30.8180 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:33:49.3719 DEBUG [/] [GET] []
+2023-12-07 08:33:49.4035 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:33:49.6340 DEBUG Login debug
+2023-12-07 08:33:49.6340 TRACE Login trace
+2023-12-07 08:33:49.9232 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:33:49.9232 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:34:29.8114 DEBUG [/] [GET] []
+2023-12-07 08:34:29.8549 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:34:30.1029 DEBUG Login debug
+2023-12-07 08:34:30.1029 TRACE Login trace
+2023-12-07 08:34:30.3793 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:34:30.3793 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:35:19.4010 DEBUG [/] [GET] []
+2023-12-07 08:35:19.4537 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:35:19.6852 DEBUG Login debug
+2023-12-07 08:35:19.6852 TRACE Login trace
+2023-12-07 08:35:19.8729 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:35:19.8729 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:35:19.9899 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:35:19.9899 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:36:24.8176 DEBUG [/] [GET] []
+2023-12-07 08:36:24.8595 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:36:25.1232 DEBUG Login debug
+2023-12-07 08:36:25.1232 TRACE Login trace
+2023-12-07 08:36:25.4043 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:36:25.4043 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:36:27.7782 DEBUG [/] [POST] []
+2023-12-07 08:36:27.7782 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryW7A0Oz5Hthm7EZmv
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryW7A0Oz5Hthm7EZmv
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryW7A0Oz5Hthm7EZmv
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8J3rSExL5btEuWmiqZCVI4iRe_A6-y18C0n-BCkSVqHi8uVSTMBNu9_PlCXUvRy2QCfcK6DT2Tw9KogiC0bN4cx55U_nDJPQixBRo6cYUBULn5vsxdJPvt33o7CLY8k5U3TgvMLoYN-1ffNIQ2vVoYw
+------WebKitFormBoundaryW7A0Oz5Hthm7EZmv--
+]
+2023-12-07 08:38:09.4858 DEBUG [/] [GET] []
+2023-12-07 08:38:09.5162 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:38:09.7352 DEBUG Login debug
+2023-12-07 08:38:09.7358 TRACE Login trace
+2023-12-07 08:38:09.8930 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:38:09.8930 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:38:10.0124 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:38:10.0195 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:38:13.6174 DEBUG [/] [POST] []
+2023-12-07 08:38:13.6174 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarymu10iAGsuxgNpk8s
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarymu10iAGsuxgNpk8s
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarymu10iAGsuxgNpk8s
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8HqlMGZTe0JJvcyayr6jxP7xySogwTWm26rG2M41zc5AvSFIPhnW-rrHRtZvAUZahmFZfMk8kION7ZamJftx3JCCszuzNeKmO4khvwK2CPiA7V1OcHLf0haIwsDqbQiFYNTQa6xenjUMYihOuP0svH0
+------WebKitFormBoundarymu10iAGsuxgNpk8s--
+]
+2023-12-07 08:38:26.2069 ERROR Cannot assign requested address (localhost:59404)
+2023-12-07 08:39:53.1839 DEBUG [/] [GET] []
+2023-12-07 08:39:53.2202 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:39:53.4345 DEBUG Login debug
+2023-12-07 08:39:53.4345 TRACE Login trace
+2023-12-07 08:39:53.6051 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:39:53.6051 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:39:53.7244 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:39:53.7251 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:39:56.6653 DEBUG [/] [POST] []
+2023-12-07 08:39:56.6653 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarylTJlaFDQNXq74qrf
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarylTJlaFDQNXq74qrf
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarylTJlaFDQNXq74qrf
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8IJf1pg2EExDpGoNtqdWDtflbzKxodNiloHwfV7iOW-nv6ZmAcrVYtJOOm1gZzfR2vPK6fQfx4tXyMuvR7fPYc7egth5CKO3vxOwIquJdDTIQkkbM-4G3mHV6VwfTchNzqQBlpHbZI36zewWlli2Yj0
+------WebKitFormBoundarylTJlaFDQNXq74qrf--
+]
+2023-12-07 08:40:02.3157 ERROR Cannot assign requested address (localhost:59404)
+2023-12-07 08:40:45.5382 DEBUG [/] [POST] []
+2023-12-07 08:40:45.5382 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryKbeIL2MmFWL8oXpm
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryKbeIL2MmFWL8oXpm
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryKbeIL2MmFWL8oXpm
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8IJf1pg2EExDpGoNtqdWDtflbzKxodNiloHwfV7iOW-nv6ZmAcrVYtJOOm1gZzfR2vPK6fQfx4tXyMuvR7fPYc7egth5CKO3vxOwIquJdDTIQkkbM-4G3mHV6VwfTchNzqQBlpHbZI36zewWlli2Yj0
+------WebKitFormBoundaryKbeIL2MmFWL8oXpm--
+]
+2023-12-07 08:41:05.5873 ERROR Cannot assign requested address (localhost:59404)
+2023-12-07 08:41:54.1631 DEBUG [/] [GET] []
+2023-12-07 08:41:54.1929 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:41:54.4322 DEBUG Login debug
+2023-12-07 08:41:54.4322 TRACE Login trace
+2023-12-07 08:41:54.6049 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:41:54.6049 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:41:54.7137 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:41:54.7144 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:42:01.3880 DEBUG [/] [POST] []
+2023-12-07 08:42:01.3880 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryDE6vQ2eqjg3w7oBK
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryDE6vQ2eqjg3w7oBK
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryDE6vQ2eqjg3w7oBK
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8IxaqRUb7bhDt8v9h--DWPOW1SgxFZNgPiXEwwqIgCGk6JaHNhgWnKa_2oTUEjQOp7JyFP2O810QdCuudtcKG760q8hw9HBaRt4ajTtoeAyC1nDGm0VrQZIo76CaLX__3RFAaS3YrwHatEwlJh3cu4s
+------WebKitFormBoundaryDE6vQ2eqjg3w7oBK--
+]
+2023-12-07 08:42:12.6375 ERROR Cannot assign requested address (localhost:59404)
+2023-12-07 08:44:47.7703 DEBUG [/] [GET] []
+2023-12-07 08:44:47.8484 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:44:48.0596 DEBUG Login debug
+2023-12-07 08:44:48.0596 TRACE Login trace
+2023-12-07 08:44:48.2313 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:44:48.2313 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:44:48.3489 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:44:48.3489 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:44:50.7556 DEBUG [/] [POST] []
+2023-12-07 08:44:50.7556 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryRjxLAtMevLMdUB4j
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryRjxLAtMevLMdUB4j
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryRjxLAtMevLMdUB4j
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8J_guQuv2-ZEu6hrpH_Ywj5f_KH0a55dVusrMnZRfqWnSnCaXUW3dvdpxbNLkJPJUhFiDJo579CzTKnS1HF_2l0d9uheB7ksLDiICR6fMukh0pD6BoX1DvcL99EsZLteVx9ALQTMLRDdRU3nVFU3DOk
+------WebKitFormBoundaryRjxLAtMevLMdUB4j--
+]
+2023-12-07 08:44:56.7936 ERROR Connection refused (maintz.authservice:59404)
+2023-12-07 08:46:27.1173 DEBUG [/] [GET] []
+2023-12-07 08:46:27.1467 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:46:27.3666 DEBUG Login debug
+2023-12-07 08:46:27.3666 TRACE Login trace
+2023-12-07 08:46:27.6354 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:46:27.6354 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:46:33.2180 DEBUG [/] [POST] []
+2023-12-07 08:46:33.2180 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarye7hpgyew7tXBslfv
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarye7hpgyew7tXBslfv
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarye7hpgyew7tXBslfv
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8IjABL9mRi9Nlo7c3d34XhpwjpFqhBKQ10muSbhdWHv1UiqSXCqmIUbI18SeCWbsOb6Ze2ZWUZqqY0gJYAyMpd7jjRLnNN0yNPD4M-6w5h3MXP9NbeTcT9bwcrANQiAJk8uRVFkVupbDLmkPQoRPNVo
+------WebKitFormBoundarye7hpgyew7tXBslfv--
+]
+2023-12-07 08:46:40.5180 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkzODg1OSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.bYS9PL7OS6Gt7guULFxcjGsaiNUtlipaf3jatEsyCQQ]
+2023-12-07 08:46:40.5180 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:46:40.7268 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:46:40.7268 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:52:56.5764 DEBUG [/] [GET] []
+2023-12-07 08:52:56.6055 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:52:56.8608 DEBUG Login debug
+2023-12-07 08:52:56.8608 TRACE Login trace
+2023-12-07 08:52:57.0188 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:52:57.0195 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:52:57.1300 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:52:57.1300 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:52:59.9809 DEBUG [/] [POST] []
+2023-12-07 08:52:59.9809 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary9YIpAH7A1eIjnShV
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary9YIpAH7A1eIjnShV
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary9YIpAH7A1eIjnShV
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8HBKN-5NhzFBjQug7RkolZZiyzcnpxK5FB5XOuDSQYLD90pPx9auNg5b4gaGzWXqZ5yKK6iSkry4i86l_c0f8b0E_pfNMiGOmhdLdxulOW8fDd0brI5k-p6uGErmWwEfBRxHOcUKvHj7IchIQuIs2wE
+------WebKitFormBoundary9YIpAH7A1eIjnShV--
+]
+2023-12-07 08:53:03.4519 ERROR Connection refused (maintz.authservice:80)
+2023-12-07 08:53:21.3125 DEBUG [/] [GET] []
+2023-12-07 08:53:21.3439 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:53:21.5565 DEBUG Login debug
+2023-12-07 08:53:21.5565 TRACE Login trace
+2023-12-07 08:53:21.8062 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:53:21.8062 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:54:03.9560 DEBUG [/] [GET] []
+2023-12-07 08:54:03.9849 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:54:04.2147 DEBUG Login debug
+2023-12-07 08:54:04.2147 TRACE Login trace
+2023-12-07 08:54:04.4931 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:54:04.4931 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:54:20.8797 DEBUG [/] [POST] []
+2023-12-07 08:54:20.8797 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary2bu5A7yat7D36IQU
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary2bu5A7yat7D36IQU
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary2bu5A7yat7D36IQU
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8IQh4NkZyGdIpNtnPyzSBD8DOG2k0K93Jpe0ChVpdNUKLZYPGd8iCn3zIGwwDJf94Cgs4aPaHcmGHIHybAFxH22ImcvYpaf2j7iCqDeUjnDRERz6R58rcO7PUeOW88uJX7Z5WzcfFG-3JgrGryD7bV8
+------WebKitFormBoundary2bu5A7yat7D36IQU--
+]
+2023-12-07 08:54:24.9695 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkzOTMyNCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.vqjdKM2RyUfyfZOqh1wbKChdpKMVkfBsgtDsOlerFsQ]
+2023-12-07 08:54:24.9695 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:54:25.1795 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:54:25.1795 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:57:31.7521 DEBUG [/] [GET] []
+2023-12-07 08:57:31.7887 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:57:32.0050 DEBUG Login debug
+2023-12-07 08:57:32.0056 TRACE Login trace
+2023-12-07 08:57:32.1530 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 08:57:32.1553 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:57:32.2691 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 08:57:32.2691 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 08:57:34.5685 DEBUG [/] [POST] []
+2023-12-07 08:57:34.5685 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarycd41Pib33qZABdR0
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarycd41Pib33qZABdR0
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarycd41Pib33qZABdR0
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8JA3WuowTXNNjm323Yoluxa5scD2Va4XcPEAwS1z_EgJGxBT6hGnPqa5HAQKmU0FIx_F3e9OwZRnJcF18YwmQ23XLApLLdZ6_S1WAf76CYW5QfEpkFAwF15Ul4eNHcnmcMXte0QS5V42pA9N3waF68A
+------WebKitFormBoundarycd41Pib33qZABdR0--
+]
+2023-12-07 08:57:34.8832 ERROR Connection refused (maintz.authservice:44392)
+2023-12-07 08:57:35.6412 DEBUG [/] [POST] []
+2023-12-07 08:57:35.6412 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryON3AwhHX1Xk1Tcn1
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryON3AwhHX1Xk1Tcn1
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryON3AwhHX1Xk1Tcn1
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8JA3WuowTXNNjm323Yoluxa5scD2Va4XcPEAwS1z_EgJGxBT6hGnPqa5HAQKmU0FIx_F3e9OwZRnJcF18YwmQ23XLApLLdZ6_S1WAf76CYW5QfEpkFAwF15Ul4eNHcnmcMXte0QS5V42pA9N3waF68A
+------WebKitFormBoundaryON3AwhHX1Xk1Tcn1--
+]
+2023-12-07 08:57:35.7439 DEBUG [/] [POST] []
+2023-12-07 08:57:35.7665 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryBkh5puGl5mADrEvc
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryBkh5puGl5mADrEvc
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryBkh5puGl5mADrEvc
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8JA3WuowTXNNjm323Yoluxa5scD2Va4XcPEAwS1z_EgJGxBT6hGnPqa5HAQKmU0FIx_F3e9OwZRnJcF18YwmQ23XLApLLdZ6_S1WAf76CYW5QfEpkFAwF15Ul4eNHcnmcMXte0QS5V42pA9N3waF68A
+------WebKitFormBoundaryBkh5puGl5mADrEvc--
+]
+2023-12-07 08:57:35.7967 ERROR Connection refused (maintz.authservice:44392)
+2023-12-07 08:57:35.8540 ERROR Connection refused (maintz.authservice:44392)
+2023-12-07 08:57:35.8996 DEBUG [/] [POST] []
+2023-12-07 08:57:35.8996 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary7eLxkM2zrSTzuAr9
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary7eLxkM2zrSTzuAr9
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary7eLxkM2zrSTzuAr9
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8JA3WuowTXNNjm323Yoluxa5scD2Va4XcPEAwS1z_EgJGxBT6hGnPqa5HAQKmU0FIx_F3e9OwZRnJcF18YwmQ23XLApLLdZ6_S1WAf76CYW5QfEpkFAwF15Ul4eNHcnmcMXte0QS5V42pA9N3waF68A
+------WebKitFormBoundary7eLxkM2zrSTzuAr9--
+]
+2023-12-07 08:57:36.0043 ERROR Connection refused (maintz.authservice:44392)
+2023-12-07 09:00:51.7459 DEBUG [/] [GET] []
+2023-12-07 09:00:51.7854 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:00:52.0165 DEBUG Login debug
+2023-12-07 09:00:52.0165 TRACE Login trace
+2023-12-07 09:00:52.2798 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 09:00:52.2798 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:00:54.5393 DEBUG [/] [POST] []
+2023-12-07 09:00:54.5872 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryvxsUi9Q6WV9EkB2V
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryvxsUi9Q6WV9EkB2V
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryvxsUi9Q6WV9EkB2V
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8LUjhI9pNmhDlaia91wNHInbkWHd336Q-mkhZ3Y4UTahcDj7l2lT7Tty3sOj9dsEZ-a6mLRoh0_FglLnvRdrKJRRGrWX6scby3mRL-l9kN2VZ7qhc3iOfzjbGbiWVnlWQ2evW0SJJGJ7Gt7Oy4aFGW8
+------WebKitFormBoundaryvxsUi9Q6WV9EkB2V--
+]
+2023-12-07 09:00:54.9304 ERROR Connection refused (maintz.authservice:44392)
+2023-12-07 09:51:18.0451 DEBUG [/] [GET] []
+2023-12-07 09:51:18.0783 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:18.3068 DEBUG Login debug
+2023-12-07 09:51:18.3068 TRACE Login trace
+2023-12-07 09:51:18.4830 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 09:51:18.4847 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:18.6151 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 09:51:18.6151 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.1369 DEBUG [/] [GET] []
+2023-12-07 09:51:31.1369 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.2096 DEBUG [/] [GET] []
+2023-12-07 09:51:31.2096 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.2370 DEBUG Login debug
+2023-12-07 09:51:31.2370 TRACE Login trace
+2023-12-07 09:51:31.3240 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 09:51:31.3484 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.3240 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 09:51:31.3484 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.3240 DEBUG [/css/site.css] [GET] []
+2023-12-07 09:51:31.3712 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.3484 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 09:51:31.3484 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 09:51:31.3712 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 09:51:31.3754 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.3754 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.3754 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.4291 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 09:51:31.4291 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.4291 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 09:51:31.4521 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:31.7212 DEBUG [/favicon.ico] [GET] []
+2023-12-07 09:51:31.7212 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:51:38.8177 DEBUG [/] [POST] []
+2023-12-07 09:51:38.8177 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundarytbkOp37B3enOcT8j
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundarytbkOp37B3enOcT8j
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundarytbkOp37B3enOcT8j
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8JdGndb520xPuy_Wt35ZhCEzor6f31352gAifwTkvjsDwTEYOyd_Z316wRM3-lsXFHJYVLVBWYdufWRcPAdo0THG6i2XFkxqleCbwb1CU7KHjKemDCPWJXNtqHPbkg9A9PRsaANY6gJYh0K33sOYqRc
+------WebKitFormBoundarytbkOp37B3enOcT8j--
+]
+2023-12-07 09:51:39.1183 ERROR Connection refused (maintz.authservice:44392)
+2023-12-07 09:53:23.4498 DEBUG [/] [GET] []
+2023-12-07 09:53:23.4827 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:53:23.7028 DEBUG Login debug
+2023-12-07 09:53:23.7036 TRACE Login trace
+2023-12-07 09:53:23.9996 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 09:53:23.9996 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:53:36.1715 DEBUG [/] [GET] []
+2023-12-07 09:53:36.1742 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:53:36.2350 DEBUG [/] [GET] []
+2023-12-07 09:53:36.2647 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:53:36.2988 DEBUG Login debug
+2023-12-07 09:53:36.2988 TRACE Login trace
+2023-12-07 09:54:14.6039 DEBUG [/] [GET] []
+2023-12-07 09:54:14.6367 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:14.8603 DEBUG Login debug
+2023-12-07 09:54:14.8603 TRACE Login trace
+2023-12-07 09:54:15.0059 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 09:54:15.0059 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.0373 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 09:54:15.0373 DEBUG [/css/site.css] [GET] []
+2023-12-07 09:54:15.0373 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 09:54:15.0373 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.0624 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.0624 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.0650 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 09:54:15.0650 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.0650 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 09:54:15.0650 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.0650 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 09:54:15.0650 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.1106 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 09:54:15.1106 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.3047 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 09:54:15.3047 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:54:15.4206 DEBUG [/favicon.ico] [GET] []
+2023-12-07 09:54:15.4287 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.1178 DEBUG [/] [GET] []
+2023-12-07 09:55:32.1666 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.3984 DEBUG Login debug
+2023-12-07 09:55:32.3984 TRACE Login trace
+2023-12-07 09:55:32.5415 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 09:55:32.5423 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.5718 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 09:55:32.5718 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.5718 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 09:55:32.5718 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 09:55:32.5718 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 09:55:32.5956 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.6163 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.5956 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.5718 DEBUG [/css/site.css] [GET] []
+2023-12-07 09:55:32.6163 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 09:55:32.6163 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.6163 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:32.7295 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 09:55:32.7377 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:33.0477 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 09:55:33.0477 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:55:33.1704 DEBUG [/favicon.ico] [GET] []
+2023-12-07 09:55:33.1739 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.2145 DEBUG [/] [GET] []
+2023-12-07 09:56:49.2526 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.4904 DEBUG Login debug
+2023-12-07 09:56:49.4912 TRACE Login trace
+2023-12-07 09:56:49.6724 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 09:56:49.6724 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.7540 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 09:56:49.7540 DEBUG [/css/site.css] [GET] []
+2023-12-07 09:56:49.7540 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 09:56:49.7540 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.7540 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 09:56:49.7540 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 09:56:49.7540 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.7540 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.7540 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.7540 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.9422 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 09:56:49.9422 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 09:56:49.9634 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:49.9854 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:50.2171 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 09:56:50.2171 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:56:50.3384 DEBUG [/favicon.ico] [GET] []
+2023-12-07 09:56:50.3384 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:58:32.4903 DEBUG [/] [GET] []
+2023-12-07 09:58:32.5174 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:58:32.7758 DEBUG Login debug
+2023-12-07 09:58:32.7758 TRACE Login trace
+2023-12-07 09:58:33.0492 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 09:58:33.0500 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.1945 DEBUG [/] [GET] []
+2023-12-07 10:00:09.2279 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.4917 DEBUG Login debug
+2023-12-07 10:00:09.4917 TRACE Login trace
+2023-12-07 10:00:09.6818 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 10:00:09.6818 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.7298 DEBUG [/css/site.css] [GET] []
+2023-12-07 10:00:09.7719 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.7719 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 10:00:09.7927 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.7927 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 10:00:09.7927 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 10:00:09.7927 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.7927 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.7927 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 10:00:09.7927 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 10:00:09.8015 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.8015 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:09.8536 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 10:00:09.8536 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:10.0309 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 10:00:10.0309 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:00:10.1433 DEBUG [/favicon.ico] [GET] []
+2023-12-07 10:00:10.1433 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.2180 DEBUG [/] [GET] []
+2023-12-07 10:02:07.2561 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.4754 DEBUG Login debug
+2023-12-07 10:02:07.4754 TRACE Login trace
+2023-12-07 10:02:07.6339 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] []
+2023-12-07 10:02:07.6339 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.7332 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] []
+2023-12-07 10:02:07.7332 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.7332 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 10:02:07.7332 DEBUG [/js/CookieManagerScript.js] [GET] []
+2023-12-07 10:02:07.7332 DEBUG [/js/JwtHeaderScript.js] [GET] []
+2023-12-07 10:02:07.7332 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] []
+2023-12-07 10:02:07.7332 DEBUG [/css/site.css] [GET] []
+2023-12-07 10:02:07.7332 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.7332 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.7332 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.7376 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.7376 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:07.8112 DEBUG [/js/LoginFormScript.js] [GET] []
+2023-12-07 10:02:07.8112 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:08.0616 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 10:02:08.0616 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:08.1813 DEBUG [/favicon.ico] [GET] []
+2023-12-07 10:02:08.1813 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:02:10.9735 DEBUG [/] [POST] []
+2023-12-07 10:02:10.9735 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryAxiIN0lQ2o1I9Dco
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryAxiIN0lQ2o1I9Dco
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryAxiIN0lQ2o1I9Dco
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8J5iQpyLZtBOvGNg9lXFwrRgPSNjDiMkvFBx5qmPV10aFs0UD62ruK4WPvbnkUPioDdzBaq4D_OFrVjmbIw0DF14wh9zuo4cLlaOLhXDBlm4vhp6y82xT3MY69FXJdAXLYZXUq-8pQkHFca_6EIOpRU
+------WebKitFormBoundaryAxiIN0lQ2o1I9Dco--
+]
+2023-12-07 10:02:11.2422 ERROR Connection refused (maintz.authservice:44392)
+2023-12-07 10:03:24.1588 DEBUG [/] [GET] []
+2023-12-07 10:03:24.2195 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:03:24.4737 DEBUG Login debug
+2023-12-07 10:03:24.4737 TRACE Login trace
+2023-12-07 10:03:24.6327 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 10:03:24.6327 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:03:24.7628 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 10:03:24.7628 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:03:27.5561 DEBUG [/] [POST] []
+2023-12-07 10:03:27.5561 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryLts9gt0VONGGu77F
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryLts9gt0VONGGu77F
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryLts9gt0VONGGu77F
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8IBO_vV7zWxOpV81OIvEmVcTdr627uZDIs9OPqxN3xszGdHAPA92wYs5LgJspwbpWh65PJlPVi8qZMvR-gXBcR5h-EqFRCxZ72fhSCt5E1HiKqUeQDtUj8dx_RrGpzu9d5tqfp0cVyFEXxpdZreiJRM
+------WebKitFormBoundaryLts9gt0VONGGu77F--
+]
+2023-12-07 10:03:30.7080 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTk0MzQ3MCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.2ZLJgGRv3X3HnZ8Cxtm7L_caOYeC9GEwXrdKuO_mZmA]
+2023-12-07 10:03:30.7080 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:03:30.9062 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 10:03:30.9062 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:04:21.9671 DEBUG [/] [GET] []
+2023-12-07 10:04:22.0148 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:04:22.3113 DEBUG Login debug
+2023-12-07 10:04:22.3113 TRACE Login trace
+2023-12-07 10:04:22.4828 DEBUG [/MainTz.RestApi.styles.css] [GET] []
+2023-12-07 10:04:22.4828 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:04:22.6040 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 10:04:22.6047 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:04:25.3396 DEBUG [/] [POST] []
+2023-12-07 10:04:25.3396 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryrhBNKZjNLh7bLQEj
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryrhBNKZjNLh7bLQEj
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryrhBNKZjNLh7bLQEj
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8HFDhMIrP5dHg6NkYTPg5OkVRaPHJdnBqjryEzZPT0MAMUNrRpPv5UWifPTFAmGbxC7WM06B1pMiqUvAYftBCwmky29E4j9YwLm7SzIDT2QbfkEHOp0VuEZXazkK3gYc0HrS5pIhBmcj-2I05G-jmaI
+------WebKitFormBoundaryrhBNKZjNLh7bLQEj--
+]
+2023-12-07 10:04:29.5779 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTk0MzUyOSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.ZIQjYkkBjtU7iJyYbrBTmskRXR_bBEWsCiBCvMrnrVw]
+2023-12-07 10:04:29.5779 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 10:04:29.8007 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] []
+2023-12-07 10:04:29.8007 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []

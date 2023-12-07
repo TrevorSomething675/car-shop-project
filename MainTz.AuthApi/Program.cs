@@ -61,4 +61,11 @@ app.Map("/GetTokensOnRefresh", async (context) =>
     await context.Response.WriteAsJsonAsync(userAuthModel);
 });
 
+app.Map("/", async (context) =>
+{
+	var response = context.Response;
+	response.ContentType = "text/html; charset=utf-8";
+    await response.WriteAsync("<h2>Auth Service</h2>");
+});
+
 app.Run();

@@ -11362,3 +11362,507 @@
 2023-12-07 09:30:57.0844 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
 2023-12-07 09:30:57.1015 Info Configuration initialized.
 2023-12-07 09:30:57.3831 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\bin\Debug\net8.0\nlog.config
+2023-12-07 06:59:50.8261 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 06:59:50.8467 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 06:59:50.8467 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 06:59:50.8938 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 06:59:50.9068 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 06:59:50.9195 Info Configuration initialized.
+2023-12-07 06:59:51.2725 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:03:57.0783 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:03:57.0920 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:03:57.0952 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:03:57.1303 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:03:57.1436 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:03:57.1563 Info Configuration initialized.
+2023-12-07 07:03:57.4691 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:04:48.9982 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:04:49.0167 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:04:49.0167 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:04:49.0541 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:04:49.0688 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:04:49.0821 Info Configuration initialized.
+2023-12-07 07:04:49.4177 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:06:21.4442 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:06:21.4583 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:06:21.4583 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:06:21.4987 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:06:21.5124 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:06:21.5247 Info Configuration initialized.
+2023-12-07 07:06:21.8397 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:07:25.8616 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:07:25.8811 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:07:25.8839 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:07:25.9192 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:07:25.9324 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:07:25.9448 Info Configuration initialized.
+2023-12-07 07:07:26.2542 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:08:26.6749 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:08:26.6887 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:08:26.6923 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:08:26.7277 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:08:26.7414 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:08:26.7540 Info Configuration initialized.
+2023-12-07 07:08:27.0778 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:21:46.8480 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:21:46.8621 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:21:46.8653 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:21:46.9008 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:21:46.9136 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:21:46.9260 Info Configuration initialized.
+2023-12-07 07:21:47.2503 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:26:07.7391 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:26:07.7534 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:26:07.7534 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:26:07.7928 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:26:07.8057 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:26:07.8177 Info Configuration initialized.
+2023-12-07 07:26:08.1325 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:28:14.5168 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:28:14.5379 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:28:14.5449 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:28:14.5934 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:28:14.6241 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:28:14.6567 Info Configuration initialized.
+2023-12-07 07:28:15.2209 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:29:11.6779 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:29:11.6978 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:29:11.6978 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:29:11.7383 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:29:11.7535 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:29:11.7656 Info Configuration initialized.
+2023-12-07 07:29:12.1058 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:30:30.6413 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:30:30.6602 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:30:30.6602 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:30:30.6992 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:30:30.7129 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:30:30.7258 Info Configuration initialized.
+2023-12-07 07:30:31.0442 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:31:41.5972 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:31:41.6109 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:31:41.6143 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:31:41.6501 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:31:41.6638 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:31:41.6763 Info Configuration initialized.
+2023-12-07 07:31:41.9801 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:33:08.8913 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:33:08.9110 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:33:08.9141 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:33:08.9492 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:33:08.9633 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:33:08.9767 Info Configuration initialized.
+2023-12-07 07:33:09.3002 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:35:16.7986 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:35:16.8152 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:35:16.8184 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:35:16.8446 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:35:16.8565 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:35:16.8679 Info Configuration initialized.
+2023-12-07 07:35:17.1014 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:37:39.6681 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:37:39.6874 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:37:39.6874 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:37:39.7268 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:37:39.7404 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:37:39.7537 Info Configuration initialized.
+2023-12-07 07:37:40.0833 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:39:04.4680 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:39:04.4874 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:39:04.4874 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:39:04.5263 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:39:04.5399 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:39:04.5527 Info Configuration initialized.
+2023-12-07 07:39:04.8896 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:40:55.4277 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:40:55.4457 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:40:55.4457 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:40:55.4820 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:40:55.4948 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:40:55.5073 Info Configuration initialized.
+2023-12-07 07:40:55.8514 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:42:40.0436 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:42:40.0630 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:42:40.0666 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:42:40.1023 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:42:40.1163 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:42:40.1295 Info Configuration initialized.
+2023-12-07 07:42:40.4386 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:44:21.4131 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:44:21.4317 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:44:21.4351 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:44:21.4718 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:44:21.4855 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:44:21.4976 Info Configuration initialized.
+2023-12-07 07:44:21.8049 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:45:38.8847 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:45:38.9033 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:45:38.9033 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:45:38.9432 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:45:38.9582 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:45:38.9702 Info Configuration initialized.
+2023-12-07 07:45:39.3001 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:47:47.8925 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:47:47.9074 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:47:47.9074 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:47:47.9452 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:47:47.9589 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:47:47.9715 Info Configuration initialized.
+2023-12-07 07:47:48.3542 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:48:30.3016 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:48:30.3162 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:48:30.3162 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:48:30.3553 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:48:30.3686 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:48:30.3813 Info Configuration initialized.
+2023-12-07 07:48:30.7081 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:51:30.9031 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:51:30.9224 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:51:30.9224 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:51:30.9618 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:51:30.9752 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:51:30.9878 Info Configuration initialized.
+2023-12-07 07:51:31.2966 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:53:24.3803 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:53:24.3949 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:53:24.3949 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:53:24.4338 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:53:24.4471 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:53:24.4594 Info Configuration initialized.
+2023-12-07 07:53:24.7781 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:59:47.5116 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 07:59:47.5253 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 07:59:47.5285 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 07:59:47.5640 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 07:59:47.5775 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 07:59:47.5909 Info Configuration initialized.
+2023-12-07 07:59:47.8902 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:00:24.1280 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:00:24.1468 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:00:24.1501 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:00:24.1858 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:00:24.1998 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:00:24.2212 Info Configuration initialized.
+2023-12-07 08:00:24.5475 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:01:56.7578 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:01:56.7764 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:01:56.7764 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:01:56.8157 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:01:56.8294 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:01:56.8421 Info Configuration initialized.
+2023-12-07 08:01:57.1654 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:02:31.9895 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:02:32.0037 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:02:32.0073 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:02:32.0445 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:02:32.0584 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:02:32.0706 Info Configuration initialized.
+2023-12-07 08:02:32.4129 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:03:24.6470 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:03:24.6653 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:03:24.6681 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:03:24.7037 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:03:24.7174 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:03:24.7295 Info Configuration initialized.
+2023-12-07 08:03:25.0417 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:05:01.4990 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:05:01.5129 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:05:01.5160 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:05:01.5523 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:05:01.5668 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:05:01.5826 Info Configuration initialized.
+2023-12-07 08:05:01.9127 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:05:19.3663 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:05:19.3806 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:05:19.3806 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:05:19.4199 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:05:19.4333 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:05:19.4461 Info Configuration initialized.
+2023-12-07 08:05:19.7718 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:06:05.9460 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:06:05.9648 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:06:05.9648 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:06:06.0040 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:06:06.0178 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:06:06.0304 Info Configuration initialized.
+2023-12-07 08:06:06.3323 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:07:32.5385 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:07:32.5580 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:07:32.5580 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:07:32.5983 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:07:32.6120 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:07:32.6248 Info Configuration initialized.
+2023-12-07 08:07:32.9639 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:09:45.7155 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:09:45.7344 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:09:45.7344 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:09:45.7737 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:09:45.7874 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:09:45.8002 Info Configuration initialized.
+2023-12-07 08:09:46.1179 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:11:10.9847 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:11:11.0040 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:11:11.0040 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:11:11.0429 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:11:11.0565 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:11:11.0689 Info Configuration initialized.
+2023-12-07 08:11:11.3896 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:12:06.2639 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:12:06.2824 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:12:06.2824 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:12:06.3210 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:12:06.3345 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:12:06.3474 Info Configuration initialized.
+2023-12-07 08:12:06.6884 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:13:23.3427 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:13:23.3613 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:13:23.3613 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:13:23.4007 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:13:23.4140 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:13:23.4262 Info Configuration initialized.
+2023-12-07 08:13:23.7823 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:15:07.6856 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:15:07.6988 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:15:07.7018 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:15:07.7374 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:15:07.7505 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:15:07.7623 Info Configuration initialized.
+2023-12-07 08:15:08.0689 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:15:43.6705 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:15:43.6893 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:15:43.6926 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:15:43.7286 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:15:43.7424 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:15:43.7553 Info Configuration initialized.
+2023-12-07 08:15:44.1083 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:18:37.7120 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:18:37.7307 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:18:37.7307 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:18:37.7682 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:18:37.7821 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:18:37.7951 Info Configuration initialized.
+2023-12-07 08:18:38.1383 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:21:01.0309 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:21:01.0502 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:21:01.0502 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:21:01.0900 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:21:01.1031 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:21:01.1149 Info Configuration initialized.
+2023-12-07 08:21:01.4746 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:23:19.1850 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:23:19.2008 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:23:19.2047 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:23:19.2405 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:23:19.2535 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:23:19.2660 Info Configuration initialized.
+2023-12-07 08:23:19.6007 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:24:40.1152 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:24:40.1300 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:24:40.1339 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:24:40.1698 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:24:40.1828 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:24:40.1950 Info Configuration initialized.
+2023-12-07 08:24:40.5061 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:25:05.1840 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:25:05.2031 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:25:05.2068 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:25:05.2426 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:25:05.2567 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:25:05.2691 Info Configuration initialized.
+2023-12-07 08:25:05.5790 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:27:54.5223 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:27:54.5365 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:27:54.5365 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:27:54.5763 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:27:54.5904 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:27:54.6027 Info Configuration initialized.
+2023-12-07 08:27:54.9076 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:29:31.0736 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:29:31.0928 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:29:31.0928 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:29:31.1322 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:29:31.1458 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:29:31.1584 Info Configuration initialized.
+2023-12-07 08:29:31.4872 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:31:37.0315 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:31:37.0455 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:31:37.0455 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:31:37.0842 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:31:37.0980 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:31:37.1103 Info Configuration initialized.
+2023-12-07 08:31:37.4568 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:33:26.7119 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:33:26.7311 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:33:26.7311 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:33:26.7700 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:33:26.7837 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:33:26.7966 Info Configuration initialized.
+2023-12-07 08:33:27.1690 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:33:46.2635 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:33:46.2775 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:33:46.2810 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:33:46.3168 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:33:46.3310 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:33:46.3429 Info Configuration initialized.
+2023-12-07 08:33:46.6864 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:34:26.8302 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:34:26.8471 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:34:26.8501 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:34:26.8767 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:34:26.8899 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:34:26.9051 Info Configuration initialized.
+2023-12-07 08:34:27.1556 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:35:15.9611 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:35:15.9751 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:35:15.9788 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:35:16.0146 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:35:16.0275 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:35:16.0407 Info Configuration initialized.
+2023-12-07 08:35:16.3547 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:36:21.8203 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:36:21.8401 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:36:21.8401 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:36:21.8791 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:36:21.8924 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:36:21.9046 Info Configuration initialized.
+2023-12-07 08:36:22.2156 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:38:06.5868 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:38:06.5983 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:38:06.5983 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:38:06.6296 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:38:06.6432 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:38:06.6554 Info Configuration initialized.
+2023-12-07 08:38:06.8963 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:39:49.9366 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:39:49.9507 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:39:49.9507 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:39:49.9899 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:39:50.0036 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:39:50.0162 Info Configuration initialized.
+2023-12-07 08:39:50.3411 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:41:51.0356 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:41:51.0491 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:41:51.0491 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:41:51.0871 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:41:51.1005 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:41:51.1130 Info Configuration initialized.
+2023-12-07 08:41:51.4648 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:44:44.6371 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:44:44.6565 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:44:44.6565 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:44:44.6962 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:44:44.7094 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:44:44.7219 Info Configuration initialized.
+2023-12-07 08:44:45.0366 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:46:24.0359 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:46:24.0501 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:46:24.0534 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:46:24.0897 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:46:24.1037 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:46:24.1158 Info Configuration initialized.
+2023-12-07 08:46:24.4352 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:52:53.2937 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:52:53.3077 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:52:53.3109 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:52:53.3459 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:52:53.3593 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:52:53.3715 Info Configuration initialized.
+2023-12-07 08:52:53.6970 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:53:17.9830 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:53:18.0028 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:53:18.0028 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:53:18.0432 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:53:18.0566 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:53:18.0692 Info Configuration initialized.
+2023-12-07 08:53:18.4309 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:54:00.9109 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:54:00.9334 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:54:00.9334 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:54:00.9712 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:54:00.9834 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:54:00.9956 Info Configuration initialized.
+2023-12-07 08:54:01.3005 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:57:28.4192 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 08:57:28.4338 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 08:57:28.4371 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 08:57:28.4732 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 08:57:28.4872 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 08:57:28.4998 Info Configuration initialized.
+2023-12-07 08:57:28.8318 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:00:48.4202 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 09:00:48.4394 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 09:00:48.4394 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 09:00:48.4782 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 09:00:48.4918 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:00:48.5048 Info Configuration initialized.
+2023-12-07 09:00:48.8490 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:51:14.1434 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 09:51:14.1608 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 09:51:14.1642 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 09:51:14.2074 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 09:51:14.2250 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:51:14.2382 Info Configuration initialized.
+2023-12-07 09:51:14.6345 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:53:19.8040 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 09:53:19.8247 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 09:53:19.8247 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 09:53:19.8655 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 09:53:19.8992 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:53:19.9123 Info Configuration initialized.
+2023-12-07 09:53:20.2467 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:54:11.2050 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 09:54:11.2244 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 09:54:11.2244 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 09:54:11.2659 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 09:54:11.2798 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:54:11.2924 Info Configuration initialized.
+2023-12-07 09:54:11.6085 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:55:28.8518 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 09:55:28.8699 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 09:55:28.8727 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 09:55:28.9024 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 09:55:28.9158 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:55:28.9284 Info Configuration initialized.
+2023-12-07 09:55:29.2067 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:56:45.9352 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 09:56:45.9555 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 09:56:45.9555 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 09:56:45.9961 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 09:56:46.0105 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:56:46.0246 Info Configuration initialized.
+2023-12-07 09:56:46.3552 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:58:29.2039 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 09:58:29.2187 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 09:58:29.2222 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 09:58:29.2604 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 09:58:29.2748 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 09:58:29.2879 Info Configuration initialized.
+2023-12-07 09:58:29.6112 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 10:00:05.9525 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 10:00:05.9726 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 10:00:05.9726 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 10:00:06.0143 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 10:00:06.0290 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 10:00:06.0422 Info Configuration initialized.
+2023-12-07 10:00:06.3484 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 10:02:03.7888 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 10:02:03.8035 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 10:02:03.8035 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 10:02:03.8441 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 10:02:03.8586 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 10:02:03.8713 Info Configuration initialized.
+2023-12-07 10:02:04.1961 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 10:03:20.9395 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 10:03:20.9540 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 10:03:20.9572 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 10:03:20.9944 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 10:03:21.0093 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 10:03:21.0224 Info Configuration initialized.
+2023-12-07 10:03:21.3576 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 10:04:18.7848 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-07 10:04:18.7992 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-07 10:04:18.7992 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-07 10:04:18.8399 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-12-07 10:04:18.8550 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config
+2023-12-07 10:04:18.8687 Info Configuration initialized.
+2023-12-07 10:04:19.1981 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=/app/bin/Debug/net8.0/nlog.config

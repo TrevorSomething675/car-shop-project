@@ -595,11 +595,35 @@
               },
               "js": {
                 "Children": {
+                  "CookieManagerScript.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "js/CookieManagerScript.js"
+                    },
+                    "Patterns": null
+                  },
+                  "JwtHeaderScript.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "js/JwtHeaderScript.js"
+                    },
+                    "Patterns": null
+                  },
                   "LoginFormScript.js": {
                     "Children": null,
                     "Asset": {
                       "ContentRootIndex": 2,
                       "SubPath": "js/LoginFormScript.js"
+                    },
+                    "Patterns": null
+                  },
+                  "RegisterFormScript.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "js/RegisterFormScript.js"
                     },
                     "Patterns": null
                   }

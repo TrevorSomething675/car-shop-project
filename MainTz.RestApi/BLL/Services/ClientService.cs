@@ -19,7 +19,13 @@ namespace MainTz.RestApi.BLL.Services
 
         //}
 
-        public async Task<TokensModel> SendRequestAsync(string url, string role)
+        private readonly ILogger<ClientService> _logger;
+        public ClientService(ILogger<ClientService> logger)
+        {
+            _logger = logger;
+        }
+
+        public async Task<TokensModel> SendRequestAsync(string url, string role, CancellationToken cancellationToken = default)
 		{
 			TokensModel tokens;
             try
@@ -27,16 +33,19 @@ namespace MainTz.RestApi.BLL.Services
                 var client = new HttpClient();
                 var content = new { role };
 
+                //System.Text.Json.JsonSerializer.
+
 				var requestContent = new StringContent(JsonConvert.SerializeObject(content), Encoding.UTF8, "application/json");
 				using var request = new HttpRequestMessage(HttpMethod.Get, url);
 				request.Content = requestContent;
 
-				using var response = await client.SendAsync(request);
+				using var response = await client.SendAsync(request, cancellationToken);
                 return await response.Content.ReadFromJsonAsync<TokensModel>();
 			}
 			catch (Exception ex)
 			{
-				return null;
+                _logger.LogError($"{ex.Message}");
+                return null;
 			}
 		}
 

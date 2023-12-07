@@ -7,18 +7,15 @@ services:
     build:
       context: .
       dockerfile: MainTz.RestApi/Dockerfile
-    ports:
-      - "8080:8081"
     networks:
       - CarCompany
 
   maintz.authservice:
     image: ${DOCKER_REGISTRY-}authservice
+    restart: always
     build:
       context: .
       dockerfile: MainTz.AuthApi/Dockerfile
-    ports:
-      - "8040:8040"
     networks:
       - CarCompany
   db:
@@ -30,8 +27,6 @@ services:
       - POSTGRES_PASSWORD=postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
-    ports: 
-      - "5432:5432"
     networks:
       - CarCompany
 
