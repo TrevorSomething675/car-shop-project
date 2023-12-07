@@ -181,3 +181,4 @@ C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.AuthApi\bin\D
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\MainTz.RestApi.pdb
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.AuthApi\obj\Debug\net8.0\MainTz.AuthApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi\bin\Debug\net8.0\Newtonsoft.Json.dll

@@ -1857,3 +1857,117 @@ Content-Disposition: form-data; name="__RequestVerificationToken"
 CfDJ8GarNPFzmKtCp26Sz9ckMPWTSguZJyrHPw9ZkvFKI3QS1FMj95nuKL84GyihA42EVRUlMdhBadANkbOlHk-VpiMEObPOdWtEOTiXjICcItyz488kyHHGb8GBD2XPjCLwAHuDyVsdm1GWhknxXMwHvcA
 ------WebKitFormBoundaryphqUS1YJ4waxRM2w--
 ]
+2023-12-07 09:04:10.8960 DEBUG [/] [GET] [] []
+2023-12-07 09:04:10.9132 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.0708 DEBUG Login debug
+2023-12-07 09:04:11.0708 TRACE Login trace
+2023-12-07 09:04:11.1910 DEBUG [/MainTz.RestApi.styles.css] [GET] [] []
+2023-12-07 09:04:11.1910 TRACE [/MainTz.RestApi.styles.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.1910 DEBUG [/js/LoginFormScript.js] [GET] [] []
+2023-12-07 09:04:11.1910 TRACE [/js/LoginFormScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.1910 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [] []
+2023-12-07 09:04:11.1910 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.1910 DEBUG [/css/site.css] [GET] [] []
+2023-12-07 09:04:11.1910 TRACE [/css/site.css] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.1910 DEBUG [/js/CookieManagerScript.js] [GET] [] []
+2023-12-07 09:04:11.2004 TRACE [/js/CookieManagerScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.2004 DEBUG [/js/JwtHeaderScript.js] [GET] [] []
+2023-12-07 09:04:11.2004 TRACE [/js/JwtHeaderScript.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.2004 DEBUG [/lib/jquery/dist/jquery.min.js] [GET] [] []
+2023-12-07 09:04:11.2004 TRACE [/lib/jquery/dist/jquery.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.2004 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [] []
+2023-12-07 09:04:11.2004 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:11.3336 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-07 09:04:11.3336 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:16.8673 DEBUG [/] [POST] [] [------WebKitFormBoundaryxXEpAVvVHk4lxa4n
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryxXEpAVvVHk4lxa4n
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryxXEpAVvVHk4lxa4n
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsf5rO6Y6CCj9faKFGqMY7_8Ezk9fPi8RAzJ-i1vXkxorFeljnTZcJYz9_ZHRTMmg6j_BUJLe6f63NP2HrOsy2L6kQPVZoq5yKpKVuB_QPbs5anyH9TjV3fXin9LparWQHs
+------WebKitFormBoundaryxXEpAVvVHk4lxa4n--
+]
+2023-12-07 09:04:16.8673 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundaryxXEpAVvVHk4lxa4n
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundaryxXEpAVvVHk4lxa4n
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundaryxXEpAVvVHk4lxa4n
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsf5rO6Y6CCj9faKFGqMY7_8Ezk9fPi8RAzJ-i1vXkxorFeljnTZcJYz9_ZHRTMmg6j_BUJLe6f63NP2HrOsy2L6kQPVZoq5yKpKVuB_QPbs5anyH9TjV3fXin9LparWQHs
+------WebKitFormBoundaryxXEpAVvVHk4lxa4n--
+]
+2023-12-07 09:04:17.3076 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkyOTExNywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.rSBLoGJgxil8oeelXA96cNwb3-GOBKZivE1Ciqozurg] []
+2023-12-07 09:04:17.3076 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:04:17.4916 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-07 09:04:17.4916 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:05:28.4472 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkyOTExNywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.rSBLoGJgxil8oeelXA96cNwb3-GOBKZivE1Ciqozurg] []
+2023-12-07 09:05:28.4472 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:05:32.7292 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-07 09:05:32.7292 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:05:33.9384 DEBUG [/favicon.ico] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkyOTE0NCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.D0WsgxiSpW_80qi2sVnuLDmhhto5swL45-sSzd2Azek] []
+2023-12-07 09:05:33.9384 TRACE [/favicon.ico] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:24:53.0060 DEBUG [/User/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkyOTE5MywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.34iPMENAAru1XNo1jWQq4GAvpd0HliNOJMYpdy870kg] []
+2023-12-07 09:24:53.0060 TRACE [/User/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:24:56.0489 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-07 09:24:56.0818 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:31:14.5996 DEBUG [/] [GET] [] []
+2023-12-07 09:31:14.6128 TRACE [/] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:31:14.7510 DEBUG Login debug
+2023-12-07 09:31:14.7510 TRACE Login trace
+2023-12-07 09:31:19.0887 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-07 09:31:19.0887 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:31:28.0271 DEBUG [/] [POST] [] [------WebKitFormBoundary8LCdrQoCLlZxYDgL
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary8LCdrQoCLlZxYDgL
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary8LCdrQoCLlZxYDgL
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsf7FHbwlbrjuvwZXlKnteEseI5Ygn8BNRgzERhcuApfhqAZVSMzfe6pGcDwL78FpoWrlqQKJSve2xZJGyOaJ49F18se1GTUQOvkM05nNysj9FZcniVTHt_n-shAq-As_0Q
+------WebKitFormBoundary8LCdrQoCLlZxYDgL--
+]
+2023-12-07 09:31:28.0271 TRACE [/] [POST] [System.IO.Pipelines.StreamPipeReader] [------WebKitFormBoundary8LCdrQoCLlZxYDgL
+Content-Disposition: form-data; name="UserDto.Name"
+
+Admin
+------WebKitFormBoundary8LCdrQoCLlZxYDgL
+Content-Disposition: form-data; name="userDto.Password"
+
+123
+------WebKitFormBoundary8LCdrQoCLlZxYDgL
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8MpQ9zsweldCrCH3ji0GTsf7FHbwlbrjuvwZXlKnteEseI5Ygn8BNRgzERhcuApfhqAZVSMzfe6pGcDwL78FpoWrlqQKJSve2xZJGyOaJ49F18se1GTUQOvkM05nNysj9FZcniVTHt_n-shAq-As_0Q
+------WebKitFormBoundary8LCdrQoCLlZxYDgL--
+]
+2023-12-07 09:31:40.9358 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkzMDc0OCwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.rpGCVggdzfb4wrxfXToWhnxdorrVp7VJcZoJnlWUA_4] []
+2023-12-07 09:31:40.9358 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:31:45.9682 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-07 09:31:45.9682 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:32:56.0939 DEBUG [/lib/bootstrap/dist/css/bootstrap.min.css.map] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkzMDc1NSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.7jXa81uBoy1dOUMXhMV7nyUB82mMKxGB90PYl8HckRc] []
+2023-12-07 09:32:56.0939 TRACE [/lib/bootstrap/dist/css/bootstrap.min.css.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:32:57.1215 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkzMDc1NSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.7jXa81uBoy1dOUMXhMV7nyUB82mMKxGB90PYl8HckRc] []
+2023-12-07 09:32:57.1232 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:32:57.1232 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkzMDc1NSwiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.7jXa81uBoy1dOUMXhMV7nyUB82mMKxGB90PYl8HckRc] []
+2023-12-07 09:32:57.1232 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:32:57.1971 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-07 09:32:57.1971 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:33:12.8271 DEBUG [/Admin/Index] [GET] [Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTcwMTkzMDgzNywiaXNzIjoiSnd0QXV0aFNlcnZlciIsImF1ZCI6Ikp3dEF1dGhDbGllbnQifQ.Kqq5UGWBAGQGIHE4VLF_mMPzawdVnKHati15w5LjFrQ] []
+2023-12-07 09:33:12.8271 TRACE [/Admin/Index] [GET] [System.IO.Pipelines.StreamPipeReader] []
+2023-12-07 09:33:12.8868 DEBUG [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [] []
+2023-12-07 09:33:12.8868 TRACE [/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map] [GET] [System.IO.Pipelines.StreamPipeReader] []

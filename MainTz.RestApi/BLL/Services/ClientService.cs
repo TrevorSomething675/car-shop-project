@@ -13,6 +13,12 @@ namespace MainTz.RestApi.BLL.Services
         /// <param name="url"></param>
         /// <param name="message"></param>
         /// <returns></returns>
+
+        //public async Task<TokensModel> SendRequestAsync()
+        //{
+
+        //}
+
         public async Task<TokensModel> SendRequestAsync(string url, string role)
 		{
 			TokensModel tokens;
