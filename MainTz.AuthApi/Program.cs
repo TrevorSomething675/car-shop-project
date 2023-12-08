@@ -53,7 +53,7 @@ app.Map("/GetTokensOnRefresh", async (context) =>
     string bodyContent = await reader.ReadToEndAsync();
     var content = JsonSerializer.Deserialize<RefreshTokenModel>(bodyContent);
 
-    if (!await CheckJwtTokenAsync(content.RefreshToken))
+    if (!string.IsNullOrEmpty(content.RefreshToken) && !await CheckJwtTokenAsync(content.RefreshToken))
     {
         var tokenService = app.Services.GetRequiredService<ITokenService>();
         var userAuthModel = new UserAuthModel
@@ -63,10 +63,6 @@ app.Map("/GetTokensOnRefresh", async (context) =>
             RefreshToken = tokenService.CreateRefreshToken(content.Role),
         };
         await context.Response.WriteAsJsonAsync(userAuthModel);
-    }
-    else
-    {
-        await context.Response.WriteAsync("Просрочен токен");
     }
 });
 

@@ -2058,19 +2058,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Иван\\.nuget\\packages\\": {}
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.AuthApi\\MainTz.AuthApi.csproj",
+      "projectUniqueName": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\MainTz.AuthApi\\MainTz.AuthApi.csproj",
       "projectName": "MainTz.AuthApi",
-      "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.AuthApi\\MainTz.AuthApi.csproj",
-      "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.AuthApi\\obj\\",
+      "projectPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\MainTz.AuthApi\\MainTz.AuthApi.csproj",
+      "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\MainTz.AuthApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2084,11 +2084,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\Extensions\\Extensions.csproj": {
-              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\Extensions\\Extensions.csproj"
+            "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\Extensions\\Extensions.csproj": {
+              "projectPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\Extensions\\Extensions.csproj"
             },
-            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj": {
-              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj"
+            "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj": {
+              "projectPath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj"
             }
           }
         }

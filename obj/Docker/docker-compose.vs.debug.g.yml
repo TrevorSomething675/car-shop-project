@@ -16,10 +16,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi:/app
-      - C:\Users\Иван\Documents\GitHub\MainTzProject:/src
-      - C:\Users\Иван\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Иван\.nuget\packages\:/.nuget/packages:ro
+      - C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.AuthApi:/app
+      - C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject:/src
+      - C:\Users\Win10Pro\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Win10Pro\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
@@ -50,10 +50,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi:/app
-      - C:\Users\Иван\Documents\GitHub\MainTzProject:/src
-      - C:\Users\Иван\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Иван\.nuget\packages\:/.nuget/packages:ro
+      - C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi:/app
+      - C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject:/src
+      - C:\Users\Win10Pro\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Win10Pro\.nuget\packages\:/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro

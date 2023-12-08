@@ -9,47 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MainTz.RestApi
 build_property.RootNamespace = MainTz.RestApi
-build_property.ProjectDir = C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi\
+build_property.ProjectDir = C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi
+build_property.MSBuildProjectDirectory = C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/Admin/Index.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/Auth/Login.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/Auth/Register.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/Manager/Index.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/Manager/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/User/Index.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/_ViewImports.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/_ViewStart.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/MainTz.RestApi/Views/Shared/_Layout.cshtml]
+[C:/Users/Win10Pro/Desktop/MainTz.RestApi/jija/MainTzProject/MainTz.RestApi/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lbvcsm77oy
