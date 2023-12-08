@@ -1,4 +1,4 @@
-name: dockercompose3432824561139095138
+name: dockercompose16382280488134300929
 services:
   db:
     environment:
@@ -10,13 +10,13 @@ services:
       CarCompany: null
     restart: always
     volumes:
-      - type: volume
-        source: pgdata
-        target: /var/lib/postgresql/data
-        volume: {}
+    - type: volume
+      source: pgdata
+      target: /var/lib/postgresql/data
+      volume: {}
   maintz.authservice:
     build:
-      context: C:\Users\Иван\Documents\GitHub\MainTzProject
+      context: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
       dockerfile: MainTz.AuthApi/Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -26,9 +26,9 @@ services:
       target: base
     container_name: MainTz.AuthApi
     entrypoint:
-      - tail
-      - -f
-      - /dev/null
+    - tail
+    - -f
+    - /dev/null
     environment:
       ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       DOTNET_USE_POLLING_FILE_WATCHER: "1"
@@ -36,7 +36,8 @@ services:
     image: authservice:dev
     labels:
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/MainTz.AuthApi.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     networks:
@@ -44,72 +45,72 @@ services:
     restart: always
     tty: true
     volumes:
-      - type: bind
-        source: C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.AuthApi
-        target: /app
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\Documents\GitHub\MainTzProject
-        target: /src
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\vsdbg\vs2017u5
-        target: /remote_debugger
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\.nuget\packages\
-        target: /.nuget/packages
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/ASP.NET/Https
-        target: /root/.aspnet/https
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/ASP.NET/Https
-        target: /home/app/.aspnet/https
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/Microsoft/UserSecrets
-        target: /root/.microsoft/usersecrets
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/Microsoft/UserSecrets
-        target: /home/app/.microsoft/usersecrets
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
-        target: /TokenService.Proxy
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
-        target: /HotReloadProxy
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
-        target: /HotReloadAgent
-        read_only: true
-        bind:
-          create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.AuthApi
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
+      target: /src
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\.nuget\packages\
+      target: /.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /home/app/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /home/app/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+      target: /TokenService.Proxy
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+      target: /HotReloadProxy
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+      target: /HotReloadAgent
+      read_only: true
+      bind:
+        create_host_path: true
   maintz.restapi:
     build:
-      context: C:\Users\Иван\Documents\GitHub\MainTzProject
+      context: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
       dockerfile: MainTz.RestApi/Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -119,9 +120,9 @@ services:
       target: base
     container_name: MainTz.RestApi
     entrypoint:
-      - tail
-      - -f
-      - /dev/null
+    - tail
+    - -f
+    - /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
@@ -132,87 +133,112 @@ services:
     image: maintzrestapi:dev
     labels:
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/MainTz.RestApi.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     networks:
       CarCompany: null
     ports:
-      - mode: ingress
-        target: 8080
-        protocol: tcp
-      - mode: ingress
-        target: 8081
-        protocol: tcp
+    - mode: ingress
+      target: 8080
+      protocol: tcp
+    - mode: ingress
+      target: 8081
+      protocol: tcp
     restart: always
     tty: true
     volumes:
-      - type: bind
-        source: C:\Users\Иван\.nuget\packages\
-        target: /.nuget/packages
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
-        target: /HotReloadAgent
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
-        target: /HotReloadProxy
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
-        target: /TokenService.Proxy
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\Documents\GitHub\MainTzProject\MainTz.RestApi
-        target: /app
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/ASP.NET/Https
-        target: /home/app/.aspnet/https
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/Microsoft/UserSecrets
-        target: /home/app/.microsoft/usersecrets
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\vsdbg\vs2017u5
-        target: /remote_debugger
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/ASP.NET/Https
-        target: /root/.aspnet/https
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/Microsoft/UserSecrets
-        target: /root/.microsoft/usersecrets
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\Documents\GitHub\MainTzProject
-        target: /src
-        bind:
-          create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\.nuget\packages\
+      target: /.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+      target: /HotReloadAgent
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+      target: /HotReloadProxy
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+      target: /TokenService.Proxy
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject\MainTz.RestApi
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /home/app/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /home/app/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
+      target: /src
+      bind:
+        create_host_path: true
+  minio:
+    command:
+    - server
+    - /data
+    environment:
+      MINIO_ROOT_PASSWORD: Jijahiha14
+      MINIO_ROOT_USER: Win10Pro
+    image: minio/minio
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 9000
+      published: "9000"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: minio-data
+      target: /data
+      volume: {}
 networks:
   CarCompany:
-    name: dockercompose3432824561139095138_CarCompany
+    name: dockercompose16382280488134300929_CarCompany
+  default:
+    name: dockercompose16382280488134300929_default
 volumes:
+  minio-data:
+    name: dockercompose16382280488134300929_minio-data
   pgdata:
-    name: dockercompose3432824561139095138_pgdata
+    name: dockercompose16382280488134300929_pgdata

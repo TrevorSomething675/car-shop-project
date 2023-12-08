@@ -1,5 +1,5 @@
 ﻿using MainTz.RestApi.DAL.Repositories.Abstractions;
-using MainTz.RestApi.dal.Data.Models.Entities;
+using MainTz.RestApi.DAL.Data.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MainTz.RestApi.DAL.Repositories
@@ -27,7 +27,7 @@ namespace MainTz.RestApi.DAL.Repositories
         {
             var cars = await _context.Cars.ToListAsync();
             return cars;
-        }
+        } 
 
         public async Task Create(Car car)
         {
