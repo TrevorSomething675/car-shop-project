@@ -1,0 +1,205 @@
+name: dockercompose16382280488134300929
+services:
+  db:
+    environment:
+      POSTGRES_DB: CarCompanyDb
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    image: postgres
+    networks:
+      CarCompany: null
+    restart: always
+    volumes:
+    - type: volume
+      source: pgdata
+      target: /var/lib/postgresql/data
+      volume: {}
+  maintz.authservice:
+    build:
+      context: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
+      dockerfile: MainTz.AuthApi/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Release
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: MainTz.AuthApi
+    container_name: MainTz.AuthApi
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    image: authservice
+    labels:
+      com.microsoft.visual-studio.project-name: MainTz.AuthApi
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/MainTz.AuthApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      CarCompany: null
+    restart: always
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\Users\Win10Pro\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /home/app/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /home/app/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+      target: /TokenService.Proxy
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+      target: /HotReloadProxy
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+      target: /HotReloadAgent
+      read_only: true
+      bind:
+        create_host_path: true
+  maintz.restapi:
+    build:
+      context: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
+      dockerfile: MainTz.RestApi/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Release
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: MainTz.RestApi
+    container_name: MainTz.RestApi_1
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: maintzrestapi
+    labels:
+      com.microsoft.visual-studio.project-name: MainTz.RestApi
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/MainTz.RestApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      CarCompany: null
+    ports:
+    - mode: ingress
+      target: 8080
+      protocol: tcp
+    - mode: ingress
+      target: 8081
+      protocol: tcp
+    restart: always
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+      target: /HotReloadAgent
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\linux-x64\net6.0
+      target: /HotReloadProxy
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\linux-x64\net6.0
+      target: /TokenService.Proxy
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /home/app/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /home/app/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+  minio:
+    command:
+    - server
+    - /data
+    environment:
+      MINIO_ROOT_PASSWORD: Jijahiha14
+      MINIO_ROOT_USER: Win10Pro
+    image: minio/minio
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 9000
+      published: "9000"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: minio-data
+      target: /data
+      volume: {}
+networks:
+  CarCompany:
+    name: dockercompose16382280488134300929_CarCompany
+  default:
+    name: dockercompose16382280488134300929_default
+volumes:
+  minio-data:
+    name: dockercompose16382280488134300929_minio-data
+  pgdata:
+    name: dockercompose16382280488134300929_pgdata
