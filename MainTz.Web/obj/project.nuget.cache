@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PYqY/wkVJ+IM7BLkeQBEWP0fjwXc9DBJhmpdjm3AeaPmviQgM5zxGFl6/Y9QMw6bVkmGCNhmyk13dMD1cETnuA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTz.Web\\MainTz.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512"
+  ],
+  "logs": []
+}
