@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qPQhtVp+SRgOWXqUoyL1+DxNb8Ankp7jvS40ZkoDd+wFlMwyoUM6KIexFaQFlKnY3w5G9sA8h6mRcc6fCZTieg==",
+  "dgSpecHash": "8+MZPcGuUk3n3aMZmncUm7ZR6FOpAmfXayD6wMtwjhcXJ6+zBzAhkcPnAUgqz/6Zpq4AoNtR7ID/RSlLLBwIpg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\MainTz.AuthApi\\MainTz.AuthApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Win10Pro\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\communitytoolkit.highperformance\\8.1.0\\communitytoolkit.highperformance.8.1.0.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.14\\microsoft.entityframeworkcore.7.0.14.nupkg.sha512",
@@ -28,6 +30,7 @@
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\7.0.0\\microsoft.extensions.options.configurationextensions.7.0.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.3\\microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.3\\microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
@@ -37,6 +40,8 @@
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.3\\microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\minio\\5.0.0\\minio.5.0.0.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\minio.aspnetcore\\5.0.0\\minio.aspnetcore.5.0.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\nlog\\5.2.5\\nlog.5.2.5.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\nlog.extensions.logging\\5.3.5\\nlog.extensions.logging.5.3.5.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.5\\nlog.web.aspnetcore.5.3.5.nupkg.sha512",
@@ -46,8 +51,12 @@
     "C:\\Users\\Win10Pro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.0.3\\system.identitymodel.tokens.jwt.7.0.3.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\system.io.hashing\\7.0.0\\system.io.hashing.7.0.0.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\system.reactive.linq\\5.0.0\\system.reactive.linq.5.0.0.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Win10Pro\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,4 @@
-﻿using MainTz.RestApi.dal.Data.Models.Entities;
+﻿using MainTz.RestApi.DAL.Data.Models.Entities;
 
 namespace MainTz.RestApi.DAL.Repositories.Abstractions
 {

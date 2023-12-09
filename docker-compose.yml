@@ -29,9 +29,19 @@ services:
       - pgdata:/var/lib/postgresql/data
     networks:
       - CarCompany
-
+  minio:
+    image: minio/minio
+    ports:
+      - 9000:9000
+    environment:
+      - MINIO_ROOT_USER=Win10Pro
+      - MINIO_ROOT_PASSWORD=Jijahiha14
+    volumes:
+      - minio-data:/data
+    command: server /data
 volumes:
   pgdata: {}
+  minio-data: 
 
 networks:
   CarCompany: {}

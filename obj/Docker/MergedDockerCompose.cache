@@ -1,4 +1,4 @@
-name: dockercompose3432824561139095138
+name: dockercompose16382280488134300929
 services:
   db:
     environment:
@@ -10,13 +10,13 @@ services:
       CarCompany: null
     restart: always
     volumes:
-      - type: volume
-        source: pgdata
-        target: /var/lib/postgresql/data
-        volume: {}
+    - type: volume
+      source: pgdata
+      target: /var/lib/postgresql/data
+      volume: {}
   maintz.authservice:
     build:
-      context: C:\Users\Иван\Documents\GitHub\MainTzProject
+      context: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
       dockerfile: MainTz.AuthApi/Dockerfile
     image: authservice
     networks:
@@ -24,7 +24,7 @@ services:
     restart: always
   maintz.restapi:
     build:
-      context: C:\Users\Иван\Documents\GitHub\MainTzProject
+      context: C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTzProject
       dockerfile: MainTz.RestApi/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -34,29 +34,53 @@ services:
     networks:
       CarCompany: null
     ports:
-      - mode: ingress
-        target: 8080
-        protocol: tcp
-      - mode: ingress
-        target: 8081
-        protocol: tcp
+    - mode: ingress
+      target: 8080
+      protocol: tcp
+    - mode: ingress
+      target: 8081
+      protocol: tcp
     restart: always
     volumes:
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/Microsoft/UserSecrets
-        target: /home/app/.microsoft/usersecrets
-        read_only: true
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\Иван\AppData\Roaming/ASP.NET/Https
-        target: /home/app/.aspnet/https
-        read_only: true
-        bind:
-          create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/Microsoft/UserSecrets
+      target: /home/app/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Win10Pro\AppData\Roaming/ASP.NET/Https
+      target: /home/app/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  minio:
+    command:
+    - server
+    - /data
+    environment:
+      MINIO_ROOT_PASSWORD: Jijahiha14
+      MINIO_ROOT_USER: Win10Pro
+    image: minio/minio
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 9000
+      published: "9000"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: minio-data
+      target: /data
+      volume: {}
 networks:
   CarCompany:
-    name: dockercompose3432824561139095138_CarCompany
+    name: dockercompose16382280488134300929_CarCompany
+  default:
+    name: dockercompose16382280488134300929_default
 volumes:
+  minio-data:
+    name: dockercompose16382280488134300929_minio-data
   pgdata:
-    name: dockercompose3432824561139095138_pgdata
+    name: dockercompose16382280488134300929_pgdata

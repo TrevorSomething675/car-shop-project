@@ -1,8 +1,6 @@
 using MainTz.RestApi.Configurations.AutoMapperConfiguration;
 using MainTz.RestApi.Configurations.AuthConfigration;
-using MainTz.RestApi.dal.Data.Models.Entities;
 using MainTz.RestApi.BLL.Middlewares;
-using Microsoft.EntityFrameworkCore;
 using MainTz.RestApi.Configurations;
 using Extensions.SettingsModels;
 using MainTz.RestApi;
@@ -27,6 +25,7 @@ services.AddAppAuth(jwtAuthSettings);
 
 var app = builder.Build();
 
+/*
 #region testData
 using (var scope = app.Services.CreateScope())
 {
@@ -70,7 +69,8 @@ using (var scope = app.Services.CreateScope())
         }
     }
 }
-#endregion 
+//#endregion 
+*/
 app.UseMiddleware<JwtHeaderMiddleware>();
 app.UseMiddleware<JwtRefreshMiddleware>();
 app.UseMiddleware<LoggingMiddleware>();

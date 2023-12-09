@@ -28,7 +28,7 @@ services:
       com.microsoft.visual-studio.project-name: "MainTz.AuthApi"
     tty: true
   maintz.restapi:
-    container_name: "MainTz.RestApi"
+    container_name: "MainTz.RestApi_1"
     build:
       args:
         BUILD_CONFIGURATION: Release

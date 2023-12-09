@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MainTz.RestApi.DAL.Data.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 using Extensions.SettingsModels;
-using MainTz.RestApi.dal.Data.Models.Entities;
 
 namespace MainTz.RestApi.Configurations
 {
