@@ -37,7 +37,7 @@ services:
     tty: true
   maintz.restapi:
     image: maintzrestapi:dev
-    container_name: "MainTz.RestApi"
+    container_name: "MainTz.RestApi_1"
     build:
       args:
         BUILD_CONFIGURATION: Debug

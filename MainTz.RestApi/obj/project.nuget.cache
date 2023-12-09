@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ljgn20qNNbCB8mV19ZNaTs48rgS95J2PihjvYOBYORzt8khYoyItRRcQO5ZFOEONX2IMWPEk+wtE7uOvd2rXcg==",
+  "dgSpecHash": "lJL9yV+LM8lwLLVB64Ynkwk7xSdXpprRLxlvIfYzLxWZIFDz/gof9hlQYBP91fATf8a4EDZ1ByTtOQpJMfsX2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Win10Pro\\Desktop\\MainTz.RestApi\\jija\\MainTzProject\\MainTz.RestApi\\MainTz.RestApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Win10Pro\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\communitytoolkit.highperformance\\8.1.0\\communitytoolkit.highperformance.8.1.0.nupkg.sha512",
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

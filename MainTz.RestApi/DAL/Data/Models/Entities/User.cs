@@ -11,7 +11,7 @@ namespace MainTz.RestApi.DAL.Data.Models.Entities
         public int CarId { get; set; }
         public ICollection<Car> Cars { get; set; }
         public int RoleId { get; set; }
-        public ICollection<Role> Roles { get; set; } 
+        public ICollection<Role> Roles { get; set; }
         public int NotificationId { get; set; }
         public ICollection<Notification> Notifications { get; set; }
     }

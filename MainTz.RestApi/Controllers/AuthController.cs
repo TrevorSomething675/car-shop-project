@@ -55,6 +55,8 @@ namespace MainTz.RestApi.Controllers
 		[HttpPost]
 		public async Task<IResult> Login(UserDto userDto)
 		{
+			if (!ModelState.IsValid)
+				return Results.BadRequest("Wrong Data");
             try
 			{
 				var user = await _usersService.GetUserByNameAsync(userDto.Name);
@@ -92,6 +94,9 @@ namespace MainTz.RestApi.Controllers
 		[HttpPost]
         public async Task<IResult> Register(UserDto userDto)
         {
+			if (!ModelState.IsValid)
+				return Results.BadRequest("Wrong Data");
+
             var user = await _usersService.GetUserByNameAsync(userDto.Name);
 
             if (user != null)
