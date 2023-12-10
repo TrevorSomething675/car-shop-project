@@ -1,0 +1,17 @@
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Web\obj\Debug\net7.0\MainTz.Web.csproj.AssemblyReference.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Web\obj\Debug\net7.0\MainTz.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Web\obj\Debug\net7.0\MainTz.Web.AssemblyInfoInputs.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Web\obj\Debug\net7.0\MainTz.Web.AssemblyInfo.cs
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Web\obj\Debug\net7.0\MainTz.Web.csproj.CoreCompileInputs.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Web\obj\Debug\net7.0\MainTz.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Web\obj\Debug\net7.0\MainTz.Web.RazorAssemblyInfo.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Web\obj\Debug\net7.0\MainTz.Web.RazorAssemblyInfo.cs
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.csproj.AssemblyReference.cache
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.AssemblyInfoInputs.cache
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.AssemblyInfo.cs
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.csproj.CoreCompileInputs.cache
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.RazorAssemblyInfo.cache
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.RazorAssemblyInfo.cs
+C:\E-CarShop\N-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.sourcelink.json

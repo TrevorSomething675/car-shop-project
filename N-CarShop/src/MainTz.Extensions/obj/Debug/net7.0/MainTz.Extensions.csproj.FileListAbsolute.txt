@@ -1,0 +1,13 @@
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\bin\Debug\net7.0\MainTz.Extensions.deps.json
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\bin\Debug\net7.0\MainTz.Extensions.dll
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\bin\Debug\net7.0\MainTz.Extensions.pdb
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\MainTz.Extensions.csproj.AssemblyReference.cache
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\MainTz.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\MainTz.Extensions.AssemblyInfoInputs.cache
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\MainTz.Extensions.AssemblyInfo.cs
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\MainTz.Extensions.csproj.CoreCompileInputs.cache
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\MainTz.Extensions.sourcelink.json
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\MainTz.Extensions.dll
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\refint\MainTz.Extensions.dll
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\MainTz.Extensions.pdb
+C:\E-CarShop\N-CarShop\src\MainTz.Extensions\obj\Debug\net7.0\ref\MainTz.Extensions.dll
