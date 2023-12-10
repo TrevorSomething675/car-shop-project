@@ -1,0 +1,5 @@
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.AssemblyInfo.cs
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.csproj.CoreCompileInputs.cache

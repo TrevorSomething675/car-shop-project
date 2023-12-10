@@ -1,0 +1,11 @@
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\bin\Debug\net7.0\MainTz.Core.deps.json
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\bin\Debug\net7.0\MainTz.Core.dll
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\bin\Debug\net7.0\MainTz.Core.pdb
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\obj\Debug\net7.0\MainTz.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\obj\Debug\net7.0\MainTz.Core.AssemblyInfoInputs.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\obj\Debug\net7.0\MainTz.Core.AssemblyInfo.cs
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\obj\Debug\net7.0\MainTz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\obj\Debug\net7.0\MainTz.Core.dll
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\obj\Debug\net7.0\refint\MainTz.Core.dll
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\obj\Debug\net7.0\MainTz.Core.pdb
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTz.Core\obj\Debug\net7.0\ref\MainTz.Core.dll

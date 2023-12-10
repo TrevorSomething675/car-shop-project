@@ -1,0 +1,14 @@
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\bin\Debug\net7.0\MainTz.Database.deps.json
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\bin\Debug\net7.0\MainTz.Database.runtimeconfig.json
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\bin\Debug\net7.0\MainTz.Database.dll
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\bin\Debug\net7.0\MainTz.Database.pdb
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\MainTz.Database.csproj.AssemblyReference.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\MainTz.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\MainTz.Database.AssemblyInfoInputs.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\MainTz.Database.AssemblyInfo.cs
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\MainTz.Database.csproj.CoreCompileInputs.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\MainTz.Database.dll
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\refint\MainTz.Database.dll
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\MainTz.Database.pdb
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\MainTz.Database.genruntimeconfig.cache
+C:\Users\Win10Pro\Desktop\MainTz.RestApi\jija\MainTa.Database\obj\Debug\net7.0\ref\MainTz.Database.dll
