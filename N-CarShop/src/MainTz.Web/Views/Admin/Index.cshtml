@@ -1,5 +1,5 @@
-﻿@using MainTz.RestApi.DAL.Data.Models.DtoModels
-@model IEnumerable<UserDto>
+﻿@using MainTz.Web.ViewModels.UserViewModels
+@model IEnumerable<UserResponse>
 
 <div class="row bg-light fn-view-size">
 	<h2 class="text-center" style="font-size:38px">Управление пользователями</h2>
@@ -15,13 +15,11 @@
 				<div class="col-1">@user.Id</div>
 				<div class="col-3">@user.Name</div>
 				<div class="col-3">@user.Password</div>
-				<div class="col-3">@user.Role</div>
 				<div class="col-2">
 					<form method="post" asp-controller="Admin" asp-action="DeleteUser">
 						<input type="hidden" name="userDto.Id" value="@user.Id"/>
 						<input type="hidden" name="userDto.Name" value="@user.Name" />
 						<input type="hidden" name="userDto.Password" value="@user.Password" />
-						<input type="hidden" name="userDto.Role" value="@user.Role" />
 
 						<button class="btn btn-danger" type="submit">Удалить</button>
 					</form>

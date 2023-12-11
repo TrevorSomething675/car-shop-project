@@ -1,11 +1,17 @@
-﻿namespace MainTz.Web.Middleware
+﻿using Extensions;
+using MainTz.Application.Services;
+using MainTz.Extensions.Models;
+using System.IdentityModel.Tokens.Jwt;
+
+namespace MainTz.Web.Middleware
 {
     public class JwtRefreshMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly AuthApiSettings _authApiSettings = Settings.Load<AuthApiSettings>("AuthApiSettings");
-        public JwtRefreshMiddleware(RequestDelegate next)
+        private readonly ITokenService _tokenService;
+        public JwtRefreshMiddleware(RequestDelegate next, ITokenService tokenService)
         {
+            _tokenService = tokenService;
             _next = next;
         }
 
@@ -20,19 +26,19 @@
 
                 if (accessTokenValidTo > DateTime.Now)
                 {
-                    var refreshToken = context.Request.Cookies["refreshToken"];
-                    var role = context.Request.Cookies["role"];
-                    var refreshTokenUrl = $"{_authApiSettings.Url}/{_authApiSettings.GetTokenOnRefreshUrl}";
+					var role = context.Request.Cookies["role"];
+                    var newRefreshToken = _tokenService.CreateRefreshToken(role);
 
-                    if (!string.IsNullOrEmpty(refreshToken))
+                    if (!string.IsNullOrEmpty(newRefreshToken))
                     {
-                        var refreshTokenModel = new RefreshTokenModel { RefreshToken = refreshToken, Role = role };
-                        using var client = new RestClient<RefreshTokenModel, TokensModel>(refreshTokenUrl);
-                        var response = await client.GetAsync(refreshTokenModel);
-
-                        context.Response.Cookies.Append("accessToken", response.AccessToken);
-                        context.Response.Cookies.Append("refreshToken", response.RefreshToken);
-                        context.Response.Cookies.Append("role", response.Role);
+                        var refreshTokenModel = new TokensModel { 
+                            RefreshToken = newRefreshToken, 
+                            AccessToken = _tokenService.CreateAccessToken(role),
+                            Role = role 
+                        };
+                        context.Response.Cookies.Append("accessToken", refreshTokenModel.AccessToken);
+                        context.Response.Cookies.Append("refreshToken", refreshTokenModel.RefreshToken);
+                        context.Response.Cookies.Append("role", refreshTokenModel.Role);
                     }
                 }
             }

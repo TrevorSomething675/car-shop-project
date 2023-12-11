@@ -1,4 +1,4 @@
-﻿using MainTz.Application.Models;
+﻿using MainTz.Application.Models.CarEntities;
 
 namespace MainTz.Application.Services
 {

@@ -7,6 +7,7 @@
         public bool IsFavorite { get; set; }
         public string Description { get; set; }
 
+        public int ImageId { get; set; }
         public ICollection<ImageEntity> Images { get; set; }
 
         public int UserId { get; set; }

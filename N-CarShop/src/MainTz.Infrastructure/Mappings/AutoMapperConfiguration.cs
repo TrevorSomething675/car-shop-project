@@ -1,5 +1,7 @@
-﻿using MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car;
-using MainTz.Infrastructure.Mappings.DomainDbEntityMappings.User;
+﻿using MainTz.Infrastructure.Mappings.DomainDbEntityMappings.User;
+using MainTz.Infrastructure.Mappings.RequestDomainMappings.User;
+using MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car;
+using MainTz.Infrastructure.Mappings.RequestDomainMappings.Car;
 using Microsoft.Extensions.DependencyInjection;
 using AutoMapper;
 
@@ -18,9 +20,11 @@ namespace MainTz.Infrastructure.Mappings
             {
                 config.AddProfile<RequestDomainCarMap>();
                 config.AddProfile<ResponseDomainCarMap>();
+                config.AddProfile<DomainDbEntityCarMap>();
 
                 config.AddProfile<RequestDomainUserMap>();
                 config.AddProfile<ResponseDomainUserMap>();
+                config.AddProfile<DomainDbEntityUserMap>();
             });
 
             return services;

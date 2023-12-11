@@ -1,13 +1,9 @@
-﻿using AutoMapper;
-using MainTz.Application.Repositories;
+﻿using MainTz.Application.Repositories;
+using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
 using MainTz.Database.Entities;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AutoMapper;
+using MainTz.Application.Models.UserEntities;
 
 namespace MainTz.Infrastructure.Services
 {
@@ -23,23 +19,19 @@ namespace MainTz.Infrastructure.Services
             _logger = logger;
             _mapper = mapper;
         }
-        public async Task<UserDto> GetUserByNameAsync(string name)
+        public async Task<UserDomainEntity> GetUserByNameAsync(string name)
         {
-            var user = await _userRepository.GetUserByName(name);
-            var userDto = _mapper.Map<UserDto>(user);
-
-            return userDto;
+            var userEntity = await _userRepository.GetUserByName(name);
+            var userDomainEntity = _mapper.Map<UserDomainEntity>(userEntity);
+            return userDomainEntity;
         }
-
-        public async Task<List<UserDto>> GetUsersAsync()
+        public async Task<List<UserDomainEntity>> GetUsersAsync()
         {
-            var users = await _userRepository.GetUsers();
-            var usersDto = _mapper.Map<List<UserDto>>(users);
-
-            return usersDto;
+            var usersEntity = await _userRepository.GetUsers();
+            var usersDomainEntity = _mapper.Map<List<UserDomainEntity>>(usersEntity);
+            return usersDomainEntity;
         }
-
-        public async Task<bool> UpdateAsync(UserDto userDto)
+        public async Task<bool> UpdateAsync(UserDomainEntity userDto)
         {
             try
             {
@@ -53,8 +45,7 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-
-        public async Task<bool> CreateAsync(UserDto userDto)
+        public async Task<bool> CreateAsync(UserDomainEntity userDto)
         {
             try
             {
@@ -68,8 +59,7 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-
-        public async Task<bool> DeleteAsync(UserDto userDto)
+        public async Task<bool> DeleteAsync(UserDomainEntity userDto)
         {
             try
             {

@@ -61,19 +61,6 @@
           "buildTransitive/netcoreapp3.0/EntityFramework.targets": {}
         }
       },
-      "FluentValidation/11.8.1": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/FluentValidation.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/FluentValidation.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1111,26 +1098,6 @@
         "runtime": {
           "bin/placeholder/MainTz.Extensions.dll": {}
         }
-      },
-      "MainTz.Web/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "AutoMapper": "12.0.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
-          "FluentValidation": "11.8.1",
-          "MainTz.Application": "1.0.0",
-          "MainTz.Extensions": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MainTz.Web.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MainTz.Web.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -1219,29 +1186,6 @@
         "tools/netcoreapp3.0/any/ef6.dll",
         "tools/netcoreapp3.0/any/ef6.pdb",
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
-      ]
-    },
-    "FluentValidation/11.8.1": {
-      "sha512": "N72rnlE99XYB7EGA1u9y7m7kNTTynqOPBhZqDE8zr1Y0aSR4t5si94LRA7UVdAV09GaXWCErW+EiFhfbg3DSbg==",
-      "type": "package",
-      "path": "fluentvalidation/11.8.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fluent-validation-icon.png",
-        "fluentvalidation.11.8.1.nupkg.sha512",
-        "fluentvalidation.nuspec",
-        "lib/net5.0/FluentValidation.dll",
-        "lib/net5.0/FluentValidation.xml",
-        "lib/net6.0/FluentValidation.dll",
-        "lib/net6.0/FluentValidation.xml",
-        "lib/net7.0/FluentValidation.dll",
-        "lib/net7.0/FluentValidation.xml",
-        "lib/netstandard2.0/FluentValidation.dll",
-        "lib/netstandard2.0/FluentValidation.xml",
-        "lib/netstandard2.1/FluentValidation.dll",
-        "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -2997,17 +2941,14 @@
       "type": "project",
       "path": "../MainTz.Extensions/MainTz.Extensions.csproj",
       "msbuildProject": "../MainTz.Extensions/MainTz.Extensions.csproj"
-    },
-    "MainTz.Web/1.0.0": {
-      "type": "project",
-      "path": "../MainTz.Web/MainTz.Web.csproj",
-      "msbuildProject": "../MainTz.Web/MainTz.Web.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "AutoMapper >= 12.0.1",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "MainTz.Application >= 1.0.0",
-      "MainTz.Web >= 1.0.0",
+      "MainTz.Extensions >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.14",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.19.5",
       "System.IdentityModel.Tokens.Jwt >= 7.0.3"
@@ -3043,8 +2984,8 @@
             "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj": {
               "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj"
             },
-            "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj": {
-              "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj"
+            "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Extensions\\MainTz.Extensions.csproj": {
+              "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Extensions\\MainTz.Extensions.csproj"
             }
           }
         }
@@ -3059,6 +3000,14 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[7.0.14, )"

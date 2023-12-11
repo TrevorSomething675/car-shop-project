@@ -3,6 +3,7 @@ using MainTz.Extensions.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
+using MainTz.Application.Models.UserEntities;
 
 namespace MainTz.Web.Controllers
 {
@@ -11,12 +12,10 @@ namespace MainTz.Web.Controllers
         private readonly IMapper _mapper;
         private readonly ITokenService _tokenService;
         private readonly IUserService _usersService;
-        private readonly ILogger<AuthController> _logger;
-        public AuthController(IUserService usersService, ITokenService tokenService, ILogger<AuthController> logger, IMapper mapper)
+        public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper)
         {
             _tokenService = tokenService;
             _usersService = usersService;
-            _logger = logger;
             _mapper = mapper;
         }
         /// <summary>
@@ -63,12 +62,12 @@ namespace MainTz.Web.Controllers
 
                 if (user == null)
                     return Results.BadRequest("Пользователя не существует");
-                if (userDto.Password != user.Password)
+                if (loginFormRequest.Password != user.Password)
                     return Results.BadRequest("Неверный пароль");
 
-                var tokens = await GetToken(user.Role.ToString());
+                //var tokens = await GetToken(user.Role.ToString());
 
-                return Results.Json(tokens);
+                return Results.Json("Jija"/*tokens*/);
             }
             catch (Exception ex)
             {
@@ -92,20 +91,20 @@ namespace MainTz.Web.Controllers
         /// <param name="userDto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IResult> Register(RegisterFormRequest userDto)
+        public async Task<IResult> Register(RegisterFormRequest registerFormRequest)
         {
             if (!ModelState.IsValid)
                 return Results.BadRequest("Wrong Data");
 
-            var user = await _usersService.GetUserByNameAsync(userDto.Name);
+            var user = await _usersService.GetUserByNameAsync(registerFormRequest.Name);
 
             if (user != null)
                 return Results.BadRequest("Пользователь уже существует");
 
-            userDto.Role = "User";
-            await _usersService.CreateAsync(userDto);
-
-            var result = await Login(userDto);
+            registerFormRequest.Role = "User";
+            var userDomainEntity = _mapper.Map<UserDomainEntity>(registerFormRequest);
+            await _usersService.CreateAsync(userDomainEntity);
+            var result = await Login(registerFormRequest);
 
             return result;
         }

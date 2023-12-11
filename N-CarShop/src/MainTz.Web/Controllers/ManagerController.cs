@@ -1,9 +1,9 @@
 ﻿using MainTz.Web.ViewModels.CarViewModels;
 using Microsoft.AspNetCore.Authorization;
 using MainTz.Application.Services;
-using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
+using MainTz.Application.Models.CarEntities;
 
 namespace MainTz.Web.Controllers
 {

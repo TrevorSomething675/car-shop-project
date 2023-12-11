@@ -1,11 +1,13 @@
-﻿namespace MainTz.Application.Services
+﻿using MainTz.Application.Models.UserEntities;
+
+namespace MainTz.Application.Services
 {
     public interface IUserService
     {
-        public Task<UserDto> GetUserByNameAsync(string name);
-        public Task<List<UserDto>> GetUsersAsync();
-        public Task<bool> CreateAsync(UserDto userDto);
-        public Task<bool> DeleteAsync(UserDto userDto);
-        public Task<bool> UpdateAsync(UserDto userDto);
+        public Task<UserDomainEntity> GetUserByNameAsync(string name);
+        public Task<List<UserDomainEntity>> GetUsersAsync();
+        public Task<bool> CreateAsync(UserDomainEntity userDto);
+        public Task<bool> DeleteAsync(UserDomainEntity userDto);
+        public Task<bool> UpdateAsync(UserDomainEntity userDto);
     }
 }

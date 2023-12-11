@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XTHi8xLwHyCW0EL53270JQHsca9yfWh6ksysEpI+Uly5ZqXuOHUFxFGPEMSfSRGMF9BfdUZo0qNblYe3lrnedg==",
+  "dgSpecHash": "yu2uZF9gWoiqig0qPUJDUiZNsOoqGajDWfKGJxWz3MKL/I57wuIvYyUdCz6XXpw+z6Gv4/S1CUHu8Tz4LS78rg==",
   "success": true,
   "projectFilePath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Win10Pro\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
-    "C:\\Users\\Win10Pro\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
     "C:\\Users\\Win10Pro\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,5 +1,5 @@
-﻿@using MainTz.RestApi.dal.Data.Models.DtoModels
-@model IEnumerable<CarDto>
+﻿@using MainTz.Web.ViewModels.CarViewModels
+@model IEnumerable<CarResponse>
 
 <div class="row bg-light fn-view-size">
 	<div class="row">
@@ -10,8 +10,6 @@
 		@foreach (var car in Model)
 		{
 			<div class="col-3">@car.Id</div>
-			<div class="col-3">@car.Brand</div>
-			<div class="col-3">@car.Model</div>
 			<div class="col-3">@car.Color</div>
 		}
 	</div>
