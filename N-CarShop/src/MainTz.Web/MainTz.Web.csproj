@@ -16,11 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MainTz.Extensions\MainTz.Extensions.csproj" />
+    <ProjectReference Include="..\MainTa.Database\MainTz.Database.csproj" />
+    <ProjectReference Include="..\MainTz.Application\MainTz.Application.csproj" />
+    <ProjectReference Include="..\MainTz.Core\MainTz.Core.csproj" />
     <ProjectReference Include="..\MainTz.Infrastructure\MainTz.Infrastructure.csproj" />
   </ItemGroup>
 

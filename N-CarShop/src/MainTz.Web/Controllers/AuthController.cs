@@ -1,9 +1,9 @@
-﻿using MainTz.Application.Services;
+﻿using MainTz.Application.Models.UserEntities;
+using MainTz.Application.Services;
 using MainTz.Extensions.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
-using MainTz.Application.Models.UserEntities;
 
 namespace MainTz.Web.Controllers
 {

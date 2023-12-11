@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace Extensions
+namespace MainTz.Extensions
 {
     /// <summary>
     /// Объект, с помощью которого мы достаём конфигурацию из appsettings и заносим её в дженерик T.

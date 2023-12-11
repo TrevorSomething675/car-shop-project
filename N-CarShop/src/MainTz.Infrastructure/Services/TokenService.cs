@@ -3,8 +3,8 @@ using Microsoft.IdentityModel.Tokens;
 using MainTz.Application.Services;
 using MainTz.Extensions.Models;
 using System.Security.Claims;
+using MainTz.Extensions;
 using System.Text;
-using Extensions;
 
 namespace MainTz.Infrastructure.Services
 {

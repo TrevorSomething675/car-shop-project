@@ -1,6 +1,6 @@
 ﻿namespace MainTz.Database.Entities
 {
-    public class ImageEntity
+    public class ImageEntity : BaseEntity
     {
         public string Name { get; set; }
         public byte[] File { get; set; }

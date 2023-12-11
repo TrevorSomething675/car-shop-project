@@ -14,7 +14,7 @@ namespace MainTa.Database.Context
         public DbSet<BrandEntity> Brands { get; set; }
         public DbSet<ImageEntity> Images { get; set; }
 
-        public MainContext(DbContextOptions options) : base(options) { }
+		public MainContext(DbContextOptions<MainContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -1,6 +1,6 @@
 ﻿namespace MainTz.Database.Entities
 {
-    public class NotificationEntity
+    public class NotificationEntity : BaseEntity
     {
         public bool IsRead { get; set; }
         public DateTime SendedDate { get; set; }

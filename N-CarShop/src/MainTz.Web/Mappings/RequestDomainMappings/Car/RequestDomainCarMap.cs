@@ -1,4 +1,5 @@
 ﻿using MainTz.Application.Models.UserEntities;
+using MainTz.Web.ViewModels.UserViewModels;
 using AutoMapper;
 
 namespace MainTz.Infrastructure.Mappings.RequestDomainMappings.Car

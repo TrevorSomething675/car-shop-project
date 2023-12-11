@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace Extensions
+namespace MainTz.Extensions
 {
     /// <summary>
     /// Факта для создания объекта получения конфигурации

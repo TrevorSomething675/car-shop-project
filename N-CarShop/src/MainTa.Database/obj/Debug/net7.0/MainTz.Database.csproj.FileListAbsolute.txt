@@ -27,3 +27,6 @@ C:\E-CarShop\N-CarShop\src\MainTa.Database\obj\Debug\net7.0\refint\MainTz.Databa
 C:\E-CarShop\N-CarShop\src\MainTa.Database\obj\Debug\net7.0\MainTz.Database.pdb
 C:\E-CarShop\N-CarShop\src\MainTa.Database\obj\Debug\net7.0\MainTz.Database.genruntimeconfig.cache
 C:\E-CarShop\N-CarShop\src\MainTa.Database\obj\Debug\net7.0\ref\MainTz.Database.dll
+C:\E-CarShop\N-CarShop\src\MainTa.Database\bin\Debug\net7.0\MainTz.Core.dll
+C:\E-CarShop\N-CarShop\src\MainTa.Database\bin\Debug\net7.0\MainTz.Core.pdb
+C:\E-CarShop\N-CarShop\src\MainTa.Database\obj\Debug\net7.0\MainTz.Database.csproj.CopyComplete

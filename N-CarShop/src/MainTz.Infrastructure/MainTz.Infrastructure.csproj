@@ -7,13 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MainTz.Application\MainTz.Application.csproj" />
-    <ProjectReference Include="..\MainTz.Extensions\MainTz.Extensions.csproj" />
 	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.14" />
 	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
 	<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
 	<PackageReference Include="AutoMapper" Version="12.0.1" />
 	<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MainTa.Database\MainTz.Database.csproj" />
+    <ProjectReference Include="..\MainTz.Application\MainTz.Application.csproj" />
+    <ProjectReference Include="..\MainTz.Extensions\MainTz.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

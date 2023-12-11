@@ -19,7 +19,6 @@ C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\MainTz.Applicatio
 C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\MainTz.Application.csproj.CoreCompileInputs.cache
 C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\MainTz.Application.sourcelink.json
 C:\E-CarShop\N-CarShop\src\MainTz.Application\bin\Debug\net7.0\MainTz.Application.deps.json
-C:\E-CarShop\N-CarShop\src\MainTz.Application\bin\Debug\net7.0\MainTz.Application.runtimeconfig.json
 C:\E-CarShop\N-CarShop\src\MainTz.Application\bin\Debug\net7.0\MainTz.Application.dll
 C:\E-CarShop\N-CarShop\src\MainTz.Application\bin\Debug\net7.0\MainTz.Application.pdb
 C:\E-CarShop\N-CarShop\src\MainTz.Application\bin\Debug\net7.0\MainTz.Database.dll
@@ -28,5 +27,6 @@ C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\MainTz.Applicatio
 C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\MainTz.Application.dll
 C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\refint\MainTz.Application.dll
 C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\MainTz.Application.pdb
-C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\MainTz.Application.genruntimeconfig.cache
 C:\E-CarShop\N-CarShop\src\MainTz.Application\obj\Debug\net7.0\ref\MainTz.Application.dll
+C:\E-CarShop\N-CarShop\src\MainTz.Application\bin\Debug\net7.0\MainTz.Core.dll
+C:\E-CarShop\N-CarShop\src\MainTz.Application\bin\Debug\net7.0\MainTz.Core.pdb
