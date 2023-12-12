@@ -5,7 +5,6 @@ using Microsoft.IdentityModel.Tokens;
 using MainTz.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Application.Services;
-using MainTz.Database.Entities;
 using MainTz.Extensions.Models;
 using MainTa.Database.Context;
 using MainTz.Web.Middleware;

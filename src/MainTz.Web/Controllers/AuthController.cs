@@ -12,11 +12,13 @@ namespace MainTz.Web.Controllers
         private readonly IMapper _mapper;
         private readonly ITokenService _tokenService;
         private readonly IUserService _usersService;
-        public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper)
+        private readonly ILogger<AuthController> _logger;
+        public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper, ILogger<AuthController> logger)
         {
             _tokenService = tokenService;
             _usersService = usersService;
             _mapper = mapper;
+            _logger = logger;
         }
         /// <summary>
         /// Получение токена из сервиса, путём отправки запроса с ролью
@@ -42,6 +44,8 @@ namespace MainTz.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Login()
         {
+            _logger.LogDebug("Log Debug");
+            _logger.LogTrace("Log Trace");
             return View();
         }
         /// <summary>
