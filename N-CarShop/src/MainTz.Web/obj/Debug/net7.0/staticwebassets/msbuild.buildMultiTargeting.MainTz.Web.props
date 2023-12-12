@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MainTz.Web.props" />
+</Project>
