@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using MainTz.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Application.Services;
+using MainTz.Database.Entities;
 using MainTz.Extensions.Models;
 using MainTa.Database.Context;
 using MainTz.Web.Middleware;
@@ -60,14 +61,99 @@ namespace MainTz.Web
 
         public void Configure(IApplicationBuilder app)
         {
-			app.UseHttpsRedirection();
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                using (var context = scope.ServiceProvider.GetRequiredService<MainContext>())
+                {
+                    /*
+                    #region UserTestData
+                    var rolesEntity = context.Roles.ToList();
+                    if (rolesEntity.Count() == 0)
+                    {
+                        var roles = new List<RoleEntity>
+                        {
+                            new RoleEntity { RoleName = "Admin" },
+                            new RoleEntity { RoleName = "Manager" },
+                            new RoleEntity { RoleName = "User" }
+                        };
+                        context.Roles.AddRange(roles);
+                        context.SaveChanges();
+                    }
+
+                    if(context.Users.ToList().Count() == 0)
+                    {
+                        var users = new List<UserEntity>
+                        {
+                            new UserEntity
+                            {
+                                Name = "Admin",
+                                Email = "Admin@mail.ru",
+                                Password = "123123123",
+                                Roles = context.Roles.Where(role => role.RoleName == "Admin").ToList()
+                            },
+                            new UserEntity
+                            {
+                                Name = "Manager",
+                                Email = "Manager@mail.ru",
+                                Password = "123123123",
+                                Roles = context.Roles.Where(role => role.RoleName == "Manager").ToList()
+                            }
+                        };
+
+                        context.Users.AddRange(users);
+                        context.SaveChanges();
+                    }
+
+                    #endregion
+
+                    #region CarTestData
+                    if (context.Brands.ToList().Count() == 0)
+                    {
+                        var brand = new BrandEntity
+                        {
+                            Name = "brand1",
+                            Models = new List<ModelEntity>
+                            {
+                                new ModelEntity {Name = "Model1" }
+                            }
+                        };
+                        context.Brands.Add(brand);
+                        context.SaveChanges();
+                    }
+
+                    if (context.Cars.ToList().Count() == 0)
+                    {
+                        var car = new CarEntity
+                        {
+                            Color = "red",
+                            Images = new List<ImageEntity>
+                            {
+                                new ImageEntity
+                                {
+                                    Name = "pic1",
+                                    File = new byte[5],
+                                }
+                            },
+                            IsFavorite = true,
+                            IsVisible = true,
+                            Description = "Description",
+                            Model = context.Models.FirstOrDefault()
+
+                        };
+                        context.Cars.Add(car);
+                        context.SaveChanges();
+                    }
+                    #endregion
+                */
+                }
+            }
+            app.UseHttpsRedirection();
 			app.UseDefaultFiles();
 			app.UseStaticFiles();
 			app.UseRouting();
             app.UseMiddleware<JwtHeaderMiddleware>();
 			app.UseMiddleware<JwtRefreshMiddleware>();
 			app.UseMiddleware<LoggingMiddleware>();
-
 			app.UseAuthentication();
 			app.UseAuthorization();
 

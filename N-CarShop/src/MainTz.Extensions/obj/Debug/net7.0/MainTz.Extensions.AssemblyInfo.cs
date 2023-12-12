@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MainTz.Extensions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2017f34bfb85f2636935bd27bd5342aaf40288e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MainTz.Extensions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MainTz.Extensions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

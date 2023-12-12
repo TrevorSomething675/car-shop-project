@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pPMI1DSObMTKoNIDd0hazjRkaxe3VfnIBnjJ00SawV9NyNoGBi3jjXuOX521NFn/L801KL+6hTSLtAKfQKwB1A==",
+  "dgSpecHash": "fS8les+pAGFGu/jEiT71yvbTJY5WCGR1K29uAdJgg+B50uiWmBfgdB4xCtdRQU7h6mXUVVUW+X2kMA1smawFxw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj",
   "expectedPackageFiles": [
@@ -52,11 +52,7 @@
     "C:\\Users\\Иван\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.0.3\\system.identitymodel.tokens.jwt.7.0.3.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+    "C:\\Users\\Иван\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
