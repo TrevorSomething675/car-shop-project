@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {}
+    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {}
   },
   "projects": {
-    "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
+    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
         "projectName": "MainTz.Core",
-        "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
-        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
-        "outputPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Core\\obj\\",
+        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
+        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,6 +50,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

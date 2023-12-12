@@ -10,8 +10,6 @@ namespace MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car
         {
             CreateMap<CarDomainEntity, CarEntity>()
                 .ForMember(dest => dest.Images, opts => opts.Ignore())
-                .ForMember(dest => dest.ImageId, opts => opts
-                    .MapFrom(src => src.ImagesId))
 
                 .ForMember(dest => dest.Users, opts => opts.Ignore())
                 .ForMember(dest => dest.UserId, opts => opts

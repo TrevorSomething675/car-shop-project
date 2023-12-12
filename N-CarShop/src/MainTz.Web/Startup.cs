@@ -64,8 +64,7 @@ namespace MainTz.Web
 			app.UseDefaultFiles();
 			app.UseStaticFiles();
 			app.UseRouting();
-
-			app.UseMiddleware<JwtHeaderMiddleware>();
+            app.UseMiddleware<JwtHeaderMiddleware>();
 			app.UseMiddleware<JwtRefreshMiddleware>();
 			app.UseMiddleware<LoggingMiddleware>();
 

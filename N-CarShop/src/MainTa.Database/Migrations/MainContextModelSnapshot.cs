@@ -72,9 +72,6 @@ namespace MainTz.Database.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("ImageId")
-                        .HasColumnType("integer");
-
                     b.Property<bool>("IsFavorite")
                         .HasColumnType("boolean");
 

@@ -2248,19 +2248,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Win10Pro\\.nuget\\packages\\": {}
+    "C:\\Users\\Иван\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj",
       "projectName": "MainTz.Web",
-      "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj",
-      "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
-      "outputPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Web\\obj\\",
+      "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj",
+      "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2274,17 +2274,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\E-CarShop\\N-CarShop\\src\\MainTa.Database\\MainTz.Database.csproj": {
-              "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTa.Database\\MainTz.Database.csproj"
+            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTa.Database\\MainTz.Database.csproj": {
+              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTa.Database\\MainTz.Database.csproj"
             },
-            "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj": {
-              "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj"
+            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj": {
+              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj"
             },
-            "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
-              "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj"
+            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
+              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj"
             },
-            "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj": {
-              "projectPath": "C:\\E-CarShop\\N-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj"
+            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj"
             }
           }
         }
@@ -2327,6 +2327,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
