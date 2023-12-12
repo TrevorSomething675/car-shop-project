@@ -1,0 +1,8 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/N-CarShop/README.md
+/src/MainTz.Web/bin/Debug/net7.0/logs
+/src/MainTz.Web/bin
+/src/MainTz.Web/obj
