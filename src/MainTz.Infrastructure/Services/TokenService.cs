@@ -1,19 +1,18 @@
-﻿using System.IdentityModel.Tokens.Jwt;
+﻿using MainTz.Web.Extensions.SettingsModels;
+using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using MainTz.Application.Services;
-using MainTz.Extensions.Models;
 using System.Security.Claims;
-using MainTz.Extensions;
 using System.Text;
 
 namespace MainTz.Infrastructure.Services
 {
     public class TokenService : ITokenService
     {
-        private readonly JwtAuthSettings _authSettings;
-        public TokenService()
+        public JwtAuthSettings _authSettings;
+        public TokenService(JwtAuthSettings authSettings)
         {
-            _authSettings = Settings.Load<JwtAuthSettings>("AuthSettings");
+            _authSettings = authSettings;
         }
 
         public string CreateAccessToken(string role)
@@ -32,7 +31,6 @@ namespace MainTz.Infrastructure.Services
 
             return new JwtSecurityTokenHandler().WriteToken(jwt);
         }
-
         public string CreateRefreshToken(string role)
         {
             var claims = new List<Claim> { new Claim(ClaimTypes.Role, role) };

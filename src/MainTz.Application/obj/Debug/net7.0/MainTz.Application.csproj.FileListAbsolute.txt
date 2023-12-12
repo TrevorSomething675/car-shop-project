@@ -51,10 +51,8 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\N-CarShop\src\MainTz.Applicatio
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\bin\Debug\net7.0\MainTz.Application.deps.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\bin\Debug\net7.0\MainTz.Application.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\bin\Debug\net7.0\MainTz.Application.pdb
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\bin\Debug\net7.0\MainTz.Core.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\bin\Debug\net7.0\MainTz.Database.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\bin\Debug\net7.0\MainTz.Database.pdb
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\bin\Debug\net7.0\MainTz.Core.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\obj\Debug\net7.0\MainTz.Application.csproj.AssemblyReference.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\obj\Debug\net7.0\MainTz.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Application\obj\Debug\net7.0\MainTz.Application.AssemblyInfoInputs.cache

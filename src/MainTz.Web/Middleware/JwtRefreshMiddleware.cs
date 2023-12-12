@@ -1,6 +1,6 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using MainTz.Application.Services;
-using MainTz.Extensions.Models;
+using MainTz.Web.Extensions;
 
 namespace MainTz.Web.Middleware
 {

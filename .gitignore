@@ -3,6 +3,17 @@
 ################################################################################
 
 /N-CarShop/README.md
-/src/MainTz.Web/bin/Debug/net7.0/logs
 /src/MainTz.Web/bin
 /src/MainTz.Web/obj
+
+/src/MainTz.Infrastructure/bin
+/src/MainTz.Infrastructure/obj
+
+/src/MainTz.Core/bin
+/src/MainTz.Core/obj
+
+/src/MainTz.Application/bin
+/src/MainTz.Application/obj
+
+/src/MainTz.MainTz.Database/bin
+/src/MainTz.MainTz.Database/obj

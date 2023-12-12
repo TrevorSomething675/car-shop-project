@@ -1,35 +1,44 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using MainTz.Web.Extensions.SettingsModels;
 using MainTz.Infrastructure.Repositories;
 using MainTz.Application.Repositories;
 using Microsoft.IdentityModel.Tokens;
 using MainTz.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Application.Services;
-using MainTz.Extensions.Models;
-using MainTa.Database.Context;
+using MainTz.Database.Context;
 using MainTz.Web.Middleware;
 using MainTz.Web.Mappings;
-using MainTz.Extensions;
 using System.Text;
 
 namespace MainTz.Web
 {
     public class Startup
     {
-		DataBaseSettings dbSettings = Settings.Load<DataBaseSettings>("DataBaseSettings");
-        JwtAuthSettings authSettings = Settings.Load<JwtAuthSettings>("JwtAuthSettings");
+        private readonly IConfiguration _configuration;
+        JwtAuthSettings _authSettings;
+        DataBaseSettings _dbSettings;
+        public Startup(IConfiguration configuration)
+        {
+            _configuration = configuration;
+            _authSettings = _configuration.GetSection(JwtAuthSettings.JwtAuthPosition).Get<JwtAuthSettings>();
+            _dbSettings = _configuration.GetSection(DataBaseSettings.DataBasePosition).Get<DataBaseSettings>();
+        }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MainContext>(options =>
             {
-                options.UseNpgsql(dbSettings.ConnectionString);
+                options.UseNpgsql(_dbSettings.ConnectionString);
             });
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICarRepository, CarRepository>();
-            services.AddTransient<ITokenService, TokenService>();
+            services.AddTransient<ITokenService>(provider =>
+            {
+                var authSettings = _authSettings;
+                return new TokenService(authSettings);
+            });
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICarService, CarService>();
-
             services.AddDomainAppAutoMapperConfiguration();
             services.AddControllersWithViews();
 			services.AddHttpContextAccessor();
@@ -46,11 +55,11 @@ namespace MainTz.Web
             	options.TokenValidationParameters = new TokenValidationParameters
             	{
             		ValidateIssuer = true,
-            		ValidIssuer = authSettings.Issuer,
+            		ValidIssuer = _authSettings.Issuer,
             		ValidateAudience = true,
-            		ValidAudience = authSettings.Audience,
+            		ValidAudience = _authSettings.Audience,
             		ValidateLifetime = true,
-            		IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authSettings.Key)),
+            		IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authSettings.Key)),
             		ValidateIssuerSigningKey = true,
             	};
             });

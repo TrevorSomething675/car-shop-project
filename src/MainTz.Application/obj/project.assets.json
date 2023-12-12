@@ -482,21 +482,10 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "MainTz.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/MainTz.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MainTz.Core.dll": {}
-        }
-      },
-      "MainTz.Database/1.0.0": {
+      "MainTz.DataBase/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "MainTz.Core": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.14",
@@ -505,10 +494,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11"
         },
         "compile": {
-          "bin/placeholder/MainTz.Database.dll": {}
+          "bin/placeholder/MainTz.DataBase.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MainTz.Database.dll": {}
+          "bin/placeholder/MainTz.DataBase.dll": {}
         }
       }
     }
@@ -1220,20 +1209,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MainTz.Core/1.0.0": {
+    "MainTz.DataBase/1.0.0": {
       "type": "project",
-      "path": "../MainTz.Core/MainTz.Core.csproj",
-      "msbuildProject": "../MainTz.Core/MainTz.Core.csproj"
-    },
-    "MainTz.Database/1.0.0": {
-      "type": "project",
-      "path": "../MainTa.Database/MainTz.Database.csproj",
-      "msbuildProject": "../MainTa.Database/MainTz.Database.csproj"
+      "path": "../MainTz.DataBase/MainTz.DataBase.csproj",
+      "msbuildProject": "../MainTz.DataBase/MainTz.DataBase.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "MainTz.Database >= 1.0.0"
+      "MainTz.DataBase >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1263,8 +1247,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\MainTz.Database.csproj": {
-              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\MainTz.Database.csproj"
+            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.DataBase\\MainTz.DataBase.csproj": {
+              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.DataBase\\MainTz.DataBase.csproj"
             }
           }
         }
