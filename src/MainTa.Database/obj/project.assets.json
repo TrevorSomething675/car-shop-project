@@ -1224,11 +1224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTa.Database\\MainTz.Database.csproj",
+      "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\MainTz.Database.csproj",
       "projectName": "MainTz.Database",
-      "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTa.Database\\MainTz.Database.csproj",
+      "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\MainTz.Database.csproj",
       "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTa.Database\\obj\\",
+      "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1245,8 +1245,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
-              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj"
+            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj": {
+              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj"
             }
           }
         }

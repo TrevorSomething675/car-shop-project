@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kcr3rjFwUbrw88gNLCk5hsosGXya9qq9M0p+e4PoTUhZd1eUzeb9Io+lLONfsheuyWGi9Y065CgjlG3j0bMLyw==",
+  "dgSpecHash": "l26isJF5r+Qpgq9DFnIhoQ5pZ15021bL4fS6lOUGONSzJaOybEvgUBh47caOjscW6mImuylbnMsfIzj1SQmgLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Иван\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -51,10 +51,7 @@
     "C:\\Users\\Иван\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.0.3\\system.identitymodel.tokens.jwt.7.0.3.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+    "C:\\Users\\Иван\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

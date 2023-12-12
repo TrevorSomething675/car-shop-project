@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IRNus19hNOeBqmSEIkTNfe9qriK2T/Eldz/SSk2KdJX831D4BAD9R4RYRLu0OkG2ycKbEulO25t9ZQBNb9b7aw==",
+  "dgSpecHash": "vR/1E+tpUN4Dct86RvvKUPtgqPLCBy3V7BhOvNwLT0+mM1/qc0+ZZIATpZHCuuaASZN2mP1X/jAAtIT1H0DS3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\N-CarShop\\src\\MainTz.Extensions\\MainTz.Extensions.csproj",
+  "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Extensions\\MainTz.Extensions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -16,10 +16,7 @@
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\Иван\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+    "C:\\Users\\Иван\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
