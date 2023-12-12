@@ -1,7 +1,7 @@
 ﻿using MainTz.Application.Repositories;
+using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
-using Microsoft.EntityFrameworkCore;
 
 namespace MainTz.Infrastructure.Repositories
 {

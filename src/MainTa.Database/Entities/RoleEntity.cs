@@ -4,5 +4,7 @@
 	{
         public string RoleName { get; set; }
         public ICollection<UserEntity?> User { get; set; }
+        //public string RoleName { get; set; }
+        //public ICollection<UserEntity?> User { get; set; }
     }
 }

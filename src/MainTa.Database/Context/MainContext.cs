@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MainTz.Database.Context.ConfigureEntities;
+using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
 
 namespace MainTa.Database.Context
@@ -17,7 +18,9 @@ namespace MainTa.Database.Context
 		public MainContext(DbContextOptions<MainContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UserEntity>();
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
+            modelBuilder.ApplyConfiguration(new NotificationConfiguration());
         }
     }
 }
