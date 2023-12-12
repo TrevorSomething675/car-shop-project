@@ -18,13 +18,13 @@ namespace MainTz.Infrastructure.Services
             _mapper = mapper;
             _carRepository = carRepository;
         }
-        public async Task<List<CarDomainEntity>> GetCars()
+        public async Task<List<Car>> GetCars()
         {
             var carsEntity = await _carRepository.GetCars();
-            var carsDomainEntity = _mapper.Map<List<CarDomainEntity>>(carsEntity);
+            var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
             return carsDomainEntity;
         }
-        public async Task<bool> CreateCar(CarDomainEntity carDomainEntity)
+        public async Task<bool> CreateCar(Car carDomainEntity)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> DeleteCar(CarDomainEntity carDomainEntity)
+        public async Task<bool> DeleteCar(Car carDomainEntity)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> UpdateCar(CarDomainEntity carDomainEntity)
+        public async Task<bool> UpdateCar(Car carDomainEntity)
         {
             try
             {

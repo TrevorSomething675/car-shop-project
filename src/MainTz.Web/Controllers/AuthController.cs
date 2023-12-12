@@ -57,7 +57,7 @@ namespace MainTz.Web.Controllers
                 return Results.BadRequest("Wrong Data");
             try
             {
-                var userDomain = _mapper.Map<UserDomainEntity>(loginFormRequest);
+                var userDomain = _mapper.Map<User>(loginFormRequest);
                 var user = await _usersService.GetUserByNameAsync(loginFormRequest.Name);
 
                 if (user == null)
@@ -102,7 +102,7 @@ namespace MainTz.Web.Controllers
                 return Results.BadRequest("Пользователь уже существует");
 
             registerFormRequest.Role = "User";
-            var userDomainEntity = _mapper.Map<UserDomainEntity>(registerFormRequest);
+            var userDomainEntity = _mapper.Map<User>(registerFormRequest);
             await _usersService.CreateAsync(userDomainEntity);
             var result = await Login(registerFormRequest);
 
