@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ve0447xyaKjSNZkYZZ2QtJliLO37NVuTTIiP68iYsito8BfG0MIQGH+lrFJ9++Vi/9s47Fq2Lqv2TkkMJ6uQtg==",
+  "dgSpecHash": "NyAEB/C61k9Xd9xb7CjKFXDhYuv7nCZJlpFqnvksMxvjPPsjeX6u4220skWLfO2m0QYo/AUT9W43VnIEUIbvOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\MainTz.Web.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,9 @@
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.3\\microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Иван\\.nuget\\packages\\nlog\\5.2.7\\nlog.5.2.7.nupkg.sha512",
+    "C:\\Users\\Иван\\.nuget\\packages\\nlog.extensions.logging\\5.3.7\\nlog.extensions.logging.5.3.7.nupkg.sha512",
+    "C:\\Users\\Иван\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.7\\nlog.web.aspnetcore.5.3.7.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
     "C:\\Users\\Иван\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
