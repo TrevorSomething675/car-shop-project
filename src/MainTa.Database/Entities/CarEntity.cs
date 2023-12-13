@@ -8,8 +8,7 @@
         public string Description { get; set; }
 
         public ICollection<ImageEntity> Images { get; set; }
-        public ICollection<UserEntity>? Users { get; set; }
-
+        public ICollection<UserCarEntity> Users { get; set; }
         public int ModelId { get; set; }
         public ModelEntity Model { get; set; }
     }

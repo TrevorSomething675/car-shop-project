@@ -11,6 +11,7 @@ using MainTz.Web.Middleware;
 using MainTz.Web.Mappings;
 using MainTz.Extensions;
 using System.Text;
+using MainTz.Database.Entities;
 
 namespace MainTz.Web
 {
@@ -64,7 +65,6 @@ namespace MainTz.Web
             {
                 using (var context = scope.ServiceProvider.GetRequiredService<MainContext>())
                 {
-                    /*
                     #region UserTestData
                     var rolesEntity = context.Roles.ToList();
                     if (rolesEntity.Count() == 0)
@@ -88,14 +88,14 @@ namespace MainTz.Web
                                 Name = "Admin",
                                 Email = "Admin@mail.ru",
                                 Password = "123123123",
-                                Roles = context.Roles.Where(role => role.RoleName == "Admin").ToList()
+                                Role = context.Roles.Where(role => role.RoleName == "Admin").FirstOrDefault()
                             },
                             new UserEntity
                             {
                                 Name = "Manager",
                                 Email = "Manager@mail.ru",
                                 Password = "123123123",
-                                Roles = context.Roles.Where(role => role.RoleName == "Manager").ToList()
+                                Role = context.Roles.Where(role => role.RoleName == "Manager").FirstOrDefault()
                             }
                         };
 
@@ -143,7 +143,6 @@ namespace MainTz.Web
                         context.SaveChanges();
                     }
                     #endregion
-                */
                 }
             }
             app.UseHttpsRedirection();

@@ -9,7 +9,7 @@
         public int RoleId { get; set; }
         public RoleEntity Role { get; set; }
 
-        public ICollection<CarEntity>? Cars { get; set; }
+        public ICollection<UserCarEntity> Cars { get; set; }
         public ICollection<NotificationEntity>? Notifications { get; set; }
     }
 }
