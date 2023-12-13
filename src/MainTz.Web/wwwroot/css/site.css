@@ -1,25 +1,36 @@
-html {
-  font-size: 14px;
+:root {
+    --dark-gray-color: #302f2f;
+    --light-gray-color: #b8b8b8;
+    --light-orange-color: #cc7d06;
+    --dark-orange-color: #db8709;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
+/*========================Global========================*/
 
 html {
-  position: relative;
-  min-height: 100%;
+    font-size: 14px;
 }
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/*========================Header========================*/
+
+header {
+    background-color: var(--dark-gray-color)!important;
+    color: var(--light-orange-color)!important;
+}
+
+/*=========================Body=========================*/
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: var(--light-gray-color);
 }
+
+/*=========================Form=========================*/
 
 .rest-api-form{
     border-radius: 5px;
@@ -30,9 +41,34 @@ body {
     font-size:28px;
 }
 
-.user-commands-form {
+/*========================Footer========================*/
+
+footer {
+    background-color: var(--dark-gray-color) !important;
+    color: var(--light-orange-color) !important;
+    font-size: 18px;
 }
 
-.user-cars{
-    font-size:22px;
+.custom-btn-orange{
+    color: var(--light-orange-color);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.custom-btn-orange:hover {
+    color: var(--light-gray-color) !important;
+}
+
+.custom-btn-white{
+    color: var(--light-gray-color);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.custom-btn-white:hover {
+    color: var(--light-orange-color) !important;
+}
+
+.footer-border{
+    border-color: var(--light-orange-color)!important;
 }
