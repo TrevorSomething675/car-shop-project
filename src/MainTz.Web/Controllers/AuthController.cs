@@ -4,6 +4,7 @@ using MainTz.Extensions.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
+using MainTz.Database.Entities;
 
 namespace MainTz.Web.Controllers
 {
@@ -69,7 +70,7 @@ namespace MainTz.Web.Controllers
                 if (loginFormRequest.Password != user.Password)
                     return Results.BadRequest("Неверный пароль");
 
-                //var tokens = await GetToken(user.Role.ToString());
+                //var tokens = await GetToken(user);
 
                 return Results.Json("Jija"/*tokens*/);
             }
@@ -99,6 +100,8 @@ namespace MainTz.Web.Controllers
         {
             if (!ModelState.IsValid)
                 return Results.BadRequest("Wrong Data");
+            if (registerFormRequest.Password != registerFormRequest.ConfirmPassword)
+                return Results.BadRequest("Wrong Password");
 
             var user = await _usersService.GetUserByNameAsync(registerFormRequest.Name);
 

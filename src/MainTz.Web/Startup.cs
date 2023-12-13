@@ -66,8 +66,10 @@ namespace MainTz.Web
                 using (var context = scope.ServiceProvider.GetRequiredService<MainContext>())
                 {
                     #region UserTestData
-                    var rolesEntity = context.Roles.ToList();
-                    if (rolesEntity.Count() == 0)
+                    context.Database.EnsureDeleted();
+                    context.Database.EnsureCreated();
+                    context.SaveChanges();
+                    if (!context.Roles.Any())
                     {
                         var roles = new List<RoleEntity>
                         {
@@ -79,7 +81,7 @@ namespace MainTz.Web
                         context.SaveChanges();
                     }
 
-                    if(context.Users.ToList().Count() == 0)
+                    if(!context.Users.Any())
                     {
                         var users = new List<UserEntity>
                         {
@@ -106,7 +108,7 @@ namespace MainTz.Web
                     #endregion
 
                     #region CarTestData
-                    if (context.Brands.ToList().Count() == 0)
+                    if (!context.Brands.Any())
                     {
                         var brand = new BrandEntity
                         {
@@ -120,10 +122,11 @@ namespace MainTz.Web
                         context.SaveChanges();
                     }
 
-                    if (context.Cars.ToList().Count() == 0)
+                    if (!context.Cars.Any())
                     {
-                        var car = new CarEntity
-                        {
+                        var cars = new List<CarEntity> {
+                        new CarEntity{
+                            Name = "TestName1",
                             Color = "red",
                             Images = new List<ImageEntity>
                             {
@@ -135,11 +138,31 @@ namespace MainTz.Web
                             },
                             IsFavorite = true,
                             IsVisible = true,
-                            Description = "Description",
+                            Description = "Description1Description1Descripti" +
+                            "on1Description1Description1Description1",
                             Model = context.Models.FirstOrDefault()
 
+                            },
+                            new CarEntity{
+                            Name = "TestName2",
+                            Color = "red",
+                            Images = new List<ImageEntity>
+                            {
+                                new ImageEntity
+                                {
+                                    Name = "pic2",
+                                    File = new byte[5],
+                                }
+                            },
+                            IsFavorite = true,
+                            IsVisible = true,
+                            Description = "Description2Description2Description2Description" +
+                            "2Description2Description2Description2",
+                            Model = context.Models.FirstOrDefault()
+
+                            }
                         };
-                        context.Cars.Add(car);
+                        context.Cars.AddRange(cars);
                         context.SaveChanges();
                     }
                     #endregion
@@ -159,7 +182,7 @@ namespace MainTz.Web
             {
                 endpoints.MapControllerRoute(
 	            name: "default",
-	            pattern: "{controller=Auth}/{action=Login}/{id?}");
+	            pattern: "{controller=Auth}/{action=Register}/{id?}");
 			});
         }
     }

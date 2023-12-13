@@ -9,10 +9,6 @@
 /*========================Global========================*/
 
 html {
-    font-size: 14px;
-}
-
-html {
     position: relative;
     min-height: 100%;
 }
@@ -62,6 +58,9 @@ body {
 .custom-btn-submit-form {
     background-color: var(--light-gray-color);
     color: var(--light-text-color);
+    border-radius:5px;
+    border:2px solid var(--light-gray-color);
+    transition: .3s;
 }
 
 .custom-btn-submit-form:hover {
@@ -99,4 +98,16 @@ footer {
 
 .footer-border {
     border-color: var(--light-orange-color) !important;
+}
+
+/*========================Card========================*/
+
+.car-card{
+    background-color:var(--dark-gray-color);
+    color:var(--light-text-color);
+}
+
+.car-card-description {
+    word-break:break-word;
+
 }

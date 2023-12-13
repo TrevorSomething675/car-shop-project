@@ -8,7 +8,10 @@
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
                 <li class="nav-item">
-                    <a class="nav-link custom-btn-orange" asp-area="" asp-controller="User" asp-action="Index">User</a>
+                    <a class="nav-link custom-btn-orange" asp-area="" asp-controller="User" asp-action="Index">
+                        <i class="bi bi-bag"></i>
+                        <span>Машины</span>
+                        </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link custom-btn-orange" asp-area="" asp-controller="Manager" asp-action="Index">Manager</a>
@@ -24,12 +27,13 @@
                 <ul class="navbar-nav list-group">
                     <li class="list-inline-item">
                         <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-area="" asp-controller="Auth" asp-action="Login">
+                            <i class="bi bi-box-arrow-in-right"></i>
                             <span class="px-1">Войти</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
+@*                     <li class="list-inline-item">
                         <a class="nav-link custom-btn-orange" asp-area="" asp-controller="Auth" asp-action="Register">Регистрация</a>
-                    </li>
+                    </li> *@
                 </ul>
             </div>
         </div>

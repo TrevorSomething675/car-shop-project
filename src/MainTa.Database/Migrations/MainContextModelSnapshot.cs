@@ -64,6 +64,10 @@ namespace MainTz.Database.Migrations
                     b.Property<int>("ModelId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ModelId");

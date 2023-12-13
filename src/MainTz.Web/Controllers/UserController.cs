@@ -19,7 +19,7 @@ namespace MainTz.Web.Controllers
         public async Task<IActionResult> Index()
         {
             var carsDomainModels = await _carService.GetCars();
-            var carsResponse = _mapper.Map<CarResponse>(carsDomainModels);
+            var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
             return View(carsResponse);
         }
     }

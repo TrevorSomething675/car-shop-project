@@ -2,6 +2,7 @@
 {
     public class CarEntity : BaseEntity
     {
+        public string Name { get; set; }
         public string Color { get; set; }
         public bool IsVisible { get; set; }
         public bool IsFavorite { get; set; }

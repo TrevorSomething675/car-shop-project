@@ -8,16 +8,9 @@ namespace MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car
     {
         public DomainDbEntityCarMap()
         {
-            //CreateMap<CarDomainEntity, CarEntity>()
-            //    .ForMember(dest => dest.Images, opts => opts.Ignore())
+            CreateMap<CarDomainEntity, CarEntity>();
 
-            //    .ForMember(dest => dest.Users, opts => opts.Ignore())
-            //    .ForMember(dest => dest.UserId, opts => opts
-            //        .MapFrom(src => src.UsersId))
-
-            //    .ForMember(dest => dest.Model, opts => opts.Ignore())
-            //    .ForMember(dest => dest.ModelId, opts => opts
-            //        .MapFrom(src => src.ModelId)).ReverseMap();
+            CreateMap<CarEntity, CarDomainEntity>();
         }
     }
 }
