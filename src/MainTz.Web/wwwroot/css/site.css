@@ -1,8 +1,9 @@
 :root {
     --dark-gray-color: #302f2f;
-    --light-gray-color: #b8b8b8;
+    --light-gray-color: #474646;
     --light-orange-color: #cc7d06;
-    --dark-orange-color: #db8709;
+    --dark-orange-color: #a86807;
+    --light-text-color: #d6d4d4;
 }
 
 /*========================Global========================*/
@@ -16,11 +17,30 @@ html {
     min-height: 100%;
 }
 
+input {
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+    color: var(--light-text-color);
+}
+
+input::selection{
+    background-color:var(--light-orange-color);
+}
+
+input:focus {
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+    outline: none;
+    color: var(--light-text-color);
+}
+
 /*========================Header========================*/
 
 header {
-    background-color: var(--dark-gray-color)!important;
-    color: var(--light-orange-color)!important;
+    background-color: var(--dark-gray-color) !important;
+    color: var(--light-orange-color) !important;
 }
 
 /*=========================Body=========================*/
@@ -32,13 +52,21 @@ body {
 
 /*=========================Form=========================*/
 
-.rest-api-form{
+.form {
+    background-color: var(--dark-gray-color);
+    border: 2px solid var(--dark-gray-color);
     border-radius: 5px;
-    background-color:lightblue;
+    color: var(--light-text-color);
 }
 
-.fn-view-size{
-    font-size:28px;
+.custom-btn-submit-form {
+    background-color: var(--light-gray-color);
+    color: var(--light-text-color);
+}
+
+.custom-btn-submit-form:hover {
+    background-color: var(--light-gray-color);
+    color: var(--light-orange-color);
 }
 
 /*========================Footer========================*/
@@ -49,18 +77,18 @@ footer {
     font-size: 18px;
 }
 
-.custom-btn-orange{
+.custom-btn-orange {
     color: var(--light-orange-color);
     text-decoration: none;
     transition: .2s;
 }
 
 .custom-btn-orange:hover {
-    color: var(--light-gray-color) !important;
+    color: var(--light-text-color) !important;
 }
 
-.custom-btn-white{
-    color: var(--light-gray-color);
+.custom-btn-white {
+    color: var(--light-text-color);
     text-decoration: none;
     transition: .2s;
 }
@@ -69,6 +97,6 @@ footer {
     color: var(--light-orange-color) !important;
 }
 
-.footer-border{
-    border-color: var(--light-orange-color)!important;
+.footer-border {
+    border-color: var(--light-orange-color) !important;
 }
