@@ -4,9 +4,9 @@ namespace MainTz.Application.Services
 {
     public interface ICarService
     {
-        public Task<List<Car>> GetCars();
-        public Task<bool> CreateCar(Car carDto);
-        public Task<bool> DeleteCar(Car carDto);
-        public Task<bool> UpdateCar(Car carDto);
+        public Task<List<CarDomainEntity>> GetCars();
+        public Task<bool> CreateCar(CarDomainEntity carDto);
+        public Task<bool> DeleteCar(CarDomainEntity carDto);
+        public Task<bool> UpdateCar(CarDomainEntity carDto);
     }
 }

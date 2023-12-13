@@ -1,3 +1,5 @@
+using NLog.Web;
+
 namespace MainTz.Web
 {
     public class Program
@@ -12,6 +14,7 @@ namespace MainTz.Web
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+            .UseNLog();
     }
 }

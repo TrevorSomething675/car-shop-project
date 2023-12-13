@@ -19,19 +19,19 @@ namespace MainTz.Infrastructure.Services
             _logger = logger;
             _mapper = mapper;
         }
-        public async Task<User> GetUserByNameAsync(string name)
+        public async Task<UserDomainEntity> GetUserByNameAsync(string name)
         {
             var userEntity = await _userRepository.GetUserByName(name);
-            var userDomainEntity = _mapper.Map<User>(userEntity);
+            var userDomainEntity = _mapper.Map<UserDomainEntity>(userEntity);
             return userDomainEntity;
         }
-        public async Task<List<User>> GetUsersAsync()
+        public async Task<List<UserDomainEntity>> GetUsersAsync()
         {
             var usersEntity = await _userRepository.GetUsers();
-            var usersDomainEntity = _mapper.Map<List<User>>(usersEntity);
+            var usersDomainEntity = _mapper.Map<List<UserDomainEntity>>(usersEntity);
             return usersDomainEntity;
         }
-        public async Task<bool> UpdateAsync(User userDto)
+        public async Task<bool> UpdateAsync(UserDomainEntity userDto)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> CreateAsync(User userDto)
+        public async Task<bool> CreateAsync(UserDomainEntity userDto)
         {
             try
             {
@@ -59,7 +59,7 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> DeleteAsync(User userDto)
+        public async Task<bool> DeleteAsync(UserDomainEntity userDto)
         {
             try
             {

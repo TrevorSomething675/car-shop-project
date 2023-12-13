@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MainTz.DataBase\MainTz.DataBase.csproj" />
+    <ProjectReference Include="..\MainTa.Database\MainTz.Database.csproj" />
   </ItemGroup>
 
 </Project>
