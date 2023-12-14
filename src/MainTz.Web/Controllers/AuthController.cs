@@ -1,11 +1,10 @@
 ﻿using MainTz.Application.Models.UserEntities;
 using MainTz.Application.Services;
-using MainTz.Extensions.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
-using AutoMapper;
-using MainTz.Database.Entities;
 using FluentValidation;
+using AutoMapper;
+using MainTz.Application.Models.SittingsModels;
 
 namespace MainTz.Web.Controllers
 {

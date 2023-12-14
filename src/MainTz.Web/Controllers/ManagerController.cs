@@ -27,21 +27,21 @@ namespace MainTz.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateCar(CarRequest carRequest)
         {
-            var carDomainEntity = _mapper.Map<CarDomainEntity>(carRequest);
+            var carDomainEntity = _mapper.Map<Car>(carRequest);
             var result = await _carService.CreateCar(carDomainEntity);
             return RedirectToAction("Index");
         }
         [HttpPost]
         public async Task<IActionResult> DeleteCar(CarRequest carRequest)
         {
-            var carDomainEntity = _mapper.Map<CarDomainEntity>(carRequest);
+            var carDomainEntity = _mapper.Map<Car>(carRequest);
             var result = await _carService.DeleteCar(carDomainEntity);
             return RedirectToAction("Index");
         }
         [HttpPost]
         public async Task<IActionResult> UpdateCar(CarRequest carRequest)
         {
-            var carDomainEntity = _mapper.Map<CarDomainEntity>(carRequest);
+            var carDomainEntity = _mapper.Map<Car>(carRequest);
             var result = await _carService.UpdateCar(carDomainEntity);
             return RedirectToAction("Index");
         }

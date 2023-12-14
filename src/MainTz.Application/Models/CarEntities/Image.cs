@@ -1,10 +1,10 @@
 ﻿namespace MainTz.Application.Models.CarEntities
 {
-    public class ImageDomainEntity
+    public class Image
     {
         public string Name { get; set; }
         public byte[] File { get; set; }
         public int CarId { get; set; }
-        public CarDomainEntity Car { get; set; }
+        public Car Car { get; set; }
     }
 }

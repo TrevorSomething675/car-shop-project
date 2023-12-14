@@ -5,33 +5,37 @@ using Microsoft.IdentityModel.Tokens;
 using MainTz.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Application.Services;
-using MainTz.Extensions.Models;
+using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using MainTz.Web.Middleware;
-using MainTz.Web.Mappings;
-using MainTz.Extensions;
-using System.Text;
-using MainTz.Database.Entities;
-using FluentValidation;
 using MainTz.Web.ViewModels;
 using MainTz.Web.Validators;
+using MainTz.Web.Mappings;
+using FluentValidation;
+using System.Text;
+using MainTz.Application.Models.SittingsModels;
 
 namespace MainTz.Web
 {
     public class Startup
     {
-		DataBaseSettings dbSettings = Settings.Load<DataBaseSettings>("DataBaseSettings");
-        JwtAuthSettings authSettings = Settings.Load<JwtAuthSettings>("JwtAuthSettings");
+        DataBaseSettings _dbSettings;
+        JwtAuthSettings _authSettings;
+		public Startup(IConfiguration configuration)
+        {
+			_authSettings = configuration.GetSection(JwtAuthSettings.JwtAuthPosition).Get<JwtAuthSettings>();
+			_dbSettings = configuration.GetSection(DataBaseSettings.DataBasePosition).Get<DataBaseSettings>();
+		}
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MainContext>(options =>
             {
-                options.UseNpgsql(dbSettings.ConnectionString);
+                options.UseNpgsql(_dbSettings.ConnectionString);
             });
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICarRepository, CarRepository>();
-            services.AddTransient<ITokenService, TokenService>();
-            services.AddScoped<IUserService, UserService>();
+			services.AddTransient<ITokenService>(provider => new TokenService(_authSettings));
+			services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICarService, CarService>();
             services.AddScoped<IValidator<RegisterFormRequest>, RegisterFormValidator>();
 
@@ -51,11 +55,11 @@ namespace MainTz.Web
             	options.TokenValidationParameters = new TokenValidationParameters
             	{
             		ValidateIssuer = true,
-            		ValidIssuer = authSettings.Issuer,
+            		ValidIssuer = _authSettings.Issuer,
             		ValidateAudience = true,
-            		ValidAudience = authSettings.Audience,
+            		ValidAudience = _authSettings.Audience,
             		ValidateLifetime = true,
-            		IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authSettings.Key)),
+            		IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authSettings.Key)),
             		ValidateIssuerSigningKey = true,
             	};
             });

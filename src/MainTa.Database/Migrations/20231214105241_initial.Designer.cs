@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MainTz.Database.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20231213075239_initial")]
+    [Migration("20231214105241_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -66,6 +66,10 @@ namespace MainTz.Database.Migrations
 
                     b.Property<int>("ModelId")
                         .HasColumnType("integer");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

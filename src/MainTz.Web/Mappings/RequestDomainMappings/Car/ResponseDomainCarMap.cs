@@ -8,9 +8,9 @@ namespace MainTz.Infrastructure.Mappings.RequestDomainMappings.Car
     {
         public ResponseDomainCarMap()
         {
-            CreateMap<CarDomainEntity, CarResponse>();
+            CreateMap<Application.Models.CarEntities.Car, CarResponse>();
 
-            CreateMap<CarResponse, CarDomainEntity>();
+            CreateMap<CarResponse, Application.Models.CarEntities.Car>();
         }
     }
 }

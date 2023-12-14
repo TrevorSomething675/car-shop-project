@@ -8,9 +8,9 @@ namespace MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car
     {
         public DomainDbEntityCarMap()
         {
-            CreateMap<CarDomainEntity, CarEntity>();
+            CreateMap<Application.Models.CarEntities.Car, CarEntity>();
 
-            CreateMap<CarEntity, CarDomainEntity>();
+            CreateMap<CarEntity, Application.Models.CarEntities.Car>();
         }
     }
 }

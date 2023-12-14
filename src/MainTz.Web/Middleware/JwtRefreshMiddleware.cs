@@ -1,6 +1,6 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
+using MainTz.Application.Models.SittingsModels;
 using MainTz.Application.Services;
-using MainTz.Extensions.Models;
 
 namespace MainTz.Web.Middleware
 {
@@ -30,7 +30,8 @@ namespace MainTz.Web.Middleware
 
                     if (!string.IsNullOrEmpty(newRefreshToken))
                     {
-                        var refreshTokenModel = new TokensModel { 
+                        var refreshTokenModel = new TokensModel 
+                        { 
                             RefreshToken = newRefreshToken, 
                             AccessToken = _tokenService.CreateAccessToken(role),
                             Role = role 

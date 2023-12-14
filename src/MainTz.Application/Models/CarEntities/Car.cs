@@ -1,6 +1,6 @@
 ﻿namespace MainTz.Application.Models.CarEntities
 {
-    public class CarDomainEntity
+    public class Car
     {
         public int? Id { get; set; }
         public string Name { get; set; }
