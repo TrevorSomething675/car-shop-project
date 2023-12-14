@@ -2,7 +2,7 @@
 {
     public interface ITokenService
     {
-        public string CreateAccessToken(string roles);
-        public string CreateRefreshToken(string roles);
+        public string CreateAccessToken(string role);
+        public string CreateRefreshToken(string role);
     }
 }

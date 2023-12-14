@@ -1,5 +1,4 @@
-﻿using MainTz.Application.Models.CarEntities;
-using MainTz.Database.Entities;
+﻿using MainTz.Database.Entities;
 using AutoMapper;
 
 namespace MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car

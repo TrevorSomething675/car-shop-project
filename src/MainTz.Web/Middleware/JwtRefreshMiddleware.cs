@@ -23,7 +23,7 @@ namespace MainTz.Web.Middleware
                 var jwtTokenAccessToken = handler.ReadJwtToken(accessToken);
                 var accessTokenValidTo = jwtTokenAccessToken.ValidTo;
 
-                if (accessTokenValidTo > DateTime.Now)
+                if (accessTokenValidTo < DateTime.Now)
                 {
 					var role = context.Request.Cookies["role"];
                     var newRefreshToken = _tokenService.CreateRefreshToken(role);

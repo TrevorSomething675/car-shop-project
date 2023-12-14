@@ -19,6 +19,8 @@ namespace MainTz.Infrastructure.Repositories
         public async Task<UserEntity> GetUserByName(string name)
         {
             var user = await _mainContext.Users
+                .Include(user => user.Role)
+                .Include(user => user.Cars)
                 .FirstOrDefaultAsync(user => user.Name == name);
             return user;
         }

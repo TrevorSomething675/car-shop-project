@@ -15,9 +15,12 @@ namespace MainTz.Web.Controllers
         private readonly IUserService _usersService;
         private readonly ILogger<AuthController> _logger;
         private readonly IValidator<RegisterFormRequest> _registerFormValidator;
-        public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper, ILogger<AuthController> logger, IValidator<RegisterFormRequest> registerFormValidator)
+		private readonly IValidator<LoginFormRequest> _loginFormValidator;
+		public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper, ILogger<AuthController> logger, 
+            IValidator<RegisterFormRequest> registerFormValidator, IValidator<LoginFormRequest> loginFormValidator)
         {
             _registerFormValidator = registerFormValidator;
+            _loginFormValidator = loginFormValidator;
             _tokenService = tokenService;
             _usersService = usersService;
             _mapper = mapper;
@@ -60,26 +63,21 @@ namespace MainTz.Web.Controllers
         [HttpPost]
         public async Task<IResult> Login(LoginFormRequest loginFormRequest)
         {
-            if (!ModelState.IsValid)
-                return Results.BadRequest("Wrong Data");
-            try
-            {
-                var userDomain = _mapper.Map<User>(loginFormRequest);
-                var user = await _usersService.GetUserByNameAsync(loginFormRequest.Name);
+            var loginFormModel = await _loginFormValidator.ValidateAsync(loginFormRequest);
 
-                if (user == null)
-                    return Results.BadRequest("Пользователя не существует");
-                if (loginFormRequest.Password != user.Password)
-                    return Results.BadRequest("Неверный пароль");
+			if (loginFormModel.IsValid)
+				return Results.BadRequest($"{string.Join(" ", loginFormModel.Errors.Select(err => err.ErrorMessage))}");
 
-                //var tokens = await GetToken(user);
+            var user = await _usersService.GetUserByNameAsync(loginFormRequest.Name);
 
-                return Results.Json("Jija"/*tokens*/);
-            }
-            catch (Exception ex)
-            {
-                return Results.BadRequest($"{ex.Message}");
-            }
+            if (user == null)
+                return Results.BadRequest("Пользователя не существует");
+            if (loginFormRequest.Password != user.Password)
+                return Results.BadRequest("Неверный пароль");
+
+            var tokens = await GetToken(user.Role.RoleName);
+
+            return Results.Json(tokens);
         }
         /// <summary>
         /// Получение разметки с формой регистрации
@@ -103,7 +101,7 @@ namespace MainTz.Web.Controllers
             var registerFormModel = await _registerFormValidator.ValidateAsync(registerFormRequest);
 
             if (!registerFormModel.IsValid)
-                return Results.BadRequest($"{string.Join(" ", registerFormModel.Errors.Select(err=>err.ErrorMessage))}");
+                return Results.BadRequest($"{string.Join(" ", registerFormModel.Errors.Select(err => err.ErrorMessage))}");
             if (registerFormRequest.Password != registerFormRequest.ConfirmPassword)
                 return Results.BadRequest("Wrong Password");
 
@@ -115,7 +113,7 @@ namespace MainTz.Web.Controllers
             var userDomainEntity = _mapper.Map<User>(registerFormRequest);
             await _usersService.CreateAsync(userDomainEntity);
             var result = await Login(registerFormRequest);
-
+            
             return result;
         }
     }

@@ -17,9 +17,9 @@ loginForm.addEventListener('submit', function (event) {
     })
     .then(data => {
         if (data != '') {
-            document.cookie = `accessToken=${data.value.accessToken}`;
-            document.cookie = `refreshToken=${data.value.refreshToken}`;
-            document.cookie = `role=${data.value.role}`;
+            document.cookie = `accessToken=${data.value.accessToken}; path=/`;
+            document.cookie = `refreshToken=${data.value.refreshToken}; path=/`;
+            document.cookie = `role=${data.value.role}; path=/`;
             console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
             document.location.pathname = `${data.value.role}/Index`;
         } else {

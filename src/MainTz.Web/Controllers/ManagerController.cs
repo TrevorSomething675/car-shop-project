@@ -1,9 +1,9 @@
-﻿using MainTz.Web.ViewModels.CarViewModels;
+﻿using MainTz.Application.Models.CarEntities;
+using MainTz.Web.ViewModels.CarViewModels;
 using Microsoft.AspNetCore.Authorization;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using MainTz.Application.Models.CarEntities;
 
 namespace MainTz.Web.Controllers
 {
@@ -21,7 +21,7 @@ namespace MainTz.Web.Controllers
         public async Task<IActionResult> Index()
         {
             var carsDomainEntity = await _carService.GetCars();
-            var carsResponse = _mapper.Map<CarResponse>(carsDomainEntity);
+            var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainEntity);
             return View(carsResponse);
         }
         [HttpPost]

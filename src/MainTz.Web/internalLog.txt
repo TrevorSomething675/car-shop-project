@@ -838,3 +838,276 @@
 2023-12-14 13:53:34.6537 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
 2023-12-14 13:53:34.6685 Info Configuration initialized.
 2023-12-14 13:53:34.6685 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:00:32.7109 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:00:32.7320 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:00:32.7320 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:00:32.7503 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:00:32.7620 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:00:32.7777 Info Configuration initialized.
+2023-12-14 16:00:32.7777 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:04:07.4642 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:04:07.4642 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:04:07.4642 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:04:07.4773 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:04:07.4773 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:04:07.4990 Info Configuration initialized.
+2023-12-14 16:04:07.4990 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:04:16.5621 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:04:16.5868 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:04:16.5868 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:04:16.6187 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:04:16.6326 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:04:16.6500 Info Configuration initialized.
+2023-12-14 16:04:16.6500 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:04:44.0215 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:04:44.0422 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:04:44.0422 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:04:44.0608 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:04:44.0729 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:04:44.0885 Info Configuration initialized.
+2023-12-14 16:04:44.0885 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:05:09.0608 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:05:09.0732 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:05:09.0732 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:05:09.0969 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:05:09.1137 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:05:09.1308 Info Configuration initialized.
+2023-12-14 16:05:09.1317 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:06:07.0905 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:06:07.1053 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:06:07.1053 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:06:07.1309 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:06:07.1482 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:06:07.1690 Info Configuration initialized.
+2023-12-14 16:06:07.1690 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:07:55.7933 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:07:55.8029 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:07:55.8029 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:07:55.8029 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:07:55.8293 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:07:55.8434 Info Configuration initialized.
+2023-12-14 16:07:55.8434 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:08:36.6354 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:08:36.6540 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:08:36.6540 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:08:36.6736 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:08:36.6850 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:08:36.7035 Info Configuration initialized.
+2023-12-14 16:08:36.7035 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:10:38.3676 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:10:38.3903 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:10:38.3903 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:10:38.4099 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:10:38.4253 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:10:38.4407 Info Configuration initialized.
+2023-12-14 16:10:38.4407 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:11:26.2918 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:11:26.3051 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:11:26.3051 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:11:26.3250 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:11:26.3376 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:11:26.3593 Info Configuration initialized.
+2023-12-14 16:11:26.3593 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:12:40.5574 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:12:40.5828 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:12:40.5828 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:12:40.6603 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:12:40.6719 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:12:40.6867 Info Configuration initialized.
+2023-12-14 16:12:40.6867 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:15:27.9144 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:15:27.9332 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:15:27.9332 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:15:27.9524 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:15:27.9625 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:15:27.9763 Info Configuration initialized.
+2023-12-14 16:15:27.9763 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:16:31.6262 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:16:31.6403 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:16:31.6403 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:16:31.6704 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:16:31.6871 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:16:31.7133 Info Configuration initialized.
+2023-12-14 16:16:31.7133 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:16:59.2767 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:16:59.2896 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:16:59.2896 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:16:59.3097 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:16:59.3218 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:16:59.3382 Info Configuration initialized.
+2023-12-14 16:16:59.3382 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:18:20.8216 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:18:20.8427 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:18:20.8427 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:18:20.8607 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:18:20.8738 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:18:20.8928 Info Configuration initialized.
+2023-12-14 16:18:20.8928 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:20:55.7916 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:20:55.8036 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:20:55.8036 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:20:55.8228 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:20:55.8355 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:20:55.8529 Info Configuration initialized.
+2023-12-14 16:20:55.8529 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:34:54.7323 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:34:54.7453 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:34:54.7453 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:34:54.7665 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:34:54.7797 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:34:54.7956 Info Configuration initialized.
+2023-12-14 16:34:54.7956 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:35:21.7726 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:35:21.7917 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:35:21.7917 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:35:21.8090 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:35:21.8238 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:35:21.8376 Info Configuration initialized.
+2023-12-14 16:35:21.8376 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:36:43.6794 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:36:43.6994 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:36:43.6994 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:36:43.7197 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:36:43.7378 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:36:43.7571 Info Configuration initialized.
+2023-12-14 16:36:43.7571 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:40:03.2736 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:40:03.2931 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:40:03.2931 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:40:03.3094 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:40:03.3199 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:40:03.3199 Info Configuration initialized.
+2023-12-14 16:40:03.3348 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:41:27.2304 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:41:27.2304 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:41:27.2409 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:41:27.2569 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:41:27.2569 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:41:27.2816 Info Configuration initialized.
+2023-12-14 16:41:27.2816 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:42:39.7967 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:42:39.8115 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:42:39.8115 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:42:39.8325 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:42:39.8453 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:42:39.8624 Info Configuration initialized.
+2023-12-14 16:42:39.8624 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:48:13.9149 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:48:13.9149 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:48:13.9149 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:48:13.9865 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:48:13.9982 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:48:14.0120 Info Configuration initialized.
+2023-12-14 16:48:14.0120 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:50:08.4966 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:50:08.5084 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:50:08.5084 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:50:08.5261 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:50:08.5394 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:50:08.5639 Info Configuration initialized.
+2023-12-14 16:50:08.5639 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:51:37.0103 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:51:37.0226 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:51:37.0226 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:51:37.0384 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:51:37.0384 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:51:37.0623 Info Configuration initialized.
+2023-12-14 16:51:37.0623 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:54:09.3978 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:54:09.4236 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:54:09.4236 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:54:09.4499 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:54:09.4697 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:54:09.4950 Info Configuration initialized.
+2023-12-14 16:54:09.4950 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:56:08.0720 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 16:56:08.0931 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 16:56:08.0931 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 16:56:08.1414 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 16:56:08.1531 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 16:56:08.1714 Info Configuration initialized.
+2023-12-14 16:56:08.1714 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:05:11.6052 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:05:11.6246 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:05:11.6246 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:05:11.6417 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:05:11.6521 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:05:11.6665 Info Configuration initialized.
+2023-12-14 17:05:11.6665 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:06:02.1385 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:06:02.1520 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:06:02.1520 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:06:02.2257 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:06:02.2416 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:06:02.2612 Info Configuration initialized.
+2023-12-14 17:06:02.2612 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:07:05.6712 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:07:05.6815 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:07:05.6815 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:07:05.6995 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:07:05.7117 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:07:05.7290 Info Configuration initialized.
+2023-12-14 17:07:05.7290 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:08:12.1180 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:08:12.1369 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:08:12.1369 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:08:12.1530 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:08:12.1685 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:08:12.1824 Info Configuration initialized.
+2023-12-14 17:08:12.1824 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:10:02.9201 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:10:02.9358 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:10:02.9358 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:10:02.9602 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:10:02.9747 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:10:02.9937 Info Configuration initialized.
+2023-12-14 17:10:02.9937 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:11:50.0745 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:11:50.0928 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:11:50.0928 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:11:50.1105 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:11:50.1258 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:11:50.1417 Info Configuration initialized.
+2023-12-14 17:11:50.1417 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:13:05.7406 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:13:05.7406 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:13:05.7576 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:13:05.7818 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:13:05.7996 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:13:05.8214 Info Configuration initialized.
+2023-12-14 17:13:05.8214 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:15:08.1389 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:15:08.1550 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:15:08.1550 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:15:08.1692 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:15:08.1790 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:15:08.1790 Info Configuration initialized.
+2023-12-14 17:15:08.1790 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:15:36.5849 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:15:36.6103 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:15:36.6103 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:15:36.6558 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:15:36.6713 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:15:36.6899 Info Configuration initialized.
+2023-12-14 17:15:36.6899 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:16:13.1170 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:16:13.1170 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:16:13.1170 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:16:13.1401 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:16:13.1502 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:16:13.1645 Info Configuration initialized.
+2023-12-14 17:16:13.1645 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:21:32.5585 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:21:32.5691 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:21:32.5691 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:21:32.5908 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:21:32.6052 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:21:32.6263 Info Configuration initialized.
+2023-12-14 17:21:32.6263 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:22:10.0551 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-14 17:22:10.0785 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-14 17:22:10.0785 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-14 17:22:10.0991 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-14 17:22:10.1169 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-14 17:22:10.1430 Info Configuration initialized.
+2023-12-14 17:22:10.1430 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\NLog.config

@@ -1,4 +1,6 @@
-﻿namespace MainTz.Application.Models.UserEntities
+﻿using MainTz.Application.Models.CarEntities;
+
+namespace MainTz.Application.Models.UserEntities
 {
     public class User
     {
@@ -7,8 +9,10 @@
         public string Email { get; set; }
         public string Password { get; set; }
 
-        public ICollection<int> CarsId { get; set; }
-        public ICollection<string> RolesName { get; set; }
-        public ICollection<int> NotificationsId { get; set; }
+        public int RoleId { get; set; }
+		public Role Role { get; set; }
+
+		public ICollection<Car> Cars { get; set; }
+        public ICollection<Notification> Notifications { get; set; }
     }
 }

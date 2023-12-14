@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MainTz.Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4cc8c448d5eb8754f3f861000c7ea77708b6270")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c596c9e768a743df837f66a09bda1da432630a2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MainTz.Database")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MainTz.Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

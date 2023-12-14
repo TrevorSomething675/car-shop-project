@@ -38,6 +38,7 @@ namespace MainTz.Web
 			services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICarService, CarService>();
             services.AddScoped<IValidator<RegisterFormRequest>, RegisterFormValidator>();
+            services.AddScoped<IValidator<LoginFormRequest>, LoginFormValidator>();
 
             services.AddDomainAppAutoMapperConfiguration();
             services.AddControllersWithViews();
@@ -97,14 +98,14 @@ namespace MainTz.Web
                             {
                                 Name = "Admin",
                                 Email = "Admin@mail.ru",
-                                Password = "123123123",
+                                Password = "123123123Qq",
                                 Role = context.Roles.Where(role => role.RoleName == "Admin").FirstOrDefault()
                             },
                             new UserEntity
                             {
                                 Name = "Manager",
                                 Email = "Manager@mail.ru",
-                                Password = "123123123",
+                                Password = "123123123Qq",
                                 Role = context.Roles.Where(role => role.RoleName == "Manager").FirstOrDefault()
                             }
                         };
@@ -190,7 +191,7 @@ namespace MainTz.Web
             {
                 endpoints.MapControllerRoute(
 	            name: "default",
-	            pattern: "{controller=Auth}/{action=Register}/{id?}");
+	            pattern: "{controller=Auth}/{action=Register}");
 			});
         }
     }

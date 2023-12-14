@@ -220,9 +220,9 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.genruntimeconfig.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\ref\MainTz.Web.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\nlog.config
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\appsettings.Development.json
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\appsettings.json
-C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\nlog.config
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Web.staticwebassets.runtime.json
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Web.exe
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Web.deps.json
@@ -262,13 +262,11 @@ C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Application.dll
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Core.dll
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Database.dll
-C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Extensions.dll
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Infrastructure.dll
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Database.pdb
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Application.pdb
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Core.pdb
 C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Infrastructure.pdb
-C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\MainTz.Extensions.pdb
 C:\E-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.csproj.AssemblyReference.cache
 C:\E-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\E-CarShop\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.AssemblyInfoInputs.cache

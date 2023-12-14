@@ -17,7 +17,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MainTa.Database\MainTz.Database.csproj" />
     <ProjectReference Include="..\MainTz.Application\MainTz.Application.csproj" />
-    <ProjectReference Include="..\MainTz.Extensions\MainTz.Extensions.csproj" />
   </ItemGroup>
 
 </Project>
