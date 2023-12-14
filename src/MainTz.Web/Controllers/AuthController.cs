@@ -65,7 +65,7 @@ namespace MainTz.Web.Controllers
         {
             var loginFormModel = await _loginFormValidator.ValidateAsync(loginFormRequest);
 
-			if (loginFormModel.IsValid)
+			if (!loginFormModel.IsValid)
 				return Results.BadRequest($"{string.Join(" ", loginFormModel.Errors.Select(err => err.ErrorMessage))}");
 
             var user = await _usersService.GetUserByNameAsync(loginFormRequest.Name);
