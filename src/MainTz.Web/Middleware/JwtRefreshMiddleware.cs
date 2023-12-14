@@ -1,5 +1,5 @@
-﻿using System.IdentityModel.Tokens.Jwt;
-using MainTz.Application.Models.SittingsModels;
+﻿using MainTz.Application.Models.SittingsModels;
+using System.IdentityModel.Tokens.Jwt;
 using MainTz.Application.Services;
 
 namespace MainTz.Web.Middleware
