@@ -22,11 +22,17 @@ namespace MainTz.Infrastructure.Services
         }
         public async Task<User> GetUserByNameAsync(string name)
         {
-            var userEntity = await _userRepository.GetUserByName(name);
+            var userEntity = await _userRepository.GetUserByNameAsync(name);
             var userDomainEntity = _mapper.Map<User>(userEntity);
             return userDomainEntity;
         }
-        public async Task<List<User>> GetUsersAsync()
+		public async Task<User> GetUserByEmailAsync(string email)
+		{
+			var userEntity = await _userRepository.GetUserByEmailAsync(email);
+			var userDomainEntity = _mapper.Map<User>(userEntity);
+			return userDomainEntity;
+		}
+		public async Task<List<User>> GetUsersAsync()
         {
             var usersEntity = await _userRepository.GetUsers();
             var usersDomainEntity = _mapper.Map<List<User>>(usersEntity);

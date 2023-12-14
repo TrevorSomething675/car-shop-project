@@ -1,10 +1,10 @@
-﻿using MainTz.Application.Models.UserEntities;
+﻿using MainTz.Application.Models.SittingsModels;
+using MainTz.Application.Models.UserEntities;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using FluentValidation;
 using AutoMapper;
-using MainTz.Application.Models.SittingsModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -61,7 +61,7 @@ namespace MainTz.Web.Controllers
         /// <param name="userDto">Модель, которая приходит с фронта</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IResult> Login(LoginFormRequest loginFormRequest)
+        public async Task<IResult> LoginNormal(LoginFormRequest loginFormRequest)
         {
             var loginFormModel = await _loginFormValidator.ValidateAsync(loginFormRequest);
 
@@ -79,11 +79,30 @@ namespace MainTz.Web.Controllers
 
             return Results.Json(tokens);
         }
-        /// <summary>
-        /// Получение разметки с формой регистрации
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
+        [HttpPost]
+		public async Task<IResult> LoginMail(LoginFormRequest loginFormRequest)
+		{
+			var loginFormModel = await _loginFormValidator.ValidateAsync(loginFormRequest);
+
+			if (!loginFormModel.IsValid)
+				return Results.BadRequest($"{string.Join(" ", loginFormModel.Errors.Select(err => err.ErrorMessage))}");
+
+			var user = await _usersService.GetUserByEmailAsync(loginFormRequest.Name);
+
+			if (user == null)
+				return Results.BadRequest("Пользователя не существует");
+			if (loginFormRequest.Password != user.Password)
+				return Results.BadRequest("Неверный пароль");
+
+			var tokens = await GetToken(user.Role.RoleName);
+
+			return Results.Json(tokens);
+		}
+		/// <summary>
+		/// Получение разметки с формой регистрации
+		/// </summary>
+		/// <returns></returns>
+		[HttpGet]
         public async Task<IActionResult> Register()
         {
             return View();
@@ -112,7 +131,7 @@ namespace MainTz.Web.Controllers
 
             var userDomainEntity = _mapper.Map<User>(registerFormRequest);
             await _usersService.CreateAsync(userDomainEntity);
-            var result = await Login(registerFormRequest);
+            var result = await LoginNormal(registerFormRequest);
             
             return result;
         }

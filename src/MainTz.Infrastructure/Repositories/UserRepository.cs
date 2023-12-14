@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
+using System.Xml.Linq;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -16,7 +17,7 @@ namespace MainTz.Infrastructure.Repositories
             _mainContext = mainContext;
         }
 
-        public async Task<UserEntity> GetUserByName(string name)
+        public async Task<UserEntity> GetUserByNameAsync(string name)
         {
             var user = await _mainContext.Users
                 .Include(user => user.Role)
@@ -24,8 +25,15 @@ namespace MainTz.Infrastructure.Repositories
                 .FirstOrDefaultAsync(user => user.Name == name);
             return user;
         }
-
-        public async Task<List<UserEntity>> GetUsers()
+		public async Task<UserEntity> GetUserByEmailAsync(string email)
+		{
+			var user = await _mainContext.Users
+	            .Include(user => user.Role)
+	            .Include(user => user.Cars)
+	            .FirstOrDefaultAsync(user => user.Email == email);
+			return user;
+		}
+		public async Task<List<UserEntity>> GetUsers()
         {
             var users = await _mainContext.Users.ToListAsync();
             return users;
@@ -48,5 +56,5 @@ namespace MainTz.Infrastructure.Repositories
             _mainContext.Users.Remove(user);
             await _mainContext.SaveChangesAsync();
         }
-    }
+	}
 }
