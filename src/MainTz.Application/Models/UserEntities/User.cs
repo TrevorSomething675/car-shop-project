@@ -8,7 +8,7 @@
         public string Password { get; set; }
 
         public ICollection<int> CarsId { get; set; }
-        public ICollection<int> RolesId { get; set; }
+        public ICollection<string> RolesName { get; set; }
         public ICollection<int> NotificationsId { get; set; }
     }
 }

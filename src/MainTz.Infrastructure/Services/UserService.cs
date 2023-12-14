@@ -10,6 +10,7 @@ namespace MainTz.Infrastructure.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly IRoleRepository _roleRepository;
         private readonly ILogger<UserService> _logger;
         private readonly IMapper _mapper;
 
@@ -50,7 +51,8 @@ namespace MainTz.Infrastructure.Services
             try
             {
                 var userEntity = _mapper.Map<UserEntity>(user);
-                await _userRepository.Create(userEntity);
+                userEntity.Role = await _roleRepository.GetRoleByNameAsync("User");
+				await _userRepository.Create(userEntity);
                 return true;
             }
             catch (Exception ex)

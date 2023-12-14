@@ -12,7 +12,7 @@ namespace MainTz.Infrastructure.Repositories
 		{
 			_mainContext = mainContext;
 		}
-		public async Task<RoleEntity> GetRoleByName(string roleName)
+		public async Task<RoleEntity> GetRoleByNameAsync(string roleName)
 		{
 			var resultRole = await _mainContext.Roles.FirstOrDefaultAsync(role => role.RoleName == roleName);
 			return resultRole;

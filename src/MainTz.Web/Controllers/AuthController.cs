@@ -113,7 +113,6 @@ namespace MainTz.Web.Controllers
             if (user != null)
                 return Results.BadRequest("Пользователь уже существует");
 
-            var role = 
             var userDomainEntity = _mapper.Map<User>(registerFormRequest);
             await _usersService.CreateAsync(userDomainEntity);
             var result = await Login(registerFormRequest);

@@ -4,6 +4,6 @@ namespace MainTz.Application.Repositories
 {
 	public interface IRoleRepository
 	{
-		public Task<RoleEntity> GetRoleByName(string roleName);
+		public Task<RoleEntity> GetRoleByNameAsync(string roleName);
 	}
 }
