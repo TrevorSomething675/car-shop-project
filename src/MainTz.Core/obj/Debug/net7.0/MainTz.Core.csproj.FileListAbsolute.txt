@@ -45,3 +45,15 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Core\obj\Debug\net7.
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Core\obj\Debug\net7.0\refint\MainTz.Core.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Core\obj\Debug\net7.0\MainTz.Core.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Core\obj\Debug\net7.0\ref\MainTz.Core.dll
+C:\E-CarShop\src\MainTz.Core\bin\Debug\net7.0\MainTz.Core.deps.json
+C:\E-CarShop\src\MainTz.Core\bin\Debug\net7.0\MainTz.Core.dll
+C:\E-CarShop\src\MainTz.Core\bin\Debug\net7.0\MainTz.Core.pdb
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\MainTz.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\MainTz.Core.AssemblyInfoInputs.cache
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\MainTz.Core.AssemblyInfo.cs
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\MainTz.Core.csproj.CoreCompileInputs.cache
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\MainTz.Core.sourcelink.json
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\MainTz.Core.dll
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\refint\MainTz.Core.dll
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\MainTz.Core.pdb
+C:\E-CarShop\src\MainTz.Core\obj\Debug\net7.0\ref\MainTz.Core.dll

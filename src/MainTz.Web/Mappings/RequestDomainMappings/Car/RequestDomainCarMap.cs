@@ -8,9 +8,9 @@ namespace MainTz.Infrastructure.Mappings.RequestDomainMappings.Car
     {
         public RequestDomainCarMap()
         {
-            CreateMap<UserResponse, UserDomainEntity>();
+            CreateMap<UserResponse, Application.Models.UserEntities.User>();
 
-            CreateMap<UserDomainEntity, UserResponse>();
+            CreateMap<Application.Models.UserEntities.User, UserResponse>();
         }
     }
 }

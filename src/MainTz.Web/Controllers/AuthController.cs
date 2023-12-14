@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
 using MainTz.Database.Entities;
+using FluentValidation;
 
 namespace MainTz.Web.Controllers
 {
@@ -14,8 +15,10 @@ namespace MainTz.Web.Controllers
         private readonly ITokenService _tokenService;
         private readonly IUserService _usersService;
         private readonly ILogger<AuthController> _logger;
-        public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper, ILogger<AuthController> logger)
+        private readonly IValidator<RegisterFormRequest> _registerFormValidator;
+        public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper, ILogger<AuthController> logger, IValidator<RegisterFormRequest> registerFormValidator)
         {
+            _registerFormValidator = registerFormValidator;
             _tokenService = tokenService;
             _usersService = usersService;
             _mapper = mapper;
@@ -62,7 +65,7 @@ namespace MainTz.Web.Controllers
                 return Results.BadRequest("Wrong Data");
             try
             {
-                var userDomain = _mapper.Map<UserDomainEntity>(loginFormRequest);
+                var userDomain = _mapper.Map<User>(loginFormRequest);
                 var user = await _usersService.GetUserByNameAsync(loginFormRequest.Name);
 
                 if (user == null)
@@ -98,8 +101,10 @@ namespace MainTz.Web.Controllers
         [HttpPost]
         public async Task<IResult> Register(RegisterFormRequest registerFormRequest)
         {
-            if (!ModelState.IsValid)
-                return Results.BadRequest("Wrong Data");
+            var registerFormModel = await _registerFormValidator.ValidateAsync(registerFormRequest);
+
+            if (!registerFormModel.IsValid)
+                return Results.BadRequest($"{string.Join(" ", registerFormModel.Errors.Select(err=>err.ErrorMessage))}");
             if (registerFormRequest.Password != registerFormRequest.ConfirmPassword)
                 return Results.BadRequest("Wrong Password");
 
@@ -108,8 +113,8 @@ namespace MainTz.Web.Controllers
             if (user != null)
                 return Results.BadRequest("Пользователь уже существует");
 
-            registerFormRequest.Role = "User";
-            var userDomainEntity = _mapper.Map<UserDomainEntity>(registerFormRequest);
+            var role = 
+            var userDomainEntity = _mapper.Map<User>(registerFormRequest);
             await _usersService.CreateAsync(userDomainEntity);
             var result = await Login(registerFormRequest);
 

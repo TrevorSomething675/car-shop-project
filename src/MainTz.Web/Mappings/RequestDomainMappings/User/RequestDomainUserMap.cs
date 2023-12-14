@@ -8,7 +8,7 @@ namespace MainTz.Infrastructure.Mappings.RequestDomainMappings.User
     {
         public RequestDomainUserMap()
         {
-            CreateMap<UserDomainEntity, UserRequest>();
+            CreateMap<Application.Models.UserEntities.User, UserRequest>();
         }
     }
 }

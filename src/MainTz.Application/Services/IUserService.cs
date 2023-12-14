@@ -4,10 +4,10 @@ namespace MainTz.Application.Services
 {
     public interface IUserService
     {
-        public Task<UserDomainEntity> GetUserByNameAsync(string name);
-        public Task<List<UserDomainEntity>> GetUsersAsync();
-        public Task<bool> CreateAsync(UserDomainEntity userDto);
-        public Task<bool> DeleteAsync(UserDomainEntity userDto);
-        public Task<bool> UpdateAsync(UserDomainEntity userDto);
+        public Task<User> GetUserByNameAsync(string name);
+        public Task<List<User>> GetUsersAsync();
+        public Task<bool> CreateAsync(User user);
+        public Task<bool> DeleteAsync(User user);
+        public Task<bool> UpdateAsync(User user);
     }
 }

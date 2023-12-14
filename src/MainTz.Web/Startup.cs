@@ -12,6 +12,9 @@ using MainTz.Web.Mappings;
 using MainTz.Extensions;
 using System.Text;
 using MainTz.Database.Entities;
+using FluentValidation;
+using MainTz.Web.ViewModels;
+using MainTz.Web.Validators;
 
 namespace MainTz.Web
 {
@@ -30,6 +33,7 @@ namespace MainTz.Web
             services.AddTransient<ITokenService, TokenService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICarService, CarService>();
+            services.AddScoped<IValidator<RegisterFormRequest>, RegisterFormValidator>();
 
             services.AddDomainAppAutoMapperConfiguration();
             services.AddControllersWithViews();
