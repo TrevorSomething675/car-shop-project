@@ -1,19 +1,27 @@
 ﻿const registerForm = document.querySelector('#RegisterForm');
 registerForm.addEventListener('submit', function (event) {
     event.preventDefault();
+
     fetch(registerForm.action, {
         method: registerForm.method,
         body: new FormData(registerForm)
     })
         .then(response => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                console.log('Ошибка при получении запроса');
-            }
+            return response.json();
         })
         .then(data => {
-            if (data != '') {
+            if (data.errorMessage != '' && data.errorMessage !== undefined) {
+                $.ajax({
+                    url: "Auth/ErrorViewPartial",
+                    type: 'GET',
+                    data: { error: data.errorMessage },
+                    success: function (response) {
+                        $('#RegisterErrorContainer').html(response);
+                        return;
+                    },
+                })
+            }
+            if (data != '' && response.Ok) {
                 document.cookie = `accessToken=${data.value.accessToken}`;
                 document.cookie = `refreshToken=${data.value.refreshToken}`;
                 document.cookie = `role=${data.value.role}`;

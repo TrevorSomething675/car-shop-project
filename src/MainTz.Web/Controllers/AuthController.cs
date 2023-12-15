@@ -139,9 +139,7 @@ namespace MainTz.Web.Controllers
             var registerFormModel = await _registerFormValidator.ValidateAsync(registerFormRequest);
 
             if (!registerFormModel.IsValid)
-                return Results.BadRequest($"{string.Join(" ", registerFormModel.Errors.Select(err => err.ErrorMessage))}");
-            if (registerFormRequest.Password != registerFormRequest.ConfirmPassword)
-                return Results.BadRequest("Wrong Password");
+                return Results.BadRequest(new ErrorViewModel { ErrorMessage = string.Join(" ", registerFormModel.Errors.Select(err => err.ErrorMessage))});
 
             var user = await _usersService.GetUserByNameAsync(registerFormRequest.Name);
 

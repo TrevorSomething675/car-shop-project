@@ -16,6 +16,9 @@
                     <div class="py-1">
                         <lable class="px-1">Повторите пароль: </lable> <input type="password" name="registerFormRequest.ConfirmPassword" class="w-100 py-1" /><br />
                     </div>
+                    <div id="RegisterErrorContainer">
+                        @await Html.PartialAsync("ErrorViewPartial")
+                    </div>
                     <a asp-controller="Auth" asp-action="Login" class="custom-btn-orange px-1">Уже зарегистрированы?</a>
                     <div class="py-1 d-flex justify-content-center">
                         <button type="submit" class="custom-btn-submit-form">Зарегистрироваться</button>
@@ -25,3 +28,5 @@
         </div>
     </div>
 </div>
+
+<script src="~/js/RegisterFormScript.js"></script>

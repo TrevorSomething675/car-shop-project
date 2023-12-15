@@ -53,6 +53,7 @@ body {
     border: 2px solid var(--dark-gray-color);
     border-radius: 5px;
     color: var(--light-text-color);
+    width: 300px;
 }
 
 .custom-btn-submit-form {
@@ -109,9 +110,4 @@ footer {
 
 .car-card-description {
     word-break:break-word;
-}
-
-.restorePasswordForm{
-    width:300px;
-    max-width: 300px;
 }
