@@ -11,20 +11,22 @@ namespace MainTz.Web.Controllers
     public class AuthController : Controller
     {
         private readonly IMapper _mapper;
-        private readonly ITokenService _tokenService;
+        private readonly IMailService _mailService;
         private readonly IUserService _usersService;
-        private readonly ILogger<AuthController> _logger;
+        private readonly ITokenService _tokenService;
+        private readonly IValidator<LoginFormRequest> _loginFormValidator;
         private readonly IValidator<RegisterFormRequest> _registerFormValidator;
-		private readonly IValidator<LoginFormRequest> _loginFormValidator;
-		public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper, ILogger<AuthController> logger, 
-            IValidator<RegisterFormRequest> registerFormValidator, IValidator<LoginFormRequest> loginFormValidator)
+        private readonly IValidator<RestoreEmailRequest> _retoreEmailValidator;
+        public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper, IMailService mailService,
+            IValidator<RegisterFormRequest> registerFormValidator, IValidator<LoginFormRequest> loginFormValidator, IValidator<RestoreEmailRequest> retoreEmailValidator)
         {
             _registerFormValidator = registerFormValidator;
+            _retoreEmailValidator = retoreEmailValidator;
             _loginFormValidator = loginFormValidator;
-            _tokenService = tokenService;
             _usersService = usersService;
+            _tokenService = tokenService;
+            _mailService = mailService;
             _mapper = mapper;
-            _logger = logger;
         }
         /// <summary>
         /// Получение токена из сервиса, путём отправки запроса с ролью
@@ -50,51 +52,68 @@ namespace MainTz.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Login()
         {
-            _logger.LogDebug("Log Debug");
-            _logger.LogTrace("Log Trace");
             return View();
         }
-        /// <summary>
-        /// Отправка формы логина, она возрвращает json, js код в FormScripts.js 
-        /// получает её и в зависимости от роли перенаправляет пользователя на страницу роли.
-        /// </summary>
-        /// <param name="userDto">Модель, которая приходит с фронта</param>
-        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> RestoreAccountOnEmail()
+        {
+            return View();
+        }
         [HttpPost]
+        public async Task<IResult> RestoreAccountOnEmail(RestoreEmailRequest restoreEmailRequest)
+        {
+            var restoreEmailValidator = _retoreEmailValidator.Validate(restoreEmailRequest);
+            if (!restoreEmailValidator.IsValid)
+                return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный адрес почты" });
+
+            //var isValidEmail = await _mailService.CheckEmailAsync("soalone999@mail.ru");
+            return Results.Json(new MessageViewModel { Message = "Если эта почта ассоциирована с пользователем, то на нее была отправлена инструкция по сбросу" });
+        }
+        [HttpGet]
+        public async Task<IActionResult> ErrorViewPartial(string error)
+        {
+            return PartialView("ErrorViewPartial", error);
+        }
+        [HttpGet]
+        public async Task<IActionResult> InfoViewPartial(string message)
+        {
+            return PartialView("InfoViewPartial", message);
+        }
+		/// <summary>
+		/// Отправка формы логина, она возрвращает json, js код в FormScripts.js 
+		/// получает её и в зависимости от роли перенаправляет пользователя на страницу роли.
+		/// </summary>
+		/// <param name="userDto">Модель, которая приходит с фронта</param>
+		/// <returns></returns>
+		[HttpPost]
         public async Task<IResult> LoginNormal(LoginFormRequest loginFormRequest)
         {
-            var loginFormModel = await _loginFormValidator.ValidateAsync(loginFormRequest);
-
-			if (!loginFormModel.IsValid)
-				return Results.BadRequest($"{string.Join(" ", loginFormModel.Errors.Select(err => err.ErrorMessage))}");
+            var formValid = _loginFormValidator.Validate(loginFormRequest);
+            if (!formValid.IsValid)
+                return Results.Json(new ErrorViewModel { ErrorMessage = "Введите логи и пароль" });
 
             var user = await _usersService.GetUserByNameAsync(loginFormRequest.Name);
 
-            if (user == null)
-                return Results.BadRequest("Пользователя не существует");
-            if (loginFormRequest.Password != user.Password)
-                return Results.BadRequest("Неверный пароль");
+            if (loginFormRequest.Password != user?.Password || user == null)
+                return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
             var tokens = await GetToken(user.Role.RoleName);
 
             return Results.Json(tokens);
         }
         [HttpPost]
-		public async Task<IResult> LoginMail(LoginFormRequest loginFormRequest)
-		{
-			var loginFormModel = await _loginFormValidator.ValidateAsync(loginFormRequest);
+        public async Task<IResult> LoginMail(LoginFormRequest loginFormRequest)
+        {
+            var formValid = _loginFormValidator.Validate(loginFormRequest);
+            if (!formValid.IsValid)
+                return Results.Json(new ErrorViewModel { ErrorMessage = "Введите логи и пароль" });
 
-			if (!loginFormModel.IsValid)
-				return Results.BadRequest($"{string.Join(" ", loginFormModel.Errors.Select(err => err.ErrorMessage))}");
+            var user = await _usersService.GetUserByEmailAsync(loginFormRequest.Name);
 
-			var user = await _usersService.GetUserByEmailAsync(loginFormRequest.Name);
+            if (loginFormRequest.Password != user?.Password || user == null)
+                return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
-			if (user == null)
-				return Results.BadRequest("Пользователя не существует");
-			if (loginFormRequest.Password != user.Password)
-				return Results.BadRequest("Неверный пароль");
-
-			var tokens = await GetToken(user.Role.RoleName);
+            var tokens = await GetToken(user.Role.RoleName);
 
 			return Results.Json(tokens);
 		}

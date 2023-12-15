@@ -161,6 +161,10 @@
       "PackagePath": "staticwebassets\\js\\RegisterFormScript.js"
     },
     {
+      "Id": "C:\\E-CarShop\\src\\MainTz.Web\\wwwroot\\js\\RestorePasswordOnEmailScript.js",
+      "PackagePath": "staticwebassets\\js\\RestorePasswordOnEmailScript.js"
+    },
+    {
       "Id": "C:\\E-CarShop\\src\\MainTz.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

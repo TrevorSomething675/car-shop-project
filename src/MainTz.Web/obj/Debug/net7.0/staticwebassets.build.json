@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s8x1T8NR1uEB957300oLeIB/n3Fz8MCdEPgpOb5sDlI=",
+  "Hash": "v442dTmOMeqYeJOKFsZzzhydYd0XeWlSumeiGjrHRbE=",
   "Source": "MainTz.Web",
   "BasePath": "_content/MainTz.Web",
   "Mode": "Default",
@@ -794,6 +794,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\RegisterFormScript.js"
+    },
+    {
+      "Identity": "C:\\E-CarShop\\src\\MainTz.Web\\wwwroot\\js\\RestorePasswordOnEmailScript.js",
+      "SourceId": "MainTz.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\E-CarShop\\src\\MainTz.Web\\wwwroot\\",
+      "BasePath": "_content/MainTz.Web",
+      "RelativePath": "js/RestorePasswordOnEmailScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\RestorePasswordOnEmailScript.js"
     },
     {
       "Identity": "C:\\E-CarShop\\src\\MainTz.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

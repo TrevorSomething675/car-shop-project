@@ -36,8 +36,10 @@ namespace MainTz.Web
             services.AddScoped<ICarRepository, CarRepository>();
 			services.AddTransient<ITokenService>(provider => new TokenService(_authSettings));
 			services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IMailService, MailService>();
             services.AddScoped<ICarService, CarService>();
             services.AddScoped<IValidator<RegisterFormRequest>, RegisterFormValidator>();
+            services.AddScoped<IValidator<RestoreEmailRequest>, RestoreEmailValidator>();
             services.AddScoped<IValidator<LoginFormRequest>, LoginFormValidator>();
 
             services.AddDomainAppAutoMapperConfiguration();
@@ -193,6 +195,7 @@ namespace MainTz.Web
 	            name: "default",
 	            pattern: "{controller=Auth}/{action=Register}");
 			});
+            app.UseDeveloperExceptionPage();
         }
     }
 }

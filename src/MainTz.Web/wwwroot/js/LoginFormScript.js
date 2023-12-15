@@ -7,9 +7,9 @@ loginForm.addEventListener('submit', function (event) {
 
     let url;
     if (/\S+@\S+\.\S+/.test(loginField)) {
-        url = '/Auth/LoginMail'; // замените на нужный вам адрес
+        url = '/Auth/LoginMail';
     } else {
-        url = '/Auth/LoginNormal'; // замените на нужный вам адрес
+        url = '/Auth/LoginNormal';
     }
 
     fetch(url, {
@@ -24,6 +24,18 @@ loginForm.addEventListener('submit', function (event) {
             }
         })
         .then(data => {
+            if (data.errorMessage !== '') {
+                console.log(`Возникла ошибка: ${data.errorMessage}`);
+                $.ajax({
+                    url: 'ErrorViewPartial',
+                    type: 'GET',
+                    data: { error: data.errorMessage },
+                    success: function (response) {
+                        $('#LoginErrorContainer').html(response);
+                        return
+                    },
+                })
+            }
             if (data != '') {
                 document.cookie = `accessToken=${data.value.accessToken}; path=/`;
                 document.cookie = `refreshToken=${data.value.refreshToken}; path=/`;

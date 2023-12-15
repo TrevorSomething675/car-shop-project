@@ -109,5 +109,9 @@ footer {
 
 .car-card-description {
     word-break:break-word;
+}
 
+.restorePasswordForm{
+    width:300px;
+    max-width: 300px;
 }
