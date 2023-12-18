@@ -15,9 +15,13 @@ namespace MainTz.Infrastructure.Services
             _authSettings = authSettings;
         }
 
-        public string CreateAccessToken(string role)
+        public string CreateAccessToken(string role, string name)
         {
-            var claims = new List<Claim> { new Claim(ClaimTypes.Role, role) };
+            var claims = new List<Claim> {
+                new Claim(ClaimTypes.Role, role),
+                new Claim(ClaimTypes.Name, name)
+                };
+
             var jwt = new JwtSecurityToken(
                     issuer: _authSettings.Issuer,
                     audience: _authSettings.Audience,
@@ -32,9 +36,12 @@ namespace MainTz.Infrastructure.Services
             return new JwtSecurityTokenHandler().WriteToken(jwt);
         }
 
-        public string CreateRefreshToken(string role)
+        public string CreateRefreshToken(string role, string name)
         {
-            var claims = new List<Claim> { new Claim(ClaimTypes.Role, role) };
+            var claims = new List<Claim> { 
+                new Claim(ClaimTypes.Role, role),
+                new Claim(ClaimTypes.Name, name)
+            };
             var jwt = new JwtSecurityToken(
                     issuer: _authSettings.Issuer,
                     audience: _authSettings.Audience,

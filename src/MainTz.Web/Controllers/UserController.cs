@@ -16,7 +16,6 @@ namespace MainTz.Web.Controllers
             _carService = carService;
             _mapper = mapper;
         }
-
         [HttpGet]
         public async Task<IActionResult> Index(int pageNumber = 1)
         {

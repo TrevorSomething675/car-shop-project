@@ -34,12 +34,12 @@ namespace MainTz.Web.Controllers
         /// <param name="role"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IResult> GetToken([FromBody] string role) // отправка сообщения и получение токена из AuthApi
+        public async Task<IResult> GetToken([FromBody] string role, string name) // отправка сообщения и получение токена из AuthApi
         {
             var tokensModel = new TokensModel
             {
-                RefreshToken = _tokenService.CreateRefreshToken(role),
-                AccessToken = _tokenService.CreateAccessToken(role),
+                RefreshToken = _tokenService.CreateRefreshToken(role, name),
+                AccessToken = _tokenService.CreateAccessToken(role, name),
                 Role = role
             };
 
@@ -97,7 +97,7 @@ namespace MainTz.Web.Controllers
             if (loginFormRequest.Password != user?.Password || user == null)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
-            var tokens = await GetToken(user.Role.RoleName);
+            var tokens = await GetToken(user.Role.RoleName, user.Name);
 
             return Results.Json(tokens);
         }
@@ -113,7 +113,7 @@ namespace MainTz.Web.Controllers
             if (loginFormRequest.Password != user?.Password || user == null)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
-            var tokens = await GetToken(user.Role.RoleName);
+            var tokens = await GetToken(user.Role.RoleName, user.Name);
 
 			return Results.Json(tokens);
 		}

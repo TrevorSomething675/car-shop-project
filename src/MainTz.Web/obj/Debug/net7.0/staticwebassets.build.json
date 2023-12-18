@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mq75UPQbKTAMDSNjXhWmB05B4zsLsGhjSyecpdiccv4=",
+  "Hash": "h4HZKQTVKor5JdQ9vcWLG9KRk7jrVD8y9yo00DCDMiA=",
   "Source": "MainTz.Web",
   "BasePath": "_content/MainTz.Web",
   "Mode": "Default",
@@ -794,25 +794,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\CookieManagerScript.js"
-    },
-    {
-      "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\JwtHeaderScript.js",
-      "SourceId": "MainTz.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\",
-      "BasePath": "_content/MainTz.Web",
-      "RelativePath": "js/JwtHeaderScript.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\JwtHeaderScript.js"
     },
     {
       "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\LoginFormScript.js",
