@@ -188,13 +188,11 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Application.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Core.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Database.dll
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Extensions.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Infrastructure.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Database.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Application.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Core.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Infrastructure.pdb
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\MainTz.Extensions.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.csproj.AssemblyReference.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.AssemblyInfoInputs.cache

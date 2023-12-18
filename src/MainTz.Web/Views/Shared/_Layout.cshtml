@@ -10,11 +10,11 @@
 
     @await Html.PartialAsync("ScriptsPartial")
 
-    <main role="main" class="container-fluid pb-3">
+    <main role="main" class="container-fluid">
         @RenderBody()
     </main>
 
-    <footer class="container-fluid py-0 pt-1 fixed-bottom">
+    <footer class="container-fluid">
         @await Html.PartialAsync("FooterPartial")
     </footer>
 

@@ -40,8 +40,14 @@ loginForm.addEventListener('submit', function (event) {
                 document.cookie = `accessToken=${data.value.accessToken}; path=/`;
                 document.cookie = `refreshToken=${data.value.refreshToken}; path=/`;
                 document.cookie = `role=${data.value.role}; path=/`;
-                console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
-                document.location.pathname = `${data.value.role}/Index`;
+                console.log(`Access token: ${data.value.accessToken} Refresh token: ${data.value.refreshToken} Role: ${data.value.role}`);
+                let lastOpenedCarCard = GetCookie('LastOpenedCarCard');
+                if (lastOpenedCarCard != undefined) {
+                    console.log(document.location.href);
+                    document.location.href = `/User/CarBigCard?id=${lastOpenedCarCard}`;
+                } else {
+                    document.location.pathname = `${data.value.role}/Index`;
+                }
             } else {
                 console.log('Данные не найдены в ответе сервера')
             }

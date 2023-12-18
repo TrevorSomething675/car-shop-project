@@ -1,21 +1,16 @@
 ﻿@using MainTz.Web.ViewModels.CarViewModels
-@model IEnumerable<CarResponse>
+@model CarsViewModel
 
 <div class="row">
-    @foreach (var car in Model)
+    @foreach (var car in Model.CarsResponse)
     {
-        <div class="col-3 car-card mx-1">
-            <div class="row">
-                <img src="~/images/mops_1.jpg" class="py-2 card-image" />
-            </div>
-            <div class="row">
-                <h2>@car.Name</h2>
-            </div>
-            <div class="row">
-                <div class="car-card-description">
-                    @car.Description
-                </div>
-            </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6 col-sm-12 pt-2">
+            @await Html.PartialAsync("CarsViews/CarCardPartial", car)
         </div>
     }
+    <div class="text-center py-2">
+        <a asp-controller="Auth" asp-action="Login" class="custom-btn-orange" style="font-size:20px;">
+             Хотите увидеть больше? Авторизуйтесь или зарегистрируйтесь
+        </a>
+    </div>
 </div>

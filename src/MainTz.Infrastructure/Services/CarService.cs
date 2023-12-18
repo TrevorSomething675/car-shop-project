@@ -18,18 +18,35 @@ namespace MainTz.Infrastructure.Services
             _mapper = mapper;
             _carRepository = carRepository;
         }
-        public async Task<List<Car>> GetCars()
+
+        public async Task<Car> GetCarByIdAsync(int id)
         {
-            var carsEntity = await _carRepository.GetCars();
+            var carEntity = await _carRepository.GetCarByIdAsync(id);
+            var car = _mapper.Map<Car>(carEntity);
+
+            return car;
+        }
+
+        public async Task<List<Car>> GetCarsAsync(int pageNumber = 1)
+        {
+            var totalCarsInPage = 8f;
+            var pageCount = Math.Ceiling(_carRepository.GetCarsAsync().Result.Count() / totalCarsInPage);
+
+            var carsEntity = _carRepository.GetCarsAsync().Result.
+                Take((int)(totalCarsInPage * pageNumber))
+                .Skip((int)(totalCarsInPage * (pageNumber - 1)))
+                .ToList();
+
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
+
             return carsDomainEntity;
         }
-        public async Task<bool> CreateCar(Car carDomainEntity)
+        public async Task<bool> CreateCarAsync(Car carDomainEntity)
         {
             try
             {
                 var carEntity = _mapper.Map<CarEntity>(carDomainEntity);
-                await _carRepository.Create(carEntity);
+                await _carRepository.CreateAsync(carEntity);
                 return true;
             }
             catch (Exception ex)
@@ -38,12 +55,12 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> DeleteCar(Car carDomainEntity)
+        public async Task<bool> DeleteCarAsync(Car carDomainEntity)
         {
             try
             {
                 var carEntity = _mapper.Map<CarEntity>(carDomainEntity);
-                await _carRepository.Delete(carEntity);
+                await _carRepository.DeleteAsync(carEntity);
                 return true;
             }
             catch (Exception ex)
@@ -52,12 +69,12 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> UpdateCar(Car carDomainEntity)
+        public async Task<bool> UpdateCarAsync(Car carDomainEntity)
         {
             try
             {
                 var car = _mapper.Map<CarEntity>(carDomainEntity);
-                await _carRepository.Update(car);
+                await _carRepository.UpdateAsync(car);
                 return true;
             }
             catch (Exception ex)

@@ -20,7 +20,7 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var carsDomainEntity = await _carService.GetCars();
+            var carsDomainEntity = await _carService.GetCarsAsync();
             var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainEntity);
             return View(carsResponse);
         }
@@ -28,21 +28,21 @@ namespace MainTz.Web.Controllers
         public async Task<IActionResult> CreateCar(CarRequest carRequest)
         {
             var carDomainEntity = _mapper.Map<Car>(carRequest);
-            var result = await _carService.CreateCar(carDomainEntity);
+            var result = await _carService.CreateCarAsync(carDomainEntity);
             return RedirectToAction("Index");
         }
         [HttpPost]
         public async Task<IActionResult> DeleteCar(CarRequest carRequest)
         {
             var carDomainEntity = _mapper.Map<Car>(carRequest);
-            var result = await _carService.DeleteCar(carDomainEntity);
+            var result = await _carService.DeleteCarAsync(carDomainEntity);
             return RedirectToAction("Index");
         }
         [HttpPost]
         public async Task<IActionResult> UpdateCar(CarRequest carRequest)
         {
             var carDomainEntity = _mapper.Map<Car>(carRequest);
-            var result = await _carService.UpdateCar(carDomainEntity);
+            var result = await _carService.UpdateCarAsync(carDomainEntity);
             return RedirectToAction("Index");
         }
     }

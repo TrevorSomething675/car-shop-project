@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using MainTz.Application.Models.SittingsModels;
 using MainTz.Infrastructure.Repositories;
 using MainTz.Application.Repositories;
 using Microsoft.IdentityModel.Tokens;
@@ -13,7 +14,6 @@ using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
 using FluentValidation;
 using System.Text;
-using MainTz.Application.Models.SittingsModels;
 
 namespace MainTz.Web
 {
@@ -135,11 +135,15 @@ namespace MainTz.Web
 
                     if (!context.Cars.Any())
                     {
-                        var cars = new List<CarEntity> {
-                        new CarEntity{
-                            Name = "TestName1",
-                            Color = "red",
-                            Images = new List<ImageEntity>
+                        var cars = new List<CarEntity>();
+
+                        for(int i = 0; i < 15; i++)
+                        {
+                            var car = new CarEntity
+                            {
+                                Name = $"TestName{i}",
+                                Color = "red",
+                                Images = new List<ImageEntity>
                             {
                                 new ImageEntity
                                 {
@@ -147,31 +151,14 @@ namespace MainTz.Web
                                     File = new byte[5],
                                 }
                             },
-                            IsFavorite = true,
-                            IsVisible = true,
-                            Description = "Description1Description1Descripti" +
-                            "on1Description1Description1Description1",
-                            Model = context.Models.FirstOrDefault()
+                                IsFavorite = true,
+                                IsVisible = true,
+                                Description = $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}",
+                                Model = context.Models.FirstOrDefault()
 
-                            },
-                            new CarEntity{
-                            Name = "TestName2",
-                            Color = "red",
-                            Images = new List<ImageEntity>
-                            {
-                                new ImageEntity
-                                {
-                                    Name = "pic2",
-                                    File = new byte[5],
-                                }
-                            },
-                            IsFavorite = true,
-                            IsVisible = true,
-                            Description = "Description2Description2Description2Description" +
-                            "2Description2Description2Description2",
-                            Model = context.Models.FirstOrDefault()
-
-                            }
+                            };
+                            cars.Add(car);
                         };
                         context.Cars.AddRange(cars);
                         context.SaveChanges();
@@ -193,7 +180,7 @@ namespace MainTz.Web
             {
                 endpoints.MapControllerRoute(
 	            name: "default",
-	            pattern: "{controller=Auth}/{action=Register}");
+	            pattern: "{controller=User}/{action=Index}");
 			});
             app.UseDeveloperExceptionPage();
         }

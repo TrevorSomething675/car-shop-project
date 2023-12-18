@@ -53,10 +53,8 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\D
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Application.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Core.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Database.dll
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Extensions.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Database.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Application.pdb
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Extensions.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Core.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig

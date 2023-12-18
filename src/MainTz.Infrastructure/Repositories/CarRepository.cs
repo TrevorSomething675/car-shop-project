@@ -16,31 +16,31 @@ namespace MainTz.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<CarEntity> GetCarById(int id)
+        public async Task<CarEntity> GetCarByIdAsync(int id)
         {
             var car = await _context.Cars.FirstOrDefaultAsync(car => car.Id == id);
             return car;
         }
 
-        public async Task<List<CarEntity>> GetCars()
+        public async Task<List<CarEntity>> GetCarsAsync()
         {
             var cars = await _context.Cars.ToListAsync();
             return cars;
         }
 
-        public async Task Create(CarEntity car)
+        public async Task CreateAsync(CarEntity car)
         {
             _context.Cars.Add(car);
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(CarEntity car)
+        public async Task DeleteAsync(CarEntity car)
         {
             _context.Cars.Remove(car);
             await _context.SaveChangesAsync();
         }
 
-        public async Task Update(CarEntity car)
+        public async Task UpdateAsync(CarEntity car)
         {
             _context.Cars.Update(car);
             await _context.SaveChangesAsync();
