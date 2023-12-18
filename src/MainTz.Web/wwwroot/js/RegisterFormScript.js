@@ -26,7 +26,13 @@ registerForm.addEventListener('submit', function (event) {
                 document.cookie = `refreshToken=${data.value.refreshToken}`;
                 document.cookie = `role=${data.value.role}`;
                 console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
-                window.location.pathname = `${data.value.role}/index`;
+                let lastOpenedCarCard = GetCookie('LastOpenedCarCard');
+                if (lastOpenedCarCard != undefined) {
+                    console.log(document.location.href);
+                    document.location.href = `/User/CarBigCard?id=${lastOpenedCarCard}`;
+                } else {
+                    document.location.pathname = `${data.value.role}/Index`;
+                }
             } else {
                 console.log('Данные не найдены в ответе сервера')
             }

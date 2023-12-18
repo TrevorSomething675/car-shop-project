@@ -2834,3 +2834,17 @@
 2023-12-18 16:29:10.1000 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
 2023-12-18 16:29:10.1125 Info Configuration initialized.
 2023-12-18 16:29:10.1125 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-18 16:32:03.7680 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-18 16:32:03.7680 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-18 16:32:03.7680 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-18 16:32:03.7885 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-18 16:32:03.7974 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-18 16:32:03.8123 Info Configuration initialized.
+2023-12-18 16:32:03.8123 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-18 16:33:38.3423 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2023-12-18 16:33:38.3423 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2023-12-18 16:33:38.3423 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2023-12-18 16:33:38.3674 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2023-12-18 16:33:38.3867 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2023-12-18 16:33:38.4055 Info Configuration initialized.
+2023-12-18 16:33:38.4055 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config

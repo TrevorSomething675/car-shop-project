@@ -40,6 +40,7 @@ namespace MainTz.Web.Controllers
             }
             var carModel = await _carService.GetCarByIdAsync(id);
             var carsResponse = _mapper.Map<CarResponse>(carModel);
+            HttpContext.Response.Cookies.Delete("LastOpenedCarCard");
 
             return View(carsResponse);
         }
