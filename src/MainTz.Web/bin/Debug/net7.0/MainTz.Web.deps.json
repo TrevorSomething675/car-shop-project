@@ -13,7 +13,6 @@
           "FluentValidation": "11.8.1",
           "MainTz.Application": "1.0.0",
           "MainTz.Core": "1.0.0",
-          "MainTz.Database": "1.0.0",
           "MainTz.Infrastructure": "1.0.0",
           "NLog": "5.2.7",
           "NLog.Extensions.Logging": "5.3.7",
@@ -438,7 +437,6 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "MainTz.Application": "1.0.0",
-          "MainTz.Database": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.14",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.5",
           "System.IdentityModel.Tokens.Jwt": "7.0.3"

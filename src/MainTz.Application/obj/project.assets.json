@@ -1227,8 +1227,8 @@
     },
     "MainTz.Database/1.0.0": {
       "type": "project",
-      "path": "../MainTa.Database/MainTz.Database.csproj",
-      "msbuildProject": "../MainTa.Database/MainTz.Database.csproj"
+      "path": "../MainTz.Database/MainTz.Database.csproj",
+      "msbuildProject": "../MainTz.Database/MainTz.Database.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1263,8 +1263,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\MainTz.Database.csproj": {
-              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\MainTz.Database.csproj"
+            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Database\\MainTz.Database.csproj": {
+              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Database\\MainTz.Database.csproj"
             }
           }
         }

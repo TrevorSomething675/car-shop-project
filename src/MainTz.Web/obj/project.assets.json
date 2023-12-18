@@ -769,7 +769,6 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "MainTz.Application": "1.0.0",
-          "MainTz.Database": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.14",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.5",
           "System.IdentityModel.Tokens.Jwt": "7.0.3"
@@ -1948,8 +1947,8 @@
     },
     "MainTz.Database/1.0.0": {
       "type": "project",
-      "path": "../MainTa.Database/MainTz.Database.csproj",
-      "msbuildProject": "../MainTa.Database/MainTz.Database.csproj"
+      "path": "../MainTz.Database/MainTz.Database.csproj",
+      "msbuildProject": "../MainTz.Database/MainTz.Database.csproj"
     },
     "MainTz.Infrastructure/1.0.0": {
       "type": "project",
@@ -1964,7 +1963,6 @@
       "FluentValidation >= 11.8.1",
       "MainTz.Application >= 1.0.0",
       "MainTz.Core >= 1.0.0",
-      "MainTz.Database >= 1.0.0",
       "MainTz.Infrastructure >= 1.0.0",
       "NLog >= 5.2.7",
       "NLog.Extensions.Logging >= 5.3.7",
@@ -1999,9 +1997,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\MainTz.Database.csproj": {
-              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTa.Database\\MainTz.Database.csproj"
-            },
             "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj": {
               "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj"
             },
