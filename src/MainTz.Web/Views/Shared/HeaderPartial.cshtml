@@ -43,8 +43,18 @@
                     @await Component.InvokeAsync("Notifications")
                 </li>
                 <li>
-                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-action="Index" asp-controller="User">
-                        <i class="bi bi-car-front-fill"></i>
+                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-action="GetFavoriteCars" asp-controller="User">
+                        <i class="bi bi-star"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-action="GetFavoriteCars" asp-controller="User">
+                        <i class="bi bi-gear"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-action="LogOut" asp-controller="Auth">
+                        <i class="bi bi-box-arrow-left"></i>
                     </a>
                 </li>
                 <li>

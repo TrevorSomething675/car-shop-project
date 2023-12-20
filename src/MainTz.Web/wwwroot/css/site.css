@@ -51,7 +51,6 @@ input:focus {
 
 .custom-btn-dropdown {
     color: var(--light-orange-color);
-    font-size: 20px;
     transition: 0.2s;
 }
 

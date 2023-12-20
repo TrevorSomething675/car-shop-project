@@ -125,7 +125,27 @@ namespace MainTz.Web
                                 Email = "Manager@mail.ru",
                                 Password = "123123123Qq",
                                 Role = context.Roles.Where(role => role.RoleName == "Manager").FirstOrDefault()
-                            }
+                            },
+                            new UserEntity
+                            {
+                                Name = "User",
+                                Email = "User@mail.ru",
+                                Password = "123123123Qq",
+                                Role = context.Roles.Where(role => role.RoleName == "User").FirstOrDefault(),
+                                Notifications = new List<NotificationEntity>
+                                {
+                                    new NotificationEntity
+                                    {
+                                        Header = "testHeader1",
+                                        Description = "Description1Description1Description1Description1Description1"
+                                    },
+                                    new NotificationEntity
+                                    {
+                                        Header = "testHeader2",
+                                        Description = "Description2Description2Description2Description2Description2"
+                                    },
+                                }
+                            },
                         };
 
                         context.Users.AddRange(users);
@@ -167,7 +187,7 @@ namespace MainTz.Web
                                     File = new byte[5],
                                 }
                             },
-                                IsFavorite = true,
+                                IsFavorite = false,
                                 IsVisible = true,
                                 Description = $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
                                 $"Decscriptin{i}Decscriptin{i}Decscriptin{i}",

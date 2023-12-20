@@ -2,9 +2,6 @@
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using System.Diagnostics;
-using WebApplication2.Models;
-using MainTz.Web.ViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -27,7 +24,7 @@ namespace MainTz.Web.Controllers
 
             var model = new CarsViewModel
             {
-                pageNumber = pageNumber,
+                PageNumber = pageNumber,
                 CarsResponse = carsResponse,
             };
             return View(model);
@@ -41,15 +38,22 @@ namespace MainTz.Web.Controllers
                 return RedirectToAction("Login", "Auth");
             }
             var carModel = await _carService.GetCarByIdAsync(id);
-            var carsResponse = _mapper.Map<CarResponse>(carModel);
+            var carResponse = _mapper.Map<CarResponse>(carModel);
             HttpContext.Response.Cookies.Delete("LastOpenedCarCard");
 
-            return View(carsResponse);
+            return View(carResponse);
         }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public async Task<IActionResult> GetFavoriteCars(int pageNumber = 1)
         {
-            return View(new ErrorModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var carsModel = await _carService.GetFavoriteCarsAsync(pageNumber);
+            var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
+            var model = new CarsViewModel
+            {
+                PageNumber = pageNumber,
+                CarsResponse = carsResponse
+            };
+
+            return View(model);
         }
     }
 }

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
+using System.Linq.Expressions;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -22,9 +23,11 @@ namespace MainTz.Infrastructure.Repositories
             return car;
         }
 
-        public async Task<List<CarEntity>> GetCarsAsync()
+        public async Task<List<CarEntity>> GetCarsAsync(Expression<Func<CarEntity, bool>> filter = null)
         {
-            var cars = await _context.Cars.ToListAsync();
+            filter = filter ?? (car => true);
+
+            var cars = await _context.Cars.Where(filter).ToListAsync();
             return cars;
         }
 

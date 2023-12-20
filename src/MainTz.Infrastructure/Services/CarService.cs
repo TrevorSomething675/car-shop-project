@@ -27,13 +27,27 @@ namespace MainTz.Infrastructure.Services
             return car;
         }
 
+        public async Task<List<Car>> GetFavoriteCarsAsync(int pageNumber = 1)
+        {
+            var totalCarsInPage = 8f;
+            var pageCount = Math.Ceiling(_carRepository.GetCarsAsync(car => car.IsFavorite == true).Result.Count() / totalCarsInPage);
+
+            var carsEntity = _carRepository.GetCarsAsync(car => car.IsFavorite == true).Result
+                .Take((int)(totalCarsInPage * pageNumber))
+                .Skip((int)(totalCarsInPage * (pageNumber - 1)))
+                .ToList();
+
+            var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
+
+            return carsDomainEntity;
+        }
         public async Task<List<Car>> GetCarsAsync(int pageNumber = 1)
         {
             var totalCarsInPage = 8f;
             var pageCount = Math.Ceiling(_carRepository.GetCarsAsync().Result.Count() / totalCarsInPage);
 
-            var carsEntity = _carRepository.GetCarsAsync().Result.
-                Take((int)(totalCarsInPage * pageNumber))
+            var carsEntity = _carRepository.GetCarsAsync().Result
+                .Take((int)(totalCarsInPage * pageNumber))
                 .Skip((int)(totalCarsInPage * (pageNumber - 1)))
                 .ToList();
 

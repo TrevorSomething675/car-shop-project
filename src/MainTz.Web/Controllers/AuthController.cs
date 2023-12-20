@@ -152,5 +152,14 @@ namespace MainTz.Web.Controllers
             
             return result;
         }
+        public async Task<IActionResult> LogOut()
+        {
+            foreach (var cookie in Request.Cookies.Keys)
+            {
+                Response.Cookies.Delete(cookie);
+            }
+
+            return RedirectToAction("Index", "User");
+        }
     }
 }
