@@ -43,7 +43,6 @@ namespace MainTz.Web
             services.AddScoped<IValidator<LoginFormRequest>, LoginFormValidator>();
 
             services.AddDomainAppAutoMapperConfiguration();
-            services.AddControllersWithViews();
 			services.AddHttpContextAccessor();
 			services.AddAuthentication(options =>
 			{
@@ -66,19 +65,21 @@ namespace MainTz.Web
             		ValidateIssuerSigningKey = true,
             	};
             });
-
 			services.AddAuthorization();
-		}
+            services.AddControllersWithViews();
+        }
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseExceptionHandler("/Home/Error");
+            app.UseHsts();
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 using (var context = scope.ServiceProvider.GetRequiredService<MainContext>())
                 {
                     #region UserTestData
                     context.Database.EnsureDeleted();
-                    context.Database.EnsureCreated();
+                    context.Database.Migrate();
                     context.SaveChanges();
                     if (!context.Roles.Any())
                     {
@@ -170,9 +171,9 @@ namespace MainTz.Web
 			app.UseDefaultFiles();
 			app.UseStaticFiles();
 			app.UseRouting();
-            app.UseMiddleware<JwtHeaderMiddleware>();
-			app.UseMiddleware<JwtRefreshMiddleware>();
-			app.UseMiddleware<LoggingMiddleware>();
+   //         app.UseMiddleware<JwtHeaderMiddleware>();
+			//app.UseMiddleware<JwtRefreshMiddleware>();
+			//app.UseMiddleware<LoggingMiddleware>();
 			app.UseAuthentication();
 			app.UseAuthorization();
 
@@ -182,7 +183,6 @@ namespace MainTz.Web
 	            name: "default",
 	            pattern: "{controller=User}/{action=Index}");
 			});
-            app.UseDeveloperExceptionPage();
         }
     }
 }

@@ -49,6 +49,22 @@ input:focus {
 
 /*========================Header========================*/
 
+.custom-btn-dropdown {
+    color: var(--light-orange-color);
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.custom-btn-dropdown:hover {
+    color: var(--light-text-color) !important;
+}
+
+.badge-custom {
+    margin: 2px 0px 0px 5px;
+    font-size: 12px;
+    background-color: var(--light-orange-color);
+}
+
 header {
     background-color: var(--dark-gray-color) !important;
     color: var(--light-orange-color) !important;

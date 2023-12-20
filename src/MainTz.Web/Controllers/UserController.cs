@@ -2,6 +2,9 @@
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
+using System.Diagnostics;
+using WebApplication2.Models;
+using MainTz.Web.ViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -19,14 +22,15 @@ namespace MainTz.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(int pageNumber = 1)
         {
-            var carsDomainModels = await _carService.GetCarsAsync(pageNumber);
-            var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
+            var model = new Test();
+            //var carsDomainModels = await _carService.GetCarsAsync(pageNumber);
+            //var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
 
-            var model = new CarsViewModel
-            {
-                pageNumber = pageNumber,
-                CarsResponse = carsResponse,
-            };
+            //var model = new CarsViewModel
+            //{
+            //    pageNumber = pageNumber,
+            //    CarsResponse = carsResponse,
+            //};
             return View(model);
         }
         [HttpGet]
@@ -42,6 +46,11 @@ namespace MainTz.Web.Controllers
             HttpContext.Response.Cookies.Delete("LastOpenedCarCard");
 
             return View(carsResponse);
+        }
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

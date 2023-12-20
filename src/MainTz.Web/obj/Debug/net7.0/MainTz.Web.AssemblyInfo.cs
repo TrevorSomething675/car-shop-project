@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MainTz.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+770373f843471d4ff612844382ae1da358898122")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efe1cd19f4f091599fe6d4954629b8aef9101c69")]
 [assembly: System.Reflection.AssemblyProductAttribute("MainTz.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MainTz.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
