@@ -1783,19 +1783,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Иван\\.nuget\\packages\\": {}
+    "C:\\Users\\Win10Pro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
+      "projectUniqueName": "C:\\E-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
       "projectName": "MainTz.Infrastructure",
-      "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\obj\\",
+      "projectPath": "C:\\E-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
+      "outputPath": "C:\\E-CarShop\\src\\MainTz.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1809,8 +1809,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj": {
-              "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj"
+            "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj": {
+              "projectPath": "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj"
             }
           }
         }

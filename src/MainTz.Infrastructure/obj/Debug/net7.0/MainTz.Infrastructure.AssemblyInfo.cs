@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MainTz.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29eec494ef5d259c101c0e97284e4a2a6a08e36b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17e9723cb0dc7bffca9a5a53c22cacd5690e9523")]
 [assembly: System.Reflection.AssemblyProductAttribute("MainTz.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MainTz.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

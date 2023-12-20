@@ -45,7 +45,7 @@ namespace MainTz.Web.Controllers
             var notificationModel = user.Notifications.FirstOrDefault(notif => notif.Id == id);
             var notificationResponse = _mapper.Map<NotificationResponse>(notificationModel);
 
-            return PartialView(notificationResponse);
+            return PartialView("GetNotificationById", notificationResponse);
         }
     }
 }

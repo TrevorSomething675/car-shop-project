@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oHg0dX6iPEAt+fCMoCVSGCRb50C4dzPeLEyQoeQLeUOfQm3qqpNjialN2tVT8ET70nOrbyjFCXy0n/ovaVpa8A==",
+  "dgSpecHash": "R1KoVT0g3WggKln7o+s+Gdnl3y4DrvnewEVpx8iS3BV9lB7/hAoJrouCrAiw9bsGbINIlnkJDPP980Ww0/2Jqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj",
+  "projectFilePath": "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
