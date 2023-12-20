@@ -12,7 +12,7 @@ registerForm.addEventListener('submit', function (event) {
         .then(data => {
             if (data.errorMessage != '' && data.errorMessage !== undefined) {
                 $.ajax({
-                    url: "Auth/ErrorViewPartial",
+                    url: "ErrorViewPartial",
                     type: 'GET',
                     data: { error: data.errorMessage },
                     success: function (response) {
