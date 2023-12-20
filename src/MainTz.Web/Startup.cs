@@ -14,6 +14,7 @@ using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
 using FluentValidation;
 using System.Text;
+using System.Reflection.PortableExecutable;
 
 namespace MainTz.Web
 {
@@ -71,7 +72,7 @@ namespace MainTz.Web
 
         public void Configure(IApplicationBuilder app)
         {
-            app.UseExceptionHandler("/Home/Error");
+            app.UseDeveloperExceptionPage();
             app.UseHsts();
             using (var scope = app.ApplicationServices.CreateScope())
             {
@@ -80,6 +81,7 @@ namespace MainTz.Web
                     #region UserTestData
                     context.Database.EnsureDeleted();
                     context.Database.Migrate();
+                    context.Database.EnsureCreated();
                     context.SaveChanges();
                     if (!context.Roles.Any())
                     {
@@ -102,7 +104,20 @@ namespace MainTz.Web
                                 Name = "Admin",
                                 Email = "Admin@mail.ru",
                                 Password = "123123123Qq",
-                                Role = context.Roles.Where(role => role.RoleName == "Admin").FirstOrDefault()
+                                Role = context.Roles.Where(role => role.RoleName == "Admin").FirstOrDefault(),
+                                Notifications = new List<NotificationEntity>
+                                {
+                                    new NotificationEntity
+                                    {
+                                        Header = "testHeader1",
+                                        Description = "Description1Description1Description1Description1Description1"
+                                    },
+                                    new NotificationEntity
+                                    {
+                                        Header = "testHeader2",
+                                        Description = "Description2Description2Description2Description2Description2"
+                                    },
+                                }
                             },
                             new UserEntity
                             {
@@ -171,10 +186,10 @@ namespace MainTz.Web
 			app.UseDefaultFiles();
 			app.UseStaticFiles();
 			app.UseRouting();
-   //         app.UseMiddleware<JwtHeaderMiddleware>();
-			//app.UseMiddleware<JwtRefreshMiddleware>();
-			//app.UseMiddleware<LoggingMiddleware>();
-			app.UseAuthentication();
+            app.UseMiddleware<JwtHeaderMiddleware>();
+            app.UseMiddleware<JwtRefreshMiddleware>();
+            app.UseMiddleware<LoggingMiddleware>();
+            app.UseAuthentication();
 			app.UseAuthorization();
 
 			app.UseEndpoints(endpoints =>

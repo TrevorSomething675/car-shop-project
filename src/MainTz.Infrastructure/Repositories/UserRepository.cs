@@ -22,6 +22,7 @@ namespace MainTz.Infrastructure.Repositories
             var user = await _mainContext.Users
                 .Include(user => user.Role)
                 .Include(user => user.Cars)
+                .Include(user => user.Notifications)
                 .FirstOrDefaultAsync(user => user.Name == name);
             return user;
         }

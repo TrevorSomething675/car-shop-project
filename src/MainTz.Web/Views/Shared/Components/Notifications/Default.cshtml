@@ -1,0 +1,21 @@
+﻿@using MainTz.Web.ViewModels.ViewComponentsModels
+@model NotificationsComponentModel
+
+@if (Model.User != null && Model.User?.Notifications != null)
+{
+    <div class="dropdown">
+        <a class="bi bi-bell custom-btn-dropdown" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            @if(Model.NotificationsCount != 0)
+            {
+                <span class="badge-custom position-absolute top-0 start-100 translate-middle badge rounded-pill">@Model.NotificationsCount</span>
+            }
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            @foreach (var notification in Model.User.Notifications)
+            {
+                <li class="dropdown-item">@notification.Header</li>
+            }
+        </ul>
+    </div>
+}

@@ -30,29 +30,17 @@
         <ul class="navbar-nav list-group">
             @if(!User.Identity.IsAuthenticated)
             {
-                <li class="list-inline-item mt-2 d-flex justify-content-center align-content-center">
-                    <div class="dropdown">
-                        <a class="bi bi-bell custom-btn-dropdown" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="badge-custom position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            @await Component.InvokeAsync("Notifications")
-                        </ul>
-                    </div>
-                </li>
-
-            <li class="list-inline-item">
+                <li class="list-inline-item">
                     <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-area="" asp-controller="Auth" asp-action="Register">
                         <i class="bi bi-box-arrow-in-right"></i>
                         <span class="px-1">Не зарегистрированы?</span>
                     </a>
-            </li>
+                </li>
             }
             else
             {
                 <li class="list-inline-item mt-2 d-flex justify-content-center align-content-center">
-                    
+                    @await Component.InvokeAsync("Notifications")
                 </li>
                 <li>
                     <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-action="Index" asp-controller="User">

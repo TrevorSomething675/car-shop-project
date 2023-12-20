@@ -22,15 +22,14 @@ namespace MainTz.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(int pageNumber = 1)
         {
-            var model = new Test();
-            //var carsDomainModels = await _carService.GetCarsAsync(pageNumber);
-            //var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
+            var carsDomainModels = await _carService.GetCarsAsync(pageNumber);
+            var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
 
-            //var model = new CarsViewModel
-            //{
-            //    pageNumber = pageNumber,
-            //    CarsResponse = carsResponse,
-            //};
+            var model = new CarsViewModel
+            {
+                pageNumber = pageNumber,
+                CarsResponse = carsResponse,
+            };
             return View(model);
         }
         [HttpGet]
