@@ -216,7 +216,7 @@ namespace MainTz.Web
             {
                 endpoints.MapControllerRoute(
 	            name: "default",
-	            pattern: "{controller=User}/{action=Index}");
+	            pattern: "{controller=Car}/{action=GetCars}");
 			});
         }
     }

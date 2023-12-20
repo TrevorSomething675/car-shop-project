@@ -8,7 +8,7 @@ namespace MainTz.Web.Mappings.RequestDomainMappings.User
     {
         public ResponseDomainNotificationMap() 
         {
-            CreateMap<Notification, NotificationResponse>();
+            CreateMap<Notification, NotificationResponse>().ReverseMap();
         }
     }
 }

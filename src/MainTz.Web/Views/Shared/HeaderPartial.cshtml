@@ -7,7 +7,7 @@
     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
         <ul class="navbar-nav flex-grow-1">
             <li class="nav-item">
-                <a class="nav-link custom-btn-orange" asp-area="" asp-controller="User" asp-action="Index">
+                <a class="nav-link custom-btn-orange" asp-area="" asp-controller="Car" asp-action="GetCars">
                     <i class="bi bi-bag"></i>
                     <span>Машины</span>
                     </a>
@@ -16,7 +16,7 @@
                 <a class="nav-link custom-btn-orange" asp-area="" asp-controller="Manager" asp-action="Index">Manager</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link custom-btn-orange" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                <a class="nav-link custom-btn-orange" asp-area="" asp-controller="User" asp-action="Index">Admin</a>
             </li>
             <li class="nav-item">
                 <a>
@@ -43,17 +43,12 @@
                     @await Component.InvokeAsync("Notifications")
                 </li>
                 <li>
-                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-action="GetFavoriteCars" asp-controller="User">
+                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-controller="Car" asp-action="GetFavoriteCars">
                         <i class="bi bi-star"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-action="GetFavoriteCars" asp-controller="User">
-                        <i class="bi bi-gear"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-action="LogOut" asp-controller="Auth">
+                    <a class="nav-link custom-btn-orange d-flex justify-content-center align-content-center" asp-controller="Auth" asp-action="LogOut">
                         <i class="bi bi-box-arrow-left"></i>
                     </a>
                 </li>

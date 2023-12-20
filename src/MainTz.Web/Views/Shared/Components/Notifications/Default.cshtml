@@ -1,7 +1,7 @@
-﻿@using MainTz.Web.ViewModels.ViewComponentsModels
-@model NotificationsComponentModel
+﻿@using MainTz.Web.ViewModels
+@model NotificationsModel
 
-@if (Model.User != null && Model.User?.Notifications != null)
+@if (Model.Notifications != null && Model.Notifications != null)
 {
     <div class="dropdown">
         <a class="bi bi-bell custom-btn-dropdown" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -12,12 +12,12 @@
         </a>
 
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            @foreach (var notification in Model.User.Notifications)
+            @foreach (var notification in Model.Notifications)
             {
                 <li class="dropdown-item">@notification.Header</li>
             }
             <li class="dropdown-item">
-                <a class="custom-btn-orange">
+                <a class="custom-btn-orange" asp-controller="Account" asp-action="GetNotifications">
                     Посмотреть все
                 </a>
             </li>

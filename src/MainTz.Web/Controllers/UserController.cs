@@ -1,59 +1,46 @@
-﻿using MainTz.Web.ViewModels.CarViewModels;
+﻿using MainTz.Application.Models.UserEntities;
+using MainTz.Web.ViewModels.UserViewModels;
+using Microsoft.AspNetCore.Authorization;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 
 namespace MainTz.Web.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
-        private readonly IHttpContextAccessor _contextAccessor;
-        private readonly ICarService _carService;
+        private readonly IUserService _userService;
         private readonly IMapper _mapper;
-        public UserController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor)
+        public UserController(IUserService userService, IMapper mapper)
         {
-            _contextAccessor = contextAccessor;
-            _carService = carService;
+            _userService = userService;
             _mapper = mapper;
         }
-        [HttpGet]
-        public async Task<IActionResult> Index(int pageNumber = 1)
+        public async Task<IActionResult> Index()
         {
-            var carsDomainModels = await _carService.GetCarsAsync(pageNumber);
-            var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
+            var users = await _userService.GetUsersAsync();
+            var userResponse = _mapper.Map<List<UserResponse>>(users);
 
-            var model = new CarsViewModel
-            {
-                PageNumber = pageNumber,
-                CarsResponse = carsResponse,
-            };
-            return View(model);
+            return View(userResponse);
         }
-        [HttpGet]
-        public async Task<IActionResult> CarBigCard(int id)
+        public async Task<IActionResult> CreateUser(UserRequest userRequest)
         {
-            if(!_contextAccessor.HttpContext.User.Identity.IsAuthenticated)
-            {
-                HttpContext.Response.Cookies.Append("LastOpenedCarCard", id.ToString());
-                return RedirectToAction("Login", "Auth");
-            }
-            var carModel = await _carService.GetCarByIdAsync(id);
-            var carResponse = _mapper.Map<CarResponse>(carModel);
-            HttpContext.Response.Cookies.Delete("LastOpenedCarCard");
-
-            return View(carResponse);
+            var user = _mapper.Map<User>(userRequest);
+            var result = await _userService.CreateAsync(user);
+            return RedirectToAction("Index");
         }
-        public async Task<IActionResult> GetFavoriteCars(int pageNumber = 1)
+        public async Task<IActionResult> DeleteUser(UserRequest userRequest)
         {
-            var carsModel = await _carService.GetFavoriteCarsAsync(pageNumber);
-            var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-            var model = new CarsViewModel
-            {
-                PageNumber = pageNumber,
-                CarsResponse = carsResponse
-            };
-
-            return View(model);
+            var user = _mapper.Map<User>(userRequest);
+            var result = await _userService.DeleteAsync(user);
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> UpdateUser(UserRequest userRequest)
+        {
+            var user = _mapper.Map<User>(userRequest);
+            var result = await _userService.UpdateAsync(user);
+            return RedirectToAction("Index");
         }
     }
 }

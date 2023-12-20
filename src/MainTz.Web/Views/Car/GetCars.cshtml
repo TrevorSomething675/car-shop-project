@@ -5,12 +5,12 @@
     @foreach (var car in Model.CarsResponse)
     {
         <div class="col-xxl-3 col-xl-4 col-md-6 col-sm-12 pt-2">
-            @await Html.PartialAsync("CarsViews/CarCardPartial", car)
+            @await Html.PartialAsync("CarCardPartial", car)
         </div>
     }
     <div class="text-center py-2">
         <a asp-controller="Auth" asp-action="Login" class="custom-btn-orange" style="font-size:20px;">
-             Хотите увидеть больше? Авторизуйтесь или зарегистрируйтесь
+            Хотите увидеть больше? Авторизуйтесь или зарегистрируйтесь
         </a>
     </div>
 </div>

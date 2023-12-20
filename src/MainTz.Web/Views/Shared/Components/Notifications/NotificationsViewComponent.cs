@@ -1,8 +1,8 @@
-﻿using MainTz.Web.ViewModels.ViewComponentsModels;
-using MainTz.Web.ViewModels.UserViewModels;
+﻿using MainTz.Web.ViewModels.UserViewModels;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
+using MainTz.Web.ViewModels;
 
 namespace MainTz.Web.Views.Shared.Components.Notifications
 {
@@ -26,9 +26,9 @@ namespace MainTz.Web.Views.Shared.Components.Notifications
             var userResponse = _mapper.Map<UserResponse>(user);
             var notificationsCount = userResponse.Notifications.Take(5).Count();
 
-            var model = new NotificationsComponentModel
+            var model = new NotificationsModel
             {
-                User = userResponse,
+                Notifications = userResponse.Notifications,
                 NotificationsCount = notificationsCount
             };
 

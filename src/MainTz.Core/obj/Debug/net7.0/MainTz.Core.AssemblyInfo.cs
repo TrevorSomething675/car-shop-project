@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MainTz.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12335e9d1aa2ff0acd77b6d8e087d9419e2d19d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29eec494ef5d259c101c0e97284e4a2a6a08e36b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MainTz.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MainTz.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

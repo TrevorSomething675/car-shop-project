@@ -8,6 +8,16 @@
 
 /*========================Global========================*/
 
+.custom-dark-container {
+    background-color: var(--dark-gray-color);
+    border-radius: 5px;
+}
+
+.custom-light-container {
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+}
+
 a{
     text-decoration:none;
 }
@@ -169,6 +179,9 @@ footer {
     box-shadow: 0px 0px 5px 3px var(--light-orange-color);
     transition: .2s;
 }
+
+/*===================Notifications===================*/
+
 
 /*======================Carousel======================*/
 

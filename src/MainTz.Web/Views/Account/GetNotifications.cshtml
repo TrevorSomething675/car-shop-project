@@ -1,0 +1,22 @@
+﻿@using MainTz.Web.ViewModels
+@model NotificationsModel
+
+<div class="container">
+        <h2 class="text-center custom-text-color">Уведомления</h2>
+    <div class="row custom-dark-container">
+        <div class="col-6 custom-text-color text-center" style="border: 2px solid red!important;">
+            @foreach (var notification in Model.Notifications)
+            {
+                <a asp-controller="Account" asp-action="GetNotificationById" asp-route-Id="@notification.Id">
+                    @notification.Header
+                </a>
+            }
+        </div>
+        <div class="col-6 custom-text-color" style="border: 2px solid red!important;">
+            @if(Model.NotificationsCount != 0)
+            {
+                await Html.PartialAsync("GetNotificationById", Model.Notifications.FirstOrDefault());
+            }
+        </div>
+    </div>
+</div>

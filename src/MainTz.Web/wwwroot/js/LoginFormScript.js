@@ -27,7 +27,7 @@ loginForm.addEventListener('submit', function (event) {
             if (data.errorMessage !== '') {
                 console.log(`Возникла ошибка: ${data.errorMessage}`);
                 $.ajax({
-                    url: 'ErrorViewPartial',
+                    url: '/Auth/ErrorViewPartial',
                     type: 'GET',
                     data: { error: data.errorMessage },
                     success: function (response) {
@@ -44,9 +44,9 @@ loginForm.addEventListener('submit', function (event) {
                 let lastOpenedCarCard = GetCookie('LastOpenedCarCard');
                 if (lastOpenedCarCard != undefined) {
                     console.log(document.location.href);
-                    document.location.href = `/User/CarBigCard?id=${lastOpenedCarCard}`;
+                    document.location.href = `/Car/CarBigCard?id=${lastOpenedCarCard}`;
                 } else {
-                    document.location.pathname = `${data.value.role}/Index`;
+                    document.location.href = `/Car/GetCars`;
                 }
             } else {
                 console.log('Данные не найдены в ответе сервера')
