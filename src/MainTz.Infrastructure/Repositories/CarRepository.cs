@@ -16,13 +16,11 @@ namespace MainTz.Infrastructure.Repositories
         {
             _context = context;
         }
-
         public async Task<CarEntity> GetCarByIdAsync(int id)
         {
             var car = await _context.Cars.FirstOrDefaultAsync(car => car.Id == id);
             return car;
         }
-
         public async Task<List<CarEntity>> GetCarsAsync(Expression<Func<CarEntity, bool>> filter = null)
         {
             filter = filter ?? (car => true);
@@ -30,19 +28,16 @@ namespace MainTz.Infrastructure.Repositories
             var cars = await _context.Cars.Where(filter).ToListAsync();
             return cars;
         }
-
         public async Task CreateAsync(CarEntity car)
         {
             _context.Cars.Add(car);
             await _context.SaveChangesAsync();
         }
-
         public async Task DeleteAsync(CarEntity car)
         {
             _context.Cars.Remove(car);
             await _context.SaveChangesAsync();
         }
-
         public async Task UpdateAsync(CarEntity car)
         {
             _context.Cars.Update(car);

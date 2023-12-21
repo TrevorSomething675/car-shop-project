@@ -1,8 +1,8 @@
-﻿using AutoMapper;
+﻿using MainTz.Web.ViewModels.UserViewModels;
 using MainTz.Application.Services;
-using MainTz.Web.ViewModels;
-using MainTz.Web.ViewModels.UserViewModels;
 using Microsoft.AspNetCore.Mvc;
+using MainTz.Web.ViewModels;
+using AutoMapper;
 
 namespace MainTz.Web.Controllers
 {
@@ -21,7 +21,6 @@ namespace MainTz.Web.Controllers
         {
             return View();
         }
-
         public async Task<IActionResult> GetNotifications()
         {
             var contextUserName = _httpContextAccessor.HttpContext.User.Identity.Name;
@@ -37,7 +36,8 @@ namespace MainTz.Web.Controllers
 
             return View(model);
         }
-        public async Task<IActionResult> GetNotificationById(int id)
+        [HttpPost]
+        public async Task<IActionResult> GetNotificationById([FromBody]int id)
         {
             var contextUserName = _httpContextAccessor.HttpContext.User.Identity.Name;
             var user = await _userService.GetUserByNameAsync(contextUserName);

@@ -1,9 +1,16 @@
 ﻿@using MainTz.Web.ViewModels.UserViewModels
 @model NotificationResponse
 
-<h2>@Model.Header</h2>
-<div>
-    <p>
-        @Model.Description
-    </p>
-</div>
+@if(Model!= null)
+{
+    <div class="custom-text-color custom-dark-container py-2 px-2">
+        <div class="text-center custom-notification-header">
+            <h2>@Model.Header</h2>
+        </div>
+        <div class="custom-notification-body w-100 mt-2">
+            <div class="text-break">
+                @Model.Description
+            </div>
+        </div>
+    </div>
+}

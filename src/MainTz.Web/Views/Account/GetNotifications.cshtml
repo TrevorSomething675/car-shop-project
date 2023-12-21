@@ -2,23 +2,35 @@
 @model NotificationsModel
 
 <div class="container">
-        <h2 class="text-center custom-text-color">Уведомления</h2>
-    <div class="row custom-dark-container">
-        <div class="col-6 custom-text-color text-center" style="border: 2px solid red!important;">
-            @foreach (var notification in Model.Notifications)
-            {
-                <button id="sendNotificationDescription" data-id="@notification.Id">
-                    @notification.Header
-                </button>
-            }
+    <h2 class="text-center custom-text-color">Уведомления</h2>
+    <div class="row">
+        <div class="col-6">
+            <div class="custom-dark-container py-1 px-2">
+                @foreach (var notification in Model.Notifications)
+                {
+                    if(!notification.IsRead)
+                    {
+                        <button class="custom-btn-notification-header w-100 my-1" onclick="SendNotificationId(@notification.Id)">
+                            <h2>@notification.Header</h2>
+                        </button>
+                    }
+                    else
+                    {
+                        <button class="w-100 my-1 custom-btn-notification-header-unactive" onclick="SendNotificationId(@notification.Id)">
+                            <h2>@notification.Header</h2>
+                        </button>
+                    }
+                }
+            </div>
         </div>
-        <div class="col-6 custom-text-color" style="border: 2px solid red!important;">
-            @if(Model.NotificationsCount != 0)
-            {
-                <div id="NotificationContainer">
-                    @await Html.PartialAsync("GetNotificationById", Model.Notifications.FirstOrDefault());
-                </div>
-            }
+        <div class="col-6">
+            <div class="custom-dark-container">
+                @if(Model.NotificationsCount != 0)
+                {
+                    <div id="NotificationContainer">
+                    </div>
+                }
+            </div>
         </div>
     </div>
 </div>

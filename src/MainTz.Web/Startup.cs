@@ -33,6 +33,7 @@ namespace MainTz.Web
             {
                 options.UseNpgsql(_dbSettings.ConnectionString);
             });
+            services.AddScoped<INotificationRepository, NotificationRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICarRepository, CarRepository>();
 			services.AddTransient<ITokenService>(provider => new TokenService(_authSettings));
@@ -110,12 +111,42 @@ namespace MainTz.Web
                                     new NotificationEntity
                                     {
                                         Header = "testHeader1",
-                                        Description = "Description1Description1Description1Description1Description1"
+                                        Description = "Description1Description1Description1Description1Description1" +
+                                        "Description1Description1Description1Description1Description1" +
+                                        "Description1Description1Description1Description1Description1",
+                                        IsRead = false
                                     },
                                     new NotificationEntity
                                     {
                                         Header = "testHeader2",
-                                        Description = "Description2Description2Description2Description2Description2"
+                                        Description = "Description2Description2Description2Description2Description2" +
+                                        "Description2Description2Description2Description2Description2" +
+                                        "Description2Description2Description2Description2Description2",
+                                        IsRead = false
+                                    },
+                                    new NotificationEntity
+                                    {
+                                        Header = "testHeader3",
+                                        Description = "Description3Description3Description3Description3Description3" +
+                                        "Description3Description3Description3Description3Description3" +
+                                        "Description3Description3Description3Description3Description3",
+                                        IsRead = false
+                                    },
+                                    new NotificationEntity
+                                    {
+                                        Header = "testHeader4",
+                                        Description = "Description4Description4Description4Description4Description4" +
+                                        "Description4Description4Description4Description4Description4" +
+                                        "Description4Description4Description4Description4Description4",
+                                        IsRead = true
+                                    },
+                                    new NotificationEntity
+                                    {
+                                        Header = "testHeader5",
+                                        Description = "Description5Description5Description5Description5Description5" +
+                                        "Description5Description5Description5Description5Description5" +
+                                        "Description5Description5Description5Description5Description5",
+                                        IsRead = true
                                     },
                                 }
                             },
@@ -137,12 +168,16 @@ namespace MainTz.Web
                                     new NotificationEntity
                                     {
                                         Header = "testHeader1",
-                                        Description = "Description1Description1Description1Description1Description1"
+                                        Description = "Description1Description1Description1Description1Description1" +
+                                        "Description1Description1Description1Description1Description1" +
+                                        "Description1Description1Description1Description1Description1"
                                     },
                                     new NotificationEntity
                                     {
                                         Header = "testHeader2",
-                                        Description = "Description2Description2Description2Description2Description2"
+                                        Description = "Description2Description2Description2Description2Description2" +
+                                        "Description2Description2Description2Description2Description2" +
+                                        "Description2Description2Description2Description2Description2"
                                     },
                                 }
                             },

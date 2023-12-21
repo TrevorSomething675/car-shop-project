@@ -2,7 +2,7 @@
 @model CarResponse
 
 <div class="car-card">
-    <a asp-controller="user" asp-action="CarBigCard" asp-route-id="@Model.Id">
+    <a asp-controller="Car" asp-action="GetBigCarCard" asp-route-id="@Model.Id">
         <div class="row d-flex">
             <img src="~/images/mops_1.jpg" class="product-img" />
         </div>
@@ -10,7 +10,7 @@
             <h2>@Model.Name</h2>
         </div>
         <div class="row">
-            <div class="car-card-description-text">
+            <div class="car-card-description-text text-break">
                 @Model.Description
             </div>
         </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rRF81K3WE0hXWmKWeG5kXJQdZKDQIaG5JUOnKQIHDcs=",
+  "Hash": "p2NWmzmn47EwSJmj51TgdKo2HHvn6taEftW46AApZ3c=",
   "Source": "MainTz.Web",
   "BasePath": "_content/MainTz.Web",
   "Mode": "Default",
@@ -264,12 +264,12 @@
       "OriginalItemSpec": "wwwroot\\js\\RestorePasswordOnEmailScript.js"
     },
     {
-      "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\sliderScript.js",
+      "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\SliderScript.js",
       "SourceId": "MainTz.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\",
       "BasePath": "_content/MainTz.Web",
-      "RelativePath": "js/sliderScript.js",
+      "RelativePath": "js/SliderScript.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -280,7 +280,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\sliderScript.js"
+      "OriginalItemSpec": "wwwroot\\js\\SliderScript.js"
     },
     {
       "Identity": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

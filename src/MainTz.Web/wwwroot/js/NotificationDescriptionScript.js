@@ -1,22 +1,19 @@
-﻿const sendNotificationButtons = document.querySelectorAll('#sendNotificationDescription');
-
-sendNotificationButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const notificationId = button.getAttribute('data-id');
-
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', `/Account/GetNotificationById/${notificationId}`);
-        xhr.onload = function () {
-            if (xhr.status === 200) {
-                console.log(xhr.responseText);
-                document.getElementById('NotificationContainer').innerHTML = xhr.responseText;
-            } else {
-                console.error('Произошла ошибка:', xhr.status);
+﻿function SendNotificationId(id) {
+    console.log(id);
+    console.log(typeof (id));
+    $(document).ready(function () {
+        $.ajax({
+            url: '/Account/GetNotificationById',
+            type: 'POST',
+            dataType: 'html',
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(id),
+            success: function (response) {
+                $('#NotificationContainer').html(response);
+            },
+            error: function () {
+                alert('error');
             }
-        };
-        xhr.onerror = function () {
-            console.error('Произошла ошибка при выполнении запроса.');
-        };
-        xhr.send();
+        })
     });
-});
+};
