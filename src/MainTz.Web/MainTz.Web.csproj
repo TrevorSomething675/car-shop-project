@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\MainTzProject</DockerfileContext>
+    <UserSecretsId>1a3e7c19-a448-43bd-9583-ada7ded52eae</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

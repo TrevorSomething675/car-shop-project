@@ -1,10 +1,10 @@
-﻿using AutoMapper;
-using FluentValidation;
-using MainTz.Application.Models.SittingsModels;
+﻿using MainTz.Application.Models.SittingsModels;
 using MainTz.Application.Models.UserEntities;
 using MainTz.Application.Services;
-using MainTz.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using MainTz.Web.ViewModels;
+using FluentValidation;
+using AutoMapper;
 
 namespace MainTz.Web.Controllers
 {
@@ -23,16 +23,6 @@ namespace MainTz.Web.Controllers
             _usersService = usersService;
             _tokenService = tokenService;
             _mapper = mapper;
-        }
-        [HttpGet]
-        public async Task<IActionResult> ErrorViewPartial(string error)
-        {
-            return PartialView("ErrorViewPartial", error);
-        }
-        [HttpGet]
-        public async Task<IActionResult> InfoViewPartial(string message)
-        {
-            return PartialView("InfoViewPartial", message);
         }
         /// <summary>
         /// Получение токена из сервиса, путём отправки запроса с ролью

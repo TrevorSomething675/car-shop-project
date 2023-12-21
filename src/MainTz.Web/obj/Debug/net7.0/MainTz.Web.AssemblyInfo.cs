@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("1a3e7c19-a448-43bd-9583-ada7ded52eae")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MainTz.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17e9723cb0dc7bffca9a5a53c22cacd5690e9523")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+343763c3942c51657616be38abea458029d374a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MainTz.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MainTz.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
