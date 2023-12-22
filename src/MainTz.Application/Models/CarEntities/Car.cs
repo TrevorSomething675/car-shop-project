@@ -8,6 +8,7 @@
         public bool IsVisible { get; set; }
         public bool IsFavorite { get; set; }
         public string Description { get; set; }
+        public int Price { get; set; }
 
         public ICollection<int> ImagesId { get; set; }
 

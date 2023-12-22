@@ -218,6 +218,7 @@ namespace MainTz.Web
                             {
                                 Name = $"TestName{i}",
                                 Color = "red",
+                                Price = i * 100,
                                 Images = new List<ImageEntity>
                             {
                                 new ImageEntity

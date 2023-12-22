@@ -5,6 +5,7 @@
     --dark-orange-color: #a86807;
     --light-text-color: #d6d4d4;
     --dark-text-color: #8a8a8a;
+    --dark-red-color: #912c2c;
 }
 
 /*========================Global========================*/
@@ -164,6 +165,19 @@ footer {
 }
 
 /*========================Card========================*/
+.car-card-offers-container{
+    position:absolute;
+}
+
+.car-card-favorite-offer {
+    font-size: 30px;
+}
+
+.car-card-price {
+    font-size: 24px;
+    border: 2px solid var(--dark-red-color);
+    color: var(--dark-red-color);
+}
 
 .product-img {
     text-align: center;

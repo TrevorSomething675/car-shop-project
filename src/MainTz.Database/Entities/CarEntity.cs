@@ -7,6 +7,7 @@
         public bool IsVisible { get; set; }
         public bool IsFavorite { get; set; }
         public string Description { get; set; }
+        public int Price { get; set; }
 
         public ICollection<ImageEntity> Images { get; set; }
         public ICollection<UserCarEntity> Users { get; set; }
