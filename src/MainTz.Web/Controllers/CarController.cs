@@ -2,7 +2,6 @@
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using MainTz.Application.Models.CarEntities;
 
 namespace MainTz.Web.Controllers
 {
@@ -21,11 +20,12 @@ namespace MainTz.Web.Controllers
         {
             if(customCarsModel.CarsResponse == null)
             {
-                var carsDomainModels = await _carService.GetCarsAsync(pageNumber);
+                var carsDomainModels = await _carService.GetCarsWithPaggingAsync(pageNumber);
                 var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
-
+                var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
                 var model = new CarsViewModel
                 {
+                    PageCount = (int)Math.Ceiling(totalCars),
                     PageNumber = pageNumber,
                     CarsResponse = carsResponse,
                 };
@@ -57,6 +57,14 @@ namespace MainTz.Web.Controllers
             };
 
             return RedirectToAction("GetCars", customCarsModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> GetCarsPartial(int pageNumber = 1)
+        {
+           var carsDomainModels = await _carService.GetCarsWithPaggingAsync(pageNumber);
+           var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
+
+            return PartialView(carsResponse);
         }
     }
 }

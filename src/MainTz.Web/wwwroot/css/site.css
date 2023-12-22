@@ -130,6 +130,21 @@ body {
     color: var(--light-orange-color);
 }
 
+/*=========================Pagging=========================*/
+
+.custom-btn-pagging {
+    background-color: var(--light-gray-color);
+    color: var(--light-orange-color);
+    border: none;
+    border-bottom: 2px var(--light-orange-color) solid;
+    transition: .3s;
+}
+
+.custom-btn-pagging:hover {
+    background-color: var(--light-gray-color);
+    color: var(--light-text-color);
+}
+
 /*========================Footer========================*/
 
 footer {
@@ -165,6 +180,7 @@ footer {
 }
 
 /*========================Card========================*/
+
 .car-card-offers-container{
     position:absolute;
 }

@@ -1,6 +1,4 @@
-﻿const { post } = require("jquery");
-
-function SendNotificationId(id) {
+﻿function SendNotificationId(id) {
     console.log(id);
     console.log(typeof (id));
     $(document).ready(function () {

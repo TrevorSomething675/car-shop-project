@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\js\\RestorePasswordOnEmailScript.js"
     },
     {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\SendPageNumberIdScript.js",
+      "PackagePath": "staticwebassets\\js\\SendPageNumberIdScript.js"
+    },
+    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\SliderScript.js",
       "PackagePath": "staticwebassets\\js\\SliderScript.js"
     },

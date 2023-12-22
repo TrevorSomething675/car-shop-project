@@ -50,12 +50,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Car/CarCardPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXENhckNhcmRQYXJ0aWFsLmNzaHRtbA==
+[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Car/GetCarCardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhckNhcmRQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Car/GetCars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Car/GetCarsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Mail/RestoreAccountOnEmail.cshtml]

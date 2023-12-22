@@ -18,7 +18,6 @@ namespace MainTz.Infrastructure.Services
             _mapper = mapper;
             _carRepository = carRepository;
         }
-
         public async Task<Car> GetCarByIdAsync(int id)
         {
             var carEntity = await _carRepository.GetCarByIdAsync(id);
@@ -26,7 +25,12 @@ namespace MainTz.Infrastructure.Services
 
             return car;
         }
-
+        public async Task<List<Car>> GetCarsAsync()
+        {
+            var carsEntity = await _carRepository.GetCarsAsync();
+            var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
+            return carsDomainEntity;
+        }
         public async Task<List<Car>> GetFavoriteCarsAsync(int pageNumber = 1)
         {
             var totalCarsInPage = 8f;
@@ -41,7 +45,7 @@ namespace MainTz.Infrastructure.Services
 
             return carsDomainEntity;
         }
-        public async Task<List<Car>> GetCarsAsync(int pageNumber = 1)
+        public async Task<List<Car>> GetCarsWithPaggingAsync(int pageNumber = 1)
         {
             var totalCarsInPage = 8f;
             var pageCount = Math.Ceiling(_carRepository.GetCarsAsync().Result.Count() / totalCarsInPage);
