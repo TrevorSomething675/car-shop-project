@@ -6,20 +6,17 @@
     <div class="row">
         <div class="col-6">
             <div class="custom-dark-container py-1 px-2">
-                @foreach (var notification in Model.Notifications)
+                @foreach (var legacyNotification in Model.NewNotifications)
                 {
-                    if(!notification.IsRead)
-                    {
-                        <button class="custom-btn-notification-header w-100 my-1" onclick="SendNotificationId(@notification.Id)">
-                            <h2>@notification.Header</h2>
-                        </button>
-                    }
-                    else
-                    {
-                        <button class="w-100 my-1 custom-btn-notification-header-unactive" onclick="SendNotificationId(@notification.Id)">
-                            <h2>@notification.Header</h2>
-                        </button>
-                    }
+                    <button id="@legacyNotification.Id" class="custom-btn-notification-header w-100 my-1" onclick="SendNotificationId(@legacyNotification.Id)">
+                        <h2>@legacyNotification.Header</h2>
+                    </button>
+                }
+                @foreach (var newNotification in Model.LegacyNotifications)
+                {
+                    <button class="custom-btn-notification-header-unactive w-100 my-1" onclick="SendNotificationId(@newNotification.Id)">
+                        <h2>@newNotification.Header</h2>
+                    </button>
                 }
             </div>
         </div>

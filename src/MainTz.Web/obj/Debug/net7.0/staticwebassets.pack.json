@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\mops_1.jpg"
     },
     {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\ButtonsStateScript.js",
+      "PackagePath": "staticwebassets\\js\\ButtonsStateScript.js"
+    },
+    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\CookieManagerScript.js",
       "PackagePath": "staticwebassets\\js\\CookieManagerScript.js"
     },

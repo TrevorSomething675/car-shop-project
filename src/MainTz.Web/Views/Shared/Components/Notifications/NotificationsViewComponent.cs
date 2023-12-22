@@ -29,7 +29,7 @@ namespace MainTz.Web.Views.Shared.Components.Notifications
 
             var model = new NotificationsModel
             {
-                Notifications = notifications,
+                LegacyNotifications = notifications,
                 NotificationsCount = notificationsCount
             };
 

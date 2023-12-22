@@ -18,8 +18,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Account/GetNotificationById.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHZXROb3RpZmljYXRpb25CeUlkLmNzaHRtbA==
+[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Account/GetNotificationDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHZXROb3RpZmljYXRpb25EZXNjcmlwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Account/GetNotificationHeaders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHZXROb3RpZmljYXRpb25IZWFkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Account/GetNotifications.cshtml]

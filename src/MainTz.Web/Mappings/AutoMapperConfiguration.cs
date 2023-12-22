@@ -12,16 +12,19 @@ namespace MainTz.Web.Mappings
 		{
 			services.AddAutoMapper(config =>
 			{
-				config.AddProfile<RequestDomainCarMap>();
 				config.AddProfile<DomainDbEntityCarMap>();
 				config.AddProfile<ResponseDomainCarMap>();
+				config.AddProfile<RequestDomainCarMap>();
 
-				config.AddProfile<RequestDomainUserMap>();
 				config.AddProfile<DomainDbEntityUserMap>();
-				config.AddProfile<DomainDbEntityRoleMap>();
-				config.AddProfile<DomainDbEntityNotificationMap>();
 				config.AddProfile<ResponseDomainUserMap>();
+				config.AddProfile<RequestDomainUserMap>();
+
+				config.AddProfile<DomainDbEntityRoleMap>();
+
+				config.AddProfile<DomainDbEntityNotificationMap>();
 				config.AddProfile<ResponseDomainNotificationMap>();
+				config.AddProfile<RequestDomainNotificationRequestMap>();
 			});
 
 			return services;

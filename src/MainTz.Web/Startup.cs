@@ -33,10 +33,14 @@ namespace MainTz.Web
             {
                 options.UseNpgsql(_dbSettings.ConnectionString);
             });
+            services.AddDistributedMemoryCache();
+            services.AddSession();
             services.AddScoped<INotificationRepository, NotificationRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<ICarRepository, CarRepository>();
 			services.AddTransient<ITokenService>(provider => new TokenService(_authSettings));
+            services.AddScoped<INotificationService, NotificationService>();
 			services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
             services.AddScoped<ICarService, CarService>();
@@ -246,6 +250,7 @@ namespace MainTz.Web
             app.UseMiddleware<LoggingMiddleware>();
             app.UseAuthentication();
 			app.UseAuthorization();
+            app.UseSession();
 
 			app.UseEndpoints(endpoints =>
             {
