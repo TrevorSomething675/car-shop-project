@@ -9,6 +9,7 @@
             data: JSON.stringify(pageNumber),
             success: function (response) {
                 $('#CarsContainer').html(response);
+                localStorage.setItem('LastPageNumber', pageNumber);
             },
             error: function () {
                 alert('error');

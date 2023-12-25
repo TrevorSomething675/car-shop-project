@@ -59,7 +59,7 @@ namespace MainTz.Web.Controllers
             return RedirectToAction("GetCars", customCarsModel);
         }
         [HttpPost]
-        public async Task<IActionResult> GetCarsPartial(int pageNumber = 1)
+        public async Task<IActionResult> GetCarsPartial([FromBody]int pageNumber = 1)
         {
            var carsDomainModels = await _carService.GetCarsWithPaggingAsync(pageNumber);
            var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);

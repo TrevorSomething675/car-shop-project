@@ -44,7 +44,7 @@ loginForm.addEventListener('submit', function (event) {
                 let lastOpenedCarCard = GetCookie('LastOpenedCarCard');
                 if (lastOpenedCarCard != undefined) {
                     console.log(document.location.href);
-                    document.location.href = `/Car/CarBigCard?id=${lastOpenedCarCard}`;
+                    document.location.href = `/Car/GetBigCarCard?id=${lastOpenedCarCard}`;
                 } else {
                     document.location.href = `/Car/GetCars`;
                 }

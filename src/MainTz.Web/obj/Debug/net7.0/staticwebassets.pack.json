@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MainTz.Web.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\css\\BigCarCardStyle.css",
+      "PackagePath": "staticwebassets\\css\\BigCarCardStyle.css"
+    },
+    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -29,8 +33,24 @@
       "PackagePath": "staticwebassets\\images\\mops_1.jpg"
     },
     {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\images\\mops_2.jpg",
+      "PackagePath": "staticwebassets\\images\\mops_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\images\\mops_3.jpg",
+      "PackagePath": "staticwebassets\\images\\mops_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\BackToCarsFromBigCardCarScript.js",
+      "PackagePath": "staticwebassets\\js\\BackToCarsFromBigCardCarScript.js"
+    },
+    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\ButtonsStateScript.js",
       "PackagePath": "staticwebassets\\js\\ButtonsStateScript.js"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\CarCardScript.js",
+      "PackagePath": "staticwebassets\\js\\CarCardScript.js"
     },
     {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\CookieManagerScript.js",
@@ -55,10 +75,6 @@
     {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\SendPageNumberIdScript.js",
       "PackagePath": "staticwebassets\\js\\SendPageNumberIdScript.js"
-    },
-    {
-      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\SliderScript.js",
-      "PackagePath": "staticwebassets\\js\\SliderScript.js"
     },
     {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -287,6 +303,106 @@
     {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\.gitignore",
+      "PackagePath": "staticwebassets\\lib\\slick\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\CONTRIBUTING.markdown",
+      "PackagePath": "staticwebassets\\lib\\slick\\CONTRIBUTING.markdown"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\ISSUE_TEMPLATE.md",
+      "PackagePath": "staticwebassets\\lib\\slick\\ISSUE_TEMPLATE.md"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\slick"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\Makefile",
+      "PackagePath": "staticwebassets\\lib\\slick"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\README.markdown",
+      "PackagePath": "staticwebassets\\lib\\slick\\README.markdown"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\bower.json",
+      "PackagePath": "staticwebassets\\lib\\slick\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\component.json",
+      "PackagePath": "staticwebassets\\lib\\slick\\component.json"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\index.html",
+      "PackagePath": "staticwebassets\\lib\\slick\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\package.json",
+      "PackagePath": "staticwebassets\\lib\\slick\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick.jquery.json",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick.jquery.json"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\config.rb",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\config.rb"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\slick-theme.less",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\slick-theme.less"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\slick-theme.scss",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\slick-theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\slick.js",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\slick.less",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\slick.less"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\slick\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\lib\\slick\\slick\\slick.scss"
     },
     {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\owlcarousel\\js\\owl.carousel.js",
