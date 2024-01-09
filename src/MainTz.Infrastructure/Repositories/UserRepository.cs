@@ -10,55 +10,69 @@ namespace MainTz.Infrastructure.Repositories
     /// </summary>
     public class UserRepository : IUserRepository
     {
-        private readonly MainContext _mainContext;
-        public UserRepository(MainContext mainContext)
+        private readonly IDbContextFactory<MainContext> _dbContextFactory;
+        public UserRepository(IDbContextFactory<MainContext> dbContextFactory)
         {
-            _mainContext = mainContext;
+            _dbContextFactory = dbContextFactory;
         }
 
         public async Task<UserEntity> GetUserByNameAsync(string name)
         {
-            using (var context = new MainContext())
+            using (var context = _dbContextFactory.CreateDbContext())
             {
-
-                var user = await _mainContext.Users
+                var user = await context.Users
                     .Include(user => user.Role)
                     .Include(user => user.Cars)
                     .Include(user => user.Notifications)
                     .FirstOrDefaultAsync(user => user.Name == name);
-            return user;
+                return user;
             }
         }
 		public async Task<UserEntity> GetUserByEmailAsync(string email)
 		{
-			var user = await _mainContext.Users
-	            .Include(user => user.Role)
-	            .Include(user => user.Cars)
-	            .FirstOrDefaultAsync(user => user.Email == email);
-			return user;
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+			    var user = await context.Users
+	                .Include(user => user.Role)
+	                .Include(user => user.Cars)
+	                .FirstOrDefaultAsync(user => user.Email == email);
+			    return user;
+            }
 		}
 		public async Task<List<UserEntity>> GetUsersAsync()
         {
-            var users = await _mainContext.Users.ToListAsync();
-            return users;
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var users = await context.Users.ToListAsync();
+                return users;
+            }
         }
 
         public async Task UpdateAsync(UserEntity user)
         {
-            _mainContext.Users.Update(user);
-            await _mainContext.SaveChangesAsync();
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+                context.Users.Update(user);
+                await context.SaveChangesAsync();
+            }
         }
 
         public async Task CreateAsync(UserEntity user)
         {
-            _mainContext.Users.Add(user);
-            await _mainContext.SaveChangesAsync();
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+                context.Users.Add(user);
+                await context.SaveChangesAsync();
+            }
         }
 
         public async Task DeleteAsync(UserEntity user)
         {
-            _mainContext.Users.Remove(user);
-            await _mainContext.SaveChangesAsync();
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+                context.Users.Remove(user);
+                await context.SaveChangesAsync();
+            }
         }
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using MainTz.Application.Models.SittingsModels;
+using MainTz.Web.ViewModels.UserViewModels;
 using MainTz.Infrastructure.Repositories;
 using MainTz.Application.Repositories;
 using Microsoft.IdentityModel.Tokens;
@@ -14,8 +15,6 @@ using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
 using FluentValidation;
 using System.Text;
-using System.Reflection.PortableExecutable;
-using MainTz.Web.ViewModels.UserViewModels;
 
 namespace MainTz.Web
 {
@@ -30,7 +29,7 @@ namespace MainTz.Web
 		}
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MainContext>(options =>
+            services.AddDbContextFactory<MainContext>(options =>
             {
                 options.UseNpgsql(_dbSettings.ConnectionString);
             });
@@ -103,7 +102,7 @@ namespace MainTz.Web
                         context.SaveChanges();
                     }
 
-                    if(!context.Users.Any())
+                    if (!context.Users.Any())
                     {
                         var users = new List<UserEntity>
                         {
@@ -238,13 +237,13 @@ namespace MainTz.Web
                                 Color = "red",
                                 Price = i * 100,
                                 Images = new List<ImageEntity>
-                            {
-                                new ImageEntity
                                 {
-                                    Name = "pic1",
-                                    File = new byte[5],
-                                }
-                            },
+                                    new ImageEntity
+                                    {
+                                        Name = "pic1",
+                                        File = new byte[5],
+                                    }
+                                },
                                 IsFavorite = false,
                                 IsVisible = true,
                                 Description = $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +

@@ -11,37 +11,51 @@ namespace MainTz.Infrastructure.Repositories
     /// </summary>
     public class CarRepository : ICarRepository
     {
-        private readonly MainContext _context;
-        public CarRepository(MainContext context)
+        private readonly IDbContextFactory<MainContext> _dbContextFactory;
+        public CarRepository(IDbContextFactory<MainContext> dbContextFactory)
         {
-            _context = context;
+            _dbContextFactory = dbContextFactory;
         }
         public async Task<CarEntity> GetCarByIdAsync(int id)
         {
-            var car = await _context.Cars.FirstOrDefaultAsync(car => car.Id == id);
-            return car;
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+                var car = await context.Cars.FirstOrDefaultAsync(car => car.Id == id);
+                return car;
+            }
         }
         public async Task<List<CarEntity>> GetCarsAsync(Expression<Func<CarEntity, bool>> filter = null)
         {
             filter = filter ?? (car => true);
-
-            var cars = await _context.Cars.Where(filter).ToListAsync();
-            return cars;
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+                var cars = await context.Cars.Where(filter).ToListAsync();
+                return cars;
+            }
         }
         public async Task CreateAsync(CarEntity car)
         {
-            _context.Cars.Add(car);
-            await _context.SaveChangesAsync();
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                context.Cars.Add(car);
+                await context.SaveChangesAsync();
+            }
         }
         public async Task DeleteAsync(CarEntity car)
         {
-            _context.Cars.Remove(car);
-            await _context.SaveChangesAsync();
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+                context.Cars.Remove(car);
+                await context.SaveChangesAsync();
+            }
         }
         public async Task UpdateAsync(CarEntity car)
         {
-            _context.Cars.Update(car);
-            await _context.SaveChangesAsync();
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+                context.Cars.Update(car);
+                await context.SaveChangesAsync();
+            }
         }
     }
 }

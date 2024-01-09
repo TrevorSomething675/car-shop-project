@@ -9,8 +9,8 @@
         public string Description { get; set; }
         public int Price { get; set; }
 
-        public ICollection<ImageEntity> Images { get; set; }
-        public ICollection<UserCarEntity> Users { get; set; }
+        public IEnumerable<ImageEntity> Images { get; set; }
+        public IEnumerable<UserCarEntity> Users { get; set; }
         public int ModelId { get; set; }
         public ModelEntity Model { get; set; }
     }

@@ -38,8 +38,11 @@ updatePasswordForm.addEventListener('submit', function (event) {
         method: updatePasswordForm.method,
         body: new FormData(updatePasswordForm)
     })
-    .then(response => {
-        return response.json();
+        .then(response => {
+            if (response.status == 200) {
+                document.location.href = "/Auth/LogOut";
+            }
+            return response.json();
     })
     .then(data => {
         if (data.errorMessage != '' && data.errorMessage !== undefined) {

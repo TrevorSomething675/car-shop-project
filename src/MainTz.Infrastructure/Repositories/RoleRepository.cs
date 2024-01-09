@@ -7,15 +7,18 @@ namespace MainTz.Infrastructure.Repositories
 {
 	public class RoleRepository : IRoleRepository
 	{
-		private readonly MainContext _mainContext;
-		public RoleRepository(MainContext mainContext)
+		private readonly IDbContextFactory<MainContext> _dbContextFactory;
+		public RoleRepository(IDbContextFactory<MainContext> dbContextFactory)
 		{
-			_mainContext = mainContext;
+			_dbContextFactory = dbContextFactory;
 		}
 		public async Task<RoleEntity> GetRoleByNameAsync(string roleName)
 		{
-			var resultRole = await _mainContext.Roles.FirstOrDefaultAsync(role => role.RoleName == roleName);
-			return resultRole;
+			using(var context = _dbContextFactory.CreateDbContext())
+			{
+				var resultRole = await context.Roles.FirstOrDefaultAsync(role => role.RoleName == roleName);
+				return resultRole;
+			}
 		}
 	}
 }

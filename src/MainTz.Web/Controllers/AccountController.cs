@@ -69,7 +69,10 @@ namespace MainTz.Web.Controllers
             user.Name = updateLoginUserRequest.NewName;
             var result = await _userService.UpdateAsync(user);
 
-            return Results.Ok();
+            if (result)
+                return Results.Ok();
+            else
+                return Results.BadRequest(new ErrorViewModel { ErrorMessage = "Критическая ошибка" });
         }
         [HttpPost]
         public async Task<IResult> UpdatePasswordUserAccount(UpdatePasswordUserRequest updatePasswordUserRequest)
@@ -77,8 +80,14 @@ namespace MainTz.Web.Controllers
             var requestForm = _updatePasswordFormValidator.Validate(updatePasswordUserRequest);
             if (!requestForm.IsValid)
                 return Results.Json(new ErrorViewModel { ErrorMessage = string.Join(" ", requestForm.Errors.Select(err => err.ErrorMessage)) });
+            var user = await _userService.GetUserByNameAsync(_httpContextAccessor.HttpContext.User.Identity.Name);
+            user.Password = updatePasswordUserRequest.NewPassword;
+            var result = await _userService.UpdateAsync(user);
 
-            return Results.Ok();
+            if(result)
+                return Results.Ok();
+            else
+                return Results.BadRequest(new ErrorViewModel { ErrorMessage = "Критическая ошибка" });
         }
     }
 }

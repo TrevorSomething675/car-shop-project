@@ -1,0 +1,23 @@
+﻿@using MainTz.Web.ViewModels.CarViewModels
+@model CarsViewModel
+
+<div id="CarsContainer" class="row">
+    @await Html.PartialAsync("GetFavoriteCarsPartial", Model.CarsResponse)
+</div>
+<div class="text-center py-2">
+    @if(Model.CarsResponse.Count() == 0)
+    {
+        <a asp-action="GetCars" asp-controller="Car" class="custom-btn-orange">
+            У вас пока нет отмеченных машин. Хотите вернуться к списку товаров?
+        </a>
+    }
+    else
+    {
+        for (int i = 1; i < Model.PageCount + 1; i++)
+        {
+            <button id="pageCountBtn_@i" class="custom-btn-pagging" onclick="SendCarsPageNumber(@i)">
+                @i
+            </button>
+        }
+    }
+</div>

@@ -66,6 +66,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCarsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVDYXJzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Mail/RestoreAccountOnEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbFxSZXN0b3JlQWNjb3VudE9uRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
