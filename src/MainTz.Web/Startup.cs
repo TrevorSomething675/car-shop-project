@@ -15,6 +15,7 @@ using MainTz.Web.Mappings;
 using FluentValidation;
 using System.Text;
 using System.Reflection.PortableExecutable;
+using MainTz.Web.ViewModels.UserViewModels;
 
 namespace MainTz.Web
 {
@@ -46,6 +47,8 @@ namespace MainTz.Web
             services.AddScoped<ICarService, CarService>();
             services.AddScoped<IValidator<RegisterFormRequest>, RegisterFormValidator>();
             services.AddScoped<IValidator<RestoreEmailRequest>, RestoreEmailValidator>();
+            services.AddScoped<IValidator<UpdateLoginUserRequest>, UpdateLoginUserValidator>();
+            services.AddScoped<IValidator<UpdatePasswordUserRequest>, UpdatePasswordUserValidator>();
             services.AddScoped<IValidator<LoginFormRequest>, LoginFormValidator>();
 
             services.AddDomainAppAutoMapperConfiguration();

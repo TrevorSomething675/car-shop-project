@@ -18,12 +18,16 @@ namespace MainTz.Infrastructure.Repositories
 
         public async Task<UserEntity> GetUserByNameAsync(string name)
         {
-            var user = await _mainContext.Users
-                .Include(user => user.Role)
-                .Include(user => user.Cars)
-                .Include(user => user.Notifications)
-                .FirstOrDefaultAsync(user => user.Name == name);
+            using (var context = new MainContext())
+            {
+
+                var user = await _mainContext.Users
+                    .Include(user => user.Role)
+                    .Include(user => user.Cars)
+                    .Include(user => user.Notifications)
+                    .FirstOrDefaultAsync(user => user.Name == name);
             return user;
+            }
         }
 		public async Task<UserEntity> GetUserByEmailAsync(string email)
 		{

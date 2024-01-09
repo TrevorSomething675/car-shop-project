@@ -19,6 +19,7 @@ namespace MainTz.Web.Mappings
 				config.AddProfile<DomainDbEntityUserMap>();
 				config.AddProfile<ResponseDomainUserMap>();
 				config.AddProfile<RequestDomainUserMap>();
+				config.AddProfile<RequestRegisterUserMap>();
 
 				config.AddProfile<DomainDbEntityRoleMap>();
 

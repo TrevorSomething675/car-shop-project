@@ -21,17 +21,17 @@ registerForm.addEventListener('submit', function (event) {
                     },
                 })
             }
-            if (data != '' && response.Ok) {
-                document.cookie = `accessToken=${data.value.accessToken}`;
-                document.cookie = `refreshToken=${data.value.refreshToken}`;
-                document.cookie = `role=${data.value.role}`;
+            if (data != '') {
+                document.cookie = `accessToken=${data.value.accessToken}; path=/`;
+                document.cookie = `refreshToken=${data.value.refreshToken}; path=/`;
+                document.cookie = `role=${data.value.role}; path=/`;
                 console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
                 let lastOpenedCarCard = GetCookie('LastOpenedCarCard');
                 if (lastOpenedCarCard != undefined) {
                     console.log(document.location.href);
                     document.location.href = `/User/CarBigCard?id=${lastOpenedCarCard}`;
                 } else {
-                    document.location.pathname = `${data.value.role}/Index`;
+                    document.location.pathname = `/Car/GetCars`;
                 }
             } else {
                 console.log('Данные не найдены в ответе сервера')

@@ -77,6 +77,10 @@
       "PackagePath": "staticwebassets\\js\\SendPageNumberIdScript.js"
     },
     {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\UpdateAccountUserScript.js",
+      "PackagePath": "staticwebassets\\js\\UpdateAccountUserScript.js"
+    },
+    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

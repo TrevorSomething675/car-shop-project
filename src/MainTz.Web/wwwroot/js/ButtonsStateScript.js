@@ -1,8 +1,8 @@
 ﻿var notificationBtn = $('#notifications-item-btn');
-var notificationEventBtn = $('#notifications-event-btn')
+var notificationEventBtn = $('#notifications-event-btn');
 var favoriteBtn = $('#favorite-item-btn');
 var accountBtn = $('#account-item-btn');
-
+var getCarsHeaderBtn = $('#GetCarsHeaderBtn');
 $(document).ready(function () {
     notificationEventBtn.click(function () {
         sessionStorage.setItem('IsNotificationsPage', true);
@@ -22,9 +22,9 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    var isNotificationsPage = sessionStorage.getItem('IsNotificationsPage');
-    var isFavoritePage = sessionStorage.getItem('IsFavoritePage');
-    var isAccountPage = sessionStorage.getItem('IsAccountPage');
+    let isNotificationsPage = sessionStorage.getItem('IsNotificationsPage');
+    let isFavoritePage = sessionStorage.getItem('IsFavoritePage');
+    let isAccountPage = sessionStorage.getItem('IsAccountPage');
     if (isNotificationsPage == 'true') {
         notificationBtn.hide();
     }
@@ -34,4 +34,10 @@ $(document).ready(function () {
     if (isAccountPage == 'true') {
         accountBtn.hide();
     }
+});
+
+getCarsHeaderBtn.click(function () {
+    sessionStorage.setItem('IsNotificationsPage', false);
+    sessionStorage.setItem('IsFavoritePage', false);
+    sessionStorage.setItem('IsAccountPage', false);
 });

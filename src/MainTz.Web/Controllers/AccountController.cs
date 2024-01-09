@@ -2,27 +2,36 @@
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
+using FluentValidation;
 using AutoMapper;
-using Microsoft.AspNetCore.Http;
 
 namespace MainTz.Web.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly IValidator<UpdatePasswordUserRequest> _updatePasswordFormValidator;
+        private readonly IValidator<UpdateLoginUserRequest> _updateLoginFormValidator;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly INotificationService _notificationService;
         private readonly IUserService _userService;
         private readonly IMapper _mapper;
-        public AccountController(IUserService userService, IHttpContextAccessor httpContextAccessor, IMapper mapper, INotificationService notificationService)
+        public AccountController(IUserService userService, IHttpContextAccessor httpContextAccessor, IMapper mapper, 
+            INotificationService notificationService, IValidator<UpdateLoginUserRequest> updateLoginFormValidator,
+            IValidator<UpdatePasswordUserRequest> updatePasswordFormValidator)
         {
+            _updatePasswordFormValidator = updatePasswordFormValidator;
+            _updateLoginFormValidator = updateLoginFormValidator;
             _httpContextAccessor = httpContextAccessor;
             _notificationService = notificationService;
             _userService = userService;
             _mapper = mapper;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var user = await _userService.GetUserByNameAsync(_httpContextAccessor?.HttpContext?.User?.Identity?.Name);
+            var model = _mapper.Map<UserResponse>(user);
+
+            return View(model);
         }
         public async Task<IActionResult> GetNotifications()
         {
@@ -50,10 +59,26 @@ namespace MainTz.Web.Controllers
             return PartialView("GetNotificationDescription", notificationResponse);
         }
         [HttpPost]
-        public async Task<IActionResult> GetNotificationHeaders()
+        public async Task<IResult> UpdateLoginUserAccount(UpdateLoginUserRequest updateLoginUserRequest)
         {
+            var requestForm = _updateLoginFormValidator.Validate(updateLoginUserRequest);
+            if (!requestForm.IsValid)
+                return Results.BadRequest(new ErrorViewModel { ErrorMessage = string.Join(" ", requestForm.Errors.Select(err => err.ErrorMessage)) });
 
-            return PartialView();
+            var user = await _userService.GetUserByNameAsync(_httpContextAccessor.HttpContext.User.Identity.Name);
+            user.Name = updateLoginUserRequest.NewName;
+            var result = await _userService.UpdateAsync(user);
+
+            return Results.Ok();
+        }
+        [HttpPost]
+        public async Task<IResult> UpdatePasswordUserAccount(UpdatePasswordUserRequest updatePasswordUserRequest)
+        {
+            var requestForm = _updatePasswordFormValidator.Validate(updatePasswordUserRequest);
+            if (!requestForm.IsValid)
+                return Results.Json(new ErrorViewModel { ErrorMessage = string.Join(" ", requestForm.Errors.Select(err => err.ErrorMessage)) });
+
+            return Results.Ok();
         }
     }
 }
