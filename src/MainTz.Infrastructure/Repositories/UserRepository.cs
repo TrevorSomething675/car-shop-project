@@ -1,7 +1,9 @@
-﻿using MainTz.Application.Repositories;
+﻿using MainTz.Application.Models.UserEntities;
+using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
+using AutoMapper;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -11,66 +13,75 @@ namespace MainTz.Infrastructure.Repositories
     public class UserRepository : IUserRepository
     {
         private readonly IDbContextFactory<MainContext> _dbContextFactory;
-        public UserRepository(IDbContextFactory<MainContext> dbContextFactory)
+        private readonly IMapper _mapper;
+        public UserRepository(IDbContextFactory<MainContext> dbContextFactory, IMapper mapper)
         {
             _dbContextFactory = dbContextFactory;
+            _mapper = mapper;
         }
 
-        public async Task<UserEntity> GetUserByNameAsync(string name)
+        public async Task<User> GetUserByNameAsync(string name)
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                var user = await context.Users
+                var userEntity = await context.Users
                     .Include(user => user.Role)
                     .Include(user => user.Cars)
                     .Include(user => user.Notifications)
                     .FirstOrDefaultAsync(user => user.Name == name);
+                var user = _mapper.Map<User>(userEntity);
                 return user;
             }
         }
-		public async Task<UserEntity> GetUserByEmailAsync(string email)
+		public async Task<User> GetUserByEmailAsync(string email)
 		{
             using(var context = _dbContextFactory.CreateDbContext())
             {
-			    var user = await context.Users
+			    var userEntity = await context.Users
 	                .Include(user => user.Role)
 	                .Include(user => user.Cars)
 	                .FirstOrDefaultAsync(user => user.Email == email);
-			    return user;
+                var user = _mapper.Map<User>(userEntity);
+                return user;
             }
 		}
-		public async Task<List<UserEntity>> GetUsersAsync()
+		public async Task<List<User>> GetUsersAsync()
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                var users = await context.Users.ToListAsync();
+                var userEntities = await context.Users.ToListAsync();
+                var users = _mapper.Map<List<User>>(userEntities);
                 return users;
             }
         }
 
-        public async Task UpdateAsync(UserEntity user)
+        public async Task UpdateAsync(User user)
         {
             using(var context = _dbContextFactory.CreateDbContext())
             {
-                context.Users.Update(user);
+                var userEntity = _mapper.Map<UserEntity>(user);
+                context.Users.Attach(userEntity);
+                context.Users.Update(userEntity);
                 await context.SaveChangesAsync();
             }
         }
 
-        public async Task CreateAsync(UserEntity user)
+        public async Task CreateAsync(User user)
         {
             using(var context = _dbContextFactory.CreateDbContext())
             {
-                context.Users.Add(user);
+                var userEntity = _mapper.Map<UserEntity>(user);
+                context.Users.Add(userEntity);
                 await context.SaveChangesAsync();
             }
         }
 
-        public async Task DeleteAsync(UserEntity user)
+        public async Task DeleteAsync(User user)
         {
             using(var context = _dbContextFactory.CreateDbContext())
             {
-                context.Users.Remove(user);
+                var userEntity = _mapper.Map<UserEntity>(user);
+                context.Users.Remove(userEntity);
                 await context.SaveChangesAsync();
             }
         }

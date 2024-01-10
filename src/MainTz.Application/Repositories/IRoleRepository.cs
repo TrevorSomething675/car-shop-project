@@ -1,9 +1,9 @@
-﻿using MainTz.Database.Entities;
+﻿using MainTz.Application.Models.UserEntities;
 
 namespace MainTz.Application.Repositories
 {
 	public interface IRoleRepository
 	{
-		public Task<RoleEntity> GetRoleByNameAsync(string roleName);
+		public Task<Role> GetRoleByNameAsync(string roleName);
 	}
 }

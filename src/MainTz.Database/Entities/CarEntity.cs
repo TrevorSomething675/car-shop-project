@@ -10,7 +10,7 @@
         public int Price { get; set; }
 
         public IEnumerable<ImageEntity> Images { get; set; }
-        public IEnumerable<UserCarEntity> Users { get; set; }
+        public IEnumerable<UserEntity> Users { get; set; } = new List<UserEntity>();
         public int ModelId { get; set; }
         public ModelEntity Model { get; set; }
     }

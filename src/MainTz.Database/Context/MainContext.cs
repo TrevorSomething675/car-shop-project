@@ -25,7 +25,7 @@ namespace MainTa.Database.Context
             modelBuilder.ApplyConfiguration(new NotificationConfiguration());
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
-            modelBuilder.ApplyConfiguration(new UserCarConfiguration());
+            //modelBuilder.ApplyConfiguration(new UserCarConfiguration());
         }
     }
 }

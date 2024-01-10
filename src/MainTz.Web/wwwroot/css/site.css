@@ -181,6 +181,30 @@ footer {
 
 /*========================Card========================*/
 
+.car-red-offer-btn {
+    color: var(--dark-red-color);
+    text-decoration: none;
+    transition: .2s;
+    background: none;
+    border: none;
+}
+
+.car-red-offer-btn:hover {
+    color: var(--light-text-color) !important;
+}
+
+.car-favorite-offer-btn {
+    color: var(--light-orange-color);
+    text-decoration: none;
+    transition: .2s;
+    background:none;
+    border:none;
+}
+
+.car-favorite-offer-btn:hover {
+    color: var(--light-text-color) !important;
+}
+
 .car-card-offers-container{
     position:absolute;
 }

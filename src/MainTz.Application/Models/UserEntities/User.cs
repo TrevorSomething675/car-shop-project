@@ -1,4 +1,5 @@
 ﻿using MainTz.Application.Models.CarEntities;
+using MainTz.Database.Entities;
 
 namespace MainTz.Application.Models.UserEntities
 {
@@ -12,7 +13,7 @@ namespace MainTz.Application.Models.UserEntities
         public int RoleId { get; set; }
 		public Role Role { get; set; }
 
-		public ICollection<Car> Cars { get; set; }
+		public ICollection<Car> Cars { get; set; } = new List<Car>();
         public ICollection<Notification> Notifications { get; set; }
     }
 }

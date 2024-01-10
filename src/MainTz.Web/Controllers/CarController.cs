@@ -46,18 +46,18 @@ namespace MainTz.Web.Controllers
 
             return View(carResponse);
         }
-        public async Task<IActionResult> GetFavoriteCars(int pageNumber = 1)
-        {
-            var carsModel = await _carService.GetFavoriteCarsAsync(pageNumber);
-            var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-            var customCarsModel = new CarsViewModel
-            {
-                PageNumber = pageNumber,
-                CarsResponse = carsResponse
-            };
+        //public async Task<IActionResult> GetFavoriteCars(int pageNumber = 1)
+        //{
+        //    var carsModel = await _carService.GetFavoriteCarsAsync(pageNumber);
+        //    var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
+        //    var customCarsModel = new CarsViewModel
+        //    {
+        //        PageNumber = pageNumber,
+        //        CarsResponse = carsResponse
+        //    };
 
-            return RedirectToAction("GetCars", customCarsModel);
-        }
+        //    return RedirectToAction("GetCars", customCarsModel);
+        //}
         [HttpPost]
         public async Task<IActionResult> GetCarsPartial([FromBody]int pageNumber = 1)
         {

@@ -11,15 +11,18 @@ namespace MainTz.Database.Context.ConfigureEntities
             builder.HasKey(u => u.Id);
             
             builder.HasOne(u => u.Role)
-                .WithMany(r => r.User)
+                .WithMany(r => r.Users)
                 .HasForeignKey(u => u.RoleId)
                 .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasMany(u => u.Cars)
-                .WithOne(uc => uc.User)
-                .HasForeignKey(uc => uc.UserId)
-                .IsRequired(false)
-                .OnDelete(DeleteBehavior.Cascade);
+                .WithMany(c => c.Users);
+
+            //builder.HasMany(u => u.Cars)
+            //    .WithOne(uc => uc.User)
+            //    .HasForeignKey(uc => uc.UserId)
+            //    .IsRequired(false)
+            //    .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasMany(u => u.Notifications)
                 .WithOne(n => n.User)

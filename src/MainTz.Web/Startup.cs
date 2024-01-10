@@ -41,6 +41,7 @@ namespace MainTz.Web
             services.AddScoped<ICarRepository, CarRepository>();
 			services.AddTransient<ITokenService>(provider => new TokenService(_authSettings));
             services.AddScoped<INotificationService, NotificationService>();
+            services.AddScoped<IFavoriteCarService, FavoriteCarService>();
 			services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
             services.AddScoped<ICarService, CarService>();
@@ -85,6 +86,10 @@ namespace MainTz.Web
             {
                 using (var context = scope.ServiceProvider.GetRequiredService<MainContext>())
                 {
+                    context.Database.EnsureDeleted();
+                    context.Database.Migrate();
+                    context.Database.EnsureCreated();
+                    context.SaveChanges();
                     if (!context.Brands.Any())
                     {
                         var brand = new BrandEntity
@@ -98,10 +103,6 @@ namespace MainTz.Web
                         context.Brands.Add(brand);
                         context.SaveChanges();
                     }
-                    context.Database.EnsureDeleted();
-                    context.Database.Migrate();
-                    context.Database.EnsureCreated();
-                    context.SaveChanges();
                     if (!context.Roles.Any())
                     {
                         var roles = new List<RoleEntity>
@@ -253,6 +254,10 @@ namespace MainTz.Web
                             cars.Add(car);
                         };
                         context.Cars.AddRange(cars);
+                        context.SaveChanges();
+                        var adminUser = context.Users.FirstOrDefault(user => user.Role.RoleName == "Admin");
+                        var favorCar = context.Cars.FirstOrDefault();
+                        adminUser.Cars.Add(favorCar);
                         context.SaveChanges();
                     }
                 }

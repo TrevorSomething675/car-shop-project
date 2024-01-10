@@ -8,8 +8,9 @@ namespace MainTz.Application.Services
         public Task<List<Car>> GetCarsAsync();
         public Task<List<Car>> GetCarsWithPaggingAsync(int pageNumber = 1);
         public Task<List<Car>> GetFavoriteCarsAsync(int pageNumber = 1);
-        public Task<bool> CreateCarAsync(Car carDto);
-        public Task<bool> DeleteCarAsync(Car carDto);
-        public Task<bool> UpdateCarAsync(Car carDto);
+
+        public Task<bool> CreateCarAsync(Car car);
+        public Task<bool> DeleteCarAsync(Car car);
+        public Task<bool> UpdateCarAsync(Car car);
     }
 }

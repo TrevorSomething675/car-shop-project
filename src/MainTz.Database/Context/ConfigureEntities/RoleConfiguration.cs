@@ -8,7 +8,7 @@ namespace MainTz.Database.Context.ConfigureEntities
     {
         public void Configure(EntityTypeBuilder<RoleEntity> builder)
         {
-            builder.HasMany(r => r.User)
+            builder.HasMany(r => r.Users)
                 .WithOne(u => u.Role)
                 .OnDelete(DeleteBehavior.NoAction);
         }

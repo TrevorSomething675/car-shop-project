@@ -8,6 +8,9 @@ namespace MainTz.Database.Context.ConfigureEntities
     {
         public void Configure(EntityTypeBuilder<BrandEntity> builder)
         {
+            builder.HasKey(b => b.Id);
+            builder.Property(b => b.Id).UseHiLo().UseIdentityColumn().ValueGeneratedOnAdd();
+
             builder.HasMany(b => b.Models)
                 .WithOne(m => m.Brand)
                 .OnDelete(DeleteBehavior.Cascade)

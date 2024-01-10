@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\mops_3.jpg"
     },
     {
+      "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\AddCarToFavoriteScript.js",
+      "PackagePath": "staticwebassets\\js\\AddCarToFavoriteScript.js"
+    },
+    {
       "Id": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\wwwroot\\js\\BackToCarsFromBigCardCarScript.js",
       "PackagePath": "staticwebassets\\js\\BackToCarsFromBigCardCarScript.js"
     },

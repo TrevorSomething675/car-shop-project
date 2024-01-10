@@ -1,8 +1,10 @@
-﻿using MainTz.Application.Repositories;
+﻿using MainTz.Application.Models.CarEntities;
+using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
-using System.Linq.Expressions;
+using AutoMapper;
+using MainTz.Application.Models.UserEntities;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -12,48 +14,62 @@ namespace MainTz.Infrastructure.Repositories
     public class CarRepository : ICarRepository
     {
         private readonly IDbContextFactory<MainContext> _dbContextFactory;
-        public CarRepository(IDbContextFactory<MainContext> dbContextFactory)
+        private readonly IMapper _mapper;
+        public CarRepository(IMapper mapper, IDbContextFactory<MainContext> dbContextFactory)
         {
             _dbContextFactory = dbContextFactory;
+            _mapper = mapper;
         }
-        public async Task<CarEntity> GetCarByIdAsync(int id)
+        public async Task<Car> GetCarByIdAsync(int id)
         {
             using(var context = _dbContextFactory.CreateDbContext())
             {
-                var car = await context.Cars.FirstOrDefaultAsync(car => car.Id == id);
+                var carEntity = await context.Cars
+                    .Include(car => car.Model)
+                    .Include(car => car.Model.Brand)
+                    .FirstOrDefaultAsync(car => car.Id == id);
+                var car = _mapper.Map<Car>(carEntity);
                 return car;
             }
         }
-        public async Task<List<CarEntity>> GetCarsAsync(Expression<Func<CarEntity, bool>> filter = null)
+        public async Task<List<Car>> GetCarsAsync()
         {
-            filter = filter ?? (car => true);
             using(var context = _dbContextFactory.CreateDbContext())
             {
-                var cars = await context.Cars.Where(filter).ToListAsync();
+                var carEntities = await context.Cars.ToListAsync();
+                var cars = _mapper.Map<List<Car>>(carEntities);
                 return cars;
             }
         }
-        public async Task CreateAsync(CarEntity car)
+        public async Task UpdateAsync(Car car)
+        {
+            using(var context = _dbContextFactory.CreateDbContext())
+            {
+                var carEntity = _mapper.Map<CarEntity>(car);
+                context.Cars.Attach(carEntity);
+                context.Cars.Update(carEntity);
+                await context.SaveChangesAsync();
+            }
+        }
+        public async Task CreateAsync(Car car)
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                context.Cars.Add(car);
+                var carEntity = _mapper.Map<CarEntity>(car);
+                //var jija = context.Cars.ToList();
+                //var jija2 = jija.Last();
+                //carEntity.Id = jija2.Id + 1;
+                //context.Cars.Attach(carEntity);
+                context.Cars.Add(carEntity);
                 await context.SaveChangesAsync();
             }
         }
-        public async Task DeleteAsync(CarEntity car)
+        public async Task DeleteAsync(Car car)
         {
             using(var context = _dbContextFactory.CreateDbContext())
             {
-                context.Cars.Remove(car);
-                await context.SaveChangesAsync();
-            }
-        }
-        public async Task UpdateAsync(CarEntity car)
-        {
-            using(var context = _dbContextFactory.CreateDbContext())
-            {
-                context.Cars.Update(car);
+                var carEntity = _mapper.Map<CarEntity>(car);
+                context.Cars.Remove(carEntity);
                 await context.SaveChangesAsync();
             }
         }

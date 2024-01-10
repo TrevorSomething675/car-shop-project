@@ -26,6 +26,9 @@ namespace MainTz.Web.Mappings
 				config.AddProfile<DomainDbEntityNotificationMap>();
 				config.AddProfile<ResponseDomainNotificationMap>();
 				config.AddProfile<RequestDomainNotificationRequestMap>();
+
+				config.AddProfile<DomainDbEntityModelMap>();
+				config.AddProfile<DomainDbEntityBrandMap>();
 			});
 
 			return services;

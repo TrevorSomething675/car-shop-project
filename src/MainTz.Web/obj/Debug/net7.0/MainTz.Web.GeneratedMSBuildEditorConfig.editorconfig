@@ -66,6 +66,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteBigCarCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVCaWdDYXJDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCarCardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVDYXJDYXJkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVDYXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

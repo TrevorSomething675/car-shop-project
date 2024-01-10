@@ -22,6 +22,21 @@ namespace MainTz.Database.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("CarEntityUserEntity", b =>
+                {
+                    b.Property<int>("CarsId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UsersId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("CarsId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("CarEntityUserEntity");
+                });
+
             modelBuilder.Entity("MainTz.Database.Entities.BrandEntity", b =>
                 {
                     b.Property<int>("Id")
@@ -175,21 +190,6 @@ namespace MainTz.Database.Migrations
                     b.ToTable("Roles");
                 });
 
-            modelBuilder.Entity("MainTz.Database.Entities.UserCarEntity", b =>
-                {
-                    b.Property<int>("CarId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("CarId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserCarEntity");
-                });
-
             modelBuilder.Entity("MainTz.Database.Entities.UserEntity", b =>
                 {
                     b.Property<int>("Id")
@@ -218,6 +218,21 @@ namespace MainTz.Database.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("CarEntityUserEntity", b =>
+                {
+                    b.HasOne("MainTz.Database.Entities.CarEntity", null)
+                        .WithMany()
+                        .HasForeignKey("CarsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MainTz.Database.Entities.UserEntity", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.CarEntity", b =>
@@ -262,29 +277,10 @@ namespace MainTz.Database.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("MainTz.Database.Entities.UserCarEntity", b =>
-                {
-                    b.HasOne("MainTz.Database.Entities.CarEntity", "Car")
-                        .WithMany("Users")
-                        .HasForeignKey("CarId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("MainTz.Database.Entities.UserEntity", "User")
-                        .WithMany("Cars")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Car");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("MainTz.Database.Entities.UserEntity", b =>
                 {
                     b.HasOne("MainTz.Database.Entities.RoleEntity", "Role")
-                        .WithMany("User")
+                        .WithMany("Users")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
@@ -300,8 +296,6 @@ namespace MainTz.Database.Migrations
             modelBuilder.Entity("MainTz.Database.Entities.CarEntity", b =>
                 {
                     b.Navigation("Images");
-
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.ModelEntity", b =>
@@ -311,13 +305,11 @@ namespace MainTz.Database.Migrations
 
             modelBuilder.Entity("MainTz.Database.Entities.RoleEntity", b =>
                 {
-                    b.Navigation("User");
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.UserEntity", b =>
                 {
-                    b.Navigation("Cars");
-
                     b.Navigation("Notifications");
                 });
 #pragma warning restore 612, 618

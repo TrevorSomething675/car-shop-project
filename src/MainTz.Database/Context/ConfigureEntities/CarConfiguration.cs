@@ -8,11 +8,17 @@ namespace MainTz.Database.Context.ConfigureEntities
     {
         public void Configure(EntityTypeBuilder<CarEntity> builder)
         {
+            builder.HasKey(car => car.Id);
+
+
             builder.HasMany(c => c.Users)
-                .WithOne(u => u.Car)
-                .OnDelete(DeleteBehavior.NoAction)
-                .HasForeignKey(uc => uc.CarId)
-                .IsRequired(false);
+                .WithMany(u => u.Cars);
+
+            //builder.HasMany(c => c.Users)
+            //    .WithOne(u => u.Car)
+            //    .OnDelete(DeleteBehavior.NoAction)
+            //    .HasForeignKey(uc => uc.CarId)
+            //    .IsRequired(false);
 
             builder.HasMany(c => c.Images)
                 .WithOne(img => img.Car)
