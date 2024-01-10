@@ -85,7 +85,19 @@ namespace MainTz.Web
             {
                 using (var context = scope.ServiceProvider.GetRequiredService<MainContext>())
                 {
-                    #region UserTestData
+                    if (!context.Brands.Any())
+                    {
+                        var brand = new BrandEntity
+                        {
+                            Name = "brand1",
+                            Models = new List<ModelEntity>
+                            {
+                                new ModelEntity {Name = "Model1" }
+                            }
+                        };
+                        context.Brands.Add(brand);
+                        context.SaveChanges();
+                    }
                     context.Database.EnsureDeleted();
                     context.Database.Migrate();
                     context.Database.EnsureCreated();
@@ -208,23 +220,6 @@ namespace MainTz.Web
                         context.SaveChanges();
                     }
 
-                    #endregion
-
-                    #region CarTestData
-                    if (!context.Brands.Any())
-                    {
-                        var brand = new BrandEntity
-                        {
-                            Name = "brand1",
-                            Models = new List<ModelEntity>
-                            {
-                                new ModelEntity {Name = "Model1" }
-                            }
-                        };
-                        context.Brands.Add(brand);
-                        context.SaveChanges();
-                    }
-
                     if (!context.Cars.Any())
                     {
                         var cars = new List<CarEntity>();
@@ -260,7 +255,6 @@ namespace MainTz.Web
                         context.Cars.AddRange(cars);
                         context.SaveChanges();
                     }
-                    #endregion
                 }
             }
             app.UseHttpsRedirection();
