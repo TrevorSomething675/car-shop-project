@@ -9,14 +9,15 @@ namespace MainTz.Database.Context.ConfigureEntities
         public void Configure(EntityTypeBuilder<UserEntity> builder)
         {
             builder.HasKey(u => u.Id);
-            
+
             builder.HasOne(u => u.Role)
                 .WithMany(r => r.Users)
                 .HasForeignKey(u => u.RoleId)
                 .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasMany(u => u.Cars)
-                .WithMany(c => c.Users);
+                .WithMany(c => c.Users)
+                .UsingEntity(e => e.ToTable("UserCar"));
 
             //builder.HasMany(u => u.Cars)
             //    .WithOne(uc => uc.User)

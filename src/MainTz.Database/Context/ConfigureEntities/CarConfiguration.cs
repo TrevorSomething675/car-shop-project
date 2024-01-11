@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.ValueGeneration;
+using System.Xml;
 
 namespace MainTz.Database.Context.ConfigureEntities
 {
@@ -8,11 +11,13 @@ namespace MainTz.Database.Context.ConfigureEntities
     {
         public void Configure(EntityTypeBuilder<CarEntity> builder)
         {
-            builder.HasKey(car => car.Id);
+            builder.Property(car => car.Id).IsRequired();
+            //builder.Property(car => car.Id)
+            //    .ValueGeneratedOnAdd()
+            //    .HasAnnotation("DataBaseGenerated", "MyCustomIdGenerator");
 
-
-            builder.HasMany(c => c.Users)
-                .WithMany(u => u.Cars);
+            //builder.HasMany(c => c.Users)
+            //    .WithMany(u => u.Cars).UsingEntity("UserEntity");
 
             //builder.HasMany(c => c.Users)
             //    .WithOne(u => u.Car)
@@ -32,4 +37,27 @@ namespace MainTz.Database.Context.ConfigureEntities
                 .IsRequired(true);
         }
     }
+    //public class MyCustomIdGenerator : ValueGenerator<int>
+    //{
+    //    public override int Next(EntityEntry entry)
+    //    {
+    //        int generatedId = GenerateUniqueId();
+
+    //        var dbContext = entry.Context;
+    //        var existingEntity = dbContext.Set<CarEntity>().Find(generatedId);
+    //        if (existingEntity != null)
+    //        {
+    //            generatedId = GenerateUniqueId();
+    //        }
+
+    //        return generatedId;
+    //    }
+
+    //    public override bool GeneratesTemporaryValues => false;
+
+    //    private int GenerateUniqueId()
+    //    {
+    //        return new Random().Next();
+    //    }
+    //}
 }

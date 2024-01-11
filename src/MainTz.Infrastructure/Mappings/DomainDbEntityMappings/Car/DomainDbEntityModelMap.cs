@@ -10,6 +10,7 @@ namespace MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car
         {
             CreateMap<Model, ModelEntity>();
             CreateMap<ModelEntity, Model>();
+            CreateMap<ModelEntity, ModelEntity>();
         }
     }
 }

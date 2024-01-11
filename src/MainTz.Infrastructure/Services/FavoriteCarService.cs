@@ -27,7 +27,6 @@ namespace MainTz.Infrastructure.Services
                 var contextUser = _contextAccessor?.HttpContext?.User.Identity;
                 var user = await _userRepository.GetUserByNameAsync(contextUser.Name);
                 var car = await _carRepository.GetCarByIdAsync(carId);
-                await _carRepository.CreateAsync(car);
                 user.Cars.Add(car);
                 await _userRepository.UpdateAsync(user);
 

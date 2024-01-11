@@ -22,11 +22,11 @@ namespace MainTz.Infrastructure.Repositories
         }
         public async Task<Car> GetCarByIdAsync(int id)
         {
-            using(var context = _dbContextFactory.CreateDbContext())
+            await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntity = await context.Cars
                     .Include(car => car.Model)
-                    .Include(car => car.Model.Brand)
+                    .ThenInclude(model => model.Brand)
                     .FirstOrDefaultAsync(car => car.Id == id);
                 var car = _mapper.Map<Car>(carEntity);
                 return car;
@@ -34,7 +34,7 @@ namespace MainTz.Infrastructure.Repositories
         }
         public async Task<List<Car>> GetCarsAsync()
         {
-            using(var context = _dbContextFactory.CreateDbContext())
+            await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntities = await context.Cars.ToListAsync();
                 var cars = _mapper.Map<List<Car>>(carEntities);
@@ -43,17 +43,17 @@ namespace MainTz.Infrastructure.Repositories
         }
         public async Task UpdateAsync(Car car)
         {
-            using(var context = _dbContextFactory.CreateDbContext())
+            await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntity = _mapper.Map<CarEntity>(car);
-                context.Cars.Attach(carEntity);
+                //context.Cars.Attach(carEntity);
                 context.Cars.Update(carEntity);
                 await context.SaveChangesAsync();
             }
         }
         public async Task CreateAsync(Car car)
         {
-            using (var context = _dbContextFactory.CreateDbContext())
+            await using (var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntity = _mapper.Map<CarEntity>(car);
                 //var jija = context.Cars.ToList();
@@ -66,7 +66,7 @@ namespace MainTz.Infrastructure.Repositories
         }
         public async Task DeleteAsync(Car car)
         {
-            using(var context = _dbContextFactory.CreateDbContext())
+            await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntity = _mapper.Map<CarEntity>(car);
                 context.Cars.Remove(carEntity);

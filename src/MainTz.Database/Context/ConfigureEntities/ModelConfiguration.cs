@@ -9,7 +9,7 @@ namespace MainTz.Database.Context.ConfigureEntities
         public void Configure(EntityTypeBuilder<ModelEntity> builder)
         {
             builder.HasKey(m => m.Id);
-            builder.Property(m => m.Id).UseHiLo().UseIdentityColumn().ValueGeneratedOnAdd();
+            //builder.Property(m => m.Id).UseHiLo().UseIdentityColumn().ValueGeneratedOnAdd();
 
             builder.HasMany(m => m.Cars)
                 .WithOne(c => c.Model)

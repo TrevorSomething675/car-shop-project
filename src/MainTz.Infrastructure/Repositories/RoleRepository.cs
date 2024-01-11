@@ -17,7 +17,7 @@ namespace MainTz.Infrastructure.Repositories
 		}
 		public async Task<Role> GetRoleByNameAsync(string roleName)
 		{
-			using(var context = _dbContextFactory.CreateDbContext())
+			await using(var context = _dbContextFactory.CreateDbContext())
 			{
 				var roleEntity = await context.Roles.FirstOrDefaultAsync(role => role.RoleName == roleName);
 				var role = _mapper.Map<Role>(roleEntity);

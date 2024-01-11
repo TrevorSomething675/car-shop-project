@@ -126,30 +126,6 @@ namespace MainTz.Database.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "CarEntityUserEntity",
-                columns: table => new
-                {
-                    CarsId = table.Column<int>(type: "integer", nullable: false),
-                    UsersId = table.Column<int>(type: "integer", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CarEntityUserEntity", x => new { x.CarsId, x.UsersId });
-                    table.ForeignKey(
-                        name: "FK_CarEntityUserEntity_Cars_CarsId",
-                        column: x => x.CarsId,
-                        principalTable: "Cars",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_CarEntityUserEntity_Users_UsersId",
-                        column: x => x.UsersId,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Images",
                 columns: table => new
                 {
@@ -170,10 +146,29 @@ namespace MainTz.Database.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_CarEntityUserEntity_UsersId",
-                table: "CarEntityUserEntity",
-                column: "UsersId");
+            migrationBuilder.CreateTable(
+                name: "UserCar",
+                columns: table => new
+                {
+                    CarsId = table.Column<int>(type: "integer", nullable: false),
+                    UsersId = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserCar", x => new { x.CarsId, x.UsersId });
+                    table.ForeignKey(
+                        name: "FK_UserCar_Cars_CarsId",
+                        column: x => x.CarsId,
+                        principalTable: "Cars",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UserCar_Users_UsersId",
+                        column: x => x.UsersId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Cars_ModelId",
@@ -196,6 +191,11 @@ namespace MainTz.Database.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_UserCar_UsersId",
+                table: "UserCar",
+                column: "UsersId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Users_RoleId",
                 table: "Users",
                 column: "RoleId");
@@ -205,13 +205,13 @@ namespace MainTz.Database.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CarEntityUserEntity");
-
-            migrationBuilder.DropTable(
                 name: "Images");
 
             migrationBuilder.DropTable(
                 name: "Notifications");
+
+            migrationBuilder.DropTable(
+                name: "UserCar");
 
             migrationBuilder.DropTable(
                 name: "Cars");

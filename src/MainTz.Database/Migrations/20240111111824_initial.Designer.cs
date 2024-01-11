@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MainTz.Database.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20240110135030_initial")]
+    [Migration("20240111111824_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -37,7 +37,7 @@ namespace MainTz.Database.Migrations
 
                     b.HasIndex("UsersId");
 
-                    b.ToTable("CarEntityUserEntity");
+                    b.ToTable("UserCar", (string)null);
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.BrandEntity", b =>

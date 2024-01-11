@@ -19,10 +19,9 @@ namespace MainTz.Infrastructure.Repositories
             _dbContextFactory = dbContextFactory;
             _mapper = mapper;
         }
-
         public async Task<User> GetUserByNameAsync(string name)
         {
-            using (var context = _dbContextFactory.CreateDbContext())
+            await using (var context = _dbContextFactory.CreateDbContext())
             {
                 var userEntity = await context.Users
                     .Include(user => user.Role)
@@ -35,7 +34,7 @@ namespace MainTz.Infrastructure.Repositories
         }
 		public async Task<User> GetUserByEmailAsync(string email)
 		{
-            using(var context = _dbContextFactory.CreateDbContext())
+            await using(var context = _dbContextFactory.CreateDbContext())
             {
 			    var userEntity = await context.Users
 	                .Include(user => user.Role)
@@ -47,7 +46,7 @@ namespace MainTz.Infrastructure.Repositories
 		}
 		public async Task<List<User>> GetUsersAsync()
         {
-            using (var context = _dbContextFactory.CreateDbContext())
+            await using (var context = _dbContextFactory.CreateDbContext())
             {
                 var userEntities = await context.Users.ToListAsync();
                 var users = _mapper.Map<List<User>>(userEntities);
@@ -57,28 +56,41 @@ namespace MainTz.Infrastructure.Repositories
 
         public async Task UpdateAsync(User user)
         {
-            using(var context = _dbContextFactory.CreateDbContext())
+            await using(var context = _dbContextFactory.CreateDbContext())
             {
+                //var updatedUserEntity = _mapper.Map<UserEntity>(user);
+                //var userEntity = await context.Users
+                //    .Include(u => u.Cars)
+                //    .FirstAsync(u => u.Id == updatedUserEntity.Id);
+
+                //foreach (var carName in updatedUserEntity.Cars.Select(c => c.Name))
+                //{
+                //    if (!userEntity.Cars.Select(c => c.Name).ToList().Contains(carName))
+                //        userEntity.Cars.Add(updatedUserEntity.Cars.FirstOrDefault(car => car.Name == carName)!);
+                //}
+
+                //_mapper.Map(updatedUserEntity, userEntity);
+                //context.Cars.AttachRange(userEntity.Cars);
+                //await context.SaveChangesAsync();
+
                 var userEntity = _mapper.Map<UserEntity>(user);
-                context.Users.Attach(userEntity);
-                context.Users.Update(userEntity);
+                context.Attach(userEntity);
+                context.Update(userEntity);
                 await context.SaveChangesAsync();
             }
         }
-
         public async Task CreateAsync(User user)
         {
-            using(var context = _dbContextFactory.CreateDbContext())
+            await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var userEntity = _mapper.Map<UserEntity>(user);
                 context.Users.Add(userEntity);
                 await context.SaveChangesAsync();
             }
         }
-
         public async Task DeleteAsync(User user)
         {
-            using(var context = _dbContextFactory.CreateDbContext())
+            await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var userEntity = _mapper.Map<UserEntity>(user);
                 context.Users.Remove(userEntity);

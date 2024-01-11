@@ -34,7 +34,7 @@ namespace MainTz.Database.Migrations
 
                     b.HasIndex("UsersId");
 
-                    b.ToTable("CarEntityUserEntity");
+                    b.ToTable("UserCar", (string)null);
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.BrandEntity", b =>
