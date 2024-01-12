@@ -300,3 +300,13 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\Minio.AspNetCore.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\System.IO.Hashing.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\System.Reactive.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\CommunityToolkit.HighPerformance.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\Minio.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\Minio.AspNetCore.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\E-CarShop\src\MainTz.Web\bin\Debug\net7.0\System.Reactive.dll

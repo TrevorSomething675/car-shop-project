@@ -1,21 +1,19 @@
 ﻿using MainTz.Application.Models.SittingsModels;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Options;
 using MainTz.Application.Services;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.Extensions.Options;
 
 namespace MainTz.Infrastructure.Services
 {
     public class TokenService : ITokenService
     {
         private readonly JwtAuthSettings _authSettings;
-        //private readonly IOptions<JwtAuthSettings> _jwtOptions;
-        public TokenService(JwtAuthSettings authSettings)
+        public TokenService(IOptions<JwtAuthSettings> authSettings)
         {
-            _authSettings = authSettings;
-            //_jwtOptions = jwtOptions;
+            _authSettings = authSettings.Value;
         }
 
         public string CreateAccessToken(string role, string name)

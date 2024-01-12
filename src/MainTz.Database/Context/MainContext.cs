@@ -8,16 +8,11 @@ namespace MainTa.Database.Context
 {
     public class MainContext : DbContext
     {
-        //private readonly DataBaseSettings _dataBaseSettings;
-        public MainContext(DbContextOptions<MainContext> options) : base(options) { }
-        //public MainContext(DbContextOptions<MainContext> options, DataBaseSettings dataBaseSettings) : base(options)
-        //{
-        //    _dataBaseSettings = dataBaseSettings;
-        //}
-        //public MainContext(IOptions<DataBaseSettings> dataBaseSettings)
-        //{
-        //    _dataBaseSettings = dataBaseSettings.Value;
-        //}
+        private readonly DataBaseSettings _dataBaseSettings;
+        public MainContext(DbContextOptions<MainContext> options, IOptions<DataBaseSettings> dataBaseSettings) : base(options) 
+        {
+            _dataBaseSettings = dataBaseSettings.Value;
+        }
 
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<RoleEntity> Roles { get; set; }
@@ -28,6 +23,10 @@ namespace MainTa.Database.Context
         public DbSet<BrandEntity> Brands { get; set; }
         public DbSet<ImageEntity> Images { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseNpgsql(_dataBaseSettings.ConnectionString);
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BrandConfiguration());

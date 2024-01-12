@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj": {}
+    "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj": {
+    "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj",
+        "projectUniqueName": "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
         "projectName": "MainTz.Core",
-        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\obj\\",
+        "projectPath": "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
+        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
+        "outputPath": "C:\\E-CarShop\\src\\MainTz.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

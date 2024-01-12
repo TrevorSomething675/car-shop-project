@@ -9,127 +9,127 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MainTz.Web
 build_property.RootNamespace = MainTz.Web
-build_property.ProjectDir = C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\
+build_property.ProjectDir = C:\E-CarShop\src\MainTz.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web
+build_property.MSBuildProjectDirectory = C:\E-CarShop\src\MainTz.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Account/GetNotificationDescription.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Account/GetNotificationDescription.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHZXROb3RpZmljYXRpb25EZXNjcmlwdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Account/GetNotificationHeaders.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Account/GetNotificationHeaders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHZXROb3RpZmljYXRpb25IZWFkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Account/GetNotifications.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Account/GetNotifications.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHZXROb3RpZmljYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Account/Index.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Auth/ErrorViewPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Auth/ErrorViewPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxFcnJvclZpZXdQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Auth/InfoViewPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Auth/InfoViewPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmZvVmlld1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Auth/Login.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Auth/Register.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Car/GetBigCarCard.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Car/GetBigCarCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldEJpZ0NhckNhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Car/GetCarCardPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Car/GetCarCardPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhckNhcmRQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Car/GetCars.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Car/GetCars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Car/GetCarsPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Car/GetCarsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteBigCarCard.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/FavoriteCar/GetFavoriteBigCarCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVCaWdDYXJDYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCarCardPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCarCardPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVDYXJDYXJkUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCars.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVDYXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCarsPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/FavoriteCar/GetFavoriteCarsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXJcR2V0RmF2b3JpdGVDYXJzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Mail/RestoreAccountOnEmail.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Mail/RestoreAccountOnEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbFxSZXN0b3JlQWNjb3VudE9uRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Message/ErrorViewPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Message/ErrorViewPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxFcnJvclZpZXdQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Message/InfoViewPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Message/InfoViewPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxJbmZvVmlld1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Shared/Components/Notifications/Default.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Shared/Components/Notifications/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTm90aWZpY2F0aW9uc1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Shared/Error.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Shared/_FooterPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Shared/_FooterPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Shared/_HeaderPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Shared/_HeaderPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Shared/_HeadPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Shared/_HeadPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Shared/_ScriptsPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Shared/_ScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/_ViewImports.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/_ViewStart.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Иван/Documents/GitHub/MainTzProject/src/MainTz.Web/Views/Shared/_Layout.cshtml]
+[C:/E-CarShop/src/MainTz.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-eviwe9onmx

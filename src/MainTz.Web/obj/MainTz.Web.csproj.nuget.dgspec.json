@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\MainTz.Web.csproj": {}
+    "C:\\E-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj": {
+    "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj",
+        "projectUniqueName": "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj",
         "projectName": "MainTz.Application",
-        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\obj\\",
+        "projectPath": "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj",
+        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
+        "outputPath": "C:\\E-CarShop\\src\\MainTz.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Database\\MainTz.Database.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Database\\MainTz.Database.csproj"
+              "C:\\E-CarShop\\src\\MainTz.Database\\MainTz.Database.csproj": {
+                "projectPath": "C:\\E-CarShop\\src\\MainTz.Database\\MainTz.Database.csproj"
               }
             }
           }
@@ -63,17 +63,17 @@
         }
       }
     },
-    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj": {
+    "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj",
+        "projectUniqueName": "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
         "projectName": "MainTz.Core",
-        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\obj\\",
+        "projectPath": "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj",
+        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
+        "outputPath": "C:\\E-CarShop\\src\\MainTz.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,17 +118,17 @@
         }
       }
     },
-    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Database\\MainTz.Database.csproj": {
+    "C:\\E-CarShop\\src\\MainTz.Database\\MainTz.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Database\\MainTz.Database.csproj",
+        "projectUniqueName": "C:\\E-CarShop\\src\\MainTz.Database\\MainTz.Database.csproj",
         "projectName": "MainTz.Database",
-        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Database\\MainTz.Database.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Database\\obj\\",
+        "projectPath": "C:\\E-CarShop\\src\\MainTz.Database\\MainTz.Database.csproj",
+        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
+        "outputPath": "C:\\E-CarShop\\src\\MainTz.Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,8 +142,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj"
+              "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
+                "projectPath": "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj"
               }
             }
           }
@@ -203,17 +203,17 @@
         }
       }
     },
-    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj": {
+    "C:\\E-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
+        "projectUniqueName": "C:\\E-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
         "projectName": "MainTz.Infrastructure",
-        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\obj\\",
+        "projectPath": "C:\\E-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
+        "outputPath": "C:\\E-CarShop\\src\\MainTz.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -227,8 +227,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj"
+              "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj": {
+                "projectPath": "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj"
               }
             }
           }
@@ -292,17 +292,17 @@
         }
       }
     },
-    "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\MainTz.Web.csproj": {
+    "C:\\E-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\MainTz.Web.csproj",
+        "projectUniqueName": "C:\\E-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj",
         "projectName": "MainTz.Web",
-        "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\MainTz.Web.csproj",
-        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Web\\obj\\",
+        "projectPath": "C:\\E-CarShop\\src\\MainTz.Web\\MainTz.Web.csproj",
+        "packagesPath": "C:\\Users\\Win10Pro\\.nuget\\packages\\",
+        "outputPath": "C:\\E-CarShop\\src\\MainTz.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win10Pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -316,14 +316,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Application\\MainTz.Application.csproj"
+              "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj": {
+                "projectPath": "C:\\E-CarShop\\src\\MainTz.Application\\MainTz.Application.csproj"
               },
-              "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Core\\MainTz.Core.csproj"
+              "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj": {
+                "projectPath": "C:\\E-CarShop\\src\\MainTz.Core\\MainTz.Core.csproj"
               },
-              "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Иван\\Documents\\GitHub\\MainTzProject\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj"
+              "C:\\E-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj": {
+                "projectPath": "C:\\E-CarShop\\src\\MainTz.Infrastructure\\MainTz.Infrastructure.csproj"
               }
             }
           }

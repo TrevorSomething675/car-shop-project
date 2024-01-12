@@ -12,39 +12,31 @@ using MainTa.Database.Context;
 using MainTz.Web.Middleware;
 using MainTz.Web.ViewModels;
 using MainTz.Web.Validators;
+using MainTz.Core.Options;
 using MainTz.Web.Mappings;
 using FluentValidation;
 using System.Text;
-using MainTz.Core.Options;
-using Microsoft.Extensions.Options;
 using Minio;
 
 namespace MainTz.Web
 {
     public class Startup
     {
-        DataBaseSettings _dbSettings;
         JwtAuthSettings _authSettings;
         MinioSettings _minioSettings;
         public Startup(IConfiguration configuration)
         {
             _minioSettings = configuration.GetSection(MinioSettings.MinioPosition).Get<MinioSettings>();
 			_authSettings = configuration.GetSection(JwtAuthSettings.JwtAuthPosition).Get<JwtAuthSettings>();
-			_dbSettings = configuration.GetSection(DataBaseSettings.DataBasePosition).Get<DataBaseSettings>();
 		}
         public void ConfigureServices(IServiceCollection services)
         {
-            //var configuration = services.BuildServiceProvider().GetService<IConfiguration>();
-            //services.Configure<DataBaseSettings>(configuration);
-            //IOptions<DataBaseSettings> options;
-            //options = services.BuildServiceProvider().GetService<IOptions<DataBaseSettings>>();
+            var configurations = services.BuildServiceProvider().GetRequiredService<IConfiguration>();
+            services.Configure<DataBaseSettings>(configurations.GetSection(DataBaseSettings.DataBasePosition));
+            services.Configure<JwtAuthSettings>(configurations.GetSection(JwtAuthSettings.JwtAuthPosition));
+            services.Configure<MinioSettings>(configurations.GetSection(MinioSettings.MinioPosition));
 
-            services.AddDbContextFactory<MainContext>(config =>
-            {
-                config.UseNpgsql(_dbSettings.ConnectionString);
-                config.EnableDetailedErrors(true);
-                config.EnableSensitiveDataLogging(true);
-            });
+            services.AddDbContextFactory<MainContext>();
 
             services.AddMinio(config => config
             .WithEndpoint(_minioSettings.StorageEndPoint)
@@ -57,7 +49,7 @@ namespace MainTz.Web
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<ICarRepository, CarRepository>();
-			services.AddTransient<ITokenService>(provider => new TokenService(_authSettings));
+			services.AddTransient<ITokenService, TokenService>();
             services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IFavoriteCarService, FavoriteCarService>();
             services.AddScoped<IMinioService, MinioService>();
@@ -82,10 +74,10 @@ namespace MainTz.Web
             {
             	options.RequireHttpsMetadata = true;
             	options.SaveToken = true;
-            	options.TokenValidationParameters = new TokenValidationParameters
-            	{
-            		ValidateIssuer = true,
-            		ValidIssuer = _authSettings.Issuer,
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = _authSettings.Issuer,
             		ValidateAudience = true,
             		ValidAudience = _authSettings.Audience,
             		ValidateLifetime = true,
