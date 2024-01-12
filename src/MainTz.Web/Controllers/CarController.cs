@@ -10,14 +10,17 @@ namespace MainTz.Web.Controllers
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly ICarService _carService;
         private readonly IMapper _mapper;
-        public CarController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor)
+        private readonly IMinioService _minioService;
+        public CarController(IMinioService minioService, ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor)
         {
             _contextAccessor = contextAccessor;
+            _minioService = minioService;
             _carService = carService;
             _mapper = mapper;
         }
         public async Task<IActionResult> GetCars(int pageNumber = 1, CarsViewModel customCarsModel = null)
         {
+            var jija = await _minioService.GetObjectByNameAndBucket("test-bucket-1", "Kia-Rio-image-1.jpg");
             if(customCarsModel.CarsResponse == null)
             {
                 var carsDomainModels = await _carService.GetCarsWithPaggingAsync(pageNumber);
@@ -43,21 +46,11 @@ namespace MainTz.Web.Controllers
             var carModel = await _carService.GetCarByIdAsync(id);
             var carResponse = _mapper.Map<CarResponse>(carModel);
             HttpContext.Response.Cookies.Delete("LastOpenedCarCard");
-
-            return View(carResponse);
+            if (carResponse == null)
+                return Redirect("/Error");
+            else
+                return View(carResponse);
         }
-        //public async Task<IActionResult> GetFavoriteCars(int pageNumber = 1)
-        //{
-        //    var carsModel = await _carService.GetFavoriteCarsAsync(pageNumber);
-        //    var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-        //    var customCarsModel = new CarsViewModel
-        //    {
-        //        PageNumber = pageNumber,
-        //        CarsResponse = carsResponse
-        //    };
-
-        //    return RedirectToAction("GetCars", customCarsModel);
-        //}
         [HttpPost]
         public async Task<IActionResult> GetCarsPartial([FromBody]int pageNumber = 1)
         {

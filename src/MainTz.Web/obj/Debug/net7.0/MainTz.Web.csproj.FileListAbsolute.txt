@@ -290,3 +290,13 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\MainTz.Web.genruntimeconfig.cache
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\obj\Debug\net7.0\ref\MainTz.Web.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\CommunityToolkit.HighPerformance.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\Minio.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\Minio.AspNetCore.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\System.Reactive.dll

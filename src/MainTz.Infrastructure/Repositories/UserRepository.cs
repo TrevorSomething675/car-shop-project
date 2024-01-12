@@ -1,6 +1,7 @@
 ﻿using MainTz.Application.Models.UserEntities;
 using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
@@ -13,11 +14,14 @@ namespace MainTz.Infrastructure.Repositories
     public class UserRepository : IUserRepository
     {
         private readonly IDbContextFactory<MainContext> _dbContextFactory;
+        private readonly ILogger<UserRepository> _logger;
         private readonly IMapper _mapper;
-        public UserRepository(IDbContextFactory<MainContext> dbContextFactory, IMapper mapper)
+        public UserRepository(IDbContextFactory<MainContext> dbContextFactory, IMapper mapper,
+            ILogger<UserRepository> logger)
         {
             _dbContextFactory = dbContextFactory;
             _mapper = mapper;
+            _logger = logger;
         }
         public async Task<User> GetUserByNameAsync(string name)
         {
@@ -56,26 +60,28 @@ namespace MainTz.Infrastructure.Repositories
 
         public async Task UpdateAsync(User user)
         {
+            if (user == null)
+                _logger.LogError("[UserRepository] [UpdateAsync] user = null");
             await using(var context = _dbContextFactory.CreateDbContext())
             {
-                //var updatedUserEntity = _mapper.Map<UserEntity>(user);
-                //var userEntity = await context.Users
-                //    .Include(u => u.Cars)
-                //    .FirstAsync(u => u.Id == updatedUserEntity.Id);
+                var updatedUserEntity = _mapper.Map<UserEntity>(user);
+                if (updatedUserEntity == null)
+                    _logger.LogError("[UserRepository] [UpdateAsync] updatedUserEntity = null");
 
-                //foreach (var carName in updatedUserEntity.Cars.Select(c => c.Name))
-                //{
-                //    if (!userEntity.Cars.Select(c => c.Name).ToList().Contains(carName))
-                //        userEntity.Cars.Add(updatedUserEntity.Cars.FirstOrDefault(car => car.Name == carName)!);
-                //}
+                var userEntity = await context.Users
+                    .Include(u => u.Cars)
+                    .FirstAsync(u => u.Id == updatedUserEntity.Id);
+                userEntity.Name  = updatedUserEntity.Name;
+                userEntity.Password = updatedUserEntity.Password;
 
-                //_mapper.Map(updatedUserEntity, userEntity);
-                //context.Cars.AttachRange(userEntity.Cars);
-                //await context.SaveChangesAsync();
+                foreach (var carName in updatedUserEntity.Cars.Select(c => c.Name))
+                {
+                    if (!userEntity.Cars.Select(c => c.Name).ToList().Contains(carName))
+                        userEntity.Cars.Add(updatedUserEntity.Cars.FirstOrDefault(car => car.Name == carName)!);
+                }
 
-                var userEntity = _mapper.Map<UserEntity>(user);
-                context.Attach(userEntity);
-                context.Update(userEntity);
+                _mapper.Map(updatedUserEntity, userEntity);
+                context.Cars.AttachRange(userEntity.Cars);
                 await context.SaveChangesAsync();
             }
         }

@@ -10,9 +10,10 @@
         public string Description { get; set; }
         public int Price { get; set; }
 
-        public ICollection<int> ImagesId { get; set; }
+        public IEnumerable<int> ImagesId { get; set; }
+        public IEnumerable<ImageRequest> Images { get; set; }
 
-        public ICollection<int> UsersId { get; set; }
+        public IEnumerable<int> UsersId { get; set; }
 
         public int ModelId { get; set; }
     }

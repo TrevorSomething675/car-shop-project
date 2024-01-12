@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MainTz.Database.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20240111111824_initial")]
+    [Migration("20240112095213_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -110,6 +110,9 @@ namespace MainTz.Database.Migrations
                     b.Property<byte[]>("File")
                         .IsRequired()
                         .HasColumnType("bytea");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()

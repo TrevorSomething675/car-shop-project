@@ -2,7 +2,6 @@
 using MainTz.Application.Repositories;
 using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
-using MainTz.Database.Entities;
 using AutoMapper;
 
 namespace MainTz.Infrastructure.Services

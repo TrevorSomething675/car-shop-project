@@ -3,6 +3,7 @@ using MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car;
 using MainTz.Infrastructure.Mappings.RequestDomainMappings.User;
 using MainTz.Infrastructure.Mappings.RequestDomainMappings.Car;
 using MainTz.Web.Mappings.RequestDomainMappings.User;
+using MainTz.Web.Mappings.RequestDomainMappings.Car;
 
 namespace MainTz.Web.Mappings
 {
@@ -29,6 +30,9 @@ namespace MainTz.Web.Mappings
 
 				config.AddProfile<DomainDbEntityModelMap>();
 				config.AddProfile<DomainDbEntityBrandMap>();
+
+				config.AddProfile<RequestDomainImageMap>();
+				config.AddProfile<ResponseDomainImageMap>();
 			});
 
 			return services;

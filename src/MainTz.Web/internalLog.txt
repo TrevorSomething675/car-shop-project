@@ -8455,3 +8455,318 @@
 2024-01-11 15:06:00.9531 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
 2024-01-11 15:06:00.9741 Info Configuration initialized.
 2024-01-11 15:06:00.9741 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 15:29:49.5243 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 15:29:49.5396 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 15:29:49.5396 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 15:29:49.5396 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 15:29:49.5609 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 15:29:49.5733 Info Configuration initialized.
+2024-01-11 15:29:49.5733 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 15:30:50.9630 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 15:30:50.9630 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 15:30:50.9630 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 15:30:50.9846 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 15:30:50.9941 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 15:30:51.0057 Info Configuration initialized.
+2024-01-11 15:30:51.0057 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 15:36:17.7303 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 15:36:17.7303 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 15:36:17.7303 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 15:36:17.7511 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 15:36:17.7598 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 15:36:17.7729 Info Configuration initialized.
+2024-01-11 15:36:17.7729 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 15:58:45.4808 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 15:58:45.4977 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 15:58:45.4977 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 15:58:45.5121 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 15:58:45.5248 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 15:58:45.5394 Info Configuration initialized.
+2024-01-11 15:58:45.5394 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:13:32.4780 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:13:32.4952 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:13:32.4952 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:13:32.5094 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:13:32.5094 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:13:32.5346 Info Configuration initialized.
+2024-01-11 16:13:32.5346 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:14:22.4603 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:14:22.4766 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:14:22.4766 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:14:22.4925 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:14:22.4925 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:14:22.5178 Info Configuration initialized.
+2024-01-11 16:14:22.5178 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:14:33.5542 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:14:33.5542 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:14:33.5542 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:14:33.5779 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:14:33.5894 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:14:33.6037 Info Configuration initialized.
+2024-01-11 16:14:33.6037 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:16:20.5407 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:16:20.5552 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:16:20.5552 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:16:20.5706 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:16:20.5706 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:16:20.6022 Info Configuration initialized.
+2024-01-11 16:16:20.6022 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:19:23.5602 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:19:23.5705 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:19:23.5705 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:19:23.5880 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:19:23.6005 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:19:23.6156 Info Configuration initialized.
+2024-01-11 16:19:23.6156 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:21:20.2089 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:21:20.2251 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:21:20.2251 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:21:20.2392 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:21:20.2392 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:21:20.2631 Info Configuration initialized.
+2024-01-11 16:21:20.2631 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:26:03.9197 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:26:03.9300 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:26:03.9300 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:26:03.9455 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:26:03.9455 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:26:03.9739 Info Configuration initialized.
+2024-01-11 16:26:03.9750 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:29:44.4516 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:29:44.4608 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:29:44.4608 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:29:44.4768 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:29:44.4904 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:29:44.5079 Info Configuration initialized.
+2024-01-11 16:29:44.5079 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:30:34.7590 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:30:34.7590 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:30:34.7590 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:30:34.7900 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:30:34.8040 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:30:34.8258 Info Configuration initialized.
+2024-01-11 16:30:34.8258 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:31:58.4312 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:31:58.4477 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:31:58.4477 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:31:58.4659 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:31:58.4853 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:31:58.5059 Info Configuration initialized.
+2024-01-11 16:31:58.5059 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:53:23.4804 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-11 16:53:23.4985 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-11 16:53:23.4985 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-11 16:53:23.5148 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-11 16:53:23.5253 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-11 16:53:23.5409 Info Configuration initialized.
+2024-01-11 16:53:23.5409 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:48:00.9633 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:48:00.9873 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:48:00.9873 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:48:01.0024 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:48:01.0233 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:48:01.0379 Info Configuration initialized.
+2024-01-12 12:48:01.0379 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:48:42.1464 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:48:42.1464 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:48:42.1464 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:48:42.1464 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:48:42.1679 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:48:42.1768 Info Configuration initialized.
+2024-01-12 12:48:42.1768 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:48:49.2411 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:48:49.2411 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:48:49.2411 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:48:49.2553 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:48:49.2553 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:48:49.2711 Info Configuration initialized.
+2024-01-12 12:48:49.2711 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:48:58.0237 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:48:58.0237 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:48:58.0237 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:48:58.0237 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:48:58.0397 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:48:58.0397 Info Configuration initialized.
+2024-01-12 12:48:58.0397 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:49:05.9019 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:49:05.9019 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:49:05.9019 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:49:05.9219 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:49:05.9310 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:49:05.9310 Info Configuration initialized.
+2024-01-12 12:49:05.9433 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:50:41.9606 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:50:41.9606 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:50:41.9606 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:50:41.9606 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:50:41.9763 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:50:41.9763 Info Configuration initialized.
+2024-01-12 12:50:41.9763 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:50:53.7862 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:50:53.7862 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:50:53.8029 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:50:53.8029 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:50:53.8265 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:50:53.8395 Info Configuration initialized.
+2024-01-12 12:50:53.8395 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:52:12.6472 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:52:12.6472 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:52:12.6472 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:52:12.6616 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:52:12.6616 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:52:12.6783 Info Configuration initialized.
+2024-01-12 12:52:12.6783 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:52:19.0550 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:52:19.0550 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:52:19.0550 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:52:19.0696 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:52:19.0696 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:52:19.0856 Info Configuration initialized.
+2024-01-12 12:52:19.0856 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:52:29.9795 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 12:52:29.9978 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 12:52:29.9978 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 12:52:30.0158 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 12:52:30.0293 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 12:52:30.0479 Info Configuration initialized.
+2024-01-12 12:52:30.0479 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:09:49.3817 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 13:09:49.3994 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 13:09:49.3994 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 13:09:49.3994 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 13:09:49.4195 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:09:49.4295 Info Configuration initialized.
+2024-01-12 13:09:49.4295 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:43:42.3614 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 13:43:42.3785 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 13:43:42.3785 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 13:43:42.3979 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 13:43:42.3979 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:43:42.4291 Info Configuration initialized.
+2024-01-12 13:43:42.4291 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:47:41.0221 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 13:47:41.0469 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 13:47:41.0469 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 13:47:41.0640 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 13:47:41.0760 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:47:41.0910 Info Configuration initialized.
+2024-01-12 13:47:41.0910 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:48:09.4615 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 13:48:09.4756 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 13:48:09.4756 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 13:48:09.4921 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 13:48:09.4921 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:48:09.5177 Info Configuration initialized.
+2024-01-12 13:48:09.5177 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:51:26.6669 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 13:51:26.6825 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 13:51:26.6825 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 13:51:26.6963 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 13:51:26.6963 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:51:26.7174 Info Configuration initialized.
+2024-01-12 13:51:26.7174 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:55:23.5823 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 13:55:23.5988 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 13:55:23.5988 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 13:55:23.6127 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 13:55:23.6229 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 13:55:23.6229 Info Configuration initialized.
+2024-01-12 13:55:23.6229 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:04:54.9921 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 14:04:54.9921 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 14:04:54.9921 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 14:04:55.0137 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 14:04:55.0240 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:04:55.0371 Info Configuration initialized.
+2024-01-12 14:04:55.0371 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:32:00.2175 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 14:32:00.2992 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 14:32:00.3053 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 14:32:00.3228 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 14:32:00.3336 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:32:00.3336 Info Configuration initialized.
+2024-01-12 14:32:00.3495 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:47:23.8654 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 14:47:23.8654 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 14:47:23.8654 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 14:47:23.8881 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 14:47:23.8881 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:47:23.9108 Info Configuration initialized.
+2024-01-12 14:47:23.9108 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:49:42.0676 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 14:49:42.0676 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 14:49:42.0676 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 14:49:42.0913 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 14:49:42.1016 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:49:42.1164 Info Configuration initialized.
+2024-01-12 14:49:42.1164 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:50:16.9184 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 14:50:16.9278 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 14:50:16.9278 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 14:50:16.9278 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 14:50:16.9518 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:50:16.9645 Info Configuration initialized.
+2024-01-12 14:50:16.9645 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:53:52.3129 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 14:53:52.3357 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 14:53:52.3357 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 14:53:52.3640 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 14:53:52.3640 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:53:52.3931 Info Configuration initialized.
+2024-01-12 14:53:52.3931 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:54:56.2625 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 14:54:56.2749 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 14:54:56.2749 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 14:54:56.2930 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 14:54:56.3069 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:54:56.3236 Info Configuration initialized.
+2024-01-12 14:54:56.3236 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:57:48.7400 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 14:57:48.7583 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 14:57:48.7583 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 14:57:48.7784 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 14:57:48.7878 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 14:57:48.8068 Info Configuration initialized.
+2024-01-12 14:57:48.8068 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 15:02:00.2636 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 15:02:00.2714 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 15:02:00.2714 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 15:02:00.2714 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 15:02:00.2950 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 15:02:00.3073 Info Configuration initialized.
+2024-01-12 15:02:00.3073 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 15:05:33.4173 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 15:05:33.4364 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 15:05:33.4364 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 15:05:33.4522 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 15:05:33.4624 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 15:05:33.4767 Info Configuration initialized.
+2024-01-12 15:05:33.4767 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 15:05:54.5541 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 15:05:54.5541 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 15:05:54.5541 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 15:05:54.5769 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 15:05:54.5867 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 15:05:54.5867 Info Configuration initialized.
+2024-01-12 15:05:54.5991 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 17:47:00.6549 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 17:47:00.6693 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 17:47:00.6693 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 17:47:00.6809 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 17:47:00.6809 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 17:47:00.7024 Info Configuration initialized.
+2024-01-12 17:47:00.7024 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 17:48:02.4776 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 17:48:02.5407 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 17:48:02.5407 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 17:48:02.5552 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 17:48:02.5552 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 17:48:02.5778 Info Configuration initialized.
+2024-01-12 17:48:02.5778 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 17:48:30.1374 Info Registered target NLog.Targets.FileTarget(Name=LogFile-log)
+2024-01-12 17:48:30.1457 Info Registered target NLog.Targets.ConsoleTarget(Name=LogConsole-log)
+2024-01-12 17:48:30.1457 Info Registered target NLog.Targets.FileTarget(Name=LogFile-trace)
+2024-01-12 17:48:30.1457 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.7.2287. Product version: 5.2.7+a1ef7cd83b5a6a172142a6850f0ced4e759a4b3b. GlobalAssemblyCache: False
+2024-01-12 17:48:30.1705 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config
+2024-01-12 17:48:30.1834 Info Configuration initialized.
+2024-01-12 17:48:30.1834 Info Validating config: TargetNames=LogFile-log, LogConsole-log, LogFile-trace, ConfigItems=35, FilePath=C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Web\bin\Debug\net7.0\NLog.config

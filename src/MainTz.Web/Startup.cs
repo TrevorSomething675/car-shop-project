@@ -15,6 +15,9 @@ using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
 using FluentValidation;
 using System.Text;
+using MainTz.Core.Options;
+using Microsoft.Extensions.Options;
+using Minio;
 
 namespace MainTz.Web
 {
@@ -22,17 +25,32 @@ namespace MainTz.Web
     {
         DataBaseSettings _dbSettings;
         JwtAuthSettings _authSettings;
-		public Startup(IConfiguration configuration)
+        MinioSettings _minioSettings;
+        public Startup(IConfiguration configuration)
         {
+            _minioSettings = configuration.GetSection(MinioSettings.MinioPosition).Get<MinioSettings>();
 			_authSettings = configuration.GetSection(JwtAuthSettings.JwtAuthPosition).Get<JwtAuthSettings>();
 			_dbSettings = configuration.GetSection(DataBaseSettings.DataBasePosition).Get<DataBaseSettings>();
 		}
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContextFactory<MainContext>(options =>
+            //var configuration = services.BuildServiceProvider().GetService<IConfiguration>();
+            //services.Configure<DataBaseSettings>(configuration);
+            //IOptions<DataBaseSettings> options;
+            //options = services.BuildServiceProvider().GetService<IOptions<DataBaseSettings>>();
+
+            services.AddDbContextFactory<MainContext>(config =>
             {
-                options.UseNpgsql(_dbSettings.ConnectionString);
+                config.UseNpgsql(_dbSettings.ConnectionString);
+                config.EnableDetailedErrors(true);
+                config.EnableSensitiveDataLogging(true);
             });
+
+            services.AddMinio(config => config
+            .WithEndpoint(_minioSettings.StorageEndPoint)
+            .WithCredentials(_minioSettings.ROOT_USER, _minioSettings.ROOT_PASSWORD)
+            .Build());
+
             services.AddDistributedMemoryCache();
             services.AddSession();
             services.AddScoped<INotificationRepository, NotificationRepository>();
@@ -42,6 +60,7 @@ namespace MainTz.Web
 			services.AddTransient<ITokenService>(provider => new TokenService(_authSettings));
             services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IFavoriteCarService, FavoriteCarService>();
+            services.AddScoped<IMinioService, MinioService>();
 			services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
             services.AddScoped<ICarService, CarService>();
@@ -78,9 +97,16 @@ namespace MainTz.Web
             services.AddControllersWithViews();
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDeveloperExceptionPage();
+            if (!env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+            }
             app.UseHsts();
             using (var scope = app.ApplicationServices.CreateScope())
             {

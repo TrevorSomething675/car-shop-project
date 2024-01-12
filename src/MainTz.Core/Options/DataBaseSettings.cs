@@ -1,4 +1,4 @@
-﻿namespace MainTz.Application.Models.SittingsModels
+﻿namespace MainTz.Core.Options
 {
     public class DataBaseSettings
     {

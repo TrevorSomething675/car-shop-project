@@ -6,5 +6,6 @@
         public byte[] File { get; set; }
         public int CarId { get; set; }
         public CarEntity Car { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

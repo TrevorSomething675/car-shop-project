@@ -133,7 +133,8 @@ namespace MainTz.Database.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
                     File = table.Column<byte[]>(type: "bytea", nullable: false),
-                    CarId = table.Column<int>(type: "integer", nullable: false)
+                    CarId = table.Column<int>(type: "integer", nullable: false),
+                    ImageUrl = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
