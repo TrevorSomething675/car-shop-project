@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using MainTz.Application.Models.SittingsModels;
+﻿using MainTz.Application.Models.SittingsModels;
 using MainTz.Web.ViewModels.UserViewModels;
 using MainTz.Infrastructure.Repositories;
 using MainTz.Application.Repositories;
-using Microsoft.IdentityModel.Tokens;
 using MainTz.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Application.Services;
@@ -12,36 +10,30 @@ using MainTa.Database.Context;
 using MainTz.Web.Middleware;
 using MainTz.Web.ViewModels;
 using MainTz.Web.Validators;
-using MainTz.Core.Options;
 using MainTz.Web.Mappings;
 using FluentValidation;
-using System.Text;
 using Minio;
+using MainTz.Web.Configurations;
+using Microsoft.Extensions.Options;
 
 namespace MainTz.Web
 {
     public class Startup
     {
-        JwtAuthSettings _authSettings;
         MinioSettings _minioSettings;
         public Startup(IConfiguration configuration)
         {
             _minioSettings = configuration.GetSection(MinioSettings.MinioPosition).Get<MinioSettings>();
-			_authSettings = configuration.GetSection(JwtAuthSettings.JwtAuthPosition).Get<JwtAuthSettings>();
 		}
         public void ConfigureServices(IServiceCollection services)
         {
-            var configurations = services.BuildServiceProvider().GetRequiredService<IConfiguration>();
-            services.Configure<DataBaseSettings>(configurations.GetSection(DataBaseSettings.DataBasePosition));
-            services.Configure<JwtAuthSettings>(configurations.GetSection(JwtAuthSettings.JwtAuthPosition));
-            services.Configure<MinioSettings>(configurations.GetSection(MinioSettings.MinioPosition));
-
+            services.AddAppOptionsConfiguration();
             services.AddDbContextFactory<MainContext>();
-
-            services.AddMinio(config => config
-            .WithEndpoint(_minioSettings.StorageEndPoint)
-            .WithCredentials(_minioSettings.ROOT_USER, _minioSettings.ROOT_PASSWORD)
-            .Build());
+            services.AddAppAuth();
+            //services.AddMinio(config => config
+            //.WithEndpoint(_minioSettings.StorageEndPoint)
+            //.WithCredentials(_minioSettings.ROOT_USER, _minioSettings.ROOT_PASSWORD)
+            //.Build());
 
             services.AddDistributedMemoryCache();
             services.AddSession();
@@ -52,7 +44,7 @@ namespace MainTz.Web
 			services.AddTransient<ITokenService, TokenService>();
             services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IFavoriteCarService, FavoriteCarService>();
-            services.AddScoped<IMinioService, MinioService>();
+            //services.AddScoped<IMinioService, MinioService>();
 			services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
             services.AddScoped<ICarService, CarService>();
@@ -61,31 +53,9 @@ namespace MainTz.Web
             services.AddScoped<IValidator<UpdateLoginUserRequest>, UpdateLoginUserValidator>();
             services.AddScoped<IValidator<UpdatePasswordUserRequest>, UpdatePasswordUserValidator>();
             services.AddScoped<IValidator<LoginFormRequest>, LoginFormValidator>();
-
+            
             services.AddDomainAppAutoMapperConfiguration();
 			services.AddHttpContextAccessor();
-			services.AddAuthentication(options =>
-			{
-				options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-				options.DefaultSignInScheme = JwtBearerDefaults.AuthenticationScheme;
-				options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-			})
-            .AddJwtBearer(options =>
-            {
-            	options.RequireHttpsMetadata = true;
-            	options.SaveToken = true;
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidIssuer = _authSettings.Issuer,
-            		ValidateAudience = true,
-            		ValidAudience = _authSettings.Audience,
-            		ValidateLifetime = true,
-            		IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authSettings.Key)),
-            		ValidateIssuerSigningKey = true,
-            	};
-            });
-			services.AddAuthorization();
             services.AddControllersWithViews();
         }
 
@@ -287,9 +257,8 @@ namespace MainTz.Web
             app.UseMiddleware<JwtHeaderMiddleware>();
             app.UseMiddleware<JwtRefreshMiddleware>();
             app.UseMiddleware<LoggingMiddleware>();
-            app.UseAuthentication();
-			app.UseAuthorization();
             app.UseSession();
+            app.UseAppAuth();
 
 			app.UseEndpoints(endpoints =>
             {
