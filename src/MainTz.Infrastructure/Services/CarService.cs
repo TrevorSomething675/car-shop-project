@@ -36,10 +36,10 @@ namespace MainTz.Infrastructure.Services
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
             return carsDomainEntity;
         }
-        public async Task<List<Car>> GetFavoriteCarsAsync(int pageNumber = 1)
+        public async Task<List<Car>> GetFavoriteCarsWithPaggingAsync(int pageNumber = 1)
         {
-            var user = await _userRepository.GetUserByNameAsync(_contextAccessor.HttpContext.User.Identity.Name);
             var totalCarsInPage = 8f;
+            var user = await _userRepository.GetUserByNameAsync(_contextAccessor.HttpContext.User.Identity.Name);
             var pageCount = Math.Ceiling(user.Cars
                 .Count() / totalCarsInPage);
 
@@ -48,6 +48,14 @@ namespace MainTz.Infrastructure.Services
                 .Skip((int)(totalCarsInPage * (pageNumber - 1)))
                 .ToList();
 
+            var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
+
+            return carsDomainEntity;
+        }
+        public async Task<List<Car>> GetFavoriteCarsAsync(int pageNumber = 1)
+        {
+            var user = await _userRepository.GetUserByNameAsync(_contextAccessor.HttpContext.User.Identity.Name);
+            var carsEntity = user.Cars.ToList();
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
 
             return carsDomainEntity;

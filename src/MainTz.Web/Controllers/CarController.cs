@@ -8,23 +8,23 @@ namespace MainTz.Web.Controllers
     public class CarController : Controller
     {
         private readonly IHttpContextAccessor _contextAccessor;
+        private readonly IMinioService _minioService;
         private readonly ICarService _carService;
         private readonly IMapper _mapper;
-        //private readonly IMinioService _minioService;
-        public CarController(/*IMinioService minioService,*/ ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor)
+        public CarController(IMinioService minioService, ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor)
         {
             _contextAccessor = contextAccessor;
-            //_minioService = minioService;
+            _minioService = minioService;
             _carService = carService;
             _mapper = mapper;
         }
         public async Task<IActionResult> GetCars(int pageNumber = 1, CarsViewModel customCarsModel = null)
         {
-            //var jija = await _minioService.GetObjectByNameAndBucket("test-bucket-1", "Kia-Rio-image-1.jpg");
+            var jija = await _minioService.GetObjectByNameAndBucketAsync("test-bucket-1", "Kia-Rio-image-1.jpg");
             if(customCarsModel.CarsResponse == null)
             {
-                var carsDomainModels = await _carService.GetCarsWithPaggingAsync(pageNumber);
-                var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
+                var carsModel = await _carService.GetCarsWithPaggingAsync(pageNumber);
+                var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
                 var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
                 var model = new CarsViewModel
                 {

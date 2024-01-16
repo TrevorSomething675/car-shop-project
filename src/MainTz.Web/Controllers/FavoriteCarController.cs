@@ -34,12 +34,14 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetFavoriteCars(int pageNumber = 1)
         {
-            var carsModel = await _carService.GetFavoriteCarsAsync(pageNumber);
+            var carsModel = await _carService.GetFavoriteCarsWithPaggingAsync(pageNumber);
             var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
+            var totalCars = (await _carService.GetFavoriteCarsAsync()).Count() / 8f;
             var favoriteCarsModel = new CarsViewModel
             {
+                PageCount = (int)Math.Ceiling(totalCars),
                 PageNumber = pageNumber,
-                CarsResponse = carsResponse
+                CarsResponse = carsResponse,
             };
 
             return View(favoriteCarsModel);

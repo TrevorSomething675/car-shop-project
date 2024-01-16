@@ -1,41 +1,64 @@
-﻿using MainTz.Application.Services;
+﻿using MainTz.Application.Models.SittingsModels;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using MainTz.Application.Services;
 using Minio;
 
 namespace MainTz.Infrastructure.Services
 {
     public class MinioService : IMinioService
     {
-        private readonly IMinioClient _minioClient;
-        public MinioService(IMinioClient minioClient)
+        private readonly IMinioClientFactory _minioClientFactory;
+        private readonly MinioSettings _minioSettings;
+        private readonly ILogger<MinioService> _logger;
+        public MinioService(IMinioClientFactory minioClientFactory, IOptions<MinioSettings> minioSettings, ILogger<MinioService> logger)
         {
-            _minioClient = minioClient;
+            _minioClientFactory = minioClientFactory;
+            _minioSettings = minioSettings.Value;
+            _logger = logger;
         }
 
-        public async Task AddImageToBucket(byte[] bytes, string bucketName)
+        public async Task<bool> AddImageToBucketAsync(string bucketName)
         {
-
+            try
+            {
+                var image = 
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return false;
+            }
         }
 
-        public async Task<string> GetObjectByNameAndBucket(string bucketName, string objectName, int expiryDuration = 900)
+        public async Task<bool> GetObjectByNameAndBucketAsync(string bucketName, string objectName, int expiryDuration = 900)
         {
-            //var minioClient = new MinioClient()
-            //.WithEndpoint("192.168.120.225:9000")
-            //.WithCredentials("adminadmin", "adminadmin")
-            //                .Build();
-
-
-            //var statObjectArgs = new StatObjectArgs()
-            //    .WithBucket(bucketName)
-            //    .WithObject(objectName);
-            //await _minioClient.StatObjectAsync(statObjectArgs);
-
-            //var listOfBuckets = await _minioClient.ListBucketsAsync();
-            return "Ok";
+            try
+            {
+                using (var client = _minioClientFactory.CreateClient())
+                {
+                    var jija = await client.ListBucketsAsync();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return false;
+            }
         }
-
         public Task GetBuckets()
         {
             throw new NotImplementedException();
+        }
+        private byte[] ConvertImageToByte(System.Drawing.Image image)
+        {
+            using(var ms = new MemoryStream())
+            {
+                image.Save(ms, image);
+                return ms.ToArray();
+            }
         }
     }
 }

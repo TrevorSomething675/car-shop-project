@@ -5,6 +5,7 @@ using MainTz.Application.Repositories;
 using MainTz.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Application.Services;
+using MainTz.Web.Configurations;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using MainTz.Web.Middleware;
@@ -13,8 +14,6 @@ using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
 using FluentValidation;
 using Minio;
-using MainTz.Web.Configurations;
-using Microsoft.Extensions.Options;
 
 namespace MainTz.Web
 {
@@ -30,10 +29,12 @@ namespace MainTz.Web
             services.AddAppOptionsConfiguration();
             services.AddDbContextFactory<MainContext>();
             services.AddAppAuth();
-            //services.AddMinio(config => config
-            //.WithEndpoint(_minioSettings.StorageEndPoint)
-            //.WithCredentials(_minioSettings.ROOT_USER, _minioSettings.ROOT_PASSWORD)
-            //.Build());
+
+            services.AddMinio(configureClient => configureClient
+                .WithEndpoint(_minioSettings.StorageEndPoint)
+                .WithCredentials(_minioSettings.ROOT_USER, _minioSettings.ROOT_PASSWORD)
+                .WithSSL(false)
+                .Build());
 
             services.AddDistributedMemoryCache();
             services.AddSession();
@@ -44,7 +45,7 @@ namespace MainTz.Web
 			services.AddTransient<ITokenService, TokenService>();
             services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IFavoriteCarService, FavoriteCarService>();
-            //services.AddScoped<IMinioService, MinioService>();
+            services.AddScoped<IMinioService, MinioService>();
 			services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
             services.AddScoped<ICarService, CarService>();
