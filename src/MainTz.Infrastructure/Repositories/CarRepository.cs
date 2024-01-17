@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
-using MainTz.Application.Models.UserEntities;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -25,6 +24,7 @@ namespace MainTz.Infrastructure.Repositories
             await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntity = await context.Cars
+                    .Include(car => car.Images)
                     .Include(car => car.Model)
                     .ThenInclude(model => model.Brand)
                     .FirstOrDefaultAsync(car => car.Id == id);
@@ -36,7 +36,8 @@ namespace MainTz.Infrastructure.Repositories
         {
             await using(var context = _dbContextFactory.CreateDbContext())
             {
-                var carEntities = await context.Cars.ToListAsync();
+                var carEntities = await context.Cars
+                    .Include(car => car.Images).ToListAsync();
                 var cars = _mapper.Map<List<Car>>(carEntities);
                 return cars;
             }
@@ -46,7 +47,6 @@ namespace MainTz.Infrastructure.Repositories
             await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntity = _mapper.Map<CarEntity>(car);
-                //context.Cars.Attach(carEntity);
                 context.Cars.Update(carEntity);
                 await context.SaveChangesAsync();
             }
@@ -56,10 +56,6 @@ namespace MainTz.Infrastructure.Repositories
             await using (var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntity = _mapper.Map<CarEntity>(car);
-                //var jija = context.Cars.ToList();
-                //var jija2 = jija.Last();
-                //carEntity.Id = jija2.Id + 1;
-                //context.Cars.Attach(carEntity);
                 context.Cars.Add(carEntity);
                 await context.SaveChangesAsync();
             }

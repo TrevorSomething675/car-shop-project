@@ -1,5 +1,4 @@
 ﻿using MainTz.Application.Models.UserEntities;
-using MainTz.Database.Entities;
 
 namespace MainTz.Application.Models.CarEntities
 {
@@ -13,10 +12,11 @@ namespace MainTz.Application.Models.CarEntities
         public string Description { get; set; }
         public int Price { get; set; }
 
-        public ICollection<int> ImagesId { get; set; }
+        public IEnumerable<int> ImagesId { get; set; }
+        public IEnumerable<Image> Images { get; set; }
 
-        public ICollection<int> UsersId { get; set; }
-        public ICollection<User> Users { get; set; } = new List<User>();
+        public IEnumerable<int> UsersId { get; set; }
+        public IEnumerable<User> Users { get; set; } = new List<User>();
 
         public int ModelId { get; set; }
         public Model Model { get; set; }

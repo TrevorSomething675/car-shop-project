@@ -221,15 +221,15 @@ namespace MainTz.Web
                                 Name = $"TestName{i}",
                                 Color = "red",
                                 Price = i * 100,
+                                IsFavorite = false,
                                 Images = new List<ImageEntity>
                                 {
                                     new ImageEntity
                                     {
                                         Name = "pic1",
-                                        File = new byte[5],
+                                        Path = "cars-image-bucket/Avatr-11-image-1.jpg"
                                     }
                                 },
-                                IsFavorite = false,
                                 IsVisible = true,
                                 Description = $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
                                 $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
@@ -242,6 +242,28 @@ namespace MainTz.Web
                             };
                             cars.Add(car);
                         };
+                        #region imageDataAppend
+                        cars[0].Images = new List<ImageEntity> { new ImageEntity {
+                            Name = "pic1",
+                            Path = "cars-image-bucket/Avatr-11-image-1.jpg",
+                            }
+                        };
+                        cars[1].Images = new List<ImageEntity> { new ImageEntity {
+                            Name = "pic1",
+                            Path = "cars-image-bucket/BMW-X1-image-1.jpg",
+                            }
+                        };
+                        cars[2].Images = new List<ImageEntity> { new ImageEntity {
+                            Name = "pic1",
+                            Path = "cars-image-bucket/BMW-X3-image-1.jpg",
+                            }
+                        };
+                        cars[3].Images = new List<ImageEntity> { new ImageEntity {
+                            Name = "pic1",
+                            Path = "cars-image-bucket/Changan-Alsvin-image-1.jpg",
+                            }
+                        };
+                        #endregion
                         context.Cars.AddRange(cars);
                         context.SaveChanges();
                         var adminUser = context.Users.FirstOrDefault(user => user.Role.RoleName == "Admin");

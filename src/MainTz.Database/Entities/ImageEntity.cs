@@ -3,9 +3,8 @@
     public class ImageEntity : BaseEntity
     {
         public string Name { get; set; }
-        public byte[] File { get; set; }
+        public string Path { get; set; }
         public int CarId { get; set; }
         public CarEntity Car { get; set; }
-        public string ImageUrl { get; set; }
     }
 }

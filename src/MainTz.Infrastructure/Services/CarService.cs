@@ -4,7 +4,6 @@ using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Http;
 using AutoMapper;
-using Microsoft.IdentityModel.Tokens;
 
 namespace MainTz.Infrastructure.Services
 {
@@ -14,11 +13,15 @@ namespace MainTz.Infrastructure.Services
         private readonly IUserRepository _userRepository;
         private readonly ICarRepository _carRepository;
         private readonly ILogger<CarService> _logger;
+        private readonly IMinioService _minioService;
         private readonly IMapper _mapper;
-        public CarService(IUserRepository userRepository, ICarRepository carRepository, IMapper mapper, ILogger<CarService> logger, IHttpContextAccessor contextAccessor)
+        public CarService(IUserRepository userRepository, ICarRepository carRepository, 
+            IMapper mapper, ILogger<CarService> logger, IHttpContextAccessor contextAccessor,
+            IMinioService minioService)
         {
             _logger = logger;
             _mapper = mapper;
+            _minioService = minioService;
             _carRepository = carRepository;
             _userRepository = userRepository;
             _contextAccessor = contextAccessor;
@@ -27,6 +30,10 @@ namespace MainTz.Infrastructure.Services
         {
             var carEntity = await _carRepository.GetCarByIdAsync(id);
             var car = _mapper.Map<Car>(carEntity);
+            foreach (var image in car.Images)
+            {
+                image.FileBase64String = await _minioService.GetObjectAsync(image.Path);
+            }
 
             return car;
         }
@@ -49,7 +56,13 @@ namespace MainTz.Infrastructure.Services
                 .ToList();
 
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
-
+            foreach (var car in carsDomainEntity)
+            {
+                foreach (var image in car.Images)
+                {
+                    image.FileBase64String = await _minioService.GetObjectAsync(image.Path);
+                }
+            }
             return carsDomainEntity;
         }
         public async Task<List<Car>> GetFavoriteCarsAsync(int pageNumber = 1)
@@ -71,7 +84,13 @@ namespace MainTz.Infrastructure.Services
                 .ToList();
 
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
-
+            foreach (var car in carsDomainEntity)
+            {
+                foreach (var image in car.Images)
+                {
+                    image.FileBase64String = await _minioService.GetObjectAsync(image.Path);
+                }
+            }
             return carsDomainEntity;
         }
         public async Task<bool> CreateCarAsync(Car car)

@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MainTz.Database.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20240114130827_initial")]
+    [Migration("20240117103714_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -107,14 +107,11 @@ namespace MainTz.Database.Migrations
                     b.Property<int>("CarId")
                         .HasColumnType("integer");
 
-                    b.Property<byte[]>("File")
+                    b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("bytea");
-
-                    b.Property<string>("ImageUrl")
                         .HasColumnType("text");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Path")
                         .IsRequired()
                         .HasColumnType("text");
 

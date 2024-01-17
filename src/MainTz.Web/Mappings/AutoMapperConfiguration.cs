@@ -31,6 +31,7 @@ namespace MainTz.Web.Mappings
 				config.AddProfile<DomainDbEntityModelMap>();
 				config.AddProfile<DomainDbEntityBrandMap>();
 
+				config.AddProfile<DomainDbEntityImageMap>();
 				config.AddProfile<RequestDomainImageMap>();
 				config.AddProfile<ResponseDomainImageMap>();
 			});

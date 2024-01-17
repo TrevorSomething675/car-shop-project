@@ -1,12 +1,11 @@
-﻿using MainTz.Application.Models.CarEntities;
-
-namespace MainTz.Web.ViewModels.CarViewModels
+﻿namespace MainTz.Web.ViewModels.CarViewModels
 {
     public class ImageRequest
     {
         public string Name { get; set; }
-        public byte[] File { get; set; }
+        public string Path { get; set; }
+        public string FileBase64String { get; set; }
         public int CarId { get; set; }
-        public Car Car { get; set; }
+        public CarRequest Car { get; set; }
     }
 }

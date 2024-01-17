@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
-    var image1 = $('#LittleImage1').children('img');
-    var image2 = $('#LittleImage2').children('img');
-    var image3 = $('#LittleImage3').children('img');
+    var image1 = $('#LittleImage_0').children('img');
+    var image2 = $('#LittleImage_1').children('img');
+    var image3 = $('#LittleImage_2').children('img');
 
     var $image1 = image1.clone().removeClass('big-car-card-little-image').addClass('product-img');
     var $image2 = image2.clone().removeClass('big-car-card-little-image').addClass('product-img');

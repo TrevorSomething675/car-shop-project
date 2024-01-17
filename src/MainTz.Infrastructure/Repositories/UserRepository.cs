@@ -30,6 +30,7 @@ namespace MainTz.Infrastructure.Repositories
                 var userEntity = await context.Users
                     .Include(user => user.Role)
                     .Include(user => user.Cars)
+                    .ThenInclude(car => car.Images)
                     .Include(user => user.Notifications)
                     .FirstOrDefaultAsync(user => user.Name == name);
                 var user = _mapper.Map<User>(userEntity);

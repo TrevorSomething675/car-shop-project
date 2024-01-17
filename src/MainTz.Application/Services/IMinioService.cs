@@ -2,8 +2,11 @@
 {
     public interface IMinioService
     {
-        public Task<bool> GetObjectByNameAndBucketAsync(string bucketName, string objectName, int expiryDuration = 900);
-        public Task<bool> AddImageToBucketAsync(string bucketName);
-        public Task GetBuckets();
+        public Task<List<string>> GetBucketsAsync();
+        public Task<bool> CreateBucketAsync(string bucketName);
+
+        public Task<string> GetObjectAsync(string path);
+        //public Task<bool> AddObjectToBucketAsync(string path);
+        //public Task<bool> RemoveObjectInBucketAsync(string path);
     }
 }

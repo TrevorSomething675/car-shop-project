@@ -104,14 +104,11 @@ namespace MainTz.Database.Migrations
                     b.Property<int>("CarId")
                         .HasColumnType("integer");
 
-                    b.Property<byte[]>("File")
+                    b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("bytea");
-
-                    b.Property<string>("ImageUrl")
                         .HasColumnType("text");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Path")
                         .IsRequired()
                         .HasColumnType("text");
 
