@@ -34,7 +34,7 @@ namespace MainTz.Infrastructure.Services
             }
             catch(Exception ex)
             {
-                _logger.LogError(ex.Message);
+                _logger.LogError("Ошибка при добавлении машниы в избранное {ex.Message}", ex.Message);
                 return false;
             }
         }
