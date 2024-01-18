@@ -3,7 +3,7 @@ using MainTz.Core.Options;
 
 namespace MainTz.Web.Configurations
 {
-    public static class OptionsConfiguration
+    public static class AppOptionsConfiguration
     {
         public static void AddAppOptionsConfiguration(this IServiceCollection services)
         {

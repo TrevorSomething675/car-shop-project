@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MainTz.Web.Configurations
 {
-    public static class AuthConfiguration
+    public static class AppAuthConfiguration
     {
         public static void AddAppAuth(this IServiceCollection services)
         {
