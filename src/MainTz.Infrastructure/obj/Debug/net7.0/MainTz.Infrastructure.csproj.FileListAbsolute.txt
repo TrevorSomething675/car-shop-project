@@ -67,12 +67,6 @@ C:\E-CarShop\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.dl
 C:\E-CarShop\src\MainTz.Infrastructure\obj\Debug\net7.0\refint\MainTz.Infrastructure.dll
 C:\E-CarShop\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.pdb
 C:\E-CarShop\src\MainTz.Infrastructure\obj\Debug\net7.0\ref\MainTz.Infrastructure.dll
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.AssemblyInfo.cs
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.sourcelink.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Infrastructure.deps.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Infrastructure.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Infrastructure.pdb
@@ -82,6 +76,12 @@ C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\D
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Application.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Core.pdb
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\bin\Debug\net7.0\MainTz.Database.pdb
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.AssemblyInfo.cs
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.sourcelink.json
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.csproj.CopyComplete
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\MainTz.Infrastructure.dll
 C:\Users\Иван\Documents\GitHub\MainTzProject\src\MainTz.Infrastructure\obj\Debug\net7.0\refint\MainTz.Infrastructure.dll
