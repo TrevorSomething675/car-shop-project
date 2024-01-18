@@ -1,8 +1,4 @@
-﻿using MainTz.Infrastructure.Repositories;
-using MainTz.Application.Repositories;
-using MainTz.Infrastructure.Services;
-using Microsoft.EntityFrameworkCore;
-using MainTz.Application.Services;
+﻿using Microsoft.EntityFrameworkCore;
 using MainTz.Web.Configurations;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
@@ -24,20 +20,10 @@ namespace MainTz.Web
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             services.AddDistributedMemoryCache();
-            services.AddSession();
-            services.AddScoped<INotificationRepository, NotificationRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IRoleRepository, RoleRepository>();
-            services.AddScoped<ICarRepository, CarRepository>();
-			services.AddTransient<ITokenService, TokenService>();
-            services.AddScoped<INotificationService, NotificationService>();
-            services.AddScoped<IFavoriteCarService, FavoriteCarService>();
-            services.AddScoped<IMinioService, MinioService>();
-			services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IMailService, MailService>();
-            services.AddScoped<ICarService, CarService>();
-            
+            services.AddAppServices();
+            services.AddAppRepositories();
             services.AddAppAutoMapper();
+            
 			services.AddHttpContextAccessor();
             services.AddControllersWithViews();
         }
@@ -262,7 +248,6 @@ namespace MainTz.Web
             app.UseMiddleware<JwtHeaderMiddleware>();
             app.UseMiddleware<JwtRefreshMiddleware>();
             app.UseMiddleware<LoggingMiddleware>();
-            app.UseSession();
             app.UseAppAuth();
 
 			app.UseEndpoints(endpoints =>
