@@ -1,14 +1,14 @@
-﻿using MainTz.Database.Entities;
+﻿using MainTz.Application.Models.UserEntities;
 
 namespace MainTz.Application.Repositories
 {
     public interface IUserRepository
     {
-        public Task<UserEntity> GetUserByNameAsync(string name);
-		public Task<UserEntity> GetUserByEmailAsync(string email);
-		public Task<List<UserEntity>> GetUsers();
-        public Task Update(UserEntity user);
-        public Task Create(UserEntity user);
-        public Task Delete(UserEntity user);
+        public Task<User> GetUserByNameAsync(string name);
+		public Task<User> GetUserByEmailAsync(string email);
+		public Task<List<User>> GetUsersAsync();
+        public Task UpdateAsync(User user);
+        public Task CreateAsync(User user);
+        public Task DeleteAsync(User user);
     }
 }

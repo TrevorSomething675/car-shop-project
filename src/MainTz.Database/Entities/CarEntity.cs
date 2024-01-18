@@ -7,9 +7,10 @@
         public bool IsVisible { get; set; }
         public bool IsFavorite { get; set; }
         public string Description { get; set; }
+        public int Price { get; set; }
 
-        public ICollection<ImageEntity> Images { get; set; }
-        public ICollection<UserCarEntity> Users { get; set; }
+        public IEnumerable<ImageEntity> Images { get; set; }
+        public IEnumerable<UserEntity> Users { get; set; } = new List<UserEntity>();
         public int ModelId { get; set; }
         public ModelEntity Model { get; set; }
     }

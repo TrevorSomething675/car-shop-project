@@ -1,9 +1,8 @@
-﻿using MainTz.Application.Repositories;
+﻿using MainTz.Application.Models.UserEntities;
+using MainTz.Application.Repositories;
 using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
-using MainTz.Database.Entities;
 using AutoMapper;
-using MainTz.Application.Models.UserEntities;
 
 namespace MainTz.Infrastructure.Services
 {
@@ -14,8 +13,9 @@ namespace MainTz.Infrastructure.Services
         private readonly ILogger<UserService> _logger;
         private readonly IMapper _mapper;
 
-        public UserService(IUserRepository userRepository, ILogger<UserService> logger, IMapper mapper)
+        public UserService(IUserRepository userRepository, ILogger<UserService> logger, IMapper mapper, IRoleRepository roleRepository)
         {
+            _roleRepository = roleRepository;
             _userRepository = userRepository;
             _logger = logger;
             _mapper = mapper;
@@ -34,7 +34,7 @@ namespace MainTz.Infrastructure.Services
 		}
 		public async Task<List<User>> GetUsersAsync()
         {
-            var usersEntity = await _userRepository.GetUsers();
+            var usersEntity = await _userRepository.GetUsersAsync();
             var usersDomainEntity = _mapper.Map<List<User>>(usersEntity);
             return usersDomainEntity;
         }
@@ -42,8 +42,7 @@ namespace MainTz.Infrastructure.Services
         {
             try
             {
-                var userEntity = _mapper.Map<UserEntity>(user);
-                await _userRepository.Update(userEntity);
+                await _userRepository.UpdateAsync(user);
                 return true;
             }
             catch (Exception ex)
@@ -56,9 +55,8 @@ namespace MainTz.Infrastructure.Services
         {
             try
             {
-                var userEntity = _mapper.Map<UserEntity>(user);
-                userEntity.Role = await _roleRepository.GetRoleByNameAsync("User");
-				await _userRepository.Create(userEntity);
+                user.Role = await _roleRepository.GetRoleByNameAsync("User");
+				await _userRepository.CreateAsync(user);
                 return true;
             }
             catch (Exception ex)
@@ -71,8 +69,7 @@ namespace MainTz.Infrastructure.Services
         {
             try
             {
-                var userEntity = _mapper.Map<UserEntity>(user);
-                await _userRepository.Delete(userEntity);
+                await _userRepository.DeleteAsync(user);
                 return true;
             }
             catch (Exception ex)

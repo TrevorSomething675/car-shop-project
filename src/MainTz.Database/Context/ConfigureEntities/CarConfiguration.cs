@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.ValueGeneration;
+using System.Xml;
 
 namespace MainTz.Database.Context.ConfigureEntities
 {
@@ -8,11 +11,7 @@ namespace MainTz.Database.Context.ConfigureEntities
     {
         public void Configure(EntityTypeBuilder<CarEntity> builder)
         {
-            builder.HasMany(c => c.Users)
-                .WithOne(u => u.Car)
-                .OnDelete(DeleteBehavior.NoAction)
-                .HasForeignKey(uc => uc.CarId)
-                .IsRequired(false);
+            builder.Property(car => car.Id).IsRequired();
 
             builder.HasMany(c => c.Images)
                 .WithOne(img => img.Car)

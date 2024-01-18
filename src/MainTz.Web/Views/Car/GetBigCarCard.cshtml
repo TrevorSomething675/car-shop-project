@@ -1,0 +1,73 @@
+﻿@using MainTz.Web.ViewModels.CarViewModels
+@model CarResponse
+
+<button id="BackToCarsFromBigCardButton" class="custom-btn-notification-header" style="font-size:30px">
+    <div class="d-flex">
+        <i class="bi bi-arrow-left-circle"></i>
+        <p class="px-1">Назад</p>
+    </div>
+</button>
+
+<div class="container">
+    <div class="pt-4">
+        <div class="row custom-dark-container">
+            <div class="col-9 py-3">
+                <div id="MainCarImage">
+                    <img src="data:image/png;base64, @Model.Images.FirstOrDefault().FileBase64String" class="product-img py-2" />
+                </div>
+            </div>
+
+            <div class="col-3 d-flex align-content-center">
+                <div class="slider slick-vertical text-center">
+                    @for(int i = 0; i < Model.Images.Count(); i++)
+                    {
+                        <button id="LittleImage_@i">
+                            <img src="data:image/png;base64, @Model.Images.ToList()[i].FileBase64String" class="product-img py-2" />
+                        </button>
+                    }
+                </div>
+                <script>
+                    $('.slick-vertical').slick({
+                        vertical: true,
+                        verticalSwiping: true,
+                        slidesToShow: 3,
+                        autoplay: false,
+                        prevArrow: '<i class="bi bi-arrow-up-circle custom-text-color"></i>',
+                        nextArrow: '<i class="bi bi-arrow-down-circle custom-text-color"></i>'
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="pt-4">
+            <div class="row custom-dark-container custom-text-color text-break">
+                <h2 class="d-flex justify-content-center align-content-center">
+                    @Model.Name
+                </h2>
+                <div>
+                    @Model.Description
+                </div>
+                <div class="d-flex justify-content-start col">
+                    <div class="px-1 mt-2">
+                        <div class="car-card-price mx-1">
+                            <div class="px-1">
+                                @Model.Price
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end col">
+                    <div class="d-flex align-content-center car-card-cart-offer px-2 custom-btn-orange">
+                            <i class="bi bi-bag px-1"></i>
+                            <p>В корзину</p>
+                    </div>
+                    <div class="d-flex align-content-center car-card-favorite-offer px-2">
+                        <button id="ChangeCarInFavoriteBigCard_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)" class="custom-btn-orange">
+                            <i class="bi bi-star px-1"></i>
+                            <p>В избранное</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

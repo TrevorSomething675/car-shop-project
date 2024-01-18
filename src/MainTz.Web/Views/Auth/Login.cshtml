@@ -15,9 +15,8 @@
                         <lable class="px-1">Пароль: </lable> <input type="password" name="LoginFormRequest.Password" class="w-100 py-1" /><br />
                     </div>
                     <div id="LoginErrorContainer">
-                        @await Html.PartialAsync("ErrorViewPartial")
                     </div>
-                    <a asp-controller="Auth" asp-action="RestoreAccountOnEmail" class="custom-btn-orange px-1">Забыли пароль?</a>
+                    <a asp-controller="Mail" asp-action="RestoreAccountOnEmail" class="custom-btn-orange px-1">Забыли пароль?</a>
                     <div class="py-1 d-flex justify-content-center">
                         <button class="text-center custom-btn-submit-form" type="submit">Авторизоваться</button>
 		    	    </div>

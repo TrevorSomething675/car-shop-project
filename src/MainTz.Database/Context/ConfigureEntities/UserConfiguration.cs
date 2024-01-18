@@ -9,17 +9,21 @@ namespace MainTz.Database.Context.ConfigureEntities
         public void Configure(EntityTypeBuilder<UserEntity> builder)
         {
             builder.HasKey(u => u.Id);
-            
+
             builder.HasOne(u => u.Role)
-                .WithMany(r => r.User)
+                .WithMany(r => r.Users)
                 .HasForeignKey(u => u.RoleId)
                 .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasMany(u => u.Cars)
-                .WithOne(uc => uc.User)
-                .HasForeignKey(uc => uc.UserId)
-                .IsRequired(false)
-                .OnDelete(DeleteBehavior.Cascade);
+                .WithMany(c => c.Users)
+                .UsingEntity(e => e.ToTable("UserCar"));
+
+            //builder.HasMany(u => u.Cars)
+            //    .WithOne(uc => uc.User)
+            //    .HasForeignKey(uc => uc.UserId)
+            //    .IsRequired(false)
+            //    .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasMany(u => u.Notifications)
                 .WithOne(n => n.User)

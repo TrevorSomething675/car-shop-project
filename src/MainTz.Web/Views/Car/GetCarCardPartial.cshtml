@@ -1,0 +1,42 @@
+﻿@using MainTz.Web.ViewModels.CarViewModels
+@model CarResponse
+
+<div class="car-card">
+    <div class="p-1 container">
+        <div>
+           <a asp-controller="Car" asp-action="GetBigCarCard" asp-route-id="@Model.Id">
+                <img src="data:image/png;base64, @Model.Images.FirstOrDefault().FileBase64String" class="product-img"/>
+           </a>
+        </div>
+        <div class="car-card-header-text">
+            <h2>@Model.Name</h2>
+        </div>
+        <div class="car-card-description-text text-break">
+            @Model.Description
+        </div>
+         <div class="row">
+            <div class="d-flex col">
+                <div class="car-card-price mx-1">
+                    <div class="px-1">
+                        @Model.Price
+                    </div>
+                </div>
+            </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="d-flex justify-content-end col">
+                    <div class="car-card-cart-offer mx-1">
+                          <a>
+                              <i class="bi bi-bag"></i>
+                          </a>
+                    </div>
+                    <div class="car-card-favorite-offer mx-1">
+                        <button id="ChangeCarInFavorite_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)" class="car-favorite-offer-btn">
+                            <i class="bi bi-star"></i>
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

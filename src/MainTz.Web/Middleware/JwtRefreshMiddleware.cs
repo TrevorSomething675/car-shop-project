@@ -26,14 +26,14 @@ namespace MainTz.Web.Middleware
                 if (accessTokenValidTo < DateTime.Now)
                 {
 					var role = context.Request.Cookies["role"];
-                    var newRefreshToken = _tokenService.CreateRefreshToken(role);
+                    var newRefreshToken = _tokenService.CreateRefreshToken(role, context.User.Identity.Name);
 
                     if (!string.IsNullOrEmpty(newRefreshToken))
                     {
                         var refreshTokenModel = new TokensModel 
                         { 
                             RefreshToken = newRefreshToken, 
-                            AccessToken = _tokenService.CreateAccessToken(role),
+                            AccessToken = _tokenService.CreateAccessToken(role, context.User.Identity.Name),
                             Role = role 
                         };
                         context.Response.Cookies.Append("accessToken", refreshTokenModel.AccessToken);

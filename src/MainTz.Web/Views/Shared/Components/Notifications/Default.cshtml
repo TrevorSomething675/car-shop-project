@@ -1,0 +1,28 @@
+﻿@using MainTz.Web.ViewModels
+@model NotificationsModel
+
+@if (Model.LegacyNotifications != null && Model.LegacyNotifications != null)
+{
+    <div class="dropdown">
+        <a class="bi bi-bell custom-btn-dropdown" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            @if(Model.NotificationsCount != 0)
+            {
+                <span class="badge-custom position-absolute top-0 start-100 translate-middle badge rounded-pill">@Model.NotificationsCount</span>
+            }
+        </a>
+
+        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownMenuLink">
+            @foreach (var notification in Model.LegacyNotifications)
+            {
+                <li class="dropdown-item custom-dropdown-item">
+                    @notification.Header
+                </li>
+            }
+            <li class="dropdown-item custom-dropdown-item">
+                <a id="notifications-event-btn" class="custom-btn-orange" asp-controller="Account" asp-action="GetNotifications">
+                    Посмотреть все
+                </a>
+            </li>
+        </ul>
+    </div>
+}

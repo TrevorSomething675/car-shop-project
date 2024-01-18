@@ -6,12 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\MainTzProject</DockerfileContext>
+    <UserSecretsId>1a3e7c19-a448-43bd-9583-ada7ded52eae</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation" Version="11.8.1" />
+    <PackageReference Include="Minio" Version="6.0.1" />
+    <PackageReference Include="Minio.AspNetCore" Version="6.0.0" />
     <PackageReference Include="NLog" Version="5.2.7" />
     <PackageReference Include="NLog.Extensions.Logging" Version="5.3.7" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.7" />

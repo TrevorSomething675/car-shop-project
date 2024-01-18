@@ -1,13 +1,13 @@
-﻿using MainTz.Database.Entities;
+﻿using MainTz.Application.Models.CarEntities;
 
 namespace MainTz.Application.Repositories
 {
     public interface ICarRepository
     {
-        public Task<CarEntity> GetCarByIdAsync(int id);
-        public Task<List<CarEntity>> GetCarsAsync();
-        public Task CreateAsync(CarEntity car);
-        public Task DeleteAsync(CarEntity car);
-        public Task UpdateAsync(CarEntity car);
+        public Task<Car> GetCarByIdAsync(int id);
+        public Task<List<Car>> GetCarsAsync();
+        public Task CreateAsync(Car car);
+        public Task DeleteAsync(Car car);
+        public Task UpdateAsync(Car car);
     }
 }

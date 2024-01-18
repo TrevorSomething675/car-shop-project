@@ -1,0 +1,35 @@
+﻿@using MainTz.Web.ViewModels
+@model NotificationsModel
+
+<div class="container">
+    <h2 class="text-center custom-text-color">Уведомления</h2>
+    <div class="row">
+        <div class="col-6">
+            <div class="custom-dark-container py-1 px-2">
+                @foreach (var legacyNotification in Model.NewNotifications)
+                {
+                    <button id="@legacyNotification.Id" class="custom-btn-notification-header w-100 my-1" onclick="SendNotificationId(@legacyNotification.Id)">
+                        <h2>@legacyNotification.Header</h2>
+                    </button>
+                }
+                @foreach (var newNotification in Model.LegacyNotifications)
+                {
+                    <button class="custom-btn-notification-header-unactive w-100 my-1" onclick="SendNotificationId(@newNotification.Id)">
+                        <h2>@newNotification.Header</h2>
+                    </button>
+                }
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="custom-dark-container">
+                @if(Model.NotificationsCount != 0)
+                {
+                    <div id="NotificationContainer">
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/NotificationDescriptionScript.js"></script>

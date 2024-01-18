@@ -2,6 +2,8 @@
 using MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car;
 using MainTz.Infrastructure.Mappings.RequestDomainMappings.User;
 using MainTz.Infrastructure.Mappings.RequestDomainMappings.Car;
+using MainTz.Web.Mappings.RequestDomainMappings.User;
+using MainTz.Web.Mappings.RequestDomainMappings.Car;
 
 namespace MainTz.Web.Mappings
 {
@@ -11,14 +13,27 @@ namespace MainTz.Web.Mappings
 		{
 			services.AddAutoMapper(config =>
 			{
-				config.AddProfile<RequestDomainCarMap>();
 				config.AddProfile<DomainDbEntityCarMap>();
 				config.AddProfile<ResponseDomainCarMap>();
+				config.AddProfile<RequestDomainCarMap>();
 
-				config.AddProfile<RequestDomainUserMap>();
 				config.AddProfile<DomainDbEntityUserMap>();
-				config.AddProfile<DomainDbEntityRoleMap>();
 				config.AddProfile<ResponseDomainUserMap>();
+				config.AddProfile<RequestDomainUserMap>();
+				config.AddProfile<RequestRegisterUserMap>();
+
+				config.AddProfile<DomainDbEntityRoleMap>();
+
+				config.AddProfile<DomainDbEntityNotificationMap>();
+				config.AddProfile<ResponseDomainNotificationMap>();
+				config.AddProfile<RequestDomainNotificationRequestMap>();
+
+				config.AddProfile<DomainDbEntityModelMap>();
+				config.AddProfile<DomainDbEntityBrandMap>();
+
+				config.AddProfile<DomainDbEntityImageMap>();
+				config.AddProfile<RequestDomainImageMap>();
+				config.AddProfile<ResponseDomainImageMap>();
 			});
 
 			return services;

@@ -9,6 +9,6 @@
 		public string Role { get; set; }
 
 		public ICollection<int> CarsId { get; set; }
-		public ICollection<int> NotificationsId { get; set; }
+		public IEnumerable<NotificationResponse> Notifications { get; set; }
 	}
 }

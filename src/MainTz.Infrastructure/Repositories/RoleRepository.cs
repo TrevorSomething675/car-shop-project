@@ -1,21 +1,28 @@
-﻿using MainTz.Application.Repositories;
+﻿using MainTz.Application.Models.UserEntities;
+using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
-using MainTz.Database.Entities;
 using MainTa.Database.Context;
+using AutoMapper;
 
 namespace MainTz.Infrastructure.Repositories
 {
 	public class RoleRepository : IRoleRepository
 	{
-		private readonly MainContext _mainContext;
-		public RoleRepository(MainContext mainContext)
+		private readonly IDbContextFactory<MainContext> _dbContextFactory;
+		private readonly IMapper _mapper;
+		public RoleRepository(IDbContextFactory<MainContext> dbContextFactory, IMapper mapper)
 		{
-			_mainContext = mainContext;
+			_dbContextFactory = dbContextFactory;
+			_mapper = mapper;
 		}
-		public async Task<RoleEntity> GetRoleByNameAsync(string roleName)
+		public async Task<Role> GetRoleByNameAsync(string roleName)
 		{
-			var resultRole = await _mainContext.Roles.FirstOrDefaultAsync(role => role.RoleName == roleName);
-			return resultRole;
+			await using(var context = _dbContextFactory.CreateDbContext())
+			{
+				var roleEntity = await context.Roles.FirstOrDefaultAsync(role => role.RoleName == roleName);
+				var role = _mapper.Map<Role>(roleEntity);
+				return role;
+			}
 		}
 	}
 }

@@ -1,0 +1,46 @@
+﻿@using MainTz.Web.ViewModels.UserViewModels
+@model UserResponse
+
+<div class="container py-2">
+    <div class="text-custom-light-text row">
+        <div class="col custom-dark-container mx-1">
+            <form method="post" id="UpdateLoginForm" class="form w-100" asp-action="UpdateLoginUserAccount" asp-controller="Account">
+                <div class="px-2 py-1">
+                    <h2 class="text-center">Изменить логин</h2>
+                    <div class="py-1">
+                        <label class="px-1">Новый логин: </label> <input type="text" name="updateLoginUserRequest.NewName" class="w-100 py-1" id="loginField" /><br />
+                    </div>
+                    <div class="py-1">
+                        <lable class="px-1">Подтвердить логин: </lable> <input type="text" name="updateLoginUserRequest.ConfirmNewName" class="w-100 py-1" /><br />
+                    </div>
+                    <div id="UpdateLoginErrorContainer">
+                    </div>
+                    <div class="py-1 d-flex justify-content-center">
+                        <button class="text-center custom-btn-submit-form" type="submit">Изменить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col custom-dark-container mx-1">
+            <form method="post" id="UpdatePasswordForm" class="form w-100" asp-action="UpdatePasswordUserAccount" asp-controller="Account">
+                <div class="px-2 py-1">
+                    <h2 class="text-center">Изменить пароль</h2>
+                    <div class="py-1">
+                        <lable class="px-1">Новый пароль: </lable> <input type="password" name="updatePasswordUserRequest.NewPassword" class="w-100 py-1" /><br />
+                    </div>
+                    <div class="py-1">
+                        <lable class="px-1">Подтвердить новый пароль: </lable> <input type="password" name="updatePasswordUserRequest.ConfirmNewPassword" class="w-100 py-1" /><br />
+                    </div>
+                    <div id="UpdatePasswordErrorContainer">
+                    </div>
+                    <div class="py-1 d-flex justify-content-center">
+                        <button class="text-center custom-btn-submit-form" type="submit">Изменить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/UpdateAccountUserScript.js"></script>
