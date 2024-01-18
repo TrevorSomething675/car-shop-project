@@ -1,5 +1,4 @@
-﻿using MainTz.Web.ViewModels.UserViewModels;
-using MainTz.Infrastructure.Repositories;
+﻿using MainTz.Infrastructure.Repositories;
 using MainTz.Application.Repositories;
 using MainTz.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
@@ -8,9 +7,8 @@ using MainTz.Web.Configurations;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using MainTz.Web.Middleware;
-using MainTz.Web.ViewModels;
-using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
+using System.Reflection;
 using FluentValidation;
 
 namespace MainTz.Web
@@ -23,7 +21,7 @@ namespace MainTz.Web
             services.AddDbContextFactory<MainContext>();
             services.AddAppAuth();
             services.AddAppMinioConfiguration();
-            services.AddAppValidators();
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             services.AddDistributedMemoryCache();
             services.AddSession();
