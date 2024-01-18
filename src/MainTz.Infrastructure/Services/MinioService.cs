@@ -96,6 +96,7 @@ namespace MainTz.Infrastructure.Services
             }
             catch(Exception ex)
             {
+                _logger.LogError($"Ошибка при создании бакета [{ex.Message}]");
                 return false;
             }
         }
