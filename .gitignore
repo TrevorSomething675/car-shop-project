@@ -20,6 +20,7 @@
 mono_crash.*
 
 # Build results
+N-CarShop.sln
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
