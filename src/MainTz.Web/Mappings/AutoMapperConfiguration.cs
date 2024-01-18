@@ -9,7 +9,7 @@ namespace MainTz.Web.Mappings
 		{
 			var mapperConfig = new MapperConfiguration(config =>
 			{
-				config.AddMaps(Assembly.GetAssembly(typeof(Infrastructure.InfrastructureAssemblyMarker)));
+				config.AddMaps(Assembly.GetAssembly(typeof(Infrastructure.AssemblyMarker)));
 				config.AddMaps(Assembly.GetExecutingAssembly());
 			});
 			var mapper = mapperConfig.CreateMapper();
