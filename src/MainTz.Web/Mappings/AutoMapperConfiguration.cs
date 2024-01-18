@@ -1,41 +1,19 @@
-﻿using MainTz.Infrastructure.Mappings.DomainDbEntityMappings.User;
-using MainTz.Infrastructure.Mappings.DomainDbEntityMappings.Car;
-using MainTz.Infrastructure.Mappings.RequestDomainMappings.User;
-using MainTz.Infrastructure.Mappings.RequestDomainMappings.Car;
-using MainTz.Web.Mappings.RequestDomainMappings.User;
-using MainTz.Web.Mappings.RequestDomainMappings.Car;
+﻿using System.Reflection;
+using AutoMapper;
 
 namespace MainTz.Web.Mappings
 {
-	static public class AutoMapperConfiguration
+    static public class AutoMapperConfiguration
 	{
-		static public IServiceCollection AddDomainAppAutoMapperConfiguration(this IServiceCollection services)
+		static public IServiceCollection AddAppAutoMapper(this IServiceCollection services)
 		{
-			services.AddAutoMapper(config =>
+			var mapperConfig = new MapperConfiguration(config =>
 			{
-				config.AddProfile<DomainDbEntityCarMap>();
-				config.AddProfile<ResponseDomainCarMap>();
-				config.AddProfile<RequestDomainCarMap>();
-
-				config.AddProfile<DomainDbEntityUserMap>();
-				config.AddProfile<ResponseDomainUserMap>();
-				config.AddProfile<RequestDomainUserMap>();
-				config.AddProfile<RequestRegisterUserMap>();
-
-				config.AddProfile<DomainDbEntityRoleMap>();
-
-				config.AddProfile<DomainDbEntityNotificationMap>();
-				config.AddProfile<ResponseDomainNotificationMap>();
-				config.AddProfile<RequestDomainNotificationRequestMap>();
-
-				config.AddProfile<DomainDbEntityModelMap>();
-				config.AddProfile<DomainDbEntityBrandMap>();
-
-				config.AddProfile<DomainDbEntityImageMap>();
-				config.AddProfile<RequestDomainImageMap>();
-				config.AddProfile<ResponseDomainImageMap>();
+				config.AddMaps(Assembly.GetAssembly(typeof(Infrastructure.InfrastructureAssemblyMarker)));
+				config.AddMaps(Assembly.GetExecutingAssembly());
 			});
-
+			var mapper = mapperConfig.CreateMapper();
+			services.AddSingleton(mapper);
 			return services;
 		}
 	}

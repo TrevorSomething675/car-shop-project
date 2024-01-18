@@ -1,5 +1,5 @@
-﻿using MainTz.Application.Models.SittingsModels;
-using MainTz.Application.Models.UserEntities;
+﻿using MainTz.Application.Models.UserEntities;
+using MainTz.Application.Models.UserModels;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;

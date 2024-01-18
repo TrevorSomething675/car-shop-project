@@ -1,4 +1,4 @@
-﻿using MainTz.Application.Models.SittingsModels;
+﻿using MainTz.Application.Models.UserModels;
 using System.IdentityModel.Tokens.Jwt;
 using MainTz.Application.Services;
 

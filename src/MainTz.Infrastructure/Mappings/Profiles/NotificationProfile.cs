@@ -2,11 +2,11 @@
 using MainTz.Database.Entities;
 using AutoMapper;
 
-namespace MainTz.Infrastructure.Mappings.DomainDbEntityMappings.User
+namespace MainTz.Infrastructure.Mappings.Profiles
 {
-    public class DomainDbEntityNotificationMap : Profile
+    public class NotificationProfile : Profile
     {
-        public DomainDbEntityNotificationMap()
+        public NotificationProfile()
         {
             CreateMap<Notification, NotificationEntity>().ReverseMap();
         }

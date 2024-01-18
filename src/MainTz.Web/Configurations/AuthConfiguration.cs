@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using MainTz.Application.Models.SittingsModels;
+using MainTz.Application.Models.OptionsModels;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Options;
 using System.Text;
@@ -10,7 +10,7 @@ namespace MainTz.Web.Configurations
     {
         public static void AddAppAuth(this IServiceCollection services)
         {
-            var jwtOptions = services.BuildServiceProvider().GetRequiredService<IOptions<JwtAuthSettings>>().Value;
+            var jwtOptions = services.BuildServiceProvider().GetRequiredService<IOptions<JwtAuthOptions>>().Value;
 
             services.AddAuthentication(options =>
             {

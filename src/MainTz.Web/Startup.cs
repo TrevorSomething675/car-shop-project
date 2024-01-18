@@ -1,5 +1,4 @@
-﻿using MainTz.Application.Models.SittingsModels;
-using MainTz.Web.ViewModels.UserViewModels;
+﻿using MainTz.Web.ViewModels.UserViewModels;
 using MainTz.Infrastructure.Repositories;
 using MainTz.Application.Repositories;
 using MainTz.Infrastructure.Services;
@@ -13,28 +12,18 @@ using MainTz.Web.ViewModels;
 using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
 using FluentValidation;
-using Minio;
 
 namespace MainTz.Web
 {
     public class Startup
     {
-        MinioSettings _minioSettings;
-        public Startup(IConfiguration configuration)
-        {
-            _minioSettings = configuration.GetSection(MinioSettings.MinioPosition).Get<MinioSettings>();
-		}
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAppOptionsConfiguration();
             services.AddDbContextFactory<MainContext>();
             services.AddAppAuth();
-
-            services.AddMinio(configureClient => configureClient
-                .WithEndpoint(_minioSettings.StorageEndPoint)
-                .WithCredentials(_minioSettings.ROOT_USER, _minioSettings.ROOT_PASSWORD)
-                .WithSSL(false)
-                .Build());
+            services.AddAppMinioConfiguration();
+            services.AddAppValidators();
 
             services.AddDistributedMemoryCache();
             services.AddSession();
@@ -49,13 +38,8 @@ namespace MainTz.Web
 			services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
             services.AddScoped<ICarService, CarService>();
-            services.AddScoped<IValidator<RegisterFormRequest>, RegisterFormValidator>();
-            services.AddScoped<IValidator<RestoreEmailRequest>, RestoreEmailValidator>();
-            services.AddScoped<IValidator<UpdateLoginUserRequest>, UpdateLoginUserValidator>();
-            services.AddScoped<IValidator<UpdatePasswordUserRequest>, UpdatePasswordUserValidator>();
-            services.AddScoped<IValidator<LoginFormRequest>, LoginFormValidator>();
             
-            services.AddDomainAppAutoMapperConfiguration();
+            services.AddAppAutoMapper();
 			services.AddHttpContextAccessor();
             services.AddControllersWithViews();
         }
