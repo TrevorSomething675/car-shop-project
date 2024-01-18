@@ -75,7 +75,7 @@ namespace MainTz.Infrastructure.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError("Не удалось получить список бакетов");
+                _logger.LogError("Не удалось получить список бакетов {ex.Message}", ex.Message);
                 throw new Exception(ex.Message);
             }
         }
@@ -96,6 +96,7 @@ namespace MainTz.Infrastructure.Services
             }
             catch(Exception ex)
             {
+                _logger.LogError("Ошибка при создании бакета {ex.Message}", ex.Message);
                 return false;
             }
         }

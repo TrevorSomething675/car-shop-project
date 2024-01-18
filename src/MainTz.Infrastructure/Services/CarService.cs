@@ -102,7 +102,7 @@ namespace MainTz.Infrastructure.Services
             }
             catch (Exception ex)
             {
-                _logger.LogInformation($"{ex.Message}");
+                _logger.LogInformation(ex.Message);
                 return false;
             }
         }
@@ -115,7 +115,7 @@ namespace MainTz.Infrastructure.Services
             }
             catch (Exception ex)
             {
-                _logger.LogInformation($"{ex.Message}");
+                _logger.LogInformation(ex.Message);
                 return false;
             }
         }
@@ -128,7 +128,7 @@ namespace MainTz.Infrastructure.Services
             }
             catch (Exception ex)
             {
-                _logger.LogInformation($"{ex.Message}");
+                _logger.LogInformation(ex.Message);
                 return false;
             }
         }
