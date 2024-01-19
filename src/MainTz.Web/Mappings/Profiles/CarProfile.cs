@@ -8,8 +8,8 @@ namespace MainTz.Web.Mappings.Profiles
     {
         public CarProfile()
         {
-            CreateMap<CarRequest, Car>().ReverseMap();
-            CreateMap<CarResponse, Car>().ReverseMap();
+            CreateMap<CarRequest, Car>();
+            CreateMap<Car, CarResponse>();
         }
     }
 }

@@ -8,8 +8,8 @@ namespace MainTz.Web.Mappings.Profiles
     {
         public ImageProfile()
         {
-            CreateMap<ImageRequest, Image>().ReverseMap();
-            CreateMap<ImageResponse, Image>().ReverseMap();
+            CreateMap<ImageRequest, Image>();
+            CreateMap<Image, ImageResponse>();
         }
     }
 }

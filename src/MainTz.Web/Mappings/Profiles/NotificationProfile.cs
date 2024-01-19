@@ -8,8 +8,8 @@ namespace MainTz.Web.Mappings.Profiles
     {
         public NotificationProfile()
         {
-            CreateMap<NotificationRequest, Notification>().ReverseMap();
-            CreateMap<NotificationResponse, Notification>().ReverseMap();
+            CreateMap<NotificationRequest, Notification>();
+            CreateMap<Notification, NotificationResponse>();
         }
     }
 }
