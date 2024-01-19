@@ -1,61 +1,29 @@
-﻿using MainTz.Application.Models.SittingsModels;
-using MainTz.Web.ViewModels.UserViewModels;
-using MainTz.Infrastructure.Repositories;
-using MainTz.Application.Repositories;
-using MainTz.Infrastructure.Services;
-using Microsoft.EntityFrameworkCore;
-using MainTz.Application.Services;
+﻿using Microsoft.EntityFrameworkCore;
 using MainTz.Web.Configurations;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using MainTz.Web.Middleware;
-using MainTz.Web.ViewModels;
-using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
+using System.Reflection;
 using FluentValidation;
-using Minio;
 
 namespace MainTz.Web
 {
     public class Startup
     {
-        MinioSettings _minioSettings;
-        public Startup(IConfiguration configuration)
-        {
-            _minioSettings = configuration.GetSection(MinioSettings.MinioPosition).Get<MinioSettings>();
-		}
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAppOptionsConfiguration();
             services.AddDbContextFactory<MainContext>();
             services.AddAppAuth();
-
-            services.AddMinio(configureClient => configureClient
-                .WithEndpoint(_minioSettings.StorageEndPoint)
-                .WithCredentials(_minioSettings.ROOT_USER, _minioSettings.ROOT_PASSWORD)
-                .WithSSL(false)
-                .Build());
+            services.AddAppMinioConfiguration();
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             services.AddDistributedMemoryCache();
-            services.AddSession();
-            services.AddScoped<INotificationRepository, NotificationRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IRoleRepository, RoleRepository>();
-            services.AddScoped<ICarRepository, CarRepository>();
-			services.AddTransient<ITokenService, TokenService>();
-            services.AddScoped<INotificationService, NotificationService>();
-            services.AddScoped<IFavoriteCarService, FavoriteCarService>();
-            services.AddScoped<IMinioService, MinioService>();
-			services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IMailService, MailService>();
-            services.AddScoped<ICarService, CarService>();
-            services.AddScoped<IValidator<RegisterFormRequest>, RegisterFormValidator>();
-            services.AddScoped<IValidator<RestoreEmailRequest>, RestoreEmailValidator>();
-            services.AddScoped<IValidator<UpdateLoginUserRequest>, UpdateLoginUserValidator>();
-            services.AddScoped<IValidator<UpdatePasswordUserRequest>, UpdatePasswordUserValidator>();
-            services.AddScoped<IValidator<LoginFormRequest>, LoginFormValidator>();
+            services.AddAppServices();
+            services.AddAppRepositories();
+            services.AddAppAutoMapper();
             
-            services.AddDomainAppAutoMapperConfiguration();
 			services.AddHttpContextAccessor();
             services.AddControllersWithViews();
         }
@@ -280,7 +248,6 @@ namespace MainTz.Web
             app.UseMiddleware<JwtHeaderMiddleware>();
             app.UseMiddleware<JwtRefreshMiddleware>();
             app.UseMiddleware<LoggingMiddleware>();
-            app.UseSession();
             app.UseAppAuth();
 
 			app.UseEndpoints(endpoints =>

@@ -1,4 +1,4 @@
-﻿using MainTz.Application.Models.CarEntities;
+﻿using MainTz.Application.Models.CarModels;
 using MainTz.Application.Repositories;
 using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;

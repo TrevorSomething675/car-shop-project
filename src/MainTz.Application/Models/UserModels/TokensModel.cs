@@ -1,4 +1,4 @@
-﻿namespace MainTz.Application.Models.SittingsModels
+﻿namespace MainTz.Application.Models.UserModels
 {
     public class TokensModel
     {

@@ -2,13 +2,14 @@
 using MainTz.Web.ViewModels.UserViewModels;
 using AutoMapper;
 
-namespace MainTz.Web.Mappings.RequestDomainMappings.User
+namespace MainTz.Web.Mappings.Profiles
 {
-    public class RequestDomainNotificationRequestMap : Profile
+    public class NotificationProfile : Profile
     {
-        public RequestDomainNotificationRequestMap() 
+        public NotificationProfile()
         {
             CreateMap<NotificationRequest, Notification>().ReverseMap();
+            CreateMap<NotificationResponse, Notification>().ReverseMap();
         }
     }
 }

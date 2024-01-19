@@ -2,7 +2,7 @@
 {
     public class DataBaseSettings
     {
-        public const string DataBasePosition = "DataBaseSettings";
+        public const string SectionName = "DataBaseSettings";
         public string ConnectionString { get; set; }
     }
 }

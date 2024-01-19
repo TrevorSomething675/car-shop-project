@@ -1,5 +1,5 @@
-﻿using MainTz.Application.Models.SittingsModels;
-using MainTz.Application.Models.UserEntities;
+﻿using MainTz.Application.Models.UserEntities;
+using MainTz.Application.Models.UserModels;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
@@ -13,10 +13,10 @@ namespace MainTz.Web.Controllers
         private readonly IMapper _mapper;
         private readonly IUserService _usersService;
         private readonly ITokenService _tokenService;
-        private readonly IValidator<LoginFormRequest> _loginFormValidator;
-        private readonly IValidator<RegisterFormRequest> _registerFormValidator;
+        private readonly IValidator<LoginUserRequest> _loginFormValidator;
+        private readonly IValidator<RegisterUserRequest> _registerFormValidator;
         public AuthController(IUserService usersService, ITokenService tokenService, IMapper mapper,
-            IValidator<RegisterFormRequest> registerFormValidator, IValidator<LoginFormRequest> loginFormValidator)
+            IValidator<RegisterUserRequest> registerFormValidator, IValidator<LoginUserRequest> loginFormValidator)
         {
             _registerFormValidator = registerFormValidator;
             _loginFormValidator = loginFormValidator;
@@ -57,7 +57,7 @@ namespace MainTz.Web.Controllers
         /// <param name="userDto">Модель, которая приходит с фронта</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IResult> LoginNormal(LoginFormRequest loginFormRequest)
+        public async Task<IResult> LoginNormal(LoginUserRequest loginFormRequest)
         {
             var formValid = _loginFormValidator.Validate(loginFormRequest);
             if (!formValid.IsValid)
@@ -73,7 +73,7 @@ namespace MainTz.Web.Controllers
             return Results.Json(tokens);
         }
         [HttpPost]
-        public async Task<IResult> LoginMail(LoginFormRequest loginFormRequest)
+        public async Task<IResult> LoginMail(LoginUserRequest loginFormRequest)
         {
             var formValid = _loginFormValidator.Validate(loginFormRequest);
             if (!formValid.IsValid)
@@ -105,7 +105,7 @@ namespace MainTz.Web.Controllers
         /// <param name="userDto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IResult> Register(RegisterFormRequest registerFormRequest)
+        public async Task<IResult> Register(RegisterUserRequest registerFormRequest)
         {
             var registerFormModel = await _registerFormValidator.ValidateAsync(registerFormRequest);
 

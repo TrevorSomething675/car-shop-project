@@ -1,5 +1,4 @@
-﻿using MainTz.Application.Models.CarEntities;
-using MainTz.Database.Entities;
+﻿using MainTz.Application.Models.CarModels;
 
 namespace MainTz.Application.Models.UserEntities
 {

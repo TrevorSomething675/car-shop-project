@@ -1,4 +1,4 @@
-﻿using MainTz.Application.Models.SittingsModels;
+﻿using MainTz.Application.Models.OptionsModels;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Options;
@@ -10,10 +10,10 @@ namespace MainTz.Infrastructure.Services
 {
     public class TokenService : ITokenService
     {
-        private readonly JwtAuthSettings _authSettings;
-        public TokenService(IOptions<JwtAuthSettings> authSettings)
+        private readonly JwtAuthOptions _authOptions;
+        public TokenService(IOptions<JwtAuthOptions> authOptions)
         {
-            _authSettings = authSettings.Value;
+            _authOptions = authOptions.Value;
         }
 
         public string CreateAccessToken(string role, string name)
@@ -24,13 +24,13 @@ namespace MainTz.Infrastructure.Services
                 };
 
             var jwt = new JwtSecurityToken(
-                    issuer: _authSettings.Issuer,
-                    audience: _authSettings.Audience,
+                    issuer: _authOptions.Issuer,
+                    audience: _authOptions.Audience,
                     claims: claims,
                     expires: DateTime.UtcNow.Add(TimeSpan.FromHours(8)),
                     signingCredentials: new SigningCredentials(
                         new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(_authSettings.Key)),
+                            Encoding.UTF8.GetBytes(_authOptions.Key)),
                         SecurityAlgorithms.HmacSha256)
                     );
 
@@ -44,13 +44,13 @@ namespace MainTz.Infrastructure.Services
                 new Claim(ClaimTypes.Name, name)
             };
             var jwt = new JwtSecurityToken(
-                    issuer: _authSettings.Issuer,
-                    audience: _authSettings.Audience,
+                    issuer: _authOptions.Issuer,
+                    audience: _authOptions.Audience,
                     claims: claims,
                     expires: DateTime.UtcNow.Add(TimeSpan.FromDays(3)),
                     signingCredentials: new SigningCredentials(
                         new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(_authSettings.Key)),
+                            Encoding.UTF8.GetBytes(_authOptions.Key)),
                         SecurityAlgorithms.HmacSha256)
                     );
 
