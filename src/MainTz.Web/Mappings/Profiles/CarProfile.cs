@@ -4,9 +4,9 @@ using AutoMapper;
 
 namespace MainTz.Web.Mappings.Profiles
 {
-    public class RequestDomainCarMap : Profile
+    public class CarProfile : Profile
     {
-        public RequestDomainCarMap()
+        public CarProfile()
         {
             CreateMap<CarRequest, Car>().ReverseMap();
             CreateMap<CarResponse, Car>().ReverseMap();

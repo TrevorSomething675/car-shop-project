@@ -3,7 +3,7 @@ using AutoMapper;
 
 namespace MainTz.Web.Mappings
 {
-    static public class AutoMapperConfiguration
+    static public class ServiceCollectionMapperExtensions
 	{
 		static public IServiceCollection AddAppAutoMapper(this IServiceCollection services)
 		{

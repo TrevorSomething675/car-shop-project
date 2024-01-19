@@ -3,7 +3,7 @@ using MainTz.Application.Repositories;
 
 namespace MainTz.Web.Configurations
 {
-    public static class AppRepositoryConfiguration
+    public static class ServiceCollectionRepositoryExtensions
     {
         public static IServiceCollection AddAppRepositories(this IServiceCollection services)
         {

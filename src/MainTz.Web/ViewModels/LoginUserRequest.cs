@@ -1,6 +1,6 @@
 ﻿namespace MainTz.Web.ViewModels
 {
-    public class LoginFormRequest
+    public class LoginUserRequest
     {
         public int Id { get; set; }
         public string Name { get; set; }

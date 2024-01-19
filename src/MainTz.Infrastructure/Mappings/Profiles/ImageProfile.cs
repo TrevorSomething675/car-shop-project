@@ -8,8 +8,7 @@ namespace MainTz.Infrastructure.Mappings.Profiles
     {
         public ImageProfile()
         {
-            CreateMap<Image, ImageEntity>();
-            CreateMap<ImageEntity, Image>();
+            CreateMap<Image, ImageEntity>().ReverseMap();
         }
     }
 }

@@ -4,7 +4,7 @@ using Minio;
 
 namespace MainTz.Web.Configurations
 {
-    public static class AppMinioConfiguration
+    public static class ServiceCollectionMinioExtensions
     {
         public static IServiceCollection AddAppMinioConfiguration(this IServiceCollection services)
         {
