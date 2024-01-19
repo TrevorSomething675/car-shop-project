@@ -87,7 +87,6 @@ namespace MainTz.Database.Migrations
                     Name = table.Column<string>(type: "text", nullable: false),
                     Color = table.Column<string>(type: "text", nullable: false),
                     IsVisible = table.Column<bool>(type: "boolean", nullable: false),
-                    IsFavorite = table.Column<bool>(type: "boolean", nullable: false),
                     Description = table.Column<string>(type: "text", nullable: false),
                     Price = table.Column<int>(type: "integer", nullable: false),
                     ModelId = table.Column<int>(type: "integer", nullable: false)

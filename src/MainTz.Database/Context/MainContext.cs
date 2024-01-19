@@ -8,8 +8,8 @@ namespace MainTa.Database.Context
 {
     public class MainContext : DbContext
     {
-        private readonly DataBaseSettings _dataBaseSettings;
-        public MainContext(DbContextOptions<MainContext> options, IOptions<DataBaseSettings> dataBaseSettings) : base(options) 
+        private readonly DataBaseOptions _dataBaseSettings;
+        public MainContext(DbContextOptions<MainContext> options, IOptions<DataBaseOptions> dataBaseSettings) : base(options) 
         {
             _dataBaseSettings = dataBaseSettings.Value;
         }

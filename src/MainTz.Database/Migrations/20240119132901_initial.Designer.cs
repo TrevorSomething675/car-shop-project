@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MainTz.Database.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20240117103714_initial")]
+    [Migration("20240119132901_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -72,9 +72,6 @@ namespace MainTz.Database.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<bool>("IsFavorite")
-                        .HasColumnType("boolean");
 
                     b.Property<bool>("IsVisible")
                         .HasColumnType("boolean");

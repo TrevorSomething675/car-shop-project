@@ -1,6 +1,6 @@
 ﻿namespace MainTz.Core.Options
 {
-    public class DataBaseSettings
+    public class DataBaseOptions
     {
         public const string SectionName = "DataBaseSettings";
         public string ConnectionString { get; set; }

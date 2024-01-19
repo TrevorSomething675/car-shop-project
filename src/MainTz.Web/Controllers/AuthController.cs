@@ -57,15 +57,15 @@ namespace MainTz.Web.Controllers
         /// <param name="userDto">Модель, которая приходит с фронта</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IResult> LoginNormal(LoginUserRequest loginFormRequest)
+        public async Task<IResult> LoginNormal(LoginUserRequest loginUserRequest)
         {
-            var formValid = _loginFormValidator.Validate(loginFormRequest);
+            var formValid = _loginFormValidator.Validate(loginUserRequest);
             if (!formValid.IsValid)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Введите логи и пароль" });
 
-            var user = await _usersService.GetUserByNameAsync(loginFormRequest.Name);
+            var user = await _usersService.GetUserByNameAsync(loginUserRequest.Name);
 
-            if (loginFormRequest.Password != user?.Password || user == null)
+            if (loginUserRequest.Password != user?.Password || user == null)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
             var tokens = await GetToken(user.Role.RoleName, user.Name);
@@ -73,15 +73,15 @@ namespace MainTz.Web.Controllers
             return Results.Json(tokens);
         }
         [HttpPost]
-        public async Task<IResult> LoginMail(LoginUserRequest loginFormRequest)
+        public async Task<IResult> LoginMail(LoginUserRequest loginUserRequest)
         {
-            var formValid = _loginFormValidator.Validate(loginFormRequest);
+            var formValid = _loginFormValidator.Validate(loginUserRequest);
             if (!formValid.IsValid)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Введите логи и пароль" });
 
-            var user = await _usersService.GetUserByEmailAsync(loginFormRequest.Name);
+            var user = await _usersService.GetUserByEmailAsync(loginUserRequest.Name);
 
-            if (loginFormRequest.Password != user?.Password || user == null)
+            if (loginUserRequest.Password != user?.Password || user == null)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
             var tokens = await GetToken(user.Role.RoleName, user.Name);
@@ -105,21 +105,21 @@ namespace MainTz.Web.Controllers
         /// <param name="userDto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IResult> Register(RegisterUserRequest registerFormRequest)
+        public async Task<IResult> Register(RegisterUserRequest registerUserRequest)
         {
-            var registerFormModel = await _registerFormValidator.ValidateAsync(registerFormRequest);
+            var registerFormModel = await _registerFormValidator.ValidateAsync(registerUserRequest);
 
             if (!registerFormModel.IsValid)
                 return Results.BadRequest(new ErrorViewModel { ErrorMessage = string.Join(" ", registerFormModel.Errors.Select(err => err.ErrorMessage)) });
 
-            var user = await _usersService.GetUserByNameAsync(registerFormRequest.Name);
+            var user = await _usersService.GetUserByNameAsync(registerUserRequest.Name);
 
             if (user != null)
                 return Results.BadRequest("Пользователь уже существует");
 
-            var userDomainEntity = _mapper.Map<User>(registerFormRequest);
+            var userDomainEntity = _mapper.Map<User>(registerUserRequest);
             await _usersService.CreateAsync(userDomainEntity);
-            var result = await LoginNormal(registerFormRequest);
+            var result = await LoginNormal(registerUserRequest);
 
             return result;
         }

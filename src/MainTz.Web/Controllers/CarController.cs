@@ -2,6 +2,8 @@
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
+using MainTz.Application.Models.CarModels;
+using MainTz.Web.ViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -55,6 +57,19 @@ namespace MainTz.Web.Controllers
            var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
 
             return PartialView(carsResponse);
+        }
+        public async Task<IActionResult> GetCreateCar()
+        {
+            return View();
+        }
+        public async Task<IResult> CreateCarCommand(CarRequest carRequest)
+        {
+            var car = _mapper.Map<Car>(carRequest);
+            //var result = await _carService.CreateCarAsync(car);
+            if (true)
+                return Results.Ok();
+            else
+                return Results.BadRequest();
         }
     }
 }

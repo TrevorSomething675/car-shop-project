@@ -70,9 +70,6 @@ namespace MainTz.Database.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<bool>("IsFavorite")
-                        .HasColumnType("boolean");
-
                     b.Property<bool>("IsVisible")
                         .HasColumnType("boolean");
 

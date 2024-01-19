@@ -9,7 +9,7 @@
         public int RoleId { get; set; }
         public RoleEntity Role { get; set; }
 
-        public List<CarEntity> Cars { get; set; } = new List<CarEntity>();
+        public List<CarEntity> Cars { get; set; }
         public List<NotificationEntity>? Notifications { get; set; }
     }
 }

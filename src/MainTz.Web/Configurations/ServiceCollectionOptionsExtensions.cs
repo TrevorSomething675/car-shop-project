@@ -9,7 +9,7 @@ namespace MainTz.Web.Configurations
         {
             var configuration = services.BuildServiceProvider().GetRequiredService<IConfiguration>();
             services.Configure<JwtAuthOptions>(configuration.GetSection(JwtAuthOptions.SectionName));
-            services.Configure<DataBaseSettings>(configuration.GetSection(DataBaseSettings.SectionName));
+            services.Configure<DataBaseOptions>(configuration.GetSection(DataBaseOptions.SectionName));
             services.Configure<MinioOptions>(configuration.GetSection(MinioOptions.SectionName));
         }
     }

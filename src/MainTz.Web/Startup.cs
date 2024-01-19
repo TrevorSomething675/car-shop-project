@@ -173,70 +173,69 @@ namespace MainTz.Web
                                 }
                             },
                         };
-
                         context.Users.AddRange(users);
                         context.SaveChanges();
                     }
-
                     if (!context.Cars.Any())
                     {
-                        var cars = new List<CarEntity>();
+                        //var cars = new List<CarEntity>();
 
-                        for(int i = 0; i < 15; i++)
-                        {
-                            var car = new CarEntity
-                            {
-                                Name = $"TestName{i}",
-                                Color = "red",
-                                Price = i * 100,
-                                IsFavorite = false,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Avatr-11-image-1.jpg"
-                                    }
-                                },
-                                IsVisible = true,
-                                Description = $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}",
-                                Model = context.Models.FirstOrDefault()
+                        //for(int i = 0; i < 15; i++)
+                        //{
+                        //    var car = new CarEntity
+                        //    {
+                        //        Name = $"TestName{i}",
+                        //        Color = "red",
+                        //        Price = i * 100,
+                        //        IsFavorite = false,
+                        //        Images = new List<ImageEntity>
+                        //        {
+                        //            new ImageEntity
+                        //            {
+                        //                Name = "pic1",
+                        //                Path = "cars-image-bucket/Avatr-11-image-1.jpg"
+                        //            }
+                        //        },
+                        //        IsVisible = true,
+                        //        Description = $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}",
+                        //        Model = context.Models.FirstOrDefault()
 
-                            };
-                            cars.Add(car);
-                        };
-                        #region imageDataAppend
-                        cars[0].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/Avatr-11-image-1.jpg",
-                            }
-                        };
-                        cars[1].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/BMW-X1-image-1.jpg",
-                            }
-                        };
-                        cars[2].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/BMW-X3-image-1.jpg",
-                            }
-                        };
-                        cars[3].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/Changan-Alsvin-image-1.jpg",
-                            }
-                        };
-                        #endregion
-                        context.Cars.AddRange(cars);
-                        context.SaveChanges();
-                        var adminUser = context.Users.FirstOrDefault(user => user.Role.RoleName == "Admin");
-                        var favorCar = context.Cars.FirstOrDefault();
-                        adminUser.Cars.Add(favorCar);
+                        //    };
+                        //    cars.Add(car);
+                        //};
+                        //#region imageDataAppend
+                        //cars[0].Images = new List<ImageEntity> { new ImageEntity {
+                        //    Name = "pic1",
+                        //    Path = "cars-image-bucket/Avatr-11-image-1.jpg",
+                        //    }
+                        //};
+                        //cars[1].Images = new List<ImageEntity> { new ImageEntity {
+                        //    Name = "pic1",
+                        //    Path = "cars-image-bucket/BMW-X1-image-1.jpg",
+                        //    }
+                        //};
+                        //cars[2].Images = new List<ImageEntity> { new ImageEntity {
+                        //    Name = "pic1",
+                        //    Path = "cars-image-bucket/BMW-X3-image-1.jpg",
+                        //    }
+                        //};
+                        //cars[3].Images = new List<ImageEntity> { new ImageEntity {
+                        //    Name = "pic1",
+                        //    Path = "cars-image-bucket/Changan-Alsvin-image-1.jpg",
+                        //    }
+                        //};
+                        //#endregion
+
+                        //context.Cars.AddRange(cars);
+                        //context.SaveChanges();
+                        //var adminUser = context.Users.FirstOrDefault(user => user.Role.RoleName == "Admin");
+                        //var favorCar = context.Cars.FirstOrDefault();
+                        //adminUser.Cars.Add(favorCar);
                         context.SaveChanges();
                     }
                 }
