@@ -9,8 +9,8 @@ namespace MainTz.Web.Mappings.Profiles
     {
         public UserProfile()
         {
-            CreateMap<UserRequest, User>().ReverseMap();
-            CreateMap<User, UserResponse>().ReverseMap();
+            CreateMap<UserRequest, User>();
+            CreateMap<User, UserResponse>();
 
             CreateMap<RegisterUserRequest, User>();
 
