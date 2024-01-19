@@ -6,9 +6,23 @@
     --light-text-color: #d6d4d4;
     --dark-text-color: #8a8a8a;
     --dark-red-color: #912c2c;
+    --dark-green-color: #1b611a;
 }
 
 /*========================Global========================*/
+
+.custom-btn-submit-form-green {
+    background-color: var(--dark-green-color);
+    color: var(--light-text-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-green-color);
+    transition: .3s;
+}
+
+.custom-btn-submit-form-green:hover {
+    background-color: var(--dark-green-color);
+    color: var(--light-orange-color);
+}
 
 .custom-dark-container {
     background-color: var(--dark-gray-color);
@@ -42,6 +56,14 @@ main {
 
 input {
     background-color: var(--light-gray-color);
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+    color: var(--light-text-color);
+}
+
+.custom-input {
+    background-color: var(--dark-gray-color)!important;
     border-radius: 5px;
     border: none;
     transition: .3s;

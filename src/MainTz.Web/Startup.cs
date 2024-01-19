@@ -1,61 +1,29 @@
-﻿using MainTz.Application.Models.SittingsModels;
-using MainTz.Web.ViewModels.UserViewModels;
-using MainTz.Infrastructure.Repositories;
-using MainTz.Application.Repositories;
-using MainTz.Infrastructure.Services;
-using Microsoft.EntityFrameworkCore;
-using MainTz.Application.Services;
+﻿using Microsoft.EntityFrameworkCore;
 using MainTz.Web.Configurations;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using MainTz.Web.Middleware;
-using MainTz.Web.ViewModels;
-using MainTz.Web.Validators;
 using MainTz.Web.Mappings;
+using System.Reflection;
 using FluentValidation;
-using Minio;
 
 namespace MainTz.Web
 {
     public class Startup
     {
-        MinioSettings _minioSettings;
-        public Startup(IConfiguration configuration)
-        {
-            _minioSettings = configuration.GetSection(MinioSettings.MinioPosition).Get<MinioSettings>();
-		}
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAppOptionsConfiguration();
             services.AddDbContextFactory<MainContext>();
             services.AddAppAuth();
-
-            services.AddMinio(configureClient => configureClient
-                .WithEndpoint(_minioSettings.StorageEndPoint)
-                .WithCredentials(_minioSettings.ROOT_USER, _minioSettings.ROOT_PASSWORD)
-                .WithSSL(false)
-                .Build());
+            services.AddAppMinioConfiguration();
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             services.AddDistributedMemoryCache();
-            services.AddSession();
-            services.AddScoped<INotificationRepository, NotificationRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IRoleRepository, RoleRepository>();
-            services.AddScoped<ICarRepository, CarRepository>();
-			services.AddTransient<ITokenService, TokenService>();
-            services.AddScoped<INotificationService, NotificationService>();
-            services.AddScoped<IFavoriteCarService, FavoriteCarService>();
-            services.AddScoped<IMinioService, MinioService>();
-			services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IMailService, MailService>();
-            services.AddScoped<ICarService, CarService>();
-            services.AddScoped<IValidator<RegisterFormRequest>, RegisterFormValidator>();
-            services.AddScoped<IValidator<RestoreEmailRequest>, RestoreEmailValidator>();
-            services.AddScoped<IValidator<UpdateLoginUserRequest>, UpdateLoginUserValidator>();
-            services.AddScoped<IValidator<UpdatePasswordUserRequest>, UpdatePasswordUserValidator>();
-            services.AddScoped<IValidator<LoginFormRequest>, LoginFormValidator>();
+            services.AddAppServices();
+            services.AddAppRepositories();
+            services.AddAppAutoMapper();
             
-            services.AddDomainAppAutoMapperConfiguration();
 			services.AddHttpContextAccessor();
             services.AddControllersWithViews();
         }
@@ -205,70 +173,69 @@ namespace MainTz.Web
                                 }
                             },
                         };
-
                         context.Users.AddRange(users);
                         context.SaveChanges();
                     }
-
                     if (!context.Cars.Any())
                     {
-                        var cars = new List<CarEntity>();
+                        //var cars = new List<CarEntity>();
 
-                        for(int i = 0; i < 15; i++)
-                        {
-                            var car = new CarEntity
-                            {
-                                Name = $"TestName{i}",
-                                Color = "red",
-                                Price = i * 100,
-                                IsFavorite = false,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Avatr-11-image-1.jpg"
-                                    }
-                                },
-                                IsVisible = true,
-                                Description = $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
-                                $"Decscriptin{i}Decscriptin{i}Decscriptin{i}",
-                                Model = context.Models.FirstOrDefault()
+                        //for(int i = 0; i < 15; i++)
+                        //{
+                        //    var car = new CarEntity
+                        //    {
+                        //        Name = $"TestName{i}",
+                        //        Color = "red",
+                        //        Price = i * 100,
+                        //        IsFavorite = false,
+                        //        Images = new List<ImageEntity>
+                        //        {
+                        //            new ImageEntity
+                        //            {
+                        //                Name = "pic1",
+                        //                Path = "cars-image-bucket/Avatr-11-image-1.jpg"
+                        //            }
+                        //        },
+                        //        IsVisible = true,
+                        //        Description = $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}Decscriptin{i}" +
+                        //        $"Decscriptin{i}Decscriptin{i}Decscriptin{i}",
+                        //        Model = context.Models.FirstOrDefault()
 
-                            };
-                            cars.Add(car);
-                        };
-                        #region imageDataAppend
-                        cars[0].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/Avatr-11-image-1.jpg",
-                            }
-                        };
-                        cars[1].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/BMW-X1-image-1.jpg",
-                            }
-                        };
-                        cars[2].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/BMW-X3-image-1.jpg",
-                            }
-                        };
-                        cars[3].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/Changan-Alsvin-image-1.jpg",
-                            }
-                        };
-                        #endregion
-                        context.Cars.AddRange(cars);
-                        context.SaveChanges();
-                        var adminUser = context.Users.FirstOrDefault(user => user.Role.RoleName == "Admin");
-                        var favorCar = context.Cars.FirstOrDefault();
-                        adminUser.Cars.Add(favorCar);
+                        //    };
+                        //    cars.Add(car);
+                        //};
+                        //#region imageDataAppend
+                        //cars[0].Images = new List<ImageEntity> { new ImageEntity {
+                        //    Name = "pic1",
+                        //    Path = "cars-image-bucket/Avatr-11-image-1.jpg",
+                        //    }
+                        //};
+                        //cars[1].Images = new List<ImageEntity> { new ImageEntity {
+                        //    Name = "pic1",
+                        //    Path = "cars-image-bucket/BMW-X1-image-1.jpg",
+                        //    }
+                        //};
+                        //cars[2].Images = new List<ImageEntity> { new ImageEntity {
+                        //    Name = "pic1",
+                        //    Path = "cars-image-bucket/BMW-X3-image-1.jpg",
+                        //    }
+                        //};
+                        //cars[3].Images = new List<ImageEntity> { new ImageEntity {
+                        //    Name = "pic1",
+                        //    Path = "cars-image-bucket/Changan-Alsvin-image-1.jpg",
+                        //    }
+                        //};
+                        //#endregion
+
+                        //context.Cars.AddRange(cars);
+                        //context.SaveChanges();
+                        //var adminUser = context.Users.FirstOrDefault(user => user.Role.RoleName == "Admin");
+                        //var favorCar = context.Cars.FirstOrDefault();
+                        //adminUser.Cars.Add(favorCar);
                         context.SaveChanges();
                     }
                 }
@@ -280,7 +247,6 @@ namespace MainTz.Web
             app.UseMiddleware<JwtHeaderMiddleware>();
             app.UseMiddleware<JwtRefreshMiddleware>();
             app.UseMiddleware<LoggingMiddleware>();
-            app.UseSession();
             app.UseAppAuth();
 
 			app.UseEndpoints(endpoints =>

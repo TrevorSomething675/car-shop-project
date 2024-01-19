@@ -3,7 +3,7 @@ using FluentValidation;
 
 namespace MainTz.Web.Validators
 {
-	public class LoginFormValidator : AbstractValidator<LoginFormRequest>
+	public class LoginFormValidator : AbstractValidator<LoginUserRequest>
 	{
 		public LoginFormValidator() 
 		{
