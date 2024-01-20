@@ -1,9 +1,9 @@
-﻿using MainTz.Application.Models.CarModels;
-using MainTz.Application.Repositories;
+﻿using MainTz.Application.Repositories;
 using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Http;
 using AutoMapper;
+using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Services
 {

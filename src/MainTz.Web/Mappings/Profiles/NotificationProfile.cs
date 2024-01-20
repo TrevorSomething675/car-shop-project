@@ -1,6 +1,6 @@
-﻿using MainTz.Application.Models.UserEntities;
-using MainTz.Web.ViewModels.UserViewModels;
-using AutoMapper;
+﻿using AutoMapper;
+using MainTz.Web.ViewModels.NotificationViewModels;
+using MainTz.Application.Models;
 
 namespace MainTz.Web.Mappings.Profiles
 {

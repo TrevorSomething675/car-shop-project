@@ -1,6 +1,4 @@
-﻿using MainTz.Application.Models.UserEntities;
-
-namespace MainTz.Application.Models.CarModels
+﻿namespace MainTz.Application.Models
 {
     public class Car
     {

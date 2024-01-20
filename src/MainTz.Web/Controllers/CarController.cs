@@ -1,9 +1,8 @@
 ﻿using MainTz.Web.ViewModels.CarViewModels;
 using MainTz.Application.Services;
+using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using MainTz.Application.Models.CarModels;
-using MainTz.Web.ViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -60,6 +59,12 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetCreateCar()
         {
+            //var carModel = 
+            //var model = new CreateCarResponse()
+            //{
+
+            //}
+
             return View();
         }
         public async Task<IResult> CreateCarCommand(CarRequest carRequest)

@@ -1,12 +1,12 @@
-﻿using MainTz.Application.Models.UserEntities;
-using MainTz.Application.Repositories;
+﻿using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using MainTa.Database.Context;
 using AutoMapper;
+using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Repositories
 {
-	public class RoleRepository : IRoleRepository
+    public class RoleRepository : IRoleRepository
 	{
 		private readonly IDbContextFactory<MainContext> _dbContextFactory;
 		private readonly IMapper _mapper;

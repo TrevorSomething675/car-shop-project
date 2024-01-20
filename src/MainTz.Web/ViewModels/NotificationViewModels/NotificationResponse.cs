@@ -1,6 +1,8 @@
-﻿namespace MainTz.Application.Models.UserEntities
+﻿using MainTz.Web.ViewModels.UserViewModels;
+
+namespace MainTz.Web.ViewModels.NotificationViewModels
 {
-    public class Notification
+    public class NotificationResponse
     {
         public int Id { get; set; }
         public bool IsRead { get; set; }
@@ -9,6 +11,6 @@
         public string Description { get; set; }
 
         public int UserId { get; set; }
-        public User User { get; set; }
+        public UserResponse User { get; set; }
     }
 }

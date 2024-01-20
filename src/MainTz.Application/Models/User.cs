@@ -1,6 +1,4 @@
-﻿using MainTz.Application.Models.CarModels;
-
-namespace MainTz.Application.Models.UserEntities
+﻿namespace MainTz.Application.Models
 {
     public class User
     {
@@ -10,9 +8,9 @@ namespace MainTz.Application.Models.UserEntities
         public string Password { get; set; }
 
         public int RoleId { get; set; }
-		public Role Role { get; set; }
+        public Role Role { get; set; }
 
-		public ICollection<Car> Cars { get; set; } = new List<Car>();
+        public ICollection<Car> Cars { get; set; } = new List<Car>();
         public ICollection<Notification> Notifications { get; set; }
     }
 }

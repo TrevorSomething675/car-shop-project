@@ -1,4 +1,4 @@
-﻿namespace MainTz.Application.Models.UserEntities
+﻿namespace MainTz.Application.Models
 {
     public class Role
     {

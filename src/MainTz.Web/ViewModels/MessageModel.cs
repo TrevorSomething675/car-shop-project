@@ -1,6 +1,6 @@
 ﻿namespace MainTz.Web.ViewModels
 {
-    public class MessageViewModel
+    public class MessageModel
     {
         public string Message { get; set; }
     }

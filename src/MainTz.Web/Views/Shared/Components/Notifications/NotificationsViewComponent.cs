@@ -1,7 +1,7 @@
-﻿using MainTz.Web.ViewModels.UserViewModels;
+﻿using MainTz.Web.ViewModels.NotificationViewModels;
+using MainTz.Web.ViewModels.UserViewModels;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
-using MainTz.Web.ViewModels;
 using AutoMapper;
 
 namespace MainTz.Web.Views.Shared.Components.Notifications

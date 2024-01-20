@@ -1,5 +1,5 @@
-﻿using MainTz.Web.ViewModels.UserViewModels;
-using FluentValidation;
+﻿using FluentValidation;
+using MainTz.Web.ViewModels.AccountViewModels;
 
 namespace MainTz.Web.Validators
 {

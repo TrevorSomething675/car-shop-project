@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using FluentValidation;
 using AutoMapper;
+using MainTz.Web.ViewModels.NotificationViewModels;
+using MainTz.Web.ViewModels.AccountViewModels;
 
 namespace MainTz.Web.Controllers
 {

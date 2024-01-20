@@ -1,7 +1,6 @@
-﻿using MainTz.Application.Models.UserEntities;
-using MainTz.Web.ViewModels.UserViewModels;
-using MainTz.Web.ViewModels;
+﻿using MainTz.Web.ViewModels.UserViewModels;
 using AutoMapper;
+using MainTz.Application.Models;
 
 namespace MainTz.Web.Mappings.Profiles
 {

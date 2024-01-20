@@ -1,4 +1,4 @@
-﻿namespace MainTz.Web.ViewModels.UserViewModels
+﻿namespace MainTz.Web.ViewModels.AccountViewModels
 {
     public class UpdateLoginUserRequest
     {

@@ -1,9 +1,9 @@
-﻿using MainTz.Application.Models.CarModels;
-using MainTz.Application.Repositories;
+﻿using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
+using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Repositories
 {

@@ -1,4 +1,6 @@
-﻿namespace MainTz.Web.ViewModels.CarViewModels
+﻿using MainTz.Web.ViewModels.ImageViewModels;
+
+namespace MainTz.Web.ViewModels.CarViewModels
 {
     public class CarResponse
     {

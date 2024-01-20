@@ -1,10 +1,10 @@
-﻿using MainTz.Application.Models.UserEntities;
-using MainTz.Application.Repositories;
+﻿using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
+using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Repositories
 {

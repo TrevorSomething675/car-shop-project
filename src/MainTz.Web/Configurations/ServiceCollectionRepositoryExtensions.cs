@@ -8,6 +8,7 @@ namespace MainTz.Web.Configurations
         public static IServiceCollection AddAppRepositories(this IServiceCollection services)
         {
             services.AddScoped<INotificationRepository, NotificationRepository>();
+            services.AddScoped<IBrandRepository, BrandRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<ICarRepository, CarRepository>();

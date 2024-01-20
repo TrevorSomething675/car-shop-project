@@ -1,6 +1,6 @@
-﻿namespace MainTz.Web.ViewModels.UserViewModels
+﻿namespace MainTz.Application.Models
 {
-    public class NotificationRequest
+    public class Notification
     {
         public int Id { get; set; }
         public bool IsRead { get; set; }
@@ -9,6 +9,6 @@
         public string Description { get; set; }
 
         public int UserId { get; set; }
-        public UserResponse User { get; set; }
+        public User User { get; set; }
     }
 }

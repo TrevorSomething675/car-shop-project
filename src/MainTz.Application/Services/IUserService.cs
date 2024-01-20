@@ -1,4 +1,4 @@
-﻿using MainTz.Application.Models.UserEntities;
+﻿using MainTz.Application.Models;
 
 namespace MainTz.Application.Services
 {

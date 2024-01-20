@@ -178,6 +178,26 @@ namespace MainTz.Web
                     }
                     if (!context.Cars.Any())
                     {
+                        var car = new CarEntity
+                        {
+                            Name = $"TestName1",
+                            Color = "red",
+                            Price = 100,
+                            Images = new List<ImageEntity>
+                                {
+                                    new ImageEntity
+                                    {
+                                        Name = "pic1",
+                                        Path = "cars-image-bucket/Avatr-11-image-1.jpg"
+                                    }
+                                },
+                            IsVisible = true,
+                            Description = $"Decscriptin1",
+                            Model = context.Models.FirstOrDefault()
+
+                        };
+                        context.Cars.Add(car);
+
                         //var cars = new List<CarEntity>();
 
                         //for(int i = 0; i < 15; i++)

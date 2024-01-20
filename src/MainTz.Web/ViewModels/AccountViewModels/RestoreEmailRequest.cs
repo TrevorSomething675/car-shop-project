@@ -1,4 +1,4 @@
-﻿namespace MainTz.Web.ViewModels
+﻿namespace MainTz.Web.ViewModels.AccountViewModels
 {
     public class RestoreEmailRequest
     {

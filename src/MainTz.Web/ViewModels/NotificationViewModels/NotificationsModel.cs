@@ -1,6 +1,4 @@
-﻿using MainTz.Web.ViewModels.UserViewModels;
-
-namespace MainTz.Web.ViewModels
+﻿namespace MainTz.Web.ViewModels.NotificationViewModels
 {
     public class NotificationsModel
     {

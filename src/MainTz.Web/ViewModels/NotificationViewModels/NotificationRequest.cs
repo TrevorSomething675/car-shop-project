@@ -1,6 +1,8 @@
-﻿namespace MainTz.Web.ViewModels.UserViewModels
+﻿using MainTz.Web.ViewModels.UserViewModels;
+
+namespace MainTz.Web.ViewModels.NotificationViewModels
 {
-    public class NotificationResponse
+    public class NotificationRequest
     {
         public int Id { get; set; }
         public bool IsRead { get; set; }

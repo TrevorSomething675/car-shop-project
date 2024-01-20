@@ -1,8 +1,8 @@
-﻿using MainTz.Application.Models.UserEntities;
-using MainTz.Application.Repositories;
+﻿using MainTz.Application.Repositories;
 using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
 using AutoMapper;
+using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Services
 {
