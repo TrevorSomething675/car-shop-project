@@ -18,6 +18,6 @@ namespace MainTz.Web.ViewModels.CarViewModels
         public IEnumerable<int> UsersId { get; set; }
 
         public int ModelId { get; set; }
-        public ModelRequest ModelRequest { get; set; }
+        public ModelRequest Model { get; set; }
     }
 }

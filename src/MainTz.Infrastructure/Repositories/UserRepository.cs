@@ -61,17 +61,14 @@ namespace MainTz.Infrastructure.Repositories
 
         public async Task UpdateAsync(User user)
         {
-            if (user == null)
-                _logger.LogError("[UserRepository] [UpdateAsync] user = null");
             await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var updatedUserEntity = _mapper.Map<UserEntity>(user);
-                if (updatedUserEntity == null)
-                    _logger.LogError("[UserRepository] [UpdateAsync] updatedUserEntity = null");
 
                 var userEntity = await context.Users
                     .Include(u => u.Cars)
                     .FirstAsync(u => u.Id == updatedUserEntity.Id);
+
                 userEntity.Name  = updatedUserEntity.Name;
                 userEntity.Password = updatedUserEntity.Password;
 
@@ -81,8 +78,6 @@ namespace MainTz.Infrastructure.Repositories
                         userEntity.Cars.Add(updatedUserEntity.Cars.FirstOrDefault(car => car.Name == carName)!);
                 }
 
-                _mapper.Map(updatedUserEntity, userEntity);
-                context.Cars.AttachRange(userEntity.Cars);
                 await context.SaveChangesAsync();
             }
         }
@@ -104,5 +99,19 @@ namespace MainTz.Infrastructure.Repositories
                 await context.SaveChangesAsync();
             }
         }
-	}
+
+        public async Task RemoveCarFromUser(User userModel, Car carModel)
+        {
+            await using(var context = _dbContextFactory.CreateDbContext())
+            {
+                var userEntity = context.Users
+                    .Include(u => u.Cars)
+                    .FirstOrDefault(user => user.Name == userModel.Name);
+                var carEntity = context.Cars.FirstOrDefault(car => car.Name == carModel.Name);
+
+                userEntity.Cars.Remove(carEntity);
+                await context.SaveChangesAsync();
+            }
+        }
+    }
 }

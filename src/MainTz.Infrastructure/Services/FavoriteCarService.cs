@@ -20,15 +20,25 @@ namespace MainTz.Infrastructure.Services
             _userRepository = userRepository;
             _contextAccessor = contextAccessor;
         }
-        public async Task<bool> AddCarToFavoriteByCarIdAsync(int carId)
+        public async Task<bool> ChangeFavoriteCarAsync(int carId)
         {
             try
             {
                 var contextUser = _contextAccessor?.HttpContext?.User.Identity;
                 var user = await _userRepository.GetUserByNameAsync(contextUser.Name);
-                var car = await _carRepository.GetCarByIdAsync(carId);
-                user.Cars.Add(car);
-                await _userRepository.UpdateAsync(user);
+                var carFromRepository = await _carRepository.GetCarByIdAsync(carId);
+                if (user.Cars.Select(car => car.Name).Contains(carFromRepository.Name))
+                {
+                    //var carToRemove = user.Cars.Where(car => car.Name == carFromRepository.Name).FirstOrDefault();
+                    //user.Cars.Remove(carToRemove);
+                    await _userRepository.RemoveCarFromUser(user, carFromRepository);
+                }
+                else
+                {
+
+                    user.Cars.Add(carFromRepository);
+                    await _userRepository.UpdateAsync(user);
+                }
 
                 return true;
             }

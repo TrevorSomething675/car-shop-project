@@ -10,7 +10,7 @@ namespace MainTz.Application.Services
         public Task<List<Car>> GetFavoriteCarsAsync(int pageNumber = 1);
         public Task<List<Car>> GetFavoriteCarsWithPaggingAsync(int pageNumber = 1);
 
-        public Task<bool> CreateCarAsync(Car car);
+        public Task<Car> CreateCarAsync(Car car);
         public Task<bool> DeleteCarAsync(Car car);
         public Task<bool> UpdateCarAsync(Car car);
     }

@@ -1,17 +1,23 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MainTz.Application.Models.OptionsModels;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using MainTz.Application.Services;
+using MainTz.Application.Models;
 using Minio.DataModel.Args;
 using Minio;
+using System.Data;
 
 namespace MainTz.Infrastructure.Services
 {
     public class MinioService : IMinioService
     {
         private readonly IMinioClientFactory _minioClientFactory;
+        private readonly MinioOptions _minioOptions;
         private readonly ILogger<MinioService> _logger;
-        public MinioService(IMinioClientFactory minioClientFactory, ILogger<MinioService> logger)
+        public MinioService(IMinioClientFactory minioClientFactory, ILogger<MinioService> logger, IOptions<MinioOptions> minioOptions)
         {
             _minioClientFactory = minioClientFactory;
+            _minioOptions = minioOptions.Value;
             _logger = logger;
         }
         //public async Task<bool> AddObjectToBucketAsync(string path, FileStream file)
@@ -32,6 +38,26 @@ namespace MainTz.Infrastructure.Services
         //        return false;
         //    }
         //}
+        public async Task<string> CreateObjectAsync(Image image)
+        {
+            using(var client = _minioClientFactory.CreateClient())
+            {
+                byte[] bytes = Convert.FromBase64String(NormalizedBased64String(image.FileBase64String));
+
+                var args = new PutObjectArgs()
+                    .WithBucket(_minioOptions.DefaultImageBucketName)
+                    .WithObject(image.Name)
+                    .WithObjectSize(bytes.LongLength)
+                    .WithStreamData(new MemoryStream(bytes))
+                    .WithContentType("application/octet-stream");
+
+                await client.PutObjectAsync(args).ConfigureAwait(false);
+
+                var resultPath = $"{_minioOptions.DefaultImageBucketName}/{image.Name}";
+
+                return resultPath;
+            }
+        }
         public async Task<string> GetObjectAsync(string path)
         {
             string bucketName = Path.GetDirectoryName(path);
@@ -127,6 +153,13 @@ namespace MainTz.Infrastructure.Services
         {
             fileName = Path.GetFileName(filePath);
             bucketName = Path.GetDirectoryName(filePath);
+        }
+        private string NormalizedBased64String(string base64String)
+        {
+            var deleteString = "data:image/jpeg;base64,";
+            var result = base64String.Replace(deleteString, String.Empty);
+
+            return result;
         }
     }
 }

@@ -25,10 +25,22 @@ namespace MainTz.Infrastructure.Repositories
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                var brandsEntity = await context.Brands.
-                    Include(brand => brand.Models).
-                    ToListAsync();
-                var brands = _mapper.Map<List<Brand>>(brandsEntity);
+                var brandEntities = await context.Brands
+                    .Include(brand => brand.Models)
+                    .ToListAsync();
+                var brands = _mapper.Map<List<Brand>>(brandEntities);
+                return brands;
+            }
+        }
+        public async Task<List<Brand>> GetBrandsWithModelsByNameAsync(string brandName)
+        {
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var brandEntities = await context.Brands
+                    .Include(brand => brand.Models)
+                    .Where(brand => brand.Name == brandName)
+                    .ToListAsync();
+                var brands = _mapper.Map<List<Brand>>(brandEntities);
                 return brands;
             }
         }

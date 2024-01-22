@@ -32,12 +32,27 @@ namespace MainTz.Infrastructure.Repositories
                 return car;
             }
         }
-        public async Task<List<Car>> GetCarsAsync()
+		public async Task<Car> GetCarByNameAsync(string name)
+        {
+			await using (var context = _dbContextFactory.CreateDbContext())
+			{
+				var carEntity = await context.Cars
+					.Include(car => car.Images)
+					.Include(car => car.Model)
+					.ThenInclude(model => model.Brand)
+					.FirstOrDefaultAsync(car => car.Name == name);
+				var car = _mapper.Map<Car>(carEntity);
+				return car;
+			}
+		}
+		public async Task<List<Car>> GetCarsAsync()
         {
             await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntities = await context.Cars
-                    .Include(car => car.Images).ToListAsync();
+                    .Include(car => car.Images)
+                    .Where(car => car.IsVisible)
+                    .ToListAsync();
                 var cars = _mapper.Map<List<Car>>(carEntities);
                 return cars;
             }
@@ -51,13 +66,17 @@ namespace MainTz.Infrastructure.Repositories
                 await context.SaveChangesAsync();
             }
         }
-        public async Task CreateAsync(Car car)
+        public async Task<Car> CreateAsync(Car car)
         {
             await using (var context = _dbContextFactory.CreateDbContext())
             {
                 var carEntity = _mapper.Map<CarEntity>(car);
                 context.Cars.Add(carEntity);
                 await context.SaveChangesAsync();
+
+                var addedCarEntity = context.Cars.FirstOrDefault(car => car.Name == carEntity.Name);
+                var addedCar = _mapper.Map<Car>(addedCarEntity);
+                return addedCar;
             }
         }
         public async Task DeleteAsync(Car car)

@@ -1,7 +1,7 @@
 ﻿let ChangeCarInFavorite = (id) => {
     $(document).ready(function () {
         $.ajax({
-            url: '/FavoriteCar/AddFavoriteCar',
+            url: '/FavoriteCar/ChangeFavoriteCar',
             type: 'POST',
             dataType: 'html',
             contentType: "application/json; charset=utf-8",

@@ -1,6 +1,6 @@
 ﻿using MainTz.Web.ViewModels.CarViewModels;
-using AutoMapper;
 using MainTz.Application.Models;
+using AutoMapper;
 
 namespace MainTz.Web.Mappings.Profiles
 {

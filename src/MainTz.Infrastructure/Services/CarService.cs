@@ -2,8 +2,8 @@
 using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Http;
-using AutoMapper;
 using MainTz.Application.Models;
+using AutoMapper;
 
 namespace MainTz.Infrastructure.Services
 {
@@ -93,17 +93,26 @@ namespace MainTz.Infrastructure.Services
             }
             return carsDomainEntity;
         }
-        public async Task<bool> CreateCarAsync(Car car)
+        public async Task<Car> CreateCarAsync(Car car)
         {
             try
             {
-                await _carRepository.CreateAsync(car);
-                return true;
+                var checkDbCar = await _carRepository.GetCarByNameAsync(car.Name);
+                if (checkDbCar != null)
+                    throw new Exception("Машина уже существует в базе данных");
+
+				foreach (var image in car.Images)
+                {
+                    var path = await _minioService.CreateObjectAsync(image);
+                    image.Path = path;
+                }
+                var addedCar = await _carRepository.CreateAsync(car);
+                return addedCar;
             }
             catch (Exception ex)
             {
                 _logger.LogInformation(ex.Message);
-                return false;
+                throw new Exception(ex.Message);
             }
         }
         public async Task<bool> DeleteCarAsync(Car car)

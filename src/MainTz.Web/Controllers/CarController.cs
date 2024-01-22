@@ -1,7 +1,10 @@
-﻿using MainTz.Web.ViewModels.CarViewModels;
+﻿using MainTz.Web.ViewModels.CarModelViewModel;
+using MainTz.Web.ViewModels.BrandViewModels;
+using MainTz.Web.ViewModels.CarViewModels;
 using MainTz.Application.Services;
 using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
+using MainTz.Web.ViewModels;
 using AutoMapper;
 
 namespace MainTz.Web.Controllers
@@ -9,11 +12,16 @@ namespace MainTz.Web.Controllers
     public class CarController : Controller
     {
         private readonly IHttpContextAccessor _contextAccessor;
+        private readonly IBrandService _brandService;
+        private readonly IModelService _modelService;
         private readonly ICarService _carService;
         private readonly IMapper _mapper;
-        public CarController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor)
+        public CarController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor,
+            IBrandService brandService, IModelService modelService)
         {
             _contextAccessor = contextAccessor;
+            _brandService = brandService;
+            _modelService = modelService;
             _carService = carService;
             _mapper = mapper;
         }
@@ -59,22 +67,31 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetCreateCar()
         {
-            //var carModel = 
-            //var model = new CreateCarResponse()
-            //{
+            var brandsWithModels = await _brandService.GetBrandsWithModelsAsync();
+            var brandsWithModelsResponse = _mapper.Map<List<BrandResponse>>(brandsWithModels);
+            var models = await _modelService.GetModels();
+            var modelsReponse = _mapper.Map<List<ModelResponse>>(models);
 
-            //}
+            var model = new CreateCarResponse()
+            {
+                BrandsResponse = brandsWithModelsResponse,
+                ModelsResponse = modelsReponse
+            };
 
-            return View();
+            return View(model);
         }
         public async Task<IResult> CreateCarCommand(CarRequest carRequest)
         {
-            var car = _mapper.Map<Car>(carRequest);
-            //var result = await _carService.CreateCarAsync(car);
-            if (true)
-                return Results.Ok();
-            else
-                return Results.BadRequest();
+            try
+            {
+                var car = _mapper.Map<Car>(carRequest);
+                var addedCar = await _carService.CreateCarAsync(car);
+                return Results.Ok(addedCar.Id);
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(new ErrorViewModel { ErrorMessage = ex.Message});
+            }
         }
     }
 }

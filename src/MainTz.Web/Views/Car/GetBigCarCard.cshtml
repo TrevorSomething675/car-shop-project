@@ -56,6 +56,24 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-end col">
+                    @if (User.IsInRole("Manager") || User.IsInRole("Admin"))
+                    {
+                        if (Model.IsVisible)
+                        {
+                            <div class="d-flex align-content-center px-2 custom-btn-orange">
+                                <i class="bi bi-eye"></i>
+                                <p>Карточка активна</p>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="d-flex align-content-center px-2 custom-btn-orange">
+                                <i class="bi bi-eye"></i>
+                                <p>Карточка не активна</p>
+                            </div>
+                        }
+                    }
+
                     <div class="d-flex align-content-center car-card-cart-offer px-2 custom-btn-orange">
                             <i class="bi bi-bag px-1"></i>
                             <p>В корзину</p>

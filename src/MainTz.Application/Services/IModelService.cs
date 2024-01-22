@@ -1,7 +1,9 @@
-﻿namespace MainTz.Application.Services
+﻿using MainTz.Application.Models;
+
+namespace MainTz.Application.Services
 {
     public interface IModelService
     {
-        public Task GetModelWithBrand();
+        public Task<List<Model>> GetModels();
     }
 }
