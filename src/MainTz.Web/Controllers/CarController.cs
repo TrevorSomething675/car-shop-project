@@ -6,6 +6,7 @@ using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
+using System.Diagnostics.Contracts;
 
 namespace MainTz.Web.Controllers
 {
@@ -70,12 +71,12 @@ namespace MainTz.Web.Controllers
             var brandsWithModels = await _brandService.GetBrandsWithModelsAsync();
             var brandsWithModelsResponse = _mapper.Map<List<BrandResponse>>(brandsWithModels);
             var models = await _modelService.GetModels();
-            var modelsReponse = _mapper.Map<List<ModelResponse>>(models);
+            var modelsResponse = _mapper.Map<List<ModelResponse>>(models);
 
             var model = new CreateCarResponse()
             {
                 BrandsResponse = brandsWithModelsResponse,
-                ModelsResponse = modelsReponse
+                ModelsResponse = modelsResponse
             };
 
             return View(model);
@@ -93,5 +94,37 @@ namespace MainTz.Web.Controllers
                 return Results.BadRequest(new ErrorViewModel { ErrorMessage = ex.Message});
             }
         }
-    }
+        public async Task<IActionResult> ChangeCarVisible(int id)
+        {
+            var car = await _carService.ChangeCarVisible(id);
+            var addedCar = await _carService.GetCarByIdAsync(car.Id);
+            var carResponse = _mapper.Map<CarResponse>(addedCar);
+            return RedirectToAction("GetBigCarCard", new {id = carResponse.Id });
+        }
+        public async Task<IActionResult> GetUpdateCar(int id)
+        {
+			var brandsWithModels = await _brandService.GetBrandsWithModelsAsync();
+			var brandsWithModelsResponse = _mapper.Map<List<BrandResponse>>(brandsWithModels);
+			var models = await _modelService.GetModels();
+			var modelsResponse = _mapper.Map<List<ModelResponse>>(models);
+            var car = await _carService.GetCarByIdAsync(id);
+            var carResponse = _mapper.Map<CarResponse>(car);
+
+            var model = new UpdateCarResponse()
+            {
+                Car = carResponse,
+                ModelsResponse = modelsResponse,
+                BrandsResponse = brandsWithModelsResponse
+            };
+			return View(model);
+        }
+		public async Task<IResult> UpdateCarCommand(CarRequest carRequest)
+        {
+            var car = _mapper.Map<Car>(carRequest);
+            var updatedCar = await _carService.UpdateCarAsync(car);
+            var carResponse = _mapper.Map<CarResponse>(updatedCar);
+
+            return Results.Json(carResponse.Id);
+		}
+	}
 }

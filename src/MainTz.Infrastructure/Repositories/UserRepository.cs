@@ -1,10 +1,10 @@
 ﻿using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
-using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -58,7 +58,6 @@ namespace MainTz.Infrastructure.Repositories
                 return users;
             }
         }
-
         public async Task UpdateAsync(User user)
         {
             await using(var context = _dbContextFactory.CreateDbContext())
@@ -99,7 +98,6 @@ namespace MainTz.Infrastructure.Repositories
                 await context.SaveChangesAsync();
             }
         }
-
         public async Task RemoveCarFromUser(User userModel, Car carModel)
         {
             await using(var context = _dbContextFactory.CreateDbContext())

@@ -1,9 +1,9 @@
 ﻿using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
+using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
-using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -57,16 +57,41 @@ namespace MainTz.Infrastructure.Repositories
                 return cars;
             }
         }
-        public async Task UpdateAsync(Car car)
-        {
-            await using(var context = _dbContextFactory.CreateDbContext())
-            {
-                var carEntity = _mapper.Map<CarEntity>(car);
-                context.Cars.Update(carEntity);
-                await context.SaveChangesAsync();
-            }
-        }
-        public async Task<Car> CreateAsync(Car car)
+		public async Task<Car> UpdateAsync(Car car)
+		{
+		    var carEntity = _mapper.Map<CarEntity>(car);
+			await using (var context = _dbContextFactory.CreateDbContext())
+			{
+                var dbCarEntity = context.Cars
+                    .Include(c => c.Users)
+                    .Include(c => c.Images)
+                    .Include(c => c.Model)
+                    .ThenInclude(c => c.Brand)
+                    .FirstOrDefault(c=>c.Id == carEntity.Id);
+
+                dbCarEntity.Name = carEntity.Name;
+                dbCarEntity.Color = carEntity.Color;
+                dbCarEntity.IsVisible = carEntity.IsVisible;
+                dbCarEntity.Description = carEntity.Description;
+                dbCarEntity.Price = carEntity.Price;
+
+                foreach (var image in carEntity.Images)
+                {
+                    if (dbCarEntity.Images.FirstOrDefault(i => i.Id == image.Id) != null)
+                    {
+                        dbCarEntity.Images.FirstOrDefault(i => i.Id == image.Id);
+                    }
+                }
+
+                context.Update(dbCarEntity);
+				await context.SaveChangesAsync();
+
+				var updatedCarEntity = context.Cars.FirstOrDefault(c => c.Id == carEntity.Id);
+				var updatedCar = _mapper.Map<Car>(updatedCarEntity);
+				return updatedCar;
+			}
+		}
+		public async Task<Car> CreateAsync(Car car)
         {
             await using (var context = _dbContextFactory.CreateDbContext())
             {

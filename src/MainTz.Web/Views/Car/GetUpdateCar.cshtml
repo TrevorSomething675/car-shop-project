@@ -1,0 +1,64 @@
+﻿@using MainTz.Web.ViewModels.CarViewModels
+@model UpdateCarResponse
+
+<div class="container py-2">
+	<div class="custom-text-color row custom-dark-container">
+		<div class="col-4">
+			<div class="m-1">
+				<img src="data:image/png;base64, @Model.Car.Images.FirstOrDefault().FileBase64String" class="product-img py-2" id="PreviewImageUpdateFormContainer" />
+			</div>
+		</div>
+
+		<div class="col-8">
+			<form method="post" id="UpdateCarForm" class="form mt-0 w-100">
+				<div class="px-2">
+					<h2 class="text-center">Редактировать машину</h2>
+					<div class="d-flex py-1">
+						<input type="text" name="CarRequest.Id" value="@Model.Car.Id" hidden="hidden" />
+						<lable class="px-1">Название: </lable> <input type="text" name="CarRequest.Name" class="w-100 py-1" value="@Model.Car.Name"/><br />
+					</div>
+					<div class="d-flex py-1">
+						<lable class="px-1">Цвет: </lable> <input type="text" name="CarRequest.Color" class="w-100 py-1" value="@Model.Car.Color"/><br />
+					</div>
+					<div class="d-flex py-1">
+						<lable class="px-1">Цена: </lable> <input type="text" name="CarRequest.Price" class="w-100 py-1" value="@Model.Car.Price"/><br />
+					</div>
+					<div class="d-flex py-1">
+						<lable class="px-1">Описание: </lable> <input type="text" name="CarRequest.Description" class="w-100 py-1" value="@Model.Car.Description"/><br />
+					</div>
+					<div class="d-flex py-1">
+						<label class="px-1">Бренд:</label>
+						<select name="CarRequest.Model.Brand.Name">
+							@foreach (var brand in Model.BrandsResponse)
+							{
+								if (Model.Car.Model.Brand.Name == brand.Name)
+								{
+									<option value="@brand.Name" selected="selected">@brand.Name</option>
+								}
+								else
+								{
+									<option value="@brand.Name">@brand.Name</option> 
+								}
+							}
+						</select>
+					</div>
+					<div class="d-flex py-1">
+						<label class="px-1">Модель:</label>
+						<select name="CarRequest.Model.Name">
+							@foreach (var modelResponse in Model.ModelsResponse)
+							{
+								<option value="@modelResponse.Name">@modelResponse.Name</option>
+							}
+						</select>
+					</div>
+					<div>
+						<input type="file" name="CarRequest.Image" class="py-1 custom-input" id="SelectImageForUpdateCar" /><br />
+					</div>
+					<div class="py-1 d-flex">
+						<button class="text-center custom-btn-submit-form-green" type="submit">Обновить машину</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

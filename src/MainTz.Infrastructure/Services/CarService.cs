@@ -128,17 +128,40 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> UpdateCarAsync(Car car)
+        public async Task<Car> UpdateCarAsync(Car car)
         {
             try
             {
-                await _carRepository.UpdateAsync(car);
-                return true;
+				foreach (var image in car.Images)
+				{
+					var path = await _minioService.CreateObjectAsync(image);
+					image.Path = path;
+				}
+                var updatedCar = await _carRepository.UpdateAsync(car);
+				return updatedCar;
             }
             catch (Exception ex)
             {
                 _logger.LogInformation(ex.Message);
-                return false;
+                throw new Exception("Не удалось обновить машину");
+            }
+        }
+        public async Task<Car> ChangeCarVisible(int id)
+        {
+            try
+            {
+                var car = await _carRepository.GetCarByIdAsync(id);
+                if(car.IsVisible)
+                    car.IsVisible = false;
+                else
+                    car.IsVisible = true;
+
+                var addedCar = await _carRepository.UpdateAsync(car);
+                return addedCar;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

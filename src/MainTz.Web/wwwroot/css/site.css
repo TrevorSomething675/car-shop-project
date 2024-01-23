@@ -7,9 +7,49 @@
     --dark-text-color: #8a8a8a;
     --dark-red-color: #912c2c;
     --dark-green-color: #1b611a;
+    --light-blue-color: #524aa8;
 }
 
 /*========================Global========================*/
+
+.custom-btn-orange-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--light-text-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-orange-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--dark-orange-color);
+}
+
+.custom-btn-blue-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--light-blue-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-blue-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--dark-orange-color);
+}
+
+.custom-btn-green-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--dark-green-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-green-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--light-text-color);
+}
 
 .custom-btn-submit-form-green {
     background-color: var(--dark-green-color);
