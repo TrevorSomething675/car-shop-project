@@ -75,14 +75,6 @@ namespace MainTz.Infrastructure.Repositories
                 dbCarEntity.Description = carEntity.Description;
                 dbCarEntity.Price = carEntity.Price;
 
-                foreach (var image in carEntity.Images)
-                {
-                    if (dbCarEntity.Images.FirstOrDefault(i => i.Id == image.Id) != null)
-                    {
-                        dbCarEntity.Images.FirstOrDefault(i => i.Id == image.Id);
-                    }
-                }
-
                 context.Update(dbCarEntity);
 				await context.SaveChangesAsync();
 
@@ -95,7 +87,15 @@ namespace MainTz.Infrastructure.Repositories
         {
             await using (var context = _dbContextFactory.CreateDbContext())
             {
+                var modelEntity = context.Models.FirstOrDefault(m => m.Name == car.Model.Name);
+                var brandEntity = context.Brands.FirstOrDefault(b => b.Name == car.Model.Brand.Name);
                 var carEntity = _mapper.Map<CarEntity>(car);
+
+                if(modelEntity != null)
+                    carEntity.Model = modelEntity;
+                if(brandEntity != null)
+                    carEntity.Model.Brand = brandEntity;
+
                 context.Cars.Add(carEntity);
                 await context.SaveChangesAsync();
 
@@ -113,5 +113,5 @@ namespace MainTz.Infrastructure.Repositories
                 await context.SaveChangesAsync();
             }
         }
-    }
+	}
 }
