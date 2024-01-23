@@ -5,6 +5,7 @@ using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
+using System.Diagnostics.Contracts;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -63,23 +64,44 @@ namespace MainTz.Infrastructure.Repositories
             await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var updatedUserEntity = _mapper.Map<UserEntity>(user);
-
                 var userEntity = await context.Users
                     .Include(u => u.Cars)
-                    .FirstAsync(u => u.Id == updatedUserEntity.Id);
+                    .FirstOrDefaultAsync(u => u.Id == updatedUserEntity.Id);
 
-                userEntity.Name  = updatedUserEntity.Name;
+                userEntity.Name = updatedUserEntity.Name;
                 userEntity.Password = updatedUserEntity.Password;
 
-                foreach (var carName in updatedUserEntity.Cars.Select(c => c.Name))
+                var jija = context.ChangeTracker.Entries();
+                if (user.Cars != null)
                 {
-                    if (!userEntity.Cars.Select(c => c.Name).ToList().Contains(carName))
-                        userEntity.Cars.Add(updatedUserEntity.Cars.FirstOrDefault(car => car.Name == carName)!);
-                }
+                    if (userEntity.Cars.Count() < updatedUserEntity.Cars.Count())
+                    {
+                        foreach (var car in userEntity.Cars)
+                        {
+                            var carToRemove = updatedUserEntity.Cars.FirstOrDefault(c => c.Id == car.Id);
+                            updatedUserEntity.Cars.Remove(carToRemove);
+                        }
+                        userEntity.Cars.AddRange(updatedUserEntity.Cars);
+                    }
+                    else if (userEntity.Cars.Count() > updatedUserEntity.Cars.Count())
+                    {
+                        var userEntitiesId = userEntity.Cars.Select(c => c.Id).ToList();
 
+                        foreach (var carId in userEntitiesId)
+                        {
+                            var carToRemove = updatedUserEntity.Cars.FirstOrDefault(c => c.Id == carId);
+                            if(carToRemove == null)
+                            {
+                                var carEntityToRemove = userEntity.Cars.First(c => c.Id == carId);
+                                userEntity.Cars.Remove(carEntityToRemove);
+                            }
+                        }
+                    }
+                }
                 await context.SaveChangesAsync();
             }
         }
+
         public async Task CreateAsync(User user)
         {
             await using(var context = _dbContextFactory.CreateDbContext())

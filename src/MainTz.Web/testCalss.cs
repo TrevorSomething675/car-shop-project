@@ -1,4 +1,4 @@
-﻿C#
+﻿/*
 using System;
 using AutoMapper;
 using KKDTS.Core.Extensions;
@@ -84,3 +84,4 @@ namespace KKDTS.Infrastructure.Repositories
 
 			return _mapper.Map<List<ControlTechnicalPoint>>(ctps);
 		}
+		*/

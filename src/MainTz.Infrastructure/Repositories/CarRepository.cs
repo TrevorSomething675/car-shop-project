@@ -57,11 +57,22 @@ namespace MainTz.Infrastructure.Repositories
                 return cars;
             }
         }
-		public async Task<Car> UpdateAsync(Car car)
-		{
-		    var carEntity = _mapper.Map<CarEntity>(car);
+		public async Task<List<Car>> GetCarsWithHiddenAsync()
+        {
 			await using (var context = _dbContextFactory.CreateDbContext())
 			{
+				var carEntities = await context.Cars
+					.Include(car => car.Images)
+					.ToListAsync();
+				var cars = _mapper.Map<List<Car>>(carEntities);
+				return cars;
+			}
+		}
+		public async Task<Car> UpdateAsync(Car car)
+		{
+			await using (var context = _dbContextFactory.CreateDbContext())
+			{
+		        var carEntity = _mapper.Map<CarEntity>(car);
                 var dbCarEntity = context.Cars
                     .Include(c => c.Users)
                     .Include(c => c.Images)
@@ -74,6 +85,20 @@ namespace MainTz.Infrastructure.Repositories
                 dbCarEntity.IsVisible = carEntity.IsVisible;
                 dbCarEntity.Description = carEntity.Description;
                 dbCarEntity.Price = carEntity.Price;
+
+                if(carEntity.Model != null)
+                {
+                    var dbCarModel = context.Models
+                        .FirstOrDefault(m => m.Name == carEntity.Model.Name);
+                    carEntity.Model = dbCarModel;
+
+                    if(carEntity.Model.Brand != null)
+                    {
+                        var dbBrandEntity = context.Brands
+                            .FirstOrDefault(b => b.Name == carEntity.Model.Brand.Name);
+                        carEntity.Model.Brand = dbBrandEntity;
+                    }
+                }
 
                 context.Update(dbCarEntity);
 				await context.SaveChangesAsync();

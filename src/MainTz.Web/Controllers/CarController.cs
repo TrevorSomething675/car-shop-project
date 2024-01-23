@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
 using System.Diagnostics.Contracts;
+using MainTz.Infrastructure.Repositories;
 
 namespace MainTz.Web.Controllers
 {
@@ -15,14 +16,16 @@ namespace MainTz.Web.Controllers
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly IBrandService _brandService;
         private readonly IModelService _modelService;
+        private readonly IUserService _userService;
         private readonly ICarService _carService;
-        private readonly IMapper _mapper;
+		private readonly IMapper _mapper;
         public CarController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor,
-            IBrandService brandService, IModelService modelService)
+            IBrandService brandService, IModelService modelService, IUserService userService)
         {
             _contextAccessor = contextAccessor;
             _brandService = brandService;
             _modelService = modelService;
+            _userService = userService;
             _carService = carService;
             _mapper = mapper;
         }
@@ -30,16 +33,36 @@ namespace MainTz.Web.Controllers
         {
             if(customCarsModel.CarsResponse == null)
             {
-                var carsModel = await _carService.GetCarsWithPaggingAsync(pageNumber);
-                var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-                var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
-                var model = new CarsViewModel
+                if (_contextAccessor.HttpContext.User.Identity.Name != null)
                 {
-                    PageCount = (int)Math.Ceiling(totalCars),
-                    PageNumber = pageNumber,
-                    CarsResponse = carsResponse,
-                };
-                return View(model);
+                    var user = await _userService.GetUserByNameAsync(_contextAccessor.HttpContext.User.Identity.Name);
+                    if(user.Role.RoleName == "Manager" || user.Role.RoleName == "Admin")
+                    {
+						var carsModel = await _carService.GetCarsWithPaggingWithHiddenAsync(pageNumber);
+						var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
+						var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
+						var model = new CarsViewModel
+						{
+							PageCount = (int)Math.Ceiling(totalCars),
+							PageNumber = pageNumber,
+							CarsResponse = carsResponse,
+						};
+						return View(model);
+					}
+                }
+                else
+                {
+				    var carsModel = await _carService.GetCarsWithPaggingAsync(pageNumber);
+                    var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
+                    var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
+                    var model = new CarsViewModel
+                    {
+                        PageCount = (int)Math.Ceiling(totalCars),
+                        PageNumber = pageNumber,
+                        CarsResponse = carsResponse,
+                    };
+                    return View(model);
+                }
             }
             return View(customCarsModel);
         }

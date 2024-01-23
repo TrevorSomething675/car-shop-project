@@ -281,6 +281,16 @@ footer {
     color:forestgreen;
 }
 
+.car-card-cart-offer-active {
+    font-size: 1.8rem;
+    color: var(--light-blue-color);
+}
+
+.car-card-cart-offer-unactive {
+    font-size: 1.8rem;
+    color:var(--dark-red-color);
+}
+
 .car-card-price {
     font-size: 1.5rem;
     color: var(--dark-red-color);

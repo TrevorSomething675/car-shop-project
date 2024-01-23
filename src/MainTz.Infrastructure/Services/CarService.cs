@@ -164,5 +164,26 @@ namespace MainTz.Infrastructure.Services
                 throw new Exception(ex.Message);
             }
         }
-    }
+
+		public async Task<List<Car>> GetCarsWithPaggingWithHiddenAsync(int pageNumber = 1)
+		{
+			var totalCarsInPage = 8f;
+			var pageCount = Math.Ceiling(_carRepository.GetCarsWithHiddenAsync().Result.Count() / totalCarsInPage);
+
+			var carsEntity = _carRepository.GetCarsWithHiddenAsync().Result
+				.Take((int)(totalCarsInPage * pageNumber))
+				.Skip((int)(totalCarsInPage * (pageNumber - 1)))
+				.ToList();
+
+			var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
+			foreach (var car in carsDomainEntity)
+			{
+				foreach (var image in car.Images)
+				{
+					image.FileBase64String = await _minioService.GetObjectAsync(image.Path);
+				}
+			}
+			return carsDomainEntity;
+		}
+	}
 }

@@ -24,21 +24,15 @@ namespace MainTz.Infrastructure.Services
         {
             try
             {
-                var contextUser = _contextAccessor?.HttpContext?.User.Identity;
-                var user = await _userRepository.GetUserByNameAsync(contextUser.Name);
+                var user = await _userRepository.GetUserByNameAsync(_contextAccessor?.HttpContext?.User.Identity.Name);
                 var carFromRepository = await _carRepository.GetCarByIdAsync(carId);
-                if (user.Cars.Select(car => car.Name).Contains(carFromRepository.Name))
-                {
-                    //var carToRemove = user.Cars.Where(car => car.Name == carFromRepository.Name).FirstOrDefault();
-                    //user.Cars.Remove(carToRemove);
-                    await _userRepository.RemoveCarFromUser(user, carFromRepository);
-                }
+                var carToFavorite = user.Cars.FirstOrDefault(c => c.Id == carFromRepository.Id);
+                if (carToFavorite != null)
+                    user.Cars.Remove(carToFavorite);
                 else
-                {
-
                     user.Cars.Add(carFromRepository);
-                    await _userRepository.UpdateAsync(user);
-                }
+
+                await _userRepository.UpdateAsync(user);
 
                 return true;
             }
