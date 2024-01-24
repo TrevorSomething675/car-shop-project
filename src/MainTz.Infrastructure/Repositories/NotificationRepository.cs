@@ -1,9 +1,9 @@
 ﻿using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
+using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
-using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -56,13 +56,16 @@ namespace MainTz.Infrastructure.Repositories
             }
         }
 
-        public async Task CreateAsync(Notification notification)
+        public async Task<Notification> CreateAsync(Notification notification)
         {
             await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var notificationEntity = _mapper.Map<NotificationEntity>(notification);
                 context.Notifications.Add(notificationEntity);
                 await context.SaveChangesAsync();
+
+                var updatedNotification = _mapper.Map<Notification>(notificationEntity);
+                return updatedNotification;
             }
         }
 

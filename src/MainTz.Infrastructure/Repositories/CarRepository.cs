@@ -72,20 +72,53 @@ namespace MainTz.Infrastructure.Repositories
 		{
 			await using (var context = _dbContextFactory.CreateDbContext())
 			{
-		        var carEntity = _mapper.Map<CarEntity>(car);
-                var dbCarEntity = context.Cars
+		        var updatedCarEntity = _mapper.Map<CarEntity>(car);
+                var carEntity = context.Cars
                     .Include(c => c.Users)
                     .Include(c => c.Images)
                     .Include(c => c.Model)
                     .ThenInclude(c => c.Brand)
-                    .FirstOrDefault(c=>c.Id == carEntity.Id);
+                    .FirstOrDefault(c => c.Id == updatedCarEntity.Id);
 
-                dbCarEntity.Name = carEntity.Name;
-                dbCarEntity.Color = carEntity.Color;
-                dbCarEntity.IsVisible = carEntity.IsVisible;
-                dbCarEntity.Description = carEntity.Description;
-                dbCarEntity.Price = carEntity.Price;
+                carEntity.Name = updatedCarEntity.Name;
+                carEntity.Color = updatedCarEntity.Color;
+                carEntity.IsVisible = updatedCarEntity.IsVisible;
+                carEntity.Description = updatedCarEntity.Description;
+                carEntity.Price = updatedCarEntity.Price;
 
+                if(carEntity.Images != null)
+                {
+                    if(carEntity.Images.Count() < updatedCarEntity.Images.Count())
+                    {
+                        foreach (var image in carEntity.Images)
+                        {
+                            var imageToRemove = updatedCarEntity.Images.FirstOrDefault(i => i.Id == image.Id);
+                            updatedCarEntity.Images.Remove(imageToRemove);
+                        }
+                        carEntity.Images.AddRange(updatedCarEntity.Images);
+                    } 
+                    else if(carEntity.Images.Count() > updatedCarEntity.Images.Count())
+                    {
+                        var imageEntities = carEntity.Images.Select(i => i.Id).ToList();
+                        foreach (var imageId in imageEntities)
+                        {
+                            var imageToRemove = updatedCarEntity.Images.FirstOrDefault(i => i.Id == imageId);
+                            if(imageToRemove == null)
+                            {
+                                var imageEntityToRemove = carEntity.Images.FirstOrDefault(i => i.Id == imageId);
+                                carEntity.Images.Remove(imageEntityToRemove);
+                            }
+                        }
+                    } 
+                    else if(carEntity.Images.Count == updatedCarEntity.Images.Count())
+                    {
+                        foreach (var image in carEntity.Images)
+                        {
+                            image.Name = updatedCarEntity.Images[carEntity.Images.IndexOf(image)].Name;
+                            image.Path = updatedCarEntity.Images[carEntity.Images.IndexOf(image)].Path;
+                        }
+                    }
+                }
                 if(carEntity.Model != null)
                 {
                     var dbCarModel = context.Models
@@ -99,12 +132,10 @@ namespace MainTz.Infrastructure.Repositories
                         carEntity.Model.Brand = dbBrandEntity;
                     }
                 }
-
-                context.Update(dbCarEntity);
+                context.Update(carEntity);
 				await context.SaveChangesAsync();
 
-				var updatedCarEntity = context.Cars.FirstOrDefault(c => c.Id == carEntity.Id);
-				var updatedCar = _mapper.Map<Car>(updatedCarEntity);
+				var updatedCar = _mapper.Map<Car>(carEntity);
 				return updatedCar;
 			}
 		}

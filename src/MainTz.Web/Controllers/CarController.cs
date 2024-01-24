@@ -6,13 +6,12 @@ using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
-using System.Diagnostics.Contracts;
-using MainTz.Infrastructure.Repositories;
 
 namespace MainTz.Web.Controllers
 {
     public class CarController : Controller
     {
+        private readonly INotificationService _notificationService;
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly IBrandService _brandService;
         private readonly IModelService _modelService;
@@ -20,8 +19,9 @@ namespace MainTz.Web.Controllers
         private readonly ICarService _carService;
 		private readonly IMapper _mapper;
         public CarController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor,
-            IBrandService brandService, IModelService modelService, IUserService userService)
+            IBrandService brandService, IModelService modelService, IUserService userService, INotificationService notificationService)
         {
+            _notificationService = notificationService;
             _contextAccessor = contextAccessor;
             _brandService = brandService;
             _modelService = modelService;
@@ -38,31 +38,28 @@ namespace MainTz.Web.Controllers
                     var user = await _userService.GetUserByNameAsync(_contextAccessor.HttpContext.User.Identity.Name);
                     if(user.Role.RoleName == "Manager" || user.Role.RoleName == "Admin")
                     {
-						var carsModel = await _carService.GetCarsWithPaggingWithHiddenAsync(pageNumber);
-						var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-						var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
-						var model = new CarsViewModel
+						var carsModelWithHidden = await _carService.GetCarsWithPaggingWithHiddenAsync(pageNumber);
+						var carsResponseWithHidden = _mapper.Map<List<CarResponse>>(carsModelWithHidden);
+						var totalCarsWithHidden = (await _carService.GetCarsWithHiddenAsync()).Count() / 8f;
+						var modelCarsWithHidden = new CarsViewModel
 						{
-							PageCount = (int)Math.Ceiling(totalCars),
+							PageCount = (int)Math.Ceiling(totalCarsWithHidden),
 							PageNumber = pageNumber,
-							CarsResponse = carsResponse,
+							CarsResponse = carsResponseWithHidden,
 						};
-						return View(model);
+						return View(modelCarsWithHidden);
 					}
                 }
-                else
+				var carsModel = await _carService.GetCarsWithPaggingAsync(pageNumber);
+                var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
+                var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
+                var model = new CarsViewModel
                 {
-				    var carsModel = await _carService.GetCarsWithPaggingAsync(pageNumber);
-                    var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-                    var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
-                    var model = new CarsViewModel
-                    {
-                        PageCount = (int)Math.Ceiling(totalCars),
-                        PageNumber = pageNumber,
-                        CarsResponse = carsResponse,
-                    };
-                    return View(model);
-                }
+                    PageCount = (int)Math.Ceiling(totalCars),
+                    PageNumber = pageNumber,
+                    CarsResponse = carsResponse,
+                };
+                return View(model);
             }
             return View(customCarsModel);
         }
@@ -120,6 +117,15 @@ namespace MainTz.Web.Controllers
         public async Task<IActionResult> ChangeCarVisible(int id)
         {
             var car = await _carService.ChangeCarVisible(id);
+            if (car.IsVisible)
+            {
+                var newNotification = new Notification
+                {
+                    Header = "Товар доступен в магазине",
+                    Description = $"Теперь машина {car.Name} снова доступна в магазине!"
+                };
+                var notificationHasBeenSended = await _notificationService.SendNotificationOnCarIdWithDescription(id, newNotification);
+            }
             var addedCar = await _carService.GetCarByIdAsync(car.Id);
             var carResponse = _mapper.Map<CarResponse>(addedCar);
             return RedirectToAction("GetBigCarCard", new {id = carResponse.Id });

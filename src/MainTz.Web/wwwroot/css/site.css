@@ -7,10 +7,39 @@
     --dark-text-color: #8a8a8a;
     --dark-red-color: #912c2c;
     --dark-green-color: #1b611a;
+    --dark-violet-color: #541852;
     --light-blue-color: #524aa8;
+    --light-violet-color: #b03cac;
 }
 
 /*========================Global========================*/
+
+.custom-text-area{
+    min-height : 400px;
+    min-width : 600px;
+    background-color:var(--light-gray-color);
+    border-radius: 5px;
+}
+
+.custom-text-area:active {
+    min-height: 400px;
+    min-width: 600px;
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+}
+
+.custom-btn-violet-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--light-violet-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-violet-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--light-text-color);
+}
 
 .custom-btn-orange-bg-dark {
     background-color: var(--dark-gray-color);

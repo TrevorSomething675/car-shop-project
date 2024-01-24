@@ -1,6 +1,6 @@
-﻿using AutoMapper;
-using MainTz.Web.ViewModels.NotificationViewModels;
+﻿using MainTz.Web.ViewModels.NotificationViewModels;
 using MainTz.Application.Models;
+using AutoMapper;
 
 namespace MainTz.Web.Mappings.Profiles
 {
@@ -10,6 +10,8 @@ namespace MainTz.Web.Mappings.Profiles
         {
             CreateMap<NotificationRequest, Notification>();
             CreateMap<Notification, NotificationResponse>();
+
+            CreateMap<NotificationRequest, NotificationResponse>();
         }
     }
 }

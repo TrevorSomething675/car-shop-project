@@ -9,9 +9,15 @@ namespace MainTz.Infrastructure.Services
     {
         private readonly INotificationRepository _notificationRepository;
         private readonly ILogger<NotificationService> _logger;
-        public NotificationService(INotificationRepository notificationRepository, ILogger<NotificationService> logger) 
+        private readonly IUserRepository _userRepository;
+        private readonly ICarRepository _carRepository;
+        public NotificationService(INotificationRepository notificationRepository, 
+            ILogger<NotificationService> logger, ICarRepository carRepository,
+            IUserRepository userRepository) 
         {
             _logger = logger;
+            _userRepository = userRepository;
+            _carRepository = carRepository;
             _notificationRepository = notificationRepository;
         }
         public async Task<Notification> GetNotificationByIdAndUserWithMarkedAsync(User user, int id)
@@ -39,29 +45,54 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> CreateAsync(Notification notification)
-        {
-            try
-            {
-                await _notificationRepository.UpdateAsync(notification);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation(ex.Message);
-                return false;
-            }
-        }
         public async Task<bool> DeleteAsync(Notification notification)
         {
             try
             {
-                await _notificationRepository.UpdateAsync(notification);
+                await _notificationRepository.DeleteAsync(notification);
                 return true;
             }
             catch(Exception ex)
             {
                 _logger.LogInformation(ex.Message);
+                return false;
+            }
+        }
+
+        public async Task<bool> SendNotificationOnCarIdWithDescription(int carId, Notification notification)
+        {
+            try
+            {
+                var users = (await _userRepository.GetUsersAsync())
+                    .Where(u => u.Cars
+                        .ToList()
+                        .Select(c => c.Id)
+                        .Contains(carId)).ToList();
+
+                var car = await _carRepository.GetCarByIdAsync(carId);
+                if (car == null)
+                    throw new Exception("Машина не найдена в бд по id");
+
+                var newNotification = new Notification()
+                {
+                    IsRead = false,
+                    Header = notification.Header,
+                    Description = notification.Description
+                };
+                foreach (var user in users)
+                {
+                    user.Notifications.Add(newNotification);
+                    await _userRepository.UpdateAsync(user);
+                }
+
+                //var updatedNotification = await _notificationRepository.CreateAsync(newNotification);
+                //if (updatedNotification == null)
+                //    throw new Exception("Не удалось добавить уведомление в базу данных");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
                 return false;
             }
         }

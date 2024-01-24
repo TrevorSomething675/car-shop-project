@@ -11,6 +11,6 @@ namespace MainTz.Web.ViewModels.NotificationViewModels
         public string Description { get; set; }
 
         public int UserId { get; set; }
-        public UserResponse User { get; set; }
+        public UserRequest User { get; set; }
     }
 }

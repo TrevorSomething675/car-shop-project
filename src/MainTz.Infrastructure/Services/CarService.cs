@@ -43,6 +43,12 @@ namespace MainTz.Infrastructure.Services
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
             return carsDomainEntity;
         }
+        public async Task<List<Car>> GetCarsWithHiddenAsync()
+        {
+            var carsEntity = await _carRepository.GetCarsWithHiddenAsync();
+            var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
+            return carsDomainEntity;
+        }
         public async Task<List<Car>> GetFavoriteCarsWithPaggingAsync(int pageNumber = 1)
         {
             var totalCarsInPage = 8f;

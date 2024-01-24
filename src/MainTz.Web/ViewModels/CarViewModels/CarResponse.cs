@@ -1,5 +1,6 @@
 ﻿using MainTz.Web.ViewModels.CarModelViewModel;
 using MainTz.Web.ViewModels.ImageViewModels;
+using MainTz.Web.ViewModels.UserViewModels;
 
 namespace MainTz.Web.ViewModels.CarViewModels
 {
@@ -14,7 +15,7 @@ namespace MainTz.Web.ViewModels.CarViewModels
 
 		public IEnumerable<ImageResponse> Images { get; set; }
 
-		public IEnumerable<CarResponse> Cars { get; set; }
+		public IEnumerable<UserResponse> Users { get; set; }
 
 		public int ModelId { get; set; }
 		public ModelResponse Model { get; set; }

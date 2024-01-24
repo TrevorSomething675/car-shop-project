@@ -54,7 +54,11 @@ namespace MainTz.Infrastructure.Repositories
         {
             await using (var context = _dbContextFactory.CreateDbContext())
             {
-                var userEntities = await context.Users.ToListAsync();
+                var userEntities = await context.Users
+                    .Include(u => u.Notifications)
+                    .Include(u => u.Cars)
+                    .ToListAsync();
+
                 var users = _mapper.Map<List<User>>(userEntities);
                 return users;
             }
@@ -66,12 +70,24 @@ namespace MainTz.Infrastructure.Repositories
                 var updatedUserEntity = _mapper.Map<UserEntity>(user);
                 var userEntity = await context.Users
                     .Include(u => u.Cars)
+                    .Include(u => u.Notifications)
                     .FirstOrDefaultAsync(u => u.Id == updatedUserEntity.Id);
 
                 userEntity.Name = updatedUserEntity.Name;
                 userEntity.Password = updatedUserEntity.Password;
 
-                var jija = context.ChangeTracker.Entries();
+                if(user.Notifications != null)
+                {
+                    if(userEntity.Notifications.Count() < updatedUserEntity.Notifications.Count) 
+                    {
+                        foreach (var notification in userEntity.Notifications)
+                        {
+                            var notificationToRemove = updatedUserEntity.Notifications.FirstOrDefault(n => n.Id == notification.Id);
+                            updatedUserEntity.Notifications.Remove(notificationToRemove);
+                        }
+                        userEntity.Notifications.AddRange(updatedUserEntity.Notifications);
+                    }
+                }
                 if (user.Cars != null)
                 {
                     if (userEntity.Cars.Count() < updatedUserEntity.Cars.Count())
