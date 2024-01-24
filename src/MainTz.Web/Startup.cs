@@ -75,9 +75,9 @@ namespace MainTz.Web
                     {
                         var roles = new List<RoleEntity>
                         {
-                            new RoleEntity { RoleName = "Admin" },
-                            new RoleEntity { RoleName = "Manager" },
-                            new RoleEntity { RoleName = "User" }
+                            new RoleEntity { Name = "Admin" },
+                            new RoleEntity { Name = "Manager" },
+                            new RoleEntity { Name = "User" }
                         };
                         context.Roles.AddRange(roles);
                         context.SaveChanges();
@@ -92,7 +92,7 @@ namespace MainTz.Web
                                 Name = "Admin",
                                 Email = "Admin@mail.ru",
                                 Password = "123123123Qq",
-                                Role = context.Roles.Where(role => role.RoleName == "Admin").FirstOrDefault(),
+                                Role = context.Roles.Where(role => role.Name == "Admin").FirstOrDefault(),
                                 Notifications = new List<NotificationEntity>
                                 {
                                     new NotificationEntity
@@ -157,14 +157,14 @@ namespace MainTz.Web
                                 Name = "Manager",
                                 Email = "Manager@mail.ru",
                                 Password = "123123123Qq",
-                                Role = context.Roles.Where(role => role.RoleName == "Manager").FirstOrDefault()
+                                Role = context.Roles.Where(role => role.Name == "Manager").FirstOrDefault()
                             },
                             new UserEntity
                             {
                                 Name = "User",
                                 Email = "User@mail.ru",
                                 Password = "123123123Qq",
-                                Role = context.Roles.Where(role => role.RoleName == "User").FirstOrDefault(),
+                                Role = context.Roles.Where(role => role.Name == "User").FirstOrDefault(),
                                 Notifications = new List<NotificationEntity>
                                 {
                                     new NotificationEntity
@@ -265,7 +265,7 @@ namespace MainTz.Web
                         context.SaveChanges();
                         var adminUser = context.Users.
                             Include(u=>u.Cars)
-                            .First(user => user.Role.RoleName == "Admin");
+                            .First(user => user.Role.Name == "Admin");
                         var favorCar = context.Cars.First();
                         adminUser.Cars.Add(favorCar);
                         context.SaveChanges();

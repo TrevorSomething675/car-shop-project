@@ -20,6 +20,12 @@ namespace MainTz.Infrastructure.Services
             _logger = logger;
             _mapper = mapper;
         }
+        public async Task<User> GetUserByIdAsync(int id)
+        {
+            var userEntity = await _userRepository.GetUserByIdAsync(id);
+            var user = _mapper.Map<User>(userEntity);
+            return user;
+        }
         public async Task<User> GetUserByNameAsync(string name)
         {
             var userEntity = await _userRepository.GetUserByNameAsync(name);
@@ -77,6 +83,24 @@ namespace MainTz.Infrastructure.Services
                 _logger.LogInformation(ex.Message);
                 return false;
             }
+        }
+        public async Task<List<User>> GetSortedUsersByRole()
+        {
+            var users = await _userRepository.GetUsersAsync();
+            users.OrderBy(u => u.Role.Name).ToList();
+            return users;
+        }
+
+        public async Task<User> ChangeRoleForUserByIdAsync(int id)
+        {
+            var user = await _userRepository.GetUserByIdAsync(id);
+            if (user.Role.Name == "User")
+                user.Role = await _roleRepository.GetRoleByNameAsync("Manager");
+            if (user.Role.Name == "Manager")
+                user.Role = await _roleRepository.GetRoleByNameAsync("User");
+
+            var updatedUser = await _userRepository.UpdateAsync(user);
+            return updatedUser;
         }
     }
 }

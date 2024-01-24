@@ -1,0 +1,6 @@
+﻿@using MainTz.Web.ViewModels.UserViewModels
+@model UsersViewModel
+
+<div id="UserContainer">
+    @await Html.PartialAsync("GetUsersPartial", Model.UsersResponse)
+</div>

@@ -68,7 +68,7 @@ namespace MainTz.Web.Controllers
             if (loginUserRequest.Password != user?.Password || user == null)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
-            var tokens = await GetToken(user.Role.RoleName, user.Name);
+            var tokens = await GetToken(user.Role.Name, user.Name);
 
             return Results.Json(tokens);
         }
@@ -84,7 +84,7 @@ namespace MainTz.Web.Controllers
             if (loginUserRequest.Password != user?.Password || user == null)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
-            var tokens = await GetToken(user.Role.RoleName, user.Name);
+            var tokens = await GetToken(user.Role.Name, user.Name);
 
             return Results.Json(tokens);
         }

@@ -10,7 +10,7 @@
         public int RoleId { get; set; }
         public Role Role { get; set; }
 
-        public List<Car> Cars { get; set; } = new List<Car>();
+        public List<Car> Cars { get; set; }
         public List<Notification> Notifications { get; set; }
     }
 }

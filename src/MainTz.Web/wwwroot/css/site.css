@@ -10,14 +10,29 @@
     --dark-violet-color: #541852;
     --light-blue-color: #524aa8;
     --light-violet-color: #b03cac;
+    --warning-color: #c27e17;
 }
 
 /*========================Global========================*/
 
-.custom-text-area{
-    min-height : 400px;
-    min-width : 600px;
-    background-color:var(--light-gray-color);
+.custom-warning-btn {
+    background-color: var(--dark-gray-color);
+    color: var(--warning-color);
+    border-radius: 5px;
+    border: 2px solid var(--warning-color);
+    transition: .3s;
+}
+
+.custom-warning-btn:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--light-text-color);
+    border: 2px solid var(--light-text-color);
+}
+
+.custom-text-area {
+    min-height: 400px;
+    min-width: 600px;
+    background-color: var(--light-gray-color);
     border-radius: 5px;
 }
 

@@ -36,7 +36,7 @@ namespace MainTz.Web.Controllers
                 if (_contextAccessor.HttpContext.User.Identity.Name != null)
                 {
                     var user = await _userService.GetUserByNameAsync(_contextAccessor.HttpContext.User.Identity.Name);
-                    if(user.Role.RoleName == "Manager" || user.Role.RoleName == "Admin")
+                    if(user.Role.Name == "Manager" || user.Role.Name == "Admin")
                     {
 						var carsModelWithHidden = await _carService.GetCarsWithPaggingWithHiddenAsync(pageNumber);
 						var carsResponseWithHidden = _mapper.Map<List<CarResponse>>(carsModelWithHidden);

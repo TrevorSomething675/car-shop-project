@@ -1,8 +1,8 @@
 ﻿using MainTz.Database.Context.ConfigureEntities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using MainTz.Database.Entities;
 using MainTz.Core.Options;
-using Microsoft.Extensions.Options;
 
 namespace MainTa.Database.Context
 {

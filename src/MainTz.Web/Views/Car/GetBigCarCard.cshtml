@@ -60,11 +60,6 @@
                     {
                         if (Model.IsVisible)
                         {
-@*                             <button onclick="SendNotificationByCarId(@Model.Id)" class="d-flex custom-btn-violet-bg-dark">
-                                <i class="bi bi-megaphone px-1"></i>
-                                <p>Уведомить</p>
-                            </button> *@
-
                             <a asp-action="GetSendManualNotification" asp-controller="Account" asp-route-Id="@Model.Id" class="d-flex align-content-center custom-btn-violet-bg-dark">
                                 <i class="bi bi-megaphone px-1"></i>
                                 <p>Уведомить</p>

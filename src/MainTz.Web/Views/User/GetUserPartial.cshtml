@@ -1,0 +1,38 @@
+﻿@using MainTz.Web.ViewModels.UserViewModels
+@model UserResponse
+
+<tr>
+    <td>
+        @Model.Id
+    </td>
+
+    <td>
+        @Model.Name
+    </td>
+
+    <td>
+        @Model.Email
+    </td>
+
+    <td>
+        @Model.Password
+    </td>
+
+    <td>
+        @Model.Role.Name
+    </td>
+    <td>
+        @if (Model.Role.Name == "User")
+        {
+            <button class="custom-warning-btn">
+                Повысить до Manager
+            </button>
+        }
+        else
+        {
+            <button class="custom-warning-btn">
+                Понизить до User
+            </button>
+        }
+    </td>
+</tr>

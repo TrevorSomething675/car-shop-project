@@ -1,4 +1,6 @@
 ﻿using MainTz.Web.ViewModels.NotificationViewModels;
+using MainTz.Web.ViewModels.CarViewModels;
+using MainTz.Web.ViewModels.RoleViewModels;
 
 namespace MainTz.Web.ViewModels.UserViewModels
 {
@@ -8,9 +10,9 @@ namespace MainTz.Web.ViewModels.UserViewModels
 		public string Name { get; set; }
 		public string Email { get; set; }
 		public string Password { get; set; }
-		public string Role { get; set; }
+		public RoleResponse Role { get; set; }
 
-		public ICollection<int> CarsId { get; set; }
+		public IEnumerable<CarResponse> Cars { get; set; }
 		public IEnumerable<NotificationResponse> Notifications { get; set; }
 	}
 }
