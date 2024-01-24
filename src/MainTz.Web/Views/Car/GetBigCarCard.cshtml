@@ -9,7 +9,7 @@
 </button>
 
 <div class="container">
-    <div class="pt-4">
+    <div class="p-4">
         <div class="row custom-dark-container">
             <div class="col-9 py-3">
                 <div id="MainCarImage">
@@ -46,26 +46,62 @@
                 <div>
                     @Model.Description
                 </div>
-                <div class="d-flex justify-content-start col">
+                <div class="d-flex justify-content-start col flex-grow-0">
                     <div class="px-1 mt-2">
                         <div class="car-card-price mx-1">
-                            <div class="px-1">
+                            <div class="px-1 text-nowrap">
                                 @Model.Price
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end col">
-                    <div class="d-flex align-content-center car-card-cart-offer px-2 custom-btn-orange">
-                            <i class="bi bi-bag px-1"></i>
-                            <p>В корзину</p>
-                    </div>
-                    <div class="d-flex align-content-center car-card-favorite-offer px-2">
-                        <button id="ChangeCarInFavoriteBigCard_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)" class="custom-btn-orange">
-                            <i class="bi bi-star px-1"></i>
-                            <p>В избранное</p>
-                        </button>
-                    </div>
+                    @if (User.IsInRole("Manager") || User.IsInRole("Admin"))
+                    {
+                        if (Model.IsVisible)
+                        {
+@*                             <button onclick="SendNotificationByCarId(@Model.Id)" class="d-flex custom-btn-violet-bg-dark">
+                                <i class="bi bi-megaphone px-1"></i>
+                                <p>Уведомить</p>
+                            </button> *@
+
+                            <a asp-action="GetSendManualNotification" asp-controller="Account" asp-route-Id="@Model.Id" class="d-flex align-content-center custom-btn-violet-bg-dark">
+                                <i class="bi bi-megaphone px-1"></i>
+                                <p>Уведомить</p>
+                            </a>
+
+                            <a asp-action="ChangeCarVisible" asp-controller="Car" asp-route-Id="@Model.Id" class="d-flex align-content-center px-2 custom-btn-orange-bg-dark mx-1">
+                                <i class="bi bi-eye px-1"></i>
+                                <p>Карточка активна</p>
+                            </a>
+
+                        }
+                        else
+                        {
+                            <button class="d-flex custom-btn-violet-bg-dark" disabled="disabled">
+                                <i class="bi bi-megaphone px-1"></i>
+                                <p>Уведомить</p>
+                            </button>
+                            <a asp-action="ChangeCarVisible" asp-controller="Car" asp-route-Id="@Model.Id" class="d-flex align-content-center px-2 custom-btn-orange-bg-dark mx-1">
+                                <i class="bi bi-eye-slash px-1"></i>
+                                <p>Карточка не активна</p>
+                            </a>
+                        }
+                        <a asp-action="GetUpdateCar" asp-controller="Car" asp-route-Id="@Model.Id" class="d-flex align-content-center px-2 custom-btn-blue-bg-dark mx-1">
+                            <i class="bi bi-pencil px-1"></i>
+                            <p>Редактировать карточку</p>
+                        </a>
+                    }
+
+                    <button class="d-flex custom-btn-green-bg-dark">
+                        <i class="bi bi-bag px-1"></i>
+                        <p>В корзину</p>
+                    </button>
+
+                    <button class="d-flex custom-btn-orange-bg-dark" id="ChangeCarInFavoriteBigCard_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)">
+                        <i class="bi bi-star px-1"></i>
+                        <p>В избранное</p>
+                    </button>
                 </div>
             </div>
         </div>

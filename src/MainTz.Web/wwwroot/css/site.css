@@ -7,9 +7,78 @@
     --dark-text-color: #8a8a8a;
     --dark-red-color: #912c2c;
     --dark-green-color: #1b611a;
+    --dark-violet-color: #541852;
+    --light-blue-color: #524aa8;
+    --light-violet-color: #b03cac;
 }
 
 /*========================Global========================*/
+
+.custom-text-area{
+    min-height : 400px;
+    min-width : 600px;
+    background-color:var(--light-gray-color);
+    border-radius: 5px;
+}
+
+.custom-text-area:active {
+    min-height: 400px;
+    min-width: 600px;
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+}
+
+.custom-btn-violet-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--light-violet-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-violet-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--light-text-color);
+}
+
+.custom-btn-orange-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--light-text-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-orange-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--dark-orange-color);
+}
+
+.custom-btn-blue-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--light-blue-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-blue-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--dark-orange-color);
+}
+
+.custom-btn-green-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--dark-green-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-green-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--light-text-color);
+}
 
 .custom-btn-submit-form-green {
     background-color: var(--dark-green-color);
@@ -239,6 +308,16 @@ footer {
 .car-card-cart-offer{
     font-size: 1.8rem;
     color:forestgreen;
+}
+
+.car-card-cart-offer-active {
+    font-size: 1.8rem;
+    color: var(--light-blue-color);
+}
+
+.car-card-cart-offer-unactive {
+    font-size: 1.8rem;
+    color:var(--dark-red-color);
 }
 
 .car-card-price {

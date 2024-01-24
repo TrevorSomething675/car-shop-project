@@ -1,4 +1,4 @@
-﻿using MainTz.Application.Models.CarModels;
+﻿using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using AutoMapper;
 

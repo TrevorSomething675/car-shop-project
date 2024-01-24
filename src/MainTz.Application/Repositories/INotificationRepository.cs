@@ -1,4 +1,4 @@
-﻿using MainTz.Application.Models.UserEntities;
+﻿using MainTz.Application.Models;
 
 namespace MainTz.Application.Repositories
 {
@@ -8,7 +8,7 @@ namespace MainTz.Application.Repositories
         public Task<List<Notification>> GetNotificationsByUserAsync(User user);
         public Task<List<Notification>> GetNotificationsAsync();
         public Task UpdateAsync(Notification notification);
-        public Task CreateAsync(Notification notification);
+        public Task<Notification> CreateAsync(Notification notification);
         public Task DeleteAsync(Notification notification);
     }
 }

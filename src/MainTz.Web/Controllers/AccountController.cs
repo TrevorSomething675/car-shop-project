@@ -1,5 +1,9 @@
-﻿using MainTz.Web.ViewModels.UserViewModels;
+﻿using MainTz.Web.ViewModels.NotificationViewModels;
+using MainTz.Web.ViewModels.AccountViewModels;
+using MainTz.Web.ViewModels.UserViewModels;
+using MainTz.Web.ViewModels.CarViewModels;
 using MainTz.Application.Services;
+using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using FluentValidation;
@@ -14,16 +18,18 @@ namespace MainTz.Web.Controllers
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly INotificationService _notificationService;
         private readonly IUserService _userService;
+        private readonly ICarService _carService;
         private readonly IMapper _mapper;
         public AccountController(IUserService userService, IHttpContextAccessor httpContextAccessor, IMapper mapper, 
             INotificationService notificationService, IValidator<UpdateLoginUserRequest> updateLoginFormValidator,
-            IValidator<UpdatePasswordUserRequest> updatePasswordFormValidator)
+            IValidator<UpdatePasswordUserRequest> updatePasswordFormValidator, ICarService carService)
         {
             _updatePasswordFormValidator = updatePasswordFormValidator;
             _updateLoginFormValidator = updateLoginFormValidator;
             _httpContextAccessor = httpContextAccessor;
             _notificationService = notificationService;
             _userService = userService;
+            _carService = carService;
             _mapper = mapper;
         }
         public async Task<IActionResult> Index()
@@ -88,6 +94,21 @@ namespace MainTz.Web.Controllers
                 return Results.Ok();
             else
                 return Results.BadRequest(new ErrorViewModel { ErrorMessage = "Критическая ошибка" });
+        }
+        public async Task<IResult> SendNotificationForUsersOnCarId(NotificationFormRequest notificationFormRequest) 
+        {
+            var notification = _mapper.Map<Notification>(notificationFormRequest.Notification);
+            var result = await _notificationService.SendNotificationOnCarIdWithDescription(notificationFormRequest.Id, notification);
+            if (result)
+                return Results.Ok();
+            else
+                return Results.BadRequest(new ErrorViewModel { ErrorMessage = "Не удалось отправить уведомления пользователям" });
+        }
+        public async Task<IActionResult> GetSendManualNotification(int id)
+        {
+            var car = await _carService.GetCarByIdAsync(id);
+            var carResponse = _mapper.Map<CarResponse>(car);
+            return View(carResponse);
         }
     }
 }

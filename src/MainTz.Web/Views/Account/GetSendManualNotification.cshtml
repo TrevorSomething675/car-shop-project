@@ -1,0 +1,21 @@
+﻿@using MainTz.Web.ViewModels.CarViewModels
+@model CarResponse
+<div class="container">
+    <div class="row align-content-center justify-content-center">
+        <form id="SendManualNotificationForm" method="post" class="form w-100 d-flex align-items-center">
+            <div class="px-2 py-1 w-100">
+                <h2 class="text-center">Новое уведомление для машины @Model.Name</h2>
+                <div class="py-1">
+                    <input name="notificationFormRequest.Id" value="@Model.Id" hidden="hidden"/>
+                    <label class="px-1">Заголовок: </label> <input type="text" name="notificationFormRequest.notification.Header" class="w-100 py-1" /><br />
+                </div>
+                <div class="py-1 w-100">
+                    <lable class="px-1">Описание: </lable> <textarea type="text" name="notificationFormRequest.notification.Description" class="w-100 py-1 custom-text-area"></textarea><br />
+                </div>
+                <div class="py-1 d-flex justify-content-center">
+                    <button class="text-center custom-btn-submit-form" type="submit">Отправить уведомление</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

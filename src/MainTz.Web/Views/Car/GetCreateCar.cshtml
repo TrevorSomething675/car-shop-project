@@ -1,8 +1,11 @@
-﻿<div class="container py-2">
+﻿@using MainTz.Web.ViewModels.CarViewModels
+@model CreateCarResponse
+
+<div class="container py-2">
 	<div class="custom-text-color row custom-dark-container">
 		<div class="col-4">
 			<div class="m-1">
-				<img src="~/images/mops_1.jpg" class="img-fluid" />
+				<img src="~/images/mops_1.jpg" class="img-fluid" id="PreviewImageFormContainer" />
 			</div>
 		</div>
 
@@ -22,8 +25,26 @@
 					<div class="d-flex py-1">
 						<lable class="px-1">Описание: </lable> <input type="text" name="CarRequest.Description" class="w-100 py-1" /><br />
 					</div>
+					<div class="d-flex py-1">
+						<label class="px-1">Бренд:</label>
+						<select name="CarRequest.Model.Brand.Name">
+							@foreach (var brand in Model.BrandsResponse)
+							{
+								<option value="@brand.Name">@brand.Name</option>
+							}
+						</select>
+					</div>
+					<div class="d-flex py-1">
+						<label class="px-1">Модель:</label>
+						<select name="CarRequest.Model.Name">
+							@foreach (var modelResponse in Model.ModelsResponse)
+							{
+								<option value="@modelResponse.Name">@modelResponse.Name</option>
+							}
+						</select>
+					</div>
 					<div>
-						<input type="file" name="CarRequest.Images[]" class="py-1 custom-input" /><br />
+						<input type="file" name="CarRequest.Image" class="py-1 custom-input" id="SelectImageForCreateCar"/><br />
 					</div>
 					<div class="py-1 d-flex">
 						<button class="text-center custom-btn-submit-form-green" type="submit">Создать</button>

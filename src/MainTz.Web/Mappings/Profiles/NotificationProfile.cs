@@ -1,5 +1,5 @@
-﻿using MainTz.Application.Models.UserEntities;
-using MainTz.Web.ViewModels.UserViewModels;
+﻿using MainTz.Web.ViewModels.NotificationViewModels;
+using MainTz.Application.Models;
 using AutoMapper;
 
 namespace MainTz.Web.Mappings.Profiles
@@ -10,6 +10,8 @@ namespace MainTz.Web.Mappings.Profiles
         {
             CreateMap<NotificationRequest, Notification>();
             CreateMap<Notification, NotificationResponse>();
+
+            CreateMap<NotificationRequest, NotificationResponse>();
         }
     }
 }

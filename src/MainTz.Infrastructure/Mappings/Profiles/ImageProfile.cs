@@ -1,6 +1,6 @@
-﻿using MainTz.Application.Models.CarModels;
-using MainTz.Database.Entities;
+﻿using MainTz.Database.Entities;
 using AutoMapper;
+using MainTz.Application.Models;
 
 namespace MainTz.Infrastructure.Mappings.Profiles
 {

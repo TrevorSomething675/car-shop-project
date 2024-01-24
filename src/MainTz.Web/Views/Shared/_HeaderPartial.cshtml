@@ -12,12 +12,15 @@
                     <span>Машины</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link custom-btn-orange" asp-area="" asp-controller="Car" asp-action="GetCreateCar">
-                    <i class="bi bi-plus-circle"></i>
-                    <span>Добавить машину</span>
-                </a>
-            </li>
+            @if (User.IsInRole("Manager") || User.IsInRole("Admin"))
+            {
+                <li class="nav-item">
+                    <a class="nav-link custom-btn-orange" asp-area="" asp-controller="Car" asp-action="GetCreateCar">
+                        <i class="bi bi-plus-circle"></i>
+                        <span>Добавить машину</span>
+                    </a>
+                </li>
+            }
             <li class="nav-item">
                 <a class="nav-link custom-btn-orange" asp-area="" asp-controller="User" asp-action="Index">Admin</a>
             </li>

@@ -23,6 +23,22 @@
                 </div>
             </div>
             <div class="d-flex justify-content-end col">
+                @if (Model.IsVisible)
+                {
+                    <div class="car-card-cart-offer-active mx-1">
+                        <a>
+                            <i class="bi bi-eye px-1"></i>
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <div class="car-card-cart-offer-unactive mx-1">
+                        <a>
+                            <i class="bi bi-eye-slash px-1"></i>
+                        </a>
+                    </div>
+                }
                 <div class="car-card-cart-offer mx-1">
                       <a>
                           <i class="bi bi-bag"></i>

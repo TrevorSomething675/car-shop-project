@@ -1,6 +1,6 @@
-﻿using MainTz.Application.Models.UserEntities;
-using MainTz.Application.Models.UserModels;
+﻿using MainTz.Web.ViewModels.UserViewModels;
 using MainTz.Application.Services;
+using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using FluentValidation;

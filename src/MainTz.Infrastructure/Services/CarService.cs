@@ -1,8 +1,8 @@
-﻿using MainTz.Application.Models.CarModels;
-using MainTz.Application.Repositories;
+﻿using MainTz.Application.Repositories;
 using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Http;
+using MainTz.Application.Models;
 using AutoMapper;
 
 namespace MainTz.Infrastructure.Services
@@ -40,6 +40,12 @@ namespace MainTz.Infrastructure.Services
         public async Task<List<Car>> GetCarsAsync()
         {
             var carsEntity = await _carRepository.GetCarsAsync();
+            var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
+            return carsDomainEntity;
+        }
+        public async Task<List<Car>> GetCarsWithHiddenAsync()
+        {
+            var carsEntity = await _carRepository.GetCarsWithHiddenAsync();
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
             return carsDomainEntity;
         }
@@ -93,17 +99,26 @@ namespace MainTz.Infrastructure.Services
             }
             return carsDomainEntity;
         }
-        public async Task<bool> CreateCarAsync(Car car)
+        public async Task<Car> CreateCarAsync(Car car)
         {
             try
             {
-                await _carRepository.CreateAsync(car);
-                return true;
+                var checkDbCar = await _carRepository.GetCarByNameAsync(car.Name);
+                if (checkDbCar != null)
+                    throw new Exception("Машина уже существует в базе данных");
+
+				foreach (var image in car.Images)
+                {
+                    var path = await _minioService.CreateObjectAsync(image);
+                    image.Path = path;
+                }
+                var addedCar = await _carRepository.CreateAsync(car);
+                return addedCar;
             }
             catch (Exception ex)
             {
                 _logger.LogInformation(ex.Message);
-                return false;
+                throw new Exception(ex.Message);
             }
         }
         public async Task<bool> DeleteCarAsync(Car car)
@@ -119,18 +134,62 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> UpdateCarAsync(Car car)
+        public async Task<Car> UpdateCarAsync(Car car)
         {
             try
             {
-                await _carRepository.UpdateAsync(car);
-                return true;
+				foreach (var image in car.Images)
+				{
+					var path = await _minioService.CreateObjectAsync(image);
+					image.Path = path;
+				}
+                var updatedCar = await _carRepository.UpdateAsync(car);
+				return updatedCar;
             }
             catch (Exception ex)
             {
                 _logger.LogInformation(ex.Message);
-                return false;
+                throw new Exception("Не удалось обновить машину");
             }
         }
-    }
+        public async Task<Car> ChangeCarVisible(int id)
+        {
+            try
+            {
+                var car = await _carRepository.GetCarByIdAsync(id);
+                if(car.IsVisible)
+                    car.IsVisible = false;
+                else
+                    car.IsVisible = true;
+
+                var addedCar = await _carRepository.UpdateAsync(car);
+                return addedCar;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+		public async Task<List<Car>> GetCarsWithPaggingWithHiddenAsync(int pageNumber = 1)
+		{
+			var totalCarsInPage = 8f;
+			var pageCount = Math.Ceiling(_carRepository.GetCarsWithHiddenAsync().Result.Count() / totalCarsInPage);
+
+			var carsEntity = _carRepository.GetCarsWithHiddenAsync().Result
+				.Take((int)(totalCarsInPage * pageNumber))
+				.Skip((int)(totalCarsInPage * (pageNumber - 1)))
+				.ToList();
+
+			var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
+			foreach (var car in carsDomainEntity)
+			{
+				foreach (var image in car.Images)
+				{
+					image.FileBase64String = await _minioService.GetObjectAsync(image.Path);
+				}
+			}
+			return carsDomainEntity;
+		}
+	}
 }

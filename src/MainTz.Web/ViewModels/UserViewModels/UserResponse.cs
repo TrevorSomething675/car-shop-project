@@ -1,4 +1,6 @@
-﻿namespace MainTz.Web.ViewModels.UserViewModels
+﻿using MainTz.Web.ViewModels.NotificationViewModels;
+
+namespace MainTz.Web.ViewModels.UserViewModels
 {
     public class UserResponse
     {

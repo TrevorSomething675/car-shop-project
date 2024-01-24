@@ -25,6 +25,21 @@
             @if (User.Identity.IsAuthenticated)
             {
                 <div class="d-flex justify-content-end col">
+                    @if (User.IsInRole("Manager") || User.IsInRole("Admin"))
+                    {
+                        if (Model.IsVisible)
+                        {
+                            <div class="car-card-cart-offer-active mx-1">
+                                <i class="bi bi-eye px-1"></i>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="car-card-cart-offer-unactive mx-1">
+                                <i class="bi bi-eye-slash px-1"></i>
+                            </div>
+                        }
+                    }
                     <div class="car-card-cart-offer mx-1">
                           <a>
                               <i class="bi bi-bag"></i>

@@ -17,9 +17,9 @@ namespace MainTz.Web.Controllers
             _carService = carService;
             _mapper = mapper;
         }
-        public async Task<IResult> AddFavoriteCar([FromBody]int id)
+        public async Task<IResult> ChangeFavoriteCar([FromBody]int id)
         {
-            var result = await _favoriteCarService.AddCarToFavoriteByCarIdAsync(id);
+            var result = await _favoriteCarService.ChangeFavoriteCarAsync(id);
             if (result)
                 return Results.Ok();
             else

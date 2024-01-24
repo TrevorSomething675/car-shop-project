@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using FluentValidation;
+using MainTz.Web.ViewModels.AccountViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -25,7 +26,7 @@ namespace MainTz.Web.Controllers
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный адрес почты" });
 
             //var isValidEmail = await _mailService.CheckEmailAsync("soalone999@mail.ru");
-            return Results.Json(new MessageViewModel { Message = "Если эта почта ассоциирована с пользователем, то на нее была отправлена инструкция по сбросу" });
+            return Results.Json(new MessageModel { Message = "Если эта почта ассоциирована с пользователем, то на нее была отправлена инструкция по сбросу" });
         }
     }
 }

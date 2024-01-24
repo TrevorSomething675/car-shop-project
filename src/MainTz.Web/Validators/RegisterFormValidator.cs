@@ -1,9 +1,9 @@
-﻿using MainTz.Web.ViewModels;
-using FluentValidation;
+﻿using FluentValidation;
+using MainTz.Web.ViewModels.UserViewModels;
 
 namespace MainTz.Web.Validators
 {
-	public class RegisterFormValidator : AbstractValidator<RegisterUserRequest>
+    public class RegisterFormValidator : AbstractValidator<RegisterUserRequest>
 	{
 		public RegisterFormValidator()
 		{

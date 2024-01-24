@@ -8,8 +8,8 @@
         public string Description { get; set; }
         public int Price { get; set; }
 
-        public IEnumerable<ImageEntity> Images { get; set; }
-        public IEnumerable<UserEntity> Users { get; set; }
+        public List<ImageEntity> Images { get; set; }
+        public List<UserEntity> Users { get; set; }
         public int ModelId { get; set; }
         public ModelEntity Model { get; set; }
     }

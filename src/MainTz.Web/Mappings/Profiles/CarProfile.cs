@@ -1,5 +1,5 @@
 ﻿using MainTz.Web.ViewModels.CarViewModels;
-using MainTz.Application.Models.CarModels;
+using MainTz.Application.Models;
 using AutoMapper;
 
 namespace MainTz.Web.Mappings.Profiles
