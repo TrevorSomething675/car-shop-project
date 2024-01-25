@@ -22,10 +22,12 @@ registerForm.addEventListener('submit', function (event) {
                 })
             }
             if (data != '') {
-                document.cookie = `accessToken=${data.value.accessToken}; path=/`;
-                document.cookie = `refreshToken=${data.value.refreshToken}; path=/`;
-                document.cookie = `role=${data.value.role}; path=/`;
-                console.log(`Access token: ${data.value.accesstoken} Refresh token: ${data.value.refreshtoken} Role: ${data.value.role}`);
+                document.cookie = `accessToken=${data.accessToken}; path=/`;
+                document.cookie = `refreshToken=${data.refreshToken}; path=/`;
+                document.cookie = `role=${data.role}; path=/`;
+                document.cookie = `userId=${data.userId}; path=/`
+                document.cookie = `userName=${data.userName}; path=/`
+
                 let lastOpenedCarCard = GetCookie('LastOpenedCarCard');
                 if (lastOpenedCarCard != undefined) {
                     console.log(document.location.href);

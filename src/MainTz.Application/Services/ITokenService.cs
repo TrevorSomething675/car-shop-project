@@ -1,8 +1,10 @@
-﻿namespace MainTz.Application.Services
+﻿using MainTz.Application.Models.AuthModels;
+
+namespace MainTz.Application.Services
 {
     public interface ITokenService
     {
-        public string CreateAccessToken(string role, string name);
-        public string CreateRefreshToken(string role, string name);
+        public AuthTokensModel CreateNewTokensModel(string role, string name, int id);
+        public bool CheckHealthToken(string token);
     }
 }

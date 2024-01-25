@@ -141,7 +141,11 @@ namespace MainTz.Infrastructure.Repositories
         {
             await using(var context = _dbContextFactory.CreateDbContext())
             {
+                var roleEntity = context.Roles.FirstOrDefault(r => r.Name == user.Role.Name);
                 var userEntity = _mapper.Map<UserEntity>(user);
+                if (roleEntity != null)
+                    userEntity.Role = roleEntity;
+
                 context.Users.Add(userEntity);
                 await context.SaveChangesAsync();
             }

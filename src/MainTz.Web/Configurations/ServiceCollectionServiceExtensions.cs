@@ -12,8 +12,8 @@ namespace MainTz.Web.Configurations
             services.AddScoped<IMinioService, MinioService>();
             services.AddScoped<IModelService, ModelService>();
             services.AddScoped<IBrandService, BrandService>();
-            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICarService, CarService>();
 
             services.AddTransient<ITokenService, TokenService>();

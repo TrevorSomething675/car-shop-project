@@ -34,6 +34,7 @@ namespace MainTz.Web.Controllers
         {
             if(customCarsModel.CarsResponse == null)
             {
+                var id = _contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value;
                 if (_contextAccessor.HttpContext.User.Identity.Name != null)
                 {
                     var user = await _userService.GetUserByNameAsync(_contextAccessor.HttpContext.User.Identity.Name);

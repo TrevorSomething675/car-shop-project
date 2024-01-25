@@ -24,27 +24,6 @@ namespace MainTz.Web.Controllers
             _tokenService = tokenService;
             _mapper = mapper;
         }
-        /// <summary>
-        /// Получение токена из сервиса, путём отправки запроса с ролью
-        /// </summary>
-        /// <param name="role"></param>
-        /// <returns></returns>
-        [HttpPost]
-        public async Task<IResult> GetToken([FromBody] string role, string name) // отправка сообщения и получение токена из AuthApi
-        {
-            var tokensModel = new TokensModel
-            {
-                RefreshToken = _tokenService.CreateRefreshToken(role, name),
-                AccessToken = _tokenService.CreateAccessToken(role, name),
-                Role = role
-            };
-
-            return Results.Json(tokensModel);
-        }
-        /// <summary>
-        /// Получение разметки с формой логина
-        /// </summary>
-        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> Login()
         {
@@ -54,7 +33,7 @@ namespace MainTz.Web.Controllers
         /// Отправка формы логина, она возрвращает json, js код в FormScripts.js 
         /// получает её и в зависимости от роли перенаправляет пользователя на страницу роли.
         /// </summary>
-        /// <param name="userDto">Модель, которая приходит с фронта</param>
+        /// <param name="loginUserRequest">Модель, которая приходит с фронта</param>
         /// <returns></returns>
         [HttpPost]
         public async Task<IResult> LoginNormal(LoginUserRequest loginUserRequest)
@@ -68,7 +47,7 @@ namespace MainTz.Web.Controllers
             if (loginUserRequest.Password != user?.Password || user == null)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
-            var tokens = await GetToken(user.Role.Name, user.Name);
+            var tokens = _tokenService.CreateNewTokensModel(user.Role.Name, user.Name, user.Id);
 
             return Results.Json(tokens);
         }
@@ -84,7 +63,7 @@ namespace MainTz.Web.Controllers
             if (loginUserRequest.Password != user?.Password || user == null)
                 return Results.Json(new ErrorViewModel { ErrorMessage = "Неверный логин или пароль" });
 
-            var tokens = await GetToken(user.Role.Name, user.Name);
+            var tokens = _tokenService.CreateNewTokensModel(user.Role.Name, user.Name, user.Id);
 
             return Results.Json(tokens);
         }

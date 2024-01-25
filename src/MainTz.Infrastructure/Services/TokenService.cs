@@ -1,4 +1,5 @@
 ﻿using MainTz.Application.Models.OptionsModels;
+using MainTz.Application.Models.AuthModels;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Options;
@@ -16,14 +17,14 @@ namespace MainTz.Infrastructure.Services
             _authOptions = authOptions.Value;
         }
 
-        public string CreateAccessToken(string role, string name)
+        public AuthTokensModel CreateNewTokensModel(string role, string name, int id)
         {
             var claims = new List<Claim> {
                 new Claim(ClaimTypes.Role, role),
-                new Claim(ClaimTypes.Name, name)
-                };
-
-            var jwt = new JwtSecurityToken(
+                new Claim(ClaimTypes.Name, name),
+                new Claim("Id", id.ToString())
+            };
+            var jwtAccess = new JwtSecurityToken(
                     issuer: _authOptions.Issuer,
                     audience: _authOptions.Audience,
                     claims: claims,
@@ -33,17 +34,7 @@ namespace MainTz.Infrastructure.Services
                             Encoding.UTF8.GetBytes(_authOptions.Key)),
                         SecurityAlgorithms.HmacSha256)
                     );
-
-            return new JwtSecurityTokenHandler().WriteToken(jwt);
-        }
-
-        public string CreateRefreshToken(string role, string name)
-        {
-            var claims = new List<Claim> { 
-                new Claim(ClaimTypes.Role, role),
-                new Claim(ClaimTypes.Name, name)
-            };
-            var jwt = new JwtSecurityToken(
+            var jwtRefresh = new JwtSecurityToken(
                     issuer: _authOptions.Issuer,
                     audience: _authOptions.Audience,
                     claims: claims,
@@ -53,8 +44,24 @@ namespace MainTz.Infrastructure.Services
                             Encoding.UTF8.GetBytes(_authOptions.Key)),
                         SecurityAlgorithms.HmacSha256)
                     );
+            var authTokenModel = new AuthTokensModel
+            {
+                AccessToken = new JwtSecurityTokenHandler().WriteToken(jwtAccess),
+                RefreshToken = new JwtSecurityTokenHandler().WriteToken(jwtRefresh),
+                Role = role,
+                UserId = id,
+                UserName = name
+            };
+            return authTokenModel;
+        }
+        public bool CheckHealthToken(string token)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var resultToken = handler.ReadJwtToken(token);
+            if(resultToken.ValidTo < DateTime.Now)
+                return false;
 
-            return new JwtSecurityTokenHandler().WriteToken(jwt);
+            return true;
         }
     }
 }
