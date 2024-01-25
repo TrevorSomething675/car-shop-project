@@ -1,34 +1,9 @@
 ﻿@using MainTz.Web.ViewModels.UserViewModels
 @model IEnumerable<UserResponse>
 
-<div class="container-fluid custom-text-color text-center py-2">
-    <div class="row custom-dark-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        Id 
-                    </th>
-                    <th>
-                        Имя
-                    </th>
-                    <th>
-                        Почта
-                    </th>
-                    <th>
-                        Пароль
-                    </th>
-                    <th>
-                        Роль
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var user in Model)
-                {
-                    @await Html.PartialAsync("GetUserPartial", user)
-                }
-            </tbody>
-        </table>
-    </div>
-</div>
+@foreach (var user in Model)
+{
+    <tr id="userContainer_@user.Id">
+        @await Html.PartialAsync("GetUserPartial", user)
+    </tr>
+}

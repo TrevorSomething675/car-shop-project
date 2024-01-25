@@ -15,6 +15,11 @@
 
 /*========================Global========================*/
 
+.custom-check-box {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
 .custom-warning-btn {
     background-color: var(--dark-gray-color);
     color: var(--warning-color);

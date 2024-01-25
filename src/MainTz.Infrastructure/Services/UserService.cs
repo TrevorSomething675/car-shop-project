@@ -87,8 +87,8 @@ namespace MainTz.Infrastructure.Services
         public async Task<List<User>> GetSortedUsersByRole()
         {
             var users = await _userRepository.GetUsersAsync();
-            users.OrderBy(u => u.Role.Name).ToList();
-            return users;
+            var sortedUsers = users.OrderBy(u => u.Role.Name).ToList();
+            return sortedUsers;
         }
 
         public async Task<User> ChangeRoleForUserByIdAsync(int id)
@@ -96,7 +96,7 @@ namespace MainTz.Infrastructure.Services
             var user = await _userRepository.GetUserByIdAsync(id);
             if (user.Role.Name == "User")
                 user.Role = await _roleRepository.GetRoleByNameAsync("Manager");
-            if (user.Role.Name == "Manager")
+            else if (user.Role.Name == "Manager")
                 user.Role = await _roleRepository.GetRoleByNameAsync("User");
 
             var updatedUser = await _userRepository.UpdateAsync(user);

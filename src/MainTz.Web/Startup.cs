@@ -89,6 +89,13 @@ namespace MainTz.Web
                         {
                             new UserEntity
                             {
+                                Name = "Manager1",
+                                Email = "Manager1@mail.ru",
+                                Password = "123123123Qq",
+                                Role = context.Roles.Where(role => role.Name == "Manager").FirstOrDefault()
+                            },
+                            new UserEntity
+                            {
                                 Name = "Admin",
                                 Email = "Admin@mail.ru",
                                 Password = "123123123Qq",
@@ -154,13 +161,6 @@ namespace MainTz.Web
                             },
                             new UserEntity
                             {
-                                Name = "Manager",
-                                Email = "Manager@mail.ru",
-                                Password = "123123123Qq",
-                                Role = context.Roles.Where(role => role.Name == "Manager").FirstOrDefault()
-                            },
-                            new UserEntity
-                            {
                                 Name = "User",
                                 Email = "User@mail.ru",
                                 Password = "123123123Qq",
@@ -182,6 +182,13 @@ namespace MainTz.Web
                                         "Description2Description2Description2Description2Description2"
                                     },
                                 }
+                            },
+                            new UserEntity
+                            {
+                                Name = "Manager2",
+                                Email = "Manager2@mail.ru",
+                                Password = "123123123Qq",
+                                Role = context.Roles.Where(role => role.Name == "Manager").FirstOrDefault()
                             },
                         };
                         context.Users.AddRange(users);

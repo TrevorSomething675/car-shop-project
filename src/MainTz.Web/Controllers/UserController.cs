@@ -19,7 +19,7 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetUsers()
         {
-            var users = await _userService.GetSortedUsersByRole();
+            var users = await _userService.GetUsersAsync();
             var userResponse = _mapper.Map<List<UserResponse>>(users);
             var model = new UsersViewModel()
             {
@@ -29,7 +29,7 @@ namespace MainTz.Web.Controllers
             };
             return View(model);
         }
-        public async Task<IActionResult> ChangeUserRole(int id)
+        public async Task<IActionResult> ChangeUserRole([FromBody]int id)
         {
             var user = await _userService.ChangeRoleForUserByIdAsync(id);
             var userResponse = _mapper.Map<UserResponse>(user);
@@ -39,11 +39,21 @@ namespace MainTz.Web.Controllers
         {
             return PartialView(userResponse);
         }
-        public async Task<IActionResult> GetUsersPartial([FromBody] int pageNumber = 1)
+        [HttpPost]
+        public async Task<IActionResult> GetUsersPartial([FromBody]GetUsersRequest getUsersRequest)
         {
-            var users = await _userService.GetUsersAsync();
-            var userResponse = _mapper.Map<List<UserResponse>>(users);
-            return PartialView(userResponse);
+            if (getUsersRequest.IsSortedByRole)
+            {
+                var sortedUsers = await _userService.GetSortedUsersByRole();
+                var sortedUsersResponse = _mapper.Map<List<UserResponse>>(sortedUsers);
+                return PartialView(sortedUsersResponse);
+            }
+            else
+            {
+                var users = await _userService.GetUsersAsync();
+                var userResponse = _mapper.Map<List<UserResponse>>(users);
+                return PartialView(userResponse);
+            }
         }
         public async Task<IActionResult> CreateUser(UserRequest userRequest)
         {
