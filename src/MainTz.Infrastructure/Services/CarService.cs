@@ -39,7 +39,7 @@ namespace MainTz.Infrastructure.Services
         }
         public async Task<List<Car>> GetCarsAsync()
         {
-            var carsEntity = await _carRepository.GetCarsAsync();
+            var carsEntity = await _carRepository.GetCarsAsync(1,1);
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
             return carsDomainEntity;
         }
@@ -70,6 +70,7 @@ namespace MainTz.Infrastructure.Services
                 }
             }
             return carsDomainEntity;
+
         }
         public async Task<List<Car>> GetFavoriteCarsAsync(int pageNumber = 1)
         {
@@ -79,16 +80,9 @@ namespace MainTz.Infrastructure.Services
 
             return carsDomainEntity;
         }
-        public async Task<List<Car>> GetCarsWithPaggingAsync(int pageNumber = 1)
+        public async Task<List<Car>> GetCarsWithPaggingAsync(int userId, int? pageNumber = null)
         {
-            var totalCarsInPage = 8f;
-            var pageCount = Math.Ceiling(_carRepository.GetCarsAsync().Result.Count() / totalCarsInPage);
-
-            var carsEntity = _carRepository.GetCarsAsync().Result
-                .Take((int)(totalCarsInPage * pageNumber))
-                .Skip((int)(totalCarsInPage * (pageNumber - 1)))
-                .ToList();
-
+            var carsEntity = await _carRepository.GetCarsAsync(userId, pageNumber);
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
             foreach (var car in carsDomainEntity)
             {

@@ -45,14 +45,39 @@ namespace MainTz.Infrastructure.Repositories
 				return car;
 			}
 		}
-		public async Task<List<Car>> GetCarsAsync()
+		public async Task<List<Car>> GetCarsAsync(int userId, int? pageNumber = null)
         {
             await using(var context = _dbContextFactory.CreateDbContext())
             {
-                var carEntities = await context.Cars
-                    .Include(car => car.Images)
-                    .Where(car => car.IsVisible)
-                    .ToListAsync();
+                var totalCarInPage = 8f;
+                var carEntities = new List<CarEntity>();
+                var pageCount = (int)Math.Ceiling(context.Cars.AsNoTracking().ToList().Count() / totalCarInPage);
+                var userEntity = context.Users
+                    .Include(u=>u.Role).FirstOrDefault(u => u.Id == userId);
+
+
+                if((userEntity?.Role?.Name == "Admin" || userEntity?.Role?.Name == "Manager") && userEntity != null && pageNumber != null)
+                {
+                    carEntities = context.Cars
+                        .Include(c => c.Images).ToList()
+                        .Take((int)(totalCarInPage * pageNumber))
+                        .Skip((int)(totalCarInPage * (pageNumber - 1)))
+                        .ToList();
+                }
+                else if(pageNumber != null)
+                {
+                    carEntities = context.Cars
+                        .Include(c => c.Images).Where(c => c.IsVisible == true)
+                        .Take((int)(totalCarInPage * pageNumber))
+                        .Skip((int)(totalCarInPage * (pageNumber - 1)))
+                        .ToList();
+                }
+                else
+                {
+                    carEntities = context.Cars
+                        .Include(c => c.Images)
+                        .ToList();
+                }
                 var cars = _mapper.Map<List<Car>>(carEntities);
                 return cars;
             }

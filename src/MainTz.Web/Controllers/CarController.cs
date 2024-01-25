@@ -30,40 +30,20 @@ namespace MainTz.Web.Controllers
             _carService = carService;
             _mapper = mapper;
         }
-        public async Task<IActionResult> GetCars(int pageNumber = 1, CarsViewModel customCarsModel = null)
+        public async Task<IActionResult> GetCars(int pageNumber = 1)
         {
-            if(customCarsModel.CarsResponse == null)
-            {
-                var id = _contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value;
-                if (_contextAccessor.HttpContext.User.Identity.Name != null)
-                {
-                    var user = await _userService.GetUserByNameAsync(_contextAccessor.HttpContext.User.Identity.Name);
-                    if(user.Role.Name == "Manager" || user.Role.Name == "Admin")
-                    {
-						var carsModelWithHidden = await _carService.GetCarsWithPaggingWithHiddenAsync(pageNumber);
-						var carsResponseWithHidden = _mapper.Map<List<CarResponse>>(carsModelWithHidden);
-						var totalCarsWithHidden = (await _carService.GetCarsWithHiddenAsync()).Count() / 8f;
-						var modelCarsWithHidden = new CarsViewModel
-						{
-							PageCount = (int)Math.Ceiling(totalCarsWithHidden),
-							PageNumber = pageNumber,
-							CarsResponse = carsResponseWithHidden,
-						};
-						return View(modelCarsWithHidden);
-					}
-                }
-				var carsModel = await _carService.GetCarsWithPaggingAsync(pageNumber);
-                var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-                var totalCars = (await _carService.GetCarsAsync()).Count() / 8f;
-                var model = new CarsViewModel
-                {
-                    PageCount = (int)Math.Ceiling(totalCars),
-                    PageNumber = pageNumber,
-                    CarsResponse = carsResponse,
-                };
-                return View(model);
-            }
-            return View(customCarsModel);
+            var id = Convert.ToInt32((_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value));
+
+            var carsModel = await _carService.GetCarsWithPaggingAsync(id, pageNumber);
+			var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
+			var totalCarsWithHidden = (await _carService.GetCarsWithPaggingAsync(id, null)).Count() / 8f;
+			var modelCarsWithHidden = new CarsViewModel
+			{
+				PageCount = (int)Math.Ceiling(totalCarsWithHidden),
+				PageNumber = pageNumber,
+				CarsResponse = carsResponse,
+			};
+			return View(modelCarsWithHidden);
         }
         public async Task<IActionResult> GetBigCarCard(int id)
         {
@@ -83,8 +63,10 @@ namespace MainTz.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> GetCarsPartial([FromBody]int pageNumber = 1)
         {
-           var carsDomainModels = await _carService.GetCarsWithPaggingAsync(pageNumber);
-           var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
+            var id = Convert.ToInt32((_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value));
+
+            var carsDomainModels = await _carService.GetCarsWithPaggingAsync(id, pageNumber);
+            var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
 
             return PartialView(carsResponse);
         }
