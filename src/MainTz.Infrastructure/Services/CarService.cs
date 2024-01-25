@@ -37,18 +37,6 @@ namespace MainTz.Infrastructure.Services
 
             return car;
         }
-        public async Task<List<Car>> GetCarsAsync()
-        {
-            var carsEntity = await _carRepository.GetCarsAsync(1,1);
-            var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
-            return carsDomainEntity;
-        }
-        public async Task<List<Car>> GetCarsWithHiddenAsync()
-        {
-            var carsEntity = await _carRepository.GetCarsWithHiddenAsync();
-            var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
-            return carsDomainEntity;
-        }
         public async Task<List<Car>> GetFavoriteCarsWithPaggingAsync(int pageNumber = 1)
         {
             var totalCarsInPage = 8f;
@@ -80,7 +68,7 @@ namespace MainTz.Infrastructure.Services
 
             return carsDomainEntity;
         }
-        public async Task<List<Car>> GetCarsWithPaggingAsync(int userId, int? pageNumber = null)
+        public async Task<List<Car>> GetCarsAsync(int userId, int? pageNumber = null)
         {
             var carsEntity = await _carRepository.GetCarsAsync(userId, pageNumber);
             var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
@@ -164,26 +152,5 @@ namespace MainTz.Infrastructure.Services
                 throw new Exception(ex.Message);
             }
         }
-
-		public async Task<List<Car>> GetCarsWithPaggingWithHiddenAsync(int pageNumber = 1)
-		{
-			var totalCarsInPage = 8f;
-			var pageCount = Math.Ceiling(_carRepository.GetCarsWithHiddenAsync().Result.Count() / totalCarsInPage);
-
-			var carsEntity = _carRepository.GetCarsWithHiddenAsync().Result
-				.Take((int)(totalCarsInPage * pageNumber))
-				.Skip((int)(totalCarsInPage * (pageNumber - 1)))
-				.ToList();
-
-			var carsDomainEntity = _mapper.Map<List<Car>>(carsEntity);
-			foreach (var car in carsDomainEntity)
-			{
-				foreach (var image in car.Images)
-				{
-					image.FileBase64String = await _minioService.GetObjectAsync(image.Path);
-				}
-			}
-			return carsDomainEntity;
-		}
 	}
 }

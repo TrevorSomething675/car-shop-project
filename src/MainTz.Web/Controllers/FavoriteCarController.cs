@@ -49,7 +49,7 @@ namespace MainTz.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> GetFavoriteCarsPartial([FromBody] int pageNumber = 1)
         {
-            var carsDomainModels = await _carService.GetCarsWithPaggingAsync(pageNumber);
+            var carsDomainModels = await _carService.GetCarsAsync(pageNumber);
             var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
 
             return PartialView(carsResponse);

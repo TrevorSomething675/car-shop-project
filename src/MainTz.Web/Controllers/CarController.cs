@@ -34,9 +34,9 @@ namespace MainTz.Web.Controllers
         {
             var id = Convert.ToInt32((_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value));
 
-            var carsModel = await _carService.GetCarsWithPaggingAsync(id, pageNumber);
+            var carsModel = await _carService.GetCarsAsync(id, pageNumber);
 			var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-			var totalCarsWithHidden = (await _carService.GetCarsWithPaggingAsync(id, null)).Count() / 8f;
+			var totalCarsWithHidden = (await _carService.GetCarsAsync(id, null)).Count() / 8f;
 			var modelCarsWithHidden = new CarsViewModel
 			{
 				PageCount = (int)Math.Ceiling(totalCarsWithHidden),
@@ -65,7 +65,7 @@ namespace MainTz.Web.Controllers
         {
             var id = Convert.ToInt32((_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value));
 
-            var carsDomainModels = await _carService.GetCarsWithPaggingAsync(id, pageNumber);
+            var carsDomainModels = await _carService.GetCarsAsync(id, pageNumber);
             var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
 
             return PartialView(carsResponse);
