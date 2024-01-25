@@ -15,6 +15,20 @@
 
 /*========================Global========================*/
 
+.custom-btn-danger-bg-dark {
+    background-color: var(--dark-gray-color);
+    color: var(--dark-red-color);
+    border-radius: 5px;
+    border: 2px solid var(--dark-gray-color);
+    transition: .3s;
+}
+
+.custom-btn-danger-bg-dark:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--light-text-color);
+    border: 2px solid var(--dark-gray-color);
+}
+
 .custom-check-box {
     width: 0.9rem;
     height: 0.9rem;

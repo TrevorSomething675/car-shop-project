@@ -160,11 +160,11 @@ namespace MainTz.Infrastructure.Repositories
                 return addedCar;
             }
         }
-        public async Task DeleteAsync(Car car)
+        public async Task RemoveCarByIdAsync(int id)
         {
             await using(var context = _dbContextFactory.CreateDbContext())
             {
-                var carEntity = _mapper.Map<CarEntity>(car);
+                var carEntity = context.Cars.FirstOrDefault(c => c.Id == id);
                 context.Cars.Remove(carEntity);
                 await context.SaveChangesAsync();
             }

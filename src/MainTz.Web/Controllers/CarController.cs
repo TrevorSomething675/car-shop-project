@@ -6,6 +6,7 @@ using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
+using MainTz.Web.ViewModels.UserViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -155,5 +156,20 @@ namespace MainTz.Web.Controllers
 
             return Results.Json(carResponse.Id);
 		}
+        public async Task<IResult> RemoveCarById([FromBody]int id)
+        {
+            var newNotification = new Notification()
+            {
+                Header = $"Машина была удалена {id}",
+                Description = $"Машина была снята с продажи {id}"
+            };
+            var notificationHasBeenSended = await _notificationService.SendNotificationOnCarIdWithDescription(id, newNotification);
+            var carHasBeenDeleted = await _carService.RemoveCarByIdAsync(id);
+
+            if (carHasBeenDeleted && notificationHasBeenSended)
+                return Results.Ok();
+            else
+                return Results.BadRequest();
+        }
 	}
 }

@@ -121,11 +121,11 @@ namespace MainTz.Infrastructure.Services
                 throw new Exception(ex.Message);
             }
         }
-        public async Task<bool> DeleteCarAsync(Car car)
+        public async Task<bool> RemoveCarByIdAsync(int id)
         {
             try
             {
-                await _carRepository.DeleteAsync(car);
+                await _carRepository.RemoveCarByIdAsync(id);
                 return true;
             }
             catch (Exception ex)
