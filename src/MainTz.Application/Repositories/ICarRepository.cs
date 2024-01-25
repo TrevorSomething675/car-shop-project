@@ -10,7 +10,6 @@ namespace MainTz.Application.Repositories
         public Task<List<Car>> GetCarsWithHiddenAsync();
         public Task<Car> CreateAsync(Car car);
         public Task<Car> UpdateAsync(Car car);
-        //public Task<Car> UpdateImagesInCarAsync(Car car);
-        public Task DeleteAsync(Car car);
+        public Task RemoveCarByIdAsync(int id);
     }
 }

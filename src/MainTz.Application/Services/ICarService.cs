@@ -15,7 +15,7 @@ namespace MainTz.Application.Services
         public Task<Car> ChangeCarVisible(int id);
 
         public Task<Car> CreateCarAsync(Car car);
-        public Task<bool> DeleteCarAsync(Car car);
+        public Task<bool> RemoveCarByIdAsync(int id);
         public Task<Car> UpdateCarAsync(Car car);
     }
 }

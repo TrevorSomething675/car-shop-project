@@ -19,7 +19,7 @@ namespace MainTz.Infrastructure.Repositories
 		{
 			await using(var context = _dbContextFactory.CreateDbContext())
 			{
-				var roleEntity = await context.Roles.FirstOrDefaultAsync(role => role.RoleName == roleName);
+				var roleEntity = await context.Roles.FirstOrDefaultAsync(role => role.Name == roleName);
 				var role = _mapper.Map<Role>(roleEntity);
 				return role;
 			}

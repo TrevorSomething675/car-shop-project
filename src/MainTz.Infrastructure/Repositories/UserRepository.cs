@@ -5,7 +5,6 @@ using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
 using AutoMapper;
-using System.Diagnostics.Contracts;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -23,6 +22,17 @@ namespace MainTz.Infrastructure.Repositories
             _dbContextFactory = dbContextFactory;
             _mapper = mapper;
             _logger = logger;
+        }
+        public async Task<User> GetUserByIdAsync(int id)
+        {
+            await using(var context = _dbContextFactory.CreateDbContext())
+            {
+                var userEntity = await context.Users
+                    .Include(u => u.Role)
+                    .FirstOrDefaultAsync(u => u.Id == id);
+                var user = _mapper.Map<User>(userEntity);
+                return user;
+            }
         }
         public async Task<User> GetUserByNameAsync(string name)
         {
@@ -55,6 +65,7 @@ namespace MainTz.Infrastructure.Repositories
             await using (var context = _dbContextFactory.CreateDbContext())
             {
                 var userEntities = await context.Users
+                    .Include(u => u.Role)
                     .Include(u => u.Notifications)
                     .Include(u => u.Cars)
                     .ToListAsync();
@@ -63,49 +74,55 @@ namespace MainTz.Infrastructure.Repositories
                 return users;
             }
         }
-        public async Task UpdateAsync(User user)
+        public async Task<User> UpdateAsync(User user)
         {
             await using(var context = _dbContextFactory.CreateDbContext())
             {
-                var updatedUserEntity = _mapper.Map<UserEntity>(user);
+                var userToUpdateEntity = _mapper.Map<UserEntity>(user);
                 var userEntity = await context.Users
+                    .Include(u => u.Role)
                     .Include(u => u.Cars)
                     .Include(u => u.Notifications)
-                    .FirstOrDefaultAsync(u => u.Id == updatedUserEntity.Id);
+                    .FirstOrDefaultAsync(u => u.Id == userToUpdateEntity.Id);
 
-                userEntity.Name = updatedUserEntity.Name;
-                userEntity.Password = updatedUserEntity.Password;
+                userEntity.Name = userToUpdateEntity.Name;
+                userEntity.Password = userToUpdateEntity.Password;
 
+                if(userToUpdateEntity.Role.Name != userEntity.Role.Name)
+                {
+                    var roleEntity = context.Roles.FirstOrDefault(r => r.Name == userToUpdateEntity.Role.Name);
+                    userEntity.Role = roleEntity;
+                }
                 if(user.Notifications != null)
                 {
-                    if(userEntity.Notifications.Count() < updatedUserEntity.Notifications.Count) 
+                    if(userEntity.Notifications.Count() < userToUpdateEntity.Notifications.Count) 
                     {
                         foreach (var notification in userEntity.Notifications)
                         {
-                            var notificationToRemove = updatedUserEntity.Notifications.FirstOrDefault(n => n.Id == notification.Id);
-                            updatedUserEntity.Notifications.Remove(notificationToRemove);
+                            var notificationToRemove = userToUpdateEntity.Notifications.FirstOrDefault(n => n.Id == notification.Id);
+                            userToUpdateEntity.Notifications.Remove(notificationToRemove);
                         }
-                        userEntity.Notifications.AddRange(updatedUserEntity.Notifications);
+                        userEntity.Notifications.AddRange(userToUpdateEntity.Notifications);
                     }
                 }
                 if (user.Cars != null)
                 {
-                    if (userEntity.Cars.Count() < updatedUserEntity.Cars.Count())
+                    if (userEntity.Cars.Count() < userToUpdateEntity.Cars.Count())
                     {
                         foreach (var car in userEntity.Cars)
                         {
-                            var carToRemove = updatedUserEntity.Cars.FirstOrDefault(c => c.Id == car.Id);
-                            updatedUserEntity.Cars.Remove(carToRemove);
+                            var carToRemove = userToUpdateEntity.Cars.FirstOrDefault(c => c.Id == car.Id);
+                            userToUpdateEntity.Cars.Remove(carToRemove);
                         }
-                        userEntity.Cars.AddRange(updatedUserEntity.Cars);
+                        userEntity.Cars.AddRange(userToUpdateEntity.Cars);
                     }
-                    else if (userEntity.Cars.Count() > updatedUserEntity.Cars.Count())
+                    else if (userEntity.Cars.Count() > userToUpdateEntity.Cars.Count())
                     {
                         var userEntitiesId = userEntity.Cars.Select(c => c.Id).ToList();
 
                         foreach (var carId in userEntitiesId)
                         {
-                            var carToRemove = updatedUserEntity.Cars.FirstOrDefault(c => c.Id == carId);
+                            var carToRemove = userToUpdateEntity.Cars.FirstOrDefault(c => c.Id == carId);
                             if(carToRemove == null)
                             {
                                 var carEntityToRemove = userEntity.Cars.First(c => c.Id == carId);
@@ -115,6 +132,8 @@ namespace MainTz.Infrastructure.Repositories
                     }
                 }
                 await context.SaveChangesAsync();
+                var updatedUser = _mapper.Map<User>(userEntity);
+                return updatedUser;
             }
         }
 
@@ -133,19 +152,6 @@ namespace MainTz.Infrastructure.Repositories
             {
                 var userEntity = _mapper.Map<UserEntity>(user);
                 context.Users.Remove(userEntity);
-                await context.SaveChangesAsync();
-            }
-        }
-        public async Task RemoveCarFromUser(User userModel, Car carModel)
-        {
-            await using(var context = _dbContextFactory.CreateDbContext())
-            {
-                var userEntity = context.Users
-                    .Include(u => u.Cars)
-                    .FirstOrDefault(user => user.Name == userModel.Name);
-                var carEntity = context.Cars.FirstOrDefault(car => car.Name == carModel.Name);
-
-                userEntity.Cars.Remove(carEntity);
                 await context.SaveChangesAsync();
             }
         }

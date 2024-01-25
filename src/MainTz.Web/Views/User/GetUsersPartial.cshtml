@@ -1,0 +1,9 @@
+﻿@using MainTz.Web.ViewModels.UserViewModels
+@model IEnumerable<UserResponse>
+
+@foreach (var user in Model)
+{
+    <tr id="userContainer_@user.Id">
+        @await Html.PartialAsync("GetUserPartial", user)
+    </tr>
+}
