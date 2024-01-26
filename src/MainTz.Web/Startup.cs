@@ -218,7 +218,7 @@ namespace MainTz.Web
 
                         var cars = new List<CarEntity>();
 
-                        for (int i = 0; i < 15; i++)
+                        for (int i = 0; i < 25; i++)
                         {
                             var car = new CarEntity
                             {

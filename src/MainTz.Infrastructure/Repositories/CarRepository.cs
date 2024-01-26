@@ -1,8 +1,10 @@
 ﻿using MainTz.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using MainTa.Database.Context;
+using MainTz.Core.Options;
 using AutoMapper;
 
 namespace MainTz.Infrastructure.Repositories
@@ -13,10 +15,13 @@ namespace MainTz.Infrastructure.Repositories
     public class CarRepository : ICarRepository
     {
         private readonly IDbContextFactory<MainContext> _dbContextFactory;
+        private readonly CarsOptions _carsOptions;
         private readonly IMapper _mapper;
-        public CarRepository(IMapper mapper, IDbContextFactory<MainContext> dbContextFactory)
+        public CarRepository(IMapper mapper, IDbContextFactory<MainContext> dbContextFactory,
+            IOptions<CarsOptions> carsOptions)
         {
             _dbContextFactory = dbContextFactory;
+            _carsOptions = carsOptions.Value;
             _mapper = mapper;
         }
         public async Task<Car> GetCarByIdAsync(int id)
@@ -45,31 +50,56 @@ namespace MainTz.Infrastructure.Repositories
 				return car;
 			}
 		}
-		public async Task<List<Car>> GetCarsAsync(int userId, int? pageNumber = null)
+        public async Task<List<Car>> GetFavoriteCarsAsync(int userId, int? pageNumber = null)
+        {
+            await using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var favoriteCars = new List<Car>();
+                if(pageNumber != null)
+                {
+                    var carsEntities = context.Cars
+                        .Include(c => c.Images)
+                        .Include(c => c.Users)
+                        .Where(c => c.Users.FirstOrDefault(u => u.Id == userId) != null)
+                        .Take((int)(_carsOptions.TotalCarInPage * pageNumber))
+                        .Skip((int)(_carsOptions.TotalCarInPage * (pageNumber - 1)))
+                        .ToList();
+                    favoriteCars = _mapper.Map<List<Car>>(carsEntities);
+                }
+                else
+                {
+                    var carsEntities = context.Cars
+                        .Include(c => c.Images)
+                        .Include(c => c.Users)
+                        .Where(c => c.Users.FirstOrDefault(u => u.Id == userId) != null)
+                        .ToList();
+                    favoriteCars = _mapper.Map<List<Car>>(carsEntities);
+                }
+                return favoriteCars;
+            }
+        }
+        public async Task<List<Car>> GetCarsAsync(int userId, int? pageNumber = null)
         {
             await using(var context = _dbContextFactory.CreateDbContext())
             {
-                var totalCarInPage = 8f;
                 var carEntities = new List<CarEntity>();
-                var pageCount = (int)Math.Ceiling(context.Cars.AsNoTracking().ToList().Count() / totalCarInPage);
                 var userEntity = context.Users
                     .Include(u=>u.Role).FirstOrDefault(u => u.Id == userId);
-
 
                 if((userEntity?.Role?.Name == "Admin" || userEntity?.Role?.Name == "Manager") && userEntity != null && pageNumber != null)
                 {
                     carEntities = context.Cars
                         .Include(c => c.Images).ToList()
-                        .Take((int)(totalCarInPage * pageNumber))
-                        .Skip((int)(totalCarInPage * (pageNumber - 1)))
+                        .Take((int)(_carsOptions.TotalCarInPage * pageNumber))
+                        .Skip((int)(_carsOptions.TotalCarInPage * (pageNumber - 1)))
                         .ToList();
                 }
                 else if(pageNumber != null)
                 {
                     carEntities = context.Cars
                         .Include(c => c.Images).Where(c => c.IsVisible == true)
-                        .Take((int)(totalCarInPage * pageNumber))
-                        .Skip((int)(totalCarInPage * (pageNumber - 1)))
+                        .Take((int)(_carsOptions.TotalCarInPage * pageNumber))
+                        .Skip((int)(_carsOptions.TotalCarInPage * (pageNumber - 1)))
                         .ToList();
                 }
                 else
@@ -82,17 +112,6 @@ namespace MainTz.Infrastructure.Repositories
                 return cars;
             }
         }
-		public async Task<List<Car>> GetCarsWithHiddenAsync()
-        {
-			await using (var context = _dbContextFactory.CreateDbContext())
-			{
-				var carEntities = await context.Cars
-					.Include(car => car.Images)
-					.ToListAsync();
-				var cars = _mapper.Map<List<Car>>(carEntities);
-				return cars;
-			}
-		}
 		public async Task<Car> UpdateAsync(Car car)
 		{
 			await using (var context = _dbContextFactory.CreateDbContext())

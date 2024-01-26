@@ -1,19 +1,22 @@
 ﻿using MainTz.Web.ViewModels.CarViewModels;
 using MainTz.Application.Services;
 using Microsoft.AspNetCore.Mvc;
+using MainTz.Core.Enums;
 using AutoMapper;
 
 namespace MainTz.Web.Controllers
 {
     public class FavoriteCarController : Controller
     {
+        private readonly IHttpContextAccessor _contextAccessor;
         private readonly IFavoriteCarService _favoriteCarService;
         private readonly ICarService _carService;
         private readonly IMapper _mapper;
         public FavoriteCarController(ICarService carService, IMapper mapper,
-            IFavoriteCarService favoriteCarService)
+            IFavoriteCarService favoriteCarService, IHttpContextAccessor contextAccessor)
         {
             _favoriteCarService = favoriteCarService;
+            _contextAccessor = contextAccessor;
             _carService = carService;
             _mapper = mapper;
         }
@@ -34,9 +37,10 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetFavoriteCars(int pageNumber = 1)
         {
-            var carsModel = await _carService.GetFavoriteCarsWithPaggingAsync(pageNumber);
+            var userId = Convert.ToInt32(_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value);
+            var carsModel = await _carService.GetCarsAsync(userId, pageNumber, carType: CarType.Favorite);
+            var totalCars = (await _carService.GetCarsAsync(userId, null, carType: CarType.Favorite)).Count() / 8f;
             var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-            var totalCars = (await _carService.GetFavoriteCarsAsync()).Count() / 8f;
             var favoriteCarsModel = new CarsViewModel
             {
                 PageCount = (int)Math.Ceiling(totalCars),
@@ -49,7 +53,8 @@ namespace MainTz.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> GetFavoriteCarsPartial([FromBody] int pageNumber = 1)
         {
-            var carsDomainModels = await _carService.GetCarsAsync(pageNumber);
+            var id = Convert.ToInt32(_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value);
+            var carsDomainModels = await _carService.GetCarsAsync(id, pageNumber, carType: CarType.Favorite);
             var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
 
             return PartialView(carsResponse);

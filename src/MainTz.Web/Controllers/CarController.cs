@@ -6,7 +6,6 @@ using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
-using MainTz.Web.ViewModels.UserViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -16,23 +15,21 @@ namespace MainTz.Web.Controllers
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly IBrandService _brandService;
         private readonly IModelService _modelService;
-        private readonly IUserService _userService;
         private readonly ICarService _carService;
 		private readonly IMapper _mapper;
         public CarController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor,
-            IBrandService brandService, IModelService modelService, IUserService userService, INotificationService notificationService)
+            IBrandService brandService, IModelService modelService, INotificationService notificationService)
         {
             _notificationService = notificationService;
             _contextAccessor = contextAccessor;
             _brandService = brandService;
             _modelService = modelService;
-            _userService = userService;
             _carService = carService;
             _mapper = mapper;
         }
         public async Task<IActionResult> GetCars(int pageNumber = 1)
         {
-            var id = Convert.ToInt32((_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value));
+            var id = Convert.ToInt32(_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value);
 
             var carsModel = await _carService.GetCarsAsync(id, pageNumber);
 			var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
@@ -63,7 +60,7 @@ namespace MainTz.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> GetCarsPartial([FromBody]int pageNumber = 1)
         {
-            var id = Convert.ToInt32((_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value));
+            var id = Convert.ToInt32(_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value);
 
             var carsDomainModels = await _carService.GetCarsAsync(id, pageNumber);
             var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
