@@ -21,8 +21,8 @@ namespace MainTz.Web.Views.Shared.Components.Notifications
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var contextUser = _httpContextAccessor.HttpContext.User.Identity.Name;
-            var user = await _userService.GetUserByNameAsync(contextUser);
+            var userId = Convert.ToInt32(_httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(u => u.Type == "Id")?.Value);
+            var user = await _userService.GetUserByIdAsync(userId);
             var userResponse = _mapper.Map<UserResponse>(user);
             var notifications = userResponse.Notifications.Where(notif => notif.IsRead == false);
             var notificationsCount = notifications.Take(5).Count();

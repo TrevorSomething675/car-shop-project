@@ -1,6 +1,7 @@
-﻿using MainTz.Web.ViewModels.UserViewModels;
-using AutoMapper;
+﻿using MainTz.Web.ViewModels.AccountViewModels;
+using MainTz.Web.ViewModels.UserViewModels;
 using MainTz.Application.Models;
+using AutoMapper;
 
 namespace MainTz.Web.Mappings.Profiles
 {
@@ -14,6 +15,9 @@ namespace MainTz.Web.Mappings.Profiles
             CreateMap<RegisterUserRequest, User>();
 
             CreateMap<LoginUserRequest, User>();
+
+            CreateMap<UpdatePasswordUserRequest, User>();
+            CreateMap<UpdateLoginUserRequest, User>();
         }
     }
 }

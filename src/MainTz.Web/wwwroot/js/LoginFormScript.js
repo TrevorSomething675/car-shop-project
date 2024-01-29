@@ -24,7 +24,7 @@ loginForm.addEventListener('submit', function (event) {
             }
         })
         .then(data => {
-            if (data.errorMessage !== '') {
+            if (data.errorMessage != undefined) {
                 console.log(`Возникла ошибка: ${data.errorMessage}`);
                 $.ajax({
                     url: '/Message/ErrorViewPartial',

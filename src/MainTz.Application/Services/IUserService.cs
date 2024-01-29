@@ -1,4 +1,5 @@
 ﻿using MainTz.Application.Models;
+using MainTz.Core.Enums;
 
 namespace MainTz.Application.Services
 {
@@ -11,7 +12,7 @@ namespace MainTz.Application.Services
         public Task<List<User>> GetUsersAsync();
         public Task<User> ChangeRoleForUserByIdAsync(int id);
         public Task<bool> CreateAsync(User user);
-        public Task<bool> DeleteAsync(User user);
         public Task<bool> UpdateAsync(User user);
+        public Task<bool> UpdateUserData(User user, int userId);
     }
 }

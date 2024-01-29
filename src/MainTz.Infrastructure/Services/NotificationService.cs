@@ -32,33 +32,6 @@ namespace MainTz.Infrastructure.Services
             var notifications = await _notificationRepository.GetNotificationsByUserAsync(user);
             return notifications;
         }
-        public async Task<bool> UpdateAsync(Notification notification)
-        {
-            try
-            {
-                await _notificationRepository.UpdateAsync(notification);
-                return true;
-            }
-            catch(Exception ex)
-            {
-                _logger.LogInformation(ex.Message);
-                return false;
-            }
-        }
-        public async Task<bool> DeleteAsync(Notification notification)
-        {
-            try
-            {
-                await _notificationRepository.DeleteAsync(notification);
-                return true;
-            }
-            catch(Exception ex)
-            {
-                _logger.LogInformation(ex.Message);
-                return false;
-            }
-        }
-
         public async Task<bool> SendNotificationOnCarIdWithDescription(int carId, Notification notification)
         {
             try

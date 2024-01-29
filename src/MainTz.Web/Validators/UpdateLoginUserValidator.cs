@@ -7,9 +7,9 @@ namespace MainTz.Web.Validators
     {
         public UpdateLoginUserValidator() 
         {
-            RuleFor(updateForm => updateForm.NewName).MinimumLength(8)
+            RuleFor(updateForm => updateForm.Name).MinimumLength(8)
                 .WithMessage("Логин должен содержать больше 7 знаков").NotEmpty();
-            RuleFor(updateForm => updateForm.ConfirmNewName).Equal(updateForm => updateForm.NewName);
+            RuleFor(updateForm => updateForm.ConfirmName).Equal(updateForm => updateForm.Name);
         }
     }
 }

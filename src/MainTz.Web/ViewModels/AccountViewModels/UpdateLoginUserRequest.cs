@@ -2,8 +2,8 @@
 {
     public class UpdateLoginUserRequest
     {
-        public string NewName { get; set; }
-        public string ConfirmNewName { get; set; }
+        public string Name { get; set; }
+        public string ConfirmName { get; set; }
 
     }
 }

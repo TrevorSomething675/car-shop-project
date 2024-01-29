@@ -7,13 +7,13 @@ namespace MainTz.Web.Validators
     {
         public UpdatePasswordUserValidator() 
         {
-            RuleFor(updateForm => updateForm.NewPassword)
+            RuleFor(updateForm => updateForm.Password)
                 .Matches("[A-Z]").WithMessage("Пароль должен содержать заглавные буквы.")
                 .Matches("[a-z]").WithMessage("Пароль должен содержать строчные буквы.")
                 .MinimumLength(8).MaximumLength(20).NotNull().NotEmpty();
 
-            RuleFor(updateFrom => updateFrom.ConfirmNewPassword)
-                .Equal(updateFrom => updateFrom.NewPassword)
+            RuleFor(updateFrom => updateFrom.ConfirmPassword)
+                .Equal(updateFrom => updateFrom.Password)
                 .WithMessage("Пароли не совпадают.");
         }
     }

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using FluentValidation;
 using AutoMapper;
+using MainTz.Core.Enums;
 
 namespace MainTz.Web.Controllers
 {
@@ -34,14 +35,16 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var user = await _userService.GetUserByNameAsync(_httpContextAccessor?.HttpContext?.User?.Identity?.Name);
+            var userId = Convert.ToInt32(_httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(u => u.Type == "Id")?.Value);
+            var user = await _userService.GetUserByIdAsync(userId);
             var model = _mapper.Map<UserResponse>(user);
 
             return View(model);
         }
         public async Task<IActionResult> GetNotifications()
         {
-            var user = await _userService.GetUserByNameAsync(_httpContextAccessor.HttpContext.User.Identity.Name);
+            var userId = Convert.ToInt32(_httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(u => u.Type == "Id")?.Value);
+            var user = await _userService.GetUserByIdAsync(userId);
             var notifications = await _notificationService.GetNotificationsByUserAsync(user);
             var notificationsResponse = _mapper.Map<List<NotificationResponse>>(notifications);
 
@@ -57,8 +60,8 @@ namespace MainTz.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> GetNotificationDescription([FromBody]int id)
         {
-            var contextUserName = _httpContextAccessor.HttpContext.User.Identity.Name;
-            var user = await _userService.GetUserByNameAsync(contextUserName);
+            var userId = Convert.ToInt32(_httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(u => u.Type == "Id")?.Value);
+            var user = await _userService.GetUserByIdAsync(userId);
             var notification = await _notificationService.GetNotificationByIdAndUserWithMarkedAsync(user, id);
             var notificationResponse = _mapper.Map<NotificationResponse>(notification);
 
@@ -71,9 +74,10 @@ namespace MainTz.Web.Controllers
             if (!requestForm.IsValid)
                 return Results.BadRequest(new ErrorViewModel { ErrorMessage = string.Join(" ", requestForm.Errors.Select(err => err.ErrorMessage)) });
 
-            var user = await _userService.GetUserByNameAsync(_httpContextAccessor.HttpContext.User.Identity.Name);
-            user.Name = updateLoginUserRequest.NewName;
-            var result = await _userService.UpdateAsync(user);
+            var userId = Convert.ToInt32(_httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(u => u.Type == "Id")?.Value);
+            var user = _mapper.Map<User>(updateLoginUserRequest);
+
+            var result = await _userService.UpdateUserData(user, userId);
 
             if (result)
                 return Results.Ok();
@@ -86,9 +90,13 @@ namespace MainTz.Web.Controllers
             var requestForm = _updatePasswordFormValidator.Validate(updatePasswordUserRequest);
             if (!requestForm.IsValid)
                 return Results.Json(new ErrorViewModel { ErrorMessage = string.Join(" ", requestForm.Errors.Select(err => err.ErrorMessage)) });
-            var user = await _userService.GetUserByNameAsync(_httpContextAccessor.HttpContext.User.Identity.Name);
-            user.Password = updatePasswordUserRequest.NewPassword;
-            var result = await _userService.UpdateAsync(user);
+
+            var userId = Convert.ToInt32(_httpContextAccessor?.HttpContext?.User?.Claims?.FirstOrDefault(u => u.Type == "Id")?.Value);
+            //var user = await _userService.GetUserByIdAsync(userId);
+
+            //user.Password = updatePasswordUserRequest.Password;
+            var user = _mapper.Map<User>(updatePasswordUserRequest);
+            var result = await _userService.UpdateUserData(user, userId);
 
             if(result)
                 return Results.Ok();

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using MainTz.Application.Services;
 using MainTz.Application.Models;
 using AutoMapper;
+using MainTz.Core.Enums;
 
 namespace MainTz.Infrastructure.Services
 {
@@ -71,19 +72,6 @@ namespace MainTz.Infrastructure.Services
                 return false;
             }
         }
-        public async Task<bool> DeleteAsync(User user)
-        {
-            try
-            {
-                await _userRepository.DeleteAsync(user);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation(ex.Message);
-                return false;
-            }
-        }
         public async Task<List<User>> GetSortedUsersByRole()
         {
             var users = await _userRepository.GetUsersAsync();
@@ -101,6 +89,18 @@ namespace MainTz.Infrastructure.Services
 
             var updatedUser = await _userRepository.UpdateAsync(user);
             return updatedUser;
+        }
+
+        public async Task<bool> UpdateUserData(User newUser, int userId)
+        {
+            var user = await _userRepository.GetUserByIdAsync(userId);
+            if(newUser.Password != null)
+                user.Password = newUser.Password;
+            if(newUser.Name != null)
+                user.Name = newUser.Name;
+
+            await _userRepository.UpdateAsync(user);
+            return true;
         }
     }
 }
