@@ -26,8 +26,9 @@ namespace MainTz.Web
             
 			services.AddHttpContextAccessor();
             services.AddControllersWithViews();
-        }
 
+            services.AddCors();
+        }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (!env.IsDevelopment())
@@ -287,6 +288,8 @@ namespace MainTz.Web
             app.UseMiddleware<JwtRefreshMiddleware>();
             app.UseMiddleware<LoggingMiddleware>();
             app.UseAppAuth();
+
+            app.UseCors(builder => builder.AllowAnyOrigin());
 
 			app.UseEndpoints(endpoints =>
             {
