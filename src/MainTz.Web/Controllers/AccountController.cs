@@ -6,9 +6,9 @@ using MainTz.Application.Services;
 using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
+using MainTz.Core.Enums;
 using FluentValidation;
 using AutoMapper;
-using MainTz.Core.Enums;
 
 namespace MainTz.Web.Controllers
 {
