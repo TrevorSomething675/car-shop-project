@@ -1,5 +1,5 @@
 ﻿@using MainTz.Web.ViewModels.CarViewModels
-@model CarResponse
+@model CarCardViewModel
 
 <button id="BackToCarsFromBigCardButton" class="custom-btn-notification-header" style="font-size:30px">
     <div class="d-flex">
@@ -13,18 +13,15 @@
         <div class="row custom-dark-container">
             <div class="col-9 py-3">
                 <div id="MainCarImage">
-                    <img src="data:image/png;base64, @Model.Images.FirstOrDefault().FileBase64String" class="product-img py-2" />
+                    <img src="data:image/png;base64, @Model.ImageResponse.FileBase64String" class="product-img py-2" />
                 </div>
             </div>
 
             <div class="col-3 d-flex align-content-center">
                 <div class="slider slick-vertical text-center">
-                    @for(int i = 0; i < Model.Images.Count(); i++)
-                    {
-                        <button id="LittleImage_@i">
-                            <img src="data:image/png;base64, @Model.Images.ToList()[i].FileBase64String" class="product-img py-2" />
-                        </button>
-                    }
+                    <button id="LittleImage_0">
+                        <img src="data:image/png;base64, @Model.ImageResponse.FileBase64String" class="product-img py-2" />
+                    </button>
                 </div>
                 <script>
                     $('.slick-vertical').slick({
@@ -41,16 +38,16 @@
         <div class="pt-4">
             <div class="row custom-dark-container custom-text-color text-break">
                 <h2 class="d-flex justify-content-center align-content-center">
-                    @Model.Name
+                    @Model.CarResponse.Name
                 </h2>
                 <div>
-                    @Model.Description
+                    @Model.CarResponse.Description
                 </div>
                 <div class="d-flex justify-content-start col flex-grow-0">
                     <div class="px-1 mt-2">
                         <div class="car-card-price mx-1">
                             <div class="px-1 text-nowrap">
-                                @Model.Price
+                                @Model.CarResponse.Price
                             </div>
                         </div>
                     </div>
@@ -58,20 +55,20 @@
                 <div class="d-flex justify-content-end col">
                     @if (User.IsInRole("Manager") || User.IsInRole("Admin"))
                     {
-                        if (Model.IsVisible)
+                        if (Model.CarResponse.IsVisible)
                         {
-                            <a asp-action="GetSendManualNotification" asp-controller="Account" asp-route-Id="@Model.Id" class="d-flex align-content-center custom-btn-violet-bg-dark">
+                            <a asp-action="GetSendManualNotification" asp-controller="Account" asp-route-Id="@Model.CarResponse.Id" class="d-flex align-content-center custom-btn-violet-bg-dark">
                                 <i class="bi bi-megaphone px-1"></i>
                                 <p>Уведомить</p>
                             </a>
 
-                            <a asp-action="ChangeCarVisible" asp-controller="Car" asp-route-Id="@Model.Id" class="d-flex align-content-center px-2 custom-btn-orange-bg-dark mx-1">
+                            <a asp-action="ChangeCarVisible" asp-controller="Car" asp-route-Id="@Model.CarResponse.Id" class="d-flex align-content-center px-2 custom-btn-orange-bg-dark mx-1">
                                 <i class="bi bi-eye px-1"></i>
                                 <p>Карточка активна</p>
                             </a>
                             if (User.IsInRole("Admin"))
                             {
-                                <button onclick="RemoveCarById(@Model.Id)" class="d-flex align-content-center custom-btn-danger-bg-dark">
+                                <button onclick="RemoveCarById(@Model.CarResponse.Id)" class="d-flex align-content-center custom-btn-danger-bg-dark">
                                     <i class="bi bi-trash3"></i>
                                     <p>Удалить карточку</p>
                                 </button>
@@ -84,12 +81,12 @@
                                 <i class="bi bi-megaphone px-1"></i>
                                 <p>Уведомить</p>
                             </button>
-                            <a asp-action="ChangeCarVisible" asp-controller="Car" asp-route-Id="@Model.Id" class="d-flex align-content-center px-2 custom-btn-orange-bg-dark mx-1">
+                            <a asp-action="ChangeCarVisible" asp-controller="Car" asp-route-Id="@Model.CarResponse.Id" class="d-flex align-content-center px-2 custom-btn-orange-bg-dark mx-1">
                                 <i class="bi bi-eye-slash px-1"></i>
                                 <p>Карточка не активна</p>
                             </a>
                         }
-                        <a asp-action="GetUpdateCar" asp-controller="Car" asp-route-Id="@Model.Id" class="d-flex align-content-center px-2 custom-btn-blue-bg-dark mx-1">
+                        <a asp-action="GetUpdateCar" asp-controller="Car" asp-route-Id="@Model.CarResponse.Id" class="d-flex align-content-center px-2 custom-btn-blue-bg-dark mx-1">
                             <i class="bi bi-pencil px-1"></i>
                             <p>Редактировать карточку</p>
                         </a>
@@ -100,7 +97,7 @@
                         <p>В корзину</p>
                     </button>
 
-                    <button class="d-flex custom-btn-orange-bg-dark" id="ChangeCarInFavoriteBigCard_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)">
+                    <button class="d-flex custom-btn-orange-bg-dark" id="ChangeCarInFavoriteBigCard_@Model.CarResponse.Id" onclick="ChangeCarInFavorite(@Model.CarResponse.Id)">
                         <i class="bi bi-star px-1"></i>
                         <p>В избранное</p>
                     </button>

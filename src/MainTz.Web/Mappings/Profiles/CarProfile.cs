@@ -9,7 +9,8 @@ namespace MainTz.Web.Mappings.Profiles
         public CarProfile()
         {
             CreateMap<CarRequest, Car>();
-            CreateMap<Car, CarResponse>();
+            CreateMap<Car, CarResponse>()
+                .ForMember(car => car.ImagesId, opt => opt.MapFrom(src => src.Images.Select(img => img.Id)));
         }
     }
 }

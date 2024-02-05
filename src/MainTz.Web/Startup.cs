@@ -289,7 +289,10 @@ namespace MainTz.Web
             app.UseMiddleware<LoggingMiddleware>();
             app.UseAppAuth();
 
-            app.UseCors(builder => builder.AllowAnyOrigin());
+            app.UseCors(builder => { 
+                builder.AllowAnyOrigin();
+                builder.AllowAnyHeader();
+            });
 
 			app.UseEndpoints(endpoints =>
             {

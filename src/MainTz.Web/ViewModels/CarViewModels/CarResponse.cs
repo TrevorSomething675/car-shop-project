@@ -1,6 +1,5 @@
 ﻿using MainTz.Web.ViewModels.CarModelViewModel;
-using MainTz.Web.ViewModels.ImageViewModels;
-using MainTz.Web.ViewModels.UserViewModels;
+using System.Text.Json.Serialization;
 
 namespace MainTz.Web.ViewModels.CarViewModels
 {
@@ -12,12 +11,11 @@ namespace MainTz.Web.ViewModels.CarViewModels
 		public bool IsVisible { get; set; }
 		public string Description { get; set; }
         public int Price { get; set; }
-
-		public IEnumerable<ImageResponse> Images { get; set; }
-
-		public IEnumerable<UserResponse> Users { get; set; }
+        public IEnumerable<int> ImagesId { get; set; }
+		[JsonIgnore]
+		public IEnumerable<int> UsersId { get; set; }
 
 		public int ModelId { get; set; }
-		public ModelResponse Model { get; set; }
+        public ModelResponse Model { get; set; }
 	}
 }

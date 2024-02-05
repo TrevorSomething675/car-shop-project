@@ -5,7 +5,7 @@
     <div class="p-1 container">
         <div>
            <a asp-controller="Car" asp-action="GetBigCarCard" asp-route-id="@Model.Id">
-                <img src="data:image/png;base64, @Model.Images.FirstOrDefault().FileBase64String" class="product-img" />
+                @* <img src="data:image/png;base64, @Model.Images.FirstOrDefault().FileBase64String" class="product-img" /> *@
            </a>
         </div>
         <div class="car-card-header-text">

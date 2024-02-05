@@ -1,0 +1,15 @@
+:root{
+    --dark-gray-color:#302f2f;
+    --light-gray-color:#474646;
+    --light-text-color:#d6d4d4;
+    --light-orange-color: #cc7d06;
+    --dark-orange-color: #a86807;
+}
+
+/*#root, html, body, #root > div{
+    position: relative;
+    height: 100%!important;
+    width: 100%!important;
+    display: flex;
+    flex-direction: column;
+}*/

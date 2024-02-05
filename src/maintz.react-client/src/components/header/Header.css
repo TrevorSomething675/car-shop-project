@@ -1,0 +1,28 @@
+Header{
+    font-size:1.6rem;
+    color: var(--light-orange-color)!important;
+    background-color: var(--dark-gray-color);
+    border-bottom: 2px solid var(--light-orange-color);
+    flex-shrink: 0;
+}
+
+ul{
+    display: flex;
+    margin: 0!important;
+    list-style-type: none;
+}
+
+li{
+    margin-right: 1rem;
+    display: inline;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+h1{
+    text-wrap: nowrap;
+}

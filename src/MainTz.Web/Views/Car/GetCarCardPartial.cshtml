@@ -1,24 +1,24 @@
 ﻿@using MainTz.Web.ViewModels.CarViewModels
-@model CarResponse
+@model CarCardViewModel
 
 <div class="car-card">
     <div class="p-1 container">
         <div>
-           <a asp-controller="Car" asp-action="GetBigCarCard" asp-route-id="@Model.Id">
-                <img src="data:image/png;base64, @Model.Images.FirstOrDefault().FileBase64String" class="product-img"/>
+           <a asp-controller="Car" asp-action="GetBigCarCard" asp-route-id="@Model.CarResponse.Id">
+                <img src="data:image/png;base64, @Model.ImageResponse.FileBase64String" class="product-img"/>
            </a>
         </div>
         <div class="car-card-header-text">
-            <h2>@Model.Name</h2>
+            <h2>@Model.CarResponse.Name</h2>
         </div>
         <div class="car-card-description-text text-break">
-            @Model.Description
+            @Model.CarResponse.Description
         </div>
          <div class="row">
             <div class="d-flex col">
                 <div class="car-card-price mx-1">
                     <div class="px-1">
-                        @Model.Price
+                        @Model.CarResponse.Price
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 <div class="d-flex justify-content-end col">
                     @if (User.IsInRole("Manager") || User.IsInRole("Admin"))
                     {
-                        if (Model.IsVisible)
+                        if (Model.CarResponse.IsVisible)
                         {
                             <div class="car-card-cart-offer-active mx-1">
                                 <i class="bi bi-eye px-1"></i>
@@ -46,7 +46,7 @@
                           </a>
                     </div>
                     <div class="car-card-favorite-offer mx-1">
-                        <button id="ChangeCarInFavorite_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)" class="car-favorite-offer-btn">
+                        <button id="ChangeCarInFavorite_@Model.CarResponse.Id" onclick="ChangeCarInFavorite(@Model.CarResponse.Id)" class="car-favorite-offer-btn">
                             <i class="bi bi-star"></i>
                         </button>
                     </div>

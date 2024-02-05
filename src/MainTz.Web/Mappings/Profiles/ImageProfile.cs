@@ -1,6 +1,6 @@
-﻿using AutoMapper;
-using MainTz.Web.ViewModels.ImageViewModels;
+﻿using MainTz.Web.ViewModels.ImageViewModels;
 using MainTz.Application.Models;
+using AutoMapper;
 
 namespace MainTz.Web.Mappings.Profiles
 {

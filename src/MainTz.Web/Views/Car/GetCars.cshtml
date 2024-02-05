@@ -2,7 +2,7 @@
 @model CarsViewModel
 
 <div id="CarsContainer" class="row">
-    @await Html.PartialAsync("GetCarsPartial", Model.CarsResponse)
+    @await Html.PartialAsync("GetCarsPartial", Model)
 </div>
 <div class="text-center py-2">
     @if (User.Identity.IsAuthenticated && Model.CarsResponse.Count() > 4)

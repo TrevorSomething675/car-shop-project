@@ -6,7 +6,7 @@ namespace MainTz.Web.Controllers
     {
         public IResult Index()
         {
-            return Results.Ok("Ok");
+            return Results.Ok("valid data");
         }
     }
 }
