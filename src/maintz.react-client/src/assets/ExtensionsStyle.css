@@ -6,10 +6,10 @@
     --dark-orange-color: #a86807;
 }
 
-/*#root, html, body, #root > div{
+#root, html, body, #root > div{
     position: relative;
     height: 100%!important;
     width: 100%!important;
     display: flex;
     flex-direction: column;
-}*/
+}
