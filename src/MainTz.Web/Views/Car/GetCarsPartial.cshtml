@@ -1,7 +1,7 @@
 ﻿@using MainTz.Web.ViewModels.CarViewModels
-@model CarsViewModel
+@model CarsModelResponse
 
-@foreach (var car in Model.CarsResponse)
+@foreach (var car in Model.Cars)
 {
     <div class="col-xxl-3 col-xl-4 col-md-6 col-sm-12 my-2">
         @await Html.PartialAsync("GetCarCardPartial", car)

@@ -17,7 +17,7 @@ namespace MainTz.Infrastructure.Services
             _authOptions = authOptions.Value;
         }
 
-        public AuthTokensModel CreateNewTokensModel(string role, string name, int id)
+        public AuthTokensModel CreateNewTokensModel(string role, string name, int? id)
         {
             var claims = new List<Claim> {
                 new Claim(ClaimTypes.Role, role),

@@ -1,12 +1,12 @@
 ﻿using MainTz.Web.ViewModels.CarModelViewModel;
 using MainTz.Web.ViewModels.BrandViewModels;
+using MainTz.Web.ViewModels.ImageViewModels;
 using MainTz.Web.ViewModels.CarViewModels;
 using MainTz.Application.Services;
 using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
-using MainTz.Web.ViewModels.ImageViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -34,17 +34,10 @@ namespace MainTz.Web.Controllers
         public async Task<IResult> GetCars(int pageNumber = 1)
         {
             var id = Convert.ToInt32(_contextAccessor.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == "Id")?.Value);
-
             var carsModel = await _carService.GetCarsAsync(id, pageNumber);
-			var carsResponse = _mapper.Map<List<CarResponse>>(carsModel);
-			var totalCarsWithHidden = (await _carService.GetCarsAsync(id, null)).Count() / 8f;
-			var modelCarsWithHidden = new CarsViewModel
-			{
-				PageCount = (int)Math.Ceiling(totalCarsWithHidden),
-				PageNumber = pageNumber,
-				CarsResponse = carsResponse,
-			};
-            return Results.Ok(modelCarsWithHidden);
+			var carsModelResponse = _mapper.Map<CarsModelResponse>(carsModel);
+
+            return Results.Ok(carsModelResponse);
         }
         public async Task<IActionResult> GetBigCarCard(int id)
         {
@@ -74,9 +67,9 @@ namespace MainTz.Web.Controllers
 
             var carsDomainModels = await _carService.GetCarsAsync(id, pageNumber);
             var carsResponse = _mapper.Map<List<CarResponse>>(carsDomainModels);
-            var model = new CarsViewModel
+            var model = new CarsModelResponse
             {
-                CarsResponse = carsResponse,
+                Cars = carsResponse,
             };
             return PartialView(carsResponse);
         }

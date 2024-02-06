@@ -25,6 +25,10 @@ namespace MainTz.Web
             services.AddAppAutoMapper();
             
 			services.AddHttpContextAccessor();
+            services.AddMediatR(config =>
+            {
+                config.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly());
+            });
             services.AddControllersWithViews();
 
             services.AddCors();

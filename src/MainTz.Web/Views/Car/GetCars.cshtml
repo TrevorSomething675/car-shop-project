@@ -1,11 +1,11 @@
 ﻿@using MainTz.Web.ViewModels.CarViewModels
-@model CarsViewModel
+@model CarsModelResponse
 
 <div id="CarsContainer" class="row">
     @await Html.PartialAsync("GetCarsPartial", Model)
 </div>
 <div class="text-center py-2">
-    @if (User.Identity.IsAuthenticated && Model.CarsResponse.Count() > 4)
+    @if (User.Identity.IsAuthenticated && Model.Cars.Count() > 4)
     {
         @for (int i = 1; i < Model.PageCount+1; i++)
         {

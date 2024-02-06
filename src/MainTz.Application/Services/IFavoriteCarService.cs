@@ -2,6 +2,6 @@
 {
     public interface IFavoriteCarService
     {
-        public Task<bool> ChangeFavoriteCarAsync(int carId);
+        public Task<int?> ChangeFavoriteCarAsync(int userId, int carId);
     }
 }

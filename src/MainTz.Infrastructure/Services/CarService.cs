@@ -31,16 +31,25 @@ namespace MainTz.Infrastructure.Services
             }
             return car;
         }
-        public async Task<List<Car>> GetCarsAsync(int userId, int? pageNumber = null, CarType carType = CarType.Default)
+        public async Task<CarsModel> GetCarsAsync(int userId, int? pageNumber = null, CarType carType = CarType.Default)
         {
             var cars = new List<Car>();
+            var carsModel = new CarsModel();
             switch (carType)
             {
                 case CarType.Default:
                     cars = await _carRepository.GetCarsAsync(userId, pageNumber);
+                    var totalCars = (await _carRepository.GetCarsAsync(userId, null)).Count() / 8f;
+                    carsModel.Cars = cars;
+                    carsModel.PageNumber = pageNumber;
+                    carsModel.PageCount = (int)Math.Ceiling(totalCars);
                     break;
                 case CarType.Favorite:
                     cars = await _carRepository.GetFavoriteCarsAsync(userId, pageNumber);
+                    var totalFavoriteCars = (await _carRepository.GetFavoriteCarsAsync(userId, null)).Count() / 8f;
+                    carsModel.Cars = cars;
+                    carsModel.PageNumber = pageNumber;
+                    carsModel.PageNumber = (int)Math.Ceiling(totalFavoriteCars);
                     break;
             }
             foreach (var car in cars)
@@ -50,7 +59,8 @@ namespace MainTz.Infrastructure.Services
                     image.FileBase64String = await _minioService.GetObjectAsync(image.Path);
                 }
             }
-            return cars;
+
+            return carsModel;
         }
         public async Task<Car> CreateCarAsync(Car car)
         {
