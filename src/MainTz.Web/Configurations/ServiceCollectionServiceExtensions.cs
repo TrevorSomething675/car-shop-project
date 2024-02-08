@@ -8,7 +8,6 @@ namespace MainTz.Web.Configurations
         public static IServiceCollection AddAppServices(this IServiceCollection services)
         {
             services.AddScoped<INotificationService, NotificationService>();
-            services.AddScoped<IFavoriteCarService, FavoriteCarService>();
             services.AddScoped<IImageService, ImageService>();
             services.AddScoped<IMinioService, MinioService>();
             services.AddScoped<IModelService, ModelService>();

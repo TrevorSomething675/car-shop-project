@@ -28,6 +28,7 @@ namespace MainTz.Infrastructure.Repositories
             await using(var context = _dbContextFactory.CreateDbContext())
             {
                 var userEntity = await context.Users
+                    .Include(u => u.Cars)
                     .Include(u => u.Role)
                     .FirstOrDefaultAsync(u => u.Id == id);
                 var user = _mapper.Map<User>(userEntity);
