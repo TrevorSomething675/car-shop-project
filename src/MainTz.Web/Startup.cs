@@ -27,7 +27,7 @@ namespace MainTz.Web
 			services.AddHttpContextAccessor();
             services.AddMediatR(config =>
             {
-                config.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly());
+                config.RegisterServicesFromAssemblies(Assembly.GetAssembly(typeof(Infrastructure.AssemblyMarker)));
             });
             services.AddControllersWithViews();
 
