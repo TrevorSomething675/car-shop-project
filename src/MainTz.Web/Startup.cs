@@ -401,7 +401,9 @@ namespace MainTz.Web
                                     }
                                 },
                                 IsVisible = true,
-                                Description = "",
+                                Description = "BMW M4 Competition - это спортивный и агрессивный купе, " +
+                                "созданный для энтузиастов скорости и производительности. С его динамичным " +
+                                "дизайном и мощным двигателем, BMW M4 Competition обещает захватывающий опыт вождения.",
                                 Model = context.Models.FirstOrDefault(m => m.Name == "Купе")
                             }
                         };
