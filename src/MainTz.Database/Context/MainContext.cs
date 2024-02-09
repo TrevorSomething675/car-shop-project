@@ -9,7 +9,8 @@ namespace MainTa.Database.Context
     public class MainContext : DbContext
     {
         private readonly DataBaseOptions _dataBaseSettings;
-        public MainContext(DbContextOptions<MainContext> options, IOptions<DataBaseOptions> dataBaseSettings) : base(options) 
+        public MainContext(DbContextOptions<MainContext> options, 
+            IOptions<DataBaseOptions> dataBaseSettings) : base(options) 
         {
             _dataBaseSettings = dataBaseSettings.Value;
         }
@@ -36,7 +37,6 @@ namespace MainTa.Database.Context
             modelBuilder.ApplyConfiguration(new NotificationConfiguration());
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
-            //modelBuilder.ApplyConfiguration(new UserCarConfiguration());
         }
     }
 }
