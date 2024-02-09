@@ -372,8 +372,13 @@ footer {
     max-height: 630px;
 }
 
-.car-card-header-text{
-    color:var(--light-text-color);
+.car-card-header-text {
+    color: var(--light-text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .car-card-description-text {
