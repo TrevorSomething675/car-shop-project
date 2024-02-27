@@ -125,10 +125,10 @@ namespace MainTz.Infrastructure.Repositories
                     .FirstOrDefault(c => c.Id == updatedCarEntity.Id);
 
                 carEntity.Name = updatedCarEntity.Name;
+                carEntity.Price = updatedCarEntity.Price;
                 carEntity.Color = updatedCarEntity.Color;
                 carEntity.IsVisible = updatedCarEntity.IsVisible;
                 carEntity.Description = updatedCarEntity.Description;
-                carEntity.Price = updatedCarEntity.Price;
 
                 if(carEntity.Images != null)
                 {
