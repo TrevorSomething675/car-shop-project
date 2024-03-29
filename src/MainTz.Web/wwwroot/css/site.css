@@ -77,15 +77,15 @@
 
 .custom-btn-orange-bg-dark {
     background-color: var(--dark-gray-color);
-    color: var(--light-text-color);
+    color: var(--dark-orange-color);
     border-radius: 5px;
     border: 2px solid var(--dark-gray-color);
     transition: .3s;
 }
 
 .custom-btn-orange-bg-dark:hover {
+    color: var(--light-text-color);
     background-color: var(--dark-gray-color);
-    color: var(--dark-orange-color);
 }
 
 .custom-btn-blue-bg-dark {
@@ -98,7 +98,7 @@
 
 .custom-btn-blue-bg-dark:hover {
     background-color: var(--dark-gray-color);
-    color: var(--dark-orange-color);
+    color: var(--light-text-color);
 }
 
 .custom-btn-green-bg-dark {
@@ -370,6 +370,7 @@ footer {
     height: 100%;
     object-fit: cover;
     max-height: 630px;
+    border-radius: 5px!;
 }
 
 .car-card-header-text {
