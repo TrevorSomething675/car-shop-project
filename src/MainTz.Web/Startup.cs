@@ -47,28 +47,30 @@ namespace MainTz.Web
                     context.Database.Migrate();
                     context.Database.EnsureCreated();
                     context.SaveChanges();
+                    if (!context.Manufacturers.Any())
+                    {
+                        var manufacturers = new List<ManufacturerEntity> {
+                            new ManufacturerEntity
+                            {
+                                Name = "Manufacturer1",
+                                Description = "Description",
+                                City = "Moskow"
+                            }
+                        };
+                        context.Manufacturers.AddRange(manufacturers);
+                        context.SaveChanges();
+                    }
                     if (!context.Brands.Any())
                     {
                         var brands = new List<BrandEntity>
                         {
                             new BrandEntity
                             {
-                                Name = "brand1",
-                                Models = new List<ModelEntity>
-                                {
-                                    new ModelEntity {Name = "Внедорожник" },
-                                    new ModelEntity {Name = "Кроссовер"},
-                                    new ModelEntity {Name = "Седан"},
-                                    new ModelEntity {Name = "Купе"}
-                                },
+                                Name = "brand1"
                             },
                             new BrandEntity
                             {
-                                Name = "brand2",
-                                Models = new List<ModelEntity>
-                                {
-                                    new ModelEntity {Name = "Model2" }
-                                },
+                                Name = "brand2"
                             },
                         };
                         context.Brands.AddRange(brands);
@@ -214,6 +216,7 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/Volkswagen-Touareg-2019.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "Volkswagen Touareg 2019 - это премиальный полноразмерный внедорожник, представляющий " +
                                 "собой воплощение немецкого качества и инженерного мастерства. Этот автомобиль сочетает в себе элегантный дизайн, " +
@@ -221,7 +224,7 @@ namespace MainTz.Web
                                 "и стильным внешним видом. Он имеет гладкие линии и плавные формы, которые придают ему элегантность и динамику." +
                                 " Огромная радиаторная решетка с хромированными акцентами и светодиодные фары создают внушительное впечатление. " +
                                 "Кузов автомобиля выполнен с использованием высококачественных материалов, что придает ему прочность и долговечность.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Внедорожник")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -236,6 +239,7 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/Volkswagen-Touareg-2019.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "BMW X6 2016 - это спортивный кроссовер среднего размера, который сочетает в себе элегантный дизайн, " +
                                 "высокую производительность и роскошный интерьер. Этот автомобиль предлагает уникальное сочетание стиля и функциональности, " +
@@ -243,7 +247,7 @@ namespace MainTz.Web
                                 " выделяется своей агрессивностью и динамикой. Он имеет смелые и резкие линии, которые придают ему силу и энергию. " +
                                 "Характерными особенностями являются большие колесные арки, динамическая форма крыши и характерная двухъярусная решетка радиатора." +
                                 " Эти детали создают внушительный внешний вид и подчеркивают спортивный характер автомобиля.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Кроссовер")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -258,11 +262,12 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/Audi-RS-Q8-2021.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "Audi RS Q8 2021 - это мощный и роскошный спортивный кроссовер, который предлагает высокую производительность и" +
                                 " роскошный интерьер. Этот автомобиль сочетает в себе элегантный дизайн, передовые технологии и спортивные характеристики, делая" +
                                 " его идеальным выбором для тех, кто ищет комфорт и адреналин в одном пакете.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Кроссовер")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -277,12 +282,13 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/Audi-RS-Q8-2021.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "BMW X7 2019 - это роскошный и просторный SUV, который предлагает элегантный дизайн, высокую производительность и комфортный интерьер. " +
                                 "Этот автомобиль обладает внушительными размерами и привлекательными линиями, подчеркивающими его престиж и статус. Внутри вы найдете роскошный салон с" +
                                 " высококачественными материалами и передовыми технологиями, создающими уютную и современную атмосферу. " +
                                 "BMW X7 2019 также предлагает мощные двигатели и передовые системы управления, обеспечивая непревзойденную производительность и динамичный опыт вождения.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Внедорожник")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -297,13 +303,14 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/LiXiang-L7.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "LiXiang L7 - это электрический седан, который предлагает стильный дизайн, передовые технологии и экологическую эффективность. " +
                                 "Этот автомобиль сочетает в себе элегантные линии и современные элементы, создавая привлекательный внешний вид. Внутри вы найдете просторный " +
                                 "и удобный салон с передовыми системами развлечений и коммуникаций. LiXiang L7 оснащен мощной электрической системой, которая обеспечивает " +
                                 "плавное и тихое движение, а также дальнюю дистанцию пробега на одной зарядке. Этот автомобиль идеально подходит для тех, кто ценит экологическую " +
                                 "ответственность и современные технологии.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Седан")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -318,11 +325,12 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/LiXiang-L9.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "LiXiang L9 - это передовой электрический суперкар, который воплощает в себе элегантность, скорость и инновационные технологии. " +
                                 "Его потрясающий дизайн с гладкими линиями и аэродинамической формой приковывает взгляды прохожих. Великолепный салон LiXiang L9 предлагает" +
                                 " роскошный интерьер с высококачественными материалами и передовыми системами развлечений.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Седан")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -337,13 +345,14 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/Audi-Q7.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "Audi Q7 - это внедорожник премиум-класса, который сочетает в себе элегантность, " +
                                 "комфорт и высокую производительность. С его потрясающим дизайном и внушительными размерами, " +
                                 "Audi Q7 привлекает внимание на дороге.\r\n\r\nЭтот автомобиль имеет роскошный интерьер с" +
                                 " высококачественными материалами и передовыми технологиями. Просторный салон Audi Q7 предлагает " +
                                 "комфортные сиденья и множество возможностей для настройки, чтобы каждая поездка была максимально приятной.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Внедорожник")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -358,6 +367,7 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/Audi-Q7.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "BMW 520d xDrive - это роскошный седан, который объединяет в себе элегантность, " +
                                 "динамичность и превосходную экономичность. С его изящным дизайном и высококачественными материалами, " +
@@ -365,7 +375,7 @@ namespace MainTz.Web
                                 "который предлагает комфорт и функциональность. Высококачественные материалы и внимательное внимание к " +
                                 "деталям создают роскошную атмосферу в салоне. Комфортные сиденья и инновационные системы управления " +
                                 "позволяют водителю и пассажирам наслаждаться каждой поездкой.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Седан")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -380,12 +390,13 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/Skoda-Kodiaq-2023.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "Skoda Kodiaq 2023 - это современный и стильный семейный " +
                                 "внедорожник, который предлагает просторный интерьер, передовые технологии" +
                                 " и отличную проходимость. С его элегантным дизайном и функциональностью," +
                                 " Skoda Kodiaq 2023 привлекает внимание на дороге.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Внедорожник")
+                                Brand = context.Brands.FirstOrDefault()
                             },
                             new CarEntity
                             {
@@ -400,11 +411,12 @@ namespace MainTz.Web
                                         Path = "cars-image-bucket/BMW-M4-Competition.jpg"
                                     }
                                 },
+                                Manufacturer = context.Manufacturers.FirstOrDefault(),
                                 IsVisible = true,
                                 Description = "BMW M4 Competition - это спортивный и агрессивный купе, " +
                                 "созданный для энтузиастов скорости и производительности. С его динамичным " +
                                 "дизайном и мощным двигателем, BMW M4 Competition обещает захватывающий опыт вождения.",
-                                Model = context.Models.FirstOrDefault(m => m.Name == "Купе")
+                                Brand = context.Brands.FirstOrDefault()
                             }
                         };
 

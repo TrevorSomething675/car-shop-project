@@ -34,15 +34,6 @@
 							}
 						</select>
 					</div>
-					<div class="d-flex py-1">
-						<label class="px-1">Модель:</label>
-						<select name="CarRequest.Model.Name">
-							@foreach (var modelResponse in Model.ModelsResponse)
-							{
-								<option value="@modelResponse.Name">@modelResponse.Name</option>
-							}
-						</select>
-					</div>
 					<div>
 						<input type="file" name="CarRequest.Image" class="py-1 custom-input" id="SelectImageForCreateCar"/><br />
 					</div>

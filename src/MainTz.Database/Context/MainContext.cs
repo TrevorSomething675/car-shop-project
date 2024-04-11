@@ -20,9 +20,10 @@ namespace MainTa.Database.Context
         public DbSet<NotificationEntity> Notifications { get; set; }
 
         public DbSet<CarEntity> Cars { get; set; }
-        public DbSet<ModelEntity> Models { get; set; }
         public DbSet<BrandEntity> Brands { get; set; }
         public DbSet<ImageEntity> Images { get; set; }
+
+        public DbSet<ManufacturerEntity> Manufacturers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -33,7 +34,6 @@ namespace MainTa.Database.Context
             modelBuilder.ApplyConfiguration(new BrandConfiguration());
             modelBuilder.ApplyConfiguration(new CarConfiguration());
             modelBuilder.ApplyConfiguration(new ImageConfiguration());
-            modelBuilder.ApplyConfiguration(new ModelConfiguration());
             modelBuilder.ApplyConfiguration(new NotificationConfiguration());
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());

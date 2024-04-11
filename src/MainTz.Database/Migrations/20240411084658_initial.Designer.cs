@@ -3,6 +3,7 @@ using System;
 using MainTa.Database.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MainTz.Database.Migrations
 {
     [DbContext(typeof(MainContext))]
-    partial class MainContextModelSnapshot : ModelSnapshot
+    [Migration("20240411084658_initial")]
+    partial class initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,9 +65,6 @@ namespace MainTz.Database.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BrandId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Color")
                         .IsRequired()
                         .HasColumnType("text");
@@ -79,6 +79,9 @@ namespace MainTz.Database.Migrations
                     b.Property<int>("ManufacturerId")
                         .HasColumnType("integer");
 
+                    b.Property<int>("ModelId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
@@ -88,9 +91,9 @@ namespace MainTz.Database.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BrandId");
-
                     b.HasIndex("ManufacturerId");
+
+                    b.HasIndex("ModelId");
 
                     b.ToTable("Cars");
                 });
@@ -144,6 +147,28 @@ namespace MainTz.Database.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Manufacturers");
+                });
+
+            modelBuilder.Entity("MainTz.Database.Entities.ModelEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BrandId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
+
+                    b.ToTable("Models");
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.NotificationEntity", b =>
@@ -242,21 +267,20 @@ namespace MainTz.Database.Migrations
 
             modelBuilder.Entity("MainTz.Database.Entities.CarEntity", b =>
                 {
-                    b.HasOne("MainTz.Database.Entities.BrandEntity", "Brand")
-                        .WithMany("Cars")
-                        .HasForeignKey("BrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("MainTz.Database.Entities.ManufacturerEntity", "Manufacturer")
                         .WithMany("Cars")
                         .HasForeignKey("ManufacturerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Brand");
+                    b.HasOne("MainTz.Database.Entities.ModelEntity", "Model")
+                        .WithMany("Cars")
+                        .HasForeignKey("ModelId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Manufacturer");
+
+                    b.Navigation("Model");
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.ImageEntity", b =>
@@ -268,6 +292,17 @@ namespace MainTz.Database.Migrations
                         .IsRequired();
 
                     b.Navigation("Car");
+                });
+
+            modelBuilder.Entity("MainTz.Database.Entities.ModelEntity", b =>
+                {
+                    b.HasOne("MainTz.Database.Entities.BrandEntity", "Brand")
+                        .WithMany("Models")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Brand");
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.NotificationEntity", b =>
@@ -293,7 +328,7 @@ namespace MainTz.Database.Migrations
 
             modelBuilder.Entity("MainTz.Database.Entities.BrandEntity", b =>
                 {
-                    b.Navigation("Cars");
+                    b.Navigation("Models");
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.CarEntity", b =>
@@ -302,6 +337,11 @@ namespace MainTz.Database.Migrations
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.ManufacturerEntity", b =>
+                {
+                    b.Navigation("Cars");
+                });
+
+            modelBuilder.Entity("MainTz.Database.Entities.ModelEntity", b =>
                 {
                     b.Navigation("Cars");
                 });

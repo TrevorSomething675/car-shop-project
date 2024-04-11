@@ -1,12 +1,10 @@
-﻿using MainTz.Web.ViewModels.CarModelViewModel;
-using MainTz.Web.ViewModels.BrandViewModels;
+﻿using MainTz.Web.ViewModels.BrandViewModels;
 using MainTz.Web.ViewModels.CarViewModels;
 using MainTz.Application.Services;
 using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
-using MainTz.Web.ViewModels.UserViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -15,17 +13,15 @@ namespace MainTz.Web.Controllers
         private readonly INotificationService _notificationService;
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly IBrandService _brandService;
-        private readonly IModelService _modelService;
         private readonly IUserService _userService;
         private readonly ICarService _carService;
 		private readonly IMapper _mapper;
         public CarController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor,
-            IBrandService brandService, IModelService modelService, IUserService userService, INotificationService notificationService)
+            IBrandService brandService, IUserService userService, INotificationService notificationService)
         {
             _notificationService = notificationService;
             _contextAccessor = contextAccessor;
             _brandService = brandService;
-            _modelService = modelService;
             _userService = userService;
             _carService = carService;
             _mapper = mapper;
@@ -89,15 +85,12 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetCreateCar()
         {
-            var brandsWithModels = await _brandService.GetBrandsWithModelsAsync();
+            var brandsWithModels = await _brandService.GetBrandsAsync();
             var brandsWithModelsResponse = _mapper.Map<List<BrandResponse>>(brandsWithModels);
-            var models = await _modelService.GetModels();
-            var modelsResponse = _mapper.Map<List<ModelResponse>>(models);
 
             var model = new CreateCarResponse()
             {
                 BrandsResponse = brandsWithModelsResponse,
-                ModelsResponse = modelsResponse
             };
 
             return View(model);
@@ -133,18 +126,15 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetUpdateCar(int id)
         {
-			var brandsWithModels = await _brandService.GetBrandsWithModelsAsync();
-			var brandsWithModelsResponse = _mapper.Map<List<BrandResponse>>(brandsWithModels);
-			var models = await _modelService.GetModels();
-			var modelsResponse = _mapper.Map<List<ModelResponse>>(models);
+			var brands = await _brandService.GetBrandsAsync();
+			var brandsResponse = _mapper.Map<List<BrandResponse>>(brands);
             var car = await _carService.GetCarByIdAsync(id);
             var carResponse = _mapper.Map<CarResponse>(car);
 
             var model = new UpdateCarResponse()
             {
                 Car = carResponse,
-                ModelsResponse = modelsResponse,
-                BrandsResponse = brandsWithModelsResponse
+                BrandsResponse = brandsResponse
             };
 			return View(model);
         }

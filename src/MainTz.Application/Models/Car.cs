@@ -13,7 +13,7 @@
 
         public IEnumerable<User> Users { get; set; }
 
-        public int ModelId { get; set; }
-        public Model Model { get; set; }
+        public int BrandId { get; set; }
+        public Brand Brand { get; set; }
     }
 }

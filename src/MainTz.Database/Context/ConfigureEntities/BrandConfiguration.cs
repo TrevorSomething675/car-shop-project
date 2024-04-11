@@ -11,8 +11,8 @@ namespace MainTz.Database.Context.ConfigureEntities
             builder.HasKey(b => b.Id);
             //builder.Property(b => b.Id).UseHiLo().UseIdentityColumn().ValueGeneratedOnAdd();
 
-            builder.HasMany(b => b.Models)
-                .WithOne(m => m.Brand)
+            builder.HasMany(b => b.Cars)
+                .WithOne(c => c.Brand)
                 .OnDelete(DeleteBehavior.Cascade)
                 .IsRequired(false);
         }

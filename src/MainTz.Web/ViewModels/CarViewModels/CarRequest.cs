@@ -1,4 +1,4 @@
-﻿using MainTz.Web.ViewModels.CarModelViewModel;
+﻿using MainTz.Web.ViewModels.BrandViewModels;
 using MainTz.Web.ViewModels.ImageViewModels;
 using MainTz.Web.ViewModels.UserViewModels;
 
@@ -17,7 +17,7 @@ namespace MainTz.Web.ViewModels.CarViewModels
 
         public IEnumerable<UserRequest> Users { get; set; }
 
-		public int ModelId { get; set; }
-        public ModelRequest Model { get; set; }
+		public int BrandId { get; set; }
+        public BrandRequest Brand { get; set; }
     }
 }

@@ -140,8 +140,11 @@ namespace MainTz.Infrastructure.Services
             {
 				foreach (var image in car.Images)
 				{
-					var path = await _minioService.CreateObjectAsync(image);
-					image.Path = path;
+                    if(image.Name != null)
+                    {
+					    var path = await _minioService.CreateObjectAsync(image);
+					    image.Path = path;
+                    }
 				}
                 var updatedCar = await _carRepository.UpdateAsync(car);
 				return updatedCar;

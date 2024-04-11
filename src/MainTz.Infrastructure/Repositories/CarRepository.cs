@@ -25,8 +25,7 @@ namespace MainTz.Infrastructure.Repositories
             {
                 var carEntity = await context.Cars
                     .Include(car => car.Images)
-                    .Include(car => car.Model)
-                    .ThenInclude(model => model.Brand)
+                    .Include(car => car.Brand)
                     .FirstOrDefaultAsync(car => car.Id == id);
                 var car = _mapper.Map<Car>(carEntity);
                 return car;
@@ -38,8 +37,7 @@ namespace MainTz.Infrastructure.Repositories
 			{
 				var carEntity = await context.Cars
 					.Include(car => car.Images)
-					.Include(car => car.Model)
-					.ThenInclude(model => model.Brand)
+					.Include(car => car.Brand)
 					.FirstOrDefaultAsync(car => car.Name == name);
 				var car = _mapper.Map<Car>(carEntity);
 				return car;
@@ -76,8 +74,7 @@ namespace MainTz.Infrastructure.Repositories
                 var carEntity = context.Cars
                     .Include(c => c.Users)
                     .Include(c => c.Images)
-                    .Include(c => c.Model)
-                    .ThenInclude(c => c.Brand)
+                    .Include(c => c.Brand)
                     .FirstOrDefault(c => c.Id == updatedCarEntity.Id);
 
                 carEntity.Name = updatedCarEntity.Name;
@@ -112,25 +109,21 @@ namespace MainTz.Infrastructure.Repositories
                     } 
                     else if(carEntity.Images.Count == updatedCarEntity.Images.Count())
                     {
-                        foreach (var image in carEntity.Images)
+                        if(updatedCarEntity.Images.FirstOrDefault().Name != null) 
                         {
-                            image.Name = updatedCarEntity.Images[carEntity.Images.IndexOf(image)].Name;
-                            image.Path = updatedCarEntity.Images[carEntity.Images.IndexOf(image)].Path;
+                            foreach (var image in carEntity.Images)
+                            {
+                                image.Name = updatedCarEntity.Images[carEntity.Images.IndexOf(image)].Name;
+                                image.Path = updatedCarEntity.Images[carEntity.Images.IndexOf(image)].Path;
+                            }
                         }
                     }
                 }
-                if(carEntity.Model != null)
+                if(carEntity.Brand != null)
                 {
-                    var dbCarModel = context.Models
-                        .FirstOrDefault(m => m.Name == carEntity.Model.Name);
-                    carEntity.Model = dbCarModel;
-
-                    if(carEntity.Model.Brand != null)
-                    {
-                        var dbBrandEntity = context.Brands
-                            .FirstOrDefault(b => b.Name == carEntity.Model.Brand.Name);
-                        carEntity.Model.Brand = dbBrandEntity;
-                    }
+                    var dbCarBrand = context.Brands
+                        .FirstOrDefault(m => m.Name == updatedCarEntity.Brand.Name);
+                    carEntity.Brand = dbCarBrand;
                 }
                 context.Update(carEntity);
 				await context.SaveChangesAsync();
@@ -143,14 +136,11 @@ namespace MainTz.Infrastructure.Repositories
         {
             await using (var context = _dbContextFactory.CreateDbContext())
             {
-                var modelEntity = context.Models.FirstOrDefault(m => m.Name == car.Model.Name);
-                var brandEntity = context.Brands.FirstOrDefault(b => b.Name == car.Model.Brand.Name);
+                var brandEntity = context.Brands.FirstOrDefault(b => b.Name == car.Brand.Name);
                 var carEntity = _mapper.Map<CarEntity>(car);
 
-                if(modelEntity != null)
-                    carEntity.Model = modelEntity;
                 if(brandEntity != null)
-                    carEntity.Model.Brand = brandEntity;
+                    carEntity.Brand = brandEntity;
 
                 context.Cars.Add(carEntity);
                 await context.SaveChangesAsync();

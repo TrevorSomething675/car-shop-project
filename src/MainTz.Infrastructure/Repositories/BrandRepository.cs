@@ -21,23 +21,21 @@ namespace MainTz.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<Brand>> GetBrandsWithModelsAsync()
+        public async Task<List<Brand>> GetBrandsAsync()
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
                 var brandEntities = await context.Brands
-                    .Include(brand => brand.Models)
                     .ToListAsync();
                 var brands = _mapper.Map<List<Brand>>(brandEntities);
                 return brands;
             }
         }
-        public async Task<List<Brand>> GetBrandsWithModelsByNameAsync(string brandName)
+        public async Task<List<Brand>> GetBrandsByNameAsync(string brandName)
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
                 var brandEntities = await context.Brands
-                    .Include(brand => brand.Models)
                     .Where(brand => brand.Name == brandName)
                     .ToListAsync();
                 var brands = _mapper.Map<List<Brand>>(brandEntities);

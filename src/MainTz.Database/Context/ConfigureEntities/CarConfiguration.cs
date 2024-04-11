@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using MainTz.Database.Entities;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore.ValueGeneration;
-using System.Xml;
 
 namespace MainTz.Database.Context.ConfigureEntities
 {
@@ -19,9 +16,14 @@ namespace MainTz.Database.Context.ConfigureEntities
                 .HasForeignKey(img => img.CarId)
                 .IsRequired(false);
 
-            builder.HasOne(c => c.Model)
+            builder.HasOne(c => c.Brand)
+                .WithMany(b => b.Cars)
+                .HasForeignKey(c => c.BrandId)
+                .IsRequired(true);
+
+            builder.HasOne(c => c.Manufacturer)
                 .WithMany(m => m.Cars)
-                .HasForeignKey(c => c.ModelId)
+                .HasForeignKey(c => c.ManufacturerId)
                 .IsRequired(true);
         }
     }

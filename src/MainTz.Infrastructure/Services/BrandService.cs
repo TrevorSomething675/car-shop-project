@@ -11,14 +11,14 @@ namespace MainTz.Infrastructure.Services
         {
             _brandRepository = brandRepository;
         }
-        public async Task<List<Brand>> GetBrandsWithModelsByNameAsync(string brandName)
+        public async Task<List<Brand>> GetBrandsByNameAsync(string brandName)
         {
-            var bransWithModels = await _brandRepository.GetBrandsWithModelsByNameAsync(brandName);
+            var bransWithModels = await _brandRepository.GetBrandsByNameAsync(brandName);
             return bransWithModels;
         }
-        public async Task<List<Brand>> GetBrandsWithModelsAsync()
+        public async Task<List<Brand>> GetBrandsAsync()
         {
-            var brandWithModels = await _brandRepository.GetBrandsWithModelsAsync();
+            var brandWithModels = await _brandRepository.GetBrandsAsync();
             return brandWithModels;
         }
     }
