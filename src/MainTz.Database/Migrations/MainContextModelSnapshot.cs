@@ -65,14 +65,6 @@ namespace MainTz.Database.Migrations
                     b.Property<int>("BrandId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Color")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<bool>("IsVisible")
                         .HasColumnType("boolean");
 
@@ -93,6 +85,60 @@ namespace MainTz.Database.Migrations
                     b.HasIndex("ManufacturerId");
 
                     b.ToTable("Cars");
+                });
+
+            modelBuilder.Entity("MainTz.Database.Entities.DescriptionEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CarEntityId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Count")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("EnginePower")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FrontWheelDrive")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Guarantee")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("KPP")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("MaxSpeed")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("OilType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ShortDescription")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarEntityId")
+                        .IsUnique();
+
+                    b.ToTable("Descriptions");
                 });
 
             modelBuilder.Entity("MainTz.Database.Entities.ImageEntity", b =>
@@ -259,6 +305,17 @@ namespace MainTz.Database.Migrations
                     b.Navigation("Manufacturer");
                 });
 
+            modelBuilder.Entity("MainTz.Database.Entities.DescriptionEntity", b =>
+                {
+                    b.HasOne("MainTz.Database.Entities.CarEntity", "Car")
+                        .WithOne("Description")
+                        .HasForeignKey("MainTz.Database.Entities.DescriptionEntity", "CarEntityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Car");
+                });
+
             modelBuilder.Entity("MainTz.Database.Entities.ImageEntity", b =>
                 {
                     b.HasOne("MainTz.Database.Entities.CarEntity", "Car")
@@ -298,6 +355,9 @@ namespace MainTz.Database.Migrations
 
             modelBuilder.Entity("MainTz.Database.Entities.CarEntity", b =>
                 {
+                    b.Navigation("Description")
+                        .IsRequired();
+
                     b.Navigation("Images");
                 });
 

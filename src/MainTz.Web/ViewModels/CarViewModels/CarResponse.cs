@@ -1,4 +1,5 @@
-﻿using MainTz.Web.ViewModels.BrandViewModels;
+﻿using MainTz.Web.ViewModels.DescriptionViewModels;
+using MainTz.Web.ViewModels.BrandViewModels;
 using MainTz.Web.ViewModels.ImageViewModels;
 using MainTz.Web.ViewModels.UserViewModels;
 
@@ -8,9 +9,7 @@ namespace MainTz.Web.ViewModels.CarViewModels
     {
         public int? Id { get; set; }
         public string Name { get; set; }
-		public string Color { get; set; }
 		public bool IsVisible { get; set; }
-		public string Description { get; set; }
         public int Price { get; set; }
 
 		public IEnumerable<ImageResponse> Images { get; set; }
@@ -20,5 +19,6 @@ namespace MainTz.Web.ViewModels.CarViewModels
 		public int BrandId { get; set; }
 		public BrandResponse Brand { get; set; }
 		public int ManufacturerId { get; set; }
+		public DescriptionResponse Description { get; set; }
 	}
 }

@@ -43,9 +43,8 @@ namespace MainTz.Web
             {
                 using (var context = scope.ServiceProvider.GetRequiredService<MainContext>())
                 {
-                    context.Database.EnsureDeleted();
-                    context.Database.Migrate();
                     context.Database.EnsureCreated();
+                    context.Database.Migrate();
                     context.SaveChanges();
                     if (!context.Manufacturers.Any())
                     {
@@ -87,7 +86,6 @@ namespace MainTz.Web
                         context.Roles.AddRange(roles);
                         context.SaveChanges();
                     }
-
                     if (!context.Users.Any())
                     {
                         var users = new List<UserEntity>
@@ -205,227 +203,48 @@ namespace MainTz.Web
                         {
                             new CarEntity
                             {
-                                Name = "Volkswagen Touareg 2019",
-                                Color = "Белый",
-                                Price = 5990000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Volkswagen-Touareg-2019.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
+                                Name = " BMW 5 серии 2012",
                                 IsVisible = true,
-                                Description = "Volkswagen Touareg 2019 - это премиальный полноразмерный внедорожник, представляющий " +
-                                "собой воплощение немецкого качества и инженерного мастерства. Этот автомобиль сочетает в себе элегантный дизайн, " +
-                                "высокую проходимость и передовые технологии.\r\n\r\nЭкстерьер Touareg 2019 впечатляет своей солидностью " +
-                                "и стильным внешним видом. Он имеет гладкие линии и плавные формы, которые придают ему элегантность и динамику." +
-                                " Огромная радиаторная решетка с хромированными акцентами и светодиодные фары создают внушительное впечатление. " +
-                                "Кузов автомобиля выполнен с использованием высококачественных материалов, что придает ему прочность и долговечность.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "BMW X6 2016",
-                                Color = "Белый",
-                                Price = 4500000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Volkswagen-Touareg-2019.jpg"
-                                    }
-                                },
+                                Price = 1899000,
+                                Brand = context.Brands.FirstOrDefault(),
                                 Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "BMW X6 2016 - это спортивный кроссовер среднего размера, который сочетает в себе элегантный дизайн, " +
-                                "высокую производительность и роскошный интерьер. Этот автомобиль предлагает уникальное сочетание стиля и функциональности, " +
-                                "делая его привлекательным выбором для тех, кто ищет спортивность и комфорт в одном пакете.\r\n\r\nЭкстерьер BMW X6 2016" +
-                                " выделяется своей агрессивностью и динамикой. Он имеет смелые и резкие линии, которые придают ему силу и энергию. " +
-                                "Характерными особенностями являются большие колесные арки, динамическая форма крыши и характерная двухъярусная решетка радиатора." +
-                                " Эти детали создают внушительный внешний вид и подчеркивают спортивный характер автомобиля.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "Audi RS Q8 2021",
-                                Color = "Красный",
-                                Price = 18000000,
-                                Images = new List<ImageEntity>
+                                Description = new DescriptionEntity
                                 {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Audi-RS-Q8-2021.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "Audi RS Q8 2021 - это мощный и роскошный спортивный кроссовер, который предлагает высокую производительность и" +
-                                " роскошный интерьер. Этот автомобиль сочетает в себе элегантный дизайн, передовые технологии и спортивные характеристики, делая" +
-                                " его идеальным выбором для тех, кто ищет комфорт и адреналин в одном пакете.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "BMW X7 2019",
-                                Color = "Чёрный",
-                                Price = 8290000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Audi-RS-Q8-2021.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "BMW X7 2019 - это роскошный и просторный SUV, который предлагает элегантный дизайн, высокую производительность и комфортный интерьер. " +
-                                "Этот автомобиль обладает внушительными размерами и привлекательными линиями, подчеркивающими его престиж и статус. Внутри вы найдете роскошный салон с" +
-                                " высококачественными материалами и передовыми технологиями, создающими уютную и современную атмосферу. " +
-                                "BMW X7 2019 также предлагает мощные двигатели и передовые системы управления, обеспечивая непревзойденную производительность и динамичный опыт вождения.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "LiXiang L7",
-                                Color = "Чёрный",
-                                Price = 5990000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/LiXiang-L7.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "LiXiang L7 - это электрический седан, который предлагает стильный дизайн, передовые технологии и экологическую эффективность. " +
-                                "Этот автомобиль сочетает в себе элегантные линии и современные элементы, создавая привлекательный внешний вид. Внутри вы найдете просторный " +
-                                "и удобный салон с передовыми системами развлечений и коммуникаций. LiXiang L7 оснащен мощной электрической системой, которая обеспечивает " +
-                                "плавное и тихое движение, а также дальнюю дистанцию пробега на одной зарядке. Этот автомобиль идеально подходит для тех, кто ценит экологическую " +
-                                "ответственность и современные технологии.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "LiXiang L9",
-                                Color = "Чёрный",
-                                Price = 7300000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/LiXiang-L9.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "LiXiang L9 - это передовой электрический суперкар, который воплощает в себе элегантность, скорость и инновационные технологии. " +
-                                "Его потрясающий дизайн с гладкими линиями и аэродинамической формой приковывает взгляды прохожих. Великолепный салон LiXiang L9 предлагает" +
-                                " роскошный интерьер с высококачественными материалами и передовыми системами развлечений.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "Audi Q7",
-                                Color = "Синий",
-                                Price = 6850000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Audi-Q7.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "Audi Q7 - это внедорожник премиум-класса, который сочетает в себе элегантность, " +
-                                "комфорт и высокую производительность. С его потрясающим дизайном и внушительными размерами, " +
-                                "Audi Q7 привлекает внимание на дороге.\r\n\r\nЭтот автомобиль имеет роскошный интерьер с" +
-                                " высококачественными материалами и передовыми технологиями. Просторный салон Audi Q7 предлагает " +
-                                "комфортные сиденья и множество возможностей для настройки, чтобы каждая поездка была максимально приятной.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "BMW 520d Xdrive",
-                                Color = "Синий",
-                                Price = 5450000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Audi-Q7.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "BMW 520d xDrive - это роскошный седан, который объединяет в себе элегантность, " +
-                                "динамичность и превосходную экономичность. С его изящным дизайном и высококачественными материалами, " +
-                                "этот автомобиль выделяется на дороге. BMW 520d xDrive имеет просторный и роскошный интерьер, " +
-                                "который предлагает комфорт и функциональность. Высококачественные материалы и внимательное внимание к " +
-                                "деталям создают роскошную атмосферу в салоне. Комфортные сиденья и инновационные системы управления " +
-                                "позволяют водителю и пассажирам наслаждаться каждой поездкой.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "Skoda Kodiaq 2023",
-                                Color = "Чёрный",
-                                Price = 4770000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/Skoda-Kodiaq-2023.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "Skoda Kodiaq 2023 - это современный и стильный семейный " +
-                                "внедорожник, который предлагает просторный интерьер, передовые технологии" +
-                                " и отличную проходимость. С его элегантным дизайном и функциональностью," +
-                                " Skoda Kodiaq 2023 привлекает внимание на дороге.",
-                                Brand = context.Brands.FirstOrDefault()
-                            },
-                            new CarEntity
-                            {
-                                Name = "BMW M4 Competition",
-                                Color = "Зелёный",
-                                Price = 11700000,
-                                Images = new List<ImageEntity>
-                                {
-                                    new ImageEntity
-                                    {
-                                        Name = "pic1",
-                                        Path = "cars-image-bucket/BMW-M4-Competition.jpg"
-                                    }
-                                },
-                                Manufacturer = context.Manufacturers.FirstOrDefault(),
-                                IsVisible = true,
-                                Description = "BMW M4 Competition - это спортивный и агрессивный купе, " +
-                                "созданный для энтузиастов скорости и производительности. С его динамичным " +
-                                "дизайном и мощным двигателем, BMW M4 Competition обещает захватывающий опыт вождения.",
-                                Brand = context.Brands.FirstOrDefault()
+                                    Color = "Чёрный",
+                                    MaxSpeed = "190 км/ч",
+                                    FrontWheelDrive = "Задний привод",
+                                    EnginePower = "245 л.с.",
+                                    Guarantee = "1 год",
+                                    KPP = "Автомат",
+                                    OilType = "Бензин",
+                                    Count = 6,
+                                    ShortDescription = "BMW 5 серии 2012 года - это роскошный и элегантный седан премиум-класса, сочетающий " +
+                                    "в себе высокий уровень комфорта, динамичную производительность и передовые технологии. Автомобиль отличается изысканным " +
+                                    "дизайном и вниманием к деталям, что делает его одним из популярных выборов среди ценителей авто во всем мире."
+                                }
                             }
                         };
 
-                        #region imageDataAppend
-                        cars[0].Images = new List<ImageEntity> { new ImageEntity {
-                            Name = "pic1",
-                            Path = "cars-image-bucket/Volkswagen-Touareg-2019.jpg",
+                        cars[0].Images = new List<ImageEntity> { 
+                            new ImageEntity 
+                            {
+                                Name = "pic1",
+                                Path = "cars-image-bucket/BMW 5 серии 2012-1.jpg"
+                            },
+                            new ImageEntity
+                            {
+                                Name = "pic2",
+                                Path = "cars-image-bucket/BMW 5 серии 2012-2.jpg"
+                            },
+                            new ImageEntity
+                            {
+                                Name = "pic2",
+                                Path = "cars-image-bucket/BMW 5 серии 2012-3.jpg"
                             }
                         };
+                        context.Cars.AddRange(cars);
+                        context.SaveChanges();
+                        /*
                         cars[1].Images = new List<ImageEntity> { new ImageEntity {
                             Name = "pic1",
                             Path = "cars-image-bucket/BMW-X6-2016.jpg",
@@ -472,15 +291,13 @@ namespace MainTz.Web
                             }
                         };
                         #endregion
-
-                        context.Cars.AddRange(cars);
-                        context.SaveChanges();
                         var adminUser = context.Users.
                             Include(u=>u.Cars)
                             .First(user => user.Role.Name == "Admin");
                         var favorCar = context.Cars.First();
                         adminUser.Cars.Add(favorCar);
                         context.SaveChanges();
+                        */
                     }
                 }
             }

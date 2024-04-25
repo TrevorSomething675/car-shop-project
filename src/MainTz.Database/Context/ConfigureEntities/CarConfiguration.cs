@@ -25,6 +25,9 @@ namespace MainTz.Database.Context.ConfigureEntities
                 .WithMany(m => m.Cars)
                 .HasForeignKey(c => c.ManufacturerId)
                 .IsRequired(true);
+
+            builder.HasOne(c => c.Description)
+                .WithOne(d => d.Car);
         }
     }
 }

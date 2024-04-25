@@ -61,6 +61,7 @@ namespace MainTz.Infrastructure.Repositories
 			{
 				var carEntities = await context.Cars
 					.Include(car => car.Images)
+                    .Include(car => car.Description)
 					.ToListAsync();
 				var cars = _mapper.Map<List<Car>>(carEntities);
 				return cars;
@@ -78,7 +79,6 @@ namespace MainTz.Infrastructure.Repositories
                     .FirstOrDefault(c => c.Id == updatedCarEntity.Id);
 
                 carEntity.Name = updatedCarEntity.Name;
-                carEntity.Color = updatedCarEntity.Color;
                 carEntity.IsVisible = updatedCarEntity.IsVisible;
                 carEntity.Description = updatedCarEntity.Description;
                 carEntity.Price = updatedCarEntity.Price;

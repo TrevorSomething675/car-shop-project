@@ -23,6 +23,7 @@ namespace MainTa.Database.Context
         public DbSet<BrandEntity> Brands { get; set; }
         public DbSet<ImageEntity> Images { get; set; }
 
+        public DbSet<DescriptionEntity> Descriptions { get; set; }
         public DbSet<ManufacturerEntity> Manufacturers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -31,6 +32,7 @@ namespace MainTa.Database.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new DescriptionConfiguration());
             modelBuilder.ApplyConfiguration(new BrandConfiguration());
             modelBuilder.ApplyConfiguration(new CarConfiguration());
             modelBuilder.ApplyConfiguration(new ImageConfiguration());

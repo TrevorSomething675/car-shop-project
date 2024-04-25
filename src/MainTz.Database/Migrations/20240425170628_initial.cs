@@ -54,22 +54,32 @@ namespace MainTz.Database.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Models",
+                name: "Cars",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
-                    BrandId = table.Column<int>(type: "integer", nullable: false)
+                    IsVisible = table.Column<bool>(type: "boolean", nullable: false),
+                    Price = table.Column<int>(type: "integer", nullable: false),
+                    BrandId = table.Column<int>(type: "integer", nullable: false),
+                    ManufacturerId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Models", x => x.Id);
+                    table.PrimaryKey("PK_Cars", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Models_Brands_BrandId",
+                        name: "FK_Cars_Brands_BrandId",
                         column: x => x.BrandId,
                         principalTable: "Brands",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Cars_Manufacturers_ManufacturerId",
+                        column: x => x.ManufacturerId,
+                        principalTable: "Manufacturers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -94,32 +104,50 @@ namespace MainTz.Database.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Cars",
+                name: "Descriptions",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Color = table.Column<string>(type: "text", nullable: false),
+                    MaxSpeed = table.Column<string>(type: "text", nullable: false),
+                    FrontWheelDrive = table.Column<string>(type: "text", nullable: false),
+                    EnginePower = table.Column<string>(type: "text", nullable: false),
+                    Guarantee = table.Column<string>(type: "text", nullable: false),
+                    KPP = table.Column<string>(type: "text", nullable: false),
+                    OilType = table.Column<string>(type: "text", nullable: false),
+                    Count = table.Column<int>(type: "integer", nullable: false),
+                    ShortDescription = table.Column<string>(type: "text", nullable: false),
+                    CarEntityId = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Descriptions", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Descriptions_Cars_CarEntityId",
+                        column: x => x.CarEntityId,
+                        principalTable: "Cars",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Images",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
-                    Color = table.Column<string>(type: "text", nullable: false),
-                    IsVisible = table.Column<bool>(type: "boolean", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: false),
-                    Price = table.Column<int>(type: "integer", nullable: false),
-                    ModelId = table.Column<int>(type: "integer", nullable: false),
-                    ManufacturerId = table.Column<int>(type: "integer", nullable: false)
+                    Path = table.Column<string>(type: "text", nullable: false),
+                    CarId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Cars", x => x.Id);
+                    table.PrimaryKey("PK_Images", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Cars_Manufacturers_ManufacturerId",
-                        column: x => x.ManufacturerId,
-                        principalTable: "Manufacturers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Cars_Models_ModelId",
-                        column: x => x.ModelId,
-                        principalTable: "Models",
+                        name: "FK_Images_Cars_CarId",
+                        column: x => x.CarId,
+                        principalTable: "Cars",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -147,27 +175,6 @@ namespace MainTz.Database.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Images",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "text", nullable: false),
-                    Path = table.Column<string>(type: "text", nullable: false),
-                    CarId = table.Column<int>(type: "integer", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Images", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Images_Cars_CarId",
-                        column: x => x.CarId,
-                        principalTable: "Cars",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "UserCar",
                 columns: table => new
                 {
@@ -192,24 +199,25 @@ namespace MainTz.Database.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Cars_BrandId",
+                table: "Cars",
+                column: "BrandId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Cars_ManufacturerId",
                 table: "Cars",
                 column: "ManufacturerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cars_ModelId",
-                table: "Cars",
-                column: "ModelId");
+                name: "IX_Descriptions_CarEntityId",
+                table: "Descriptions",
+                column: "CarEntityId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Images_CarId",
                 table: "Images",
                 column: "CarId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Models_BrandId",
-                table: "Models",
-                column: "BrandId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Notifications_UserId",
@@ -231,6 +239,9 @@ namespace MainTz.Database.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Descriptions");
+
+            migrationBuilder.DropTable(
                 name: "Images");
 
             migrationBuilder.DropTable(
@@ -246,16 +257,13 @@ namespace MainTz.Database.Migrations
                 name: "Users");
 
             migrationBuilder.DropTable(
+                name: "Brands");
+
+            migrationBuilder.DropTable(
                 name: "Manufacturers");
 
             migrationBuilder.DropTable(
-                name: "Models");
-
-            migrationBuilder.DropTable(
                 name: "Roles");
-
-            migrationBuilder.DropTable(
-                name: "Brands");
         }
     }
 }
