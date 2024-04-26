@@ -43,8 +43,9 @@ namespace MainTz.Web
             {
                 using (var context = scope.ServiceProvider.GetRequiredService<MainContext>())
                 {
-                    context.Database.EnsureCreated();
+                    context.Database.EnsureDeleted();
                     context.Database.Migrate();
+                    context.Database.EnsureCreated();
                     context.SaveChanges();
                     if (!context.Manufacturers.Any())
                     {

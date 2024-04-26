@@ -1,4 +1,5 @@
 ﻿using MainTz.Web.ViewModels.BrandViewModels;
+using MainTz.Web.ViewModels.ManufacturerViewModels;
 
 namespace MainTz.Web.ViewModels.CarViewModels
 {
@@ -6,5 +7,6 @@ namespace MainTz.Web.ViewModels.CarViewModels
 	{
 		public CarResponse Car { get; set; }
 		public List<BrandResponse> BrandsResponse { get; set; }
+		public List<ManufacturerResponse> ManufacturersResponse { get; set; }
 	}
 }

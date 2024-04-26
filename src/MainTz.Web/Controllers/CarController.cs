@@ -5,11 +5,14 @@ using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
+using MainTz.Application.Repositories;
+using MainTz.Web.ViewModels.ManufacturerViewModels;
 
 namespace MainTz.Web.Controllers
 {
     public class CarController : Controller
     {
+        private readonly IManufacturerRepository _manufacturerRepository;
         private readonly INotificationService _notificationService;
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly IBrandService _brandService;
@@ -17,9 +20,11 @@ namespace MainTz.Web.Controllers
         private readonly ICarService _carService;
 		private readonly IMapper _mapper;
         public CarController(ICarService carService, IMapper mapper, IHttpContextAccessor contextAccessor,
-            IBrandService brandService, IUserService userService, INotificationService notificationService)
+            IBrandService brandService, IUserService userService, INotificationService notificationService,
+			IManufacturerRepository manufacturerRepository)
         {
-            _notificationService = notificationService;
+            _manufacturerRepository = manufacturerRepository;
+			_notificationService = notificationService;
             _contextAccessor = contextAccessor;
             _brandService = brandService;
             _userService = userService;
@@ -130,11 +135,14 @@ namespace MainTz.Web.Controllers
 			var brandsResponse = _mapper.Map<List<BrandResponse>>(brands);
             var car = await _carService.GetCarByIdAsync(id);
             var carResponse = _mapper.Map<CarResponse>(car);
+            var manufacturers = await _manufacturerRepository.GetManufacturersAsync();
+            var manufacturersResponse = _mapper.Map<List<ManufacturerResponse>>(manufacturers);
 
-            var model = new UpdateCarResponse()
+			var model = new UpdateCarResponse()
             {
                 Car = carResponse,
-                BrandsResponse = brandsResponse
+                BrandsResponse = brandsResponse,
+                ManufacturersResponse = manufacturersResponse
             };
 			return View(model);
         }

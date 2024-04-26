@@ -21,5 +21,17 @@ namespace MainTz.Infrastructure.Services
             var brandWithModels = await _brandRepository.GetBrandsAsync();
             return brandWithModels;
         }
+
+        public async Task<Brand> CreateBrandAsync(Brand brand)
+        {
+            var result = await _brandRepository.CreateAsync(brand);
+            return result;
+        }
+
+        public async Task<Brand> DeleteBrandByIdAsync(int id)
+        {
+            var result = await _brandRepository.DeleteByIdAsync(id);
+            return result;
+        }
     }
 }

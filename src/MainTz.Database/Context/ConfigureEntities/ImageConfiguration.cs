@@ -13,8 +13,8 @@ namespace MainTz.Database.Context.ConfigureEntities
                 .HasForeignKey(img => img.CarId)
                 .IsRequired(true);
 
-            //builder.Property(img => img.Path)
-            //    .IsRequired(true);
+            builder.Property(img => img.Name)
+                .IsRequired(false);
         }
     }
 }

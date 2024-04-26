@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MainTz.Application.Models;
 using MainTa.Database.Context;
 using AutoMapper;
+using MainTz.Database.Entities;
 
 namespace MainTz.Infrastructure.Repositories
 {
@@ -16,9 +17,32 @@ namespace MainTz.Infrastructure.Repositories
             _mapper = mapper;
         }
 
-        public async Task CreateAsync()
+        public async Task<Brand> CreateAsync(Brand brand)
         {
-            throw new NotImplementedException();
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var brandEntityToCreate = _mapper.Map<BrandEntity>(brand);
+                var brandEntity = context.Brands.FirstOrDefault(b => b.Name == brandEntityToCreate.Name);
+
+                if (brandEntity == null)
+                {
+                    var result = context.Brands.Add(brandEntityToCreate);
+                    context.SaveChanges();
+                    return _mapper.Map<Brand>(result.Entity);
+                }
+                return _mapper.Map<Brand>(brandEntity);
+            }
+        }
+
+        public async Task<Brand> DeleteByIdAsync(int id)
+        {
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var brandEntity = context.Brands.FirstOrDefault(b => b.Id == id);
+                var result = context.Brands.Remove(brandEntity);
+                context.SaveChanges();
+                return _mapper.Map<Brand>(result.Entity);
+            }
         }
 
         public async Task<List<Brand>> GetBrandsAsync()

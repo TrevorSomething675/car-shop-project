@@ -26,6 +26,7 @@ namespace MainTz.Infrastructure.Repositories
                 var carEntity = await context.Cars
                     .Include(car => car.Images)
                     .Include(car => car.Brand)
+                    .Include(car => car.Description)
                     .FirstOrDefaultAsync(car => car.Id == id);
                 var car = _mapper.Map<Car>(carEntity);
                 return car;
@@ -38,7 +39,8 @@ namespace MainTz.Infrastructure.Repositories
 				var carEntity = await context.Cars
 					.Include(car => car.Images)
 					.Include(car => car.Brand)
-					.FirstOrDefaultAsync(car => car.Name == name);
+                    .Include(car => car.Description)
+                    .FirstOrDefaultAsync(car => car.Name == name);
 				var car = _mapper.Map<Car>(carEntity);
 				return car;
 			}
@@ -50,6 +52,7 @@ namespace MainTz.Infrastructure.Repositories
                 var carEntities = await context.Cars
                     .Include(car => car.Images)
                     .Where(car => car.IsVisible)
+                    .Include(car => car.Description)
                     .ToListAsync();
                 var cars = _mapper.Map<List<Car>>(carEntities);
                 return cars;
@@ -76,6 +79,7 @@ namespace MainTz.Infrastructure.Repositories
                     .Include(c => c.Users)
                     .Include(c => c.Images)
                     .Include(c => c.Brand)
+                    .Include(car => car.Description)
                     .FirstOrDefault(c => c.Id == updatedCarEntity.Id);
 
                 carEntity.Name = updatedCarEntity.Name;
@@ -83,8 +87,10 @@ namespace MainTz.Infrastructure.Repositories
                 carEntity.Description = updatedCarEntity.Description;
                 carEntity.Price = updatedCarEntity.Price;
 
-                if(carEntity.Images != null)
+                if(carEntity.Images != null && updatedCarEntity.Images.FirstOrDefault().Name != null)
                 {
+                    carEntity.Images = updatedCarEntity.Images;
+                    /*
                     if(carEntity.Images.Count() < updatedCarEntity.Images.Count())
                     {
                         foreach (var image in carEntity.Images)
@@ -107,7 +113,7 @@ namespace MainTz.Infrastructure.Repositories
                             }
                         }
                     } 
-                    else if(carEntity.Images.Count == updatedCarEntity.Images.Count())
+                    else if(carEntity.Images.Count() == updatedCarEntity.Images.Count())
                     {
                         if(updatedCarEntity.Images.FirstOrDefault().Name != null) 
                         {
@@ -117,7 +123,7 @@ namespace MainTz.Infrastructure.Repositories
                                 image.Path = updatedCarEntity.Images[carEntity.Images.IndexOf(image)].Path;
                             }
                         }
-                    }
+                    }*/
                 }
                 if(carEntity.Brand != null)
                 {

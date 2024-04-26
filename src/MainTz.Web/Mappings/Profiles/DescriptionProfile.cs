@@ -9,7 +9,7 @@ namespace MainTz.Web.Mappings.Profiles
         public DescriptionProfile()
         {
             CreateMap<Description, DescriptionResponse>();
-            CreateMap<DescriptionRequest, DescriptionRequest>();
+            CreateMap<DescriptionRequest, Description>();
         }
     }
 }

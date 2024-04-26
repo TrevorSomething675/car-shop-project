@@ -11,28 +11,74 @@
 <div class="container">
     <div class="p-4">
         <div class="row custom-dark-container">
-            <div class="col py-1">
+            <div class="col py-1 mb-2">
                 <div id="MainCarImage">
                     <img src="data:image/png;base64, @Model.Images.FirstOrDefault().FileBase64String" class="product-img py-2" />
                 </div>
+                <div id="carsCarousel" class="row">
+                    @foreach(var image in Model.Images)
+                    {
+                        <div class="col-4">
+                            <img src="data:image/png;base64, @image.FileBase64String" class="product-img little-product-img" />
+                        </div>
+                    }
+                </div>
             </div>
-            
-            
         </div>
         <div class="pt-4">
             <div class="row custom-dark-container custom-text-color text-break">
                 <h2 class="d-flex justify-content-center align-content-center">
                     @Model.Name
                 </h2>
-                <div>
-                    @Model.Description
+                <div class="mb-4">
+                    @Model.Description.ShortDescription
+                </div>
+                <h2 class="d-flex justify-content-center align-content-center mb-4">
+                    Характеристики
+                </h2>
+                <div class="row mb-4">
+                    <div class="col-1">
+
+                    </div>
+                    <div class="col-5">
+                        <ul>
+                            <li>
+                                Цвет - @Model.Description.Color
+                            </li>
+                            <li>
+                                Тип привода - @Model.Description.FrontWheelDrive
+                            </li>
+                            <li>
+                                Мощность двигателя - @Model.Description.EnginePower
+                            </li>
+                            <li>
+                                Гарантия - @Model.Description.Guarantee
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 ps-4">
+                        <ul>
+                            <li>
+                                Максимальная скорость - @Model.Description.MaxSpeed
+                            </li>
+                            <li>
+                                Тип коробки передач - @Model.Description.KPP
+                            </li>
+                            <li>
+                                Тип топлива - @Model.Description.OilType
+                            </li>
+                            <li>
+                                Оставшееся количество - @Model.Description.Count
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="d-flex mb-2">
                     <div class="d-flex justify-content-start col flex-grow-0">
                         <div class="px-1 mt-2">
                         <div class="car-card-price mx-1">
                             <div class="px-1 text-nowrap">
-                                @Model.Price
+                                @Model.Price руб.
                             </div>
                         </div>
                     </div>
@@ -55,7 +101,7 @@
                             {
                                 <button onclick="RemoveCarById(@Model.Id)" class="d-flex custom-btn-danger-bg-dark text-nowrap">
                                     <i class="bi bi-trash3"></i>
-                                    <p>Удалить карточку</p>
+                                    <p>Удалить</p>
                                 </button>
                             }
                         }
@@ -72,7 +118,7 @@
                         }
                         <a asp-action="GetUpdateCar" asp-controller="Car" asp-route-Id="@Model.Id" class="d-flex custom-btn-blue-bg-dark text-nowrap">
                             <i class="bi bi-pencil px-1"></i>
-                            <p>Редактировать карточку</p>
+                            <p>Редактировать</p>
                         </a>
                     }
                     <button class="d-flex custom-btn-orange-bg-dark text-nowrap" id="ChangeCarInFavoriteBigCard_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)">

@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MainTz.Database.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20240425170628_initial")]
+    [Migration("20240426112257_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -156,7 +156,6 @@ namespace MainTz.Database.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Path")

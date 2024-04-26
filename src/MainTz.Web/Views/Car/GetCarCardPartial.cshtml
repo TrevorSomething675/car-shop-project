@@ -12,7 +12,7 @@
             <h2>@Model.Name</h2>
         </div>
         <div class="car-card-description-text text-break">
-            @Model.Description
+            @Model.Description.ShortDescription
         </div>
          <div class="row">
             <div class="d-flex col">
@@ -44,9 +44,6 @@
                         <button id="ChangeCarInFavorite_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)" class="car-favorite-offer-btn">
                             <i class="bi bi-star"></i>
                         </button>
-                    </div>
-                    <div class="car-card-descrition-text">
-                        @Model.Description.MaxSpeed
                     </div>
                 </div>
             }

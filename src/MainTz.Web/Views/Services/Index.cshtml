@@ -1,0 +1,59 @@
+﻿@using MainTz.Web.ViewModels.ServicesViewModels;
+@model ServicesResponse
+
+<div class="container text-custom-light-text py-2">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex align-content-center justify-content-center">
+                <form asp-controller="Services" asp-action="CreateBrand" class="form w-100 p-2">
+                    <h2 class="text-center custom-text-color">Добавить бренд</h2>
+                    <div class="d-flex mb-2">
+                        <label class="px-1 text-nowrap">Название бренда: </label>
+                        <input type="text" name="Brand.Name" class="w-100 py-1" />
+                    </div>
+                    <div class="py-1 d-flex justify-content-center">
+                        <button type="submit" class="text-center custom-btn-submit-form-green">Создать бренд</button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex align-content-center justify-content-center">
+                <form class="form w-100 p-2">
+                    <h2 class="text-center custom-text-color">Удалить бренд</h2>
+                    <div class="py-1 d-flex justify-content-center">
+                        <button type="submit" class="text-center custom-btn-submit-form-red">Удалить бренд</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="d-flex align-content-center justify-content-center">
+                <form asp-controller="Services" asp-action="CreateManufacturer" class="form w-100 p-2">
+                    <h2 class="text-center custom-text-color">Добавить производителя</h2>
+                    <div class="d-flex mb-2">
+                        <label class="px-1 text-nowrap">Название производителя: </label>
+                        <input type="text" name="Manufacturer.Name" class="w-100 py-1" />
+                    </div>
+                    <div class="d-flex mb-2">
+                        <label class="px-1 text-nowrap">Описание производителя: </label>
+                        <input type="text" name="Manufacturer.Description" class="w-100 py-1" />
+                    </div>
+                    <div class="d-flex mb-2">
+                        <label class="px-1 text-nowrap">Город: </label>
+                        <input type="text" name="Manufacturer.City" class="w-100 py-1" />
+                    </div>
+                    <div class="py-1 d-flex justify-content-center">
+                        <button type="submit" class="text-center custom-btn-submit-form-green">Создать производителя</button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex align-content-center justify-content-center">
+                <form class="form w-100 p-2">
+                    <h2 class="text-center custom-text-color">Удалить производителя</h2>
+                    <div class="py-1 d-flex justify-content-center">
+                        <button type="submit" class="text-center custom-btn-submit-form-red">Удалить производителя</button>
+                    </div>
+                </form>
+            </div>
+     </div>
+</div>
