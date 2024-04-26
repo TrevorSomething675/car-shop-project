@@ -2,12 +2,13 @@
 @model UpdateCarResponse
 
 <div class="container py-2">
-	<div class="custom-text-color row custom-dark-container">
-		<div class="col-4">
-			<div class="m-1">
-				<img src="data:image/png;base64, @Model.Car.Images.FirstOrDefault().FileBase64String" class="product-img py-2" id="PreviewImageUpdateFormContainer" />
+	<div class="custom-text-color custom-dark-container">
+		<form method="post" id="UpdateCarForm" class="form mt-0 w-100 row">
+			<div class="col-4">
+				<div class="m-1">
+					<img src="data:image/png;base64, @Model.Car.Images.FirstOrDefault().FileBase64String" class="product-img py-2" id="PreviewImageUpdateFormContainer" />
+				</div>
 			</div>
-		</div>
 
 		<div class="col-8">
 				<div class="px-2">
