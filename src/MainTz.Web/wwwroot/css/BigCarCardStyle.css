@@ -5,13 +5,3 @@
     height: 100%;
     border: none;
 }
-
-.little-product-img{
-    transition: 0.2s;
-}
-
-.little-product-img:hover {
-    cursor: pointer;
-    transition: 0.2s;
-    padding: 0.125rem;
-}
