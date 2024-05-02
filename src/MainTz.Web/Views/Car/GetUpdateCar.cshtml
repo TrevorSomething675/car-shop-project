@@ -1,106 +1,137 @@
 ﻿@using MainTz.Web.ViewModels.CarViewModels
 @model UpdateCarResponse
 
-<div class="container py-2">
-	<div class="custom-text-color custom-dark-container">
-		<form method="post" id="UpdateCarForm" class="form mt-0 w-100 row">
-			<div class="col-4">
-				<div class="m-1">
-					<img src="data:image/png;base64, @Model.Car.Images.FirstOrDefault().FileBase64String" class="product-img py-2" id="PreviewImageUpdateFormContainer" />
+<div class="my-2">
+	<div class="container py-2 custom-dark-container">
+		<div class="custom-text-color">
+			<div class="row">
+				<div id="MainCarImage">
+					<img src="data:image/png;base64, @Model.Car.Images.FirstOrDefault().FileBase64String" class="product-img py-2" />
+				</div>
+				@foreach (var image in Model?.Car?.Images)
+				{
+					<div class="col-4">
+						<div>
+							<img src="data:image/png;base64, @image.FileBase64String" class="product-img little-product-img py-2" id="PreviewImageUpdateFormContainer" />
+							<div class="py-1 d-flex justify-content-center">
+								<button type="button" class="text-center custom-btn-submit-form-red" onclick="removeImagebyId(@image.Id)">Удалить картинку</button>
+							</div>
+						</div>
+					</div>
+				}
+				<div class="col-4">
+					<form method="post" class="form" id="UpdateImageCarForm">
+						<div id="PreviewImageUpdateFormContainerLowImage">
+							<img id="previewImage" src="~/images/testAuto.png" class="product-img little-product-img py-2" />
+						</div>
+						<div>
+							<input type="file" id="UpdateImageCarInput" name="Image" onchange="previewFile()" />
+						</div>
+						<div class="py-1 d-flex justify-content-center">
+							<div>
+								<button type="submit" class="text-center custom-btn-submit-form-green">Добавить картинку</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
-
-		<div class="col-8">
-				<div class="px-2">
+		</div>
+		<form method="post" id="UpdateCarForm" class="form mt-0 w-100 row" enctype="multipart/form-data">
+			<div>
+				<div class="row">
 					<h2 class="text-center">Редактировать машину</h2>
-					<div class="d-flex py-1">
-						<input type="text" name="CarRequest.Id" value="@Model.Car.Id" hidden="hidden" />
-						<lable class="px-1">Название: </lable> <input type="text" name="CarRequest.Name" class="w-100 py-1" value="@Model.Car.Name"/><br />
-					</div>
-					<div class="d-flex py-1">
-						<lable class="px-1">Цена: </lable> 
-						<input type="text" name="CarRequest.Price" class="w-100 py-1" value="@Model.Car.Price"/><br />
-					</div>
-					<div class="d-flex py-1">
-						<lable class="px-1">Описание: </lable> <input type="text" name="CarRequest.Description.ShortDescription" class="w-100 py-1" value="@Model.Car.Description.ShortDescription" /><br />
-					</div>
-					<div class="d-flex py-1">
-						<label class="px-1">Бренд:</label>
-						<select name="CarRequest.Brand.Name">
-							@foreach (var brand in Model.BrandsResponse)
-							{
-								if (Model.Car.Brand.Name == brand.Name)
+					<div class="px-2">
+						<div class="d-flex py-1">
+							<input type="text" name="CarRequest.Id" value="@Model.Car.Id" hidden="hidden" id="actualCarId"/>
+							<lable class="px-1">Название: </lable> <input type="text" name="CarRequest.Name" class="w-100 py-1" value="@Model.Car.Name"/><br />
+						</div>
+						<div class="d-flex py-1">
+							<lable class="px-1">Цена: </lable>
+							<input type="text" name="CarRequest.Price" class="w-100 py-1" value="@Model.Car.Price"/><br />
+						</div>
+						<div class="d-flex py-1">
+							<lable class="px-1">Описание: </lable>
+							<textarea type="text" name="CarRequest.Description.ShortDescription" class="w-100 py-1">@Model.Car.Description.ShortDescription</textarea><br />
+						</div>
+						<div class="d-flex py-1">
+							<label class="px-1">Бренд:</label>
+							<select name="CarRequest.Brand.Name">
+								@foreach (var brand in Model.BrandsResponse)
 								{
-									<option value="@brand.Name" selected="selected">@brand.Name</option>
+									if (Model.Car.Brand.Name == brand.Name)
+									{
+										<option value="@brand.Name" selected="selected">@brand.Name</option>
+									}
+									else
+									{
+										<option value="@brand.Name">@brand.Name</option> 
+									}
 								}
-								else
-								{
-									<option value="@brand.Name">@brand.Name</option> 
-								}
-							}
-						</select>
+							</select>
 
-						<label class="px-1">Производитель:</label>
-						<select>
-							@foreach (var manufacturer in Model.ManufacturersResponse)
-							{
-								if(manufacturer.Id == Model.Car.ManufacturerId)
+							<label class="px-1">Производитель:</label>
+							<select>
+								@foreach (var manufacturer in Model.ManufacturersResponse)
 								{
-									<option value="@manufacturer.Name" selected="selected">@manufacturer.Name</option>
+									if(manufacturer.Id == Model.Car.ManufacturerId)
+									{
+										<option value="@manufacturer.Name" selected="selected">@manufacturer.Name</option>
+									}
+									else
+									{
+										<option value="@manufacturer.Name" selected="selected">@manufacturer.Name</option>
+									}
 								}
-								else
-								{
-									<option value="@manufacturer.Name" selected="selected">@manufacturer.Name</option>
-								}
-							}
-						</select>
-					</div>
-					<div class="row mb-4">
-						<div class="col">
-							<div class="d-flex py-1">
-								<lable class="px-1">Цвет: </lable> 
-								<input type="text" name="CarRequest.Description.Color" class="w-100 py-1" value="@Model.Car.Description.Color" /><br />
+							</select>
+						</div>
+						<div class="row mb-4">
+							<div class="col">
+								<div class="d-flex py-1">
+									<lable class="px-1">Цвет: </lable> 
+									<input type="text" name="CarRequest.Description.Color" class="w-100 py-1" value="@Model.Car.Description.Color" /><br />
+								</div>
+								<div class="d-flex py-1">
+									<lable class="px-1 text-nowrap">Тип привода: </lable>
+									<input type="text" name="CarRequest.Description.FrontWheelDrive" class="w-100 py-1" value="@Model.Car.Description.FrontWheelDrive" /><br />
+								</div>
+								<div class="d-flex py-1">
+									<lable class="px-1 text-nowrap">Мощность двигателя: </lable>
+									<input type="text" name="CarRequest.Description.EnginePower" class="w-100 py-1" value="@Model.Car.Description.EnginePower" /><br />
+								</div>
+								<div class="d-flex py-1">
+									<lable class="px-1 text-nowrap">Гарантия: </lable>
+									<input type="text" name="CarRequest.Description.Guarantee" class="w-100 py-1" value="@Model.Car.Description.Guarantee" /><br />
+								</div>
 							</div>
-							<div class="d-flex py-1">
-								<lable class="px-1 text-nowrap">Тип привода: </lable>
-								<input type="text" name="CarRequest.Description.FrontWheelDrive" class="w-100 py-1" value="@Model.Car.Description.FrontWheelDrive" /><br />
-							</div>
-							<div class="d-flex py-1">
-								<lable class="px-1 text-nowrap">Мощность двигателя: </lable>
-								<input type="text" name="CarRequest.Description.EnginePower" class="w-100 py-1" value="@Model.Car.Description.EnginePower" /><br />
-							</div>
-							<div class="d-flex py-1">
-								<lable class="px-1 text-nowrap">Гарантия: </lable>
-								<input type="text" name="CarRequest.Description.Guarantee" class="w-100 py-1" value="@Model.Car.Description.Guarantee" /><br />
+							<div class="col">
+								<div class="d-flex py-1">
+									<lable class="px-1 text-nowrap">Максимальная скорость: </lable>
+									<input type="text" name="CarRequest.Description.MaxSpeed" class="w-100 py-1" value="@Model.Car.Description.MaxSpeed" /><br />
+								</div>
+								<div class="d-flex py-1">
+									<lable class="px-1 text-nowrap">Тип коробки передач: </lable>
+									<input type="text" name="CarRequest.Description.KPP" class="w-100 py-1" value="@Model.Car.Description.KPP" /><br />
+								</div>
+								<div class="d-flex py-1">
+									<lable class="px-1 text-nowrap">Тип топлива: </lable>
+									<input type="text" name="CarRequest.Description.OilType" class="w-100 py-1" value="@Model.Car.Description.OilType" /><br />
+								</div>
+								<div class="d-flex py-1">
+									<lable class="px-1 text-nowrap">Оставшееся количество: </lable>
+									<input type="text" name="CarRequest.Description.Count" class="w-100 py-1" value="@Model.Car.Description.Count" /><br />
+								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="d-flex py-1">
-								<lable class="px-1 text-nowrap">Максимальная скорость: </lable>
-								<input type="text" name="CarRequest.Description.MaxSpeed" class="w-100 py-1" value="@Model.Car.Description.MaxSpeed" /><br />
-							</div>
-							<div class="d-flex py-1">
-								<lable class="px-1 text-nowrap">Тип коробки передач: </lable>
-								<input type="text" name="CarRequest.Description.KPP" class="w-100 py-1" value="@Model.Car.Description.KPP" /><br />
-							</div>
-							<div class="d-flex py-1">
-								<lable class="px-1 text-nowrap">Тип топлива: </lable>
-								<input type="text" name="CarRequest.Description.OilType" class="w-100 py-1" value="@Model.Car.Description.OilType" /><br />
-							</div>
-							<div class="d-flex py-1">
-								<lable class="px-1 text-nowrap">Оставшееся количество: </lable>
-								<input type="text" name="CarRequest.Description.Count" class="w-100 py-1" value="@Model.Car.Description.Count" /><br />
-							</div>
+
+						<div>
+							<input type="file" name="CarRequest.Image" class="py-1 custom-input" id="SelectImageForUpdateCar" /><br />
 						</div>
-					</div>
-					<div>
-						<input type="file" name="CarRequest.Image" class="py-1 custom-input" id="SelectImageForUpdateCar" /><br />
-					</div>
-					<div class="py-1 d-flex">
-						<button class="text-center custom-btn-submit-form-green" type="submit">Обновить машину</button>
+						<div class="py-1 d-flex">
+							<button class="text-center custom-btn-submit-form-green" type="submit">Обновить машину</button>
+						</div>
 					</div>
 				</div>
-			</form>
-		</div>
+			</div>
+		</form>
 	</div>
 </div>

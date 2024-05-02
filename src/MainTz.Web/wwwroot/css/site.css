@@ -187,8 +187,22 @@ input {
     color: var(--light-text-color);
 }
 
+textarea {
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+    color: var(--light-text-color);
+    min-height:6rem;
+    outline: none;
+}
+
+textarea::selection {
+    background-color: var(--light-orange-color);
+}
+
 .custom-input {
-    background-color: var(--dark-gray-color)!important;
+    background-color: var(--dark-gray-color) !important;
     border-radius: 5px;
     border: none;
     transition: .3s;
