@@ -17,24 +17,31 @@
             event.preventDefault();
 
             let formData = new FormData(createCarForm);
-            let requestImage = formData.get('CarRequest.Image');
             let reader = new FileReader();
 
-            let readFilePromise = new Promise((resolve, reject) => {
-                reader.onload = function (event) {
-                    resolve(event.target.result);
-                };
-                reader.onerror = function (event) {
-                    reject(event.target.error);
-                };
-            });
-            reader.readAsDataURL(requestImage);
-            let resultBase64String = await readFilePromise;
+            let input = document.getElementById('UpdateImageCarInput');
+            let files = input.files;
 
-            formData.append('carRequest.Images[0].FileBase64String', resultBase64String);
-            formData.append('carRequest.Images[0].Name', requestImage.name);
+            for (let i = 0; i < files.length; i++) {
+                let file = files[i];
 
-            console.log(resultBase64String);
+                let readFilePromise = new Promise((resolve, reject) => {
+                    reader.onload = function (event) {
+                        resolve(event.target.result);
+                    };
+                    reader.onerror = function (event) {
+                        reject(event.target.error);
+                    };
+                });
+                reader.readAsDataURL(file);
+                let resultBase64String = await readFilePromise;
+
+                formData.append(`carRequest.Images[${i}].Name`, file.name);
+                formData.append(`carRequest.Images[${i}].FileBase64String`, resultBase64String);
+
+            }
+
+
             fetch("/Car/CreateCarCommand", {
                 method: createCarForm.method,
                 body: formData

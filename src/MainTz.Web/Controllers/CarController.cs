@@ -1,12 +1,13 @@
-﻿using MainTz.Web.ViewModels.BrandViewModels;
+﻿using MainTz.Web.ViewModels.ManufacturerViewModels;
+using MainTz.Web.ViewModels.BrandViewModels;
 using MainTz.Web.ViewModels.CarViewModels;
+using MainTz.Application.Repositories;
 using MainTz.Application.Services;
 using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
-using MainTz.Application.Repositories;
-using MainTz.Web.ViewModels.ManufacturerViewModels;
+using MainTz.Web.ViewModels.ImageViewModels;
 
 namespace MainTz.Web.Controllers
 {
@@ -67,11 +68,6 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetBigCarCard(int id)
         {
-            if (!_contextAccessor.HttpContext.User.Identity.IsAuthenticated)
-            {
-                HttpContext.Response.Cookies.Append("LastOpenedCarCard", id.ToString());
-                return RedirectToAction("Login", "Auth");
-            }
             var carModel = await _carService.GetCarByIdAsync(id);
             var carResponse = _mapper.Map<CarResponse>(carModel);
             HttpContext.Response.Cookies.Delete("LastOpenedCarCard");
@@ -90,13 +86,16 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IActionResult> GetCreateCar()
         {
-            var brandsWithModels = await _brandService.GetBrandsAsync();
-            var brandsWithModelsResponse = _mapper.Map<List<BrandResponse>>(brandsWithModels);
+            var brands = await _brandService.GetBrandsAsync();
+			var brandsResponse = _mapper.Map<List<BrandResponse>>(brands);
+            var manufacturers = await _manufacturerRepository.GetManufacturersAsync();
+            var manufacturersResponse = _mapper.Map<List<ManufacturerResponse>>(manufacturers);
 
             var model = new CreateCarResponse()
             {
-                BrandsResponse = brandsWithModelsResponse,
-            };
+                BrandsResponse = brandsResponse,
+                ManufacturersResponse = manufacturersResponse
+			};
 
             return View(model);
         }

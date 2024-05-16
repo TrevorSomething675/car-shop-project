@@ -19,7 +19,7 @@ namespace MainTz.Web.Controllers
         }
         public async Task<IResult> ChangeFavoriteCar([FromBody]int id)
         {
-            var result = await _favoriteCarService.ChangeFavoriteCarAsync(id);
+			var result = await _favoriteCarService.ChangeFavoriteCarAsync(id);
             if (result)
                 return Results.Ok();
             else

@@ -5,19 +5,10 @@
     @await Html.PartialAsync("GetCarsPartial", Model.CarsResponse)
 </div>
 <div class="text-center py-2">
-    @if (User.Identity.IsAuthenticated && Model.CarsResponse.Count() > 4)
+    @for (int i = 1; i < Model.PageCount+1; i++)
     {
-        @for (int i = 1; i < Model.PageCount+1; i++)
-        {
-            <button id="pageCountBtn_@i" class="custom-btn-pagging" onclick="SendCarsPageNumber(@i)">
-                @i
-            </button>
-        }
-    }
-    else
-    {
-        <a asp-controller="Auth" asp-action="Login" class="custom-btn-orange">
-            Хотите увидеть больше? Авторизуйтесь или зарегистрируйтесь
-        </a>
+        <button id="pageCountBtn_@i" class="custom-btn-pagging" onclick="SendCarsPageNumber(@i)">
+            @i
+        </button>
     }
 </div>

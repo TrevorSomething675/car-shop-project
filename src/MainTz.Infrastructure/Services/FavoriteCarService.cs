@@ -24,7 +24,7 @@ namespace MainTz.Infrastructure.Services
         {
             try
             {
-                var user = await _userRepository.GetUserByNameAsync(_contextAccessor?.HttpContext?.User.Identity.Name);
+				var user = await _userRepository.GetUserByNameAsync(_contextAccessor?.HttpContext?.User.Identity.Name);
                 var carFromRepository = await _carRepository.GetCarByIdAsync(carId);
                 var carToFavorite = user.Cars.FirstOrDefault(c => c.Id == carFromRepository.Id);
                 if (carToFavorite != null)

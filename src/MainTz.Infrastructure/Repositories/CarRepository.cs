@@ -142,8 +142,12 @@ namespace MainTz.Infrastructure.Repositories
         {
             await using (var context = _dbContextFactory.CreateDbContext())
             {
+                var manufacturerEntity = context.Manufacturers.FirstOrDefault(m => m.Name == car.Manufacturer.Name);
                 var brandEntity = context.Brands.FirstOrDefault(b => b.Name == car.Brand.Name);
                 var carEntity = _mapper.Map<CarEntity>(car);
+
+                if(manufacturerEntity != null)
+                    carEntity.Manufacturer = manufacturerEntity;
 
                 if(brandEntity != null)
                     carEntity.Brand = brandEntity;

@@ -15,6 +15,9 @@
         public int BrandId { get; set; }
         public Brand Brand { get; set; }
 
+        public int ManufacturerId { get; set; }
+		public Manufacturer Manufacturer { get; set; }
+
         public Description Description { get; set; }
     }
 }

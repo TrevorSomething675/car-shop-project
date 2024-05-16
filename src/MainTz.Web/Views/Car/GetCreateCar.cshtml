@@ -3,42 +3,114 @@
 
 <div class="container py-2">
 	<div class="custom-text-color row custom-dark-container">
-		<div class="col-4">
-			<div class="m-1">
-				<img src="~/images/mops_1.jpg" class="img-fluid" id="PreviewImageFormContainer" />
-			</div>
+		<div class="row">
+			<h2 class="text-center">Создать карточку автомобиля</h2>
+			@*
+				<div class="m-1">
+					<img src="~/images/mops_1.jpg" class="img-fluid" id="PreviewImageFormContainer" />
+				</div>
+			*@
 		</div>
 
-		<div class="col-8">
-			<form method="post" id="CreateCarForm" class="form mt-0 w-100">
-				<div class="px-2">
-					<h2 class="text-center">Создать машину</h2>
-					<div class="d-flex py-1">
-						<lable class="px-1">Название: </lable> <input type="text" name="CarRequest.Name" class="w-100 py-1" /><br />
-					</div>
-					<div class="d-flex py-1">
-						<lable class="px-1">Цвет: </lable> <input type="text" name="CarRequest.Color" class="w-100 py-1" /><br />
-					</div>
-					<div class="d-flex py-1">
-						<lable class="px-1">Цена: </lable> <input type="text" name="CarRequest.Price" class="w-100 py-1" /><br />
-					</div>
-					<div class="d-flex py-1">
-						<lable class="px-1">Описание: </lable> <input type="text" name="CarRequest.Description" class="w-100 py-1" /><br />
-					</div>
-					<div class="d-flex py-1">
-						<label class="px-1">Бренд:</label>
-						<select name="CarRequest.Model.Brand.Name">
-							@foreach (var brand in Model.BrandsResponse)
-							{
-								<option value="@brand.Name">@brand.Name</option>
-							}
-						</select>
+		<div class="col">
+			<form method="post" id="CreateCarForm" class="form mt-0 w-100" enctype="multipart/form-data">
+				<div class="col-4">
+					<div id="PreviewImageUpdateFormContainerLowImage">
+						<img id="previewImage" src="~/images/testAuto.png" class="product-img little-product-img py-2" />
 					</div>
 					<div>
-						<input type="file" name="CarRequest.Image" class="py-1 custom-input" id="SelectImageForCreateCar"/><br />
+						<input type="file" id="UpdateImageCarInput" name="Images" onchange="previewFile()" multiple/>
 					</div>
-					<div class="py-1 d-flex">
-						<button class="text-center custom-btn-submit-form-green" type="submit">Создать</button>
+				</div>
+				<div>
+					<div class="row">
+						<div class="px-2">
+							<div class="d-flex py-1">
+								<input type="text" name="CarRequest.Id" hidden="hidden" id="actualCarId" />
+								<lable class="px-1">Название: </lable> <input type="text" name="CarRequest.Name" class="w-100 py-1" /><br />
+							</div>
+							<div class="d-flex py-1">
+								<lable class="px-1">Цена: </lable>
+								<input type="text" name="CarRequest.Price" class="w-100 py-1" /><br />
+							</div>
+							<div class="d-flex py-1">
+								<lable class="px-1">Описание: </lable>
+								<textarea type="text" name="CarRequest.Description.ShortDescription" class="w-100 py-1"></textarea><br />
+							</div>
+							<div class="d-flex py-1">
+								<label class="px-1">Бренд:</label>
+								<select name="CarRequest.Brand.Name">
+									@foreach (var brand in Model.BrandsResponse)
+									{
+										if (Model?.Car?.Brand?.Name == brand.Name)
+										{
+											<option value="@brand.Name" selected="selected">@brand.Name</option>
+										}
+										else
+										{
+											<option value="@brand.Name">@brand.Name</option>
+										}
+									}
+								</select>
+
+								<label class="px-1">Производитель:</label>
+								<select name="CarRequest.Manufacturer.Name">
+									@foreach (var manufacturer in Model.ManufacturersResponse)
+									{
+										if (manufacturer?.Id == Model?.Car?.ManufacturerId)
+										{
+											<option value="@manufacturer.Name" selected="selected">@manufacturer.Name</option>
+										}
+										else
+										{
+											<option value="@manufacturer.Name" selected="selected">@manufacturer.Name</option>
+										}
+									}
+								</select>
+							</div>
+							<div class="row mb-4">
+								<div class="col">
+									<div class="d-flex py-1">
+										<lable class="px-1">Цвет: </lable>
+										<input type="text" name="CarRequest.Description.Color" class="w-100 py-1" /><br />
+									</div>
+									<div class="d-flex py-1">
+										<lable class="px-1 text-nowrap">Тип привода: </lable>
+										<input type="text" name="CarRequest.Description.FrontWheelDrive" class="w-100 py-1" /><br />
+									</div>
+									<div class="d-flex py-1">
+										<lable class="px-1 text-nowrap">Мощность двигателя: </lable>
+										<input type="text" name="CarRequest.Description.EnginePower" class="w-100 py-1" /><br />
+									</div>
+									<div class="d-flex py-1">
+										<lable class="px-1 text-nowrap">Гарантия: </lable>
+										<input type="text" name="CarRequest.Description.Guarantee" class="w-100 py-1" /><br />
+									</div>
+								</div>
+								<div class="col">
+									<div class="d-flex py-1">
+										<lable class="px-1 text-nowrap">Максимальная скорость: </lable>
+										<input type="text" name="CarRequest.Description.MaxSpeed" class="w-100 py-1" /><br />
+									</div>
+									<div class="d-flex py-1">
+										<lable class="px-1 text-nowrap">Тип коробки передач: </lable>
+										<input type="text" name="CarRequest.Description.KPP" class="w-100 py-1" /><br />
+									</div>
+									<div class="d-flex py-1">
+										<lable class="px-1 text-nowrap">Тип топлива: </lable>
+										<input type="text" name="CarRequest.Description.OilType" class="w-100 py-1" /><br />
+									</div>
+									<div class="d-flex py-1">
+										<lable class="px-1 text-nowrap">Оставшееся количество: </lable>
+										<input type="text" name="CarRequest.Description.Count" class="w-100 py-1" /><br />
+									</div>
+								</div>
+							</div>
+
+							<div class="py-1 d-flex">
+								<button class="text-center custom-btn-submit-form-green" type="submit">Обновить машину</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</form>

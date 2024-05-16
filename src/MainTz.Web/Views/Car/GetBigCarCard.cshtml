@@ -118,11 +118,20 @@
                             <p>Редактировать</p>
                         </a>
                     }
-                    <button class="d-flex custom-btn-orange-bg-dark text-nowrap" id="ChangeCarInFavoriteBigCard_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)">
-                        <i class="bi bi-star px-1"></i>
-                        <p>В избранное</p>
-                    </button>
-                </div>
+                    @if(User.Identity.IsAuthenticated)
+                    {
+                        <button class="d-flex custom-btn-orange-bg-dark text-nowrap" id="ChangeCarInFavoriteBigCard_@Model.Id" onclick="ChangeCarInFavorite(@Model.Id)">
+                            <i class="bi bi-star px-1"></i>
+                            <p>В избранное</p>
+                            </button>
+                        }
+                        else
+                        {
+                            <a asp-controller="Auth" asp-action="Login" class="d-flex custom-btn-orange-bg-dark text-nowrap">
+                                Чтобы получить больше возможностей - авторизуйтесь
+                            </a>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
