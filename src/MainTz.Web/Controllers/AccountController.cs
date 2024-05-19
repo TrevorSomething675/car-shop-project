@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using FluentValidation;
 using AutoMapper;
+using MainTz.Web.Attributes;
 
 namespace MainTz.Web.Controllers
 {
@@ -95,6 +96,7 @@ namespace MainTz.Web.Controllers
             else
                 return Results.BadRequest(new ErrorViewModel { ErrorMessage = "Критическая ошибка" });
         }
+        [CustomAuthorizeAttribute("Admin", "Manager")]
         public async Task<IResult> SendNotificationForUsersOnCarId(NotificationFormRequest notificationFormRequest) 
         {
             var notification = _mapper.Map<Notification>(notificationFormRequest.Notification);

@@ -4,11 +4,13 @@ using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using Microsoft.AspNetCore.Mvc;
 using MainTa.Database.Context;
+using MainTz.Web.Attributes;
 using AutoMapper;
 
 namespace MainTz.Web.Controllers
 {
-	public class ImageController : Controller
+    [CustomAuthorizeAttribute("Admin", "Manager")]
+    public class ImageController : Controller
 	{
 		private readonly IMapper _mapper;
 		private readonly IMinioService _minioService;

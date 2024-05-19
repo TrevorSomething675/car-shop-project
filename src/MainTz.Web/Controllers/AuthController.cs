@@ -61,7 +61,7 @@ namespace MainTz.Web.Controllers
         {
             var formValid = _loginFormValidator.Validate(loginUserRequest);
             if (!formValid.IsValid)
-                return Results.Json(new ErrorViewModel { ErrorMessage = "Введите логи и пароль" });
+                return Results.Json(new ErrorViewModel { ErrorMessage = "Введите логин и пароль" });
 
             var user = await _usersService.GetUserByNameAsync(loginUserRequest.Name);
 
@@ -77,7 +77,7 @@ namespace MainTz.Web.Controllers
         {
             var formValid = _loginFormValidator.Validate(loginUserRequest);
             if (!formValid.IsValid)
-                return Results.Json(new ErrorViewModel { ErrorMessage = "Введите логи и пароль" });
+                return Results.Json(new ErrorViewModel { ErrorMessage = "Введите логин и пароль" });
 
             var user = await _usersService.GetUserByEmailAsync(loginUserRequest.Name);
 

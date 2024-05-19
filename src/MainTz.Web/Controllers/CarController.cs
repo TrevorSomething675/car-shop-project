@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using AutoMapper;
 using MainTz.Web.ViewModels.ImageViewModels;
+using MainTz.Web.Attributes;
 
 namespace MainTz.Web.Controllers
 {
@@ -84,6 +85,7 @@ namespace MainTz.Web.Controllers
 
             return PartialView(carsResponse);
         }
+        [CustomAuthorizeAttribute("Admin", "Manager")]
         public async Task<IActionResult> GetCreateCar()
         {
             var brands = await _brandService.GetBrandsAsync();
@@ -99,6 +101,7 @@ namespace MainTz.Web.Controllers
 
             return View(model);
         }
+        [CustomAuthorizeAttribute("Admin", "Manager")]
         public async Task<IResult> CreateCarCommand(CarRequest carRequest)
         {
             try
@@ -112,6 +115,7 @@ namespace MainTz.Web.Controllers
                 return Results.BadRequest(new ErrorViewModel { ErrorMessage = ex.Message});
             }
         }
+        [CustomAuthorizeAttribute("Admin", "Manager")]
         public async Task<IActionResult> ChangeCarVisible(int id)
         {
             var car = await _carService.ChangeCarVisible(id);
@@ -128,6 +132,7 @@ namespace MainTz.Web.Controllers
             var carResponse = _mapper.Map<CarResponse>(addedCar);
             return RedirectToAction("GetBigCarCard", new {id = carResponse.Id });
         }
+        [CustomAuthorizeAttribute("Admin", "Manager")]
         public async Task<IActionResult> GetUpdateCar(int id)
         {
 			var brands = await _brandService.GetBrandsAsync();
@@ -145,7 +150,8 @@ namespace MainTz.Web.Controllers
             };
 			return View(model);
         }
-		public async Task<IResult> UpdateCarCommand(CarRequest carRequest)
+        [CustomAuthorizeAttribute("Admin", "Manager")]
+        public async Task<IResult> UpdateCarCommand(CarRequest carRequest)
         {
             var car = _mapper.Map<Car>(carRequest);
             var updatedCar = await _carService.UpdateCarAsync(car);
@@ -153,6 +159,7 @@ namespace MainTz.Web.Controllers
 
             return Results.Json(carResponse.Id);
 		}
+        [CustomAuthorizeAttribute("Admin", "Manager")]
         public async Task<IResult> RemoveCarById([FromBody]int id)
         {
             var newNotification = new Notification()
