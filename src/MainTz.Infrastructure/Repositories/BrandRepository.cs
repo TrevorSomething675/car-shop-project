@@ -34,6 +34,17 @@ namespace MainTz.Infrastructure.Repositories
             }
         }
 
+        public async Task<Brand> DeleteBrandByName(string name)
+        {
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var brandEntity = context.Brands.FirstOrDefault(b => b.Name == name);
+                var result = context.Brands.Remove(brandEntity);
+                context.SaveChanges();
+                return _mapper.Map<Brand>(result.Entity);
+            }
+        }
+
         public async Task<Brand> DeleteByIdAsync(int id)
         {
             using (var context = _dbContextFactory.CreateDbContext())

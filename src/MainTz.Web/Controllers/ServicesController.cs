@@ -1,13 +1,15 @@
-﻿using AutoMapper;
-using MainTz.Application.Models;
-using MainTz.Application.Repositories;
-using MainTz.Web.ViewModels.BrandViewModels;
-using MainTz.Web.ViewModels.ManufacturerViewModels;
+﻿using MainTz.Web.ViewModels.ManufacturerViewModels;
 using MainTz.Web.ViewModels.ServicesViewModels;
+using MainTz.Web.ViewModels.BrandViewModels;
+using MainTz.Application.Repositories;
+using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
+using MainTz.Web.Attributes;
+using AutoMapper;
 
 namespace MainTz.Web.Controllers
 {
+    [CustomAuthorizeAttribute("Admin", "Manager")]
     public class ServicesController : Controller
     {
         private readonly IMapper _mapper;
@@ -34,25 +36,47 @@ namespace MainTz.Web.Controllers
         public async Task<IActionResult> CreateBrand(Brand brand)
         {
             var result = await _brandRepository.CreateAsync(brand);
-            return RedirectToAction("GetCars", "Car");
+            return RedirectToAction("Index", "Services");
         }
-        [HttpDelete]
         public async Task<IActionResult> DeleteBrand(int id)
         {
             var result = await _brandRepository.DeleteByIdAsync(id);
-            return Ok(result);
+            return RedirectToAction("Index", "Services");
+        }
+        public async Task<IActionResult> DeleteBrandByName([FromForm] string name)
+        {
+            try
+            {
+                var result = await _brandRepository.DeleteBrandByName(name);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return RedirectToAction("Index", "Services");
         }
         [HttpPost]
         public async Task<IActionResult> CreateManufacturer(Manufacturer manufacturer)
         {
             var result = await _manufacturerRepository.CreateManufacturer(manufacturer);
-            return RedirectToAction("GetCars", "Car");
+            return RedirectToAction("Index", "Services");
         }
-        [HttpDelete]
         public async Task<IActionResult> DeleteManufacturer(int id)
         {
             var result = await _manufacturerRepository.DeleteById(id);
-            return Ok(result);
+            return RedirectToAction("Index", "Services");
+        }
+        public async Task<IActionResult> DeleteManufacturerByName([FromForm] string name)
+        {
+            try
+            {
+                var result = await _manufacturerRepository.DeleteByName(name);
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            return RedirectToAction("Index", "Services");
         }
     }
 }

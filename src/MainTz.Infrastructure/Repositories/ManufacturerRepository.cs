@@ -17,6 +17,7 @@ namespace MainTz.Infrastructure.Repositories
 			_mapper = mapper;
 		}
 
+		
 		public async Task<Manufacturer> CreateManufacturer(Manufacturer manufacturer)
 		{
 			using (var context = _dbContextFactory.CreateDbContext())
@@ -34,6 +35,17 @@ namespace MainTz.Infrastructure.Repositories
 			{
 				var manufacturerEntity = context.Manufacturers.FirstOrDefault(m => m.Id == id);
 				var result = context.Manufacturers.Remove(manufacturerEntity);
+				context.SaveChanges();
+				return _mapper.Map<Manufacturer>(result.Entity);
+			}
+        }
+
+        public async Task<Manufacturer> DeleteByName(string name)
+        {
+			using (var context = _dbContextFactory.CreateDbContext())
+			{
+				var manufacturerEntity = context.Manufacturers.FirstOrDefault(m => m.Name == name);
+                var result = context.Manufacturers.Remove(manufacturerEntity);
 				context.SaveChanges();
 				return _mapper.Map<Manufacturer>(result.Entity);
 			}

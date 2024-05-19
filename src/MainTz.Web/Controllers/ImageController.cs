@@ -1,10 +1,10 @@
-﻿using AutoMapper;
-using MainTa.Database.Context;
-using MainTz.Application.Models;
+﻿using Microsoft.EntityFrameworkCore;
 using MainTz.Application.Services;
+using MainTz.Application.Models;
 using MainTz.Database.Entities;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using MainTa.Database.Context;
+using AutoMapper;
 
 namespace MainTz.Web.Controllers
 {

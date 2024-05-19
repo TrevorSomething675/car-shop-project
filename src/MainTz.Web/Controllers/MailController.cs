@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MainTz.Web.ViewModels.AccountViewModels;
+using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
 using FluentValidation;
-using MainTz.Web.ViewModels.AccountViewModels;
 
 namespace MainTz.Web.Controllers
 {

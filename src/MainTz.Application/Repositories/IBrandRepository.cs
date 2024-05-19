@@ -9,5 +9,6 @@ namespace MainTz.Application.Repositories
 
         public Task<Brand> CreateAsync(Brand brand);
         public Task<Brand> DeleteByIdAsync(int id);
+        public Task<Brand> DeleteBrandByName(string name);
     }
 }
