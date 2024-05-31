@@ -9,7 +9,8 @@ namespace MainTz.Database.Context.ConfigureEntities
         public void Configure(EntityTypeBuilder<DescriptionEntity> builder)
         {
             builder.HasOne(d => d.Car)
-                .WithOne(c => c.Description);
+                .WithOne(c => c.Description)
+                .HasForeignKey<CarEntity>(c => c.Id);
         }
     }
 }

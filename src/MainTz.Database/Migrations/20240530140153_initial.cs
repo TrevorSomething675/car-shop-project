@@ -107,25 +107,23 @@ namespace MainTz.Database.Migrations
                 name: "Descriptions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<int>(type: "integer", nullable: false),
                     Color = table.Column<string>(type: "text", nullable: false),
                     MaxSpeed = table.Column<string>(type: "text", nullable: false),
-                    FrontWheelDrive = table.Column<string>(type: "text", nullable: false),
+                    TypeOfDrive = table.Column<string>(type: "text", nullable: false),
                     EnginePower = table.Column<string>(type: "text", nullable: false),
                     Guarantee = table.Column<string>(type: "text", nullable: false),
                     KPP = table.Column<string>(type: "text", nullable: false),
                     OilType = table.Column<string>(type: "text", nullable: false),
                     Count = table.Column<int>(type: "integer", nullable: false),
-                    ShortDescription = table.Column<string>(type: "text", nullable: false),
-                    CarEntityId = table.Column<int>(type: "integer", nullable: false)
+                    ShortDescription = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Descriptions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Descriptions_Cars_CarEntityId",
-                        column: x => x.CarEntityId,
+                        name: "FK_Descriptions_Cars_Id",
+                        column: x => x.Id,
                         principalTable: "Cars",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -207,12 +205,6 @@ namespace MainTz.Database.Migrations
                 name: "IX_Cars_ManufacturerId",
                 table: "Cars",
                 column: "ManufacturerId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Descriptions_CarEntityId",
-                table: "Descriptions",
-                column: "CarEntityId",
-                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Images_CarId",

@@ -27,7 +27,8 @@ namespace MainTz.Database.Context.ConfigureEntities
                 .IsRequired(true);
 
             builder.HasOne(c => c.Description)
-                .WithOne(d => d.Car);
+                .WithOne(d => d.Car)
+                .HasForeignKey<DescriptionEntity>(d => d.Id);
         }
     }
 }

@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public string Color { get; set; }
         public string MaxSpeed { get; set; }
-        public string FrontWheelDrive { get; set; } // привод
+        public string TypeOfDrive { get; set; } // привод
         public string EnginePower { get; set; } //Мощность двигателя
         public string Guarantee { get; set; } //Гарантия
         public string KPP { get; set; } //Автоматическая/ручная

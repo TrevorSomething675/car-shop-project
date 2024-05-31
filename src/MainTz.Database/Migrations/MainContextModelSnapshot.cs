@@ -90,12 +90,6 @@ namespace MainTz.Database.Migrations
             modelBuilder.Entity("MainTz.Database.Entities.DescriptionEntity", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CarEntityId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Color")
@@ -106,10 +100,6 @@ namespace MainTz.Database.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("EnginePower")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("FrontWheelDrive")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -133,10 +123,11 @@ namespace MainTz.Database.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.Property<string>("TypeOfDrive")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.HasIndex("CarEntityId")
-                        .IsUnique();
+                    b.HasKey("Id");
 
                     b.ToTable("Descriptions");
                 });
@@ -308,7 +299,7 @@ namespace MainTz.Database.Migrations
                 {
                     b.HasOne("MainTz.Database.Entities.CarEntity", "Car")
                         .WithOne("Description")
-                        .HasForeignKey("MainTz.Database.Entities.DescriptionEntity", "CarEntityId")
+                        .HasForeignKey("MainTz.Database.Entities.DescriptionEntity", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

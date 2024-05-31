@@ -213,7 +213,7 @@ namespace MainTz.Web
                                 {
                                     Color = "Чёрный",
                                     MaxSpeed = "190 км/ч",
-                                    FrontWheelDrive = "Задний привод",
+                                    TypeOfDrive = "Задний привод",
                                     EnginePower = "245 л.с.",
                                     Guarantee = "1 год",
                                     KPP = "Автомат",
