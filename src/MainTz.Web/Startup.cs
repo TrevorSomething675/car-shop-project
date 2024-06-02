@@ -115,8 +115,9 @@ namespace MainTz.Web
                                         "Description1Description1Description1Description1Description1" +
                                         "Description1Description1Description1Description1Description1" +
                                         "Description1Description1Description1Description1Description1",
-                                        IsRead = false
-                                    },
+                                        IsRead = false,
+                                        SendedDate = DateTime.UtcNow
+									},
                                     new NotificationEntity
                                     {
                                         Header = "testHeader2",
@@ -126,8 +127,9 @@ namespace MainTz.Web
                                         "Description2Description2Description2Description2Description2" +
                                         "Description2Description2Description2Description2Description2" +
                                         "Description2Description2Description2Description2Description2",
-                                        IsRead = false
-                                    },
+                                        IsRead = false,
+										SendedDate = DateTime.UtcNow
+									},
                                     new NotificationEntity
                                     {
                                         Header = "testHeader3",
@@ -137,8 +139,9 @@ namespace MainTz.Web
                                         "Description3Description3Description3Description3Description3" +
                                         "Description3Description3Description3Description3Description3" +
                                         "Description3Description3Description3Description3Description3",
-                                        IsRead = false
-                                    },
+                                        IsRead = false,
+										SendedDate = DateTime.UtcNow
+									},
                                     new NotificationEntity
                                     {
                                         Header = "testHeader4",
@@ -148,8 +151,9 @@ namespace MainTz.Web
                                         "Description4Description4Description4Description4Description4" +
                                         "Description4Description4Description4Description4Description4" +
                                         "Description4Description4Description4Description4Description4",
-                                        IsRead = true
-                                    },
+                                        IsRead = true,
+										SendedDate = DateTime.UtcNow
+									},
                                     new NotificationEntity
                                     {
                                         Header = "testHeader5",
@@ -159,8 +163,9 @@ namespace MainTz.Web
                                         "Description5Description5Description5Description5Description5" +
                                         "Description5Description5Description5Description5Description5" +
                                         "Description5Description5Description5Description5Description5",
-                                        IsRead = true
-                                    },
+                                        IsRead = true,
+										SendedDate = DateTime.UtcNow
+									},
                                 }
                             },
                             new UserEntity
@@ -176,15 +181,17 @@ namespace MainTz.Web
                                         Header = "testHeader1",
                                         Description = "Description1Description1Description1Description1Description1" +
                                         "Description1Description1Description1Description1Description1" +
-                                        "Description1Description1Description1Description1Description1"
-                                    },
+                                        "Description1Description1Description1Description1Description1",
+										SendedDate = DateTime.UtcNow
+									},
                                     new NotificationEntity
                                     {
                                         Header = "testHeader2",
                                         Description = "Description2Description2Description2Description2Description2" +
                                         "Description2Description2Description2Description2Description2" +
-                                        "Description2Description2Description2Description2Description2"
-                                    },
+                                        "Description2Description2Description2Description2Description2",
+										SendedDate = DateTime.UtcNow
+									},
                                 }
                             },
                             new UserEntity
