@@ -11,7 +11,7 @@
             success: function (response) {
                 $('#NotificationContainer').html(response);
                 var btn = $(`#${id}`);
-                btn.removeClass('custom-btn-notification-header');
+                btn.removeClass('custom-btn-notification-header'); 
                 btn.addClass('custom-btn-notification-header-unactive')
             },
             error: function () {
