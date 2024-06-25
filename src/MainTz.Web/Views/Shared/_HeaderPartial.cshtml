@@ -36,6 +36,15 @@
                     </a>
                 </li>
             }
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="nav-item">
+                    <a class="nav-link custom-btn-orange" asp-area="" asp-controller="User" asp-action="GetUsers">
+                        <i class="bi bi-chat"></i>
+                        <span>Чат</span>
+                    </a>
+                </li>
+            }
         </ul>
     </div>
 

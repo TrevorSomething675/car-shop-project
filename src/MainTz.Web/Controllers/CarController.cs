@@ -6,9 +6,8 @@ using MainTz.Application.Services;
 using MainTz.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using MainTz.Web.ViewModels;
-using AutoMapper;
-using MainTz.Web.ViewModels.ImageViewModels;
 using MainTz.Web.Attributes;
+using AutoMapper;
 
 namespace MainTz.Web.Controllers
 {

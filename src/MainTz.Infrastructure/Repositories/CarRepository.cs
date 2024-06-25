@@ -7,9 +7,6 @@ using AutoMapper;
 
 namespace MainTz.Infrastructure.Repositories
 {
-    /// <summary>
-    /// Репозиторий CarRepository это обёртка на MainContext для таблицы Car
-    /// </summary>
     public class CarRepository : ICarRepository
     {
         private readonly IDbContextFactory<MainContext> _dbContextFactory;

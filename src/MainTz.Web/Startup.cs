@@ -114,64 +114,25 @@ namespace MainTz.Web
                                 {
                                     new NotificationEntity
                                     {
-                                        Header = "testHeader1",
-                                        Description = "Description1Description1Description1Description1Description1" +
-                                        "Description1Description1Description1Description1Description1" +
-                                        "Description1Description1Description1Description1Description1" +
-                                        "Description1Description1Description1Description1Description1" +
-                                        "Description1Description1Description1Description1Description1" +
-                                        "Description1Description1Description1Description1Description1",
+                                        Header = "Новая модификация!",
+                                        Description = "На автомобиль вышла новая модификация, рекомендуем ознакомиться подробнее",
                                         IsRead = false,
                                         SendedDate = DateTime.UtcNow
 									},
                                     new NotificationEntity
                                     {
-                                        Header = "testHeader2",
-                                        Description = "Description2Description2Description2Description2Description2" +
-                                        "Description2Description2Description2Description2Description2" +
-                                        "Description2Description2Description2Description2Description2" +
-                                        "Description2Description2Description2Description2Description2" +
-                                        "Description2Description2Description2Description2Description2" +
-                                        "Description2Description2Description2Description2Description2",
+                                        Header = "Успейте приобрести!",
+                                        Description = "Успейте приобрести эксклюзивные автозапчасти по акционной цене только до конца недели!",
                                         IsRead = false,
 										SendedDate = DateTime.UtcNow
 									},
                                     new NotificationEntity
                                     {
-                                        Header = "testHeader3",
-                                        Description = "Description3Description3Description3Description3Description3" +
-                                        "Description3Description3Description3Description3Description3" +
-                                        "Description3Description3Description3Description3Description3" +
-                                        "Description3Description3Description3Description3Description3" +
-                                        "Description3Description3Description3Description3Description3" +
-                                        "Description3Description3Description3Description3Description3",
+                                        Header = "Новый автомобиль!",
+                                        Description = "Обновите свой автомобиль с помощью стильных аксессуаров из нашего магазина уже сегодня!",
                                         IsRead = false,
 										SendedDate = DateTime.UtcNow
-									},
-                                    new NotificationEntity
-                                    {
-                                        Header = "testHeader4",
-                                        Description = "Description4Description4Description4Description4Description4" +
-                                        "Description4Description4Description4Description4Description4" +
-                                        "Description4Description4Description4Description4Description4" +
-                                        "Description4Description4Description4Description4Description4" +
-                                        "Description4Description4Description4Description4Description4" +
-                                        "Description4Description4Description4Description4Description4",
-                                        IsRead = true,
-										SendedDate = DateTime.UtcNow
-									},
-                                    new NotificationEntity
-                                    {
-                                        Header = "testHeader5",
-                                        Description = "Description5Description5Description5Description5Description5" +
-                                        "Description5Description5Description5Description5Description5" +
-                                        "Description5Description5Description5Description5Description5" +
-                                        "Description5Description5Description5Description5Description5" +
-                                        "Description5Description5Description5Description5Description5" +
-                                        "Description5Description5Description5Description5Description5",
-                                        IsRead = true,
-										SendedDate = DateTime.UtcNow
-									},
+									}
                                 }
                             },
                             new UserEntity
@@ -184,20 +145,25 @@ namespace MainTz.Web
                                 {
                                     new NotificationEntity
                                     {
-                                        Header = "testHeader1",
-                                        Description = "Description1Description1Description1Description1Description1" +
-                                        "Description1Description1Description1Description1Description1" +
-                                        "Description1Description1Description1Description1Description1",
-										SendedDate = DateTime.UtcNow
-									},
+                                        Header = "Новая модификация!",
+                                        Description = "На автомобиль вышла новая модификация, рекомендуем ознакомиться подробнее",
+                                        IsRead = false,
+                                        SendedDate = DateTime.UtcNow
+                                    },
                                     new NotificationEntity
                                     {
-                                        Header = "testHeader2",
-                                        Description = "Description2Description2Description2Description2Description2" +
-                                        "Description2Description2Description2Description2Description2" +
-                                        "Description2Description2Description2Description2Description2",
-										SendedDate = DateTime.UtcNow
-									},
+                                        Header = "Успейте приобрести!",
+                                        Description = "Успейте приобрести эксклюзивные автозапчасти по акционной цене только до конца недели!",
+                                        IsRead = false,
+                                        SendedDate = DateTime.UtcNow
+                                    },
+                                    new NotificationEntity
+                                    {
+                                        Header = "Новый автомобиль!",
+                                        Description = "Обновите свой автомобиль с помощью стильных аксессуаров из нашего магазина уже сегодня!",
+                                        IsRead = false,
+                                        SendedDate = DateTime.UtcNow
+                                    }
                                 }
                             },
                             new UserEntity
